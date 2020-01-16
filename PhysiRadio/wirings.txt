@@ -1,0 +1,45 @@
+
+Wiring with NODE-Mcu 1.0/Esp8266 :
+  --------------------------------
+  | VS1053  | ESP8266 |  Other   |
+  --------------------------------
+  |   SCK   |   D5    |    -     |
+  |   MISO  |   D6    |    -     |
+  |   MOSI  |   D7    |    -     |
+  |   XRST  |    -    |    -     |
+  |   CS    |   D1    |    -     |
+  |   DCS   |   D0    |    -     |
+  |   DREQ  |   D3    |    -     |
+  |   5V    |    -    |   VCC    |
+  |   GND   |    -    |   GND    |
+  --------------------------------
+
+
+Wiring with Wemos D1 mini: 
+
+  --------------------------------
+  | VS1053  | Wemos D1 | Other   |
+  --------------------------------
+  |   SCK   |   D5    |    -     |
+  |   MISO  |   D6    |    -     |
+  |   MOSI  |   D7    |    -     |
+  |   XRST  |    -    |    -     |
+  |   CS    |   D1    |    -     |
+  |   DCS   |   D0    |    -     |
+  |   DREQ  |   D2    |    -     |
+  |   5V    |    -    |   VCC    |
+  |   GND   |    -    |   GND    |
+  --------------------------------
+
+
+Wirings for 4-pin(CLK,SD,GND, +5v) Led Strip (WS2801):
+
+WEMOS D1 mini : 
+- CLK -> D4
+- SD  -> D3
+- GND -> G  (you have to have/create a splitted cable -> 1 IN 2 OUT)
+- +5v -> 3.3v
+
+Node MCU : --> actually not working with this Led Strip
+
+

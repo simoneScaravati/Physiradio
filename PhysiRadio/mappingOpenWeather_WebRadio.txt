@@ -1,0 +1,55 @@
+MAPPING FOR OPEN WEATHER API TO TRASLATE INTO SPECIFIC AUDIO STREAM:
+
+WEATHER CONDITION --> MUSICAL GENRE (INTRODUCE BIAS):
+
+Main:
+- Thunderstorm 
+- Drizzle
+- Rain
+- Snow
+- Clear
+- Clouds
+(Atmosphere)
+- Mist 	
+- Smoke 
+- Haze (like dirty mist)
+- Fog
+- Sand
+- Dust (guess it's meant like Dust Devil phenomenom)
+- Ash
+- Squall
+- Tornado
+
+
+RADIO STATIONS (HUGE THANKS RADIO.IT) : 
+
+//CALM RADIO - SOLO PIANO:          	http://streams.calmradio.com:1228/stream/1/
+//MEGA GYM - solo gym music :   	http://5.135.183.124:8069/stream
+//CHROMA METAL - solo metal :  		http://148.251.184.14:8022/;
+//AAH RADIO - solo classical/baroque:	http://78.129.251.150:10002/stream
+//101 Smooth Jazz - solo smooth jazz: 	http://www.vip-radios.fm/stream/101-Smooth-Jazz
+//Chroma Christmas - solo Xmas songs:	http://148.251.184.14:8044/;
+//Ostseewelle - So(u)mmer Hits:		http://streamosw.ir-media-tec.com/sommer/mp3-192/radiode
+//Radio Summer Love | We Love Summer:	http://s11.myradiostream.com:13494/stream/1/
+//360 Brain Radio - Chillout Ambient:	http://streaming.radionomy.com/360BrainMusic
+//Black Death (WildCat Radio):		http://144.217.253.136:8508/stream
+//1.FM - Chillout Lounge:		http://strm112.1.fm/chilloutlounge_mobile_mp3
+//Chroma Smooth Jazz:			http://148.251.184.14:8036/;
+//Lofi hip hop radio(lfhh.org) 		http://hyades.shoutca.st:8043/stream2
+
+
+
+MAPPING:
+Clear --> SUMMERHITS
+Snow  --> XMAS SONGS
+Thunderstorm | Squall | Tornado | Ash | Dust --> EXTREME METAL
+Drizzle | Rain | Fog | Mist 	--> 
+Sand  --> ?? 
+Clouds --> ?? 
+Smoke --> ?? 
+Haze --> ?
+
+
+
+
+TODO: amplierei il range delle condimeteo prese in considerazione scegliendo quelle più frequenti da noi (sarà da scrivere nel paper/tesi che la scelta va localizzata di volta in volta), TODISCUSS
