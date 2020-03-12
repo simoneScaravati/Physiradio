@@ -28,6 +28,7 @@
   $ picocom -b 115200 /dev/ttyUSB0 -g pico.log
 
 */
+
 #include "VS1053.h"
 #include "SimpleMap.h"
 #include <ESP8266WiFi.h>
@@ -141,12 +142,12 @@ void setup () {
     delay(1000);
 
     //Initialize leds
-#ifdef APA
-    FastLED.addLeds<APA102, DATA_PIN, CLOCK_PIN, BGR>(leds, NUM_LEDS); // versione atrent, però prima capire perché non funziona "elettricamente" (?)
-#else
-    FastLED.addLeds<WS2801, DATA_PIN, CLOCK_PIN, BGR>(leds, NUM_LEDS);
-#endif
-    setLedsColor(CRGB::Black);
+    #ifdef APA
+        FastLED.addLeds<APA102, DATA_PIN, CLOCK_PIN, BGR>(leds, NUM_LEDS); // versione atrent, però prima capire perché non funziona "elettricamente" (?)
+    #else
+        FastLED.addLeds<WS2801, DATA_PIN, CLOCK_PIN, BGR>(leds, NUM_LEDS);
+    #endif
+        setLedsColor(CRGB::Black);
 
     //Weather Map
     weatherMap = new SimpleMap<String, radioStation>([](String &a, String &b) -> int {
@@ -230,8 +231,8 @@ void setup () {
     //scheduler.addTask(t_leds);
     //Serial.println("added led task");
 
-    //t_api.enable();
-    //Serial.println("Enabled api task");
+    t_api.enable();
+    Serial.println("Enabled api task");
     t_stream.enable();
     Serial.println("Enabled stream task");
     t_mqtt.enable();
