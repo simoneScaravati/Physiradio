@@ -13,8 +13,6 @@
   - CPU Frequency: 80Hz  --> at 160Hz Wemos D1 gets hot
   - BOARD: LOLIN(WEMOS) D1 mini PRO
 
-  TODO inserire licenza GPL
-
   TODO : codice e documentazione in inglese
 
   BUG non funziona se attaccato da solo (alimentatore o powerpack) --> [simone] a me funziona correttamente
@@ -23,6 +21,10 @@
   --> [simone] In che senso che si può introdurre variabilità?
 
   RFE aggiungere OTA (quando sistemato bug "standalone")
+
+  RFE modificare struct della radioStation con i colori per refactoring codice
+
+  RFE risolvere questione DNS acquisento solo la prima volta l'IP e la porta del sito
 
   NB: per fare i test/demo/questionari registrando la sessione:
   $ picocom -b 115200 /dev/ttyUSB0 -g pico.log

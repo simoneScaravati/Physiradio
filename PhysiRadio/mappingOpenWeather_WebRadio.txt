@@ -52,4 +52,3 @@ Haze --> ?
 
 
 
-TODO: amplierei il range delle condimeteo prese in considerazione scegliendo quelle più frequenti da noi (sarà da scrivere nel paper/tesi che la scelta va localizzata di volta in volta), TODISCUSS
