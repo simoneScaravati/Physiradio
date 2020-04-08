@@ -22,9 +22,7 @@
 
   RFE aggiungere OTA (quando sistemato bug "standalone")
 
-  RFE modificare struct della radioStation con i colori per refactoring codice
-
-  RFE risolvere questione DNS acquisento solo la prima volta l'IP e la porta del sito
+  RFE risolvere questione DNS acquisento solo la prima volta l'IP e la porta del sito  --> in realtá lo fa di default, é solo molto lento a convertire certi indirizzi alla prima connessione
 
   NB: per fare i test/demo/questionari registrando la sessione:
   $ picocom -b 115200 /dev/ttyUSB0 -g pico.log
@@ -43,24 +41,22 @@
 #define VS1053_CS     D1
 #define VS1053_DCS    D0
 #define VS1053_DREQ   D2
-//#define VOLUME 75.0		//default Volume for the output jack
-#define BUFF 32		  	//buffer size for stream to VS1053 (32bytes is the maximum)
-#define COUNT_FADE 0.3	//constant for audio fade in/out
+//#define VOLUME 75.0	  	//default Volume for the output jack
+#define BUFF 32		     	  //buffer size for stream to VS1053 (32bytes is the maximum)
+#define COUNT_FADE 0.3	  //constant for audio fade in/out
 //led stripe defs
 #define NUM_LEDS 5
 
-// atrent: non bellissimo, ma il define APA l'ho messo in wifi.h, tu puoi lasciare tutto così e funziona
-
+//ifdef APA to use APA led stripes instead of WS2812. I suggest to put the definition in wifi.h file
 #ifdef APA
-// atrent APA102
+// APA102
 #define DATA_PIN D4
 #define CLOCK_PIN D8
 #else
-// simone WS2812
+// WS2812
 #define DATA_PIN D3
 #define CLOCK_PIN D4
 #endif
-
 
 //array of leds colors
 CRGB leds[NUM_LEDS];
@@ -70,29 +66,28 @@ typedef struct radioStation {
     char *host;
     char *path;
     int port;
-} radioStation; // TODO inserire il colore del led in questa struct in modo da non dover fare un mega switch dopo  [simone]-> Sì, ha senso
+    CRGB color;
+} radioStation;
 
 //radio stations
-//radioStation radioClassical = {"Chroma Classical - solo classical music", "chromaradio.com", "/;", 8008};
 //HINT: at the moment, using some psecific symbolic names (in URL) as "host", it's hard for ESP8266, because DNS conversion has too big latency.
+radioStation radioClassical = {"Chroma Classical - solo classical music", "148.251.184.14", "/;", 8008, CRGB::Magenta};
+radioStation radioMetal = {"CHROMA METAL - solo metal", "148.251.184.14", "/;", 8022, CRGB::Red};
+radioStation radioXmas = {"Chroma Christmas - solo Xmas songs", "148.251.184.14", "/;", 8044, CRGB::White};
+radioStation radioSummer = {"Energy rsi Summer", "energysummer.ice.infomaniak.ch", "/energysummer-high.mp3", 80, CRGB::Yellow};
+radioStation radioSmoothJazz = {"Chroma Smooth Jazz:", "148.251.184.14", "/;", 8036, CRGB::BlueViolet};
+radioStation radioExtremeMetal = {"Radio Caprice - Brutal Death Metal", "79.111.119.111", "/;", 9075, CRGB::DarkGreen};
+radioStation radioLoFi = {"Lofi hip hop radio(lfhh.org)", "hyades.shoutca.st", "/stream2", 8043, CRGB::DarkBlue};
 
-radioStation radioClassical = {"Chroma Classical - solo classical music", "148.251.184.14", "/;", 8008};
-radioStation radioMetal = {"CHROMA METAL - solo metal", "148.251.184.14", "/;", 8022};
-radioStation radioXmas = {"Chroma Christmas - solo Xmas songs", "148.251.184.14", "/;", 8044};
-radioStation radioSummer = {"Energy rsi Summer", "energysummer.ice.infomaniak.ch", "/energysummer-high.mp3", 80};
-radioStation radioSmoothJazz = {"Chroma Smooth Jazz:", "148.251.184.14", "/;", 8036};
-radioStation radioExtremeMetal = {"Radio Caprice - Brutal Death Metal", "79.111.119.111", "/;", 9075};
-radioStation radioLoFi = {"Lofi hip hop radio(lfhh.org)", "hyades.shoutca.st", "/stream2", 8043};
+//test -> it's a controlled bug to make things work  ---> debug this in future
+radioStation radioTest = {"test", "test", "/stream2", 8043, CRGB::Black};
 
-//test -> it's a controlled bug to make things work
-radioStation radioTest = {"test", "test", "/stream2", 8043};    //
-
-//mapping OpenWeather -> WebRadio
+//mapping OpenWeather condition name -> WebRadio (as radioStation defined before)
 SimpleMap<String, radioStation> *weatherMap;
-SimpleMap<String, CRGB> *colorMap;
-
 
 VS1053 player(VS1053_CS, VS1053_DCS, VS1053_DREQ);
+
+//three different WiFi client to handle Api request, music streaming and Mqtt connetion separately
 WiFiClient api;
 WiFiClient music;
 WiFiClient mqttClient;
@@ -124,16 +119,15 @@ void fade_in_audio();
 void fade_out_audio();
 void setLedsColor(CRGB color);
 void doMapping(String weather);
-//void task_ledsCallback();
+//void task_ledsCallback();         //led color stripe --> in the case you want animate leds
 
 //Tasks
 Task t_api(10 * TASK_SECOND, TASK_FOREVER, &task_apiCallback);  //call weather api function every 15s
 Task t_stream(0, TASK_FOREVER, &task_audioStreamCallback);      //call stream task always
-Task t_mqtt(100, TASK_FOREVER, &task_mqttCallback); //call mqtt callback to get mqtt messages
-//Task t_leds(500, TASK_FOREVER , &task_ledsCallback);            //led color stripe --> in the case you want animate leds
+Task t_mqtt(100, TASK_FOREVER, &task_mqttCallback);             //call mqtt callback to get mqtt messages
+//Task t_leds(500, TASK_FOREVER , &task_ledsCallback);          //led color stripe --> in the case you want animate leds
 
 void setup () {
-    delay(1000);
     //SERIAL
     Serial.begin(115200);
     Serial.println("\n\nWelcome to PhysiRadio!!\n");
@@ -145,7 +139,7 @@ void setup () {
 
     //Initialize leds
     #ifdef APA
-        FastLED.addLeds<APA102, DATA_PIN, CLOCK_PIN, BGR>(leds, NUM_LEDS); // versione atrent, però prima capire perché non funziona "elettricamente" (?)
+        FastLED.addLeds<APA102, DATA_PIN, CLOCK_PIN, BGR>(leds, NUM_LEDS);
     #else
         FastLED.addLeds<WS2801, DATA_PIN, CLOCK_PIN, BGR>(leds, NUM_LEDS);
     #endif
@@ -173,29 +167,6 @@ void setup () {
     weatherMap->put("Smoke", radioClassical);
     weatherMap->put("Haze", radioClassical);
     weatherMap->put("Sand", radioClassical);
-
-    //color Map
-    colorMap = new SimpleMap<String, CRGB>([](String &a, String &b) -> int {
-        if (a == b) return 0;      // a and b are equal
-        else if (a > b) return 1;  // a is bigger than b
-        else return -1;            // a is smaller than b
-    });
-
-    colorMap->put("Clear", CRGB::Yellow);
-    colorMap->put("Snow", CRGB::White);
-    colorMap->put("Thunderstorm", CRGB::DarkGreen);
-    colorMap->put("Tornado", CRGB::DarkGreen);
-    colorMap->put("Squall", CRGB::DarkGreen);
-    colorMap->put("Ash", CRGB::DarkGreen);
-    colorMap->put("Dust", CRGB::DarkGreen);
-    colorMap->put("Rain", CRGB::BlueViolet);
-    colorMap->put("Drizzle", CRGB::BlueViolet);
-    colorMap->put("Clouds", CRGB::BlueViolet);
-    colorMap->put("Mist", CRGB::BlueViolet);
-    colorMap->put("Fog", CRGB::BlueViolet);
-    colorMap->put("Haze", CRGB::Magenta);
-    colorMap->put("Smoke", CRGB::Magenta);
-    colorMap->put("Sand", CRGB::Magenta);
 
     //WIFI STARTING
     Serial.print("Connecting to SSID ");
@@ -335,7 +306,7 @@ void task_apiCallback() {
     Serial.print(humidity);
     Serial.println(" % humidity");
 
-    //MAPPING GOES HERE
+    //Extra mapping goes here
     doMapping(weather_0_main);
 }
 
@@ -356,7 +327,7 @@ void task_audioStreamCallback() {
         player.playChunk(mp3buff, bytesread);
     }
 
-    //code to turn on/off the volume and dynamic radio station change
+    //code to control Physiradio easily by Serial input
     if (Serial.available() > 0) {
         // read the incoming byte for serial input control;
         incomingByte = Serial.read();
@@ -399,57 +370,50 @@ void task_audioStreamCallback() {
             Serial.println(TMP_VOLUME);
             break;
 
-        //case that STOPS THE API
+        //case that STOPS THE API task
         case 'r':
             t_api.disable();
             Serial.println("API task Disabled");
             break;
 
-        //CASE THAT ENABLE THE API
+        //CASE THAT ENABLE THE API task
         case 'e':
             t_api.enable();
             Serial.println("API task Enabled");
             break;
 
         case '1':
-            Serial.println("Radio 1 - Classical -> Smoke/Mist ");// atrent: queste stringhe metterle nella struct e si stampa da connect_radio
-            setLedsColor(CRGB::Magenta); // atrent: idem con patate
+            Serial.println("Radio 1 -> Smoke/Mist -> ");
             connect_radio(&radioClassical);
             break;
 
         case '2':
-            Serial.println("Radio 2 - Metal -> Clear(sun) + High humidity ");
-            setLedsColor(CRGB::Red);
+            Serial.println("Radio 2 -> Clear(sun) + High humidity -> ");
             connect_radio(&radioMetal);
             break;
 
         case '3':
-            Serial.println("Radio 3 - SmoothJazz -> Rain/Drizzle/Cloud/Fog  + low humidity");
-            setLedsColor(CRGB::BlueViolet);
+            Serial.println("Radio 3 -> Rain/Drizzle/Cloud/Fog  + low humidity -> ");
             connect_radio(&radioSmoothJazz);
             break;
 
         case '4':
-            Serial.println("Radio 4 - SummerHits -> Sunny + low humidity");
-            setLedsColor(CRGB::Yellow);
+            Serial.println("Radio 4 -> Clear(sun) + low humidity -> ");
             connect_radio(&radioSummer);
             break;
 
         case '5':
-            Serial.println("Radio 5 - ExtremeMetal -> Thunderstorm/Tornado...");
-            setLedsColor(CRGB::DarkGreen);
+            Serial.println("Radio 5 -> Thunderstorm/Tornado... -> ");
             connect_radio(&radioExtremeMetal);
             break;
 
         case '6':
-            Serial.println("Radio 6 - LoFi -> Rain/Drizzle/Cloud/Fog  + High humidity" );
-            setLedsColor(CRGB::DarkBlue);
+            Serial.println("Radio 6 -> Rain/Drizzle/Cloud/Fog  + High humidity -> ");
             connect_radio(&radioLoFi);
             break;
 
         case '7':
-            Serial.println("Radio 7 - Xmas Songs -> Snow");
-            setLedsColor(CRGB::White);
+            Serial.println("Radio 7 -> Snow -> ");
             connect_radio(&radioXmas);
             break;
 
@@ -471,7 +435,7 @@ void task_mqttCallback() {
     psclient.loop();
 }
 
-//callback assigned to all mqtt client
+//callback assigned to all mqtt clients
 void mqttCallback(char* topic, byte* payload, unsigned int length) {
 
     //parsing the payload
@@ -538,49 +502,42 @@ void mqttCallback(char* topic, byte* payload, unsigned int length) {
         if(strcmp(msg, "station1") == 0) {
             Serial.println(msg);
             Serial.println("Radio 1 - Classical -> Smoke/Haze");
-            setLedsColor(CRGB::Magenta);
             connect_radio(&radioClassical);
         }
 
         if(strcmp(msg, "station2") == 0) {
             Serial.println(msg);
             Serial.println("Radio 2 - Metal -> Clear(sun) + High humidity");
-            setLedsColor(CRGB::Red);
             connect_radio(&radioMetal);
         }
 
         if(strcmp(msg, "station3") == 0) {
             Serial.println(msg);
             Serial.println("Radio 3 - SmoothJazz -> Rain/Drizzle/Cloud/Fog  + low humidity");
-            setLedsColor(CRGB::BlueViolet);
             connect_radio(&radioSmoothJazz);
         }
 
         if(strcmp(msg, "station4") == 0) {
             Serial.println(msg);
             Serial.println("Radio 4 - SummerHits -> Sunny + low humidity");
-            setLedsColor(CRGB::Yellow);
             connect_radio(&radioSummer);
         }
 
         if(strcmp(msg, "station5") == 0) {
             Serial.println(msg);
             Serial.println("Radio 5 - ExtremeMetal -> Thunderstorm/Tornado...");
-            setLedsColor(CRGB::DarkGreen);
             connect_radio(&radioExtremeMetal);
         }
 
         if(strcmp(msg, "station6") == 0) {
             Serial.println(msg);
             Serial.println("Radio 6 - LoFi -> Rain/Drizzle/Cloud/Fog  + High humidity");
-            setLedsColor(CRGB::DarkBlue);
             connect_radio(&radioLoFi);
         }
 
         if(strcmp(msg, "station7") == 0) {
             Serial.println(msg);
             Serial.println("Radio 7 - Xmas Songs -> Snow");
-            setLedsColor(CRGB::White);
             connect_radio(&radioXmas);
         }
     }
@@ -604,8 +561,8 @@ void reconnect() {
             // TODO inviare messaggio di "saluto" (con IP e altro status) per avere un mini debug anche via MQTT
 
             // subscribe to all topics
-            //psclient.subscribe("#");
-            // all subtopic
+            // psclient.subscribe("#");
+            // all subtopics:
             psclient.subscribe("PhysiRadio/#");
 
         } else {
@@ -616,23 +573,20 @@ void reconnect() {
 }
 
 void doMapping(String weather) {
-    if(weatherMap->has(weather) & colorMap->has(weather)) {
+    if(weatherMap->has(weather)) {
 
         Serial.println("Doing mapping for " + weather + " weather");
 
         radioStation tempRadio = weatherMap->get(weather);
-        CRGB tempColor = colorMap->get(weather);
 
         //doing cases for high humidity levels  --> https://it.wikipedia.org/wiki/Umidit%C3%A0
         if(humidity >= 85) { //
             if ( (tempRadio.name).equals(radioSummer.name) ) {
                 tempRadio = radioMetal;
-                tempColor = CRGB::Red;
             }
 
             if( (tempRadio.name).equals(radioSmoothJazz.name) ) {
                 tempRadio = radioLoFi;
-                tempColor = CRGB::DarkBlue;
             }
 
         }
@@ -641,14 +595,12 @@ void doMapping(String weather) {
         //Serial.print(tempRadio.host);Serial.println(httpHost);
 
         //if new radio is different from the actual then connect
-        //look host & port , because some radio uses same host for multiple web radio
+        //look host OR port, because some radios use same host for multiple web radio switching on ports
         if((strcmp((tempRadio.host), httpHost) != 0) | (tempRadio.port != httpPort) ) {
             connect_radio(&tempRadio);
         } else {
             Serial.println("Already on the same station");
         }
-
-        setLedsColor(tempColor);
 
     } else {
         Serial.println("Weather not mapped");
@@ -704,6 +656,7 @@ void connect_radio(radioStation *radio) {
                 "Host: " + httpHost + "\r\n" +
                 "Connection: close\r\n\r\n");
 
+    setLedsColor(radio->color);
     fade_in_audio();
     Serial.println(radio->name);
 
