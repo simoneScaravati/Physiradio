@@ -4,7 +4,7 @@
 ##HINT: all those MQTT calls must be executed from a device which is able to instantiate a MQTT publish command (i.e. Mosquitto client or similar)
 
 General form:
-mosquitto_pub -h "server_name" -t PhysiRadio/"topic" -m "parameter"
+mosquitto_pub -h server_name -t PhysiRadio/topic -m "parameter"
 
 ## Commands receivable, divided by topics: 
 ### Volume
@@ -14,17 +14,17 @@ mosquitto_pub -h "server_name" -t PhysiRadio/"topic" -m "parameter"
 - Volume unmute
 
 - EXAMPLES : 
-- mosquitto_pub -h "server_name" -t PhysiRadio/Volume -m "+1"
-- mosquitto_pub -h "server_name" -t PhysiRadio/Volume -m "mute"
+- mosquitto_pub -h server_name -t PhysiRadio/Volume -m "+1"
+- mosquitto_pub -h server_name -t PhysiRadio/Volume -m "mute"
 
 ### City (watch out: Cities have to exist on OpenWeather system, and the name must be written, possibly, in English) 
 - City "name_of_a_city"  (surprisingly NON-case sensitive , thanks to OpenWeather API)
 - City "name_of_a_city, COUNTRY"  (for those cities which have the same name but are in different countries) 
 
 - EXAMPLES : 
-- mosquitto_pub -h "server_name" -t PhysiRadio/City -m "London"
-- mosquitto_pub -h "server_name" -t PhysiRadio/City -m "New York"
-- mosquitto_pub -h "server_name" -t PhysiRadio/City -m "Venice, IT" (there's also in US) 
+- mosquitto_pub -h server_name -t PhysiRadio/City -m "London"
+- mosquitto_pub -h server_name -t PhysiRadio/City -m "New York"
+- mosquitto_pub -h server_name -t PhysiRadio/City -m "Venice, IT" (there's also in US) 
 
 ### Radio Station (for testing/field testing reasons, it's useful to force the change of radio station)  
 
@@ -39,11 +39,10 @@ mosquitto_pub -h "server_name" -t PhysiRadio/"topic" -m "parameter"
 - Station station7	( Xmas Songs -> Snow )
 
 - EXAMPLES : 
-- mosquitto_pub -h "server_name" -t PhysiRadio/Station -m "station3"
-- mosquitto_pub -h "server_name" -t PhysiRadio/Station -m "enable"
+- mosquitto_pub -h server_name -t PhysiRadio/Station -m "station3"
+- mosquitto_pub -h server_name -t PhysiRadio/Station -m "enable"
 
-
-# Future developements
+# Future developments
 
 ##Topics with "receiver"client distinction
 
@@ -57,11 +56,11 @@ For example, we could have multiple Physiradios located in various rooms of a ho
 - etc..
 
 Specific examples: 
-- mosquitto_pub -h "server_name" -t PhysiRadio/allClasses/City -m "Tokyo"
-- mosquitto_pub -h "server_name" -t PhysiRadio/class1/City -m "New York"
-- mosquitto_pub -h "server_name" -t PhysiRadio/class2/City -m "Venice, IT" 
-- mosquitto_pub -h "server_name" -t PhysiRadio/class3/Volume -m "+1"
-- mosquitto_pub -h "server_name" -t PhysiRadio/class4/Volume -m "mute"
+- mosquitto_pub -h server_name -t PhysiRadio/allClasses/City -m "Tokyo"
+- mosquitto_pub -h server_name -t PhysiRadio/class1/City -m "New York"
+- mosquitto_pub -h server_name -t PhysiRadio/class2/City -m "Venice, IT" 
+- mosquitto_pub -h server_name -t PhysiRadio/class3/Volume -m "+1"
+- mosquitto_pub -h server_name -t PhysiRadio/class4/Volume -m "mute"
 
 (Best practice suggested here:  https://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices/ )
 
