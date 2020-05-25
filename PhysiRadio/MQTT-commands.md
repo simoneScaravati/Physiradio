@@ -6,7 +6,7 @@
 General form:
 mosquitto_pub -h "server_name" -t PhysiRadio/"topic" -m "parameter"
 
-## Commands receivable 
+## Commands receivable, divided by topics: 
 ### Volume
 - Volume +1
 - Volume -1
@@ -42,7 +42,10 @@ mosquitto_pub -h "server_name" -t PhysiRadio/"topic" -m "parameter"
 - mosquitto_pub -h "server_name" -t PhysiRadio/Station -m "station3"
 - mosquitto_pub -h "server_name" -t PhysiRadio/Station -m "enable"
 
-#Topics with "receiver"client distinction
+
+# Future developements
+
+##Topics with "receiver"client distinction
 
 In the current state of development, the interaction between "publisher" clients (devices that use message brokers, like Mosquitto, or the Physiradio MQTT Interface app devepoled in this repo) and Physiradio(s) is full broadcast: Physiradio(s) are subscribed to all topics under "Physiradio/#" on the broker, and all messages published by the "publisher devices" under that topic are sent by the broker to all active Physiradios, concurrently and without filters of any kind. 
 Another implemention could be to use an ACL (access control list) mechanism, for being able to select which end-device (aka which Physiradio) has to receive the specific message by simply adding one (or more) level of the topics, creating a division by classes. 
@@ -62,7 +65,7 @@ Specific examples:
 
 (Best practice suggested here:  https://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices/ )
 
-# Todo / Future developements
+###Other implementations
 
 - data2physical <json> : set up custom mapping (in JSON maybe?)
 
@@ -73,7 +76,7 @@ Specific examples:
 - currentVolume ...
 - currentData ...
 - currentUrl ...
-- mem
+- memoryUsage
 - etc... 
 
 
