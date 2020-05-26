@@ -1,19 +1,22 @@
 /*
-  MQTT remote control e status --> mqtt topics defined externally
+  MQTT remote control e status: see MQTT-commands.md
 
   Wirings : see wirings.txt
 
   Dependencies:
   -VS1053 library by baldram (https://github.com/baldram/ESP_VS1053_Library)
-  -ESP8266Wifi
   -https://github.com/spacehuhn/SimpleMap  -> dictionaryMap
+  -ESP8266Wifi
+  -PubSubClient (mqtt library)
+  -ArduinoJson	(json parser for arduino)
+  -TaskScheduler : Copyright (c) 2015-2019, Anatoli Arkhipenko.
+  -FastLED (led strip controls)
+
 
   IDE Settings (Tools):
   - IwIP Variant: v2.0 Higher Bandwidth
   - CPU Frequency: 80Hz  --> at 160Hz Wemos D1 gets hot
   - BOARD: LOLIN(WEMOS) D1 mini PRO
-
-  TODO : codice e documentazione in inglese
 
   BUG non funziona se attaccato da solo (alimentatore o powerpack) --> [simone] a me funziona correttamente
 
@@ -182,7 +185,7 @@ void setup () {
     Serial.println(WiFi.localIP());
 
     //MQTT SETUP
-    psclient.setServer("mqtt.atrent.it", 1883);
+    psclient.setServer("mqtt.atrent.it", 1883); //server name, port TCP
     psclient.setCallback(mqttCallback);
     reconnect();
 
