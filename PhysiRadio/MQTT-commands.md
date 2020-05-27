@@ -1,10 +1,10 @@
 
-#Topics and Parameters to interact with PhysiRadio
+#Topics and payloads to interact with PhysiRadio
 
 ##HINT: all those MQTT calls must be executed from a device which is able to instantiate a MQTT publish command (i.e. Mosquitto client or similar)
 
 General form:
-mosquitto_pub -h server_name -t PhysiRadio/topic -m "parameter"
+mosquitto_pub -h server_name -t PhysiRadio/topic -m "payload"
 
 ## Commands receivable, divided by topics: 
 ### Volume
