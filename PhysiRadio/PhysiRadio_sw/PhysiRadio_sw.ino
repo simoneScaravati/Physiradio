@@ -125,9 +125,9 @@ void doMapping(String weather);
 //void task_ledsCallback();         //led color stripe --> in the case you want animate leds
 
 //Tasks
-Task t_api(10 * TASK_SECOND, TASK_FOREVER, &task_apiCallback);  //call weather api function every 15s
-Task t_stream(0, TASK_FOREVER, &task_audioStreamCallback);      //call stream task always
-Task t_mqtt(100, TASK_FOREVER, &task_mqttCallback);             //call mqtt callback to get mqtt messages
+Task t_api(10 * TASK_SECOND, TASK_FOREVER, &task_apiCallback);  //call weather api function, every 10s
+Task t_stream(0, TASK_FOREVER, &task_audioStreamCallback);      //call audio stream task, always
+Task t_mqtt(100, TASK_FOREVER, &task_mqttCallback);             //call mqtt callback to get mqtt messages, every 100ms
 //Task t_leds(500, TASK_FOREVER , &task_ledsCallback);          //led color stripe --> in the case you want animate leds
 
 void setup () {
