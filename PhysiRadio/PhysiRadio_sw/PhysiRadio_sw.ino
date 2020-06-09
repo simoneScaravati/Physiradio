@@ -3,14 +3,14 @@
 
   Wirings : see wirings.txt
 
-  Dependencies:
-  -VS1053 library by baldram (https://github.com/baldram/ESP_VS1053_Library)
-  -https://github.com/spacehuhn/SimpleMap  -> dictionaryMap
+  Library dependencies:
+  -VS1053.h : VS1053 library (https://github.com/baldram/ESP_VS1053_Library), Copyright 2017-2020 © Marcin Szałomski 
+  -SimpleMap.h: dictionaryMap for Arduino (https://github.com/spacehuhn/SimpleMap), Copyright 2018-2020 © Stefan Kremser 
+  -ArduinoJson: Copyright 2014-2020 © Benoît Blanchon
+  -TaskScheduler: Copyright 2015-2019 © Anatoli Arkhipenko.
   -ESP8266Wifi
-  -PubSubClient (mqtt library)
-  -ArduinoJson	(json parser for arduino)
-  -TaskScheduler : Copyright (c) 2015-2019, Anatoli Arkhipenko.
-  -FastLED (led strip controls)
+  -PubSubClient  
+  -FastLED 
 
 
   IDE Settings (Tools):
