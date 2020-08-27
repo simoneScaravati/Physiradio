@@ -13,6 +13,7 @@ Main features of Arduino script:
 - Implementation of Task Scheduler library
 - Interface with VS1053 codec audio
 - Interrogation of remote APIs and webradio streams
+- Implementation of MQTT protocol
 
 ### Unity App Install Tips
 **Win/Linux and Mac Os Standalone software developed totally not exported just like the Android version.**
