@@ -1,0 +1,904 @@
+alt.chi: Food Fictions
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+Data Edibilization: Representing Data
+with Food
+Yun Wang
+The Hong Kong University of
+Science and Technology
+Clear Water Bay, HK
+ywangch@cse.ust.hk
+
+Qiong Luo
+The Hong Kong University of
+Science and Technology
+Clear Water Bay, HK
+luo@cse.ust.hk
+
+Xiaojuan Ma
+The Hong Kong University of
+Science and Technology
+Clear Water Bay, HK
+mxj@cse.ust.hk
+
+Huamin Qu
+The Hong Kong University of
+Science and Technology
+Clear Water Bay, HK
+huamin@cse.ust.hk
+
+Abstract
+Data communication is critical in data science. We propose
+data edibilization, i.e., encoding data with edible materials,
+as a novel approach to leverage multiple sensory channels
+to convey data stories. We conduct a preliminary data tasting workshop to explore how users interact with and interpret data edibilization. Based on the participants’ feedback,
+we summarize the advantages of edibilization in terms of
+attractiveness, richness, memorability, affectiveness, and
+sociability. We also identify several challenges with data
+edibilization. We discuss possible pragmatic processes, enabling technologies, and potential research opportunities to
+provide insights into the design space of data edibilization
+and its practicality.
+
+Author Keywords
+Data edibilization; data cuisine; information visualization;
+physicalization.
+
+ACM Classification Keywords
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for components of this work owned by others than ACM
+must be honored. Abstracting with credit is permitted. To copy otherwise, or republish,
+to post on servers or to redistribute to lists, requires prior specific permission and/or a
+fee. Request permissions from Permissions@acm.org.
+CHI’16 Extended Abstracts, May 07-12, 2016, San Jose, CA, USA
+Copyright © 2016 ACM. ISBN 978-1-4503-4082-3/16/05$15.00.
+DOI: http://dx.doi.org/10.1145/2851581.2892570
+
+H.5.m [Information interfaces and presentation (e.g., HCI)]:
+Miscellaneous
+
+Introduction
+Data communication is an essential component in data science. By articulating findings and insights from data, the
+values of data can be better realized. Researchers and
+
+409
+
+alt.chi: Food Fictions
+
+Figure 1: A 3D-printed pastry shell
+embedded with yeast, mushrooms,
+edible soil, and sprouts, © Chloé
+Rutzerveld [55].
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+practitioners have been experimenting with different ways
+to tell stories about data [15]. Visualization is the most commonly used technique. Vision is a primary channel for humans to obtain information [21]. A concisely and meticulously designed visualization system is able to provide people with an instant understanding of the characteristics of
+the data [31, 40]. The introduction of data sonification [34]
+and physicalization [27] demonstrates the possibility and
+potential of involving the sense of hearing and touching in
+analysis and exploration of data.
+
+widely accessible. For example, IBM Chef Watson uses
+machine learning techniques to automatically generate new
+recipes of flavorful dishes that suit customers’ needs and
+tastes [10]. Smart cooking appliances and 3D food printers
+can automate the food production process to a great extent.
+They are becoming more affordable for ordinary households [59]. Attempts to use food as a data communication
+medium have been made [2, 28, 29]. However, no systematic research on data edibilization has been conducted, to
+the best of our knowledge.
+
+The design space of data representation can be further expanded to include smell and taste in a compatible/harmonious
+manner, making the data representation even more vivid
+and memorable [52]. For example, Figure 1 shows a 3Dprinted biscuit with edible mushrooms growing in it. If this
+biscuit is served as a snack at a workplace, people can
+track their working hours, the temperature, and humidity in
+the office by monitoring the growth of the mushroom. Employees can compare and taste mushrooms displaying the
+working conditions at the end of the day. In addition, choosing seasonal, local ingredients will add cultural/regional flavor to the whole experience.
+
+We summarize the contributions of this paper as follows:
+(1) We define data edibilization as a means of presenting
+data, and conduct a preliminary study in the form of a Data
+Tasting Workshop to gain an in-depth understanding of the
+advantages and challenges of data edibilization.
+(2) We examine the different components, namely, anticipation, production, and consumption, that constitute an
+integrated experience of data edibilization.
+(3) We propose three design processes, namely, foodbased, data-driven, and hybrid approach to construct data
+edibilization.
+(4) We compare data edibilization with existing data representation methods, identify possible research opportunities,
+and sketch a research agenda for the Human-Computer
+Interaction community.
+
+In this paper, we define the process or an instance of communicating data using attributes of edible materials, such
+as appearance, texture, sound, taste, and smell of foods
+and drinks as Data Edibilization. The definition shows that
+data edibilization is related to but extends beyond food production. When we cook food, we try to make the dishes
+enjoyable and nutritious. Similarly, when we “cook” data, we
+leverage the rich sensory experiences and the positive psychological effects that food entails to tell an interesting story
+with data, instead of merely showing numbers.
+Emerging technologies have made the process of transforming data to an edible presentation easier and more
+
+Characteristics of Data Edibilization
+Data edibilization adds another layer of complexity. Designers need to consider the data-ingredient fit to create a
+coherent experience. There have been some empirical exploration of data edibilization, and we divide the outcomes
+into two categories.
+The first style of edibilization reserves the look of an ordinary dish but with data encoded. For example, six fruit-
+
+410
+
+alt.chi: Food Fictions
+
+Figure 2: The designer of Slow
+Cuban Hummus used the cost of
+black beans to indicate the cost of
+internet usage [28], © Data
+Cuisine. ( Photo by Uli Holz)
+
+Figure 3: In Taste of Migration,
+nationalities are represented by the
+typical food of each country [28],
+© Data Cuisine.
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+cakes (a.k.a., Christmas stollen) are used to represent a
+person’s Christmas spending through the amount of nuts
+and dried tropical mixes in the dessert. It is rather easy to
+perceive the individual differences between each fruitcake
+visually [1]. Another example in Figure 2 is to show the cost
+of one minute of Internet usage in Cuba, compared with the
+cost of black beans. By showing 37.5 g black beans that
+cost the equivalent of one minute of Internet, people can
+easily connect intangible Internet usage with tangible food.
+The second style of edibilization simply reconstructs common data visualizations such as bar charts and pie charts
+using food as a medium. For instance, Figure 3 is an edible
+stacked bar chart showing the amount of non-Finnish people living in Finland generated in a data cuisine workshop
+[28]. Nationalities of the immigrants are represented by the
+typical food of each corresponding country, e.g., salmon for
+the Swedish and rice for the Chinese.
+To gain a better understanding of users’ perception and behaviors with different styles of edibilization, we conducted
+a preliminary user study. We discuss the advantages and
+challenges of this novel experience with data from subjective feedback.
+Preliminary User Study
+We organized a “Data Tasting Workshop” with 15 participants to compare the differences between the visualization
+and edibilization of three distinct datasets.
+Selected Datasets and Edibilization Design
+We obtained three datasets together with the original visualizations from the Internet. The first dataset is about
+employment in agriculture in four Asian countries, namely,
+China, India, Japan and Korea.1 We edibilized this data as
+1
+
+Employment in agriculture. http://wdi.worldbank.org/table/3.2
+
+savory cracker sauce, which is completely different from
+the original visualization – a geographic heatmap. Particularly, we exploitd the signature sauce of each country: thick
+broad-bean sauce for China, curry spread for India, wasabi
+paste for Japan, and Kimchi dip for Korean (Figure 4). The
+amount of sauce placed on a cracker depends on the size
+of agricultural population in the corresponding country. This
+edibilization is of the first style.
+The second dataset compares the number of annual STEM
+degree earners with the number of annual STEM job openings.2 The job opening data are from Bureau of Labor Statistics,3 which is illustrated by a bar chart. We made a garden vegetable with ham salad to encode this data (Figure 4). More specifically, the bread crumbs at the bottom
+correspond to available jobs, salty ham represents associates degree/certificate holders, sweet corn kernels denote
+bachelors, diced sour tomatoes refer to masters, and bitter
+arugula symbolizes PhD graduates. We stacked the ingredients on top of one another in a transparent glass. The
+quantity of each ingredient reflects the value of the data entry. The final edibilization looks similar to a not-yet-blended
+salad, which evokes a flavor of an overlay bar chart.
+The third dataset uses a pie chart to show the percentage
+of Asian Americans who see themselves as “very different from" versus “the same as" typical Americans, or inbetween.4 We used the appearance of the pie chart and
+replace the color patches with cheese cubes (Figure 4).
+Particularly, we mapped the percentages to the colors and
+tastes of the cheese: white as typical American, orange as
+2
+Degree data are from National Science Foundation.
+http://www.nsf.gov/statistics/seind12/appendix.htm
+3
+Bureau of Labor Statistics. http://www.bls.gov/emp/
+4
+Asian Americans. http://www.pewsocialtrends.org/asianamericansgraphics/
+
+411
+
+alt.chi: Food Fictions
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+the country of origin, and a mix of the two colors as biculturalism. This edibilization is of the second style.
+Participants, Study Setup, and Procedure
+We recruited 15 volunteers (ages ranged from 21 to 37,
+M=26, SD=3.5; 3 females) via advertisements posted in a
+local university for the data tasting workshop. All participants had used data visualization before.
+At the beginning of the workshop, we informed the participants that we were experimenting with a new way to represent data without any specific instructions to study how
+users interact with edibilization naturally. Then, the participants were free to explore the three examples we provided.
+Each example consisted of a sheet of paper showing the
+title and visualization of the dataset, the edibilization we
+designed, and a legend plate with samples of all the ingredients used. The participants could pick up and observe the
+edibilization design closely, discuss with one another, and
+taste the “legend” at will (Figure 5).
+
+Figure 4: The edibilization for
+three different datasets.
+
+We asked the participants to document their experience
+and write down detailed interpretations of each edibilization. At the end of the workshop, the participants rated to
+what extent edibilization is superior to visualization (or vice
+versa) on different attributes. We used a bidirectional Likert
+scale between -5 and 5 to measure their responses (Figure 6). We then conducted one-on-one semi-structured
+interviews to learn more about the perceived characteristics
+of data edibilization and its envisioned use. Based on the
+ratings and interview results, we summarize the advantages
+and challenges of data edibilization.
+Advantages of Data Edibilization
+Data edilization benefits from the psychological and behavioral effects from food.
+
+Attractiveness
+The participants of the preliminary study found data edibilization to be more attractive and attention grabbing than visualization (M = 3.8, SD = 1.37). Humans consider food as
+a means of survival. Thus, people are naturally attracted to
+food [12]. As time evolves, pleasant eating experiences further intensify the attentional and approach biases for food
+cues [7], especially when hunger strikes [38, 57], which
+is “a natural advantage (for edibilization) to attract people
+(P12, male)”. Nearly all (13/15, 86.7%) of the participants
+agreed on that “It was close to lunch time, and thus your
+edibilizations were particularly eye/nose-catching (P14,
+male).”
+The initial interest in an edibilization design can further become stronger approach tendencies toward the appetitive
+stimuli [7]. A total of 80% (12/15) of the participants found
+edibilization to be more aesthetically pleasing (M = 1.67,
+SD = 1.95), and 80% (12/15) considered edibilization to be
+more fun to explore (M = 2.33, SD = 2.92) than visualization. As one participant pointed out in the interview, “The
+cheese pie chart was quite straightforward, but the smell
+made me want to taste the ingredients to see if there were
+any hidden information (P15, female).”A palatable design
+can still “leave a good, deep impression (P1, male) even if
+the appearance is bland.”
+Sensory Richness
+The above-mentioned quote suggests that the multi-sensory
+experiences triggered by food are attention catching and
+can be used to encode data [12]. We divide the sensory
+attributes of edible materials into two categories: 1) explicit visual-based attributes such as color, shape, and volume; and 2) implicit attributes including smell, taste, sound
+and texture, which may be less precise than visual cues
+[53, 30]. Designers can exploit the visual appeal of ingre-
+
+412
+
+alt.chi: Food Fictions
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+dients to convey prominent information, such as using the
+colors of cheese to denote cultural identity (Figure 4). In
+our interview, 53.3% (8/15) of the participants chose “appearance” as their first choice of properties to encode data
+if asked to design an edibilization.
+
+Figure 5: The participants
+observing our data edibilization.
+
+Figure 6: Overview of the rating
+results of the user study comparing
+the differences between data
+charts and data edibilization.
+
+The implicit attributes can serve as carriers of secretive
+or subtle messages such as emotions. As one participant
+said, “I was puzzled about how the ingredients were chosen for the different (STEM) degrees. When I took a bite
+of the (arugula) leaf – the representation of Ph.D. – and
+tasted the bitterness, I said to myself, this is why (P6, male,
+Ph.D. candidate).”Another participant wrote in her interpretation, “I notice that the texture and flavor of the white
+and mixed-color cheeses are more similar compared to
+the orange one. Maybe it means American and bicultural
+Asians can blend into the U.S. society better than those
+who maintain their ethnic identity (P10, female).” Overall,
+80% (12/15) of the participants mentioned that they would
+encode data with implicit attributes in an edibilization design, five of whom even chose smell and taste as the primary communication channel. As one participant proposed,
+“Using various sensory attributes in conjunction to express
+the same meaning can make data analysis more accessible
+to visually-impaired people (P3, male).”
+Intangible Richness
+edibilization also contains rich intangible assets, such as
+culture [5], origin, and season of production, nutrition, brand,
+personal as well as social meanings, and so on. These
+assets can be leveraged to tell a lively data story. For instance, using cultural labels of edible materials can naturally denote geographic information, as done in edibilizing
+the agricultural employment data. One of the participants
+is from Thailand. He mentioned in the interview that “it
+would be even more interesting to me if you add Thailand
+
+to the dataset and put Thai curry or fish sauce on the plate
+(P11, male).” Another example is the interpretation of different ingredients in the STEM salad. Several participants
+associated the bread crumbles to job openings, relating
+it with the term “breadwinner”, representing social meaning. Some thought associates’ certification to be the only
+“meat” among all the degrees because it could yield greater
+strength and endurance for a larger population, representing nutrition. This can better engage users, induce positive
+emotions, and deepen their understanding of the data, especially when users capture information encoded by the
+implicit and intangible attributes. As a participant said in the
+post-workshop interview, “I suddenly understood what the
+designers wanted to say, which made me delighted (P2,
+male).” Overall, the rich sensory and intangible features
+constitute a large design space of data edibilization.
+Memorability
+Anthropologists have long discovered the ability of food to
+stimulate some of the deepest memories [60]. More than
+half (10/15, 66.7%) of the participants found the edibilization to be easier to remember than the charts on paper
+(M = 1.2, SD = 2.39). Memories of an edibilization design
+comprise the multi-sensory experiences triggered during
+the interaction with food [60]. Such memories can be subsequently evoked by the same or similar taste and smell
+[43, 44, 8]. Spherical concentric layer cake is a potential
+way to teach the interior structures of the Earth and the
+Jupiter using cakes.5 Learners can slice and taste the different parts of the cakes. The embodied link between the
+texture and consistency of the cake layers and the actual
+physical properties of the concentric layers of the two planets make the knowledge particularly memorable. Previous
+5
+Spherical Concentric Layer Cake.
+http://cakecrumbs.me/2013/08/01/spherical-concentric-layer-caketutorial/
+
+413
+
+alt.chi: Food Fictions
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+studies have also postulated the material and intangible cultural account of food memories [60, 35]. When we asked
+the participants about what they remembered the most from
+the data tasting workshop, three participants mentioned the
+crackers with various sauces encoding different countries,
+because of the color contrast (appearance) and the feeling
+that they had captured the cultural hints intentionally embedded by the designers. This suggests that edibilization
+may exert a more enduring effect than the other types of
+data representations, which may potentially benefit application domains such as education and marketing.
+Affectiveness
+Prior research has suggested that associated emotions are
+another reason why food memories are powerful and long
+lasting [35]. First, people elicit more positive emotions, such
+as enjoyment, desire, and satisfaction [49], than negative
+affects when evoked by the experienced consequences of
+everyday interactions with edible products [16, 24]. Second,
+the sensory properties of food, particularly taste and smell,
+can stimulate a wide variety of emotions [16]. For example, the phrase “when things go sour" implies undesirable
+outcomes, while “this is really sweet” is meant to express
+pleasure [5]. Third, food intake contains affective metaphorical meanings [54]. One of the participants talked about
+his own experience. “In the annual retreat of the company
+that I interned in, we ate the pastry with our competitors’
+performance data on the inked icing. It felt like expressing our wishes to outpace our competitors and become
+the leader in the market (P13, male)."Another participant
+shared an envisioned scenario. “Eating my (edibilized) academic record means that I have accepted, understood, and
+digested the results. I have turned the past into nutrition for
+the future, and now I can let it go (P8, female).”
+The emotional effects of edibilization can potentially affect
+
+people’s behaviors and choices even long after exposure
+[44]. For example, presenting 3D printed cheerful messages and emoticons encoded with physical activity data,
+such as heart rate, in chocolate may encourage participation in physical activities [33].
+Sociability
+Food can facilitate social engagement [65, 24]. For example, family and friends enjoy chatting at dining table; dates
+are often arranged at lunch and dinner time; conference attendees usually socialize during coffee breaks. During our
+workshop, the edibilized representations triggered heated
+discussions among the participants. One person said, “We
+gathered and argued about the encoding scheme. We encouraged one another to sample the ingredients and share
+thoughts on the food and the data. It felt like deciphering
+some secret code together and was a lot of fun (P5, male)."
+As previous studies have proposed, eating, drinking, and
+food gifting are “the primary way of initiating and maintaining human relationships” [19, 45], especially when additional messages are embedded [63]. In general, 60% of the
+participants thought that edibilization can better strengthen
+social links than visualization (M = 0.6, SD = 1.88).
+In summary, data edibilization has the potential to more
+effectively grab users’ attention, stimulate positive reactions
+and enduring memories, and encourage social interactions
+in comparison with the other conventional data presentation
+methods. However, we are also aware of the challenges of
+data edibilization as reflected in the preliminary study.
+Challenges of Data Edibilization
+A total of 86.7% of the participants found the edibilization
+to be not as easy to understand as visual charts for several
+possible reasons (M = -2.5, SD = 2.39). First, the participants were postgraduate students or teachers. Thus, they
+have been trained to read visual charts. By contrast, the
+
+414
+
+alt.chi: Food Fictions
+
+Figure 7: The Scoville Scale is the
+measurement of spiciness [18].
+(© Foodies)
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+workshop was their first encounter with edibilization. Moreover, we did not provide any instructions on how to “read”
+the novel designs. Second, exploiting the implicit and intangible attributes of food introduces complexity and ambiguity.
+As a result, the participants sometimes felt that they might
+not be able to fully capture the designers’ intent.
+A total of 80% (12/15) of the participants shared their concerns with the scalability of data edibilization (M = -2.7, SD
+= 2.63), because they thought edibilizing data consumes
+more time, effort, and money, compared with plotting a
+chart. However, we argue that the emerging enabling technologies, such as 3D printing, can ultimately lower the cost
+and broaden the use of data edibilization in everyday life.
+We elaborate on this in the Enabling Techniques and Technologies section. In the following subsections, we discuss
+factors that might impair the efficacy of edibilization.
+
+ing, employ existing food preservation techniques [23], or
+prepare adequate backup ingredients.
+Health/Sustainability Concerns and Dietary Constraints
+Human beings can only intake a limited amount of food in a
+short period [48]. If designers want to exhibit or test a considerable number of data edibilizations, they might need to
+carefully calibrate the food list and relative portion sizes to
+not stuff the users or waste too much food. Data edibilization, may raise concerns about nutrition [37]. In addition,
+people may have various dietary constraints due to food allergy, health issues, culture, or religion [14]. Designers need
+to tailor their work based on the needs and constraints of
+the audience, ensuring that tasting their edibilization work is
+a healthy practice.
+
+Food Literacy
+Food literacy originally refers to the knowledge and ability to maintain a healthy diet [46]. We borrow this term to
+describe one’s knowledge about food. If users have insufficient understanding of the materials used in the edibilization design, they might not be able to capture all the
+meanings and nuances of the representation. To avoid this
+problem, designers should select ingredients according to
+the food literacy of the target audience.
+
+Sensory Capabilities
+Humans vary in their sensitivity or tolerances to smells and
+tastes, which can be further affected by physical and psychological conditions, such as aging [26], or by personal
+eating habits and experiences. Designers should assign the
+senses to serve different purposes that can best fit and utilize the audience’s capabilities. For example, smell is good
+for attracting attention because of its pervasiveness and
+endurance while taste has a wider spectrum with more distinguishable intensity levels such as the Scoville Scale for
+measuring spiciness (Figure 7 [56]).
+
+Preservation
+Foods are perishable. Thus, designers must consider the
+preservation of data edibilization. Some ingredients may
+lose their original appearance such as apple slices turning brown, or texture, such as cookies getting soggy. To
+address these concerns, designers may take contextual
+conditions, such as humidity and the length of exhibition,
+into consideration. They may also choose materials that are
+less perishable, provide food samples exclusively for tast-
+
+To sum up, data edibilization has its natural entrance into
+people’s lives. Compared with data visualization [40, 31],
+physicalization [58, 61, 27], and sonification [34, 22, 36, 47],
+data edibilization has a lower barriers of broad acceptance,
+and can create highly personalized experiences as well as
+social interactions around data. Even with the same design,
+data edibilization can convey different messages to different
+users by hiding certain information from people’s eyes and
+ears and only disclose it to the targeted users. Therefore,
+
+415
+
+alt.chi: Food Fictions
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+data edibilization has its unique value and is more beneficial in certain scenarios. Although edibilization alone cannot
+fulfill all the data communication tasks, and thus it is not a
+replacement of visualization,physicalization, and sognification, edibilization can be used in conjunction with other
+representations to provide richer experiences with data.
+
+Pragmatic Process to Reach Data Edibilization
+Thinking of how we can more easily design data edibilization of a given dataset is important. In this section, we propose three ways to realize data edibilization.
+Food-based Approach: Data edibilization can be implemented by modifying the production process of common
+foods and dishes. For example, if we want to present data
+in a cup of coffee, we may select different coffee beans,
+change the amount of milk and sugar, tailor the thickness
+of foam, and serve it in various cups in accordance with the
+data, the users, and the scenarios. Utilizing the mature production process of common foods makes the design and
+implementation of data edibilization easier, given a confined
+design space. In addition, such use can minimize the risks
+of undesirable outcomes and makes performing trial and
+error less costly. Hence, automating this process becomes
+possible. Users may already have sufficient knowledge of
+the common food chosen. Nevertheless, this food-based
+approach has some obvious downsides. Its expressiveness
+is limited. Thus, it may not be able to convey complex data.
+Additionally, prior belief about and biases towards the selected food may hinder users’ perception and imagination.
+Data-driven Approach: A different data-driven approach
+aims to create novel edible representations of information,
+unrestricted by existing recipes. Designers first determine
+the dimensions of data that they want to convey. Then, they
+search for edible materials that can serve as the carriers.
+
+Finally, they use the selected ingredients to make a “dish”,
+which may result in unexpected forms of food. Designers
+taking this approach have a larger design space, allowing
+them to handle more complex data. Although the resulting
+design may be less familiar to users, more abstract and
+difficult to understand, it may motivate people to explore.
+However, this data-driven approach entails higher risks,
+more decisions to make, and more trade-offs to balance.
+Hybrid Approach: A third data edibilization design strategy combines the previous two methods to achieve the best
+of both worlds. Designers can either reinvent traditional
+dishes using non-traditional ingredients, or combine elements extracted from pre-specified cuisines to create an
+original dish. This eclectic hybrid approach seeks a balance
+between data and food, between feasibility and creativity.
+
+Enabling Technologies
+Recent development of technologies make it feasible to
+transform data edibilization design into practice.
+Intelligent Food Production in the Era of IoT
+Microcomputer controlled automatic cooking appliances
+turn input ingredients into dishes as programmed [11].
+These cooking appliances can handle different ingredients
+and can produce different dishes based on the settings.
+The Internet of Things (IoT, a.k.a., the Network of Everything) more effectively connects automatic cooking appliances to their users via ubiquitous sensing and pervasive
+Internet [25, 6]. This technology allows the food production
+process to be directed by user data [32]. This method is
+beneficial for edibilization designers taking the food-based
+approach.
+Data-driven Recipe Creation
+Recipes are traditionally designed by professionals with adequate background knowledge about food and consumers.
+
+416
+
+alt.chi: Food Fictions
+
+Figure 8: A 3D Marzipan
+Skyscraper printed by 3D food
+printer. (© 2015 BOCUSINI)
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+Artificial Intelligence (AI) and Machine Learning (ML) techniques enables extracting food pairing principles [4] and
+automatically create new recipes. An example of such a
+system is the IBM Chef Watson.6 By leveraging existing
+recipes and associated knowledge of food science and food
+industry, such as human taste preferences, food pairing
+theories, and flavor compounds, Chef Watson is able to
+use genetic algorithms to rearrange different elements, sort
+through a considerable number of possibilities, and deliver
+a list of creative recipes of flavorful dishes that satisfy users’
+needs [62]. Such methods can be applied in the data-driven
+and the hybrid approaches for data edibilization.
+3D (Food) Printing
+The emergence of 3D printing technology increases the
+feasibility of data edibilization. In particular, 3D printing can
+be made to create cooking tools and utensils for the production and consumption stages. An example is the banana slicers used as “data slicers” [1]. For another thing,
+3D food printers [3, 64] make creative cooking practicable. Although still at its early stage, 3D food printing has
+demonstrated its potential to tailor meals by specifying parameters such as appearance, flavor, nutrients, ingredients,
+and so on [59]. For instance, the Bocusini food printer can
+print 3D marzipan-skyscraper sweets (Figure 8) as well as
+a wide variety of food products, such as dairy, meat, and
+vegetable. 7
+
+Research Agenda
+A critical question on data edibilization is how to make the
+best use of this novel way of telling data stories. We propose that Human-Computer Interaction researchers can
+approach the problem from five directions, which is inspired
+by existing studies in related areas [27, 34, 39].
+6
+7
+
+IBM Chef Watson. https://www.ibmchefwatson.com/
+Bocusini. http://www.bocusini.com/
+
+Algorithm and Technique: One critical research problem
+in edibilization is the transformation of data properties and
+relations into the perceived attributes of food and drinks.
+Designers may need to avoid interference between the
+smells/tastes of the ingredients in the same dish, as well
+as between several dishes displayed together. Moreover,
+personal and contextual factors add additional complexity
+to this problem [20]. These issues can be formulated as an
+optimization task. The design of algorithms and techniques
+for data-ingredient mapping directly determines the effectiveness of data edibilization.
+Model: In addition to the design and evaluation of particular algorithms and techniques, meta-research on edibilization is necessary [51, 17, 42]. First, comprehensive
+models of the design space of data edibilization in different contexts for different users can be beneficial. Second,
+one can constructively propose new taxonomy of styles of
+making edibilization based on existing work. Third, providing guidance on the process of generating data edibilization
+can help designers thoroughly consider all aspects of user
+experiences. Reflective observations and creative thinking
+about the process would inspire novel, effective designs
+with manageable costs.
+System: Designers need system support to realize data
+edibilization. With algorithms and models running in the
+backend, authoring tools may help designers pick proper ingredients, simulate and compare various mapping options,
+and construct a selected data recipe. Once designers settle
+on an edibilization design, they can program the manufacturing systems to follow the specific production process,
+transforming the corresponding ingredients into a data dish.
+This process may include customizing the physical forms of
+materials, such as cutting and grinding, adding proper seasoning, and applying additional treatments. All these steps
+
+417
+
+alt.chi: Food Fictions
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+require precise control. Even so, the final product may not
+turn out as planned. Therefore, a good manufacturing system should be efficient, fexible, and interactive to facilitate
+fast prototyping and debugging.
+Evaluation: Considering that edibilization is a novel way
+to communicate data to humans, generally ordinary people,
+understanding how users perceive and interact with data
+edibilization is important for many reasons. Researchers
+can conduct comparative studies to investigate the advantages and challenges of edibilization in comparison with
+other means of data communication, such as visualization
+and physicalization. A follow-up question is whether and
+how edibilization can be used in conjunction with other representations to tell a better data story.
+Application: Researchers and practitioners can deploy
+data edibilization in various application domains. One example is the use of edibilization in marketing as an augmentation or even a replacement of conventional charts
+and tables. Other possible domains include entertainment,
+education, healthcare, and public relations, as proposed
+by the workshop participants. Many research questions
+related to edibilization applications arise. The application
+scenarios should be further studied to set the criterion for
+using data edibilization based on domain knowledge. Moreover, they should be studied to determine the applicability
+of data edibilization and to understand how to better utilize this technique. For certain applications, designers can
+also exploit virtual/augmented reality technologies [9, 41],
+holographic displays [13] and digital taste and smell [50]
+to further increase immersion in data edibilization. We can
+even expect that data edibilization can be pervasive in daily
+life. Researchers may explore the possibilities of using data
+edibilization in various scenarios to make it more accessible
+and widely used.
+
+Conclusion and Future Work
+In the paper, we proposed to define a new concept as “data
+edibilization”, which is the use of edible materials to convey stories in data. We conducted a preliminary study to
+explore people’s perception and behaviors of data edibilization, and discuss the advantages, challenges, and opportunities of this novel data representation. Then, we proposed
+three strategies of edibilization design, namely, food-based,
+data-driven, and an eclectic combination of these two methods. We reviewed the enabling technologies of edibilization
+and highlighted the potential of data edibilization in comparison to the existing data representations such as visualization, sonification, and physicalization. We discussed
+possible research directions related to data edibilization.
+Our exploration of this new means of communicating data
+is still at an early stage. The examples used in our preliminary study were relatively simple, which have not yet fully
+demonstrated the potential of edibilization to users. As proposed in the Research Agenda section, in the future, we
+plan to conduct more systematic experiments to investigate
+how people interact with data edibilization, in comparison
+with or in conjunction of other media, in a controlled environment or in the wild. We aim at building a platform to
+facilitate (collaborative) design and production of data edibilization, and broaden its use in various application domains.
+
+Acknowledgements
+The authors would like to thank the all the reviewers who
+wrote and provided helpful comments on our paper and all
+the study participants for their support. This work is partially supported by the National Basic Research Program of
+China (973 Program) under Grant No. 2014CB340304.
+
+418
+
+alt.chi: Food Fictions
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+References
+[1] 2014. Taste of data. Retrieved June 30, 2015
+http://taste-of-data.tumblr.com/. (2014).
+[2] 2016. The center for genomic gastronomy. Retrieved
+December 29, 2015 http://genomicgastronomy.com/.
+(2016).
+[3] 3DPI. 2015. 3D printing industry. Retrieved September 2, 2015 from http://3dprintingindustry.com/food/,
+(2015).
+[4] Yong-Yeol Ahn, Sebastian E Ahnert, James P Bagrow,
+and Albert-László Barabási. 2011. Flavor network
+and the principles of food pairing. Scientific reports 1
+(2011).
+[5] Peter Atkins, Ian Bowler, and others. 2001. Food in
+society: economy, culture, geography. Arnold, Hodder
+Headline Group.
+[6] Luigi Atzori, Antonio Iera, and Giacomo Morabito.
+2010. The internet of things: A survey. Computer
+networks 54, 15 (2010), 2787–2805.
+[7] Tanya Griffiths Brendan P. Bradley Brignell, Catherine and Karin Mogg. 2009. Attentional and approach
+biases for pictorial food cues: Influence of external eating. Appetite 52, 2 (2009), 299–306.
+[8] Gemma Calvert, Charles Spence, and Barry E Stein.
+2004. The handbook of multisensory processes. MIT
+press.
+[9] Julie Carmigniani, Borko Furht, Marco Anisetti, Paolo
+Ceravolo, Ernesto Damiani, and Misa Ivkovic. 2011.
+Augmented reality technologies, systems and applications. Multimedia Tools and Applications 51, 1 (2011),
+341–377.
+[10] Austin Carr. 2014. IBM’S Watson Food
+Truck Brings the Supercomputer to the
+Kitchen. Retrieved August 10, 2015 from
+http://www.fastcompany.com/3027446/techforecast/ibms-watson-food-truck-brings-thesupercomputer-to-the-kitchen. (2014).
+
+[11] Mario G Ceste Sr. 1989. Temperature control system
+for cooking apparatus. (March 14 1989). US Patent
+4,812,625.
+[12] Helen Charley and Connie Weaver. 1998. Foods: a
+scientific approach. Merrill.
+[13] Robert Collier. 2013. Optical holography. Elsevier.
+[14] Rob Comber, Eva Ganglbauer, Jaz Hee-jeong Choi,
+Jettie Hoonhout, Yvonne Rogers, Kenton O’ Hara, and
+Julie Maitland. 2012. Food and interaction design:
+designing for food in everyday life. In CHI’12 Extended
+Abstracts on Human Factors in Computing Systems.
+ACM, 2767–2770.
+[15] Alan R Dennis and Joseph S Valacich. 1999. Rethinking media richness: Towards a theory of media
+synchronicity. In Systems Sciences, 1999. HICSS-32.
+Proceedings of the 32nd Annual Hawaii International
+Conference on. IEEE, 10–pp.
+[16] Pieter MA Desmet and Hendrik NJ Schifferstein. 2008.
+Food, memory and meaning: the symbolic and social
+nature of food events. Appetite 50, 2 (2008), 290–301.
+[17] Tanja Döring, Axel Sylvester, and Albrecht Schmidt.
+2013. A design space for ephemeral user interfaces.
+In Proceedings of the 7th International Conference on
+Tangible, Embedded and Embodied Interaction. ACM,
+75–82.
+[18] Pat Elk. 2013. How hot is too hot when it comes to
+chillies? http://www.foodies.co.za/how-hot-is-too-hotwhen-it-comes-to-chillies/. (2013).
+[19] Peter Farb and George Armelagos. 1980. Consuming passions, the anthropology of eating. Houghton
+Mifflin.
+[20] Ingrid C. Fedoroff, Janet Polivy, and C Peter Herman.
+1997. The effect of pre-exposure to food cues on the
+eating behavior of restrained and unrestrained eaters.
+Appetite 28, 1 (1997), 33–47.
+
+419
+
+alt.chi: Food Fictions
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+[21] David G. Myers and C. Nathan DeWall. 2015. Psychology, 11th Edition. Worth Publishers.
+[22] William W. Gaver. 1993. What in the world do we
+hear? An ecological approach to auditory event perception. Ecological Psychology 5, 1 (1993), 1–29.
+[23] Grahame Warwick Gould. 2012. New methods of food
+preservation. Springer Science & Business Media.
+[24] Andrea Grimes and Richard Harper. 2008. Celebratory technology: new directions for food research in
+HCI. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems. ACM, 467–476.
+[25] Jayavardhana Gubbi, Rajkumar Buyya, Slaven Marusic, and Marimuthu Palaniswami. 2013. Internet of
+Things (IoT): A vision, architectural elements, and future directions. Future Generation Computer Systems
+29, 7 (2013), 1645–1660.
+[26] Alessandra Imoscopi, Emine Meral Inelmen, Giuseppe
+Sergi, Fabrizia Miotto, and Enzo Manzato. 2012. Taste
+loss in the elderly: epidemiology, causes and consequences. Aging Clinical and Experimental Research
+24, 6 (2012), 570–579.
+[27] Yvonne Jansen, Pierre Dragicevic, Petra Isenberg,
+Jason Alexander, Abhijit Karnik, Johan Kildal, Sriram
+Subramanian, and Kasper Hornbæk. 2015. Opportunities and challenges for data physicalization. In In
+Proceedings of the 33nd annual ACM conference on
+Human factors in computing systems.
+[28] Susanne Jaschko and Moritz Stefaner. 2014a. Data
+cuisine. http://data-cuisine.net/, (2014).
+[29] Susanne Jaschko and Moritz Stefaner. 2014b. Data
+cuisine: Resources and reference projects. Retrieved
+December 30, 2015 http://data-cuisine.net/resourcesand-reference-projects/. (2014).
+[30] Joseph’Jofish’ Kaye. 2004. Olfactory display. In Proceedings of the 17th annual ACM symposium on User
+interface software and technology. ACM, 163–163.
+
+[31] Daniel Keim and others. 2002. Information visualization and visual data mining. Visualization and Computer Graphics, IEEE Transactions on 8, 1 (2002), 1–
+8.
+[32] Rohit Ashok Khot, Jeewon Lee, Deepti Aggarwal,
+Larissa Hjorth, and Florian’Floyd’ Mueller. 2015a.
+TastyBeats: Designing Palatable Representations of
+Physical Activity. In Proceedings of the 33rd Annual
+ACM Conference on Human Factors in Computing
+Systems. ACM, 2933–2942.
+[33] Rohit Ashok Khot, Ryan Pennings, and Florian Floyd
+Mueller. 2015b. EdiPulse: supporting physical activity with chocolate printed messages. In Proceedings of the 33rd Annual ACM Conference Extended
+Abstracts on Human Factors in Computing Systems.
+ACM, 1391–1396.
+[34] Gregory Kramer, Bruce Walker, Terri Bonebright,
+Perry Cook, John H Flowers, Nadine Miner, and John
+Neuhoff. 2010. Sonification report: Status of the field
+and research agenda. (2010).
+[35] Deborah Lupton. 1994. Food, memory and meaning:
+the symbolic and social nature of food events. The
+Sociological Review 42, 4 (1994), 664–685.
+[36] Taram Madhyastha, Daniel Reed, and others. 1995.
+Data sonification: Do you see what I hear? Software,
+IEEE 12, 2 (1995), 45–56.
+[37] L. Kathleen Mahan and Sylvia Escott-Stump. 2004.
+Krause’s food, nutrition, & diet therapy. (2004).
+[38] Karin Mogg, Brendan P Bradley, Harpfreet Hyare, and
+Sui Lee. 1998. Selective attention to food-related stimuli in hunger: are attentional biases specific to emotional and psychopathological states, or are they also
+found in normal drive states? Behaviour Research and
+Therapy 36, 2 (1998), 227–237.
+
+420
+
+alt.chi: Food Fictions
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+[39] Tamara Munzner. 2008. Process and pitfalls in writing
+information visualization research papers. In Information visualization. Springer, 134–153.
+[40] Tamara Munzner. 2014. Visualization Analysis and
+Design. CRC Press.
+[41] Takuji Narumi, Yuki Ban, Takashi Kajinami, Tomohiro
+Tanikawa, and Michitaka Hirose. 2012. Augmented
+perception of satiety: controlling food consumption by
+changing apparent size of food with augmented reality.
+In Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems. ACM, 109–118.
+[42] Marianna Obrist, Rob Comber, Sriram Subramanian,
+Betina Piqueras-Fiszman, Carlos Velasco, and Charles
+Spence. 2014a. Temporal, affective, and embodied
+characteristics of taste experiences: A framework
+for design. In Proceedings of the 32nd annual ACM
+conference on Human factors in computing systems.
+ACM, 2853–2862.
+[43] Marianna Obrist, Alexandre N Tuch, and Kasper Hornbæk. 2014b. Opportunities for odor: experiences with
+smell and implications for technology. In Proceedings
+of the 32rd Annual ACM Conference on Human Factors in Computing Systems. ACM, 2843–2852.
+[44] Nicole Koenig-Lewis Adrian Palmer Organ, Kate and
+Jane Probert. 2015. Festivals as agents for behaviour
+change: A study of food festival engagement and
+subsequent food choices. Tourism Management 48
+(2015), 84–99.
+[45] Susan J Paxton, Helena K Schutz, Elenor H Wertheim,
+and Sharry L Muir. 1999. Friendship clique and peer
+influences on body image concerns, dietary restraint,
+extreme weight-loss behaviors, and binge eating in
+adolescent girls. Journal of Abnormal Psychology 108,
+2 (1999), 255.
+
+[46] Donna Pendergast, Susanne Garvis, and Harry
+Kanasa. 2011. Insight from the public on home economics and formal food literacy. Family and Consumer
+Sciences Research Journal 39, 4 (2011), 415–430.
+[47] Loshak-A. Backhaus S. Davis J. C. Pereverzev, S. V.
+and R. E. Packard. 1997. Quantum oscillations between two weakly coupled reservoirs of superfluid
+3He. Nature 388 (1997), 449–451.
+[48] University A DJ Catholique de Louuain Pharmaceutiques. 1995. Dietary modulation of the human colonie
+microbiota: introducing the concept of prebiotics. Journal of Nutrition 125 (1995), 1401–1412.
+[49] Elizabeth Taylor Quilliam. 2008. Happy meals, happy
+parents: Food marketing strategies and corporate social responsibility. ProQuest.
+[50] Nimesha Ranasinghe, Kasun Karunanayaka,
+Adrian David Cheok, Owen Noel Newton Fernando,
+Hideaki Nii, and Ponnampalam Gopalakrishnakone.
+2011. Digital taste and smell communication. In Proceedings of the 6th International Conference on Body
+Area Networks. ICST (Institute for Computer Sciences,
+Social-Informatics and Telecommunications Engineering), 78–84.
+[51] JC Roberts and R Walker. 2010. Using all our senses:
+the need for a unified theoretical approach to multisensory information visualization. In Workshop on the
+Role of Theory in Information Visualization.
+[52] Jonathan C Roberts, Panagiotis D Ritsos, Sriram Karthik Badam, Dominique Brodbeck, Jessie
+Kennedy, and Niklas Elmqvist. 2014. Visualization
+beyond the Desktop–the Next Big Thing. Computer
+Graphics and Applications, IEEE 34, 6 (2014), 26–34.
+[53] Paul Rozin. 1982. “Taste-smell confusion” and the
+duality of the olfactory sense. Attention, Perception, &
+Psychophysics 31, 4 (1982), 397–401.
+
+421
+
+alt.chi: Food Fictions
+
+#chi4good, CHI 2016, San Jose, CA, USA
+
+[54] Paul Rozin. 1996. Towards a psychology of food and
+eating: From motivation to module to model to marker,
+morality, meaning, and metaphor. Current Directions in
+Psychological Science (1996), 18–24.
+[55] Chloé Rutzerveld. 2014. Edible growth. Retrieved July
+1, 2015 http://www.chloerutzerveld.com/edible-growth2014/. (2014).
+[56] Wilbur L Scoville. 1912. Note on capsicums. Journal of
+the American Pharmaceutical Association 1, 5 (1912),
+453–454.
+[57] Edgar Soria-Gómez, Luigi Bellocchio, Leire Reguero,
+Gabriel Lepousez, Claire Martin, Mounir Bendahmane,
+Sabine Ruehle, Floor Remmers, Tifany Desprez, Isabelle Matias, and others. 2014. The endocannabinoid
+system controls food intake via olfactory processes.
+Nature Neuroscience 17, 3 (2014), 407–415.
+[58] Simon Stusak, Aurélien Tabard, Franziska Sauka,
+Rohit Ashok Khot, and Andreas Butz. 2014. Activity
+sculptures: Exploring the impact of physical visualizations on running activity. Visualization and Computer
+Graphics, IEEE Transactions on 20, 12 (2014), 2201–
+2210.
+[59] Jie Sun, Weibiao Zhou, Dejian Huang, Jerry YH Fuh,
+and Geok Soon Hong. 2015. An Overview of 3D Printing Technologies for Food Fabrication. Food and Bioprocess Technology (2015), 1–11.
+
+[60] David E. Sutton. 2001. Remembrance of repasts: an
+anthropology of food and memory. Berg Publishers.
+[61] Saiganesh Swaminathan, Conglei Shi, Yvonne
+Jansen, Pierre Dragicevic, Lora A Oehlberg, and JeanDaniel Fekete. 2014. Supporting the design and fabrication of physical visualizations. In Proceedings of
+the 32nd annual ACM conference on Human factors in
+computing systems. ACM, 3845–3854.
+[62] Lav R Varshney, Florian Pinel, Kush R Varshney, Debarun Bhattacharjya, Angela Schoergendorfer, and YiMin Chee. 2013. A big data approach to computational
+creativity. arXiv preprint arXiv:1311.1213 (2013).
+[63] Jun Wei, Xiaojuan Ma, and Shengdong Zhao. 2014.
+Food messaging: using edible medium for social
+messaging. In Proceedings of the 32nd annual ACM
+conference on Human factors in computing systems.
+ACM, 2873–2882.
+[64] Kyle Wiggers. 2015. Why 3D food printing is more
+than just a novelty. Retrieved July 8, 2015 from
+http://www.digitaltrends.com/cool-tech/3d-foodprinters-how-they-could-change-what-you-eat/,
+(2015).
+[65] L Wright, M Hickson, and G Frost. 2006. Eating together is important: using a dining room in an acute
+elderly medical ward increases energy intake. Journal
+of Human Nutrition and Dietetics 19, 1 (2006), 23–26.
+
+422
+
+

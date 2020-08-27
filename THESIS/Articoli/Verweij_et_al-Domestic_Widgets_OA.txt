@@ -1,0 +1,802 @@
+Citation: Verweij, David, Kirk, David, Rogage, Kay and Durrant, Abigail (2019) Domestic
+Widgets: Leveraging Household Creativity in Co-Creating Data Physicalisations. In: RTD
+2019 - Fourth Biennial Research Through Design Conference: Method & Critique: Frictions
+and Shifts in RTD, 19th - 22nd March 2019, Delft & Rotterdam, Netherlands.
+URL:
+https://figshare.com/articles/Domestic_widgets_Lev...
+<https://figshare.com/articles/Domestic_widgets_Leveraging_household_creativity_in_cocreating_data_physicalisations/7855778/1>
+This
+version
+was
+downloaded
+http://nrl.northumbria.ac.uk/38735/
+
+from
+
+Northumbria
+
+Research
+
+Link:
+
+Northumbria University has developed Northumbria Research Link (NRL) to enable users to
+access the University’s research output. Copyright © and moral rights for items on NRL are
+retained by the individual author(s) and/or other copyright owners. Single copies of full items
+can be reproduced, displayed or performed, and given to third parties in any format or
+medium for personal research or study, educational, or not-for-profit purposes without prior
+permission or charge, provided the authors, title and full bibliographic details are given, as
+well as a hyperlink and/or URL to the original metadata page. The content must not be
+changed in any way. Full items must not be sold commercially in any format or medium
+without formal permission of the copyright holder. The full policy is available online:
+http://nrl.northumbria.ac.uk/policies.html
+
+This document may differ from the final, published version of the research and has been
+made available online in accordance with publisher policies. To read and/or cite from the
+published version of the research, please visit the publisher’s website (a subscription may be
+required.)
+
+Domestic Widgets:
+Leveraging Household
+Creativity in Co-Creating Data
+Physicalisations
+David Verweij1, David Kirk1, Kay
+Rogage1 and Abigail Durrant1
+Northumbria University,
+Newcastle upon Tyne,
+United Kingdom
+{david.verweij, david.kirk,
+k.rogage, abigail.durrant}
+@ northumbria.ac.uk
+1
+
+Keywords: Internet of Things;
+Co-Creation; Physical
+Visualizations; Research Toolkit;
+Family; Research through Design
+
+Abstract: The home environment is a complex design
+space, especially when it has multiple inhabitants. As
+such, the home presents challenges for the design of
+smart products. Householders may be different ages
+and have differing interests, needs, and attitudes
+towards technology. We pursued a research-throughdesign study with family households to envision
+and ‘co-create’ the future of data-enabled artifacts
+for their homes. We have iteratively developed
+domestic research artefacts for these households
+that are open, data-enabled, physical visualisations.
+These artefacts - called Domestic Widgets - are
+customisable in their design and functionality
+throughout their lifespan. The development process
+highlights design challenges for sustained co-creation
+and the leveraging of household creativity in (cocreation) research toolkits. These include the need
+to allow and inspire iterative customization, the
+need to accommodate changing roles within the
+home ecology, and the aim that such design should
+be inclusive for all family members (irrespective of
+age and technical proficiency), whilst maintaining
+a role and purpose in the home. We invite the RTD
+community to critically discuss our, and other,
+open and iterative end-user designs for sustained
+co-creation. By presenting unbuilt and interactive
+pre-built Domestic Widgets, we interactively foster
+engagement with practises of sustained co-creation.
+
+1
+
+Frictions and Shifts in RTD
+#rtd2019 #researchthroughdesign #delft #rotterdam
+
+2
+
+3 Widgets: Leveraging Household Creativity in Co-Creating Data
+Verweij, Kirk, Rogage, Durrant | Domestic
+Physicalisations
+
+Research Context
+
+Frictions and Shifts in RTD
+
+Programmable hardware and software allows us to build and experiment with computation in many professional and leisure activities.
+Developments in programmable hardware are often argued for
+because “current prototyping tools for electronics and programming
+are mostly targeted to engineering, robotics and technical audiences”
+(Barragán, 2004, p. 3). Efforts in exploring prototyping solutions have
+led to innumerable prototyping boards (e.g., Arduino, Raspberry PI)
+and programming languages. This has influenced manufacturing
+processes and product development processes; and these solutions
+are increasingly integrated into education to teach ‘21st-century
+skills’, such as creativity, critical thinking and digital literacy.
+The growth in supply and demand of these (commercially available)
+programming and hardware kits further incentivised the rise of the
+‘expert amateur’ (Kuznetsov and Paulos, 2010), for whom participating
+in Do-It-Yourself (DIY) practises is not solely motivated by utility.
+An expanding demographic of users are being empowered to use
+electronics for - amongst other things - pleasure, utility and expressiveness (Tanenbaum et al., 2013). Here, the responsibilities of
+implementation that have traditionally been held by designers,
+programmers and developers increasingly shifts towards the user.
+In return, more design effort is focused on supportive infrastructure
+and standardised tools, materials and manufacturing processes.
+These should provide the user with a high flexibility in customisation
+and allow for user-led appropriation.
+Empowering people to be creative is also a common goal in partici­
+patory research, including participatory design, co-creation and
+end-user development (EUD). Research-through-Design (RtD)
+approaches to co-creation, such as workshop formats, provide a
+collaborative context for engaging and supporting participants in
+creative practises with interactive technologies (e.g. sensors and
+actuators), enabling them to address potential obstacles in techno­
+logy literacy or perceived creativity.
+
+Many consumer market toolkits
+also aim to address these perceived obstacles by making
+hardware and software more
+accessible. Such toolkits are
+often used in educational settings and target younger users.
+Modular toolkits allow quick and
+easy tinkering with pre-made
+modules, either through physically connected modules such as
+LittleBits (https://littlebits.com/,
+last visited September 27, 2018),
+or wirelessly connected modules
+with flow- or block-based programming software such as
+SamLabs (https://uk.samlabs.
+com/, last visited September 27,
+2018). Both of these toolkits
+lower the barriers to the creative
+exploration of electronics and
+coding, compared to platforms
+such as Arduino (https://www.
+arduino.cc/, last visited September 27, 2018) or Raspberry PI
+(https://www.raspberrypi.org/,
+last visited September 27, 2018).
+Platforms such as these often
+increase the difficulty in coding
+and using hardware, yet generally have a lower price point. This
+introduces a conflict between
+module-based toolkits that are
+priced higher than the typical
+costs for DIY projects (Kuznetsov
+and Paulos, 2010), with more
+affordable hardware platforms
+that require better programming
+and electronic skills. This
+remains a challenge for future
+consumer DIY hardware and
+software toolkits to lower both
+barriers.
+A number of specially designed
+toolkits and systems have been
+developed by researchers in the
+participatory tradition, to ex<Figure 2. An example of an
+assembled Domestic Widget. At
+this stage, the design of the
+moving visualisation is merely a
+‘blank’ disc, and must be finished
+in order to visualise and give
+meaning to any chosen connected
+data. Each Widget is powered
+over USB, either through a USB
+charger or Power Bank. The latter
+provides more mobility, yet
+requires occasional maintenance.
+Photo by authors
+
+#rtd2019 #researchthroughdesign #delft #rotterdam
+
+4
+
+plore the future of smart homes and the Internet of Things (IoT). For
+example, the Loaded Dice (Lefeuvre et al., 2017) supports the exploration of coupling inputs and outputs with pre-made computational
+dice, for design ideation with IoT. The RtD approach with Loaded Dice
+removes the need for end-user (software or hardware) development.
+Instead, it focuses on experimenting with actual and sensorial experiences in co-creative settings. With developments in customisable,
+appropriable and deployable toolkits and products, EUD research
+further aims to learn from the reflective development process of
+(professional) end-users - in-situ – that scaffolds in-depth research in
+context, such as on the subject of connectivity in (smart) homes.
+Tailored towards Tangible and Embodied Interfaces (TEI), Tetteroo
+and colleagues (Tetteroo et al., 2013) elaborate on five key challenges
+to achieve this aim, including, but not limited to, supporting end-users
+in designing interactivity, and integrating the virtual with the physical.
+Conducting participatory research in households strengthens these
+challenges, particularly as obstacles cannot always be mediated by
+human facilitators. Whilst the consumer market toolkits provide
+support for these to some extent, we still see a group of users not
+being involved in the DIY of ‘smart’ artefacts. This group might
+include householders who are demotivated by technical thresholds,
+or those who are just not that interested.
+Whilst IoT is a new technological paradigm, hacking, making and
+similar familiar DIY practises at home have been around for many
+decades. One particular activity that is relatable to householders is
+tinkering and crafting with household materials. This activity is
+accessible to most, and performed by the younger ages both at home
+and at school. With such a continuous interest in this, and other types
+of household crafts (Kuznetsov and Paulos, 2010), we set out to
+develop a research toolkit to involve younger users in co-creating the
+future of IoT for smart homes. We iteratively designed a discoverydriven toolkit design that focuses on crafting with household materials
+- arguably the Research Product (Odom et al., 2016) of our research
+inquiry. The next chapter will present the design of the toolkit, after
+which we discuss considerations that arose during the development
+process. These include the prior mentioned challenges for EUD
+designs, and additional considerations for equivalent future DIY
+data-enabled toolkits.
+
+a.
+
+b.
+
+Domestic Widgets
+
+Domestic Widgets are made from pre-perforated and pre-cut cardboard (Figure 1), with a flat-pack punch out and foldable enclosure
+accompanied by: a pre-programmed microcontroller (Wemos D1
+Mini); a 2-meter thin and flexible USB cable; a popular 180-degree
+micro servo motor (SG90 or SG92R); a USB charger; and a rubber
+band or two. The components are basic enough in functionality to
+allow anyone to assemble a Domestic Widget (see Fig. 1 - 4). A Domestic Widget will move anything attached to its servo motor based on a
+configured data source, effectively acting as a data physicalisation
+(Jansen et al., 2015). These Widgets, upon providing power and an
+initial setup using a smartphone or laptop, are connected to the
+internet over Wi-Fi and ready to be configured using a smart speaker
+such as the Google Home (Mini), see Figure 6. In order to give meaning to
+any configured connectivity, the design requires additional form
+development by its end-users. Figure 5 demonstrates a subset of
+possibilities for how a Widget could be used and appropriated. The
+‘unfinished’ Widget is symmetrically designed, resulting in a wedgelike form factor that can be positioned in multiple ways.
+
+5
+
+Figure 3a, b. Holes in
+the triangles allow for
+(microcontroller) heat and
+(servo motor) sound dissipation,
+and offer additional ways of
+attachment - for example for
+hooks, wires and threads. The USB
+cable is horizontally entered
+through the middle-back, such
+that an orientation is not
+suggested (contrasting when
+the cable would be attached to
+the bottom-back). Upon folding
+and closing a Widget, the
+cable will (automatically) be
+twisted vertically. This this
+prevents the components from
+being pulled out, and thereby
+eliminates the need for a fixture
+to hold the microcontroller. The
+microcontroller thereby lays
+loose within the enclosure.
+Photos by authors
+
+Frictions and Shifts in RTD
+Figure 4. An environmentally
+friendly cardboard flat-pack
+toolkit design requires minimal
+tools and steps to assemble.
+Protruding triangular supports
+stick such that the assembly
+can be proceeded slowly and
+one step at a time. Solely the
+servo-arm assembly requires
+an adhesive, everything else
+remains detachable. All
+materials and components (top)
+can be acquired for less than
+$11, - for a single Widget.
+
+Figure 5. Examples of appropriation
+(by the authors) to demonstrate
+different possibilities of positioning
+and orientation. Whilst the
+circular cardboard servo-assembly
+flexibly allows for manipulation and
+attachment, further exploration should
+increase adaptability to increase
+the amount of possible uses.
+
+Photo by authors
+
+#rtd2019 #researchthroughdesign #delft #rotterdam
+
+Photo by authors
+
+6
+
+7
+
+Frictions and Shifts in RTD
+
+The seemingly aimless servomotor attachment provides
+means for extension through
+adhesives and fasteners, yet does
+so without a clear intended
+end-result. Similarly, the
+non-decorated ‘dull’ cardboard
+prevents being suggestive about
+its positioning, which is why no
+printed cardboard (boxes) were
+recycled as construction material.
+In sum, the toolkit provides easy
+and accessible means to start
+making structurally sound
+personal physicalisations. It does
+so whilst being provided with
+minimal information about its
+intended use, so that this can be
+purposefully left open to interpretation by its users (Gaver et
+al., 2003). The toolkit thereby
+empowers families to tinker,
+craft and explore data-enabled
+artefacts with accessible mate­
+rials and tools. This allows us,
+researchers, to investigate
+families’ experiences of designing and developing equivalent
+connected systems.
+
+Data Physicalisations
+
+In the era of increasingly connected everyday things, technology
+can promise people more control
+over how the things they own
+work together at home. But
+equally, these things are gaining
+more agency. In addition, more
+sources of data and intelligence
+are becoming available for
+everyday use - but, what benefits
+does this offer? The Domestic
+Widget design focuses on how we
+Figure 6. Example excerpt from
+a speech interaction with the
+Domestic Widgets conversation
+agent via the Google (Home)
+Assistant. Based on a predefined
+set of action possibilities by
+us, Google’s machine-learning
+powered speech-to-text algorithm
+acts upon the user’s input. It
+can thereby autonomously ask for
+additional input (e.g. ‘where
+should Jane track the data?’),
+or forward the users intent
+to our custom cloud software.
+Each widget is required to be
+given a human name, so that
+both the system and users can
+refer to them via speech.
+
+would integrate these developments in our family households, and
+how they would influence our routines and utility of these sources. To
+probe collaboration and discussion, we opted for our toolkit to focus
+on physicalisations, i.e. physical data visualisations (Jansen et al.,
+2015). Amongst a breadth of output modalities, movement’s expressiveness affects multiple senses and is noticeable for multiple inhabitants at the same time. In light of crafting and DIY practises, physi­
+cality through movement further interacts with materials and objects
+in a way that visuals, temperature or sounds cannot. As such, we argue
+that creating physicalisations is an extremely useful DIY activity for
+engaging people in the discussion of digital connectivity in multi-­
+person households - and we suggest similar projects could benefit
+equally from such an approach.
+
+Speech Interaction at Home
+
+The audibility of speech-based interaction lowers the technical
+threshold for programming connected objects. It offers a high level of
+discoverability for inhabitants in the near vicinity, supporting legitimate peripheral participation and over the shoulder learning (Lave
+and Wenger, 1991). It furthermore democratises interaction (Porcheron et al., 2017), such that anyone is able and allowed to set a Widget’s
+functionality. On the technical side, using a speech conversation
+agent enables the utilisation of smart speech recognition algorithms
+and appropriate prompts based on the users’ inputs, even when the
+user input is not understood by the system. This provides an accessible way of programming (for designers and developers alike), whilst
+its output is comprehensible to act upon in further software. We
+chose speech-based interaction to be accessible and swift in making/
+crafting data-enabled artefacts - and argue similar work can further
+benefit from exploring voice-based interaction in the home.
+
+Towards Household Creativity
+
+Our design process was inspired by Google’s Paper Signals (https://
+papersignals.withgoogle.com/, last visited September 27, 2018), tiny
+paper-based data physicalisations for everyone to build themselves.
+We saw potential in the functionality and design of this product,
+which has a certain aesthetic that, even though it is self-built, remains an aesthetically pleasing (living) object. Furthermore, we build
+upon their speech-based interaction implementation, though completely revisited the physical and task design. In our own attempts to
+build these Signals, we quickly realised that the required coding,
+online authentication and time-consuming complex paper mechanics introduced a substantial threshold for ourselves and various user
+groups. These Signals are intended as a step-by-step instruction to
+achieve a pre-defined result. We wished to transfer the abilities and
+aesthetics of this project onto an open-ended design, with nearly no
+step-by-step instructions required. Whilst it is not uncommon to
+
+Image by authors
+
+#rtd2019 #researchthroughdesign #delft #rotterdam
+
+8
+
+9
+
+prepare or install designs on a
+participant-by-participant basis
+in RtD research, we additionally
+aimed to increase scalability and
+minimise researcher contact to
+further leave (more) participants
+in control.
+To avoid influencing the materials
+or tools that users might be using
+in conjunction with our Toolkit,
+we focused our exploration on
+less-specialised tools and materials. These include printer
+paper, thick cardboard from
+boxes, or thinner cardboard from
+food supplies such as cereal
+boxes. Standard white paper
+(80 g/m2) did not offer enough
+structural support in creating
+simple self-supporting shapes
+(which was also the case for the
+Paper Signals project), whilst
+thicker paper is less likely to be
+present in many households.
+Thick cardboard is commonly
+available in households, but
+proved difficult to manipulate.
+We settled on thinner cardboard
+(~1,5 mm), which can be manipulated and is commonly found in
+homes. Experiments with this
+material looked aesthetically
+pleasing and retained its affordance that it may be cut, folded
+
+Figure 7. Exploration in paper
+soon led to the use of cardboard.
+These displayed explorations
+aimed to establish a structural
+holder for the components,
+without specialized tools or
+templates. Further versions
+included an angled design to
+allow for externalisation of
+the servo assembly, and thereby
+varied (weighted) attachments.
+Photos by authors
+
+Frictions and Shifts in RTD
+
+Gauging Public
+Interest and Feedback
+at the Maker Faire
+
+or ripped. With this material, we explored whether it was possible to
+make something from scratch. We found designing a structural base
+with simple tools extremely difficult. Additionally, the designs that
+could stand and hold the components (Figure 7) required detailed
+instructions to be easily replicated. This struggle resulted in abandoning the ‘making from scratch’ approach. Templates for end-users
+to cut out cardboard were deemed unfit, as they require the end-user
+to use specialised tools, such as craft knives or even digital fabrication methods. Our proposition was to design a foldable kit that can
+be prepared with specialised tools by us, but does not require these to
+be built at home. The resulting design (see Fig. 9) was presented,
+discussed and evaluated at the national Maker Faire.
+#rtd2019 #researchthroughdesign #delft #rotterdam
+
+10
+
+Maker Faire
+
+In order to engage with our target group, we presented 20 working
+Domestic Widgets to a steady stream of DIY or technology savvy
+visitors (see Fig. 8). Using a tablet, visitors were able to configure each
+Widget through conversation. A children’s activity (see Fig. 10 and
+11b) aimed to encourage younger visitors at our stand to engage with
+the idea of connected artefacts. We provoked visitors to discuss the
+potential use of these Widgets, to evaluate their perceived usefulness,
+to imagine valuable data sources these Widgets could physicalise, and
+to gauge which aspects of such a toolkit would be interesting to
+families.
+
+11
+
+Figure 8. With an interim version
+of the Domestic Widgets we
+designed and displayed a stand
+at the national Maker Faire of
+2018. This event - that focuses
+on families with members of all
+ages - allowed us to engage with
+potential end-users, and evaluate
+our design considerations for
+this diverse target group.
+Photo by authors
+
+b.
+
+a.
+Frictions and Shifts in RTD
+
+Our stand piqued visitor interest in different ways (Fig. 8). Some
+visitors were eager to learn the inner-workings of a Domestic Widget,
+whilst others engaged in the configuration of one or multiple widgets.
+The popularity of the children’s activity (Fig. 10 and 11b) further
+allowed us to engage them - and their parents - in a discussion on
+what a physical visualisation would or should mean for their household. When asked what data these widgets should physicalise (and
+when anything is possible), visitors suggested a wide variety of data
+sources, both generic data (e.g. the time in Bangkok) and personal
+data (e.g. the Wi-Fi bandwidth usage at home) alike. Suggestions
+included, but were not limited to, Widget functionality such that it
+represents things like the current wind direction, or when the next
+train will pass by, or the current room temperature, or the bandwidth
+used on the local network or a countdown timer. Suggestions that are
+more personally related data sources included, but were not limited
+to: a reminder to take some medicine, the emotional state of the cat in
+the house, where a family member currently is, or when a certain
+fashion item is on sale. In response to ‘where’ the visitors would place
+their Widget, suggestions ranged from the living room, to the kitchen,
+the office or simply any room.
+
+Figure 9. The interim version
+included similar components, yet
+differs from the final version in
+its form factor. The ‘bottom’
+triangle includes a slot for the
+microcontroller, its USB cable
+enters the enclosure not in the
+middle-back, and the enclosure is
+non-symmetrical in the vertical
+axis. The servo-arm assembly was
+made as small as possible, which
+resulted in a triangular shape.
+Photo by authors
+
+During the event, we were able to discuss connectivity for the home
+with most visitors, yet less so with those aged seven years or younger.
+At the same time, the children’s activity was enjoyed by all ages. This
+demonstrated the value of our crafting and tinkering approach to
+inclusively engage all family members of all ages in a discussion on
+data enabled artefacts, and led us to further pursue our conceptual
+Domestic Widget design.
+
+Further Form Explorations
+Figure 10. A ‘mini’ Widget
+consisted out of a scaled
+down Domestic Widget design,
+without the triangles. With
+a push-pin an arrow could be
+attached, representing the
+physicalization of (manual) data.
+Photo by authors
+
+The variety of Widget placements is currently covered by their wireless connectivity. The mix of envisioned useful data sources further
+reflects reported use of current data connectivity platforms such as
+IFTTT (Ur et al., 2016). Even though we successfully implemented a
+speech-based configuration of our Widgets, the types of accessible
+resources that we could offer users were limited (even in a research
+context) - particularly those which do not require authentication or
+screen-based input to successfully be configured. This holds especially true for the suggestions that are more related to personal
+events or activities. For example, one visitor suggested that pointing
+and clicking on a part of a webpage whilst browsing could result in a
+Widget tracking that part of the website. If we envision that this and
+#rtd2019 #researchthroughdesign #delft #rotterdam
+
+the other personal data sources become available and possible to
+implement, all this information would need to be abstracted in
+position or movement for the Widget to be represented. Furthermore,
+these sources vary in type of data, such as continuous, relative and
+absolute ‘values’. From a developer perspective, we could standardise
+these abstractions, and provide fixed abstractions. However, we
+identify the opportunity to also involve the households in this abstraction – as they are the users that need to ‘make sense’ of their
+chosen preferred data source. These results emphasise the persistent
+challenge of including all household members in a collaborative use
+and application of data in the home environment.
+
+Reflection upon our interim Widget design (see Fig. 9) led to the
+further exploration of form and affordance. Here, we evaluated the
+aesthetics of possible form factors, and assessed their practicality/
+utility (see Fig 12 and 13). The resulting design (see Fig. 1) includes a
+backwards tilt that ensures stability when weighted objects are
+attached - something a rectangular box would not. A wider shape
+would assist in this stability, but this removes the difference between
+positioning a Widget straight up, or on its side, effectively reducing
+the possible uses and possibility for appropriation.
+The use of faceplates was explored in response to Maker Faire visitors’
+questions (i.e. “How would you know what it means?”) and suggestions (see Fig. 13). The interim design implemented arrows, yet their
+meaning without a visible mapping was not understood. As the
+faceplates allow users to swiftly draw or write a mapping behind the
+arrows, this accessory would increase its ease of use. However, the
+faceplates equally strongly suggest this particular use case. As we
+would like to see the data being externalised in more and different
+ways by its users, we removed this accessory from the final version.
+
+12
+
+13
+
+Figure 11 a, b. At the Maker
+Faire, we presented our interim
+design as 20 working Widgets (a)
+and attached a generic arrow
+symbol to physicalize connected
+data sources. Using an Android
+tablet (rather than voice in such
+noisy environments) visitors were
+able to assign different data
+sources to different Widgets.
+By using human names (a),
+references (or instructions)
+to specific Widgets could be
+made. An additional children’s
+activity (b) consisted out of
+folding and decorating a ‘mini’
+Widget (see also Figure 10).
+This further motivated family
+engagement and proved to be of
+much interest to the younger
+visitors.to the younger visitors.
+Photo by authors
+
+Similarly, the servo-arm assembly in the interim version (see
+Fig. 9) was not symmetrical.
+Changing this to a circle increased the ambiguity in its use,
+further supporting our aim to
+increase the open-endedness of
+the design.
+
+Concluding - Domestic
+Widgets for RtD
+
+Persistent goals throughout the
+development of the Domestic
+Widgets were to keep the number of components low, and to
+minimise the specialist tools
+required to build the toolkit. Contrasting the required laser-cutter
+for preparing the cardboard, the
+
+Frictions and Shifts in RTD
+
+current electrical components are readily available, and require
+minimal labour to assemble them into functional Widgets. In addition, with a total cost of less than €seven per Domestic Widget (excluding the USB power adapter), we believe this design is highly
+applicable and transferable to other practitioners and researchers.
+Through the presentation of Domestic Widgets in this paper, we may
+argue that DIY and crafting offers a valuable, co-creative method for
+engaging discussions with end-users on future technology and its
+role in their lives. The participatory nature of our design might
+empower participating families as end-users to work through possible alternative (re-)configurations of data physicalisations at home.
+Yet, we seek broader and further explorations of various aspects that
+support this endeavour. For example, we still ponder about the
+balance between using generic accessible data sources or personal
+data sources that require additional (authentication) methods. Further, we wish to discuss the design in form and aesthetics such that it
+might motivate creative solutions more effectively. This includes the
+technical and mechanical elements (such as the attachments to the
+servo motor), but quite importantly it includes a design that sparks
+interest and motivates modification at first sight. With this, we will
+further improve participants ability to act upon their own creations
+(and reflections thereof). In turn, we can observe and study their
+reflective practises which can reveal needs and values for future
+smart domestic artefacts that might normally be too profound.
+
+Figure 12. Symmetrical, but not with equal
+sides. Not too divergent in a particular
+axis, to maintain stability regardless of
+positioning. A few versions include triangles
+that did not protrude the front face, to allow
+for additional faceplate(s) to be tightly
+fit. However, removes the friction support
+(see Figure 4), and introduces asymmetry in
+the triangles, both increasing difficulty
+in assembly. With asymmetrical servos
+(see Figure X) and our focus on symmetry
+in result, we designed the front cut-out
+to result in a centred servo axel, rather
+than a centred opening in the cardboard.
+
+As is, our design elicits challenges and improvable design aspects.
+Even more so, we invite the RTD community to engage with us in
+discussion utilising craft, craft materials and speech-based interaction to establish sustained co-creation. Our IoT simplification into
+data physicalisations opens up re-configurations of their materiality,
+and thereby their appropriation and purpose in everyday scenarios.
+
+Photo by authors
+
+Figure 13. In response to
+simplify customisation, we
+explored the use of various
+faceplates for users to write
+on, or attach onto. Whilst these
+offer more surface and material
+to work with, they all suggest
+the use of faceplates as gauges
+with a moving indicator in front.
+We believe more uses are possible
+- and potentially useful - we
+vacated the faceplate accessory.
+Photo by authors
+
+#rtd2019 #researchthroughdesign #delft #rotterdam
+
+14
+
+15
+
+To critically consider this approach, we engage the RTD
+community in hands-on building
+and tinkering with our Domestic
+Widgets, so that we might explore, evaluate and raise the next
+steps in these goals collaboratively. We additionally aim to do
+so through disseminating our
+work digitally: providing blueprints, tutorials (Desjardins et al.,
+2017), and potentially even by
+distributing our toolkits to
+like-minded researchers. At this
+stage of development, we are
+particularly interested in how
+the Domestic Widgets toolkit can
+leverage its material qualities,
+such that its material experience
+(Giaccardi and Karana, 2015)
+benefits families competences
+and values on a performative
+level to explore connected
+artefacts through making.
+Figure 14. Through hands-on
+building and configuring Domestic
+Widgets, we can critically
+discuss the toolkits design and
+material influence on eliciting
+family values in RtD research.
+Photo by authors
+
+References
+Barragán, H. (2004) Wiring: Prototyping Physical Interaction Design. Master Thesis.
+Interaction Design Institute Ivrea. Available from: http://people.interactionivrea.org/h.
+barragan/thesis/thesis_low_res.pdf [Accessed: 26 Sept 2018].
+
+Frictions and Shifts in RTD
+
+Desjardins, A., Wakkary, R., Odom, W., Lin, H., Schilling, M.L. (2017) Exploring DIY Tutorials
+As a Way to Disseminate Research Through Design. interactions 24, 78–82. https://doi.
+org/10.1145/3098319
+Gaver, W.W., Beaver, J., Benford, S. (2003) Ambiguity As a Resource for Design. In:
+Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, CHI ’03. ACM,
+New York, NY, USA, pp. 233–240. https://doi.org/10.1145/642611.642653
+Giaccardi, E., Karana, E. (2015) Foundations of Materials Experience: An Approach for HCI.
+In: Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems,
+CHI ’15. ACM, New York, NY, USA, pp. 2447–2456. https://doi.
+org/10.1145/2702123.2702337
+Jansen, Y., Dragicevic, P., Isenberg, P., Alexander, J., Karnik, A., Kildal, J., Subramanian, S.,
+Hornbæk, K. (2015) Opportunities and Challenges for Data Physicalization. In: Proceedings
+of the 33rd Annual ACM Conference on Human Factors in Computing Systems, CHI ’15. ACM,
+New York, NY, USA, pp. 3227–3236. https://doi.org/10.1145/2702123.2702180
+Kuznetsov, S., Paulos, E. (2010) Rise of the Expert Amateur: DIY Projects, Communities,
+and Cultures. In: Proceedings of the 6th Nordic Conference on Human-Computer Interaction:
+Extending Boundaries, NordiCHI ’10. ACM, New York, NY, USA, pp. 295–304. https://doi.
+org/10.1145/1868914.1868950
+Lave, J., Wenger, E. (1991) Situated Learning: Legitimate Peripheral Participation.
+Cambridge University Press.
+Lefeuvre, K., Totzauer, S., Bischof, A., Storz, M., Kurze, A., Berger, A. (2017) Loaded Dice:
+How to cheat your way to creativity. In: Proceedings of the 3rd Biennial Research Through
+Design Conference. Edinburgh, UK. https://doi.org/10.6084/m9.figshare.4746976
+Odom, W., Wakkary, R., Lim, Y., Desjardins, A., Hengeveld, B., Banks, R. (2016) From
+Research Prototype to Research Product. In: Proceedings of the 2016 CHI Conference on
+Human Factors in Computing Systems, CHI ’16. ACM, New York, NY, USA, pp. 2549–2561.
+https://doi.org/10.1145/2858036.2858447
+Porcheron, M., Fischer, J.E., Sharples, S. (2017) “Do Animals Have Accents?”: Talking with
+Agents in Multi-Party Conversation. In: Proceedings of the 2017 ACM Conference on
+Computer Supported Cooperative Work and Social Computing, CSCW ’17. ACM, New York, NY,
+USA, pp. 207–219. https://doi.org/10.1145/2998181.2998298
+Tanenbaum, J.G., Williams, A.M., Desjardins, A., Tanenbaum, K. (2013) Democratizing
+Technology: Pleasure, Utility and Expressiveness in DIY and Maker Practice. In: Proceedings
+of the SIGCHI Conference on Human Factors in Computing Systems, CHI ’13. ACM, New York,
+NY, USA, pp. 2603–2612. https://doi.org/10.1145/2470654.2481360
+Tetteroo, D., Soute, I., Markopoulos, P. (2013) Five Key Challenges in End-user Development
+for Tangible and Embodied Interaction. In: Proceedings of the 15th ACM on International
+Conference on Multimodal Interaction, ICMI ’13. ACM, New York, NY, USA, pp. 247–254.
+https://doi.org/10.1145/2522848.2522887
+Ur, B., Pak Yong Ho, M., Brawner, S., Lee, J., Mennicken, S., Picard, N., Schulze, D., Littman,
+M.L. (2016) Trigger-Action Programming in the Wild: An Analysis of 200,000 IFTTT Recipes.
+In: Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems, CHI ’16.
+ACM, New York, NY, USA, pp. 3227–3231. https://doi.org/10.1145/2858036.2858556
+
+#rtd2019 #researchthroughdesign #delft #rotterdam
+
+16
+
+

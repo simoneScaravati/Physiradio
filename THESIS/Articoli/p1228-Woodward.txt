@@ -1,0 +1,423 @@
+Things of the Internet (ToI):
+Physicalization of Notification Data
+Kieran Woodward
+
+Eiman Kanjo
+
+Abstract
+
+Nottingham Trent University
+
+Nottingham Trent University
+
+Nottingham, UK
+
+Nottingham, UK
+Eiman.kanjo@ntu.ac.uk
+
+When it comes to attention and notification management,
+most of the previous attempts to visualise notifications
+and smartphone usage have focused on digital
+representations on screens that are not fully embedded
+in the users’ environment. Today, the constant
+development in hardware and embedded systems
+including mini displays, LEDs, actuators as well as digital
+fabrication, have begun to provide new opportunities for
+representing data physically in surrounding
+environments. In this paper, we introduce a new way of
+visualising notification data using physical
+representations that are deeply integrated within the
+physical space and everyday objects. Based on our
+preliminary design and prototypes, we identify a variety
+of design challenges for embedded data representation,
+and suggest opportunities for future research.
+
+Kieran.woodward@ntu.ac.uk
+
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are not
+made or distributed for profit or commercial advantage and that copies bear
+this notice and the full citation on the first page. Copyrights for components
+of this work owned by others than the author(s) must be honored.
+Abstracting with credit is permitted. To copy otherwise, or republish, to post
+on servers or to redistribute to lists, requires prior specific permission and/or
+a fee. Request permissions from Permissions@acm.org.
+UbiComp/ISWC'18 Adjunct, October 8–12, 2018, Singapore, Singapore
+© 2018 Copyright is held by the owner/author(s). Publication rights licensed
+to ACM.
+ACM ISBN 978-1-4503-5966-5/18/10…$15.00
+https://doi.org/10.1145/3267305.3274112
+
+1228
+
+Author Keywords
+Data physicalization; Emotion Recognition; Notifications;
+Smartphone overuse; Attention management solution;
+smart home.
+
+ACM Classification Keywords
+Keywords J.4 Social and Behavioural Sciences.
+
+Introduction
+Notification and smartphone management have received
+a considerable level of attention in the past few years,
+with many interventions and solutions being proposed to
+help attention management. Most of these attempts have
+focused on smartphone applications that capture changes
+in phone use and use AI algorithms to model user
+attention levels or emotions [6, 9, 16].
+This modelling capability enables the management of
+interruptibility, which in turns tackles attachment to
+smartphones and delivers attention management
+solutions based on the user’s behaviour and interaction
+patterns with their smartphone.
+On the other hand, technologies such as the Internet of
+Things (IoT) are often used to generate data that can
+then be visualised on a computer or a portable device
+with a screen. However, too much emphasis is put on the
+sensing and movement capabilities of these devices and
+less on shape-changing displays which utilise the latest
+developments in actuation and lighting technologies to
+physically represent data.
+
+The idea is to utilise lighting and actuation techniques to
+generate movement in shape-changing displays with
+physically reconfigurable geometry.
+
+SMART PHONE NOTIFICATION MANAGMENT
+Problematic smartphone use can affect majority of the
+population as many smartphone apps function as rewards
+that can lead to a habitual checking behaviour [8]. This
+habitual behaviour includes unintended consequences
+such as continually unlocking a phone to check for new
+notifications [18].
+Also, research has shown a direct link between emotions
+and the level of engagement with smartphone
+notifications [10]. Recent research found that people with
+a low level of education, and students, are more likely to
+become addicted to their smartphones [11]. Thus, those
+most prone to excessive smartphone use impacting daily
+life are those aged between 16 and 24, who either have a
+low level of education or are still studying.
+
+By merging the main effective characteristics of the two
+concepts together, we could develop an effective shapechanging interface to visualise and manage attachment
+to smartphone notifications.
+
+Problematic smartphone use is not just an important
+issue because of the vast amount of people it can affect
+but also because of the adversity and problems it can
+cause. For example, addicted students are less likely to
+achieve high grades [5]. As 16-24 year olds use their
+phones the most this could have a major negative impact
+on many students’ academic performance.
+
+In this paper, we propose a new concept called “The
+Things of the Internet”; a technique to represent
+notification data in order to help manage attention and
+reduce excessive smart phone usage while keeping the
+user informed of their emotion in relation to their online
+activities and notifications in a visual and artistic form.
+
+It is not only psychological issues that can arise from
+problematic smartphone overuse; it can also lead to
+physical issues such as fatigue or lack of sleep [12].
+Therefore, many attempts have been made to model and
+organise notification delivery in order to manage
+attention.
+One attempt to manage notification delivery involved a
+device capable of forwarding notifications to other smart
+
+1229
+
+devices such as a monitor or lights [17]. However, there
+was a large focus on forwarding all notifications possibly
+resulting in additional smartphone use as users are
+repeatedly interrupted to be made aware of new
+notifications.
+Attention management solutions balance an individual’s
+need for fewer disruptions while providing efficient
+information delivery [2], which is what ToI provides.
+
+THE THINGS OF THE INTERNET
+Data physicalization is where a device’s geometry or
+material properties encode data compared to traditional
+visualisations that map data to pixels. Examples of
+situated and embedded data representations have been
+independently explored in a variety of research areas,
+including information visualization, augmented reality,
+and ubiquitous computing which help increase visual
+realism.
+Also, with the advancement of affective computing
+research [7, 20], many innovative prototypes are
+emerging. Lovers Cups [4] is one such example that
+comprises of two light-up glasses that remotely activate
+when a partner uses their cup to simulate drinking
+together. Each person can see in their cup how much
+liquid is in their partner’s cup, when they are drinking
+and the side they are drinking from through visual
+feedback showing communication can be extended to
+daily interactions.
+Several research prototypes have explored actuation
+using electro-mechanical motors [13], Servomotor [19],
+Shape-Memory Alloy (SMA) wires [14] and
+electromagnets [15] but no research has been conducted
+utilising this to physicalize smartphone use.
+
+1230
+
+SYSTEM DESIGN
+We define the Things of the Internet for notification
+management as follows:
+1.
+2.
+3.
+
+Receives stream of digital data from smartphone.
+Relays information using some form of actuation,
+lights, sound, and/or any other form of feedback.
+Dynamically manages user attachment to
+smartphones without extra disruptions.
+
+Figure 1 shows the proposed framework for ToI including
+how data will be wirelessly transmitted before being
+processed on-device to produce varying shapes, sounds
+and colours.
+
+Figure 1. Overview of (ToI) system for Notification Awareness
+
+ToI does present some design challenges, as the
+technology must seamlessly blend in with other
+household items. To accomplish this the technology
+utilised must be small yet sufficiently powerful to handle
+the processing of incoming data.
+ToI enables individuals with smartphone dependency to
+observe their mood visualised physically which could
+increase their awareness of the time they spend and
+consequences of their smartphone usage and its impact
+on wellbeing. To realise our vision for ToI, we have
+developed two preliminary prototypes that predict and
+
+visualise mood using the emotion model developed in
+[9]:
+Prototype 1: Visualises the mood of a few individuals at
+the same time (in this case three), each flowers in the
+vase move up or down according to the mood of an
+individual (see figure 2). To accomplish this data from
+the users’ smartphones and wearables including
+notification data, phone use and physiological data (if
+present) is wirelessly transmitted to the prototype in
+real-time. The data received is then processed using the
+microcontroller powering the prototype; the happier the
+user is perceived the higher the flower moves in the
+vase.
+This prototype does not provide large amounts of
+information to the users such as whether they have
+unread notifications but this makes the device
+‘glanceable’. In addition, the ability for it to display data
+from multiple users makes it ideal for families as it allows
+parents to easily monitor the impact their children’s
+smartphone use is having on their emotional wellbeing.
+
+with different colours using a set of LEDs. These lines and
+squares allow for a wide array of patterns to be
+constructed all indicating different smartphone use and
+emotions.
+Research has shown informative art can be an
+appropriate way to visualise data [3]. My painting shows
+my stats [1] demonstrated this by having a painting
+dynamically change in accordance with users’ physical
+activity. This device was capable of conveying a large
+amount of information in a glance, as this prototype
+hopes to achieve.
+While this prototype is capable of displaying more data
+than prototype 1 allowing users to know the current state
+of their smartphone and the impact it is having on their
+emotions, it requires more attention to understand the
+visual representations. This makes the design of this
+prototype difficult, as the amount of information
+displayed must be carefully balanced with its simplicity to
+ensure it is effective.
+
+This prototype possesses some design challenges, as it
+may be difficult to notice slight height differences over
+time making it hard to gain any meaningful insights.
+Additionally, when used with families it may be difficult to
+distinguish between the different flowers representing
+different people.
+Prototype 2: Physically visualises the mood of an
+individual on a wall art frame for the individual and family
+to see.
+An actuated surface with lines and squares forms
+patterns similar to the famous compositions shown in
+figure 3. Each line has a motor that allows it to move
+horizontally and vertically and the squares can be lit up
+
+Figure 2. Overview of (TOI) protype 1.
+
+1231
+
+CONCLUSION
+
+Figure 3. Left: Theo van Doesburg – Composition VII , 1917 /
+Right: Piet Mondrian – Composition C (no.III), with Red, Yellow
+and Blue, 1935. Both artists were a part of De Stijl movement in
+the Netherlands.
+
+The two prototypes discussed both enable users to
+quickly glance at physical objects to understand how
+their current smartphone use is affecting their emotional
+state. By utilising common household items such as
+flowers and wall art, these prototypes inconspicuously
+help prevent the habitual checking of smartphones,
+improving mood and reducing the possibility of users
+becoming addicted to their smartphone.
+In the future, we aim to evaluate these works based on
+the simplicity of the displayed information and the
+amount of information they manage to convey. Ideally,
+devices should be able to display all vital information
+including the emotional impact current smartphone use is
+having in a simple glance.
+This initial work on notification management is limited to
+displaying the emotions of individuals to provoke
+contemplation of excess smartphone use and its impact
+on mood. Our intention for future work is to go beyond
+displays to more effective changes in ambient settings in
+order to promote behaviour change and ease attachment
+to smartphones.
+
+1232
+
+ToI is an early and conceptual interactive prototype that
+allows us to imagine and propose future interfaces. With
+the development of inexpensive, lightweight, energyefficient actuator technologies we anticipate the
+development of thin, fast and effective shaped displays.
+These displays could be used every day as abstract and
+computational geometric art to physically visualise the
+dynamic flow of notifications, online activities and its
+impact on emotional wellbeing in an adaptive and
+personalised fashion. The next stages of this project will
+be to deploy these prototypes and evaluate their
+performance in real world settings. Also, we aim to go
+beyond displays and visualisations to implement some
+effective techniques to motivate users in changing their
+behaviour and reducing smartphone overuse.
+
+References
+1.
+
+Alexandra Voit, Miriam Greis, Dominik Weber,
+Katharina Gönner, Isabella Kutger, and Albrecht
+Schmidt. 2017. My painting shows my stats: towards
+a personal colorful activity display. In Proceedings of
+(MUM '17). ACM, New York, NY, USA, 415-420.
+
+2.
+
+Anderson, Christoph, Isabel Fernanda Hübener, AnnKathrin Seipp, Sandra Ohly, Klaus David, Veljko
+Pejovic “A Survey of Attention Management Systems
+in Ubiquitous Computing Environments.” CoRR
+abs/1806.06771 (2018).
+
+3.
+
+Chloe Fan, Jodi Forlizzi, and Anind K. Dey. 2012. A
+spark of activity: exploring informative art as
+visualization for physical activity. In Proceedings of
+the 2012 ACM Conference on Ubiquitous Computing
+(UbiComp '12). ACM, New York, NY, USA, 81-84.
+
+4.
+
+Chung, H., Lee, C.-H. J., & Selker, T. (2006). Lover’s
+cups. In CHI ’06 extended abstracts on Human
+factors in computing systems - CHI EA ’06 (p. 375).
+New York, New York, USA: ACM Press.
+
+5.
+
+6.
+
+7.
+
+8.
+
+9.
+
+Hawi, N. S., & Samaha, M. (2016). To excel or not to
+excel: Strong evidence on the adverse effect of
+smartphone addiction on academic performance.
+Computers and Education, 98, 81–89.
+Kanjo, E., Kuss, D. J., & Ang, C. S. (2017). NotiMind:
+Utilizing Responses to Smart Phone Notifications as
+Affective Sensors. IEEE Access, 5, 22023–22035.
+https://doi.org/10.1109/ACCESS.2017.2755661
+Kanjo, E., Younis, E. M. G., & Ang., C., (2018), Deep
+Learning Analysis of Mobile Physiological,
+Environmental and Location, Sensor Data for
+Emotion Detection, Information Fusion Journal.
+Kanjo, E., Younis, E.M.G. and Sherkat, N., 2018.
+Towards unravelling the relationship between onbody, environmental and emotion data using sensor
+information fusion approach. Information Fusion, 40,
+pp. 18-31. ISSN 1566-2535
+KUSS, D.J., HARKIN, L., KANJO, E. and BILLIEUX, J.,
+2018. Problematic smartphone use: investigating
+contemporary experiences using a convergent
+design. International Journal of Environmental
+Research and Public Health, 15 (1), p. 142. ISSN
+1661-7827
+
+10. KUSS, D.J., KANJO, E., CROOK-RUMSEY, M.,
+KIBOWSKI, F., A., 2017. Problematic mobile phone
+use and smartphone addiction across generations:
+the roles of psychopathological symptoms and
+smartphone use. Journal of Technology in Behavioral
+Science. ISSN 2366-5963.
+11. Kwon, M., Kim, D.-J., Cho, H., and Yang, S., 2013.
+The smartphone addiction scale: development and
+validation of a short version for adolescents. PloS
+one, 8 (12), e83558.
+12. Lapointe, L., Boudreau-Pinsonneault, C., and Vaghefi,
+I., 2013. Is Smartphone Usage Truly Smart? A
+Qualitative Investigation of IT Addictive Behaviors.
+In: 2013 46th Hawaii International Conference on
+System Sciences. IEEE, 1063–1072.
+
+13. Leithinger, D., Follmer, S., Olwal, A., Luescher, S.,
+Hogge, A., Lee, J., and Ishii, H. (2013).
+14. Nakatani, M., Kajimoto, H., Vlack, L., Sekiguchi, D.,
+Kawakami, N., and Tachi, S. (2005). Control method
+for a 3D form display with coil-type shape memory
+alloy. In Proc. ICRA, 1332-1337.
+15. Niiyama, R. and Kawaguchi, Y. (2008). Gemotion
+Screen: A Generative, Emotional, Interactive 3D
+Display. In Proc. ASIAGRAPH, 115-12.
+16. Rapeepisarn, T., Tatiyanupanwong, S.,
+Kornvisitvatin, B., and Tangsripairoj, S., 2016.
+iRelief: An Android application for smartphone
+syndrome prevention and treatment. In: 2016 Fifth
+ICT International Student Project Conference (ICTISPC). IEEE, 121–124.
+17. Thomas Kubitza, Alexandra Voit, Dominik Weber, and
+Albrecht Schmidt. 2016. An IoT infrastructure for
+ubiquitous notifications in intelligent living
+environments. In Proceedings of the 2016 ACM
+Ubicomp: Adjunct (UbiComp '16). ACM, New York,
+NY, USA, 1536-1541.
+18. Van Deursen, A. J. A. M., Bolle, C. L., Hegner, S. M.,
+& Kommers, P. A. M. (2015). Modeling habitual and
+addictive smartphone behavior: The role of
+smartphone usage types, emotional intelligence,
+social stress, self-regulation, age, and gender.
+Computers in Human Behavior, 45, 411–420.
+19. Wagner, C. R., Lederman, S. J., and Howe, R. D.
+(2002). A tactile shape display using RC
+servomotors. HAPTICS, 354–355.
+20. Woodward, K., Kanjo., E., EmoEcho: A tangible
+interface to convey and communicate emotions, in:
+UbiComp '18 Proceedings of the 2018 ACM
+International Joint Conference on Pervasive and
+Ubiquitous Computing: Adjunct, ACM, 2018.
+
+1233
+
+

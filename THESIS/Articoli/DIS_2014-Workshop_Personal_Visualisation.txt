@@ -1,0 +1,225 @@
+A Personal Visualisation Future:
+Domestic Data Sculptures
+Lisa Koeman
+ICRI Cities
+University College London
+London, United Kingdom
+lisa.koeman.12@ucl.ac.uk
+
+Abstract
+As the collection and analysis of personal data has
+become increasingly prominent in the lives of many, an
+important question arises: how can such personal data
+best be conveyed in informal settings such as the home?
+In this paper, the argument for an exploration of personal
+visualisations beyond the screens of laptops, tablets and
+mobile devices is made. In particular, the potential of
+interactive domestic data sculptures is highlighted. A brief
+overview of the work that has been done in the area of
+physical visualisations till date is provided and three
+design challenges of creating personal data sculptures are
+discussed.
+
+Author Keywords
+Personal visualisation, data sculptures, physical
+visualisations, personal data, ambient technology
+
+ACM Classification Keywords
+H.5.m [Information interfaces and presentation (e.g.,
+HCI)]: Miscellaneous.
+Paste the appropriate copyright statement here. ACM now supports three
+diﬀerent copyright statements:
+• ACM copyright: ACM holds the copyright on the work. This is the historical
+approach.
+• License: The author(s) retain copyright, but ACM receives an exclusive
+publication license.
+• Open Access: The author(s) wish to pay for the work to be open access.
+The additional fee must be paid to ACM.
+This text field is large enough to hold the appropriate release statement
+assuming it is single spaced.
+
+General Terms
+Design, Human Factors
+
+Introduction
+
+Physical visualisations
+
+Seven unread e-mails, 88 heartbeats per minute, two
+friend requests, 5043 steps, 132 micrograms of NO2 per
+cubic metre of air, 14 socks to wash and the neighbour’s
+music is just over 100 decibels. Personal data is
+everywhere. Advances in technology have made it
+increasingly easy and aﬀordable to collect such data,
+whether it relates to an individual’s health, social network
+or local environment. Gathering these types of data can
+be useful for a number of reasons: to give insight, to
+inform, to motivate behaviour change, to predict, and so
+forth. As these types of data can be of importance to
+many, the main challenge is: how do we enable easy
+analysis and manipulation of such personal data?
+
+The concept of physical visualisations is defined by Jansen
+et al. [4] as “visualisations that are made of physical
+matter, as opposed to presented on a computer screen or
+projected on a surface as it is traditionally the case” (for
+examples, see: [1, 2, 6, 8]). The use of physical matter
+when visualising data is motivated by the many
+aﬀordances physicality is believed to have, such as
+embodiment and more natural interactions [7].
+
+As the visualisation of data has proven to be valuable
+when analysing data in professional settings, it seems only
+natural to also turn to visualisations when dealing with
+data in personal settings. However, there are various
+diﬀerences between these two settings. For example, in
+the former the visualisations are generally aimed at expert
+users, whereas people in personal settings cannot be
+assumed to be knowledgeable about data, data analysis
+and data visualisation. Pousman et al. [5] argue that
+non-experts require more casual information visualisation.
+However, how to create such casual visualisations, and
+more specifically: how to create such casual visualisations
+of personal data, is currently still largely unknown.
+In this paper, we argue that the current popularity of
+digital fabrication, the aﬀordability of rapid prototyping
+platforms and the existing knowledge of aﬀordances of
+physical visualisations should be combined to create
+interactive domestic data sculptures.
+
+A popular type of physical visualisations are data
+sculptures. Such sculptures are defined by Zhao et al. [8]
+“data-based physical artefacts, possessing both artistic
+and functional qualities, that aim to augment a nearby
+audience’s understanding of data insights and any socially
+relevant issues that underlie it”. In short: tangible
+representations of data are used to convey content,
+generally to a lay audience. While such sculptures have
+been used for centuries (see [2]), the combination of
+physical visualisations and technology is more recent –
+with one of the first examples dating from 1992: Durrell
+Bishop’s Marble Answering Machine (described in [3]).
+
+Domestic data sculptures
+As can be seen in the overview of active physical
+visualisations created by Dragicevic et al. [1], till date few
+data sculptures have focused on the presentation of
+personal data. Furthermore, the majority of sculptures are
+developed as part of art projects, meaning few empirical
+evaluations have taken place. This highlights the need for
+the creation and evaluation of interactive domestic data
+sculptures.
+While previously, the creation of interactive visualisations
+would have been costly and feasible for experts only, the
+arrival of digital fabrication technology (e.g. laser cutting
+
+machines, 3D printers) and rapid prototyping platforms
+(e.g. Arduino and .NET Gadgeteer) have this process
+simple and aﬀordable. Similar to ambient technology,
+such sculptures should be designed keeping aesthetics,
+ease of use and enjoyment in mind, allowing non-experts
+to interpret the personal data they gather in an accessible
+and playful manner.
+
+other technology for them home, whether ambient, calm
+or otherwise, this is not a novel challenge in the domain of
+HCI. Nevertheless, designing the data sculptures in such a
+way that they fit into people’s homes and are accepted as
+part of the environment will be critical to their success.
+How can we design data sculptures customised to the
+aesthetic taste and interaction preferences of individuals?
+
+Design challenges
+
+Visualising for the everyday
+As domestic data sculptures fulfil a role in the home
+similar to that of art, they are likely to be present for long
+periods of time. To ensure the sculptures will remain
+relevant over time, their design needs to be adjust
+accordingly. To encourage sustained usage over time, the
+sculptures could potentially be configured in diﬀerent
+ways, providing diﬀerent visualisations of the same data –
+thus preventing inevitable boredom with the display.
+Alternatively, the sculptures could be made out of cheap
+(and preferably environmentally friendly) materials that
+are disposable, allowing people to replace the outer layer
+of the physical visualisations and repurposing the
+technology. How can we prevent data sculptures from
+becoming unused over time, once the novelty wears oﬀ?
+
+Though all the tools for the development of domestic data
+sculptures are readily available, there are a number of
+design challenges that need to be overcome, including:
+Visualising for the individual
+As the name suggests, personal data is primarily very
+personal – and so any attempts at visualising,
+manipulating and analysing such data will have to take the
+person to whom it belongs into consideration. While some
+people may gather data on their health for very specific
+purposes, others may only want to know about extreme
+outliers in the data. Similarly, while some people may be
+looking for correlations between diﬀerent data sources,
+others may only care about changes over time. For the
+creation of successful domestic data sculptures, they will
+need to be highly customised, as the interests and needs
+of the person in question will have to be taken into
+consideration in order to make them relevant. How can we
+take specific and evolving requirements of individuals into
+consideration when designing domestic data sculptures?
+Visualising for the home
+Besides the interests and needs relating to the data,
+designing for the home means the person’s preferences
+relating to aesthetics and interaction of the data sculpture
+will also have to taken into account. As similar constraints
+have to be considered when designing and developing
+
+Conclusion
+As more and more personal data is gathered and stored by
+individuals, a new challenge emerges: visualising this data
+for lay people. As physicality has a range of aﬀordances,
+the exploration of interactive domestic data sculptures is
+highlighted in this paper as a potential method of
+communicating data in everyday settings. Despite the
+work done in the area of physical visualisations, tangible
+computing and ambient technology, several design
+challenges remain. In this paper, three of these challenges
+are described: visualising for the individual, home and
+everyday.
+
+References
+[1] Dragicevic, P., and Jansen, Y. List of Active Physical
+Visualizations. Retrieved March 2014, from:
+http://www.aviz.fr/Research/ActivePhysicalVisualizations.
+[2] Dragicevic, P., and Jansen, Y. List of Passive Physical
+Visualizations. Retrieved March 2014, from:
+http://www.aviz.fr/Research/PassivePhysicalVisualizations.
+[3] Ishii, H., and Ullmer, B. Tangible bits: towards
+seamless interfaces between people, bits and atoms. In
+Proceedings of the ACM SIGCHI Conference on
+Human factors in computing systems, ACM (1997),
+234–241.
+[4] Jansen, Y., Dragicevic, P., and Fekete, J.-D.
+Evaluating the eﬃciency of physical visualizations. In
+Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems, ACM (2013),
+2593–2602.
+[5] Pousman, Z., Stasko, J. T., and Mateas, M. Casual
+
+information visualization: Depictions of data in
+everyday life. Visualization and Computer Graphics,
+IEEE Transactions on 13, 6 (2007), 1145–1152.
+[6] Vande Moere, A. Beyond the tyranny of the pixel:
+Exploring the physicality of information visualization.
+In Information Visualisation, 2008. IV’08. 12th
+International Conference, IEEE (2008), 469–474.
+[7] Vande Moere, A., and Patel, S. The physical
+visualization of information: Designing data sculptures
+in an educational context. In Visual Information
+Communication. Springer, 2010, 1–23.
+[8] Zhao, J., and Moere, A. V. Embodiment in data
+sculpture: a model of the physical visualization of
+information. In Proceedings of the 3rd international
+conference on Digital Interactive Media in
+Entertainment and Arts, ACM (2008), 343–350.
+
+

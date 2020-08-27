@@ -1,0 +1,874 @@
+PLANWELL: Spatial User Interface for Collaborative Petroleum WellPlanning
+Aditya Shekhar Nittala1,*, Nico Li1,§, Stephen Cartwright1,¤, Kazuki Takashima2,¥, Ehud Sharlin1,¶, Mario Costa Sousa1,ǂ
+1 Department Of Computer Science, University Of Calgary, Calgary, AB, Canada
+2 Research Institute of Electrical Communication, Tohoku University, Japan
+
+Figure 1: (a) 3D printout, stylus and ipad used as the overseer interface (b) overseer operating on the 3D printout (c) visualizations
+on
+overseer
+interface(d)
+visualizations
+on
+explorer
+interface
+(f)
+explorer
+with
+an
+AR
+device
+
+Abstract
+We present our prototype of PlanWell, a spatial augmented reality
+interface that facilitates collaborative field operations. PlanWell
+allows a central overseer (in a command and control center) and a
+remote explorer (an outdoor user in the field) to explore and
+collaborate within a geographical area. PlanWell provides the
+overseer with a tangible user interface (TUI) based on a 3D
+printout of surface geography which acts as a physical
+representation of the region to be explored. Augmented reality is
+used to dynamically overlay properties of the region as well as the
+presence of the remote explorer and their actions on to the 3D
+representation of the terrain. The overseer is able to perform the
+actions directly on the TUI and then the overseer’s actions are
+presented as dynamic AR visualizations superimposed on the
+explorer’s view in the field. Although our interface could applied
+to many domains, the PlanWell prototype was developed to
+facilitate petroleum engineering tasks such as well planning and
+
+*e-mail: anittala@ucalgary.ca
+§
+e-mail: li26@ucalgary.ca
+¤
+e-mail: sgcartwr@ucalgary.ca
+¥
+e-mail: takashima@riec.tohoku.ac.jp
+¶
+e-mail: ehud@cpsc.ucalgary.ca
+ǂ
+e-mail: smcosta@ucalgary.ca
+
+Permission to make digital or hard copies of part or all of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for commercial advantage and that copies bear this notice and the full citation on the
+first page. Copyrights for third-party components of this work must be honored. For all
+other uses, contact the Owner/Author.
+Copyright is held by the owner/author(s).
+SA’15 Symposium on MGIA, November 02 – 06, 2015, Kobe, Japan.
+ACM 978-1-4503-3928-5/15/11.
+http://dx.doi.org/10.1145/2818427.2818443
+
+coordination of drilling operations. Our paper describes the details
+of the design and implementation of the current PlanWell
+prototype in the context of petroleum well planning and drilling,
+and discusses some of the preliminary reflections of two focus
+group sessions with domain experts.
+CR Categories: H.5.1 [Information Interfaces And
+Presentation]: Artificial, augmented, and virtual realities; H.5.3
+[Group and Organization Interfaces]: Computer-supported
+cooperative work
+Keywords: Augmented Reality, Spatial User Interaction,
+Computer Supported Cooperative Work, Tangible User Interfaces
+
+1 INTRODUCTION
+
+Many collaborative field tasks involve a centralized control center
+overseeing multiple teams in the field. Collaboration between this
+central control and the remote teams requires pertinent
+information to be presented to each individual involved according
+to their role in a timely and effective manner. Furthermore, it is
+necessary to provide clear presentation of this information within
+different contexts so that central control may effectively monitor
+and advise individuals in the field and allow them to apply the
+appropriate context to central control's requests. Failure to
+accomplish this compromises situational awareness as well as
+communication and thus the ability to complete the tasks
+efficiently. Such failures could have a very high impact in critical
+applications such as search and rescue, remote emergency
+response and military operations. Even in less critical applications
+these failures could lead to wasted time and money. We design
+spatial tangible mobile interfaces that help alleviate some of these
+challenges and apply it in the context of collaborative petroleum
+well-planning workflow. Though PlanWell can be applied to
+various collaborative terrain exploration scenarios and tasks such
+as military operations and rescue missions, in this paper we use a
+specific petroleum engineering scenario as the context and design
+the system to address practical problems relating to remote
+collaboration in such activities. We also conducted two focus
+
+group discussions with domain experts to gather qualitative
+feedback of our prototype and design approach.
+Our work makes three main contributions:
+1) A tangible 3D augmented reality technique providing clear and
+intuitive spatial and structural awareness to a central overseer in a
+command center, while providing immediate and relevant
+information to a user in the field.
+2) Application of the technique to a realistic engineering
+scenario, based on feedback and suggestions gathered during
+interviews with domain experts. The qualitative analysis of the
+i
+focus group discussions which have brought about interesting
+insights on our design approach.
+3) Details of our implementation so that others may build similar
+applications as well as a technical evaluation which presents the
+technical strengths and limitations of our system.
+
+2 RELATED WORK
+Our work falls under the intersection of the following themes in
+HCI research:
+1) Augmented Reality and Applications
+2) Collaborative Augmented Reality
+3) Tangible Interfaces for Collaboration
+In this section we will be discussing the previous literature that
+relates to our work and falls under the above mentioned themes.
+2.1 Augmented Reality and Applications
+Augmented reality has been used in a wide variety of domains
+including civil engineering [Schall et al., 2008], tabletop reservoir
+engineering interaction [Lapides et al., 2012], human-robot
+interaction [Li et al., 2015], geographic visualization [Hedley et
+al., 2002], and topographical terrain exploration [Li et al., 2014]
+and for spatially aligning virtual objects with the real-world
+objects [Bimber and Raskar,2005],[ Raskar et al., 1998].
+2.2 Collaborative Augmented Reality
+The use of augmented reality for collaborative tasks has been
+explored extensively [Barakonyi et al., 2004], [ Billinghurst and
+Kato, 2002]. With respect to remote collaboration, previous
+research explored collaboration between an indoor and outdoor
+user for managing and accessing spatial information [Hollerer et
+al., 1999], [ Robert et al., 2013],[ Stafford et al., 2006]. Previous
+research also explored the use of 3D spatiality in remote
+collaboration [Gauglitz et al., 2014], [Sodhi et al., 2013].
+2.3 Physical Interfaces For Collaboration
+Attempts have been made to merge the physical environment with
+remote collaboration and tangible user interfaces have also been
+explored to support collaboration [Follmer et al., 2013], [Gauglitz
+et al., 2012], [ Leibe et al., 2000]. Physicality has been explored in
+remote collaboration with spatial and physical cues in distributed
+collaborative environments and tabletop collaboration [Leithinger
+et al., 2014], [Robinson and Tuddenham, 2007], [Sakong and
+Nam, 2006]. However, to the best of our knowledge, the use of
+3D printed scaled model of the environment for enhancing spatial
+awareness during remote collaboration has not been explored in
+general, and especially not in realistic scenarios such as the
+applied domain of reservoir engineering.
+
+3 PLANWELL
+3.1 Design Considerations
+Since our design and system has to be used by experts from
+
+various domains who may not be experts in using computing
+systems and environments, we had the following set of design
+considerations and their respective implications on the design.
+3D Printed Terrain as a TUI : Previous TUI research has
+provided evidence that physical representations help in
+understanding complex spatial environments and relationships
+[Gillet et al., 2005], [Harris et al., 2011], [Jansen et al., 2013].
+Geologists and Urban planners have already explored the
+effectiveness of 3D printing to print physical models of GIS data
+[Rase, 2009].The conclusions developed from this research
+indicate that physical printed models enhance the spatial
+situational awareness during collaboration.
+Implications on Design: This previous positive research inspired
+us to use physical 3D printed representation of the oil reservoir as
+an interactive medium for collaboration.
+Maintaining The Local Physical Context:
+One of the
+requirements of our system is that it should preserve the actual
+physical context of the surroundings in which the users are
+present.
+Implications on Design: We could have used map based
+navigation system or pure virtual environments for the
+collaborative tasks. Though these techniques are efficient and
+provide various essential features such as zooming and panning,
+they disconnect the user from the actual physical environment.
+We used Augmented Reality to ensure that the users (both the
+overseer and the explorer) can perceive the physical context of
+their local environment.
+Interaction Design: Based on our discussions with domain experts,
+we determined that the Surface Team is responsible for
+coordinating and planning the drilling operations and the on-site
+drilling team performs the required tasks. Based upon this setting,
+we envision the overseer as the person or group who drives the
+entire task, while the explorer is the user who typically \executes"
+tasks based on the directions from the overseer. This corresponds
+with how a surface team would work with the workers on-site.
+Implications on Design: We empower the overseer to a wider set
+of stylus-based interaction which enables him to annotate, and
+sketch on the 3D printout, while the explorer can only visualize or
+select some important features for analyzing them in-situ and
+relaying the same information to the overseer.
+Simple and Commercially available Apparatus: Another
+requirement is that the system should be small and easily setup so
+that it may be used in various application domains and situations.
+The domain experts whom we envision to be our system users
+might not be well-versed with setting up the environment; hence
+our system needs to be easy and simple to be setup by novice
+users without much training.
+Implications on Design: There are multiple approaches such as a
+shape/surface-changing display [Follmer et al.,2013] with AR, or
+using a projector for overlaying content on the 3D printout
+[Bimber and Raskar, 2005]. However these solutions are difficult
+and complex to setup for non-experts and could limit the
+flexibility of the system. For this reason, we use the mobile
+Augmented Reality approach of using off the shelf mobile and
+tablet devices as our AR displays.
+3.2 Design
+The primary design goal was to enable two parties to share a
+spatial awareness via an interface designed to provide clear and
+intuitive understanding of each other's situation, despite
+differences in scale and perspective. To help us achieve this goal
+we used 3D printing to generate a terrain model with realistic
+spatial representation, as well as augmented reality techniques.
+The explorer in the field uses the actual physical environment as
+
+an interactive medium, and the overseer uses a 3D printed model
+of the same environment as an interactive medium.
+By designing for a specific petroleum engineering workflow, our
+approach may be deployed and tested in a real world application.
+In our scenario, a petroleum energy company would have a
+surface team who would be responsible for all surface operations.
+The surface team would collaborate with an on-field drilling team
+(often a contractor) in order to plan and implement an oil or gas
+well.
+PlanWell contains two major components:
+1) The overseer interface used by the surface team. In our
+scenario, this would reside at the energy company office.
+(Figure 1b, 1c and 1e).
+2) The explorer interface used by the drilling team in the
+field (Figure 1a and 1d.).
+
+PlanWell also provides interactions that allow the overseer to
+annotate and modify the existing data with a stylus (Figure 1c and
+Figure 1e). The stylus enables the overseer to draw a relatively
+precise path or select an area on the surface of the 3D model and
+send it to the explorer to provide instruction or guidance. Also,
+the overseer may drag and move an existing point-of-interest
+(POI) to a new location, in order to allow the explorer to examine
+it in the field. Apple iPad Air tablet was used as the handheld AR
+device. The PlanWell explorer interface (Figure 1d) uses
+augmented reality to superimpose the application-specific data
+such as reservoir data or drilling locations onto the terrain around
+the explorer, presenting static information such as petroleumreservoir properties, as well as dynamic information from the
+overseer such as paths, selected areas and suggested locations of
+wells. The communication is bi-directional.
+
+4 IMPLEMENTATION
+
+Figure 2: (a) Outdoor explorer with the AR device (b) overseer
+using the tangible user interface with AR glasses (c) overseer
+using an iPad as the AR device (d) Screenshot of explorer
+interface (e) Screenshot of overseer interface
+The overseer PlanWell interface uses a 3D printout as the
+physical representation geographical area. This model was based
+on real geographical data and produced using 3D printing, a
+process that is fast becoming ubiquitous. Augmented reality is
+used to superimpose the application-specific information onto the
+3D printout. The combination of visual illustration as well as the
+realistic spatial representation and tangible nature of the model
+allows the overseer to understand the topographical properties of
+the terrain intuitively and clearly. The goal of this arrangement is
+to offer the overseer direct physical representation of the
+topographical spatial properties enabling unambiguous
+interpretation of spatial properties, and allowing access to the 3D
+printed TUI both visually or by touch. The AR visual feedback
+enables awareness of the activities in the field in real time, and
+facilitates interactive access to the application-specific
+visualization, superimposed on its scaled-down 3D physical
+representation.
+1Epson Moveiro: http://www.epson.com/moverio
+2Shapeways Inc:http://www.shapeways.com/
+3Vuforia: https://www.qualcomm.com/products/vuforia
+
+Both the headset (Epson Moverio1) and the handheld screen (iPad
+Air) were used as the AR device. The 3D printout of the terrain
+model was provided by a 3D printing service vendor (Shapeways
+Inc.2) based on the digital model of the terrain. PlanWell uses an
+intermediate server to exchange information, including georeferences marked by the explorer and point-of-interests (POIs)
+marked by the overseer or explorer. The overseer and explorer
+clients are implemented on different devices and runtime
+environments. The overseer interface was implemented on an
+iPad Air running iOS and the explorer interface was implemented
+on a Google Nexus 5 running Android.
+Both clients display content via augmented reality. However, the
+explorer interface provides a geo-reference based in-situ
+experience by placing visualizations over the surrounding
+environment, while the overseer interface creates an exocentric
+visual experience and superimposes visualizations over the 3D
+printout with pen based interactions implemented using the
+Qualcomm Vuforia3 library. To achieve alignment between the
+perspective and the physicality, the explorer interface uses the
+built-in functions on the explorer's device such as the
+accelerometer, step detector, magnetic and GPS sensors. The
+overseer maintains alignment by tracking fiducial markers placed
+around the 3D printout.
+To tailor our design for the petroleum engineering domain, we
+overlaid information, such as petrol-reservoir data and production
+wells on the 3D printout as well as on actual physical terrain as
+shown in figure 1(e) and figure 1(d). Both interfaces use OpenGL
+ES to provide the visual elements.
+
+5 APPLICATION SCENARIO
+Petroleum well planning and drilling is the application that we
+have targeted for this project. To test the effectiveness of our
+prototype, we consider a scenario that contains tasks commonly
+carried out during well planning and drilling operations.
+Prior to the implementation of an oil or gas well, an
+interdisciplinary surface team consisting of petroleum engineers,
+geologists, civil engineers and planners meticulously plan the
+logistics of the resource extraction including locations of the
+drilling wells. The desired well locations are based on data
+provided from reservoir engineers, although in practice there is
+flexibility with regards to the actual location of the well due to
+directional drilling. The surface team determines potential
+locations for the wells based on the recommendations of the
+reservoir engineers as well as the economics and logistics
+determined by the surface team.
+
+This plan is then sent over to the drilling team (often a contractor),
+which is responsible for the drilling and operations of the physical
+wells on the field. The drilling team must then build a more
+detailed plan of how to implement the well, and suggest any
+necessary changes to the surface team's plan. During the course of
+the drilling team's planning, the potential well locations will
+typically require site surveys and there may be back-and-forth
+dialogue between the surface team and the drilling team based on
+information uncovered during the site surveys. Potential well
+locations may have environmental or archeological significance,
+or have features that impact the economics or safety of the well.
+After many potential iterations of planning, the drilling plan may
+be executed. This entire turn-around time could take days or
+weeks based on the complexity of the terrain and the drilling plan.
+Our interface hopes to expedite this process and reduce the time
+of this collaboration as well as improve communication of inform-
+
+2d), and then the selection will be translated into world
+coordinates and rendered as a red arrow on both the overseer and
+explorer screens, pointing at the corresponding location. This POI
+could be a certain terrain feature such as an environmental or
+safety concern or it could be a potential well location (Figure 2c).
+In the third scenario, in the case of a location determined to be
+suitable for a well based on the site survey, the overseer then
+could drag the representation of the well from an unsuitable place,
+to this POI (Figure 2e). Meanwhile, the explorer could also see
+the well representation appear on his AR interface (Figure 2f) at
+the proper location as it is moved by the overseer.
+The above scenario demonstrates the bidirectional information
+exchange triggered by user interactions, and the corresponding
+visual representations on both interfaces.
+
+6 TECHNICAL EVALUATION
+In this section we reflect on the potential of our system and
+discuss our technical evaluation of the accuracy and latency of the
+prototype.
+Accuracy: The GPS accuracy of the Nexus5 smartphone which
+was used as the explorer AR device is 10 meters. In our case, we
+have mapped an area of 6km x 6km to a 20cm x 20cm 3D printout,
+which means 1cm on the 3D printout represents 300m on the
+actual terrain. This means that the explorer has to walk for 150m
+for the overseer to observe a change of 0.5mm in the location of
+the explorer on the 3D printout. This scale issue may negatively
+impact the application design. Depending on the required
+accuracy and exploration styles, (e.g. rough exploration by a car
+vs a detailed exploration by walking) the impact of this metric
+varies. A potential solution include the use of dynamic multi-scale
+visualization on the 3D printout where the detailed information
+could be presented with a magnification lens [Looser et al., 2007]
+while enabling the user to switch back to the overview view with
+correct spatial scale and texture. Also, the acceptable scale could
+be determined based upon the application and the interface could
+implemented with the appropriate scale for the application, if
+feasible.
+Latency: The data latency between the overseer and the explorer
+depends on the transmission infrastructure. In this prototype, we
+measured the latency of both sent and received JSON packets to
+be on average 2.4 seconds measured over a one hour duration
+between remote sites using a commercial cellular (3G) service.
+This should be acceptable performance, since the distance covered
+by the overseer in such a small time is should not be significant
+for this application.
+
+Figure 3 : (a) explorer position on 3D printout (b)
+marches to another position (c) POI selected by
+updated on 3D printout (d) the explorer marks a
+overseer updating a POI on the 3D printout (f) POI
+by overseer shown on explorer interface
+
+explorer
+explorer
+POI (e)
+updated
+
+ation and therefore reduce the probability of errors.
+We designed three primary interaction scenarios to facilitate such
+remote collaboration for well-planning. In the first scenario the
+explorer's location is dynamically updated on the 3D printout of
+the overseer. While navigating the field (Figure 2b), the explorer's
+geo-reference is continuously sent to the overseer, allowing the
+overseer to maintain the spatial awareness of the explorer (Figure
+2a).
+In the second scenario, the explorer may select a particular POI
+on the field by tapping on the touchscreen of the device (Figure
+
+7 USER STUDY
+We conducted two focus group sessions with domain experts to
+gain further insights into our design. In this section, we will be
+describing the major themes that emerged out of our discussions.
+The results of both the focus groups were consistent and back up
+our claims.
+7.1 Focus Group
+We conducted two focus groups with different set of domain
+experts in each group. The first group had three experts who were
+from the petroleum and reservoir engineering departments at the
+University of Calgary. Though all of these experts are from the
+academia, they have worked in or alongside different teams and
+disciplines within the oil-and-gas- production cycle. They had
+several years' of experience in the industry as well. The second
+
+group had three experts who were from the industry. They are part
+of the surface team and perform the well-planning and analysis.
+Based on this, we believe our participants were qualified to
+comment about the validity of our prototype. The aim of the focus
+group was to gather qualitative feedback about the validity of our
+prototype and its perceived benefit to the oil-and-gas production
+cycle. We also sought to find the specific workflows for which
+our prototype could provide value and gain feedback and
+comments regarding improvements to the visual representation of
+data and interaction techniques.
+The focus group was conducted in a controlled setting with the
+authors driving the entire session. The domain experts were first
+instructed on the technology and concepts involved, such as
+augmented reality. The instruction included both conceptual
+discussions as well as demonstrations of the AR devices showing
+some sample AR applications. The 3D printed model of the
+terrain was then explained and the AR overlay on the 3D printout
+was demonstrated. The participants had the opportunity to try our
+demo with both the iPad and the Epson headset. The participants
+were then introduced to the pen-based interactions and
+encouraged to try them on the 3D printout. The participants were
+also shown the explorer interface. For simplicity, we mocked up
+the explorer interface to show the explorer AR overlay and
+visualizations in the focus group session. The experts were given
+the opportunity to try our entire system with mock scenarios and
+the participants also had the opportunity to take the role of both
+the overseer and the explorer.
+Once the experts seemed to fully understand the functionality and
+interaction techniques of the prototype, we conducted the focus
+group. The entire conversation was audio-recorded and the
+sessions lasted for 60 minutes each. Using the audio recordings
+we transcribed the audio for both the focus group discussions. We
+performed open coding of the transcribed data in order to group
+broad themes and identify interesting observations [Strauss et al.,
+1990]. For the discussion of the results we refer to the academic
+experts from the first focus group discussion as A1, A2 and A3,
+while the experts from the industry are referred as I1, I2, and I3.
+
+8 RESULTS AND DISCUSSION
+The domain experts were quite excited and interested by the
+prototype. They claimed to have not seen anything similar and
+provided valuable feedback about how PlanWell could be useful
+in the oil and gas industry. During our focus group study, the
+following major themes emerged.
+
+8.1 The Role of 3D Printout for Better Spatial
+Understanding
+Previous TUI research has confirmed that physical representations
+help in understanding complex spatial representations and
+relationships [Gillet et al., 2005], [Harris et al., 2011], [Jansen et
+al., 2013]. Our focus group affirmed these claims. The domain
+experts felt that the 3D printed models could be useful in clearly
+and intuitively understanding the nuances of the terrain. For
+example one of the domain experts explained that with a 3D
+printout of the terrain, it would be easier to know the appropriate
+pad sites for well construction which ultimately helps in reducing
+the time and cost and reduces errors. One of the domain experts
+from the first group also expressed similar views saying that 3D
+printed models could help in understanding the regularities and
+irregularities on the surface based on which well platforms can be
+constructed. However, with respect to quantitative measures such
+as task efficiency and productivity, the expert was unsure how 2D
+map would compare against a 3D printed model. We believe that
+
+a quantitative task based evaluation would help us in answering
+this question.
+“With the 2D map, it is tougher. For example, we decide a pad on
+the edge of the hill and then the scout guys takes two weeks, and
+analyses the location and says, that its not going to work, then we
+choose a new pad and then again scout again takes 15 days, goes
+to the new place and then maybe if it works then we start with the
+drilling, otherwise the cycle continues. So with the 3D printout, its
+easier to get to know the appropriate pad sites. Having a better
+idea about what's there on the ground and the features help in
+reducing the time and cost." - I1.
+“Based on the regularity or irregularities of the surface, well
+platforms can be constructed. These regularities and
+irregularities can be easily visible on a 3D printout. But I am not
+sure how this can be compared to 2D maps" - A2.
+
+8.2 Enhanced Collaboration between The Two
+Remote Teams
+
+With current practices in the petroleum engineering domain, the
+planning of a well can take a very long time and there is a need
+for collaboration throughout this time period. Our experts claimed
+that this application could be best for facilitating real-time
+coordination and communication between remote teams and
+planners and could significantly reduce both the time spent
+planning and the potential for miscommunication and error.
+“Communication breaks between the field scout and the office
+planning team. The coordination misses and results in lot of time
+and money. There is a lot of break between the guys on field
+trying to find the location and the office team tries to plan the
+location. It takes a lot longer for us to get these pads approved.
+By the time they get the crown approved, it takes 6-8 months' time.
+And the from the time we plan the pad to the time we start drilling
+there sometimes we miss the timing and coordination and then we
+have to go somewhere else. Having a tool like this allows you to
+be able to in the office and see right up front, what is happening,
+what is looks like, the issues encountered and shorten the time, so
+that the locations can be approved, and get them on production
+and follow the yearly production forecast cycle."- I1
+“This application could be best for the coordination between the
+surface team and the on-field drilling team." - A1.
+“When there is change in the location of the well, then it has to go
+back to the drilling engineer because they have to
+correspondingly change the plan according to the new location.
+With this tool, the information exchange between the remote sites
+enables the teams to dynamically change the plans." - A3.
+Based on the comments of the experts, it is evident that the
+collaboration facilitated by PlanWell can help the remote teams to
+dynamically plan, change and edit well locations and other
+operations and thus reduce time and cost of the collaborative work
+we have described.
+
+8.3 The power of Spatial Augmented Reality
+Our experts were very much impressed with the AR interface and
+the ability to overlay information over the physical environment.
+They suggested that such spatially augmented reality could save
+them time and money as they can test the well locations and well
+types by overlaying virtual wells while in direct communication
+with the planners. They also suggested other information that
+could be overlaid on both the explorer's surroundings and the 3D
+printout. This includes information such as details regarding well
+locations and well types, locations of archaeological sites,
+environmentally sensitive areas, flood plains and watersheds.
+“There could be constraints such as a particular site could be
+archaeological site, or there could be lot of underground water,
+
+or there could be lakes and rivers. All this information can also be
+overlaid." - A2.
+
+8.4 3D printout as a Collocated Collaborative
+Interface
+The current PCs and desktop computers which are widely used
+are designed for single-user applications and don't support
+comfortable and effective collocated collaboration. Tabletop
+systems have been developed that support collocated
+collaboration between users [Buisine et al., 2012], [Rogers and
+Lindley, 2004]. Extending upon these tabletop interfaces, tangible
+user interfaces have also been built that supported collocated
+collaboration. Based on this previous literature we envision that
+our 3D printed terrain model could be an effective tangible user
+interface that supports collocated collaboration. The domain
+experts' views from our focus group discussion also supported our
+vision. The experts claimed that the 3D printed physical terrain
+model in the PlanWell interface could be a collaboration tool
+which would be useful in bringing multiple experts from various
+domains to collaborate on well planning tasks. Such a
+collaborative medium could facilitate common spatial awareness
+between all the users and hence could significantly reduce the
+time for decision-making process.
+“The 3D printed terrain model could be very useful collaboration
+tool. This could be leveraged as a useful collaboration tool to get
+multiple people." - I3.
+“The overseer rather than one person per explorer trip could be
+an entire team that could collaborate over the 3d printout and
+finalize it in a single trip and reduce the cycle time and cost." - I2.
+
+8.5 Physicality and the
+Interaction on the 3D printout
+
+3D
+
+stylus-Based
+
+One of the important features that our PlanWell prototype offers
+is the physicality provided by the 3D printout. Physical interfaces
+add value as they allow the user to touch, feel and manipulate the
+interface. This is particularly useful in domains such as geology,
+archaeology, and reservoir engineering as the experts generally
+prefer to touch and “feel" the surface for analysis.
+“Physicality adds value. I always prefer the physical models,
+touching it and feeling it. We use 2D maps which are so old
+fashioned and we miss so many things. Now this 3D model acts as
+a decision space where I can now everything in 3D. Now I see the
+value in physical level in addition because with software 3D
+models there always some issues with respect to perception and
+there are always some errors and spatial data errors and these
+would easily be corrected with the physical model. You can
+measure it to fair extent and look at the 3D digital models, but it
+doesn't much relate to the real world." - I1.
+Although computer generated models provide 3D visualization,
+these visualizations are often complex and there could be
+perception issues [Johnson, 2004] ,[Ware, 2012]. The physicality
+provided by the 3D printed model resolves this perception issue as
+the visualization now is physical and relates to the real-world.
+During the focus group discussion the various perception issues
+the experts experienced in the commercial 3D software packages
+were described. Sometimes these perception issues make it very
+difficult for the older staff to grasp the interaction with the 3D
+virtual models in relation to their physical real-world interaction.
+Also the modes of interaction with the 3D spatial data in the
+commercial software packages are with 2D interfaces such as
+mouse and keypads. This makes the interaction with 3D terrain
+non-intuitive and often leaves the user clueless about the
+
+orientation of the model. These issues were explained in detail by
+the experts in our focus group discussions.
+“For older staff, sometimes it's very difficult to orient and
+visualize the 3D visualization. Not even operating the tool, just
+visualizing the model, spinning and orienting themselves to the
+view is very difficult to get and understand what they are seeing.
+It does happen quite often. Physicality helps in conveying certain
+spatial concepts to people." - I2.
+One of the other important features the PlanWell interface is the
+natural 3D stylus interactions which allow the overseer to sketch
+and draw on the 3D printout. This is in particular useful as it
+provides a natural 3D interaction with the physical world,
+compared to the 2D visualizations of 3D data as offered by the
+current commercial software packages. Many times, experts
+interact with high resolution data and sketching of paths is one of
+the most common modes of interaction. However the current 3D
+software packages make it very non-intuitive for this mode of
+interaction and make sketching a path a multi-step process. The
+users have to make 2D sketches and these need to be converted
+into 3D shape file by another specialized software and this file is
+fed as input to the 3D visualization software to visualize the final
+output. Our stylus-based interaction approach eliminates this
+multi-step approach and enables the user to directly interact with
+the data without any perception issues.
+“Sometimes we work on smaller area and higher resolution. The
+process we do now are with commercial map-based software, we
+make 2D sketches, and go through a rather multiple-step process,
+like make that into a shape file, load it into a 3D software. The
+pen-based interactions are very intuitive because they can sketch
+it onto the actual 3D printout and there are no perception issues.
+More over direct input on the 3D printout is very intuitive and
+presents natural interaction, rather than 2d sketches on 3d data
+using software. The current sketching and planning process is
+multiple-step approach. They use 2d map-based software which
+allows them make some sketches for planning. In order to
+visualize and plan them in 3D, these 2d sketches involve a
+multiple step process to convert to 3D, i.e. they need to create
+shape file and then input this into another commercial 3D viz
+software and then visualize it. And again when they have to make
+a new sketch or change the existing sketch, they have to go back
+to the previous 2D maps-based software, make a new sketch and
+convert and then see it 3D using the 3D software. So this
+sketching and planning operations are very time consuming and
+non-intuitive." - I1.
+
+8.6 Applicability beyond Well Planning
+Our experts commented that our prototype had the potential to be
+useful for other workflows within the petroleum engineering
+domain. These include monitoring remote oil rigs, reservoir
+planning and facilitating collaboration between reservoir
+engineers and geologists for tasks such as extrapolating subsurface models from the surface terrain. There may also be
+applications to geomatics and civil engineering.
+“This could be very useful for the geomatics guys, especially the
+ones who do mapping and surveying." - A3.
+“This 3D model could help in estimating the sub-surface model
+that lies beneath the earth. The terrain pattern could be used to
+extrapolate the subsurface which could also be useful in reservoir
+engineering studies." - A1.
+“The application could be useful in monitoring rig movements.
+For example if there are a number of rigs place on the field, the
+overseer can monitor the rig movements and plan for the
+upcoming strategies, for production." - A2.
+
+“Civil engineers could also use PlanWell, for construction of
+roads, structures etc" - A3.
+Based on this feedback, we envision that our PlanWell concept
+could be useful and applicable across a various domains for a
+variety of tasks
+
+9 LIMITATIONS AND FUTURE WORK
+PlanWell is functional and was designed according to input from
+domain experts and reservoir engineers. However, though our
+focus groups and interviews affirm the applicability and usability
+of our prototype, it is still a preliminary prototype. We have not
+validated its usability “in-the-wild" with domain users performing
+actual tasks. One current limitation of our design is the
+procurement of high quality 3D printed models. A geographical
+region may be very detailed and complex and it is still an effort to
+print a high quality 3D version of it. However with the
+progression of the current 3D printing technologies, it is likely
+that this barrier will eventually be reduced if not completely
+eliminated. Another limitation is the AR devices of the overseer
+interface. It could be tiresome for the users to hold the hand-held
+device and operate on the TUI. Though this ergonomic issue
+could be solved by the AR headset, the headset suffered from a
+limited field-of view and low resolution display which might not
+be suitable for visualizing high resolution data. Although
+PlanWell provides a novel interaction and collaboration
+mechanism for remote users, its comparison with traditional maps
+or desktop tools must be further investigated to determine if there
+are clear advantages to conventional 2d maps. With respect to the
+collaborative features, we would like to extend the design to
+multiple (non-collocated) explorers and also to multiple (noncollocated) overseers, all analyzing the same reservoir model.
+
+10 CONCLUSION
+We presented our PlanWell prototype which facilitates
+collaborative well planning and drilling operations using AR and
+3D printing technologies. This system allows a central overseer
+and an in the field explorer to dynamically exchange information
+within a shared spatial medium. The overseer uses a scaled 3D
+printed model of the petroleum reservoir surface terrain, which
+acts as an aid to understand the spatial nuances of the terrain and
+also as a tangible user interface (TUI). The seamless integration of
+AR with the TUI provides visual as well as tactile sensation about
+the petroleum-reservoir surface terrain and supports collaboration
+between the overseer and the explorer. The explorer interacts
+with the surface environment directly via an AR interface. Our
+contributions include the use of an AR interface using a 3D
+printed terrain model to support interactive techniques that
+provide spatial and structural awareness during collaborative
+navigational tasks. We apply this interface to a realistic petroleum
+engineering scenario and discuss our design and prototype
+implementation with domain experts. Based on these discussions,
+PlanWell could prove to be a practical tool which would provide
+value to collaborative petroleum engineering workflows.
+
+11 ACKNOWLEDGEMENTS
+We would like to thank our colleagues and reviewers for their
+valuable comments, suggestions and discussions. We also would
+like to thank the subject matter experts from the Department of
+Petroleum Engineering at the University of Calgary and
+BirchCliff Energy Ltd for their valuable feedback during the focus
+group sessions. We would like to thank Foundation CMG for their
+
+support of the Foundation CMG/Frank and Sarah Meyer
+Collaboration Centre. This research was supported by the Alberta
+Innovates Academy (AITF) / Foundation CMG Industrial
+Research Chair in Scalable Reservoir Visualization.
+
+References
+BARAKONYI, I., FAHMY, T., AND SCHMALSTIEG, D. (2004).
+Remote collaboration using augmented reality videoconferencing.
+In Proceedings of Graphics interface 2004, pages 89- 96.
+Canadian Human-Computer Communications Society.
+BILLINGHURST, M. AND KATO,H. (2002). Collaborative
+augmented reality. Communications of the ACM, 45(7):64-70.
+BIMBER, O. AND RASKAR, R.(2005). Spatial augmented reality:
+merging real and virtual worlds. CRC Press.
+BUISINE, S., BESACIER, G., AOUSSAT, A AND VERNIER, F. (2012).
+How do interactive tabletop systems influence collaboration?
+Computers in Human
+Behavior, 28(1):49-59.
+FOLLMER, S., LEITHINGER, D., OLWAL, A., HOGGE, A., AND ISHII,
+H. (2013). inform: dynamic physical affordances and constraints
+through shape and object actuation. In UIST, volume 13, pages
+417-426.
+GAUGLITZ, S., LEE, C., TURK, M., AND HOLLERER, T. (2012).
+Integrating the physical environment into mobile remote
+collaboration. In Proceedings of the 14th international conference
+on Human-computer interaction with mobile devices and services,
+pages 241-250. ACM.
+GAUGLITZ, S., NUERNBERGER, B., TURK, M., AND HOLLERER, T.
+(2014). World-stabilized annotations and virtual scene navigation
+for remote collaboration. In Proceedings of the 27th annual ACM
+symposium on User interface software and technology, pages
+449-459. ACM.
+GILLET, A., SANNER, M., STOFFLER, D., AND OLSON, A. (2005).
+Tangible interfaces for structural molecular biology. Structure,
+13(3):483-491.
+HARRIS, J., YOUNG, J., SULTANUM, N., LAPIDES, P., SHARLIN, E.,
+AND SOUSA, M. C. (2011). Designing snakey: a tangible user
+interface supporting well path planning. In Human-Computer
+Interaction-INTERACT 2011, pages 45-53. Springer.
+HEDLEY, N. R., BILLINGHURST, M., POSTNER, L., MAY, R., AND
+KATO, H. (2002). Explorations in the use of augmented reality for
+geographic visualization. PRESENCE: Teleoperators and virtual
+environments, 11(2):119-133.
+HOLLERER, T., FEINER, S., TERAUCHI, T., RASHID, G., AND
+HALLAWAY, D. (1999). Exploring mars: developing indoor and
+outdoor user interfaces to a mobile augmented reality system.
+Computers &Graphics, 23(6):779-785.
+JANSEN, Y., DRAGICEVIC, P., AND FEKETE, J.-D. (2013).
+Evaluating the efficiency of physical visualizations. In
+Proceedings of the SIGCHI Conference on Human Factors in
+Computing Systems, pages 2593-2602. ACM.
+
+JOHNSON, C. (2004). Top scientific visualization research
+problems. Computer graphics and applications, IEEE, 24(4):13-17.
+LAPIDES, P., SULTANUM, N., SHARLIN, E., AND SOUSA, M. C.
+(2012). Seamless mixed reality tracking in tabletop reservoir
+engineering interaction. In Proceedings of the International
+Working Conference on Advanced Visual Interfaces, pages 725728. ACM.
+LEIBE, B., STARNER, T., RIBARSKY, W.,WARTELL, Z., KRUM, D.,
+WEEKS, J., SINGLETARY, B., AND HEDGES, L. (2000). Toward
+spontaneous interaction with the perceptive workbench. Computer
+Graphics and Applications, IEEE, 20(6):54-65.
+LEITHINGER, D., FOLLMER, S., OLWAL, A., AND ISHII, H. (2014).
+Physical telepresence: shape capture and display for embodied,
+computer-mediated remote collaboration. In Proceedings of the
+27th annual ACM symposium on User Interface Software and
+Technology, pages 461-470. ACM.
+LI, N., CARTWRIGHT, S., SHEKHAR NITTALA, A., SHARLIN, E., AND
+COSTA SOUSA, M. (2015). Flying frustum: A spatial interface for
+enhancing human-UAV awareness. In Proceedings of the Third
+International Conference on Human-agent Interaction, HAI '15.
+ACM.
+LI, N., NITTALA, A. S., SHARLIN, E., AND COSTA SOUSA, M.
+(2014). Shvil: collaborative augmented reality land navigation. In
+CHI'14 Extended Abstracts on Human Factors in Computing
+Systems, pages 1291-1296. ACM.
+LOOSER, J., GRASSET, R., AND BILLINGHURST, M. (2007). A 3d
+flexible and tangible magic lens in augmented reality. In
+Proceedings of the 2007 6th IEEE and ACM International
+Symposium on Mixed and Augmented Reality, pages 1-4. IEEE
+Computer Society.
+RASE, W.-D. (2009). Visualization of three-dimensional gis
+objects using rapid prototyping technology. Paper presented at
+GeoViz Hamburg, 3:5.
+RASKAR, R., WELCH, G., AND FUCHS, H. (1998). Spatially
+augmented reality. In First IEEE Workshop on Augmented
+Reality (IWAR 98), pages 11-20. Citeseer.
+ROBERT, K., ZHU, D., HUANG, W.,ALEM, L., AND GEDEON, T.
+(2013). Mobilehelper: remote guiding using smart mobile devices,
+hand gestures and augmented reality. In SIGGRAPH Asia 2013
+Symposium on Mobile Graphics and Interactive Applications,
+page 39. ACM.
+ROBINSON, P. AND TUDDENHAM, P. (2007). Distributed tabletops:
+Supporting remote and mixed-presence tabletop collaboration. In
+Horizontal Interactive Human-Computer Systems, 2007.
+TABLETOP'07. Second Annual IEEE International Workshop on,
+pages 19-26. IEEE.
+ROGERS, Y. AND LINDLEY, S. (2004). Collaborating around
+vertical and horizontal large interactive displays: which way is
+best? Interacting with Computers, 16(6):1133-1152.
+SAKONG, K. AND NAM, T.-J. (2006). Supporting telepresence by
+visual and physical cues in distributed 3d collaborative design
+
+environments. In CHI'06 Extended Abstracts on Human Factors
+in Computing Systems, pages 1283-1288. ACM.
+SCHALL, G., MENDEZ, E., AND SCHMALSTIEG, D. (2008). Virtual
+redlining for civil engineering in real environments. In
+Proceedings of the 7th IEEE/ACM International Symposium on
+Mixed and Augmented Reality, pages 95-98. IEEE Computer
+Society.
+SODHI, R. S., JONES, B. R., FORSYTH, D.,BAILEY, B. P., AND
+MACIOCCI, G. (2013). Bethere: 3d mobile collaboration with
+spatial input. In Proceedings of the SIGCHI Conference on
+Human Factors in Computing Systems, pages 179-188. ACM.
+STAFFORD, A., PIEKARSKI, W., AND THOMAS, B. (2006).
+Implementation of god-like interaction techniques for supporting
+collaboration between outdoor AR and indoor tabletop users. In
+Proceedings of the 5th IEEE and ACM International Symposium
+on Mixed and Augmented Reality, pages 165-172. IEEE
+Computer Society.
+STRAUSS, A. L., CORBIN, J. M. (1990). Basics of qualitative
+research, volume 15. Sage Newbury Park, CA.
+WARE, C. (2012). Information visualization: perception for
+design. Elsevier.
+
+

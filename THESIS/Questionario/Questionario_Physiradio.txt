@@ -1,0 +1,43 @@
+﻿QUESTIONARIO PER FIELD TEST DEL PROTOTIPO "Physiradio" :
+
+NOTA: Durante il test, sarebbe bene mettere già per iscritto sul csv tutti i dati descritti nello use case.
+
+CSV esterno per raccogliere i dati (?) → Dati_questionario.csv   
+
+NOTA2: Per la forzatura delle stazioni, si può fare sia da MQTT che da Seriale(per questo guardare il codice) , sono implementati in modo quasi identico.
+
+
+USE CASE PER IL TEST: 
+    1) spiegazione breve di che cosa l’utente ha davanti e il tipo di mapping che il prototipo si prefigge di svolgere (sottolineando che lo scopo non è il mapping perfetto ma l’idea che ci sta dietro). [atrent: per ora senza entrare nel dettaglio dell'opendata]
+
+    2) DOMANDE INIZIALI:
+        1. età, sesso, occupazione, estrazione(titolo di studio, dove abita…) 
+        2. ascoltatore abituale di musica (si/no), generi che ama, attraverso cosa ascolta (radio, streaming, cd, etc.)
+
+    3) INIZIO TEST: far vedere e sentire 3/4 stazioni differenti, preparandosi precedentemente dei casi di meteo differenti (trovare città di cui si sa già il meteo →  alla peggio si possono forzare le stazioni manualmente dal serial o dall’mqtt).
+
+DOMANDE INTERMEDIE: Per ogni stazione/colore, chiedere il tempo (ricondurlo agli stessi valori usati dal prototipo)  → segnare se coincide col valore prefissato oppure no.
+
+       PS: Sarà difficile trovare una città in cui nevica o una in cui c’è una tempesta, quelli son casi di test da forzare quasi sicuramente.
+
+NB: NON far vedere il pc da cui verranno fatte le chiamate mqtt/seriali per il cambio della stazione (o anche sì?). [atrent: può essere camuffato dal fatto che si prendono appunti sul questionario]
+
+    4) FASE INTERMEDIA (OPZIONALE): fase simil-giocosa , si può chiedere alla persona di chiedere una città da interrogare e deve capire che meteo c’è. [atrent: ottimo]
+       
+    5) DOMANDE FINALI: 
+        1. “Da 1 a 10 , quanto è stata efficace la percezione del dato tramite questo dispositivo?” (domanda chiusa , valori da 1 a 10)
+        2. “ha senso questo tipo di mapping secondo te?” (si/no) → “hai idea di qualcosa di simile che si potrebbe creare, e quando potrebbe esserti utile, nella vita quotidiana?” (domanda aperta, per spunti)
+        3. proporre altri mapping (dato->genere/luce) e contesti situazioni, ad es.:
+			A. mentre mi faccio la barba programmo un mapping "countdown" per prendere un treno (adattivo in funzione del dato sullo status effettivo di ritardo eventuale)
+			B. mentre mi preparo la mattina mappo lo stato del traffico per capire se mi devo sbrigare o meno
+			C. (situazione molto tecnica) mentre lavoro ad una scrivania mappo uno status di qualche impianto che va accudito in casi particolari (es. server che surriscaldano, linee di produzione che si fermano, etc.)
+			D. in un negozio/ristorante mappo un genere musicale in funzione del numero (o tipo?) di presenze
+
+	6) Chiedere (domanda aperta), a valle di aver fatto gli esempi di cui sopra, se ne vengono in mente altri esempi di mapping possibili
+ 
+	7) STEP successivo (opzionale), opendata: spiegare architettura del "marchingegno magico" e raccontare cosa sono i dati aperti e cosa vuol dire catturare dati dalla rete, etc.
+
+
+
+
+

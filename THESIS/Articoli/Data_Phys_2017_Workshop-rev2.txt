@@ -1,0 +1,422 @@
+Data Sculptures as a Playful and
+Low-Tech Introduction to Working with
+Data
+Rahul Bhargava
+MIT Center for Civic Media
+Cambridge, MA, USA
+rahulb@mit.edu
+
+Catherine D’Ignazio
+Emerson Engagement Game
+Lab
+Boston, MA, USA
+catherine_dignazio@emerson.edu
+
+Abstract
+There is a large and growing population of novice learners entering the field of working with data to tell stories, but
+they face many challenges related to process, methods and
+tools. This paper argues that activities focused on building physical manifestations of data, where some variable
+is mapped onto a physical artifact, are uniquely well-suited
+to scaffolding a process and exposing learners to methods so that they may take the next step in a learning journey. We introduce our pedagogical motivations as well as
+three principles that guide our work - use familiar materials,
+stay low-tech, and create a playground. Three case studies demonstrate how the playful activities we create based
+on these principles help novice learners explore advanced
+concepts very quickly. This work strongly suggests that creating data sculptures helps novices overcome initial barriers
+to learning, set expectations for a data storytelling process,
+and feel empowered to take the next step.
+
+Author Keywords
+data literacy; data physicalization; data sculptures; pedagogy; hands-on, case studies
+
+Introduction
+The surge in popularity of data visualization, fueled by "big
+data" narratives in popular press and viral infographics on
+social media has led large numbers of novices to enter the
+
+field of data-driven storytelling. These novices include students wanting to launch careers, nonprofit staff wanting to
+create change in new ways, journalists creating new forms
+of reporting, and engineers wishing to communicate complicated concepts clearly and effectively.
+Unfortunately, the complexity and technological underpinnings of the data analysis pipeline are intimidating to newcomers. To understand these challenges better, we can
+look at survey responses about barriers to working with
+data collected by a local nonprofit training program1 . When
+asked "What are your biggest challenges?" when working
+with data, a lightweight analysis shows answers centered
+on themes related to technical complexity and a lack of
+awareness of both process and tools. For instance, many
+pointed to a "lack of knowledge". Others mentioned "finding
+appropriate/right models/tools" or "Finding the right technology". Many came to the workshops to "get more experience" on "communication of impact".
+These survey responses document the attitudes and anxieties that we have encountered in workshop settings with
+novices over the past ten years. The process of going from
+data to story is perceived as a dark art or a black box. While
+there are many learning materials online, these tool trainings2 and academic modules3 require a higher level of
+buy-in than most novice learners can afford. They focus
+
+1
+The surveys were conducted by our collaborator Tech Networks of
+Boston and TNB Labs at 5 unique sessions they hosted in early 2017
+(n=340). A more thorough coding and analysis of these results is beyond
+the scope of this short paper.
+2
+Tableau is just one of the many tool companies
+that provides an extensive set of video-based trainings:
+https://www.tableau.com/learn/training
+3
+Online learning modules for those wishing to enter the field
+of data science have taken off. See this example on Udemy:
+https://www.udemy.com/datascience/
+
+on technical language and digital technologies, two areas
+that intimidate novices that might not have digital fluency.
+We argue that the activity of creating low-tech physicalizations of data is particularly well-suited to introduce novices
+to the process of finding stories in data and telling these
+stories to others. Specifically, producing three dimensional
+physical encodings of data quickly, with familiar materials,
+lets these learners enter the space of working with data in
+an unintimidating way. These learners want to tell stories
+with their data, not become "data analysts". With this audience in mind, we refer to these objects by the much more
+friendly name of "data sculptures"4 .
+Three principles guide the Data Sculpture activities that we
+believe carry these benefits:
+• Use familiar materials: This reduces the psychological barriers to learning; meeting learners where they
+are and building their confidence.
+• Go low-tech: This allows for a focus on underlying
+concepts and mental models needed to work with
+data, regardless of the toolchain employed once the
+learner is further along in their journey.
+• Create a playground: Allowing the learner to move
+from data to story quickly, with acknowledged disregard for nuance and details, models the longer process and helps them build confidence for taking the
+next step.
+This paper supports our argument with short case studies
+from 10 years of leading hands-on data sculpture activities in a variety of educational settings. First, we discuss
+4
+It is hard to trace the original use of the term, but Bhargava was first
+exposed to it in 2013 via an episode of the Data Stories podcast [1]
+
+doing short 5-minute building activities in professional development workshops with non-expert audiences. Second,
+we look at creations made by undergraduate and graduate students in week-long data sculpture "sketching" exercises. Third, we look at some nascent work introducing data
+sculptures to elementary school students in classroom settings. We reflect on each of these settings to support our
+argument that data sculptures are a uniquely appropriate
+approach for helping novice audiences move past the barriers they see to building their data literacy.
+
+commodate" it [18]. We also draw inspirations from Freire’s
+approach to contextualizing content in the settings that matter to the learner [7]. For Freire, the material artifacts were
+a strong component of creating a connection between the
+learner and the content. Another inspiration can be found in
+the work of James Rojas, who reinterprets urban planning
+as participatory play by using low-tech materials to engage
+the general public in discussions [19]. Our data sculpture
+activities use a variety of physical craft materials sourced
+from near the site of each workshop (see Figure 1).
+
+Pedagogical Inspirations
+
+Go Low-Tech
+It is critical to keep in mind novice learners when designing
+ways for newcomers to enter a technology-oriented space.
+There are numerous interesting high-tech physical interfaces being created, many of them emerging from the field
+of tangible interfaces [12, 10, 21]. We find more appropriate
+inspiration for our contexts in work such as "squishy circuits" [14], "crafting technology" [4], and "data edibilization"
+[22]. These approaches present an opportunity to create
+something in a physical language that is familiar and delightful to the learner. These echo the ideas of Froebel’s
+gifts - which gave kindergarten children building blocks
+to construct with that made sense for their natural world
+and setting [8]. More recent work has found that in settings
+where one wants to promote interactive dialog with the audience about the data, informal presentations of data can
+work better than formal ones [2, 23]. These approaches are
+driving a rethinking of civic and political action in democracies, towards more data-centric and visualized processes
+that might offer more opportunity for engagement [3, 24,
+13].
+
+Our engaged workshops draw inspiration from a number
+of existing pedagogical approaches. One central idea is
+Seymour Papert’s Constructionist approach to learning. Papert argues that the most meaningful learning experiences
+come when learners are deeply engaged in designing and
+creating things [17]. These physical objects we create embody our learnings, and serve as physical foils which others
+can react to and reflect on. The interactive dialog through
+and with these objects is a powerful path to learning. Another central idea, inspired by the history of feminist thinking, is to reframe who is allowed, and who isn’t allowed, to
+create with data [6]. Data sculptures provide an opportunity
+to empower more diverse audiences to tell stories with data
+that can create change in the world around them. What follows is a brief background of the theory behind each of our
+three underlying principles.
+
+Figure 1: Examples of some of the
+types of materials used to create
+quick data sculptures.
+
+Use Familiar Materials
+This principle harkens back to the founders of our current
+model of approaching pedagogy. We can begin with Piaget’s dismissal of the idea of learners as empty vessels to
+be filled with knowledge. He advocated for respecting learners’ lived experiences and how those experiences either
+"assimilated" new knowledge, or had to be adapted to "ac-
+
+Create a Playground
+There is a long history of participatory workshops that inspire our approach. Recent work has brought this history
+
+to data physicalization [11]. In addition, we follow the guidance of noted developmental psychologist and learning
+researcher Edith Ackermann. She reminds us why handson, arts-based workshops can be a powerful setting by
+noting that "in a playful environment you feel safe enough
+to explore ideas that would otherwise be risky" [20]. This
+guidance suggests a pathway to overcoming the fear felt
+by many novice learners, by carefully crafting the activity
+environment so they do feel "safe" - a key precondition to
+receptiveness to learning. However, Ackermann also notes
+that "you cannot use play or fun as a pretext". The playful
+approach you craft must be deeply tied to the topic at hand;
+and must help learners take the next step in a learning journey.
+Figure 2: A sample of the type of
+one-page handout used to support
+the Data Sculpture activity in a
+workshop setting.
+
+Case Studies
+With these pedagogical inspirations and guiding principles
+in mind, we can begin to discuss the settings we have created. In each we will support our argument that creating
+low-tech physicalizations of data is uniquely well-suited to
+introduce novices to the process of finding stories in data
+and telling these stories to others.
+Data Sculptures as a Workshop Ice-Breaker Activity
+Professional development settings are fraught with failed
+attempts to build data literacy, or a data culture, within corporate walls. These efforts, usually led by the IT department, generally involve tool trainings and long days in front
+of computer screens. This seldom relates to the problems
+faced by ordinary staff, often instead attempting to train
+them in the emerging field of data science.
+
+Figure 3: Two data sculptures
+created by participants at a
+workshop.
+
+Over the last ten years we’ve run short data sculpture exercises at dozens of workshops targeting this audience. Our
+short activity involves working with the key stakeholders
+before the workshop to develop a simple 1-page data hand-
+
+out, summarizing some relevant data with traditional charts
+and graphs (see Figure 2). Recent work on "Data Placemats" has explored the role of these types of handouts
+in building understanding when bringing together groups
+around data [16]. Generally, during the workshop a central
+table holds materials carefully selected from local vendors,
+made with local materials. Participants are then told to pair
+up and given 6 minutes to build something that represents
+some story in the data they see. Key advice includes thinking with their hands, and not simply creating a bar chart out
+of pipe cleaners or other such materials.
+A facilitated discussion after the frenzied building period allows opportunities for highlighting the depth of storytelling
+that can be done with such simple materials, on multiple
+axes. There is inevitably a rich visual symbology developed.
+There is always a variety of types of stories told (comparison stories, stories over time, "factoid" stories, etc). Visual
+and physical variables can be explored by noting creative
+use of color, size and positioning (see Figure 3). These
+questions of narrative structure, variable mapping, and
+symbology that the participants constructions raise relate
+to the current issues of study in the field of data visualization and physicalization [13]. Novice learners often struggle
+with going from data, to story, to visual presentation, yet in
+this activity they can experiment with all three in a simple,
+unintimidating setting with familiar materials. We find that
+participants recognize the ease with which these underlying
+concepts transfer over to more complicated (digital) tools
+available, achieving a key learning outcome.
+Week-Long Higher Education Data Sculptures Sketches
+Over the last three years Bhargava has taught a "Data Storytelling Studio" course at the undergraduate and graduate
+levels at MIT (through the humanities department). This attracts students from across institutions and disciplines with
+
+a hands-on exploration of the strengths and weaknesses
+of various techniques for telling data-driven stories. These
+techniques include traditional charts and graphs, mapping,
+interactive games, data sculptures, and more. Each technique is tackled by small groups with just one week to go
+from sample data to a "sketch" of an idea. The data sculptures students make illustrate their ability to think about
+what kind of stories are well suited to be told with physical
+materials5 .
+These students are generelly technically adept, so they focus on how to put a story together and tell it to a specific
+audience. An illustrative sketch from a student group in
+2016 focused on refugee populations in the state of Massachusetts in the US. Built on a flat map of the state, it included vertical bar charts to represent the population of
+refugees from different home countries in various major
+cities in the area (see Figure 4). This allowed for a quick
+interpretation by viewers familiar with the state’s geography, and basic visual data literacy. However, each physical
+bar opened up and contained a stack of cards representing
+various members of that community, which they included
+to "quite literally gives a glimpse into the lives of refugee
+populations in MA" (student quote).
+
+Figure 4: A data sculpture about
+refugees in Massachusetts.
+
+This sketch, created by a team of 4 in just one week of inclass and out-of-class time, demonstrates fluency with a
+number of basic questions related to telling stories with
+data. The sketch picks a subset of the data related to a
+story the learners care about. They write that they wanted
+to tell this story "because the integration challenges that
+refugee populations face is something that should involve
+the entire host community". The sketch maps data onto visual variables in multiply reinforced ways - "because it is
+very legible and because it resembles a building, an image
+5
+
+Explore 2016 sketches at http://datastudio2016.datatherapy.org/
+
+that situates our project within the urban and/or social context of each city" (student writing). It mixes quantitative and
+qualitative data. It builds on that mix to offer an invitation for
+readers to explore a deeper layer of reading to flesh out the
+significance of the data story - to perform a "physical action
+intending to reveal more information about refugee population in that city" (student writing). This project demonstrates
+how in a short period of time the students were able to explore some fundamental concepts of creating data sculptures - the mapping of physical variables, allowing for layers
+of reading, and careful combination of elements to construct a physically interactive story. They argue that this
+combination serves to "bring across our message for the
+need of integration of refugee and native communities and
+to show how we are already all living side-by-side" (student
+writing).
+Data Sculptures for Elementary School Students
+Elementary school programs around the world have recently joined the STEAM movement - including the Arts
+along with the Science, Technology, Engineering, and Math
+curricular focus [15]. Data sculptures are well suited to this
+STEAM approach, leading us to explore opportunities with
+youth. Recently we’ve worked the MIT Museum and a network of primary schools around the globe to create a "creativity challenge" related to data. After being introduced
+to data sculpture techniques at a training with Bhargava,
+teachers led K-5 students at 10 schools in identifying a
+topic to research, collecting data, and creating presentations to tell a data-driven story. Working with this age group
+to build data literacy provides a unique set of challenges
+and opportunities related to vocabulary, visual literacy, and
+statistical literacy [9, 5].
+This nascent collaboration suggests that thinking about the
+data as something that could be represented in physical
+
+form, both concretely and abstractly, is natural to these
+students. One example is a group that investigated backpack weight across their school. To convey the story of how
+heavy the average bag was back to their audience of peers,
+they filled a backpack with the correct weight of rocks "to
+see if people could hold it" (student participant). This literal
+mapping enhanced a poster board with more detailed data
+about their findings. Another group at a different school creatively mapped air pollution to a more abstract artistic rendering on a loom (see Figure 5). In their own words, they:
+
+Figure 5: An abstract
+representation of air quality in
+colors on a loom.
+
+...looked at the data by color coding the stripes.
+They represent how the pollution was. So
+green is normal. Yellow is more than normal.
+Red is basically more than one hundred fifty.
+These examples, and others, suggest a strong willingness
+in young children to get excited about, and engaged in, data
+and physicalization on topics they care about. These preliminary efforts point us towards future work to outline and
+document learning outcomes embodied by data sculptures
+in more detailed ways. Piggybacking on the momentum and
+energy within the migration from STEM to STEAM could
+readily lead to a massive STEAM-powered rollout for data
+sculptures.
+
+Conclusion
+We argue that activity-based data sculptures with low-tech
+materials are uniquely suited to introduce novice learners
+into the field of working with data. The examples above
+serve to back up the argument that novices in these settings can very quickly begin to engage problems that visualization experts face everyday, including selecting physical and visual variables, data mappings to those, layers of
+reading, and narrative structures. Our pedagogical inspirations guide us to offer familiar materials that help these
+
+learners overcome any psychological barriers to entering
+the field and build self-efficacy. The physical manifestation of a learner’s data-driven story allows for reflective
+discussion and learning in lightweight collaborative learning communities. This shifts the conversation around data
+from one between people and tools, to one between people
+and people, mediated by the physical artifacts they create. This brings us back to approaches like Freire’s, which
+thinks about learning and literacy as a path to empowerment rather than simply skill-building. Our work strongly
+suggests that data sculptures are particularly well-suited
+to help novices overcome the barriers to learning and empower them to work with data to solve the problems they
+think are most important.
+
+REFERENCES
+1. Enrico Bertini and Moritz Stefaner. 2013. 17 | Data
+Sculptures. Number 17 in Data Stories.
+http://datastori.es/episode17-data-sculptures/
+2. Rahul Bhargava, Ricardo Kadouaki, Emily Bhargava,
+Guilherme Castro, and Catherine DâĂŹIgnazio. 2016.
+Data Murals: Using the Arts to Build Data Literacy. The
+Journal of Community Informatics 12, 3 (Oct 2016).
+http://ci-journal.net/index.php/ciej/article/
+view/1276
+3. Samuel Bohman. 2015. Data Visualization: An
+Untapped Potential for Political Participation and Civic
+Engagement. Springer, Cham, 302–315. DOI:
+http://dx.doi.org/10.1007/978-3-319-22389-6_22
+4. Leah Buechley and Hannah Perner-Wilson. 2012.
+Crafting Technology: Reimagining the Processes,
+Materials, and Cultures of Electronics. ACM Trans.
+Comput.-Hum. Interact. 19, 3 (Oct 2012), 21:1–21:21.
+DOI:http://dx.doi.org/10.1145/2362364.2362369
+
+5. Sayamindu Dasgupta and Benjamin Mako Hill. 2017.
+Scratch Community Blocks: Supporting Children as
+Data Scientists. arXiv:1702.00112 [cs] (Jan 2017).
+DOI:http://dx.doi.org/10.1145/3025453.3025847
+arXiv: 1702.00112.
+6. Catherine DâĂŹIgnazio and Lauren F. Klein. 2016.
+Feminist Data Visualization.
+7. Paulo Freire. 1968. Pedagogy of the Oppressed.
+8. Friedrich Frobel. 1885. The Education of Man. A. Lovell
+& Company. Google-Books-ID: ADkXAAAAYAAJ.
+9. Samantha Hautea, Sayamindu Dasgupta, and
+Benjamin Mako Hill. 2017. Youth Perspectives on
+Critical Data Literacies. ACM, 919âĂŞ930. DOI:
+http://dx.doi.org/10.1145/3025453.3025823
+10. Steven Houben, Connie Golsteijn, Sarah Gallacher,
+Rose Johnson, Saskia Bakker, Nicolai Marquardt, Licia
+Capra, and Yvonne Rogers. 2016. Physikit: Data
+Engagement Through Physical Ambient Visualizations
+in the Home. ACM, 1608–1619. DOI:
+http://dx.doi.org/10.1145/2858036.2858059
+11. Samuel Huron, Sheelagh Carpendale, Jeremy Boy,
+and Jean-Daniel Fekete. 2016. Using VisKit: A Manual
+for Running a Constructive Visualization Workshop.
+https://hal.inria.fr/hal-01384388/
+12. Hiroshi Ishii. 2008. The Tangible User Interface and Its
+Evolution. Commun. ACM 51, 6 (Jun 2008), 32–36.
+DOI:http://dx.doi.org/10.1145/1349026.1349034
+13. Yvonne Jansen, Pierre Dragicevic, Petra Isenberg,
+Jason Alexander, Abhijit Karnik, Johan Kildal, Sriram
+Subramanian, and Kasper Hornbaek. 2015.
+Opportunities and challenges for data physicalization.
+ACM, 3227–3236.
+http://dl.acm.org/citation.cfm?id=2702180
+
+14. Samuel Johnson and AnnMarie P. Thomas. 2010.
+Squishy Circuits: A Tangible Medium for Electronics
+Education. ACM, 4099–4104. DOI:
+http://dx.doi.org/10.1145/1753846.1754109
+15. John Maeda. 2012. STEM to STEAM: Art in K-12 Is
+Key to Building a Strong Economy. (Oct 2012).
+https://www.edutopia.org/blog/
+stem-to-steam-strengthens-economy-john-maeda
+16. Veena Pankaj and Ann K. Emery. 2016. Data
+Placemats: A Facilitative Technique Designed to
+Enhance Stakeholder Understanding of Data: Data
+Placemats. New Directions for Evaluation 2016, 149
+(Mar 2016), 81–93. DOI:
+http://dx.doi.org/10.1002/ev.20181
+17. Seymour Papert. 1993. The children’s machine.
+Vol. 96. http://l3d.cs.colorado.edu/~ctg/classes/
+techcog02/readings/childrensmachine.pdf
+18. Jean Piaget. 1952. The origins of intelligence in
+children. Vol. 8, No. 5. International Universities Press.
+19. James Rojas and John Kamp. 2016. PLACE IT!
+Interactive Workshops. (2016).
+http://www.placeit.org/interactive.html
+20. The Tinkering Studio. 2014. Edith Ackermann’s
+Pedagogical Perspective on Tinkering & Making.
+(2014). https://vimeo.com/104178407
+21. Faisal Taher, John Hardy, Abhijit Karnik, Christian
+Weichel, Yvonne Jansen, Kasper Hornbẽk, and Jason
+Alexander. 2015. Exploring Interactions with Physically
+Dynamic Bar Charts. ACM, 3237–3246. DOI:
+http://dx.doi.org/10.1145/2702123.2702604
+
+22. Yun Wang, Xiaojuan Ma, Qiong Luo, and Huamin Qu.
+2016. Data Edibilization: Representing Data with Food.
+ACM, 409–422. DOI:
+http://dx.doi.org/10.1145/2851581.2892570
+23. Jo Wood, Petra Isenberg, Tobias Isenberg, Jason
+Dykes, Nadia Boukhelifa, and Aidan Slingsby. 2012.
+Sketchy Rendering for Information Visualization. IEEE
+Transactions on Visualization and Computer Graphics
+
+18, 12 (Dec 2012), 2749–2758. DOI:
+http://dx.doi.org/10.1109/TVCG.2012.262
+24. Jack Zhao and Andrew Vande Moere. 2008.
+Embodiment in Data Sculpture: A Model of the
+Physical Visualization of Information. ACM, 343–350.
+DOI:http://dx.doi.org/10.1145/1413634.1413696
+
+

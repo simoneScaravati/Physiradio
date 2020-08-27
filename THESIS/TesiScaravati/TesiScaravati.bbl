@@ -1,0 +1,279 @@
+\begin{thebibliography}{10}
+
+\bibitem{mesopotamianTokens}
+Mesopotamian clay tokens - 5500 bc.
+\newblock \url{http://dataphys.org/list/mesopotamian-clay-tokens/}.
+
+\bibitem{sistemiembedded}
+A.~Trentini A.~Carraturo.
+\newblock {\em Sistemi Embedded: Teoria e pratica}.
+\newblock Ledizioni.it, 2017.
+
+\bibitem{arduino}
+Arduino.cc.
+\newblock Arduino ide.
+\newblock \url{https://www.arduino.cc/en/main/software}.
+
+\bibitem{taskScheduler}
+Anatoli Arkhipenko.
+\newblock Task scheduler: libreria cooperative multitasking per arduino ide.
+\newblock \url{https://github.com/arkhipenko/TaskScheduler}.
+
+\bibitem{arduinoJSON}
+Benoît Blanchon.
+\newblock Arduinojson: a json library for embedded c++.
+\newblock \url{https://arduinojson.org/}.
+
+\bibitem{bonafede2018proposal}
+D~Bonafede, LA~Ludovico, and G~Presti.
+\newblock A proposal for the interactive sonification of the human face.
+\newblock In {\em International Conference on Computer-Human Interaction
+  Research and Applications}, pages 163--169. SCITEPRESS, 2018.
+
+\bibitem{predictingmoodonmusicgenre}
+Worlu Chijioke.
+\newblock Predicting listener's mood based on music genre: An adapted
+  reproduced model of russell and thayer.
+\newblock {\em Journal of Technology Management and Business}, 0:20, 06 2017.
+
+\bibitem{sonificationMusification}
+Allan Coop.
+\newblock Sonification, musification, and synthesis of absolute program music.
+\newblock 07 2016.
+
+\bibitem{mqttUnity}
+Ian Craggs.
+\newblock M2mqtt : a mqtt client available for all .net platforms.
+\newblock \url{https://m2mqtt.wordpress.com/}.
+
+\bibitem{dataphys_org_list}
+Pierre Dragicevic and Yvonne Jansen.
+\newblock Official list of data physicalizations: List of physical
+  visualizations and related artifacts.
+\newblock \url{http://dataphys.org/list}.
+
+\bibitem{mosquitto}
+Eclipse Foundation.
+\newblock Eclipse mosquitto: An open source mqtt broker, sponsored by
+  cedalo.com.
+\newblock \url{https://mosquitto.org/}.
+
+\bibitem{han2010music}
+Byeong-Jun Han, Seungmin Rho, Sanghoon Jun, and Eenjun Hwang.
+\newblock Music emotion classification and context-based music recommendation.
+\newblock {\em Multimedia Tools and Applications}, 47(3):433--460, 2010.
+
+\bibitem{HMgov}
+{HM Government}.
+\newblock Open data white paper - unleashing the potential.
+\newblock Technical report, 2012.
+
+\bibitem{houben2016physikit}
+Steven Houben, Connie Golsteijn, Sarah Gallacher, Rose Johnson, Saskia Bakker,
+  Nicolai Marquardt, Licia Capra, and Yvonne Rogers.
+\newblock Physikit: Data engagement through physical ambient visualizations in
+  the home.
+\newblock In {\em Proceedings of the 2016 CHI Conference on Human Factors in
+  Computing Systems}, pages 1608--1619. ACM, 2016.
+
+\bibitem{ifttt}
+Ifttt.com.
+\newblock Ifttt.
+\newblock \url{http://ifttt.com}.
+
+\bibitem{lcTechnologyVS1053}
+LC~Technology Inc.
+\newblock Pagina ufficile lc technology vs1003/1053.
+\newblock \url{http://www.lctech-inc.com/plus/view.php?aid=215}.
+
+\bibitem{dataphys_org_bib}
+Yvonne Jansen.
+\newblock Data physicalization wiki: Bibliography.
+\newblock \url{http://dataphys.org/wiki/Bibliography}.
+
+\bibitem{jansen2015opportunities}
+Yvonne Jansen, Pierre Dragicevic, Petra Isenberg, Jason Alexander, Abhijit
+  Karnik, Johan Kildal, Sriram Subramanian, and Kasper Hornb{\ae}k.
+\newblock Opportunities and challenges for data physicalization.
+\newblock In {\em Proceedings of the 33rd Annual ACM Conference on Human
+  Factors in Computing Systems}, pages 3227--3236. ACM, 2015.
+
+\bibitem{jupyter}
+Jupyter.org.
+\newblock Jupyter, 2014.
+\newblock \url{https://jupyter.org}.
+
+\bibitem{karmaker2015automated}
+Debajyoti Karmaker, Md~Al~Imran, Niaj Mohammad, Mohaiminul Islam, and Md~Nafees
+  Mahbub.
+\newblock An automated music selector derived from weather condition and its
+  impact on human psychology.
+\newblock In {\em GSTF Journal on Computing (JoC), Global Science and
+  Technology Forum}, volume~4, page~13, 2015.
+
+\bibitem{tastybeats}
+Rohit~Ashok Khot, Jeewon Lee, Deepti Aggarwal, Larissa Hjorth, and
+  Florian'Floyd' Mueller.
+\newblock Tastybeats: Designing palatable representations of physical activity.
+\newblock In {\em Proceedings of the 33rd Annual ACM Conference on Human
+  Factors in Computing Systems}, pages 2933--2942, 2015.
+
+\bibitem{openWeather}
+OpenWeather Ltd.
+\newblock Openweathermap: Open data platform that provides weather and
+  satellite data worldwide.
+\newblock \url{https://openweathermap.org/}.
+
+\bibitem{ludovico2016sonification}
+Luca~A Ludovico and Presti Giorgio.
+\newblock The sonification space: a reference system for sonification tasks.
+\newblock {\em International Journal of Human-Computer Studies}, 85:72--77,
+  2016.
+
+\bibitem{micheleMaffucciWemosV1}
+Michele Maffucci.
+\newblock Blog personale per descrizione e specifiche wemos d1 mini per la
+  versione v1.0 (usata in physiradio).
+\newblock
+  \url{https://www.maffucci.it/2017/05/13/iot-con-wemos-d1-mini-usando-arduino-ide-e-blynk/}.
+
+\bibitem{IEEEIoTDefinition}
+Roberto Minerva, Abyi Biru, and Domenico Rotondi.
+\newblock Towards a definition of the internet of things (iot).
+\newblock {\em IEEE Internet Initiative}, 1(1):1--86, 2015.
+
+\bibitem{mqttPubSubClient}
+Nick O’Leary.
+\newblock Pubsubclient: libreria (per arduino ide) che fornisce un client per
+  poter scambiare semplici messaggi di publish/subscribe con un server che
+  supporta mqtt.
+\newblock \url{https://pubsubclient.knolleary.net/}.
+
+\bibitem{okd}
+{Open Knowledge Foundation}.
+\newblock History of the {O}pen {D}efinition, 2014.
+
+\bibitem{pandasLib}
+sponsored by~NumFOCUS opensource.
+\newblock Pandas, libreria analisi dati per python, 2009.
+\newblock \url{https://pandas.pydata.org/}.
+
+\bibitem{plutchik2001nature}
+Robert Plutchik.
+\newblock The nature of emotions: Human emotions have deep evolutionary roots,
+  a fact that may explain their complexity and provide tools for clinical
+  practice.
+\newblock {\em American scientist}, 89(4):344--350, 2001.
+
+\bibitem{fritzing}
+Interaction Design~Lab Potsdam.
+\newblock Fritzing.
+\newblock \url{https://fritzing.org/home/}.
+
+\bibitem{puussaar2018making}
+Aare Puussaar, Ian~G Johnson, Kyle Montague, Philip James, and Peter Wright.
+\newblock Making open data work for civic advocacy.
+\newblock {\em Proceedings of the ACM on Human-Computer Interaction},
+  2(CSCW):143, 2018.
+
+\bibitem{10.1117/12.19981}
+David~A. Rabenhorst, Edward~J. Farrell, David~H. Jameson, Thomas D.~Linton Jr.,
+  and Jack~A. Mandelman.
+\newblock {Complementary visualization and sonification of multidimensional
+  data}.
+\newblock In Edward~J. Farrell, editor, {\em Extracting Meaning from Complex
+  Data: Processing, Display, Interaction}, volume 1259, pages 147 -- 153.
+  International Society for Optics and Photonics, SPIE, 1990.
+
+\bibitem{humiditylevel}
+Reference.com.
+\newblock What is a comfortable humidity level outdoors?
+\newblock
+  \url{https://www.reference.com/science/comfortable-humidity-level-outdoors-a56b2ecf82004523}.
+
+\bibitem{sonificationNasaUrl}
+Robert.M.Candey@nasa.gov.
+\newblock Nasa definition of sonification.
+\newblock \url{https://spdf.gsfc.nasa.gov/research/sonification/}.
+
+\bibitem{datiAnalisi}
+Simone Scaravati and Andrea~Mario Trentini.
+\newblock Dataset creato ad hoc basato sull'analisi dati della state of the
+  art.
+\newblock \url{https://doi.org/10.5281/zenodo.3612806}.
+
+\bibitem{datiQuestionario}
+Simone Scaravati and Andrea~Mario Trentini.
+\newblock Dataset derivante dal questionario sottoposto agli utenti.
+\newblock \url{https://doi.org/10.5281/zenodo.3627829}.
+
+\bibitem{repositorySwOnly}
+Simone Scaravati and Andrea~Mario Trentini.
+\newblock Repository dedicata ai software sviluppati per physiradio.
+\newblock \url{https://github.com/simoneScaravati/Physiradio}.
+
+\bibitem{nodeRed}
+IBM’s Emerging~Technology Services and JS~Foundation.
+\newblock Node-red: Low-code programming for event-driven applications.
+\newblock \url{http://nodered.org/}.
+
+\bibitem{mqttOfficial}
+Andy Stanford-Clark~(IBM) and Arlen (Cirrus Link~Solutions) Nipper.
+\newblock Mqtt(message queue telemetry transport), 1999.
+\newblock \url{http://mqtt.org/}.
+
+\bibitem{vs1053baldram}
+Marcin Szałomski.
+\newblock Una libreria per vs1053 mp3 codec breakout adattata per schede
+  espressif esp8266 ed esp32.
+\newblock \url{https://github.com/baldram/ESP_VS1053_Library}.
+
+\bibitem{emergePhysicalPlot}
+Faisal Taher, John Hardy, Abhijit Karnik, Christian Weichel, Yvonne Jansen,
+  Kasper Hornb{\ae}k, and Jason Alexander.
+\newblock Exploring interactions with physically dynamic bar charts.
+\newblock In {\em Proceedings of the 33rd Annual ACM Conference on Human
+  Factors in Computing Systems}, pages 3237--3246, 2015.
+
+\bibitem{tanenbaum2013democratizing}
+Joshua~G Tanenbaum, Amanda~M Williams, Audrey Desjardins, and Karen Tanenbaum.
+\newblock Democratizing technology: pleasure, utility and expressiveness in diy
+  and maker practice.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 2603--2612. ACM, 2013.
+\newblock non era tra quelli scaricati da dataphys, ma viene citato spesso.
+
+\bibitem{unity}
+Unity Technologies.
+\newblock Unity: Real-time development platform.
+\newblock \url{https://unity.com/}.
+
+\bibitem{trentini2014lombardy}
+Andrea Trentini.
+\newblock Lombardy {EPA} \textit{Obtorto Collo} data and anti-pollution
+  policies fallacies.
+\newblock {\em Journal of e-Learning and Knowledge Society}, 10(2), 2014.
+
+\bibitem{verweij2019domestic}
+David Verweij, David Kirk, Kay Rogage, and Abigail Durrant.
+\newblock Domestic widgets: Leveraging household creativity in co-creating data
+  physicalisations.
+\newblock 2019.
+
+\bibitem{wemosd1_mini}
+Wemos.cc.
+\newblock Pagina ufficiale wemos lolin d1 mini.
+\newblock \url{https://docs.wemos.cc/en/latest/d1/d1\_mini.html}.
+
+\bibitem{wikiesp8266}
+Wikipedia.org.
+\newblock Pagina wikipedia relativa al esp8266.
+\newblock \url{https://it.wikipedia.org/wiki/ESP8266}.
+
+\bibitem{wheelofemotions}
+Wikiversity.org.
+\newblock Motivation and emotion/book/2014/plutchik's wheel of emotions.
+\newblock
+  \url{https://en.wikiversity.org/wiki/Motivation_and_emotion/Book/2014/Plutchik%27s_wheel_of_emotions}.
+
+\end{thebibliography}

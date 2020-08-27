@@ -1,0 +1,330 @@
+DOI: https://doi.org/10.3217/978-3-85125-530-0-36
+
+Phygital Heritage: an Approach for Heritage
+Communication
+Eslam Nofal1, 2, Rabee M. Reffat2, and Andrew Vande Moere1
+1
+
+Research[x]Design, Department of Architecture, KU Leuven, Kasteelpark Arenberg 1, 3001
+Leuven, Belgium
+{eslam.nofal,andrew.vandemoere}@kuleuven.be
+2 Department of Architecture, Assiut University, 71516 Assiut, Egypt
+rabee@aun.edu.eg
+
+Abstract. Physical heritage objects and assets are related to a vast amount of
+digital information of different kinds, which are challenging to be communicated to visitors in understandable and engaging ways. Yet recent technological
+advances promise new opportunities to more tightly merge the digital with the
+physical world. This paper therefore introduces the concept of “phygital heritage”, the integration of digital technology ‘into’ physical reality, as a potential
+medium for more enriched and playful communication of heritage values and
+qualities. We propose that phygital heritage should enable the exploitation of
+typical advantages of both digital and physical reality, and that distinct categories of phygital can be recognized based on: 1) the level of physical affordance;
+and 2) in how far the technology is integrated into the physical reality. The paper also opens the discussion about the potential challenges and concerns which
+future explorations, scientific research and real-world applications of phygital
+heritage probably will encounter.
+Keywords: phygital heritage, communication, physical affordance, situatedness, tangible interaction, digital heritage, physicalization, visualization.
+
+1
+
+Introduction
+
+Heritage forms the evidence of the fruitfulness and diversity of our past. Accordingly,
+most heritage artefacts represent a vast amount of information, ranging from simple
+factual aspects to more complex qualitative, tacit qualities and values. Following the
+current movement towards the democratization of culture [ 1], there exists a general
+tendency towards making heritage information more available and accessible to the
+wide public, such as to make people aware of the value and richness of their and others’ heritage. Heritage information tends also to be communicated to support its deeper understanding, or to engage and even immerse visitors in heritage environments
+[2]. Most typical forms of communication occur via conventional means, such as
+written labels or audio guides in museums. Yet following the rapid advancements
+offered by modern digital technologies, heritage information is now also increasingly
+represented via more dynamic and interactive formats, including websites, smart
+
+220
+
+DOI: https://doi.org/10.3217/978-3-85125-530-0-36
+
+phone applications or virtual and augmented reality worlds. In addition, recent developments like the Internet of Things (IoT) [3] demonstrate how digital technologies are
+now becoming deeper integrated within the fabric of our physical reality. As such, it
+is claimed [3] that the Internet will no longer be only about people, media and content, but also will include real-world physical assets as networked objects able to exchange information, interact with each other as well as with people. Along with these
+emerging technological movements, an overarching term “phygital” has been proposed [4, 5, 6, 7, 8] that conceptualizes the blending of the physical and the digital, in
+so far that they do not simply complement, but rather reinforce each other. Accordingly, the term “phygital” was coined [4] to denote how everyday objects are connected
+to their environment, gathering the information and adapting their performance accordingly without human intervention.
+The field of marketing has used the term “phygital” (e.g. [5]) as a conceptual idea
+that bridges e-commerce tools to physical stores, often to connect the digital presence
+of a brand or product to an immersive real-world experience, wherein a digital action
+can trigger a physical reaction, or vice versa, a physical action can result in a digital
+reaction. Such endeavor can be typically achieved by making the physical world a
+type of information system, such as by embedding machine-readable traces or sensors
+into physical objects so that they are able to communicate to users through digital
+interfaces [5]. Yet phygital characteristics can also be recognized beyond the field of
+marketing and retail, with application domains as diverse as education, gaming and
+tourism. For instance, phygital map (Figure 1.a) exploits the physical advantages of
+paper-based Atlases such as the ease of navigation and the tactile impression of
+browsing, and merges these with the qualities of digital media, like allowing access to
+a wide range of audio and video content, which even can be regularly updated [6].
+Similarly, phygital game (Figure 1.b) adds a physical experience to a compelling
+digital game in order to reduce the necessary screen time in favor of more healthy
+forms of physical engagement [7], hereby allowing the embodiment of the user into a
+robot as the manifestation of the virtual into the physical. The idea behind phygital
+can even be deployed as a participative method, as the project phygital public space
+(Figure 1.c) [8] demonstrates how citizen engagement can be fostered via digital
+blogs for easily sharing and shaping their public space by stimulating interaction between the participants, gathering information and reporting the analogic data on a
+shareable bases. Here, the project also merges physical onsite workshops and analyses
+such as sound and visibility surveys to capture the flow map of pedestrian’s movement in the public space, and merges all this data into a phygital experience.
+Based on these theoretical and practical manifestations, we propose in this paper
+“Phygital Heritage” as a potential future research subfield, which entails how heritage information can be disclosed via simultaneous and integrated physical and digital
+means. By blending the digital empowerment of cultural learning, storytelling and
+entertainment into the heritage artefact, activity or environment, heritage forms an
+ideal application field to give meaning to the digital experience, and in turn, the digital medium is able to truly provide immediate access to the dynamic relevant resources.
+
+221
+
+DOI: https://doi.org/10.3217/978-3-85125-530-0-36
+
+(a) phygital map [6].
+
+(b) phygital game [7].
+
+(c) phygital public space [8].
+Fig. 1. Examples of phygital approaches: (a) phygital map: paper-based Atlas merged with
+digital media contents; (b) phygital game: projected playground with robot; (c) phygital public
+space: digital blogs and physical surveys to share and shape public spaces.
+
+Several related domains have already demonstrated the value of the physical in human-computer interfaces. For instance, in comparison to traditional graphical user
+interfaces (GUIs), tangible user interfaces (TUIs) are perceived to be more compelling and intuitive to use. TUIs do not only afford objects in an abstract physical form,
+but they also allow the incorporation of material attributes (e.g. size, shape, texture,
+color, weight) in order to convey information [9]. Well-considered TUIs can also
+provide lay users with more intuitive affordances that steer digital actions, as physical
+objects tend to be more familiar, approachable, and less abstract to use than traditional
+digital interfaces [10]. As such, heritage communication has already benefited from
+recent TUI advances. For instance, tangible smart replicas have been used in museum
+exhibitions to provide an additional layer (narrative content) of story-telling on top of
+factual information presented on text labels, typically located next to the original heritage objects [11]. Furthermore, anecdotal evidence shows that the touch and manipulation affordances of TUIs in interactive exhibits tend to attract more visitors, even
+
+222
+
+DOI: https://doi.org/10.3217/978-3-85125-530-0-36
+
+persuade them to explore further and deeper [12]. Tangible installations can also be
+deployed in outdoor heritage environments where lack of power supplies or digital
+networks can exist. For example, the ‘interactive belt’ [13] supports the visit of archaeological sites by enabling visitors to select the story they want to listen to and to
+be part of it, triggering by specific points of interests. Another example is the utilization of a monument of urban space ‘City Mouse’ as a tangible user interface [14], a
+landmark of a large stone sphere representing the globe, which people could push to a
+rolling motion in order to rotate a 3D image of the Earth that is visualized on a screen
+next to the landmark.
+These examples, among others, demonstrate how the combination of physical and
+digital is still relatively unexplored, but potentially particularly valuable for the field
+of heritage communication, such as when the digitally augmented experience makes
+some sort of meaningful connection to the actual heritage context, such as the social,
+cultural and physical characteristics of the physical reality.
+
+2
+
+Phygital Heritage: Digital and Physical Characteristics
+
+Mixed reality is defined as “…anywhere between the extrema of the virtuality continuum” [15], a continuum that extends from the completely real through to the completely virtual environment, with augmented reality and augmented virtuality taking
+on positions in-between. However, mixed reality relies more on displays and screens,
+a medium that a relatively contextless and lacks material qualities. On the other hand,
+we believe that phygital focuses on exploiting material-driven affordances, where the
+medium does not only conveys visual but also tactile qualities, in addition to physical
+affordance and playfulness. In the future, phygital heritage can thus be grounded on
+the combination of the key characteristics of both digital and physical realms for the
+goals of communicating and interacting with digital as well as physical present heritage information. Relevant key qualities of the digital medium include, but are not
+limited to:
+Providing access to rich and vast forms of information. Heritage information originates from multitude of sources, and is manifested in many different forms, encompassing a vast amount of content that could potentially be disseminated. Regardless of
+the size, dimensionality or time-dependency of this data, digital technology allows for
+its immediate access through many different output media. For instance, a phygital
+interface is capable to convey distinct layers of information related to a heritage object depending on the actual communication medium, ranging from traditional displays to portable or wearable AR technology [16].
+Personalization of information. Digital information can be offered or automatically
+filtered according to the profile of visitors, including their age or personal interests
+[17]. In addition, heritage experts can also specify the types, quantity or interpretation
+
+223
+
+DOI: https://doi.org/10.3217/978-3-85125-530-0-36
+
+of content according to the surrounding context [18] or other kinds of dynamic constrains.
+Information immersion. Digital display technology allows users to become immersed in the information, stimulating several senses (e.g. audio, tactile, touch) simultaneously in order to provide a more believable or tacit experience that better contextualizes the intrinsic values of heritage. For instance, virtual reality technology now
+enables users to navigate within stimulated 3D worlds that resemble the original heritage situation, in so far that it has been shown that such environments are more effective in supporting learning activities [19].
+In turn, the phygital features combine the key characteristics of the physical realm
+that include, but are not limited to:
+Physical affordance. It denotes how the physical form demonstrates the possibility of
+an action on an object or the environment to people. As such, tangible interfaces are
+capable to make use of people’s experience of interacting with real world objects
+[20]. As such, evidence from educational psychology shows that the manipulation of
+physical representations of information and utilization of TUIs facilitate understanding [21]. The physical properties of heritage artefacts may thus invoke visitors’ preexisting knowledge to discover their meaning, functionality or use, and consequently
+lead to more intuitive or memorable forms of communication. Accordingly, phygital
+interfaces might thus allow users to not only touch heritage artefacts (or their replicas), providing not only the subjective experience of its shape, materiality or weight,
+but also for a tactile exploration of its potential use.
+Physicalization. Information has already been visualized in physical manners for
+thousands of years, ranging from measuring instruments, passive visualizations, to
+more interactive forms of visualizations [22]. For abstract information, which lacks
+tangible counterparts (e.g. numbers, networks), its encoding into physical form (Physicalization) still improves the efficiency of information retrieval, particularly when it
+can be freely touched [23]. Similar physical qualities of heritage objects can be conveyed via haptic devices like “open drawer” displays, allowing visitors to reveal parts
+of an exhibit [18].
+Situatedness. Situated communication depends on how the information relies on the
+“physical context” to be understood [24]. Varying degrees of situatedness exist, ranging from non-situated objects which are typically shown on museum walls or displays
+and thus require textual labels or legends to be understood, to fully situated objects
+like ruins and statues, of which the value can only be comprehended by experiencing
+and interpreting the surrounding context. Notably, most websites and virtual reality
+applications are non-situated in nature, allowing users to appreciate heritage regardless of their location yet lacking tacit and intangible qualities. Most projection map-
+
+224
+
+DOI: https://doi.org/10.3217/978-3-85125-530-0-36
+
+pings are more situated, as the graphical depiction of the information can be directly
+and physically related to the artefact on which the projection occurs.
+The aforementioned characteristics have been combined in our proposed model
+“phygital heritage”, shown in Figure 2. The model captures the most relevant technologies that are relevant to the integration of digital technology into physical objects
+in the context of cultural heritage. Such forms of integration range from separated
+entities that are added ‘on top of’ physical reality (e.g. augmented reality), to its seamless and invisible embedment (e.g. shape-changing interfaces). The horizontal axis
+represents the level of physical affordance, such as how the features of an interface
+physically support or facilitate taking an action. The vertical axis conveys the level of
+situatedness, or how the technology depends on the physical context to communicate
+information. The model considers that almost every communication technology is
+phygital in some way or form, but some are more phygital than others. Accordingly,
+the model proposes three distinct categories of phygital heritage; augmented (P1),
+integrated (P2), and actuated (P3).
+
+Fig. 2. Phygital heritage model, mapped along two characteristics: the physical affordance of
+information and the level of situatedness of how this information is communicated.
+
+225
+
+DOI: https://doi.org/10.3217/978-3-85125-530-0-36
+
+ Augmented (P1) requires some form of continuous interaction between heritage
+objects or assets (physical) and electronic devices (digital). For instance, mobile
+augmented reality (AR) immerses visitors in a story by providing different information through texts, images and advanced 3D models via their portable devices
+[11]. This category also includes the use of ‘beacons’ (small devices that transmit
+Bluetooth signal to visitors’ smartphones), which allow for the mapping and recording of points of interest inside heritage buildings to provide contextual information [25].
+ Integrated (P2) requires users to interact with heritage objects via TUIs, which are
+capable of communicating information through the use of haptic rendering methods. TUIs provide users with more familiar physical objects and actions to explore,
+even to make sense of more abstract or less familiar digital representations. Most
+projection mappings also fall within this category, as its content communicates relevant contextual information, like the characteristics and cultural values of heritage
+(e.g. [26]).
+ Actuated (P3) includes immersive and screen-less forms of interaction. Here, heritage artefacts become the output medium as the interface becomes embodied by
+the physical shape, behavior or materiality of the artefact itself. The emerging field
+of shape-changing technology forms a prime example [27], capable to physically
+adapt the shape of objects based on users input, as users are actually able to interpret forms, and potentially the dynamic animations that cause these shape changes.
+Accordingly, material characteristics of heritage objects might convey meanings by
+appreciating physical manifestations of these objects.
+
+3
+
+Challenges of Phygital Heritage
+
+Although the phygital approach promises various opportunities for heritage communication, phygital yet comes with several concerns and challenges. Blending the digital and the physical is technologically challenging, requiring advancements from
+computer science, electronics and physical design. The phygital requires that sensors
+and different types of actuators are embedded almost invisibly, such as projection and
+shape-changing interfaces, and that these combinations are meaningful, respectful and
+intuitive to be understood and used. Publicly accessible and touchable objects require
+solid and robust forms of technology, which cannot be simply taken away – or vice
+versa, should be cheap and sustainably replicable. As such, issues of cost and ease of
+replacement should be well considered [11]. Therefore, the phygital poses several
+questions in how such interfaces can be designed, implemented or evaluated. For
+instance, usually visitors are not allowed to touch heritage artefacts due to obvious
+preservation concerns. Although some museums utilize replicas to overcome this
+challenge, such replicas often lack ways of communicating tangible (e.g. texture,
+color, weight) and intangible (e.g. worth, value, stories) forms of information, which
+must then be presented separately.
+On the other hand, TUIs can be perceived as being intuitive and playful, causing them
+to be used by children, hereby opening up new opportunities to facilitate learning
+
+226
+
+DOI: https://doi.org/10.3217/978-3-85125-530-0-36
+
+through play. Nonetheless, museum visits should not only have an educational purpose, as museums are also a place for social interaction and participation with other
+visitors. For that, the concept of phygital heritage might provide new solutions in how
+technology can truly support multi-user and collaborative forms of interaction.
+
+4
+
+Conclusion
+
+This paper argues how the field of cultural heritage forms an ideal application domain
+to exploit the seamless blending of both digital and physical qualities to communicate
+heritage information in more engaging, educational and meaningful ways. The paper
+introduced a concise model to denote the different categories of phygital heritage
+according to the level of physical affordance, such as how the features of an interface
+physically support or facilitate taking an action, and situatedness, which is about how
+the technology depends on the physical context to communicate information. The
+paper also recognized the most important challenges for future scientific studies related to phygital heritage. This model should therefore be considered as a first step towards supporting researchers to develop more integrated and contextualized interactive communication techniques of heritage information.
+Acknowledgment
+The corresponding author gratefully acknowledges the PhD scholarship funded by the
+Egyptian Ministry of Higher Education.
+
+References
+1. Gattinger, M.: Democratization of Culture, Cultural Democracy and Governance. In: Canadian Public Arts Funders (CPAF) Annual General Meeting, Future Directions in Public
+Arts Funding: What Are The Shifts Required?, Whitehorse, Yukon (2011)
+2. Rubegni, E., Di Blas, N., Paolini, P., Sabiescu, A.: A Format to design Narrative Multimedia Applications for Cultural Heritage Communication. In: ACM Symposium on Applied Computing (SAC’10), pp. 1238-1239, Sierre, Switzerland (2010)
+3. Vongsingthong, S., Smanchat, S.: Internet of Things: A Review of Applications and Technologies. In: Suranaree Journal of Science & Technology, Vol. 21 (4), pp. 359-374 (2014)
+4. Uspenski, I.: Shared in Confidence: a Machine to a Machine (The Birth of Post-semantic
+Aesthetics). In: International Conference Beyond AI: Artificial Golem Intelligence, pp. 4157, Pilsen, Czech Republic (2013)
+5. Teo, V.: The Internet of Things: Let’s Get Phygital, (2013, April 3rd), Online resource, retrieved from https://www.clickz.com/the-internet-of-things-lets-get-phygital/39692/
+6. Nakazawa, J., Tokuda, H.: Phygital Map: Accessing Digital Multimedia from Physical
+Map. In: 21st International Conference on Advanced Information Networking and Applications Workshops (AINAW’07), pp. 368-373, Niagara Falls, Ont. (2007)
+7. Lupetti, M. L., Piumatti, G., Rossetto, F.: Phygital Play HRI in a New Gaming Scenario.
+In: 7th International Conference on Intelligent Technologies for Interactive Entertainment
+(INTETAIN), pp. 17-21, Turin (2015)
+
+227
+
+DOI: https://doi.org/10.3217/978-3-85125-530-0-36
+
+8. Bazzanella, L., Roccasalva, G., Valenti, S.: Phygital Public Space Approach: A Case
+Study in Volpiano. In: Interaction Design and Architecture(s) Journal (IxD&A), No. 20,
+pp. 23-32 (2014)
+9. Macaranas, A., Antle, A. N., Riecke, B. E.: Bridging the Gap: Attribute and Spatial Metaphors for Tangible Interface Design. In: 6th International Conference on Tangible, Embedded, and Embodied Interaction (TEI’12), pp. 161-168, Kingston, ON, Canada (2012)
+10. Claes, S., Coenen, J., Slegers, K., Vande Moere, A.: Design Implications of Casual Health
+Visualization on Tangible Displays. In: ACM SIGCHI Extended Abstracts on Human Factors in Computing Systems (CHI’15), pp. 1839-1844, Seoul, Korea (2015)
+11. Marshall, M. T., Dulake, N., Ciolfi, L., Duranti, D., Kockelkorn, H., Petrelli, D.: Using
+Tangible Smart Replicas as Controls for an Interactive Museum Exhibition. In: 10th International Conference on Tangible, Embedded, and Embodied Interaction (TEI’16), pp. 159167, Eindhoven, Netherlands (2016)
+12. Ma, J., Sindorf, L., Liao, I., Frazier, J.: Using a Tangible versus a Multi-touch Graphical
+User Interface to Support Data Exploration at a Museum Exhibit. In: 9th International
+Conference on Tangible, Embedded, and Embodied Interaction (TEI’15), pp. 33-40, Stanford, CA, USA (2015)
+13. Petrelli, D., Lechner, M.: meSch - Material Encounters with Digital Cultural Heritage: Reusing Existing Digital Resources in the Creation of Novel Forms of Visitor’s Experiences.
+In: CIDOC Annual Conference, Dresden, Germany (2014)
+14. Häkkilä, J., Koskenranta, O., Posti, M., He, Y.: City Landmark as an Interactive Installation – Experiences with Stone, Water and Public Space. In: 8th International Conference
+on Tangible, Embedded and Embodied Interaction (TEI’14), pp. 221-224, Munich, Germany (2014)
+15. Milgram, P., and Kishino, F.: A Taxonomy of Mixed Reality Visual Displays. In: IEICE
+Trans. Information Systems, vol. E77-D, no. 12, pp. 1321-1329 (1994)
+16. Vlahakis, V., Ioannidis, N., Karigiannis, J., Tsotros, M., Gounaris, M., Stricker, D., Gleue,
+T., Daehne, P., Almeida, L.: Archeoguide: An Augmented Reality Guide for Archaeological Sites. In: IEEE Computer Graphics and Applications, Vol. 22, No. 5, pp. 52-60 (2002)
+17. Reffat, R. M. and Nofal, E. M.: Effective Communication with Cultural Heritage Using
+Virtual Technologies. In: International Archives of the Photogrammetry, Remote Sensing
+and Spatial Information Sciences, Volume XL-5/W2, pp. 519-524, Strasbourg, France
+(2013)
+18. Petrelli, D., Ciolfi, L., Van Dijk, D., Hornecker, E., Not, E., Schmidt, A.: Integrating Material and Digital: A New Way for Cultural Heritage. In: ACM Interactions Magazine, Vol.
+20 (4), pp. 58-63 (2013)
+19. Chen, S., Pan, Z., Zhang, M., Shen, H.: A Case Study of User Immersion-Based Systematic Design for Serious Heritage Games. In: Multimedia Tools and Applications, Vol. 62, Issue 3, pp. 633-658 (2013)
+20. Hurtienne, J., Israel, J. K.: Image Schemas and Their Metaphorical Extensions Intuitive
+Patterns for Tangible Interaction. In: 1st International Conference on Tangible, Embedded,
+and Embodied Interaction (TEI’07), pp. 127-134, Baton Rouge, LA, USA (2007)
+21. Jansen, Y., Dragicevic, P., Isenberg, P., Alexander, J., Karnik, A., Kildal, J., Subramanianet, S., Hornbæk, K.: Opportunities and Challenges for Data Physicalization. In: The
+ACM Conference on Human Factors in Computing Systems (CHI’15), pp. 3227-3236,
+New York, USA (2015)
+22. Dragicevic, P., Yvonne Jansen, Y.: A Chronological List of Physical Visualizations and
+Related Artifacts. Online resource retrieved from http://dataphys.org/list/ (2017, January
+20th)
+
+228
+
+DOI: https://doi.org/10.3217/978-3-85125-530-0-36
+
+23. Jansen, Y., Dragicevic, P., Fekete, J. D.: Evaluating the Efficiency of Physical Visualizations. In: The ACM Conference on Human Factors in Computing Systems (CHI’13), pp.
+2593-2602, Paris (2013)
+24. Rekimoto, J., Ayatsuka, Y., Hayashi, K.: Augment-able Reality: Situated Communication
+through Physical and Digital Spaces. In: 2nd IEEE International Symposium on Wearable
+Computers (ISWC'98), pp. 68-75, Pittsburgh, PA, USA (1998)
+25. Mantova Capitale Italiana della Cultura: Mantova Phygital City project. Online resource
+retrieved from http://www.mantova2016.it/it-ww/mantova-phygital-city.aspx (2017, January 20th)
+26. Kim, D.: Projection Mapping Contents Development of Architectural Heritage. In: Advanced Science and Technology Letters, Vol.113, pp.90-95 (2015)
+27. Rasmussen, M. K., Merritt, T., Alonso, M. B., Petersen, M. G.: Balancing User and System Control in Shape-Changing Interfaces: a Designerly Exploration. In: 10th International
+Conference on Tangible, Embedded, and Embodied Interaction (TEI’16), pp. 202-210,
+Eindhoven, Netherlands (2016)
+
+229
+
+

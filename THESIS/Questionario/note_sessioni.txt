@@ -1,0 +1,12 @@
+NOTE NOSTRE:
+- il punto 2 del questionario portava troppe indecisioni, la gente non ha idea di cosa sia una condizione meteo. 
+Si puó mettere una matrice, con delle celle per dire Si/No, mostrando tutte le 15 condizioni meteo possibili concesse dalle API
+
+- Nella sessione della classe non si vedeva il colore
+
+
+NOTE POST QUESTIONARI:
+1 - Sarebbe meglio fare delle playlist specifiche da streammare 
+2 - Porre attenzione al testo
+3 - IL DATO CHE STIAMO FISICALIZZANDO É TROPPO SOGGETTIVO, anche se ci sono generi molto specifici 
+che riescono ad evocare le stesse sensazioni legate al tempo atmosferico, altri invece sono troppo generici 

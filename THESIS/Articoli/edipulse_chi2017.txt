@@ -1,0 +1,1624 @@
+EdiPulse: Investigating a Playful Approach to
+Self-monitoring through 3D Printed Chocolate Treats
+Rohit Ashok Khot1, Deepti Aggarwal2, Ryan Pennings1,
+Larissa Hjorth3, Florian ‘Floyd’ Mueller1
+1
+2
+3
+Exertion Games Lab
+Interaction Design Lab,
+RMIT University,
+RMIT University, Australia
+University of Melbourne, Australia
+Australia
+{rohit, ryan, floyd}@
+daggarwal@student.unimelb.edu.au larissa.hjorth@rmit.edu.au
+exertiongameslab.org
+ABSTRACT
+
+Self-monitoring offers benefits in facilitating awareness
+about physical exercise, but such data-centric activity may
+not always lead to an enjoyable experience. We introduce
+EdiPulse a novel system that creates activity treats to offer
+playful reflections on everyday physical activity through
+the appealing medium of chocolate. EdiPulse translates
+self-monitored data from physical activity into small 3D
+printed chocolate treats. These treats (< 20 grams of
+chocolate in total) embody four forms: Graph, Flower,
+Slogan and Emoji. We deployed our system across 7
+households and studied its use with 13 participants for 2
+weeks per household. The field study revealed positive
+aspects of our approach along with some open challenges,
+which we disseminate across five themes: Reflection,
+Positivity, Determination, Affection, and Co-experience.
+We conclude by highlighting key implications of our work
+for future playful food-based technology design in
+supporting the experience of being physically active.
+Author Keywords
+
+Physical activity; chocolate printing; self-monitoring; food
+printing; quantified self; human food interactions.
+ACM Classification Keywords
+
+H.5.m. Information interfaces and presentation (e.g., HCI):
+Miscellaneous.
+INTRODUCTION
+
+The growing popularity of self-monitoring devices [56,62]
+is contributing to a wider availability of previously
+inaccessible physical activity data, such as an individual’s
+heart rate, but we know only little about how, and for what
+purposes, this data could and should be used. Currently, this
+data is mainly used to increase awareness about an
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. Copyrights for
+components of this work owned by others than the author(s) must be
+honored. Abstracting with credit is permitted. To copy otherwise, or
+republish, to post on servers or to redistribute to lists, requires prior
+specific
+permission
+and/or
+a
+fee.
+Request
+permissions
+from Permissions@acm.org.
+CHI 2017, May 06 - 11, 2017, Denver, CO, USA
+Copyright is held by the owner/author(s). Publication rights licensed to
+ACM.
+ACM 978-1-4503-4655-9/17/05!$15.00
+DOI: http://dx.doi.org/10.1145/3025453.3025980
+
+.
+
+individual’s physical activity levels and to support
+motivation for increasing physical activity. Moreover,
+numbers and graphs are predominantly used to visualize
+this data [18]. To this end, an active lifestyle is perceived as
+a eudaimonic pursuit [63] where the emphasis is on
+improving athletic performance through rational selfanalysis. However, multiple recent studies [23,24,73,85]
+report that the use of numbers and graphs might only offer a
+limited view on the rich experience of being physically
+active. Quantification might be useful in bringing
+awareness to exercise, but this “number crunching” activity
+may not always lead to an enjoyable experience [23,25].
+Hassenzahl et al. [37] raise concern that in the long run,
+numbers could make exercise feel like work, and we need
+better, richer ways to represent this data. We agree with
+these notions and wonder if we could make self-monitoring
+a more playful experience that embraces the rich qualities
+of living an active lifestyle. For instance, instead of “boring
+users to death with numbers” [36], we ask, what if we turn
+this data into something more delightful like chocolate?
+We present EdiPulse that translates physical activity data
+into 3D printed activity treats (Figure 1). These treats are
+created from 20 grams of dark chocolate and embody four
+forms: Graph, Flower, Slogan and Emoji. This quantity
+remains the same irrespective of the amount of physical
+activity done by the user. Instead, their representations
+become more gratifying with more physical activity.
+
+Figure 1: Activity treats come in four different forms:
+Graph, Flower, Slogan and Emoji.
+
+Our interest in chocolate stems from its rich multisensorial
+appeal and ability to bring sheer pleasure from its moderate
+consumption [15,55]. Besides, studies also report that
+eating moderate amounts of dark chocolate daily is good for
+cardiovascular health [1], for improving cognitive abilities
+[21] and helping in post-exercise recovery [2]. We aim to
+capitalize on these aspects to offer vivid ways of engaging
+with one’s data. We also choose emerging 3D food printing
+technology [84] to alter the shape of chocolate in unique
+and creative ways based on digital data. Printing chocolate
+also creates a sweet aroma of warm chocolate that further
+adds to the evocative experience. However, we are also
+aware that chocolate is a calorie laden food and its over
+consumption could cause weight gain, although research
+findings on this topic are inconclusive [27]. As such, we do
+not advocate eating chocolate or its usefulness to health, but
+rather use it to unfold a playful approach to self-monitoring.
+We conducted in-the-wild field deployments [72] of the
+EdiPulse system across 7 households and studied its use
+with 13 participants for 2 weeks per household. We found
+that despite any negative connotations that chocolate might
+carry in relation to physical activity, participants did not
+find activity treats as counterproductive to their fitness
+goals. Rather, these treats brought positivity and
+determination towards leading an active lifestyle.
+This research makes the following contributions: 1) By
+presenting EdiPulse, we introduce HCI to the opportunity
+of combining self-monitoring with playful food based
+technology design to embrace the rich qualities of living an
+active lifestyle. 2) We contribute first conceptual design
+understanding of the interrelationship between physical
+activity and chocolate by presenting a descriptive account
+on the design and adaptation of the EdiPulse system. 3)
+Finally, we offer 4 key implications of our work to guide
+future explorations in creating playful self-monitoring
+systems with food.
+RELATED WORK
+
+Identifying different ways to represent data has always been
+an area of interest within HCI. The majority of the existing
+works however is centered on on-screen visualization
+techniques. Few works have looked into abstract form of
+visualizations using metaphors of a garden [19],
+informative art [26] and aquatic ecosystem [51]. For
+example, in the Fish’n’Steps system [51], an individual’s
+step count is mapped to an animated fish, which becomes
+happy or sad based on the number of steps taken by the
+user. Systems like Health Mashup [8] and Habito [32]
+provide textual feedback on self-monitored data, whereas
+prior works have also explored gamification techniques [9,
+90] to make physical activity playful. For example, Heart
+Burn [91] is a digital car racing game where the real-time
+heart rate data influence the car’s speed in the game, while
+Walsh and Golback [87] have converted user’s steps to a
+currency that can be spent within an online explorer game.
+
+Recently there has also been an interest in incorporating
+other senses such as touch, sound and taste to increase the
+effectiveness of feedback [66]. To this end, areas like data
+physicalization [40], data sonification [6,65] and data
+edibilization [88] have emerged. We previously designed
+and studied 3D printed representations of physical activity
+data [45,83] while Lee et al. [49] created a Patina
+Engraving System that represents physical activity data
+through engraved patina like patterns on a wristband. We
+situate our work in the area of data edibilization [88],
+which considers the positive psychological effects of food
+to offer rich multisensory experiences of narrating an
+interesting story with edible data.
+Food has a rich cultural and social history. Its preparation
+and consumption provides opportunities for bonding and
+interaction among individuals [15,55]. French gastronome
+Brillat-Savarin [12] notes that pleasures associated with
+eating and drinking constitute some of the life’s most
+enjoyable experiences. Drawing on this, several works
+within HCI have started exploring food as a celebratory
+technology [33]. Resner introduced the concept of Edible
+User Interface (EUI) that utilize the multi-sensory
+experience of food to create novel interfaces such as
+TasteScreen, where users interact with a system by licking
+liquid residue of different flavors that driped onto the LCD
+screen [57]. Murer et al. [59] designed LOLLio, a gustatory
+interface for playing games. Qkies [71] is a system that
+embeds QR codes on cookies, while Meta Cookie [64] is an
+augmented reality based system that controls nutritional
+intake by changing the perceived size of the food through a
+head-mounted display. Chocolate Machine [43] is another
+interesting system that dispenses a chocolate at scheduled
+intervals to improve user’s self-control. These works have
+explored the playful side of food based interactions [17,81],
+but not necessarily in relationship with an active lifestyle,
+which we consider as a missed opportunity.
+Food shares an interesting relationship with physical
+activity. We exercise to expend energy and we need food to
+replenish the loss of energy. The relation also works the
+other way around where we exercise to burn the calories
+gained from consuming too much food. With today’s
+sensing technologies, if we can now measure how much
+exercise we have done, then what would happen if we relate
+this to the kind of food we eat? Khot et al. [46] worked on
+this idea to design TastyBeats that provides users with
+personalized sports drinks, where the quantity and flavor is
+based on the amount of exercise a user has done in a day.
+The accompanying study highlighted that having an
+engaging process and consumable material contributed a
+playful experience while offering benefits in terms of
+facilitating social interactions and self-expression. We take
+this concept forward and look beyond liquids to translate
+data into food. However, instead of making direct mappings
+between energy spent and food [47], we chose to use a
+more artistic rendering of the data in a food material with
+which most share an affective relationship: chocolate!
+
+EDIPULSE
+
+EdiPulse stands for Edible Pulse. EdiPulse translates heart
+rate data into 3D printed chocolate treats (Figure 2). We
+refer to these 3D printed chocolates as activity treats, as
+they come in a moderate amount and offer a unique playful
+representation of one’s physical activity data.
+EdiPulse uses a Polar heart rate monitor [69] and its
+accompanying smartphone app to record heart rate data.
+The EdiPulse application downloads heart rate data from
+the Polar web site and then parses this XML data to identify
+heart rate zones within the recorded data. The application
+takes an average of every 10 minutes of recorded heart rate
+data. If this value is above 65% percent of the maximum
+heart rate, the application considers those 10 minutes as
+active time, in accordance with The American College of
+Sports Medicine [3] guidelines. The system then uses this
+information to algorithmically construct the four activity
+treats using OpenJSCAD [68] software. We discuss the
+rationale behind these choices in the next section.
+Flower: (Max. size (mm): 60 × 60 × 2. Avg. print time: 3
+min.) Flower provides a summary of physical activity
+across each hour of recording. Each petal of the Flower
+corresponds to an hour and its length denotes the amount of
+physical activity in that particular hour. The Flower does
+not explicitly indicate the starting hour, as we wanted the
+Flower to be ambiguous [31], allowing participants to
+identify the starting hour on their own.
+Slogan: (Max. size (mm): 160 × 120 × 2. Avg. print time: 5
+min.) Slogan makes a cheerful comment about physical
+activity done by the user in a day. For example, if the user
+has been inactive during the day, then the Slogan will
+contain motivating words that communicate the benefits of
+an active lifestyle as shown in Figure 2.c and 2.d. On the
+other hand, if the user has been active, then the Slogan will
+offer praise through gratifying words; an example can be
+seen in Figure 2.a and 2.b.
+
+Figure 2: Participants received a different Slogan each day
+based on their activity.
+
+Emoji: (Max. size (mm): 40 × 40 × 2. Avg. print time: 2
+min.) Emoji communicates an individual’s progress towards
+a self-selected activity goal through an emoticon.
+
+At the start of the day, users can enter their physical activity
+goal for the day into the EdiPulse application. This goal is a
+chosen duration for doing moderate to high level of
+physical activity and it could span over the day. The Emoji
+bears one of four faces: sad face, straight face, happy face
+and super happy face based on how close one gets to the set
+goal. For example, achieving and exceeding the goal
+respectively results in a happy and super happy Emoji,
+while failing to meet the goal results in a sad or straight
+face Emoji as shown in Table 1.
+Time spent exercising
+(in relation to the set
+activity goal)
+Received Emoji
+
+0–
+50 %
+
+51 –
+99%
+
+100%
+
+>100%
+
+Table 1: In Emoji, an individual’s progress towards their
+activity goal is communicated through different emoticons.
+
+Graph: (Max. size (mm): 180 × 60 × 2. Avg. print time: 3
+min.) Graph shows recorded heart rate values over time.
+We map the recorded heartbeat per minute to a point in XY
+space and then extrude the resultant 2D shape along the zaxis to achieve a suitable thickness of 2 mm.
+DESIGN PROCESS
+
+The final designs of the activity treats were the results of
+many explorations, developments and printing trials that
+spanned over a year. We held five focus group discussions
+with experts of different academic backgrounds from a
+local research community to help us in refining our design
+choices and to gather diverse perspectives on the
+relationship between food and physical activity. Due to the
+space limitation, we only discuss the key design decisions.
+Choosing the process (Why food printing?)
+
+When we started this work, the first thing we explored was
+the process to create activity treats. Wang et al. [88]
+suggested that there are three ways to encode data in food:
+1) Food based approach, where the existing process of
+creating food is slightly altered but keeping the recipes and
+the look of the food intact. For example, artworks like datacuisine [41] fall into this category, where different foods are
+arranged in a particular manner to signify a certain data
+insight. 2) Data-driven approach, which takes the liberty of
+experimenting with the recipes and allows new forms of
+food to emerge as a result. Here, the focus is on the data
+and no so much on the food. 3) Hybrid approach where
+both approaches are combined to reinvent traditional dishes
+with new ingredients or methods. We follow the third
+approach to create activity treats using food printing.
+We choose food printing [84] (instead of any traditional
+methods of cooking) because it offers a way to connect
+digital information with food relatively easy. Food printing
+follows an additive manufacturing process where an object
+is created by placing the edible material (currently in the
+form of a paste, extruded using a syringe) layer by layer
+until the object, based on a 3D model, is fully formed.
+
+Food printing has been used to create smooth easy-to-eat
+food for the elderly who have difficulty swallowing food
+[78] and also as a social food-based messaging system [89].
+However, to the best of our knowledge, there has not been
+any exploration on using food printing to support the
+physical activity experience.
+Choosing the material (Why chocolate?)
+
+From the start, we were quite keen on using chocolate as a
+material to create activity treats, despite the negative
+connotation it can carry with it. We wanted a material that
+could add playfulness and intrigue to this idea of ‘selfmonitoring and then eating the data based on the sensed
+activity’, hence chocolate was a suitable choice.
+Choosing the amount (How much chocolate?)
+
+We carefully choose not to map the exact amount of
+calories burnt during an exercise to the amount of printed
+chocolate, acknowledging the issues related with
+overconsumption of chocolate. We rather focused on
+making the treats more beautiful with an increase in the
+amount of physical activity. We also used dark chocolate
+and kept its quantity to a maximum of 20 grams a day.
+Choosing the representations
+
+We started by exploring the literature [18,20,30,52,63,90]
+and took into account findings from earlier studies
+[8,9,32,45,46,48,73] to identify possible representations for
+activity treats. The technical capabilities of current food
+printers [16] also influenced the selection. For example,
+current food printers cannot print tall structures easily. As a
+result, we restricted our design explorations to rather flat
+models. We also considered the printing time, chocolate
+amount, and the size of the print bed (20cm × 22cm) for
+print efficiency. We drew on Nicolson’s [63] suggestion to
+provide a variety of representations to raise the chances that
+each participant can find something meaningful in the data.
+Drawing on goal-setting theory [52], we also allowed
+individuals to set their activity goals and used activity treats
+to display progress towards it.
+The final selection was based on the design strategies
+suggested by Mols et al. [60] as follows: 1) Information
+driven reflection: This form of reflection represents data
+without any prescribed interpretation. We chose Graph and
+Flower to help people understand how their activities
+change over time and how they progressed towards their
+goals. Representations of this form have been studied in
+earlier works [19,45]. 2) Expression driven reflection: This
+form of reflection adds a subtle interpretation of data using
+familiar metaphors and expressions. Metaphors are believed
+to be more engaging, motivating and easy to interpret [51].
+Drawing inspiration from this, we chose Emoji to give users
+the ability to reflect and identify themselves in alter egos.
+Emojis have been previously studied in the literature
+[39,42,77]. 3) Dialogue driven reflection: This form of
+reflection offers textual feedback on data. Textual feedback
+often comes in the form of a praise or positive
+encouragement. It is also less ambiguous and directs
+
+attention to important information [32]. Textual feedback
+has been explored in earlier research [8,32]. We chose
+Slogan to explicitly acknowledge an individual’s exercise
+efforts and to cheer them towards their fitness goals.
+However, we kept Slogan short in length considering the
+size of the print bed (20cm × 22cm) and the amount of
+chocolate (20 grams) required to print.
+Managing the printing process
+
+We used a ChocEdge [16] 3D printer to print the activity
+treats. During the exploration, we found that chocolate, as a
+print material, requires care and attention in terms of
+printing. For a good quality print, the temperature of the
+tempered chocolate and room should be in the range of 2532°C [50]. Extensive tempering of the chocolate results in
+watery prints (Figure 3.c), whereas air bubbles in the
+syringe also affect the quality of the print (Figure 3.d). We
+also explored different ways to simplify the printing process
+for our study participants. We tried attaching custom fans
+and cold plates to the printer so that the chocolate hardens
+quickly after printing. However, these alterations did not
+give consistent results. As a remedy, we gave participants a
+food thermometer for an accurate tempering of the
+chocolate and asked them to maintain the temperature of
+the room in the range of 25-32°C during printing.
+Another challenge was the removal of the printed chocolate
+from the print bed. We tried printing chocolate onto
+different food materials such as bread and biscuits but the
+printing results were inconsistent. Hence, we used a flat
+acrylic sheet with a baking paper attached with bulldog
+clips as a print surface. The baking paper allowed easy
+removal of the cooled chocolate. Figure 3 provides the
+three-step preparation before printing activity treats.
+
+Figure 3: The chocolate printing preparation process:
+a) tempering b) filling syringe c) setting up the print bed.
+Concealing digital display and ad-hoc printing method
+
+We used Printrun [70] program, to drive the printer. Under
+normal settings, this program displays a 3D replica of the
+object currently being printed on the screen. However, we
+altered the program settings to conceal the digital display of
+the activity treats. Our intention was to keep the treats as a
+surprise so that they are revealed directly on the print bed in
+edible form.
+We also orchestrated the printing to keep users engaged in
+the printing process. For example, Slogan was printed in an
+ad-hoc manner, where letters from different words (within a
+Slogan) were printed randomly. To elaborate, a word
+‘Sweat’
+would
+be
+printed
+progressively
+as:
+_ _ _ _t " _ _e_t " _ _ eat "_weat "Sweat.
+
+EDIPULSE IN ACTION (FIELD STUDY)
+
+We conducted an in-the-wild [72] study to understand the
+role of activity treats in supporting everyday physical
+activity. The study took place in 7 households across
+Melbourne, Australia. The recruitment followed a
+snowballing method. There was no financial compensation.
+Table 2 provides the demographic details of each household
+(H) of 13 participants (gender, age) along with their
+physical activity goal for each day of the study.
+H1
+
+Harry (M, 31, 30 min.)
+
+Fiona (F, 27, 30 min.)
+
+H2
+
+Josh (M, 44, 30 min.)
+
+Karen (F, 45, 45 min.)
+
+H3
+
+Adam (M, 27, 30 min.)
+
+Helena (F, 28, 1 hour)
+
+H4
+
+Rohan (M, 32, 45 min.)
+
+Diya (F, 28, 45 min.)
+
+H5
+
+Gavin (M, 27, 1 hour)
+
+Daisy (F, 26, 45 min.)
+
+H6
+
+Jayden (M, 24, 45 min.)
+
+Sarah (F, 28, 1 hour)
+
+H7
+
+Frank (M, 52, 45 min.)
+
+Table 2: Participants’ details (names changed) along with
+their activity goal.
+
+We decided to engage more than one person from the same
+household to understand social dynamics around the use of
+EdiPulse. Frank’s roommate Kelly also wanted to
+participate in the study, but she had to cancel last minute.
+Since Frank was very enthusiastic about the study, we
+allowed him to be a solo participant. As we only had access
+to one printer, we proceeded with a sequential order of
+installing the EdiPulse system in different households.
+Overall, the deployments took more than 4 months.
+The lead author visited each household on the first and last
+day of the study and spent around 4 hours in total in each
+household. On the first day, he explained the study
+procedure with a demonstration of how to use the system.
+He provided each participant with the necessary supplies
+along with an instructional manual. The initial meeting with
+participants was also used to gain an understanding of their
+active lifestyle. Study participants self-rated themselves as
+moderately active doing physical activity at least 2-3 times
+a week. None of the participants were obese and neither had
+a desire to change their behavior. However, they wanted to
+add consistency to their exercise routine. Ten participants
+had used self-monitoring devices but not for a long time.
+Nine participants were fond of chocolate.
+Participants performed the following tasks on each day: 1)
+Morning Tasks: Participants put on the heart rate monitor
+and started recording data using the Polar Beat app,
+installed on the iPod Touch. Once the recording started,
+participants continued their day as usual while carrying the
+iPod. 2) Evening Tasks: Participants stopped the recording
+around 6pm. Their heart rate data then automatically synced
+to the Polar website. We downloaded the data from the
+website and prepared the 3D models of activity treats using
+the EdiPulse application. We then emailed the 3D models
+
+as a single print file (.gcode) to the participants. We kept
+the task of 3D modeling on our side to reduce participants’
+workload and to keep the activity treats as a surprise. After
+receiving the files, participants followed the steps outlined
+in Figure 3 to print their treats. The preparation took around
+15 minutes while the printing took an average of 13
+minutes.
+Data source and analysis
+
+Interviews were conducted at the participant’s home on the
+last day of study and took about 45 minutes per participant.
+We kept the nature of the interviews semi-structured in
+order to leave sufficient room for topics to emerge, and to
+support a deeper elucidation of participants’ responses and
+thinking processes. During each interview, we carried a list
+of questions (topic guide) related to the research aims that
+helped us to remain on track, while leaving sufficient
+flexibility in the discourse. The questions revolved around
+the motivations, expectations, utility and experiences of
+using EdiPulse. We also gathered participants’ feedback on
+system design, use of chocolate and food printing to
+represent data. Additionally, we welcomed opportunities to
+discuss any photographs and recordings of their interactions
+with EdiPulse that participants voluntarily captured during
+the course of study. This additional data helped us to
+investigate how people reacted and integrated the EdiPulse
+into their everyday life.
+All interviews were audio recorded. During the study, we
+also maintained contact with all study participants via email
+and phone, to provide technical support whenever needed.
+We utilized inductive thematic analysis [11] to analyze the
+collected data. We examined the interview notes to get an
+initial sense of recurring themes and then inductively coded
+the interview data by developing labels to describe the
+phenomena. After deriving the set of codes, we iteratively
+clustered related codes into higher-level groupings,
+representing the major themes as findings.
+FINDINGS
+
+The study identified five overarching themes: Reflection,
+Positivity, Self-determination, Affection and Co-experience.
+Edible component of activity treats (chocolate) was a
+standout element across all themes and the majority of the
+findings. However, we also narrate findings related to the
+choice of representations as well as printing process, as they
+played an influential role in making EdiPulse a pleasurable
+experience. We use participants’ quotes to exemplify the
+collected their experiences with EdiPulse.
+T1: Reflection
+
+Following reflective informatics [7], this theme describes
+how activity treats allowed participants to step back and
+think about their everyday life experiences. In particular,
+the use of chocolate, serendipity of representations and
+delayed feedback not only challenged individual’s
+perception of their active life but also made the experience
+enjoyable.
+
+EdiPulse facilitated reflection on physical activities
+
+Participants used the EdiPulse system to reflect on their
+daily routines. For most participants, the study was an “eyeopener” of their level of physical fitness. Rohan reflected:
+“It was a clash of realities, when I saw a sad Emoji, I felt,
+‘God dammit, is this me?’ I have to do more exercise.”
+Adam similarly was sad to realize the kind of sedentary life
+he is living. He said with a sigh: “When I was younger I had
+a very active lifestyle, these days I am more sedentary in
+comparison. I need to kick off my activities a bit more.”
+Edible treats made feedback enjoyable
+
+All participants felt that the edible component enriched the
+experience of reflecting on one’s data. Harry compared his
+previous experience of a cycling app with EdiPulse: “I used
+to check the distance and speed using an app. But my
+interaction with the app stopped there, it did not go any
+further. Now with EdiPulse, I got a chocolate printed
+'Emoji', totally different than the numbers and much more
+pleasing to the heart. And who would say no to chocolate!”
+Daisy added, “It’s unbelievable that EdiPulse not only tells
+you how much exercise you have done through different
+shapes, but you get to eat those shapes too.”
+Activity treats offered more time to reflect
+
+Five participants liked the fact that activity treats are
+printed physically and not simply shown on the screen.
+Samantha pointed out, “Today, we are bombarded with
+messages through Twitter and other social feeds and you
+get very used to not paying attention to them, if they are not
+meaningful for you. Here there was direct meaning in the
+writing, so you probably stop and look at them more.” Josh
+said: “I like the way it uses the chocolate instead of digital
+screens to display data. It takes me away from the screens,
+where I spend most of my time due to work anyway.”
+Slogan added serendipity to the process of reflection
+
+Participants compared the EdiPulse system to a fortune
+cookie where one is intrigued to know the message. Karen
+liked the way the system prints Slogan, “I enjoyed the
+writing, getting a new motivational Slogan every day meant
+a lot to me.” Josh added: “We kind of knew whether we
+will get a happy 'Emoji' or what will be the shape of the
+‘Graph’ at the end of the day, but Slogan always offered
+something new.” Guessing the right Slogan was a
+challenging but exciting activity. Frank mentioned, “I loved
+watching the Slogan getting printed. The system keeps on
+adding alphabets [letters], and like a small child, I keep on
+guessing it [laughing].” Most participants found that
+Slogan had more appeal when the message was positive and
+reflected interesting things about their life.
+Activity treats offered summary of the day at a glance
+
+Six participants liked the selection of representations, which
+offered them a quick summary of their day. For Adam and
+Daisy, the Graph was essential to identify and reflect on
+their activities. Daisy said: “I like how it really shows the
+ups and downs. It is really expressive. You look at it and
+you can recollect what happened during the day.” Emoji on
+
+the other hand, was treated like a report card. Helena was
+happy that “In the evening, when I see a happy Emoji, I feel
+that I did a good job.” Gavin and Daisy liked how Flower
+petals effectively communicate sedentary and active hours
+by varying their length. Frank compared the Flower petals
+to sunrays, “When I do exercise, I feel like the sun is
+smiling for me and blessing me with longer rays (petals of
+the ‘Flower’).”
+T2: Positivity
+
+This theme talks about the positive influence of activity
+treats. Activity treats became celebratory rewards to support
+individual’s activity goals and the printing process created
+avenues for pleasure, creativity and nostalgia [33,35].
+At first chocolate felt counterproductive
+
+Six participants felt initially that chocolate can be
+counterproductive to their exercise efforts but as they used
+the system on a daily basis, they were surprised to see the
+positivity and fun that it brought to their exercise. Gavin
+explained how his perception towards chocolate changed
+over the course of the study: “I was initially skeptical over
+the chocolate, but now I realized that exercise becomes
+more fun with chocolate and a little bit of chocolate does
+not harm anyone”. Sarah had similar thoughts: “You
+normally think you should not have chocolate if you are
+doing exercise, but getting a moderate amount of chocolate
+was kind of good that it broke the barrier.”
+Activity treats were considered as celebratory rewards
+
+For nine participants, activity treats was a prize that they
+earned for being physically active. Fiona liked the use of
+chocolate as a celebratory reward for her efforts, she
+explained: “Food is an important part of the celebration.
+We often reward ourselves by going to restaurants to
+celebrate, and what can be better than a chocolate to
+cherish my 40 minutes run!”
+The amount of chocolate felt appropriate
+
+All participants appreciated receiving the same amount of
+chocolate every day irrespective of how active they were on
+each day. Helena commented: “Having an edible reward is
+good, but you can really get cheeky with it like you burned
+2000 calories and here is 2000 calories in return. But I like
+that the system is not tailored in that way.” Jayden similarly
+said: “I kind of liked that it gave me a small reward or
+energy for the next day’s exercise. It was not a lot but just
+enough to put a smile on my face and to keep me motivated
+to exercise.”
+Thinner forms of chocolate supported guilt-free eating
+
+Three participants found eating activity treats quite
+different to eating a solid block of chocolate because of the
+thin size (2mm in height). Interestingly, four participants
+felt that eating this way was more fun because it diminished
+their guilt of eating chocolate. Daisy said: “It is because of
+this arrangement, so when you are eating it, you feel the
+flavor but you do not feel that you are eating a lot of
+chocolate, not in the way that will make you guilty or
+something.” (Figure 4.a)
+
+All participants also wanted to avoid getting a sad face
+Emoji. In consequence, they tried to be more active. For
+example, Diya received a straight face Emoji for two
+subsequent days, which was disappointing for her. She said,
+“Through the study I learned that you have to go an extra
+mile to get a happy smiling Emoji.”
+Figure 4: a) Thinner forms of chocolate were fun to eat. b)
+Participants did another round of print to get perfect treats.
+
+Contextual Slogan encouraged more activity
+
+Eleven participants found the printing sound quite pleasant.
+Besides the sound, they also enjoyed the sweet smell of the
+warm chocolate during the printing process. Frank, who
+sometimes did the printing during the morning, exemplified
+this best when he said: “My roommate Kelly commented
+that it was the first time ever she woke up with the smell of
+chocolate, which she liked a lot. It gave both of us the
+motivation to start an active day with a smile”.
+
+When participants fell short of their desired goal, the
+EdiPulse system delivered Slogans like “The gym is waiting
+for you”. All participants liked such encouragements and
+reminders and often did more exercise the next day. Daisy
+said, “The EdiPulse system really helped me to create a
+routine. Now I regularly go to the gym. I think I badly
+needed that kind of push. I am really happy that I got the
+kick now”. Josh changed his everyday routine by reflecting
+on the activity treats: “Now, I walk more during the day.
+When I go out for lunch, I walk and take stairs.”
+
+Printing new treats every day was exciting
+
+EdiPulse served as an ambient reminder to be active
+
+Printer qualities made the experience evocative
+
+Adam compared the printing process with chocolate molds
+and found that printing offers more excitement: “There is
+an element of personality that comes through printing, and
+it is really good. You know that this chocolate is from my
+data and no one is getting the same data. As a motivational
+tool, if I had got the same mold as yesterday, I would
+already know what’s coming, it’s no longer a mystery.”
+EdiPulse offered a sense of ownership on data
+
+Despite the preprocessing and printing troubles, participants
+enjoyed printing their activity treats at home. Harry said:
+“Printing at home is great, since it is edible, I like to eat it
+fresh at home, just after the printing.” Daisy added, “When
+you print at home, you have the freedom of choosing the
+moment, when you want to print and feel rewarded”.
+Jayden added, “The best part is there is no middle man who
+says here is your print, so I felt some sense of ownership.”
+T3: Determination
+
+This theme talks about motivational qualities offered by
+activity treats towards fulfilling activity goals of an
+individual. To participants, activity treats were not just a
+hedonistic gloss of chocolate. Activity treats also became
+the motivational anchors and fueled enthusiasm towards an
+active lifestyle. In pursuit, participants achieved their goals
+76% of the time. Interestingly, activity treats also made
+participants more aware about their chocolate eating habits
+and they consumed activity treats only on active days.
+Activity treats became motivational anchors
+
+Besides the “feel-good” factor, nine participants found
+activity treats as a motivational anchor to achieve their
+desired goals. The Emoji was the favorite activity treat for
+all participants. Gavin emphasized: “For me the Emoji was
+the strongest motivator, others were nice too but for me the
+Emoji was sufficient.” Karen similarly described her
+affection towards the chocolate-coated Emoji by saying:
+“Receiving a smiling Emoji feels like someone liking your
+photo on Instagram. It’s a nice encouraging thing for the
+day.” Frank was happy that he could also eat such Emoji.
+
+Participants felt that the presence of the system in their
+kitchen worked as a constant reminder to remain active.
+Sarah said: “It is not easy to turn away from it if it is sitting
+on the kitchen bench printing delicious chocolate and
+reminding you to do exercise. A mobile app can be a bit of
+a fad: you use it for a while and then you don’t.” Diya
+similarly said, “I feel like I am answerable to this machine.
+Even when I am outside, I kind of hear the printing sound
+and smell of chocolate that reminds me of my activity goal.”
+To this end, the physical presence of a food-printing system
+installed in the kitchen facilitated an ambient awareness and
+a responsibility to become physically active.
+Activity treats were consumed only on deserving days
+
+Interestingly, participants’ eating behavior was influenced
+by the content of the treats. For example, five participants
+did not eat their activity treats on days when they received
+the sad face Emoji. Instead, they ate the chocolate only on
+days when they received happy or super happy Emoji to
+celebrate their success. Diya said, “It was challenging at
+first not to eat the chocolate, but I was determined to
+achieve my goal on the next day, which I did.” It was
+interesting to see that participants engaged with the data
+even if they were not happy with their performance.
+Activity treats were reprinted to get deserving treats
+
+Print results were not always consistent. Sometimes
+because of the air bubbles in the syringe (Figure 4.b), the
+treats did not print as expected, which annoyed most of the
+participants. Jayden said: “It was quite disappointing to see
+the prints becoming messy. If EdiPulse does not print it
+correctly, you feel like you haven’t done the task properly.”
+Interestingly, most participants did another round of
+printing to get satisfactory and good looking treats. Diya
+said: “Getting perfectly printed activity treats made me
+happy. Receiving messy prints felt like the system is angry
+on me and punishing me with bad prints.”
+
+Activity treats reduced consumption of chocolate
+
+All female study participants were fond of chocolate, but
+EdiPulse helped them in controlling their temptation. Daisy
+said: “Although chocolate was so accessible, you also knew
+that every night you would have a bite of chocolate. And
+when I did not exercise, I knew from the system that my
+body did not ask me to eat more chocolate. So it really
+made me eat less chocolate than what I normally do.”
+Delayed feedback prompted more activity during the day
+
+The printing schedule was designed to deliver the activity
+treats at the end of the day. Participants appreciated such a
+delayed but fixed time of feedback to print their activity
+treats: “The first thing I want to do after I am back from the
+office is to print my treats. I want to see if I have done
+enough to get a smiling Emoji, or a long petal Flower.” For
+Diya, the anticipation of the deserving treat kept her active
+throughout the day: “It is hard to guess correctly if you
+have done enough exercise to get a smiling Emoji, so you
+often do more exercise than what you normally do.”
+T4: Affection
+
+This theme describes participants’ personal affection with
+EdiPulse, where activity treats were considered as objects
+of self-esteem and pride.
+Activity treats were rarely shared but never wasted
+
+Eleven participants never shared the activity treats with
+others. Helena said: “It was a personal reward for what I
+have done. I would not give it to others since I did all the
+hard work. I know, it sounds really bad but I kept these
+treats to myself.” Jayden similarly commented, “Food is
+generally shared, but once it has data elements to it, it
+becomes more personal.”
+Sharing of activity treats only happened to prevent any
+wastage of chocolate. Samantha created chocolate bunnies
+from the leftover chocolate: “I love chocolate, and I can not
+see someone wasting it. I will probably gift these bunnies to
+my friends.” At Karen and Josh’s home their son mostly ate
+activity treats from Josh’s data. Josh explained: “I suppose,
+I am concerned over the wastage of syringes, plastics, and
+the paper, but it’s good that the chocolate is never wasted.
+Even if I do not eat it, my son would eat it.”
+
+Figure 5: Participants enjoyed the printing process.
+Enthusiasm for EdiPulse persisted despite the printing labor
+
+All participants found the preparation steps time
+consuming: “Loading the syringe and setting up the printer
+was kind of labor work that one should do to get their
+activity treats.” Helena echoed similar concerns: “The
+preparation needs to be faster and easier.” Harry pointed
+out that besides being time-consuming the process
+sometimes also caused a mess: “Many times when I
+tempered the chocolate, I got chocolate all over my fingers,
+which by the way was not a bad thing (laughing).” As such,
+eating was a part of engaging with the printing process.
+Getting activity treats was dearly missed (post-study)
+
+The first author met Gavin ten days after the end of the
+study. Gavin said how much he misses the system: “I was
+so habitual to the system that gave me sweet rewards for my
+exercise - now I miss all that. There is no reward waiting
+for me in the evenings now. The other day I had a very
+active day and I was really missing my sweet treats, so I
+created some treats for myself and Fiona from the leftover
+chocolate.” (Figure 6.a) Adam felt the absence of EdiPulse
+in his home.
+
+Participants enjoyed the chocolate printing process
+
+Participants particularly enjoyed standing next to the printer
+and guessing, “what the printer is telling tonight”, as
+explained by Frank (Figure 5). Josh added: “Because of the
+nature of the machine, you keep watching it doing the print.
+It is a much nicer process to see how it reveals my data as
+opposed to directly knowing what it is going to say.”
+Three participants voluntarily took photographs of the
+printing process and affectionately shared them on different
+social media. For them, the experience of watching the print
+and taking photographs was nothing short of a thrill. Karen
+said with a smile, “Taking photographs of the print raised
+my heart rate and in that way I am burning more calories, I
+wished I had the monitor on”.
+
+Figure 6: a) Gavin manually created activity treats to reward
+himself, mimicking the EdiPulse system. b) Adam altered
+Helena’s Slogan to show a playful side.
+Diversity in food materials was desired
+
+Although all participants appreciated the use of chocolate to
+create activity treats, they also wished for more food
+diversity. Fiona said: “We eat a variety of food on a daily
+basis. This is a particular device that prints only chocolate.
+But I am sure in 10-20 years, I could see every food being
+3D printed.” Four participants on the other hand wanted to
+print with healthier foods like protein powder to closely tie
+EdiPulse with their exercise nutrition routine.
+
+T5: Co-experience
+
+The final theme describes the social qualities of activity
+treats, facilitated by the co-experience [29] of printing
+treats with family members.
+Activity treats drove healthy competition
+
+The system also encouraged healthy competition between
+four couples. Gavin and Daisy competed with each other in
+terms of who would get a super happy Emoji. Helena also
+mentioned: “I loved when Adam got the printed ‘Slogan’ as
+‘Helena is getting all the happy 'Emoji’. I liked how it
+reflects my competence”. Her partner, Adam, who was less
+active than Helena took this fact sportingly and manually
+wrote the following message on top of Helena’s Slogan:
+“Adam is getting all the chocolate” (Refer to Figure 6.b).
+Printing activity treats brought participants together
+
+All participants enjoyed preparing activity treats together.
+Rohan compared printing activity treats with cooking and
+enjoyed doing it together with Diya. He said: “It was like
+cooking but with more fun because we also get to talk about
+what treats we will get and then compare our treats.”
+Participants also encouraged each other to achieve their
+fitness goals and showed keen interest in each other’s data.
+Jayden said: “Normally, I would not have looked at Sarah’s
+data if it was only on a mobile, but now it is printing right
+in front of me. I felt intrigued to know more about how her
+day went.”
+Families provided social push to exercise
+
+The public visibility of EdiPulse and sweet aroma of hot
+chocolate being printed grabbed attention of nonparticipating family members. Frank said, “As I woke up,
+the first thing my friend Kelly reminded me was to do
+exercise and monitor myself. I guess, she just wanted to
+start her day with the pleasant smell of my activity treats.”
+In Karen and Josh’s case, the reaction of their son was
+equally inspiring and acted as a push for them to do more
+exercise. Karen voiced: “I knew that our son would
+certainly look at them (the smiley) and compare why is
+yours a smiley and why is dad’s a sad face. I want daddy to
+get a happy face, so I think it could be quite persuasive”.
+IMPLICATIONS FOR DESIGN
+
+Based on the study insights, we draw designers’ attention to
+following design implications [75] that could help in
+building playful food based designs for supporting the
+experience of being physically active.
+Delayed Feedback & Anticipatory Savoring
+
+In our study, we found that participants appreciated getting
+the feedback on their daily activity level at the end of the
+day. Having to wait for their activity treats moderated
+participants’ consumption of chocolate throughout the day.
+Rather than eating any chocolate at any time, participants
+valued getting the activity treats, which were personalized
+to their activity levels. Since there was no feedback on
+whether the participant had achieved their activity goal for
+the day until evening, the delayed feedback also added a
+surprise element to what the activity treats were going to
+
+be. This uncertainty in predicting whether they have done
+enough activity to get a super happy Emoji, fuelled interest
+in doing opportunistic physical activity [18].
+The appreciation to delayed feedback can be explained in
+terms of the Anticipatory Savoring [53], where an
+individual psychologically looks forward to a positive
+experience. In this case, the positive experience was to
+enjoy well-deserved chocolate treats. Getting the feedback
+at the end of the day not only moderated participant’s
+cravings for chocolate but also pushed them to be more
+active throughout the day. Moderation of chocolate eating
+habit was a surprise finding to us because unlike a meal,
+chocolate is usually not eaten in a fixed pattern. Rather it is
+munched at any time of the day. Similar results were found
+in earlier studies where anticipatory savoring reduced
+overall consumption of chocolate [10, 44, 61]. Since in
+EdiPulse chocolate was closely linked to one’s active life, it
+subconsciously affected participants’ eating choices. We
+therefore encourage designers to create opportunities for
+anticipatory savoring by utilizing appealing materials and
+keeping them as surprise through the use of delayed
+feedback. The importance of delayed feedback is also
+iterated in earlier works on slow design [34,62,67].
+Visual Appeal
+
+The study highlighted that the visual aspect of the activity
+treats was very crucial in contributing a positive
+experience. We found that participants wanted appealing
+and perfectly printed activity treats and in this pursuit, they
+were happy to perform multiple prints if the initial print was
+not as good as expected. We also found that irrespective of
+their activity levels, participants were motivated to print
+their activity routines daily. To this end, receiving activity
+treats printed in chocolate offered moments of mastery
+experience supporting individual’s self-efficacy [5,86].
+Our study also highlights the importance of an appealing
+medium to represent data, because participants found the
+sight of a beautifully printed chocolate difficult to ignore
+[22,80]. As such, we found that the visual aspect of the
+treats had significant impact on the overall experience to
+the extent that even negative feedback served as motivation.
+For example, we found that participants were not
+discouraged by seeing the sad Emoji on sedentary days,
+rather it served as an inspirational goal to do more exercise
+to achieve a super happy Emoji. This finding contrasts with
+the findings of prior study on Fish’n’Steps system [51]
+where the negative framing of the on-screen feedback led to
+reduced interest in data.
+In line with earlier studies [45,48], participants also
+preferred intuitiveness with a possibility of quickly gaining
+insights into their activities in comparison to exploring
+graphical data that require numerical literacy and
+interpretive abilities. For example, we found that the Emoji
+and Slogan had more appeal than the Graph and Flower.
+We thus encourage designers to consider the visual appeal
+of the activity treats for both active and sedentary days
+
+while keeping the representations easy to interpret. Finally,
+in this work, we only looked into altering the visual forms
+of activity treats, but other features such as flavor aroma
+[22] and texture [79,81] could also be explored to make
+activity treats pleasurable.
+Printing process & Savoring
+
+We found that participants cherished the printing process as
+much as the consumption afterwards, unlike our earlier
+study, where the process of 3D printing plastic artifacts
+received lesser appreciation [45]. All participants enjoyed
+the printing sound of the printer. The sight and smell of the
+chocolate being slowly overlaid on the print bed further
+added to the sensorial experience. The ad-hoc printing of
+the treats also glued participants to the printing site, as they
+treated it as a game of guessing the right word.
+Interestingly, this activity also gave participants an
+opportunity to reflect on each other’s activity levels for that
+day. Although the preparation in terms of getting the
+chocolate ready for printing was felt to be laborious,
+participants’ interests in printing sustained throughout the
+study. They felt that the benefits like the excitement of
+seeing their data in an edible form were bigger than the
+duties they had to perform.
+The interplay of different senses, together with slow reveal
+of data facilitated by ad-hoc printing lends itself to
+Savoring [13]. Savoring aims to prolong and intensify the
+enjoyment of a consumption experience by drawing
+attention to sensory aspects of the experience that might
+otherwise be missed [13]. Wang et al. [88] described five
+advantages of data edibilization in terms of attractiveness,
+richness, memorability, affectiveness and sociability, which
+our study confirmed. Learning from these insights, we
+encourage designers to accommodate both printer and food
+characteristics to engage users in the printing process.
+The field study also identified some open challenges in the
+printing process such as the preparation labor and printing
+troubles, which we believe would resolve as food printing
+technology advances. We already see efforts in this
+direction, e.g., printers like Foodini [28] and Bocusini [14]
+offer much smoother workflows. However, we argue that
+instead of making food printing efficient, we can harness its
+slowness to offer playful engagement that capitalizes on
+savoring. Secondly, multisensorial nature of engagement
+with the printing process could also potentially increase the
+value of the provided feedback [38,54]. Earlier work [4]
+also suggests that involving users in the creation process
+can make feedback more influential.
+Consumption
+
+After making a good quality print of their activity treats,
+participants enjoyed consuming them. As these treats were
+printed in thin spread-out form, it also prolonged the
+experience of eating chocolate without the worry or guilt of
+consuming too much chocolate. We also found that
+participants enjoyed getting chocolate treats on active days,
+whereas on sedentary days, they preserved these treats for
+
+later consumption. However, the data element of activity
+treats added an interesting twist to the social behavior of
+the participants. Participants shared the photographs of their
+treats with their friends and on social networks. But since
+these representations were carrying the personal data of
+participants, they rarely shared their treats with anyone.
+Rather, these treats became objects of self-esteem and
+pride. Earlier studies [45,73,83,85] also report similar
+personality traits where individuals took pride in their data.
+As participants became more aware of each other’s active
+life, they persuaded each other to complete their activity
+goals. Interestingly, even the non-study participants were
+intrigued by the idea of activity treats, and their
+involvement in the process further encouraged participants
+to persist with their daily goals. These findings correlate
+with the earlier work on family based reflection [74] where
+healthy competition in a family setting led to enjoyment
+and motivation towards physical activity.
+Our study identified two contrasting behavior related to the
+consumption of personal data and food. Physical activity
+data, which is usually meant for personal consumption
+became social through the public process of printing,
+whereas chocolate, which is something people share, was
+kept for personal consumption. This leads to an interesting
+question as to whether the designers should focus on
+personalizing the design of activity treats or they should try
+to focus on nurturing social experiences. In future, it would
+also be interesting to see how creating activity treats from
+more than one person’s data facilitate both social
+experience and self-esteem.
+CONCLUSION
+
+This paper offered the first conceptual understanding of the
+relationship between appealing foods like chocolate and
+physical activity through the design and study of EdiPulse.
+Given the exploratory nature of this work, pursuing users to
+be physically active was not the primary focus of this work.
+Instead, our intention was to gather a descriptive account on
+how playful treats in an appealing medium of chocolate can
+positively influence an individual’s behavior and attitude
+towards physical activity. To this end, we do not position
+our work as a health promotion tool. However, we
+acknowledge two main limitations of our work: 1) a short
+design-led exploratory study, and 2) the novelty of the 3D
+chocolate printer. We invite further research to understand
+long-term effects and use of activity treats.
+We also see our work as a precursor to exciting
+opportunities that food printing technology [76,84] will
+afford for playful self-monitoring. This work also opens up
+opportunities for interdisciplinary collaborations amongst
+different fields: food sciences, design, sports and nutritional
+science and HCI. We look forward to exploring and
+witnessing new ways of connecting the biographies of the
+material world with the immaterial world.
+
+REFERENCES
+
+1.
+
+2.
+
+3.
+
+Ala’A. Alkerwi, Nicolas Sauvageot, Georgina E.
+Crichton, Merrill F. Elias, and Saverio Stranges. 2016.
+Daily chocolate consumption is inversely associated
+with insulin resistance and liver enzymes in the
+Observation of Cardiovascular Risk Factors in
+Luxembourg study. British Journal of Nutrition 115,
+no. 09 (2016): 1661-1668.
+Judith E. Allgrove, Emily Farrell, Michael Gleeson,
+Gary Williamson, and Karen Cooper. 2011. Regular
+dark chocolate consumption's reduction of oxidative
+stress and increase of free-fatty-acid mobilization in
+response to prolonged cycling. International journal of
+sport nutrition and exercise metabolism 21, no. 2: 113.
+American College of Sports Medicine. 2013. ACSM's
+guidelines for exercise testing and prescription.
+Lippincott Williams & Wilkins.
+
+11. Virginia Braun and Victoria Clarke. 2006. Using
+thematic analysis in psychology. Qualitative research
+in psychology, 3(2), pp.77-101.
+12. Jean Anthelme Brillat-Savarin. Physiologie du Goût
+[The Philosopher in the Kitchen / The Physiology of
+Taste]; 1835. Translated by A. Lalauze: A Handbook of
+Gastronomy. London: Nimmo & Bain; 1884.
+13. Fred B. Bryant and Joseph Veroff 2007. Savoring: A
+new model of positive experience. Lawrence Erlbaum
+Associates Publishers.
+14. Bocusini http://www.bocusini.com/
+15. Michel Cabanac. 2009. The dialectics of pleasure. In
+Kringelbach & Berridge (eds.), Pleasures of the brain
+(pp. 113-124). Oxford University Press.
+16. ChocEdge. http://chocedge.com/
+17. Rob Comber, Jaz Hee-Jeong Choi, Jettie Hoonhout,
+and Kenton O'hara. 2014. Editorial: Designing for
+human-food interaction: An introduction to the special
+issue on 'food and interaction design'.Int. J. Hum.Comput. Stud. 72, 2 (2014), 181-184.
+DOI=http://dx.doi.org/10.1016/j.ijhcs.2013.09.001
+
+4.
+
+Swamy Ananthanarayan, Katie Siek, and Michael
+Eisenberg. 2016. A Craft Approach to Health
+Awareness in Children. In Proceedings of the 2016
+ACM Conference on Designing Interactive Systems
+(DIS '16). ACM, 724-735. DOI:
+http://dx.doi.org/10.1145/2901790.2901888
+
+5.
+
+Stephanie Ashford, Jemma Edmunds, and David P.
+French 2010. What is the best way to change selfefficacy to promote lifestyle and recreational physical
+activity? A systematic review with metaanalysis. British journal of health psychology, 15(2),
+265-288.
+
+6.
+
+Stephen Barrass and Gregory Kramer 1999. Using
+sonification. Multimedia systems 7, no. 1, 23-31.
+
+7.
+
+Eric P.S. Baumer. 2015. Reflective Informatics:
+Conceptual Dimensions for Designing Technologies of
+Reflection. In Proceedings of the 33rd Annual ACM
+Conference on Human Factors in Computing Systems
+(CHI '15). ACM, 585-594. DOI:
+http://dx.doi.org/10.1145/2702123.2702234
+
+19. Sunny Consolvo, David W. McDonald, Tammy
+Toscos, Mike Y. Chen, Jon Froehlich, Beverly
+Harrison, Predrag Klasnja, Anthony LaMarca, Louis
+LeGrand, Ryan Libby, Ian Smith, and James A.
+Landay. 2008. Activity sensing in the wild: a field trial
+of ubifit garden. In Proceedings of the SIGCHI
+Conference on Human Factors in Computing Systems
+(CHI '08). ACM, 1797-1806.
+http://doi.acm.org/10.1145/1357054.1357335
+
+8.
+
+Frank Bentley, Konrad Tollmar, Peter Stephenson,
+Laura Levy, Brian Jones, Scott Robertson, Ed Price,
+Richard Catrambone, and Jeff Wilson. 2013. Health
+Mashups: Presenting Statistical Patterns between
+Wellbeing Data and Context in Natural Language to
+Promote Behavior Change. ACM Trans. Comput.-Hum.
+Interact. 20, 5, 30, 27 pages.
+
+20. Sunny Consolvo, David W. McDonald, and James A.
+Landay. 2009. Theory-driven design strategies for
+technologies that support behavior change in everyday
+life. In Proceedings of the SIGCHI Conference on
+Human Factors in Computing Systems (CHI '09).
+ACM, 405-414.
+DOI=http://dx.doi.org/10.1145/1518701.1518766
+
+9.
+
+Shlomo Berkovsky, Jill Freyne, and Mac Coombe.
+2012. Physical Activity Motivating Games: Be Active
+and Get Your Own Reward. ACM Trans. Comput.Hum. Interact. 19, 4, Article 32 (2012), 41 pages.
+DOI=http://dx.doi.org/10.1145/2395131.2395139
+
+21. Georgina E. Crichton, Merrill F. Elias, and Ala'A.
+Alkerwi. 2016. Chocolate intake is associated with
+better cognitive function: The Maine-Syracuse
+Longitudinal Study. Appetite 100 (2016): 126-132.
+
+10. Iain R. Black and Charles S. Areni 2016. Anticipatory
+Savoring and Consumption: Just Thinking about That
+First Bite of Chocolate Fills You Up Faster.
+Psychology & Marketing 33, no. 7 (2016): 516-524.
+
+18. Sunny Consolvo, Predrag Klasnja, David W.
+McDonald, and James A. Landay 2014. Designing for
+healthy lifestyles: Design considerations for mobile
+technologies to encourage consumer health and
+wellness. Foundations and Trends in Human Computer
+Interaction, 6(34): 167–315.
+
+22. Lieve Doucé, Karolien Poels, Wim Janssens, and
+Charlotte De Backer. 2013. Smelling the books: The
+effect of chocolate scent on purchase-related behavior
+in a bookstore. Journal of Environmental Psychology
+36 (2013): 65-69.
+
+23. Chris Elsden, Mark Selby, Abigail Durrant, and David
+Kirk. 2016. Fitter, happier, more productive: what to
+ask of a data-driven life. interactions 23, 5 (August
+2016), 45-45. DOI: http://dx.doi.org/10.1145/2975388.
+24. Daniel A. Epstein, Monica Caraway, Chuck Johnston,
+An Ping, James Fogarty, and Sean A. Munson. 2016.
+Beyond Abandonment to Next Steps: Understanding
+and Designing for Life after Personal Informatics Tool
+Use. In Proceedings of the 2016 CHI Conference on
+Human Factors in Computing Systems (CHI '16).
+ACM, 1109-1113. DOI:
+http://dx.doi.org/10.1145/2858036.2858045.
+25. Jordan Etkin. 2016. The hidden cost of personal
+quantification. Journal of Consumer Research 42: 967–
+984.
+26. Chloe Fan, Jodi Forlizzi, and Anind K. Dey. 2012. A
+spark of activity: exploring informative art as
+visualization for physical activity. In Proceedings of
+the 2012 ACM Conference on Ubiquitous Computing
+(UbiComp '12). ACM, 81-84.
+DOI=http://dx.doi.org/10.1145/2370216.2370229
+27. Grace Farhat, Sandra Drummond, Lorna Fyfe, and
+Emad AS Al‐Dujaili. 2014. Dark chocolate: an obesity
+paradox or a culprit for weight gain? Phytotherapy
+Research 28, no. 6 (2014): 791-797.
+28. Foodini. https://www.naturalmachines.com/.
+29. Jodi Forlizzi and Katja Battarbee. 2004. Understanding
+experience in interactive systems. In Proceedings of
+the 5th conference on Designing interactive systems:
+processes, practices, methods, and techniques (DIS
+'04). ACM, 261-268.
+DOI=http://dx.doi.org/10.1145/1013115.1013152
+30. Jon Froehlich, Leah Findlater, and James Landay.
+2010. The design of eco-feedback technology. In
+Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems (CHI '10). ACM, 19992008.
+DOI=http://dx.doi.org/10.1145/1753326.1753629.
+31. William W. Gaver, Jacob Beaver, and Steve Benford.
+2003. Ambiguity as a resource for design. In
+Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems (CHI '03). ACM, 233240. DOI=http://dx.doi.org/10.1145/642611.642653
+32. Rúben Gouveia, Evangelos Karapanos, and Marc
+Hassenzahl. 2015. How do we engage with activity
+trackers?: a longitudinal study of Habito. In
+Proceedings of the 2015 ACM International Joint
+Conference on Pervasive and Ubiquitous Computing
+(UbiComp '15). ACM, 1305-1316. DOI:
+http://dx.doi.org/10.1145/2750858.2804290
+33. Andrea Grimes and Richard Harper. 2008. Celebratory
+technology: new directions for food research in HCI. In
+Proceedings of the SIGCHI Conference on Human
+
+Factors in Computing Systems (CHI '08). ACM, 467476. http://doi.acm.org/10.1145/1357054.1357130.
+34. Barbara Grosse-Hering, Jon Mason, Dzmitry
+Aliakseyeu, Conny Bakker, and Pieter Desmet. 2013.
+Slow design for meaningful interactions. In
+Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems (CHI '13). ACM, 34313440. http://doi.acm.org/10.1145/2470654.2466472
+35. Marc Hassenzahl, Kai Eckold, Sarah Diefenbach,
+Matthias Laschke, Eva Len, and Joonhwan Kim. 2013.
+Designing moments of meaning and pleasure.
+Experience design and happiness. International
+Journal of Design, 7(3), 21-31.
+36. Marc Hassenzahl and Matthias Laschke 2015.
+Pleasurable Troublemakers. In S. Walz and S.
+Deterding, eds., The Gameful World: Approaches,
+Issues, Applications, 167-195.
+37. Marc Hassenzahl, Matthias Laschke, and Julian Praest.
+2016. On the stories activity trackers tell. In
+Proceedings of the 2016 ACM International Joint
+Conference on Pervasive and Ubiquitous Computing:
+Adjunct (UbiComp '16). ACM, 582-587. DOI:
+http://dx.doi.org/10.1145/2968219.2968325.
+38. Sander Hermsen, Jeana Frost, Reint Jan Renes, and
+Peter Kerkhof 2016. Using feedback through digital
+technology to disrupt and change habitual behavior: A
+critical review of current literature. Computers in
+Human Behavior, 57, 61-74.
+39. Victoria Hollis, Artie Konrad, and Steve Whittaker.
+2015. Change of Heart: Emotion Tracking to Promote
+Behavior Change. In Proceedings of the 33rd Annual
+ACM Conference on Human Factors in Computing
+Systems (CHI '15). ACM, 2643-2652. DOI:
+http://dx.doi.org/10.1145/2702123.2702196
+40. Yvonne Jansen, Pierre Dragicevic, Petra Isenberg,
+Jason Alexander, Abhijit Karnik, Johan Kildal, Sriram
+Subramanian, and Kasper Hornbæk. 2015.
+Opportunities and Challenges for Data Physicalization.
+In Proceedings of the 33rd Annual ACM Conference
+on Human Factors in Computing Systems (CHI '15).
+ACM, 3227-3236.
+http://doi.acm.org/10.1145/2702123.2702180
+41. Susanne Jaschko and Moritz Stefaner. 2014. Data
+cuisine. http://data-cuisine.net/.
+42. Vaiva Kalnikaite, Yvonne Rogers, Jon Bird, Nicolas
+Villar, Khaled Bachour, Stephen Payne, Peter M.
+Todd, Johannes Schöning, Antonio Krüger, and Stefan
+Kreitmayer. 2011. How to nudge in Situ: designing
+lambent devices to deliver salient information in
+supermarkets. In Proceedings of the 13th international
+conference on Ubiquitous computing (UbiComp '11).
+ACM, 11-20.
+DOI=http://dx.doi.org/10.1145/2030112.2030115
+
+43. Flavius Kehr, Marc Hassenzahl, Matthias Laschke, and
+Sarah Diefenbach. 2012. A transformational product to
+improve self-control strength: the chocolate machine.
+In Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems (CHI '12). ACM, 689694. http://doi.acm.org/10.1145/2207676.2207774
+44. Chelsey L. Keeler, Richard D. Mattes, and Sze‐Yen
+Tan. 2015. Anticipatory and reactive responses to
+chocolate restriction in frequent chocolate consumers.
+Obesity 23, no. 6 (2015): 1130-1135.
+45. Rohit Ashok Khot, Larissa Hjorth, and Florian 'Floyd'
+Mueller. 2014. Understanding physical activity through
+3D printed material artifacts. In Proceedings of the
+32nd annual ACM conference on Human factors in
+computing systems (CHI '14). ACM, 3835-3844.
+http://doi.acm.org/10.1145/2556288.2557144
+46. Rohit Ashok Khot, Jeewon Lee, Deepti Aggarwal,
+Larissa Hjorth, and Florian 'Floyd' Mueller. 2015.
+TastyBeats: Designing Palatable Representations of
+Physical Activity. In Proceedings of the 33rd Annual
+ACM Conference on Human Factors in Computing
+Systems (CHI '15). ACM, 2933-2942.
+http://doi.acm.org/10.1145/2702123.2702197
+47. Rohit Ashok Khot, Ryan Pennings, and Florian 'Floyd'
+Mueller. 2015. EdiPulse: Supporting Physical Activity
+with Chocolate Printed Messages. In Proceedings of
+the 33rd Annual ACM Conference Extended Abstracts
+on Human Factors in Computing Systems (CHI EA
+'15). ACM, 1391-1396.
+48. Amanda Lazar, Christian Koehler, Joshua Tanenbaum,
+and David H. Nguyen. 2015. Why we use and abandon
+smart devices. In Proceedings of the 2015 ACM
+International Joint Conference on Pervasive and
+Ubiquitous Computing (UbiComp '15). ACM, 635646. http://doi.acm.org/10.1145/2750858.2804288.
+49. Moon-Hwan Lee, Seijin Cha, and Tek-Jin Nam. 2015.
+Patina Engraver: Visualizing Activity Logs as Patina in
+Fashionable Trackers. In Proceedings of the 33rd
+Annual ACM Conference on Human Factors in
+Computing Systems (CHI '15). ACM, 1173-1182.
+http://doi.acm.org/10.1145/2702123.2702213.
+50. Steve Leffer, Chocolate 101: About Tempering -- What
+It Is, How To Temper Chocolate and The Alternative.
+http://www.chocoley.com/resources/about-temperingchocolate.
+51. James J. Lin, Lena Mamykina, Silvia Lindtner,
+Gregory Delajoux, and Henry B. Strub. 2006.
+Fish'n'Steps: encouraging physical activity with an
+interactive computer game. In Proceedings of the 8th
+international conference on Ubiquitous Computing
+(UbiComp'06), Springer-Verlag, Heidelberg, 261-278.
+52. Edwin A. Locke and Gary P. Latham. 2002. Building a
+practically useful theory of goal setting and task
+
+motivation: A 35-year odyssey. American psychologist
+57, no. 9 (2002): 705.
+53. George Loewenstein, 1987. Anticipation and the
+valuation of delayed consumption. The Economic
+Journal 97, no. 387 (1987): 666-684.
+54. Geke DS Ludden, Hendrik NJ Schifferstein, and Paul
+Hekkert 2006. Sensory incongruity: comparing vision
+to touch, audition and olfaction. In 5th International
+Conference on Design and Emotion, Göteborg,
+Sweden. 1-17.
+55. Deborah Lupton. Food, the Body and the Self. London:
+SAGE Publications Ltd., 1998.
+56. Deborah Lupton 2016. The Quantified Self: A
+Sociology of Self-Tracking Cultures. Polity press.
+57. Dan Maynes-Aminzade 2005. Edible Bits: Seamless
+Interfaces between People, Data and Food. CHI 2005.
+58. Elisa D. Mekler and Kasper Hornbæk. 2016.
+Momentary Pleasure or Lasting Meaning?:
+Distinguishing Eudaimonic and Hedonic User
+Experiences. In Proceedings of the 2016 CHI
+Conference on Human Factors in Computing Systems
+(CHI '16). ACM, 4509-4520. DOI:
+http://dx.doi.org/10.1145/2858036.2858225
+59. Martin Murer, Ilhan Aslan, and Manfred Tscheligi.
+2013. LOLLio: exploring taste as playful modality. In
+Proceedings of the 7th International Conference on
+Tangible, Embedded and Embodied Interaction (TEI
+'13). ACM, 299-302.
+http://doi.acm.org/10.1145/2460625.2460675
+60. Ine Mols, Elise van den Hoven, and Berry Eggen.
+2016. Technologies for Everyday Life Reflection:
+Illustrating a Design Space. In Proceedings of the TEI
+'16: Tenth International Conference on Tangible,
+Embedded, and Embodied Interaction (TEI '16). ACM,
+53-61. DOI:
+http://dx.doi.org/10.1145/2839462.2839466
+61. Carey K Morewedge, Young Eun Huh, and Joachim
+Vosgerau. 2010. Thought for food: Imagined
+consumption reduces actual consumption. Science 330,
+no. 6010 (2010): 1530-1533.
+62. Gina Neff and Dawn Nafus. The Self-Tracking. MIT
+Press, 2016.
+63. Scott Nicholson 2015. A recipe for meaningful
+gamification. In Gamification in education and
+business, pp. 1-20. Springer International Publishing.
+64. Takuji Narumi, Takashi Kajinami, Tomohiro
+Tanikawa, and Michitaka Hirose. 2010, Meta cookie.
+In ACM SIGGRAPH 2010 Emerging Technologies
+(SIGGRAPH '10). ACM, Article 18, 1 pages.
+DOI=10.1145/1836821.1836839
+http://doi.acm.org/10.1145/1836821.1836839
+
+65. Stina Nylander, Mattias Jacobsson, and Jakob
+Tholander. 2014. Runright: real-time visual and audio
+feedback on running. In CHI '14 Extended Abstracts on
+Human Factors in Computing Systems (CHI EA '14).
+ACM, 583-586.
+DOI=http://dx.doi.org/10.1145/2559206.2574806
+66. Marianna Obrist, Carlos Velasco, Chi Vi, Nimesha
+Ranasinghe, Ali Israr, Adrian Cheok, Charles Spence,
+and Ponnampalam Gopalakrishnakone. 2016. Sensing
+the future of HCI: touch, taste, and smell user
+interfaces. interactions 23, 5 (2016), 40-49. DOI:
+http://dx.doi.org/10.1145/2973568
+67. William T. Odom, Abigail J. Sellen, Richard Banks,
+David S. Kirk, Tim Regan, Mark Selby, Jodi L.
+Forlizzi, and John Zimmerman. 2014. Designing for
+slowness, anticipation and re-visitation: a long term
+field study of the photobox. In Proceedings of the 32nd
+annual ACM conference on Human factors in
+computing systems (CHI '14). ACM, 1961-1970.
+http://doi.acm.org/10.1145/2556288.2557178
+68. OpenJSCAD, http://openjscad.org
+69. Polar Heart rate monitors,
+http://www.polar.com/products/accessories/H7_heart_r
+ate_sensor
+70. Printrun http://www.pronterface.com/
+71. Qkies http://qkies.de/
+72. Yvonne Rogers. 2011. Interaction design gone wild:
+striving for wild theory. Interactions 18, 4, 58- 62.
+73. John Rooksby, Mattias Rost, Alistair Morrison, and
+Matthew Chalmers Chalmers. 2014. Personal tracking
+as lived informatics. In Proceedings of the SIGCHI
+Conference on Human Factors in Computing Systems
+(CHI '14). ACM, 1163-1172.
+http://doi.acm.org/10.1145/2556288.2557039
+74. Herman Saksono, Ashwini Ranade, Geeta Kamarthi,
+Carmen Castaneda-Sceppa, Jessica A. Hoffman, Cathy
+Wirth, and Andrea G. Parker. 2015. Spaceship Launch:
+Designing a Collaborative Exergame for Families.
+In Proceedings of the 18th ACM Conference on
+Computer Supported Cooperative Work & Social
+Computing (CSCW '15). ACM, New York, NY, USA,
+1776-1787. DOI:
+http://dx.doi.org/10.1145/2675133.2675159
+75. Corina Sas, Steve Whittaker, Steven Dow, Jodi
+Forlizzi, and John Zimmerman. 2014. Generating
+implications for design through design research. In
+Proceedings of the 32nd annual ACM conference on
+Human factors in computing systems (CHI '14). ACM,
+1971-1980. DOI=10.1145/2556288.2557357
+76. Johannes Schoning, Yvonne Rogers, Antonio Kruger,
+2012. Digitally Enhanced Food, IEEE Pervasive
+Computing, vol. 11, no. 3, pp. 4-6, July-September,
+2012.
+
+77. Wesley P. Schultz, Jessica M. Nolan, Robert B.
+Cialdini, Noah J. Goldstein, and Vladas Griskevicius.
+2007. The constructive, destructive, and reconstructive
+power of social norms. Psychological science 18, no. 5
+(2007): 429-434.
+78. Smoothfood. http://smoothfood.de/foodforms/?lang=en
+79. Charles Spence 2002. Multisensory attention and
+tactile information-processing. Behavioural brain
+research, 135(1), 57-64.
+80. Charles Spence, Katsunori Okajima, Adrian David
+Cheok, Olivia Petit, and Charles Michel. 2015, Eating
+with our eyes: from visual hunger to digital satiation.
+Brain and cognition.
+81. Charles Spence and Betina Piqueras-Fiszman. 2013.
+The Perfect Meal: The Multisensory Science of Food
+and Dining, Wiley-Blackwell.
+82. Tadeusz Stach, T. C. Nicholas Graham, Jeffrey Yim,
+and Ryan E. Rhodes. 2009. Heart rate control of
+exercise video games. In Proceedings of Graphics
+Interface 2009 (GI '09). Canadian Information
+Processing Society, Toronto, Ont., Canada, Canada,
+125-132.
+83. Simon Stusak, Aurelién Tabard, Franziska Sauka,
+Rohit Ashok Khot, and Andreas Butz. 2014. Activity
+sculptures: exploring the impact of physical
+visualizations on running activity. TVCG 20, 12
+(2014), 2201–2210.
+84. Jie Sun, Weibiao Zhou, Dejian Huang, Jerry YH Fuh,
+and Geok Soon Hong. 2015. An Overview of 3D
+Printing Technologies for Food Fabrication. Food and
+Bioprocess Technology (2015), 1–11.
+85. Jakob Tholander and Stina Nylander 2015, Snot,
+Sweat, Pain, Mud, and Snow: Performance and
+Experience in the Use of Sports Watches. In
+Proceedings of the 33rd Annual ACM Conference on
+Human Factors in Computing Systems (CHI '15).
+ACM, 2913-2922. DOI=10.1145/2702123.2702482
+http://doi.acm.org/ 10.1145/2702123.2702482
+86. Stewart G Trost, Neville Owen, Adrian E Bauman,
+James F Sallis, and Wendy Brown. 2002. Correlates of
+adults’ participation in physical activity: review and
+update. Medicine & Science in Sports & Exercise 34,
+12: 1996–2001.
+http://doi.org/10.1249/01.MSS.0000038974.76900.92
+87. Greg Walsh and Jennifer Golbeck. 2014. StepCity: a
+preliminary investigation of a personal informaticsbased social game on behavior change. In CHI '14
+Extended Abstracts on Human Factors in Computing
+Systems (CHI EA '14). ACM, New York, NY, USA,
+2371-2376.
+DOI=http://dx.doi.org/10.1145/2559206.2581326
+
+88. Yun Wang, Xiaojuan Ma, Qiong Luo, and Huamin Qu.
+2016. Data Edibilization: Representing Data with
+Food. In Proceedings of the 2016 CHI Conference
+Extended Abstracts on Human Factors in Computing
+Systems (CHI EA '16). ACM, USA, 409-422. DOI:
+http://dx.doi.org/10.1145/2851581.2892570
+89. Jun Wei, Xiaojuan Ma, and Shengdong Zhao. 2014.
+Food messaging: using edible medium for social
+messaging. In Proceedings of the SIGCHI Conference
+on Human Factors in Computing Systems (CHI '14).
+
+ACM, 2873-2882.
+http://doi.acm.org/10.1145/2556288.2557026
+90. Oren Zuckerman and Ayelet Gal-Oz. 2014.
+Deconstructing gamification: evaluating the
+effectiveness of continuous measurement, virtual
+rewards, and social comparison for promoting physical
+activity. Personal Ubiquitous Comput. 18, 7 (October
+2014), 1705-1719. DOI:
+http://dx.doi.org/10.1007/s00779-014-0783-2
+
+

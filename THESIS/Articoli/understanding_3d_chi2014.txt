@@ -1,0 +1,1161 @@
+Understanding Physical Activity through
+3D Printed Material Artifacts
+Rohit Ashok Khot
+Exertion Games Lab
+RMIT University, Australia
+rohit@exertiongameslab.org
+
+Larissa Hjorth
+RMIT University
+Melbourne, Australia
+larissa.hjorth@rmit.edu.au
+
+ABSTRACT
+
+In this paper, we advocate a novel approach of representing
+physical activity in the form of material artifacts. By
+designing such material representations, we aim to
+understand what these artifacts might offer in terms of
+reflecting upon physical activity. For example, what types
+of affect do material artifacts, representing ones’ physical
+activity create for the user? In order to advance this
+understanding, we designed a system called SweatAtoms
+that transforms the physical activity data based on heart rate
+into 3D printed material artifacts. We conducted an “in the
+wild study” by deploying our system in six households
+where participants were experiencing five different material
+representations of their physical activity for a period of two
+weeks each. We found that the material artifacts made
+participants more conscious about their involvement in
+physical activity and illustrated different levels of
+engagement with the artifacts. Along with reporting the
+gained insights from the deployments, we offer reflections
+on designing material representations for physical activity.
+We hope that our work will inspire designers to consider
+new possibilities afforded by digital fabrication to support
+user’s experience with physical activity by utilizing
+interactive technologies at our disposal.
+Author Keywords
+
+Physical exercise; personal informatics; quantifiable self;
+3D printing; digital fabrication; entertainment
+ACM Classification Keywords
+
+H.5.m. Information interfaces and presentation (e.g., HCI):
+Miscellaneous.
+INTRODUCTION
+
+Studies have pointed out that a lack of awareness about
+physical activity may lead to a sedentary lifestyle [3,36]. In
+response, there has been a growing interest in building
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. Copyrights for
+components of this work owned by others than the author(s) must be
+honored. Abstracting with credit is permitted. To copy otherwise, or
+republish, to post on servers or to redistribute to lists, requires prior
+specific permission and/or a fee. Request permissions from
+Permissions@acm.org.
+CHI 2014, April 26 - May 01 2014, Toronto, ON, Canada
+Copyright is held by the owner/author(s). Publication rights licensed to ACM.
+
+ACM 978-1-4503-2473-1/14/04...$15.00.
+http://dx.doi.org/10.1145/2556288.2557144
+
+Florian ‘Floyd’ Mueller
+Exertion Games Lab
+RMIT University, Australia
+floyd@exertiongameslab.org
+
+technologies that sense and collect personally relevant
+information such as bodily responses to physical activity
+and provide users with opportunities for self-monitoring
+and reflection [25]. For example, devices like heart rate
+monitors inform users about their exercise intensity by
+measuring the heart rate during a physical activity session
+while pedometers count the number of steps taken in a day.
+Studies suggest that regular use of these devices can
+increase the user’s motivation towards physical activity
+[3,25,36]. However, the majority of the existing approaches
+mainly target the virtual medium (such as screen-based
+output) to provide a portrayal of physical activity
+[3,4,8,9,17,19]. On one hand, the virtual medium is
+beneficial for data visualization because of its interactive
+capabilities (such as allowing for zooming into data) and
+support for dynamic updates on the data. On the other hand,
+the virtual medium has some limitations as to what can be
+experienced with it, as argued by Vande Moere [39] and
+Victor [41]. For example, the virtual medium requires a flat
+display surface that is less perceivable in daylight and
+demands visual attention [40]. The “picture under the glass”
+effect [41] caused by a 2D display surface also makes the
+virtual medium mainly suitable for 2D representations of
+data since onscreen 3D visualization can suffer from
+problems such as occlusion, distortion and navigational
+issues [35]. Additionally, Ullmer and Ishii [37] worry that
+the virtual mode of information entirely focuses on the
+visual form and neglects other senses. Ishii [18] reminds us
+that “our visual and auditory sense organs are steeped in
+the sea of digital information, but other bodies remain
+imprisoned in the physical world”. As being physically
+active happens in this physical world, we see an opportunity
+to explore complimentary design strategies beyond virtual
+visualizations to support physical activity.
+Recently, with the rapid advancements in digital fabrication
+technology, devices like 3D printers are becoming more
+accessible for public use. Gershenfeld [11] envisions that
+3D printers will soon be found in every home and people
+will regularly use them to create, share and copy material
+artifacts. As a result, design and HCI researchers are now
+increasingly considering the role of digital fabrication in
+HCI [28]. This has motivated us to advocate an innovative
+approach of representing physical activity data in the form
+of material artifacts. By material artifacts we mean physical
+objects that are constructed using a digital fabrication
+process [30]. By incorporating the digital fabrication
+
+process of 3D printing for constructing material artifacts
+based on physical activity, our research also aims to explore
+a “physical–digital–physical” mode of interaction, where
+physical energy is first invested in generating digital data
+such as heart rate, which is then converted back to a
+material form, re-entering the physical world. Vande Moere
+[39] argues that a material representation carries a meaning
+beyond the data itself as it “can be touched, explored,
+carried and even possessed” [39], thus potentially
+encouraging people to reflect on their behavior yielding
+more engaging and educational experiences. Additionally, a
+recent study by Jansen et al. [20] compared virtual and
+material visualizations of physical data and found that
+visualizations of data in material form can be easier to
+understand for the user because of the material’s 3D
+features. In sum, material representation can offer many
+opportunities. However, it remains unclear how to design
+such material representations to support physical activity.
+In order to contribute to an understanding of material
+representations of physical activity, we conducted an “in
+the wild” [33] study on our prototypal system
+“SweatAtoms” [21,22]. SweatAtoms transforms physical
+activity data based on heart rate into five different 3D
+printed material artifacts. We deployed SweatAtoms in 6
+households to present findings from the system in use.
+Although invoking behavioral change was of general
+interest to us, we focused primarily on eliciting richer
+reflections on physical activity and understanding the affect
+material artifacts, representing one’s physical activity, can
+have on users. Through the deployments, this research
+contributes the following: 1) Insights gained from the
+design and deployment of the SweatAtoms systems in
+households that illustrate various affects of material
+representations
+on
+individual’s
+physical
+activity
+experiences. 2) An initial understanding of the
+interrelationship between material representations and
+physical activity.
+RELATED WORK
+
+Li et al. [25] argued that visualization plays an important
+role in motivating users towards physical activity because it
+helps users to reflect upon their performance and to gain
+insights into their physical activity levels. However, Vande
+Moere [39] points out that physical activity data such as
+heart rate is often very abstract in nature, and “has no
+natural counterpart that can be graphically reproduced.”
+Therefore, it becomes the designer’s responsibility to create
+meaningful mappings of physical activity data for the user.
+We next discuss how designers have previously approached
+this issue.
+Visualization using numbers and graphs
+
+Most of the commercial applications built around sensing
+technologies such as heart rate monitors use numbers and
+graphs to show data from recent and past physical activities
+
+of users on screens1. Numbers and graphs take little screen
+space and can be easy to interpret, however there can be
+usability and interpretation issues when it comes to large
+data sets [16].
+Visualization using virtual metaphors
+
+Lin et al. [26] and Consolvo et al. [4] built systems in which
+physical activity is represented using virtual metaphors
+such as a virtual fish and garden flowers respectively. The
+designers believe that virtual metaphors can be more
+engaging, motivating and easy to glance at when compared
+to graphs and numbers. Moreover, the authors believe that
+such virtual metaphors can develop empathy in users
+motivating them to exercise more. However, living
+metaphors can sometimes discourage participants from
+doing the desired activity: for example, in the fish-based
+metaphor, people did not want to look at the fish when they
+were inactive because they knew their sedentary activity
+would make the fish sad [26].
+Visualization using interactive art displays
+
+Fan et al. [8] utilized a variety of abstract virtual
+visualization patterns to display the number of steps users
+have taken in a day. Their study revealed that people found
+abstract visualizations engaging. Some artists have also
+explored the use of physical activity data for artistic and
+musical performances [7]. George Khut [23] explored an
+interactive abstract visualization of heartbeat data while the
+Interactive Institute [17] created a Brainball game
+controlled by player’s brain waves.
+Visualization using physical metaphors
+
+Similar to virtual metaphors, people have also looked at
+physical metaphors to make people aware of their sedentary
+lifestyle and prompt them to be physically active. For
+example, Breakaway is a sculpture-based metaphor system
+by Jafarinaimi et al. [19], where the sculpture starts to yawn
+if the user remains seated for a long time.
+Visualization using playful systems
+
+Prior work has also attempted to facilitate play experiences
+around the sensed bodily responses of physical activity. For
+example, Run Zombie Run [34] is a mobile app that
+prompts users to jog using a game-based narrative while
+Berkovsky et al. [2] have looked at virtual game rewards in
+exchange of physical activity, which suggests that rewards
+can be an important design consideration when building
+systems to support physical activity.
+Rethinking visualization of physical activity
+
+The above mentioned relevant literature suggests an
+emphasis on using a virtual medium to represent physical
+activity whereas non-virtual (material) representations have
+not been explored much, possibly because of the scarcity of
+1
+
+E.g.: http://runkeeper.com, http://fitbit.com
+
+resources that could support material visualizations.
+However, with the recent advancements in 3D printing
+technology, we see an opportunity to explore material
+representations of physical activity as an alternate design
+strategy. We believe the way energy is spent (subtracted)
+during physical activity is reversely analogous to the way a
+3D printer works where a 3D model is constructed by
+adding up materials layer by layer on the print bed. This has
+motivated us to build a system called SweatAtoms that
+utilizes 3D printing to represent physical activity.
+SWEATATOMS
+
+SweatAtoms is a 3D modeling and printing system that
+transforms physical activity data into 3D printed material
+form (Figure 1). We utilize the constructive solid geometry
+technique [5] and preprogrammed patterns to generate 3D
+designs. These models are then printed, using a 3D printer,
+forming an aesthetic and informative expression of physical
+activity data in material form. Next, we discuss our design
+process to determine the material representations for our
+study.
+
+Figure 1: The SweatAtoms system in action: 1) User performs
+a physical activity 2) Her heart rate is measured 3) A 3D
+model is created based on the heart rate pattern 4) User prints
+the 3D model 5) User engages with the printed artifact 6)
+Engagement with the artifact affects her current (and possibly
+future) physical activity experience.
+Design process: Mapping heart rate to 3D design
+
+Our design process involved investigation into the design
+space surrounding material representation, digital
+fabrication (3D printing) and physical activity. To help us
+explore each of these design spaces, we held regular
+meetings with available experts in each of the abovementioned areas. For example, we had lengthy discussions
+with two junior level interaction designers (1 male and 1
+female) and three senior contemporary artists (1 male and 2
+female) on possible representation choices. We also talked
+to an expert (1 male), working on 3D printing from last two
+years, to identify current limitations and possibilities of
+state-of-the-art 3D printers. Finally, we also spoke to three
+designers of exertion games (3 male, 1 senior and 2 junior)
+as well as two physical activity trainers (2 male) to identify
+the aspects of physical activity that should be highlighted in
+a material form. Below we summarize the key aspects of
+each design space that we identified after the discussions.
+
+Aspects of physical activity
+
+We chose heart rate data as a first exploration to represent
+physical activity as the physical activity trainers suggested
+to us that heart rate data is commonly used to analyze
+physical activity performance and progress towards a set
+health goal [1]. We discussed with them the finer details of
+heart rate data such as six heart rate zones (resting,
+recovery, aerobic, anaerobic, speed and alarming) [1], and
+got an insight on how these zones can be utilized to convey
+varied information related to physical activity: for example,
+the resting heart rate is a good indicator of a user’s physical
+inactivity (sedentary lifestyle). Exertion game designers
+also recommended us to look at the frequent changes in the
+heart rate data to uncover interesting patterns and insights
+on physical activity routine.
+Aspects of material representations
+
+We decided on the following design strategies suggested by
+Consolvo et al. [4] for creating material representations that
+could facilitate richer reflections on physical activity:
+•
+
+Abstract and reflective: The material representation
+should not only reflect certain aspects of physical
+activity but should also be aesthetically pleasing.
+
+•
+
+Public: Users should be able to wear the artifact or
+keep them on display in their home. However, care
+should be taken to conceal any personal information
+that a user might not want to share in the public space.
+
+•
+
+Unique: Each artifact should appear unique and
+differentiable from the rest of the artifacts.
+
+•
+
+Positive: The material artifact should be a positive
+reinforcement for doing physical activity.
+
+Aspects of digital fabrication
+
+After having a discussion with the digital fabrication
+practitioner, we gained an understanding of the limitations
+and capabilities of the current 3D printers. For example, we
+realized that the current printers are not capable of printing
+complex shapes, which limited our possible representation
+choices. Additionally, we also considered the printing time
+(which increases with the complexity and density of a
+selected shape) as well as the sustainability of the material
+(environmentally friendly). As a result, we chose to print
+small shapes using a biodegradable material called
+Polylactic acid (PLA) and selected the Cube 3D printer [6]
+for fabrication because of its polished look and its interface
+which we found easy to use.
+Taking the above discussed aspects into account and after
+many design iterations and fabrication trials, we decided on
+five material representations of physical activity. The
+technical details and descriptions of the representations are
+provided in Table 1 and Figure 2 respectively. Below we
+briefly describe each of the representations.
+
+Representation 1: Graph
+
+“Graph” is an “abstract and reflective” representation where
+each recorded heartbeat per minute is mapped to a point in
+XY space. The plotted points are then extruded to achieve a
+suitable thickness for 3D printing. The idea behind this
+representation was to mimic a virtual graph and to offer
+detailed information on heart rate in a material form.
+Representation 2: Flower
+
+“Flower” is an “abstract and unique” representation where
+unlike the “graph” representation; we only capture
+significant changes (±20 beats per minute) to the heart rate
+and then represent them in a floral pattern. The length of the
+petal increases with the heart rate while the width of the
+petal captures the duration of that heart rate intensity. We
+intend it to serve as a wearable jewelry item that captures
+the variations in heart rate through a floral pattern and
+signifies how heartbeats have evolved over a day.
+
+Table 1: Summary of the selected five designs
+
+Representation
+
+Max. dimensions
+(l × w × h) (mm)
+
+Avg. print
+time (mins)
+
+Graph
+
+120 × 80 × 4
+
+20
+
+Flower
+
+40 × 40 × 4
+
+25
+
+Frog
+
+20 × 20 × 20
+
+30
+
+Die
+
+16 ×16 × 16
+
+35
+
+Ring
+
+20 × 20 × 4
+
+10
+
+SWEATATOMS IN ACTION: IN THE WILD STUDY
+
+We conducted an “in the wild” study [38] to understand the
+impact of material artifacts on the behavior and experience
+of an individual engaged in everyday physical activity.
+Given the exploratory nature of our design work, we
+focused on gathering a rich set of opinions rather than a
+majority of opinion. As such, our work leans on the idea of
+cultural probing [9] and “in the wild” [33] studies that aim
+to encourage reflective thinking about a system.
+Recruitment
+
+Figure 2: Five material representations of physical activity,
+each depicting a different aspect of physical activity.
+
+We deployed the system in 6 households across a large
+metropolitan city for a period of 2 weeks. We recruited
+participants using the snowball method. We had one
+participant from every home except for the one where a
+couple (Frank and Kate as changed names) was interested
+to participate together in our study, which we welcomed.
+There were 4 male and 3 female participants with their age
+varying from 26 to 52 years (average 34). The sample size
+of 7 participants is in-line with the previous studies on
+cultural probing [9,10,13,15]. We asked the participants
+about their level of physical activity in a week (low 1-2
+days, medium 3-4 days, high more than 4 days) and also
+about their most common physical activities (see table 2).
+
+Representation 3: Frog
+
+“Frog” is an “abstract and positive” representation, which
+serves as a playful reward for doing physical activity. The
+size of the frog is scaled based on the amount of physical
+activity done in a day.
+
+Table 2: Demographic details of the participants.
+
+Name
+(changed)
+& Age
+(years)
+
+Occupation
+
+Level of
+physical
+activity
+
+Common
+physical
+activities
+
+“Die” is an “abstract and reflective” representation where
+six faces of the die depict the amount of time spent in each
+of the six zones of heartbeat data. We intend the die model
+to serve as a playful object that can also be stacked together
+to support comparison between physical activities on
+different days.
+
+Alicia (52)
+
+Manager
+
+Medium
+
+Jogging, cycling
+
+Alan (30)
+
+Engineer
+
+High
+
+Gym training
+
+Kelly (43)
+
+Architect
+
+Medium
+
+Tennis, cycling
+
+Frank (29)
+
+Student
+
+Medium
+
+Karate, cycling
+
+Representation 5: Ring
+
+Kate (27)
+
+Student
+
+High
+
+Yoga, cycling
+
+Chad (32)
+
+Consultant
+
+Low
+
+Gym training
+
+Dave (26)
+
+Teacher
+
+Low
+
+Cycling,
+walking
+
+Representation 4: Die
+
+“Ring” is a “reflective and public” representation where the
+circles around the ring denote the number of active hours in
+a day. We define an active hour as an hour where the heart
+rate is above the resting zone. The diameter of the circle
+increases with increase in the heart rate and the ring is
+designed to be a wearable item.
+
+Setup
+
+We supplied each participant with a heart rate monitor
+(Polar H7) [32], an iPod Touch (5th generation) with the
+installed Polar Beat application and a Cube 3D printer with
+2-3 PLA plastic filament tubes as printing material. The
+heart rate monitor was paired up with the iPod using the
+Bluetooth low energy protocol. Following the cultural
+probing practice, we also provided diaries and asked
+participants to reflect upon their experience on our system.
+Procedure
+
+We installed the SweatAtoms system and 3D printer in
+every household. Then, we introduced the participants to
+the system, study procedure and how to understand each
+artifact. As our intention was to make the printer a part of
+the home, we placed the printer according to the
+participants’ wishes (which we noted). We also went
+through the process of printing one object to make
+participants familiar with the printing process. We then
+interviewed participants about their daily routines in terms
+of physical activity. For quick reference, we provided every
+participant with an A3 poster detailing the study steps to be
+followed.
+Tasks in the morning
+
+maintain a daily diary. We visited each household two
+times (first and last day) and spent around 4-5 hours with
+each participant. Based on the participants’ needs (such as
+difficulty in running the 3D printer), we visited some of
+them more frequently. Additionally, we were in contact
+with everyone through emails and phone calls. In the
+conversations, we focused on how they used the
+SweatAtoms system and gathered their thoughts and
+experiences with it. We also took notes and recorded audio,
+which was then coded and analyzed for common themes.
+FINDINGS
+
+Deployment of material artifacts representing physical
+activity not only led us to identify new insights and
+opportunities but also raised some questions. We describe
+below our key findings from the deployment of the system.
+Intervention
+
+Participants welcomed the system and the study setup in
+their home with excitement.
+Accommodating the 3D printer
+
+Participants usually placed the 3D printer in their living
+room space close to a window to nullify potential print
+smell, as seen in Figure 3.
+
+We asked the participants to wear the heart rate monitor and
+start the Polar beat application on the provided iPod while
+starting their day (usually around 7-8 am). Participants were
+then asked to continue any usual routine including any
+physical exercise throughout the study’s duration.
+Tasks in the evening
+
+We asked the participants to stop the Polar Beat application
+and to take off the heart rate monitor in the evening (usually
+around 5-7 pm). Once the heart rate monitoring was
+stopped, the recorded data was sent automatically to our
+SweatAtoms application. The SweatAtoms application then
+generated five material representations in the StereoLithography (STL) format from the received heart rate data.
+We then converted the generated STL files into the required
+print file formats (.cube) and emailed them to the
+participants. (due to the taxing nature of the study, we did
+the conversions for the participants). To print the material
+representations, participants were required to copy these
+files on a USB stick and print them one by one by attaching
+the USB stick to the 3D printer. This process could have
+been simplified by wirelessly accessing the 3D printer;
+however, it would have required modifying the participants’
+personal Wi-Fi settings, which we chose not to interfere
+with. The printing time varied for every object based on the
+participants’ level of physical activity (and thus the object
+size) every day, but typically it took around 90-120 minutes
+for printing all five objects.
+Data source
+
+To gain insights into the underlying motives and
+experiences of the participants, we asked the participants to
+
+Figure 3: Participants tried to make the printer fit into their
+home ambience.
+
+Alan, being a technologically oriented person, kept the
+printer along with his other tech gadgets in a separate room.
+Kate was particularly happy with the size of the printer as it
+fitted into an empty window space. Frank and Kelly said
+that they would not have liked a bigger printer than this.
+Interestingly, Kelly felt the printer being a part of her
+household. For example, as the printer was kept near to an
+open window, she tried to conceal its appearance from the
+outside with cardboard to prevent someone stealing it. The
+printer worked smoothly for the entire study duration in all
+households except one. At Alan’s house, we had to
+recalibrate the print offset and replace the print filament.
+There were no complaints about the printer smell; however,
+Frank and Kate commented that the printing noise is
+affecting their concentration when studying. As a result,
+they moved their study activity to a different room while
+the printing was taking place.
+
+Accommodating the artifacts
+
+Frank bought one box to keep all his objects together while
+Kelly utilized the envelopes of promotional campaigns to
+keep objects sorted according to each day. We found it
+noteworthy that a participant went out of his way and
+bought a box, as we had not previously seen such
+commitment in some of our prior work with participants.
+Lessons learned
+
+The size of the 3D printer is the key to finding an
+appropriate place in a household. Designers should also
+consider printer noise, as it could be an issue.
+Engagement with the process
+
+All the participants were enthusiastic about seeing their
+heart rate reflected in material artifacts despite the lengthy
+process of printing all five objects every day (Figure 4).
+
+objects delivered to him in a mailbox rather than doing the
+printing at home daily. Kelly and Chad also pitched a same
+idea. Alan on the other hand got excited about 3D printing
+and tried to learn more about the printer’s capabilities and
+current trends in 3D printing. All participants enjoyed the
+opportunity of changing colors of the plastic filament and
+wished to have more colors in order to print everyday
+artifacts in different colors. Participants were also satisfied
+with the size of the artifacts. However, Kelly wanted to
+print a bigger “Flower” so that she can rest her wine glasses
+on them.
+Four participants, however, did not like the idea of printing
+objects every day; rather, they wanted to make printing
+more flexible. For example, Chad added: “I should be able
+to choose when and what data I can print”, while Frank and
+Kate inquired: “Can we print an object representing heart
+rate from both of us?”
+Lessons learned
+
+Figure 4: Participants were enthusiastic to see how their
+reflected heart rate evolved in different material forms as the
+study progressed. Participants arranged their objects
+according to day and used sticky notes for assigning days.
+Engaging with the heart rate monitoring
+
+Participants felt that heart rate was an appropriate measure
+of representing their physical activity. Five participants
+were curious to see how their physical activity was
+reflected in the artifacts at the end of day, while the
+remaining two participants tried to confirm whether the
+artifacts correctly portrayed their physical activity. Two
+participants had previous experiences of wearing a heart
+rate monitor but they never wore it continuously for 8
+hours. Four participants felt a little uncomfortable in
+wearing the heart rate monitor continuously for 8 hours
+every day and they wished to have a strapless heart rate
+monitor instead. Three participants did not like the idea of
+continuous monitoring and suggested us to track heart rate
+only during an exercise.
+Engaging with the 3D printing process
+
+Most participants printed artifacts every night before going
+to bed, two participants skipped printing on a couple of
+days and then did bulk printing on the weekend to cover the
+backlog. All participants were excited initially to see the
+printing process, however, their interest in watching the
+print process faded over time. Frank mentioned, “in the
+beginning, it was exciting to see objects printing small, big,
+like a recap of my physical activity... later it became time
+consuming.” He further added that he would prefer to have
+
+Designers should allow participants to customize their
+experience by letting them choose when and what
+information needs to be printed. Additionally, there might
+be an opportunity for designers to combine physical activity
+data from multiple people and represent them in one object.
+Similarly, designers should look into utilizing strapless
+heart rate monitors for a study.
+Engaging with the artifacts
+
+The “Frog” was the favorite artifact, as all participants got
+affectionate with it immediately. Participants particularly
+adored the idea that the frog gets bigger if they exercise
+more. Kelly felt “it is like burning your body fats and
+putting them on the frog”. The majority of the participants
+kept frogs stacked on top of their computer screens and near
+their working desks (Figure 5). Frank and Kate competed
+against each other by doing more exercise in order to get a
+bigger frog. Kate read from her diary (while holding the
+printed frogs from her and her husband’s data): “see, how
+little I am doing in comparison to my husband L”. Alan,
+being a very active person, liked the “Graph” artifact as it
+clearly displays his performance during various physical
+activities. He particularly enjoyed the frequent high and low
+peaks in the artifacts showing how dynamic his day was.
+Chad stacked the graphs from all days next to each other,
+which was helpful for him to monitor his progress.
+Interestingly, Frank and Kate had different views about the
+“Graph”: Kate mentioned “the graph is not very exciting as
+we can see the same on a virtual screen. It would be like
+printing something that we have already seen. I don’t like
+that.” Four participants found the “Flower” artifact
+aesthetically pleasing and mentioned various ways of using
+them in their everyday life: Alicia felt that she could wear
+them as earrings; Dave, on the other hand, was interested in
+a flower garden and stacked all flower artifacts next to each
+other on a desk. The “Ring” artifact was less appreciated as
+participants felt it does not convey much meaning to them.
+
+Moreover, participants also questioned its utility. Dave
+replied, “One has only 10 fingers, then how many rings can
+he wear?” Three participants found the “Die” informative
+as it made them realize about their sedentary lifestyle. Kate
+was particularly unaware about the time she spends sitting
+each day and was glad that we included the “Die” artifact in
+the study communicating this information to her.
+
+such artifacts, if she keeps on printing them each day. Frank
+and Chad had a common suggestion of making them all
+interlock with each other to create a bigger sculpture. Kelly
+put forward the idea of Lego bricks to construct a
+skyscraper of physical activity over time while Dave
+suggested printing of the objects only on selective or
+special days rather than everyday. Three participants
+wished for a provision to recycle the artifacts.
+Conversations around artifacts
+
+Figure 5: Participants liked the frog and the way it scales with
+their physical activity. It also became the object for public
+display and reflective conversations.
+Cherishing artifacts
+
+Participants had several ideas of using the printed artifacts
+in the future. Dave, for example, created a clock using all
+his printed artifacts as shown in Figure 6. He plans to hang
+it on the wall of his study room. Kate who liked the
+“Flower” model described: “I would fill a glass bowl with
+water and then put candles on the printed flower and let it
+float on the water surface, it would make a great decoration
+for my house.” Chad had a great physical workout session
+on one day of the study. Looking at the printed artifacts of
+that day, he happily said: “I am going to cherish today’s
+graph...see how dynamic it is...I would put it on my shelf to
+remind me that I did well.” It was heartening to see that
+participants took interest in correlating and arranging the
+objects together.
+
+Figure 6: Dave created a wall clock using his printed objects to
+remind him about how his heart rate evolved over time.
+
+Most participants were happy with the selected design
+choices for representing their physical activity, however,
+Kelly, Alicia and Dave were also willing to design their
+own objects.
+Four participants raised issues of sustainability and
+pondered over the utility of objects in their life. For
+example, Kelly asked what would she do with so many of
+
+Many participants showed their printed artifacts to
+neighbors and visitors to their home. These artifacts
+generated a sense of curiosity and conversations among the
+visitors who did not know what the design actually meant.
+Participants were enthusiastic to explain the meaning to
+them. Kate on weekends does voluntary work for young
+girls at a school. At an annual science and technology
+event, which happened during the first week of the study,
+she enthusiastically spoke about the system to the girls. She
+plans to give some artifacts to the girls “as a token of her
+heart”. Chad similarly gave a few of his artifacts to his
+mom and sister who came to visit him one day during the
+study. Alicia is planning to incorporate the system in her IT
+services office. She says: “I would like to use an approach
+like this for a reward and recognition program that we are
+starting. We were thinking about giving out big stars but
+that is lame in comparison with letting them print out 3d
+trinkets and the more they need to be rewarded the bigger
+they are - plus the more they can print.”
+Lessons learned
+
+Although people’s interest in the printing process faded
+over time, their interest in the artifacts appeared to be more
+persistent over time. Designers can learn from the “Frog”
+design and should map a similar reward structure into their
+design. For example, the participants welcomed scaling the
+size of an artifact as a reward to the invested efforts in
+physical activity. Participants took interest in decorating
+their homes with the artifacts, and these artifacts also
+became a topic of conversion. The “Frog” also prompted
+healthy competition among participants for getting bigger
+frog. These narratives suggest that personalized artifacts if
+designed carefully, have an ability to extend engagement
+with physical activity. For example, although participants
+appreciated the aesthetics of artifacts, their utility as well as
+sustainability was equally important to participants.
+Relating to physical activity
+
+Most participants became more conscious about their
+physical activity routines and started to take their heart rate
+data more seriously with time. Alan said: “I used to see my
+heart rate data on my mobile, but this is different, now I can
+not only touch and feel my data, but I can also show it to
+the world, I care more about my heart rate now.” Alicia
+confirmed, “My trainer was so happy to see my progress,
+thanks for letting me participate.” This supports findings
+from previous research where participants gained awareness
+
+about themselves from a visualization method [21]. Besides
+physical activity, participants also tried to understand their
+daily routines from the printed material artifacts. Frank
+said: “It was great to know about the self and my activities
+throughout the day from the printed artifact (graph): when
+I went to university, when I came back (by looking at large
+peaks in the graph), when I sat idle (by looking at lower
+peaks)”. However, Frank and Alicia initially had difficulties
+in interpreting the “Flower”. Alicia thought Flower is like
+clock that shows her physical activity of the entire day
+around the clock. Referring to a large petal in Flower, she
+said, “see I was most active around 2 pm, when I had to
+rush twice to office for work.” After discovering that Flower
+is not clocklike timely representation of physical activity,
+she felt slightly disappointed and suggested to make such
+alternations to Flower design. Kelly and Chad expressed the
+need of designing artifacts that are easier to interpret similar
+to the “Graph” and “Frog” artifacts.
+Although we did not target an immediate behavioral change
+with the artifacts among the participants, there was
+anecdotal evidence of increased physical activity amongst
+them. For example, Alicia confirmed her increased physical
+activity to us in an email (Figure 7). She added, “but the
+main thing is I am out on my bike and am aware of my
+heart. In the past, if I exercised on Saturday I would have
+said that I deserve to rest on Sunday :)” Dave resumed his
+weight training after a long time to see its reflection on the
+artifacts. He mentioned: “It’s been ages since I did that […]
+but now this study prompted me to start weight training
+again”. We find these examples illustrative of people’s
+rekindled interest in physical activity. Kelly emphasized
+that “it’s the Frog, that makes me jog more”, while Frank
+and Kate said that they did more physical activity to get a
+bigger frog at the end of the day.
+
+they contain their personal data and are printed by them at
+home. Referring to the “Flower” and “Graph” artifacts,
+Kate mentioned, “this is me and my data, you cannot get
+this in the market.”
+Lessons learnt
+
+3D printing was new for all the participants, although all of
+them had heard about it. We worked with the vision that in
+10 years time, most people will have a 3D printer in their
+home just like a 2D printer today, and therefore, we intend
+to explore the future interactions associated with today’s
+technology. Although further studies are needed to
+eliminate any doubts about novelty effects, our interview
+data suggests that participants’ interest in the printing
+process faded over time; however, participants’ interest in
+the artifacts appeared to have persisted over time.
+Participants mentioned that the objects matter to them
+because they reflect their personal data and activities,
+making them unique, as they cannot be “bought at a shop”,
+as mentioned by Kate. Furthermore, the statement made by
+three participants that they would rather get the objects
+delivered to them in the mail rather than printing them at
+home (to avoid the printing noise), further suggests that the
+participants were able to differentiate between the appeal of
+3D printing and personalized 3D artifacts. Therefore, we
+argue that giving a physical form to the ephemeral
+experience of physical activity can facilitate a deeper
+engagement with the data. Secondly, personalized material
+rewards also prompted physical activity amongst people
+who otherwise was spending time sedentary.
+DISCUSSION
+
+We discuss below the experiences that the material
+representations of physical activity elicited for our
+participants.
+Material artifacts as an autotopography
+
+Figure 7: Engagement with the artifacts encouraged a
+participant to go for a walk.
+Significance of personalized material artifacts
+
+During the follow-up interviews, we asked the participants
+what difference a material artifact made over the virtual
+counterpart. Most participants answered affirmatively that
+the physical form and the support for sensory capabilities
+like touch and feel makes the material artifacts more special
+than the virtual ones. Kate added that “[on a mobile phone]
+you look at your heart rate and then forget about it, here
+[addressing the material artifact] you cannot, it is more
+persistent”.
+During the follow-up interviews, participants also
+mentioned that they care more about these artifacts because
+
+Miller [29] argued that individuals like to express
+themselves with material artifacts that embody their lives,
+personalities, emotions and achievements. Our participants
+expressed themselves by placing the “Frogs” on their
+computer monitors and decorating their home with
+“Flowers”. Such an arrangement of material artifacts as
+physical signs to spatially represent the identity of an
+individual is called “autotopography” [14]. This
+autotopographical collection of material artifacts put on
+display not only becomes the public representation of the
+self and craftsmanship [12] but also serves as a memory
+landscape to the owner triggering reminiscence [38]. As
+such, our study supports the theory of autotopography.
+Interestingly, the autotopography was driven mainly by the
+aesthetic rather than the embodied information in the
+artifacts. For example, the “Frog” was readily displayed in
+the home ambience despite containing very little and
+abstract information about an individual’s activity; in
+contrast, other more informative models like “Graph” and
+“Die” did not become a part of people’s home ambience
+
+except for Chad, he placed his “Graph” on the living room
+wall for public display to cherish his best workout day.
+Designers therefore should consider building artifacts that
+are easy to interpret, although the embodied information
+can be as little as “I did more physical activity”.
+Material artifacts as personalized rewards
+
+According to the Goal Setting Theory [27], incentives are
+important to sustain a user’s interest in an activity.
+Participants liked getting artifacts at the end of the day as a
+reward and a testimony to their invested physical efforts. It
+seemed that material rewards could contribute to an
+increase in physical activity for some participants.
+Participants enjoyed how the “Frog” scaled based on their
+physical activity and they did more physical activity to get a
+bigger “Frog”. Participants appreciated this scaling, even
+though a bigger “Frog” required more printing time. We
+believe that the perceived value of the artifact among the
+participants also increased with the time they waited for it
+to get printed. Therefore, in future works, it could be
+interesting to examine the relationship between printing
+time and size of the reward.
+Previous research on archiving and souvenirs suggests that
+material artifacts can be cherished more than virtual objects
+because of their higher visibility in the surroundings and
+low replication possibilities [13,24]. Our findings support
+this argument, as participants liked the fact that these
+artifacts are unique and cannot be purchased elsewhere.
+Additionally, they also liked that these artifacts embodied
+their personal heart rate data. As a result, we see further
+opportunities for using material artifacts as personalized
+rewards to physical activity that can readily be displayed
+and consider it an interesting design space for designers to
+explore in the future.
+Material artifacts for reflection and reminiscence
+
+Participants mentioned that the material artifacts prompted
+reflection and reminiscence on past physical activities.
+Sometimes participants encountered difficulties in
+understanding the meaning conveyed by these artifacts (the
+“Flower” in particular). These issues however encouraged
+conversations and fuelled recall about past activities. We
+believe that ambiguity in meaning encourages participants
+to expand their interpretation of physical activity data and
+thus could facilitate a richer reflection about the self and
+past activities [15].
+Material artifacts have a tendency to disappear into the
+background, which Miller calls as the “humility of things”
+[29]. For example, unlike a virtual representation that calls
+for instant user attention, a material artifact can sit quietly
+in the surroundings and may not seek attention. We believe
+this property can be harnessed as an alternative design
+strategy to provide passive tracking of physical activity and
+to encourage delayed feedback on data. For example,
+material artifacts can be built that passively monitor user’s
+physical activity and which are seen only when the user is
+
+looking for them. We see an opportunity for designers by
+engaging with these notions to provide users with additional
+opportunities for reflection on their physical activity.
+CONCLUSION
+
+The contribution of this work is the first conceptual
+understanding of the relationship between material
+representations and physical activity. With the deployment
+of our system SweatAtoms through an “in the wild” study,
+we explored how participants’ relationship to physical
+activity can be affected through design. We hope that our
+work inspires different ways of reflecting upon embodiment
+and material representations, especially, in the context of
+physical activity and sensing technology. We also
+encourage design researchers to consider and incorporate
+digital fabrication in their HCI design practice: in
+particular, designers should consider not only trying to print
+things that already exist in the material world, but rather
+consider that there is an opportunity to print things from
+data that exists only in the digital world, such as heart rate.
+We also foresee an opportunity of having personal 3D
+printers at home, as these printers can produce unique
+material artifacts that are never as good as coming from
+large fabrication houses, but are more personal
+representations of one’s life. In the future, we envision
+people crafting their world with moments from their lives,
+using data that was previously only seen in digital form but
+now re-entering their physical world in an embodied
+material form.
+REFERENCES
+
+1. Benson, R., and Connolly, D. Heart rate training,
+Human Kinetics, 2011.
+2. Berkovsky, S., Coombe, M., Freyne, J., Bhandari, D.,
+and Baghaei, N. Physical activity motivating games:
+virtual rewards for real activity. In Proc. CHI’10, ACM
+(2010), 243-252.
+3. Bravata, M.S., Smith-Spangler, C., Sundaram, V.,
+Gienger, A.L., Lin, N., Lewis, R., Stave, C.D., Olkin, I.
+and Sirard, J. Using Pedometers to Increase Physical
+Activity and Improve Health: A Systematic Review.
+JAMA, 298(19), 2007, 2296-2304.
+4. Consolvo, S., McDonald, D.W. and Landay, J. Theorydriven design strategies for technologies that support
+behavior change in everyday life. In Proc. CHI’09,
+ACM (2009), 405-414.
+5. Constructive solid geometry
+http://evanw.github.io/csg.js/, 2013.
+6. Cube 3D printer. http:// cubify.com/cube/index.aspx.
+7. Donnarumma, M. http://marcodonnarumma.com.
+8. Fan, C., Forlizzi, J. and Dey, A. A Spark Of Activity:
+Exploring Information Art As Visualization For
+Physical Activity. In Proc. Ubicomp ’10, ACM (2010),
+81-84.
+
+9. Gaver, W.W., Dunne, A., and Pacenti, E. Cultural
+Probes. Interactions, 1999, 21-29.
+10. Gaver, W. W., Bowers, J., Boehner, K., Boucher, A.,
+Cameron, D., Hauenstein, M., Jarvis, N., and
+Pennington, S. Indoor weather stations: investigating a
+ludic approach to environmental HCI through batch
+prototyping. In Proc. CHI '13, ACM (2013), 3451-3460.
+11. Gershenfeld, N. Fab: The Coming Revolution on Your
+Desktop–from Personal Computers to Personal
+Fabrication. Basic Books, 2007.
+12. Goffman, E. The Presentation of Self in Everyday Life,
+Penguin Books, 1959.
+13. Golsteijn, C., Hoven, E. van den, Frohlich, D. and
+Sellen, A. Towards a More Cherishable Digital Object.
+In Proc. DIS'12, ACM (2012), 655-664.
+14. Gonzalez, J. A. Autotopographies. In Prosthetic
+Territories. Politics and Hypertechnologies, Westview
+Press, 1995, 133–150.
+15. Hallnäs, L. and Redström, J. Slow Technology;
+Designing for Reflection. Journal of Personal and
+Ubiquitous Computing, Springer-Verlag, 2001, 201-212.
+16. Herman, I., Melancon, G., and Marshall, S. M. Graph
+visualization and navigation in information
+visualization: A survey. IEEE Trans. Visual. Comput.
+Graph. 6, 10, 2000, 1–21.
+17. Hjelm, S.I., Browall, C., Brainball-using brain activity
+for cool competition. In Proc. NordiCHI’00, (2000).
+18. Ishii, H. Tangible bits: beyond pixels. In Proc. TEI’08,
+ACM (2008), xv-xxv.
+19. Jafarinaimi, N., Forlizzi, J., Hurst, A. and Zimmerman,
+J. Breakaway: an ambient display designed to change
+human behavior, In Proc. CHI EA’05, ACM (2005),
+1945-1948.
+20. Jansen, Y., Dragicevic, P. and Fekete, J.D. Evaluating
+the Efficiency of Physical Visualizations. In Proc. CHI
+'13, ACM (2013), 2593-2602.
+21. Khot, R. Sweat-atoms: crafting physical objects with
+everyday exercise. In Proc. CHI EA '13, ACM (2013),
+2701-2706.
+22. Khot, R., and Mueller, F. Sweat-atoms: turning physical
+exercise into physical objects. In Proc. CHI EA '13,
+ACM (2013), 3075-3078.
+23. Khut, P.G. Development and Evaluation of Participantcentred Biofeedback Artworks, unpublished thesis
+manuscript, University of Western Sydney, 2006.
+24. Kirk, D.S. and Sellen, A. On human remains: Values
+and practice in the home archiving of cherished objects.
+ACM TOCHI 17, 3, 2001,1-43.
+
+25. Li, I., Dey, A. and Forlizzi, J. Understanding my data,
+myself: supporting self-reflection with ubicomp
+technologies. In Proc. UbiComp '11, ACM (2011), 405414.
+26. Lin, J. L., Mamykina, L., Lindtner, S., Delajoux, G. and
+Strub, H.B. Fish’n’Steps: Encouraging physical activity
+with an interactive computer game. In Proc.
+Ubicomp’06, Springer (2006), 261-278.
+27. Locke, E., and Latham, G. A theory of goal setting and
+task performance, Prentice Hall, 1990.
+28. Mellis, D., Follmer, S., Hartmann, B., Buechley, L. and
+Gross, M.D. FAB at CHI: digital fabrication tools,
+design, and community. In Proc. CHI EA '13. ACM
+(2013), 3307-3310.
+29. Miller, D. The comfort of things. Polity, 2008.
+30. Mota, C. The rise of personal fabrication. In Proc. C&C
+'11, ACM (2011), 279-288.
+31. Munson, S.A., and Consolvo, S. Exploring Goalsetting, Rewards, Self-monitoring, and Sharing to
+Motivate Physical Activity, In Proc. Pervasive Health
+2012, 25-32.
+32. Polar heart rate monitors,
+http://www.polar.com/en/products.
+33. Rogers, Y. Interaction Design Gone Wild: Striving for
+Wild Theory. Interactions 18, 4, 2011, 58-62.
+34. Run Zombie Run, https://www.zombiesrungame.com/.
+35. Shneiderman, B. Why not make interfaces better than 3d
+reality? IEEE Comput. Graph. Appl. 23, 6, 2003.
+36. Tudor-Locke, C., Bassett, B.R., and Swartz, A.M. A
+preliminary study of one year of pedometer selfmonitoring. Annals of Behavioral Medicine, 28, 2004,
+158-162.
+37. Ullmer, B., and Ishii, H. Emerging frameworks for
+tangible user interfaces. IBM systems journal 39, 3.4
+(2000), 915-931.
+38. Van den Hoven, E. 2004, Graspable Cues for Everyday
+Recollecting. PhD thesis, Technische Universiteit
+Eindhoven, The Netherlands.
+39. Vande Moere, A. Beyond the tyranny of the pixel:
+Exploring the physicality of information visualization.
+In Proc. IV’08, IEEE (2008), 469-474.
+40. Vande Moere, A. and Patel, S. Analyzing the design
+approaches of physical data sculptures in a design
+education context. In Proc. VINCI’09, 2009, 1-23.
+41. Victor, B. A brief rant on the future of interaction
+design,
+http://worrydream.com/ABriefRantOnTheFutureOfInter
+actionDesign/, 2013.
+
+

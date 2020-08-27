@@ -1,0 +1,528 @@
+Infotropism: Living and Robot ic Plant s
+as Int eract ive Displays
+David Holstius 1
+dholstiu@cmu.edu
+1
+
+John Kembel
+
+1
+
+jkembel@cs.cmu.edu
+
+Amy Hurst 1
+
+Peng-Hui Wan 3
+
+Jodi Forlizzi 1,2
+
+akhurst@cmu.edu
+
+maffee@cmu.edu
+
+forlizzi@cs.cmu.edu
+
+Human-Computer Interaction Institute
+2
+School of Design
+3
+School of Architecture
+
+Abstract
+Designers often borrow from the natural world to achieve
+pleasing, unobtrusive designs. We have extended this practice by combining living plants with sensors and lights in an
+interactive display, and by creating a robotic analogue that
+mimics phototropic behavior. In this paper, we document
+our design process and report the results of a 2-week field
+study. We put our living plant display, and its robotic counterpart, in a cafeteria between pairs of trash and recycling
+containers. Contributions of recyclables or trash triggered
+directional bursts of light that gradually induced the plant
+displays to lean toward the more active container. In interviews, people offered explanations for the displays and spoke
+of caring for the plants. A marginally significant increase in
+recycling behavior (p=.08) occurred at the display with living plants. Apparent increases also occurred at the robotic
+display and a unit with only lights. Our findings indicate
+value in exploring the use of living material and biomimetic
+forms in displays, and in using lightweight robotics to deliver simple rewards.
+Cate gorie s & S ubject De scriptors: H.5.2 [Information Interfaces and Presentation]: User Interfaces –
+evaluation/methodology, prototyping, user-centered design
+Ge ne ral Te rms: Design, Experimentation.
+Ke ywords: plants, robots, ambient displays, recycling,
+interactive displays, biomimetics.
+INTRODUCTIO N
+Motivation
+Borrowing materials or metaphors from the nonliving part of
+the natural world, such as water or wind, is now an established practice in the design of interactive displays [1,2].
+Some designers draw more deeply upon the living part of
+nature, imitating biological forms and behaviors with artificial materials and techniques (biomimetics) [3,4,5]. We have
+extended these practices by combining living organisms
+with electronic components in an interactive display.
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that
+copies bear this notice and the full citation on the first page. To copy
+otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee.
+DIS2004, August 1–4, 2004, Cambridge, Massachusetts, USA.
+Copyright 2004 ACM 1-58113-787-7/04/0008...$5.00.
+
+Carnegie-Mellon University
+5000 Forbes Ave.
+Pittsburgh, PA 15213
+
+Figure 1. A group of living plants displaying information.
+
+We decided to use plants in our initial exploration of this
+design space. We were inspired by the observation that
+plants are naturally informative. Plants are constantly accumulating and displaying the effect of stimuli over time in a
+form that humans can interpret. For example, houseplants
+generally point toward the primary source of light in a room,
+and an accumulations of moss on a tree trunk indicates the
+direction North. Both of these examples showcase the ambient quality of plants as well as their legibility and simplicity. They also suggest that plants could be most appropriately used in a display of local information aggregated over
+time.
+Since plant behavior is constrained in familiar ways, we
+thought that plants could contribute to a unique legibility in
+an interactive display. In discussing the design of tangible
+interfaces, Ishii et al. describe gains realized from respecting
+users’ prior understanding of physical principles: “People
+know what to expect of a flashlight, know what to expect of
+lenses.” [2] We thought this reasoning might be extended to
+biology. People know what to expect of plants.
+We also thought the aliveness of plants could contribute to a
+compelling and engaging emotional quality in our design. If
+people’s affinity for other living things were to translate into
+a receptivity to living things used as displays, we would
+expect such displays to be engaging and compelling. People
+might alter their behavior more, or for longer, in light of
+relevant information presented by a living or lifelike display.
+In certain contexts the effect could be measurable.
+
+Re late d Work
+A number of related works have used plants and plant forms
+to fill functional, aesthetic, and conceptual roles. Some feature artificial plant forms enhanced with interactive capabilities. LaughingLily is an artificial flower augmented with
+microphones and electromagnets that make the petals respons to the volume of nearby conversation [3]. Office Plant
+#1 actuates aluminum plant-like structures in response to a
+user’s email activity, and “fills the same social and emotional niche as an office plant.” [4] CyberFlora is a commissioned exhibit for the Cooper-Hewitt Smithsonian Museum
+featuring 20 robotic flowers sensitive to temperature, infrared
+light, and capacitance [5].
+Artists have used living plants as media and environmental
+probes. Ackroyd and Harvey imprinted complex images and
+patterns on live seedling grass, using varying levels of light
+intensity [6]. Jeremijenko created the OneTree project, which
+used plants as distributed sensors and recording devices [7].
+Pehrson connected a Yucca plant to a stock trading program
+via electrodes, giving the plant water in return for successful
+trades [8]. Goldberg’s Telegarden connects human gardeners
+to a remote garden via a web-interfaced robotic arm [9].
+Our living plant display contributes to this design space in a
+new way by combining living plants with local interactivity.
+Our robotic plant is the first to imitate a phototropic response in order to convey information. Both of these artifacts embody and exemplify a changing relationship between
+the living and the artificial.
+DE S IGN P RO CE S S
+
+Figure 2. Concept sketch of possible manipulations.
+
+Figure 3. Clockwise, from upper left: (1) bending plants
+toward light, (2) tilting container while plant grows upward, (3) influencing health with nutrition, (4) using light
+to control side shoots, budding, and/or height.
+
+Ide ation P hase
+Our design process began with the idea of using living
+plants to convey information about human activity. We had
+two initial goals: (1) to make an interesting, relevant display; and (2) to use plants in a novel yet appropriate way.
+We explored these initial goals through a series of concepts.
+
+Plant Manipulations
+We initially researched alternatives based on plant responses
+to a variety of stimuli. Plants are sensitive to touch (thigmonasty), orientation (negative gravitotropism), and water
+sources (hydrotropism). (Figure 2) We also considered
+changing the health of plants by giving and withholding
+nutrition. An undesirable state of affairs could be communicated by an unhealthy plant, and vice versa.
+We focused on the idea of manipulating plants with light,
+because of its simplicity. Light can influence the health of
+plants, but it can also change their shape and direction of
+growth. (Figure 3) For example, low pressure sodium light
+results in thick stems, multiple side shoots, and deep green
+foliage, while incandescent light results in elongated stems,
+suppression of side shoots, and paling of foliage [10]. We
+realized that by using light to bend plants from left to right,
+in a vertical plane, we could produce a form similar to a needle gauge. (Figure 4) This would be less ambiguous than
+other manipulations. Although it would limit us to presenting ordinal data, this worked well with our subject matter.
+
+Figure 4. “Needle gauge” design for ordinal information.
+
+Recycling as a Subject Matter
+We chose recycling as a subject matter while considering a
+cafeteria as a space for a public display. People could
+anonymously interact with such a display, but it would still
+deliver interesting, personally relevant information. Recycling is dispersed over time, but localized in space, as are the
+stimuli to which plants usually respond. Also, recycling is a
+practice in which individuals often feel their actions have no
+effect, and yet aggregate behavior has a very real effect.
+We decided to map contributions of recyclables and trash
+into bursts of directional light, directed toward either side of
+a group of plants. If the trash side received more light than
+the recycling side, the plants would eventually lean toward
+the trash. This would communicate a very simple idea,
+which is that people throw away more than they recycle.
+
+Biomimetic Robot Plant Concept
+While generating concepts for our living plant display, we
+realized this was an opportunity to exhibit a robotic analogue
+in tandem with a living display. We began developing prototypes in parallel, cultivating living plants while sketching
+and constructing robotic plant components.
+P rototyping P hase
+
+Living Plant Display
+We consulted with local horticulturalists and greenhouse
+workers to determine what varieties of plants would be suitable for our design. While some mature plant varieties are
+highly responsive (sunflowers, for example, follow the sun
+precisely), vegetable seedlings are very responsive in general.
+After testing and rejecting beans, peas, radishes, carrots, and
+mimosae obtained from gardening supply stores, we settled
+on corn seedlings. These offered the advantages of a pleasing, easily imitable form and dramatic growth over a 1-week
+period. We planted the seeds 1” apart in aluminum bowls
+filled with Miracle-Gro® AquaCoir™ soil, keeping duplicate bowls growing in case of accidental damage.
+We also tested various lights, including fluorescent, incandescent, and halogen bulbs, in conjunction with the growing
+plants. Timing the plants’ response, we found that a visible
+lean resulted from 8 hrs/day exposure to 100W Sylvania
+“Daylight” bulbs in only 3-4 days. We used these bulbs in
+our final design.
+Biomimetic Robot Plant Display
+As we explored different species of living plants, we generated multiple sculptural forms, materials, and leaning behaviors for a robotic analogue. (Figure 5)
+We started by considering ways to mimic the colors, textures, and shapes of living plants. Purchasing silk plants was
+one option, but silk plants generally imitate slow-growth
+species. We opted for designs focused on mimicking phototropic behavior. In the end we settled on Calder-like [11]
+planes of color in the shape of living corn sprouts. (Figure 7)
+We considered making the electromechanical plants modular,
+and equipping them with individual photosensors. (Figure
+5) We simplified this by driving a group of plants and making them “infotropic” instead. Here, we incorporated a stamp
+microprocessor (Figure 6) and implemented a custom serial
+communication protocol. The robotic plants responded by
+turning left or right as a group, in 5-degree increments.
+
+Figure 5. Concept sketches for robotic plant behavior mimicking natural phototropism.
+
+Figure 6. Inner workings of robotic plant display, showing
+basic stamp, servos, and wireform sprouts.
+
+Figure 7. Robotic plant development, left to right: early mechanism; Calder-like sprout forms; servo and sprout connected
+by wire; Basic stamp controller; covering final assembly; view from above; final robotic display in public.
+
+Figure 9. Progression of changes in both plant displays,
+indicating more trash disposed than recycling. The living
+plant is also exhibiting 4 days’ growth.
+
+E V ALUATIO N
+
+Figure 8. Final unit design with plant display in cafeteria.
+
+We constrained the robotic display, like the living display,
+to movement in a single plane. This served two purposes.
+As previously discussed, it simplified information mapping,
+and increased the legibility of the display. Second, it simplified the mechanical tasks involved. Although the robotic
+sprouts rotated in a horizontal plane, while the living plants
+grew and tilted in a vertical plane, the general effect of “leaning this way or that” was realized in both.
+
+Unit Assembly
+We used lamp dimmers and Eagle Eye motion sensors from
+X10, a popular home-automation supplier [12]. Our trash
+and recycling canisters had narrow openings, forcing users to
+place rather than toss cans and bottles. The sensors would
+detect the presence of a hand at these openings. However, we
+had to restrict the sensors’ peripheral vision, so they would
+not be overly responsive. We enclosed the sensors in triangular housings made of black foamcore, which had the drawback of making them more obvious. Sensors were networked
+using extension cords to a central computer housed inside
+one of the display stands. The computer turned lights on for
+10 seconds when the sensors were triggered, and slowly
+dimmed them to darkness. We used several Linux-based
+freeware programs, including heyu and Xtend, to control the
+X10 modules and record events.
+
+1.1 S e tting
+We evaluated our design with a two-week field study in our
+building’s cafeteria. This cafeteria is frequented by faculty,
+students and research scientists of high technical expertise.
+Patrons are generally familiar with systematic methods of
+experimentation. They are about 2/3 male, and most are between 18-27 years of age.
+We kept the normal pairing and arrangement of trash and
+recycling containers in the cafeteria. Research has shown the
+proximity and availability of recycling containers influences
+their use [13]. This meant we had 4 locations for our new
+units, equally spaced around the perimeter of the room.
+(Figure 10).
+1.2 P rocedure
+
+Baseline (Week 1)
+For the first week, we introduced only the display stands,
+trash and recycling containers, and sensors, without the
+lights and plant displays. This gave people time to become
+accustomed to our new designs. We began to weigh all trash
+as it left the cafeteria, four times daily. We also handcounted, every night, the number of items recycled.
+
+Figure 10. Arrangement of units in cafeteria. During Week
+2 the initial conditions were: A=Control, B=Robot + Lights,
+C=Living + Lights, and D=Lights. Locations of Robot and
+Living displays were switched midweek.
+
+Display Introduction (Week 2)
+One week later, we created four display conditions: Control
+(no lights or displays), Robot + Lights, Living + Lights,
+and Lights. The locations of the plant displays were chosen
+as the two most equivalent in terms of waste-disposal activity, as indicated by the previous week’s observations. On
+Wednesday night, we exchanged the locations of the two
+plant displays.
+During the second week, we also conducted 13 10-minute
+interviews with people we observed talking about, pointing
+to, or interacting with at least one of the units featuring a
+plant display. Respondents gave informed consent and were
+asked a series of questions, about when they first noticed the
+units, what they thought they were for, if they elicited any
+feelings, and what effects the displays might be having.
+When the study was over, we debriefed cafeteria patrons with
+an 11x17" poster explaining the nature, purpose, and results
+of our study. We affixed these to the walls where we had
+introduced each new unit.
+FINDINGS
+S hort Inte rvie ws
+Several themes emerged in the 13 interviews we carried out,
+including eco-consciousness, exploration, experimentation,
+appreciation, and interpretation.
+Eco-consciousness. People reported first noticing the bright
+green color of the display units or the plants, and linked
+these to an “environmental” or “eco-conscious” theme.
+Exploration. People described their attempts to understand
+the displays: in this case, the robot plants.
+“I don’t know, but I think it moved. Did it move? [Interviewer: Do
+you think it moved?] Yeah, I think so, but… I don’t want to be
+crazy. Maybe it didn’t move. I went back and tested it, to see. I
+put some trash in. And then I put my hand underneath it. Did it?”
+
+Three people related their attempts to “game the system” by
+waving their hands underneath the motion sensors. The slow
+
+motion of the displays was sometimes confusing: two people said the robot was “broken, because it’s not moving.”
+Experimentation. Over half the respondents (8 of 13) were
+sensitive to the fact that a study was taking place, using
+words and phrases such as “experiment,” “conditions,” “testing human behavior,” “collecting data,” or “to see if” in
+describing what they saw. Four respondents guessed some
+part of our intention: either that we wanted to “determine the
+recycling-to-trash ratio, or “encourage recycling.” One said,
+“I think this is an experiment, to see if people throw away more
+with fake plants. And then, with the real plants, will they recycle
+more. [Interviewer: That’s interesting.] You’re kind of killing two
+birds with one stone. Recycle a Coke, plant a tree.”
+
+Appreciation. Asked how the units made her feel, one said
+(pointing to the living plants):
+“I like them. They’re so small. They look so dependent. I waved
+my hands underneath to give them some light. I didn’t have a bottle. I like the bright green color. Green is very environmental. And
+I like the way the cabinets and the lights go together.”
+
+Another respondent declared,
+“They made my day! All of these people are staring at these
+things. I like to watch. They’re giving the plant extra light.”
+
+Some people may not have noticed a difference between the
+plant displays. Three thought both were real, or both
+“fake”.One person liked the robot plants best:
+There’s a nice aesthetic sense to them. It’s kinda cool to have robotic plants.
+
+… while another said the living plants made more sense.
+I saw the plastic plants first. The others make more sense. [Interviewer: They make more sense?] If they’re real plants. It’s more
+clear.
+
+Interpretation. Of the 13 people we interviewed, 5 described the mechanism of our invention in some way, e.g.,
+“The plants gauge whether there’s more recycling than trash. If
+they were the same then the plants would be straight up.”
+
+We initially overheard one respondent saying:
+“I get it! Whichever one you put it in, the light goes on. So be-
+
+Figure 11. Changes in recycling during study. Dashed lines represent Week 1 (baseline). Solid lines represent Week 2 (conditions). Similar shapes represent the same condition across days. Recycling data are missing on Monday, Week 1.
+
+cause they’re bending that way, people are throwing away
+more.”
+
+Three people characterized our design as artistic, or intending
+to send a message. One remarked on their reflective function:
+“There’s no need for it that I can articulate. It’s not being designed for a need, or a need like a lot of the stuff here is. It just fits
+into the environment. It’s … making an awareness of a problem.
+It’s giving people something, something that they can do what they
+want with … It has got people actually thinking. You know,
+‘hmm’ [looks thoughtful], and also it gets a good reaction. People
+smile. There’s a magic. You don’t know what’s going to happen,
+and then it goes, and there’s a sense of, wonder, I guess.”
+
+Be havioral data
+We generally observed an increase in recycling (Figure 11)
+and no change in trash across Weeks 1 and 2. Our study was
+only 2 weeks long, and we note that these increases were not
+statistically significant. We would have run a longer study,
+but Week 3 was our university’s Thanksgiving holiday.
+There is reason to take into account both measures (trash and
+recycling) simultaneously. After all, if trash had increased
+much more than recycling, we would certainly not consider
+that a positive change in behavior. After standardizing the
+trash and recycling scores, and combining them in a ratio, a
+MANOVA analysis indicates that the unit featuring living
+plants started out worst and ended up best. This effect was
+marginally significant, F[3, 9] = 3.1, p = .08. Though our
+other quantitative results did not approach significance, the
+effects were generally in the direction anticipated.
+GE NE RAL DIS CUS SIO N
+Our design succeeded as an interactive display. Several people we interviewed were able to easily interpret the leaning
+behavior of the plants. People commented positively on the
+aesthetic quality of the displays.
+Our total design appeared to increase recycling behavior. The
+gains we saw are probably due to a combination of factors.
+First, the immediate feedback of a light turning on may have
+prompted people to recycle. Feedback is most effective if it
+is immediate, and immediate rewards can be a strong incentive to recycle [14, 15]. Second, gains in recycling could be
+attributable to a heightened eco-consciousness. Interviewees
+linked the bright green color of the display stands and the
+presence of the plants to an environmental theme. Third,
+gains in recycling may have resulted from a desire to help
+the plants. People realized that recycling was a way to give
+the plants light. Some people may have wanted to straighten
+the plants with light from the opposite side. Or, they may
+have realized that by recycling, as well as throwing away
+trash, they could give the plant twice as much light, without
+waiting for a light to turn off. Finally, gains may have resulted from deeper interpretations of the display. Most people who commented on the leaning behavior of the plants
+made a successful attempt to connect this with a larger message. This message was, of course, that people throw away
+more than they recycle. Realizing this, people may have been
+more likely to recycle something they would have otherwise
+thrown away. Although we cannot be certain this happened,
+we believe that for some people our display induced a change
+
+in awareness just at the point of throwing away a plastic
+bottle. This idea is supported by quantitative and qualitative
+evidence.
+An increase in recycling achieved marginal statistical significance at the display featuring living plants. It may be that
+the aliveness of the living plant display contributed to a
+more engaging, more compelling interaction. This idea is
+supported by interviews with users, who talked about caring
+for the plants – giving them light, or feeling attached in
+some way. The robotic plant display enjoyed a strong initial
+interest that declined after 2 days. Qualities other than aliveness may explain different responses to the living and robotic plants. For example, the “leaning” behavior was not
+exactly the same.
+We have considered augmenting our robotic design to promote more sustained interest. One advantage of a robotic
+design is that it can be precisely specified as well as precisely manipulated. Because the robotic display we created is
+“infotropic,” rather than phototropic, it can be repurposed in
+interesting ways. We have used it to time a presentation,
+noting progress by the slow rotation of the plants. People
+other than the speaker were not aware of this until we told
+them, which demonstrates some value as a private display.
+DE S IGN IMP LICATIO NS
+Lightwe ight Robotics for Ince nting Be havior
+People respond to small degrees of interactivity, and may
+even enjoy lightweight interactions more than intensely focused interactions with complex robots. We need not wait
+for human, animal, or even insect-like intelligence to introduce simple robotics pleasantly and effectively into everyday
+environments. Artifacts made with lightweight sensors and
+actuators are more robust, and can be maintained for lower
+cost over longer periods of time. Our design is an example
+of lightweight robotics in a public setting, using simple
+sensors, processors, and actuators to deliver small yet effective rewards.
+P lants as a Communicative Me dium
+Plants represent a uniquely appropriate medium for communicating long-term trends. The local character and familiar
+nature of plant behaviors offers additional advantages to the
+designer seeking to maximize interface legibility. Although
+we drew upon the natural and familiar behaviors of plants in
+both our living and robotic displays, there are many possible
+manipulations of plants that we did not implement in our
+design. We encourage designers to explore other applications
+of plants and plant forms in communicative, informative,
+and interactive contexts.
+Combining Living and E le ctrome chanical
+Compone nts in a Hybrid Artifact
+Interactions with hybrid artifacts, featuring both living and
+electromechanical components, may have a more engaging
+quality than interactions with purely robotic mechanisms.
+The addition of living materials may introduce an emotional
+quality absent from interactions with purely electromechani-
+
+cal systems. More research is needed to test this hypothesis.
+Biomimetic artifacts may also stimulate an affective response. We advocate a bidirectional perspective in the design
+of hybrid systems: as roboticists explore the qualities of
+robots that make them seem most alive, it seems natural to
+ask how we might profitably harness the quality of aliveness
+starting from biological material.
+CO NCLUS IO N
+The purpose of our study was to observe and describe public
+reactions to our original usage of living and biomimetic
+plants in interactive displays. The designs appeared to be
+generating a pleasant experience overall – adding a small bit
+of wonder to an otherwise mundane ritual. We observed an
+increase in recycling activity with our living display and
+possible increases resulting from the use of a biomimetic
+display and even lights alone. These findings argue for the
+development and deployment of lightweight interactive artifacts to deliver simple rewards in appropriate contexts.
+Showing, through systematic field study, that our original
+artifacts generated a public response was a significant step.
+Characterizing the nature of those reactions was a second
+step, one that paves the way for future studies in the design
+spaces of hybrid and biomimetic artifacts. Our documented
+designs stand as a contribution to research in the new spaces
+of hybrid artifacts, biomimetic design, and lightweight robotics, which we encourage others to explore as well.
+ACKNOWLE DGME NTS
+This work was supported under NSF grant IIS-01215603.
+Special thanks to Scott Hudson, Sara Kiesler, Jim Skees,
+Rege Kostlof, Barb Kviz, and the Carnegie Mellon CPS
+staff for their cooperation and support.
+RE FE RE NCE S
+1. Dahley, A., Wisneski, C. and Ishii, H. Water lamp and
+pinwheels: Ambient projection of digital information
+into architectural space. In Summary of CHI '98 (Los
+Angeles, April 1998), ACM Press, 269-270.
+2. Ishii, H., and Ullmer, B. Tangible Bits: Toward Seamless Interfaces between People, Bits, and Atoms. In
+Proc of CHI ’97, ACM Press, New York, NY, 2000,
+234-241.
+
+3.
+4.
+5.
+
+6.
+
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+
+14.
+
+15.
+
+Antifakos, S., and Schiele, B. LaughingLily: Using a
+flower as a real-world information display. In Proceedings of Ubicomp ‘03, 161-162.
+Boehlen, M., and Mateas, M. Office Plant #1. In Leonardo Special Edition (Catalogue to the Digital Salon),
+November 1998, 345-334.
+Lieberman, J. CyberFlora exhibition at the CooperHewiit Museum, New York, 2003. Information available at
+http://robotic.media.mit.edu/projects/cyberflora.html.
+Ackroyd, H., and Harvey, D. A catalogue of these artists’ collaborative work is available at
+http://www.artsadmin.co.uk/artists/ah/photosynthesistex
+t.html.
+Jeremijenko, N. OneTree. Exhibited at Paradise Now
+Exhibition, Miller Gallery, Carnegie Mellon University,
+2001. http://www.genomicart.org/jeremijenko.htm.
+Pehrson, O. Yucca. Information available at
+http://www.art.a.se/best_before/about/03art.html.
+Goldberg, K. The Telegarden. In Ars Electronica Festival Catalog, Springer Verlag, 1996.
+Hunter, M.K., and Hunter, E.H. Artificial Light. In The
+Indoor Garden: Design, Construction, and Furnishing.
+John Wiley & Sons, New York, NY, 1978, 76-102.
+Prather , M., Rower, A.S., and Pierre, A. Alexander
+Calder, 1898-1976. Yale University Press, New Haven,
+CT, 1998.
+X10 Home Solutions. http://www.x10.com.
+Ludwig, T.D., Gray, T.W., and Rowell, A. Increasing
+recycling in academic buildings: A systematic replication. Journal of Applied Behavior Analysis, 31, 4 (Winter 1998), 683-686.
+Seligman, C., Becker, L.J., and Darley, J.M. Encouraging residential energy conservation through feedback. In
+Baum, A., and Singer, J.E., Eds., Advances in Environmental Psychology, Vol. 3, Energy: Psychological
+Perspectives. Erlbaum, Hillsdale, NJ, 1981.
+Schultz, P.W., Oskamp, S., and Mainieri, T. Who recycles and when? A review of personal and situational
+factors. Journal of Environmental Psychology, 15
+(1995), 105-12.
+
+

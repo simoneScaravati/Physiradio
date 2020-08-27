@@ -1,0 +1,340 @@
+A Constructive Classroom Exercise for Teaching InfoVis
+Wesley Willett∗
+
+Samuel Huron†
+
+University of Calgary
+
+Télécom ParisTech,
+Université Paris Saclay,
+CNRS i3 (UMR 9217)
+
+Figure 1: Example data visualizations constructed using tiles (left), LEGO bricks (center), and modeling clay (right).
+
+A BSTRACT
+At the beginning of a visualization course, it can be challenging to
+provide simple, practical exercises that allow students to explore the
+benefits and constraints of different visual mappings. We present an
+interactive teaching exercise, adapted from the VizKit visualization
+workshop, that can help illustrate and encourage critical thinking
+about basic visualization concepts. In this paper we present the
+unique pedagogical goals and practical challenges associated with
+using construction exercises in an undergraduate course. We further describe how we modified VizKit for use in a classroom setting, introducing new exercises and construction materials. Finally
+we reflect on the observations gathered during an initial in-class
+deployment with 28 students.
+Index Terms: K.6.1 [Management of Computing and Information
+Systems]: Project and People Management—Life Cycle; K.7.m
+[The Computing Profession]: Miscellaneous—Ethics
+1
+
+I NTRODUCTION
+
+This submission describes a set of physical construction exercises
+designed to support teaching in an introductory information visualization course.
+When creating hands-on exercises for teaching visualization, instructors can leverage a wide range of authoring tools. Students can
+author visualizations using visualization templates [2] in software
+like Excel, specify charts interactively using graphical tools like
+Tableau, and code visualizations using toolkits like D3 [6]. Alternatively, instructors can use low-fidelity exercises like visualization
+sketching [7] to help students explore data and consider possible
+visualization designs.
+However, each of these approaches have shortcomings that can
+make them difficult to use as a tool for teaching basic visualization concepts. Visualization templates and editors can be limiting,
+since they do not allow students to create new expressive designs
+∗ e-mail:
+
+wj@wjwillett.net
+
+† e-mail:samuel.huron@cybunk.com
+
+or explore novel visual mappings [8]. Coding, while much more
+expressive, is often too slow and requires a high level of initial programming skill. Hand-sketching, on the other hand, is accessible to
+a wide variety of students. Yet even sketching can be intimidating
+to those who are not comfortable sketching with pen and paper, and
+the resulting sketches can be difficult to update or refine once they
+have been created.
+Alternatively, manually constructing visualizations out of tangible materials [3] has been shown to be an engaging and expressive
+way of introducing visualization to novices [5]. This kind of physical construction can also make it possible for non-experts to quickly
+create, update, and refine new visualization designs [4]. Moreover,
+construction exercises that use a small set of primitive elements can
+encourage the builder to actively and consciously compare possible encodings and visual mappings [8]. These findings suggest that
+active physical construction could be a fruitful way of introducing
+and reinforcing core visualization concepts in an classroom setting.
+In this paper we discuss a set of teaching exercises that we developed for undergraduate teaching in InfoVis. We describe a set
+of construction and evaluation tasks which emphasize comparison,
+critique, and discussion of visualization concepts, and which can
+be run in the constraints of a visualization classroom or lab setting.
+We also discuss several alternative construction materials, including
+LEGO bricks and modeling clay, which can lower the cost of running the experiment and support alternative visualization designs.
+2
+
+V IZ K IT
+
+Building off of previous research on constructive visualization, the
+VizKit1 workshop kit was designed as a simple way to improve
+data literacy by engaging non-expert participants. The VizKit setup
+can be run as a two hour workshop, with hands-on construction
+exercises that introduce participants to basic data visualization concepts. While useful, VizKit was not designed with the constraints
+and pedagogical goals of an academic course in mind. As a result,
+we developed an alternative version of the VizKit procedure for use
+in introductory visualization courses at the undergraduate and graduate levels.
+1 https://github.com/INRIA/VizKit
+
+3
+
+G OALS
+
+AND CHALLENGES
+
+Whereas the original VizKit exercises are intended to introduce
+newcomers to visualization concepts, the pedagogical goals in a
+classroom setting are somewhat different. Here, students may already have some familiarity with basic visualization and computing
+concepts. Instead, the pedagogical goals include:
+• Helping students internalize the process of data mapping and
+visualization construction through rapid, iterative design of
+multiple different visualizations.
+• Exposing students to multiple different visual encodings of
+the same data and encouraging reflections on the practical
+tradeoffs between them.
+• Introducing students to basic visualization self-evaluation,
+peer-evaluation, and critique.
+• Encouraging higher-level critical thinking about the process
+of visualization design and construction.
+From an instructor perspective, the exercise is also an opportunity
+to engage students in the course and help establish a fun, creative,
+and open learning atmosphere.
+3.1
+
+Classroom Challenges
+
+Running the exercise in a classroom setting also introduces a number of practical constraints. Setup time needs to be minimal, and
+the length of the overall exercise needs to fit within the schedule
+of a typical university course (often with sessions less than 1 hour
+long). Ideally, the exercise should also scale well to course sizes
+larger than the 20 facilitated by the original VizKit workshops.
+4
+
+D ESIGN
+
+OF THE
+
+ACTIVITY
+
+Whereas the workshop version of VizKit is intended to introduce
+participants to basic visualization concepts like visual variables and
+encoding, we designed the classroom version to build upon and cement student’s understanding of those concepts (which had already
+been introduced in lectures).
+4.1
+
+Procedure
+
+To fit within a variety of course schedules, we also broke the exercise into a set of four discrete phases that can be completed across
+multiple class periods:
+Construction (30 mins): Each student team starts with construction materials and a unique dataset. Teams explore their dataset
+by constructing as many different visualizations as they can in the
+allotted time. Students document each visualization using their mobile phones.
+Self-evaluation (10 mins): Based on their visualizations, teams
+attempt to answer a set of pre-defined questions about their dataset.
+Communication (20 mins): Teams reflect on their self-assessment
+and initial designs and construct and annotate a final visualization
+to communicate their dataset to others.
+Peer evaluation (25 mins): Teams take turns examining others’
+datasets and attempt to answer the same set of questions.
+4.2
+
+Equipment
+
+In order to deploy quickly in a classroom setting, we created prepackaged versions of the construction materials, data sheets, and
+other miscellaneous equipment that student teams could easily unpack at the beginning of class and repack when finished.
+In addition to the construction materials, we also provided each
+group with printed data sheets and large sheets of butcher paper to
+work on top of, as well as pens and sticky notes for annotating their
+visualizations. We also gave each group a 1 × 1000 piece of balsa
+wood to help align and measure their materials.
+
+4.2.1
+
+Construction Materials
+
+While developing the classroom version of VizKit, we considered
+three construction materials with different material properties:
+Tiles. Previous versions of the VizKit workshop had used physical tiles modeled after
+Froebel Gifts [1]. These tiles are simple, easyto-manipulate primitives that can be composed together to create a wide variety of visual forms. Early studies of constructive visualization [4, 3, 8] have also used these tiles to
+good effect.
+However, tiles suggest one particular set of operations and construction models. They are discrete, rather than continuous, and
+their square edges encourage stacking and rectilinear alignment
+over other possible arrangements. Tiles can also be somewhat
+expensive to purchase (approximately US$45 per kit). Although
+teaching kits can be readily assembled by using freely-available
+VizKit patterns and a laser cutter, a large number of instructors still
+do not have access to these tools or cannot afford the time necessary
+to produce new kits.
+LEGO Bricks. These ubiquitous building
+blocks offer simple primitives similar in shape
+to the tiles, with many of the same physical affordances. 2 × 2 × 1 LEGO bricks are slightly
+narrower than the Froebel tiles, but several
+times thicker, and are similarly easy to manipulate by hand. While still discrete and rectilinear, LEGO bricks more readily suggest vertical construction than tiles do. Because bricks are physically interlocking, connected groups of blocks are also easier to reposition
+and manipulate than groups of tiles. Interlocking bricks can also be
+used to create a variety of 3D physical shapes.
+Compared to tiles, bricks are relatively cheap and can be readily
+purchased new or used in a variety of colors. By assembling a mix
+of used and new bricks from an online brick marketplace (BrickLink), we were able to build 288-brick kits in the same 8 colors (36
+bricks/color) as the original tiles for approximately US$15/kit.
+Modeling Clay. While tiles and bricks encourage construction and encoding in discrete
+units, a continuous medium like clay supports
+a variety of new operations. Using modeling
+clay, participants can visualize non-discrete
+quantities, blend colors, and build curvilinear, three-dimensional visualizations. Modeling clay is also considerably cheaper than either tiles or LEGO. By
+purchasing bulk modeling clay from a hobby shop, we were able to
+assemble kits with similar colors and quantities of material to the
+tile kits for approximately US$5/kit.
+5
+
+D EPLOYMENT
+
+We tested the exercise in Winter 2016 with 28 students in a 3rd4th year undergraduate Introduction to Information Visualization
+course at the University of Calgary. The exercise spanned a lecture
+and a tutorial session on the Friday at the end of the first week of the
+course. Earlier in the week, students attended two 45-minute introductory lectures. The first lecture provided a broad overview of the
+field of visualization, while the second introduced basic visualization concepts including visual variables and their relative perceptual
+effectiveness for different data types.
+Due to time constraints, we split the exercise into two course
+sessions: (1) An initial 45-minute session held during the course’s
+regular morning lecture period included the construction and selfevaluation phases. (2) A 110-minute session held during a lab
+period two hours later included the communication and peerevaluation phases. Students disassembled their visualizations at
+
+the end of the first session and constructed their final version from
+scratched based on their digital photos, reflections, and notes.
+We grouped students into 13 teams of 2 (with two late-arriving
+students added to existing groups a few minutes into the exercise
+creating two teams of 3) and asked teams to remain together across
+the two sessions. Five teams used tiles, four used LEGO, and four
+used modeling clay.
+The teaching team guided transitions between phases and provided feedback and consultation throughout. The instructor and
+teaching assistant checked in with teams periodically throughout
+the construction and communication sessions to answer questions
+and encouraged continued thinking and iteration. The team also
+conducted a 15-minute debrief session with the class following the
+peer evaluation to elicit students’ feedback on the exercise.
+5.1
+
+Observations
+
+Our initial deployment included a relatively small number of participants and a single trial of the exercise. Only 4 or 5 groups used
+each building material, making it difficult to draw strong quantitative conclusions about their relative effectiveness at this early stage.
+However, initial results and qualitative observations suggest that the
+exercise was quite positive.
+Because we developed and ran the exercise as part of the course,
+rather than as a laboratory experiment, we did not request ethics
+approval or student permission to publish data about their results
+or describe specific student designs. Instead, we report higher-level
+outcomes and takeaways based on our experience as instructors.
+All example photos are recreations build by the authors, rather than
+student work.
+5.1.1
+
+Designs and Iteration
+
+The original VizKit workshop focused on introducing the construction process and allowed considerable time for participants to familiarize themselves with the notion of visual encoding. In contrast, in our in-class deployment, students had already seen several
+lectures on visual encoding. As a result, students were able to spend
+considerably more time iterating and exploring design alternatives.
+Whereas most groups in the VizKit workshops produced only a single visualization, groups in the in-class version were able to produce a much larger number. During the 30-minute construction
+period, most of the groups created and recorded at least 5 distinct
+visualizations, and one group created as many as 8.
+5.1.2
+
+Peer Feedback and Opportunities for Reflection
+
+As noted previously, we deployed the construction activity as a
+follow-up to a pair of introductory lectures on encoding and visual
+perception. As a result, students were able to use the exercise to
+actively test and compare the effectiveness of multiple alternative
+visualization designs and encodings. Moreover, we observed that
+in the peer-evaluation phase, students were able to provide feedback that referenced and was grounded in the language of visual
+variables and perceptual effectiveness/expressiveness.
+5.1.3
+
+Material Choice
+
+In general, we observed that students authored creative and effective visualizations with all three construction materials.
+Clay was clearly more difficult to work with than either tiles
+or bricks, but also produced some of the most creative designs.
+Students used clay to create unique symbols, lines, spheres, gradients, and other constructs not possible with discrete building materials. However, construction using clay was much slower, and
+most groups produced fewer designs than counterparts who used
+tiles or bricks. As with sketching, students performance with clay
+also seemed more strongly correlated with their proficiency with the
+medium. Students with less artistic skill and less experience with
+
+clay struggled more to create simple visualizations than groups using tiles or bricks did.
+We had initially been concerned that the physical affordances
+of LEGO bricks would too strongly suggest vertical stacking and
+predispose students to create a reduced set of designs. However,
+this did not seem to be the case. Students produced a variety of
+flat and clustered visualizations using LEGO, and also connected
+bricks to build new 3D shapes and other structures (as in Figure 1),
+rather than just vertical bars.
+At the end of the sessions, a majority of the students listed the
+material that their group had been assigned as the most useful of the
+three. However, overall the number of students who listed LEGO
+as the most useful was notably higher than either tiles or clay.
+6 TAKEAWAYS
+Students were enthusiastic and engaged throughout the exercise.
+In their mid-semester course feedback roughly 5 weeks later, several students mentioned the exercise as one of the highlights of the
+course and noted that it helped set the tone for the class. Based on
+this feedback, we intend to use the exercise again in future courses
+and encourage other instructors to consider using it was well.
+6.1 Timing and Structure
+Breaking the exercise across two course sessions worked well in
+our case, and provided opportunities for students to reflect upon and
+refine their designs in the second session with feedback from peers
+and the teaching team. However, we benefited from a course schedule that placed both a 45 minute lecture and 110 minute tutorial on
+the same day, with only a few hours separating them. Running the
+exercise in shorter class periods or splitting it across several weeks
+is probably also feasible, but may reduce opportunities for students
+to internalize and build upon feedback they receive.
+6.2 Materials
+The exercise functioned well with all three construction materials.
+However, LEGO bricks and tiles provided a lower barrier to entry and appeared to allowed students to produce more designs and
+focus more concretely on encoding operations than modeling clay.
+Bricks also provided some new opportunities for encoding, including the ability to build primitive 3D shapes. Because bricks are also
+relatively cheap and readily available, they may be the best first
+choice for other instructors who wish to replicate the exercise.
+6.3 Scalability
+The total number of students in our target course (28) was not substantially larger than that of the previous VizKit workshops (< 20).
+However, because it relies more heavily on peer feedback and reflection, rather than direct input from the instructors, we suspect
+that the in-class version should be able to scale nicely to even larger
+class sizes.
+7 C ONCLUSION
+Based on our initial experiences, we believe that construction exercises can provide a rich, reflective, hands-on opportunity that helps
+students in visualization courses cement their understanding of basic encoding principles and trade-offs. We plan to release our classroom materials and guidelines for others to reproduce. We also
+encourage other educators to reuse and adapt these designs to their
+own teaching practice. Through this exchange, we hope to help encourage the development of a broader set of practical exercises for
+teaching visualization.
+ACKNOWLEDGEMENTS
+We thank Paul Lapides and Jagoda Walny, who helped moderate
+the construction sessions, as well as all of the CPSC 583 students
+who participated and gave feedback on the exercise.
+
+R EFERENCES
+[1] N. Brosterman, K. Togashi, and E. Himmel. Inventing kindergarten.
+1997.
+[2] L. Grammel, C. Bennett, M. Tory, and M.-a. Storey. A Survey of Visualization Construction User Interfaces. In EuroVis-Short Papers, pages
+19–23. The Eurographics Association, 2013.
+[3] S. Huron, S. Carpendale, A. Thudt, A. Tang, and M. Mauerer. Constructive visualization. In Proceedings of the 2014 conference on Designing
+interactive systems, pages 433–442. ACM, 2014.
+[4] S. Huron, Y. Jansen, and S. Carpendale. Constructing visual representations: Investigating the use of tangible tokens. Visualization and
+Computer Graphics, IEEE Transactions on, 20(12):2102–2111, 2014.
+[5] Y. Jansen, P. Dragicevic, P. Isenberg, J. Alexander, A. Karnik, J. Kildal,
+S. Subramanian, and K. Hornbæk. Opportunities and challenges for
+data physicalization. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems, CHI ’15, pages 3227–
+3236, New York, NY, USA, 2015. ACM.
+[6] Mike Bostocks. D3 workshop, 2015. Last access: 2015-07-01. http:
+//bost.ocks.org/mike/d3/workshop/.
+[7] J. Walny, S. Huron, and S. Carpendale. An Exploratory Study of Data
+Sketching for Visual Representation. Computer Graphics Forum, pages
+231–240, 2015.
+[8] T. Wun, J. Payne, S. Huron, and S. Carpendale. Comparing bar chart authoring with microsoft excel and tangibletiles. In the 18th Proceedings
+of the Eurographics Conference on Visualization (EuroVis), Groningen,
+the Netherlands, 2016. The Eurographics Association and John Wiley
+and Sons Ltd.
+
+

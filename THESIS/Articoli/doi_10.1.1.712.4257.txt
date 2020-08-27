@@ -1,0 +1,398 @@
+NeckLan: Language as Jewellery
+Tamara Flemisch∗
+
+Fateme Rajabiyazdi†
+
+Mona Hosseinkhani Loorak‡
+
+Sheelagh Carpendale§
+
+Technische Universiät Dresden
+
+University of Calgary
+
+University of Calgary
+
+University of Calgary
+
+A BSTRACT
+
+2
+
+We present NeckLan, a physical visualization in form of a decorative pendant for a necklace. The encoded data consists of the
+languages a person can speak, their corresponding language families and the person’s proficiency for each language. This project
+is motivated by internationality and globalization of research laboratories and conferences. In an iterative design process we drew
+sketches and designed NeckLan. Furthermore, we explore the possible usages of NeckLan for different purposes.
+
+People record their personal daily activities ranging from exercise
+records, to nutrition intake, to their online interactions. Personal
+visualization and personal visual analytics give people opportunities to gain insights about their data that may lead to understanding
+themselves better [2]. One of the many benefits of personal visualization is raising general awareness. It may trigger people to
+reflect on themselves and to take actions such as reminding people
+about global warming and encouraging them to take public transport [1]. In addition, personal visualization can influence communities in various domains such as raising public awareness of elections
+[10] or getting to know their communities by recognizing the most
+common languages spoken in their city [6].
+Physical representation of data has an ancient history. For thousands of years people have used tokens to represent data. Now,
+people are crafting physical data visualization, called data physicalizations [4] to help people understand, explore, and communicate data. Data physicalization has many possible benefits such as
+leveraging perception, bringing data into real life, and increasing
+engagement with data [4].
+Data physicalization has been used for different purposes including artistic, educational, and personal self-reflection. There is a
+growing interest for owning jewellery with personal data. Rezaeian and Donovan designed a DNA jewellery based on a person’s
+DNA profile [7]. Their goal was to create an aesthetically pleasing
+piece of jewellery but maintain the data readability of the complex
+DNA structure. Furthermore, Stusak et al. [8] designed a physical
+visualization of people’s running activity, Activity Sculptures, and
+investigated its impact on people’s behavior. The findings of their
+study revealed promising acceptance of the sculptures. There are
+also industrial services that design and create physical representations of people’s personal data, such as Meshu [3].
+Languages have always been a fascinating topic to explore and to
+analyze. There are many visualizations that try to convey insights
+about the distribution of languages, their structure, and their origin.
+A static visualization by López [5] shows the most common languages in the world with their number of native speakers per country. The representation is similar to a radial tree map where the upper level shows languages and the lower level represents the countries. Another example is Tube Tongues by O’Brien [6]. It shows
+a map of London with its tube stations as circles. The color of the
+circle represents what the second most spoken language around the
+station is. The size encodes how many people speak this particular
+language. The visualization as a whole shows that there are some
+areas in London which are more popular by some native speakers
+than others. However, to the best of our knowledge, there is no visualization for the languages a single person speaks. Therefore, in
+this paper, we designed a piece of jewellery based on the languages
+people know as a physical visualization to foster communication
+and engagement in unknown places.
+
+Index Terms: H.5.2 [Information Interfaces and Presentation]:
+User Interfaces—Interaction styles
+1
+
+I NTRODUCTION
+
+We designed NeckLan, a decorative pendant for a necklace or a
+keychain that portrays several facets of personal data. Examples of
+such personal data include the number, the proficiency and the type
+of languages spoken by a person.
+People from different countries who attend international events,
+or are new in multi-cultural groups like research labs or companies,
+need a way to be engaged in conversation with others. Knowing a
+few personal details about others plays a key role in getting involved
+in conversations with them.
+Information visualization can provide an engaging and aesthetically appealing way of communicating data. Thus, representing
+some personal data in a simple, aesthetic, and easily accessible way
+has the potential to attract other people’s attention for the beginning
+of a new conversation. Furthermore, this allows people to know
+what characteristics they share with others. This could potentially
+give them a possible topic to talk about and it can be used as an
+icebreaker. In particular, knowing which languages a person speaks
+might provide a common ground.
+Within the last few years, physical visualizations have become
+more popular due to the increased technical possibilities, such as
+3D printing. Using real material for portraying data can increase
+wearability and personality of a visualization. For example Meshu
+[3] is a website with which people can create their own personal
+physical visualization based on self-chosen locations. The result is
+a piece jewellery that looks like a mesh. After selecting the places,
+people can order their personal meshes as earrings, necklace or ring
+and it will be 3D printed or laser cut depending on the material.
+We think that having a little piece of jewellery that visualizes
+some personal information about people can be helpful in this regard. Thus, we designed NeckLan as a physical decorative visualization revealing the languages a person can speak together with
+some of its characteristics such as the level of proficiency, and the
+family of the language.
+In the following, we will explain our approach, the design
+choices and the pendant’s possible usage in real life scenarios.
+∗ e-mail:
+
+tamara.flemisch@tu-dresden.de
+frajabiy@ucalgary.ca
+‡ e-mail: hossem@ucalgary.ca
+§ e-mail: sheelagh@ucalgary.ca
+
+R ELATED W ORK
+
+† e-mail:
+
+3
+
+J EWELLERY D ESCRIPTION
+
+In this section, we describe the iterative design as well as different parts of the jewellery that we have designed for physical and
+personal visualization of the languages a person can speak.
+
+Figure 1: Design iteration with sketches, a+b) Lab-scope visualization of spoken languages, c) First necklace designs incorporating words and
+symbols, d + e) More abstract, geometric and jewellery-like designs
+
+3.1
+
+The Iterative Design
+
+Since we are working in a multi-cultural laboratory environment
+where people know and talk in various languages, we started to
+think of different ways that could let people communicate more
+easily and get to know each other more readily. To this end, we
+started to sketch different alternatives, three authors were involved
+in sketching design possibilities and discussing about the advantages and disadvantages of each design by considering its applicability, aesthetics, and usability of the design. Figure 1 demonstrates
+the gradual development of our design from left to the right. The
+sketches towards the left are the lab-scope visualizations representing the languages people speak in our laboratory, while the ones
+towards the right show our personal visualization designs. Figure
+4 shows our final sketch representing a pendant for the personal
+visualization of the languages spoken by a person.
+3.2
+
+We decided on different shapes to represent four language
+families including Indo-European (circle), Sino-Tibetan (triangle),
+Afro-Asiatic (square), and Japonic (pentagon) which are common
+languages among the most spoken languages in Canada. These
+shapes are shown in Figure 2.
+In order to easily differentiate languages in each family, we utilized the nine different colors that Ware has suggested can be distinguished from each other [9]. The selected colors are listed as
+follows: Green, yellow, orange, red, pink, purple, blue, aqua and
+white. Table 1 shows the list of languages and their corresponding
+colors we selected for the purpose of this paper.
+
+NeckLan
+
+We designed a gender neutral piece of jewellery, NeckLan, which is
+a wearable tangible data representation of languages that a person
+knows. The pendant encodes several aspects of personal data, such
+as the number of spoken languages, the family of each language,
+and the level of proficiency in each language. In this section, we
+describe the encoding for the representation of all data aspects, and
+the design of our pendant.
+3.2.1
+
+Language Encoding
+
+Every spoken language has a classification which consists of multiple levels of language families. Each family include a number of
+languages which have the same origin. In this paper, we only talk
+about the most commonly spoken languages in Canada1 .
+
+We chose to use color as a visual variable for representing the
+spoken languages. As humans can only distinguish and name a
+very small number of colors and there are far more languages than
+could be represented by color, we chose to take advantage of two
+visual variables for encoding the spoken languages. Thus, we used
+shape as a visual variable for representing the language family and
+color for demonstrating languages inside a family. Therefore, we
+can make use of the same colors in combination with each shape
+which leads to a higher number of representable languages.
+1 Most
+
+spoken languages in Canada
+
+Language Family
+
+Color encoding
+
+English
+French
+Punjabi
+Spanish
+German
+Italian
+Portuguese
+Persian
+Russian
+
+Indo-European
+Indo-European
+Indo-European
+Indo-European
+Indo-European
+Indo-European
+Indo-European
+Indo-European
+Indo-European
+
+Yellow
+Orange
+Red
+Blue
+Green
+Pink
+Purple
+Aqua
+White
+
+Mandarin
+Cantonese
+
+Sino-Tibetan
+Sino-Tibetan
+
+Blue
+Pink
+
+Arabic
+
+Afro-Asiatic
+
+Red
+
+Japanese
+
+Japonic
+
+Green
+
+Table 1: The sample languages used and their color encoding.
+
+3.2.2
+
+Figure 2: Four different shapes to represent language families.
+Indo-European: circle, Sino-Tibetan: triangle, Afro-Asiatic: square,
+Japonic: pentagon
+
+Language
+
+Proficiency Encoding
+
+People have different levels of proficiency in the languages they
+can speak. In this paper, we considered three levels of language
+proficiency: basic knowledge, intermediate knowledge, and fluent.
+As shown in Figure 3, three triangles inside each other show that
+either the person is fluent in the language, or that it is his/her native language. Two nested triangles demonstrate intermediate level
+language skills, and a single shape shows basic level of language
+proficiency.
+
+Figure 3: Encoding of language proficiency - one shape: basic knowledge, two shapes: intermediate knowledge, three shapes: fluent or
+native language
+
+Another possible encoding for proficiency level is the size of the
+element that represents the language. However, due to having different shapes, encoding the proficiency using size makes it incomparable with other shapes. Using the stroke thickness of the elements is another option. However, both possibilities share the problem that their attributes are not discrete but continuous. That means
+that, we could only encode a continuous level and not three separate levels of proficiency using stroke thickness and size. Therefore,
+we decided to use the tangible and discrete way of using multiple
+shapes.
+3.2.3
+
+Pendant Design
+
+For the overall design of the pendant our intention was to use a
+gender neutral appearance because we want it to be suitable for everybody. Additionally, we thought that a necklace in general might
+not be considered gender neutral and that we needed a more general
+design for our jewellery. Thus, our current design and layout of the
+single elements allows multiple ways of wearing the jewellery. It
+can be worn as a bracelet, a short or long necklace, or as a keychain
+and there are countless more options.
+Furthermore, the pendant design is abstract and does not immediately reveal the encoded data, which makes it incomprehensible
+for people who do not know its real purpose. This is a feature that
+we included intentionally to explore how this piece of jewellery
+might encourage people to engage in conversations. For example,
+one person always knows his/her own languages and their representations. Therefore, he/she will recognize the same elements on
+other people’s pendants and thus will know which languages they
+have in common. In contrast, people who do not know about the
+pendant and its goal, or those who just have not seen the shape
+or color of one element before might find it interesting to ask the
+wearer about it.
+As we have a number of different colors and shapes for encoding
+the languages, there should be a legend available for reading and
+comprehending the visual representation of data. This legend could
+either be a mobile app, a website or a poster hanging on the wall.
+The clear benefit of the poster is that it attracts people’s attention
+and fosters further conversation about the piece of jewellery.
+3.2.4
+
+Sample pendant
+
+Figure 4 shows a sample pendant that consists of four language elements. The first one on top always represents the native language.
+In this case, the triangle shape shows us that the language is SinoTibetan, and in this language family, the blue color stands for the
+language Mandarin. So, the person’s native language is Mandarin.
+Furthermore, we can see that he/she is also fluent in another language which is represented by a yellow circle. The encodings in Table 1 shows that this belongs to an Indo-European language family,
+more precisely English. The third element consists of two shapes,
+which means that the proficiency is intermediate. We can see that
+this Indo-European language is Spanish. Finally, the last element
+is a green pentagon with only one shape. Thus, the person has basic knowledge in another language that is neither Sino-Tibetan nor
+Indo-European. The shape and color of this element represent a
+Japonic language.
+In total, the person can speak four languages. He/she is a native Mandarin speaker, is fluent in English, has intermediate knowledge in Spanish and basic knowledge in Japanese. Furthermore,
+he/she knows two Indo-European languages, one Sino-Tibetan and
+one Japonic language.
+4
+
+U SING N ECK L AN
+
+IN
+
+P RACTICE
+
+We envision that our design could be useful for encoding and representing other personal information such as a person’s favourite
+music genres or his/her skills in playing musical instruments. In
+
+Figure 4: Sample for our design which encodes the spoken languages, their language families and the proficiency of the person for
+each language.
+
+the following, we provide three main ways that we think NeckLan
+is useful when representing the spoken languages of an individual.
+NeckLan as an icebreaker: For people who do not know each
+other well, NeckLan has the potential to engage them in a conversation. It could provide opportunities to meet new people and it would
+act as an icebreaker. Special events, conferences, and meetings between different companies are a few examples of using NeckLan in
+real life scenarios.
+Communicate shared spoken languages: Another way of using NeckLan is to find out the languages two people are sharing
+and can communicate with. An interesting example would be representing the sign language and its various dialects. So, deaf people
+and those who can use sign languages will be able to easily recognize who they can talk to and who will not understand what they
+are saying.
+Customize based on personal preferences: One of the main
+features of personal physical visualizations is optional customizability based on individual’s preferences. In our design, we thought
+of two main ways the languages encoded within the necklace can
+be customized.
+• Country symbols: Different people might have different
+signs in their mind as the symbol of a country or a language.
+Examples include country flag, the most popular attraction of
+the country, and the geographic location of the country on the
+map. Choosing any customized symbol allows the person to
+select the symbol he/she knows about the most, and this can
+possibly open up a visual discussion with others about the
+chosen symbol of the country and its language.
+• Country’s most common words: Languages belonging to
+different language families probably have distinct alphabets.
+We hypothesize that encoding one or more common words of
+each spoken language in the allocated borders of that language
+can catch the attention of people knowing the same alphabet.
+Moreover, people who do not know a language might find it
+interesting to talk to those who know that language and learn
+the words written on the jewellery.
+
+5 C ONCLUSION AND F UTURE W ORK
+We designed a piece of jewellery that encodes data about the languages a person speaks. We think this jewellery has the potential
+to help people get involved in conversations with new people. It
+represents the languages a person speaks, their level of proficiency,
+and the language family of each spoken language.
+For now, we decided to use an abstract appearance but there are
+possibilities of incorporating symbols or words for each language.
+We chose the abstract design because of its aesthetics and wearability. We anticipate that if too many symbols are encoded, people will
+not recognize it as a piece of jewellery and therefore, they would not
+wear it very often. However, symbols and words could have benefits regarding engagement and attracting people’s attention. We
+would like to run a study to see which one of these three versions is
+more engaging for people.
+In the future, we also want to produce some pendants for a study
+and to see how they look in reality. This could be done with 3D
+printing or assembling the shapes by ourselves.
+ACKNOWLEDGEMENTS
+This research was supported in part by AITF, NSERC, GRAND,
+Surfnet, and SMART Technologies.
+R EFERENCES
+[1] J. Froehlich, T. Dillahunt, P. Klasnja, J. Mankoff, S. Consolvo, B. Harrison, and J. A. Landay. Ubigreen: Investigating a mobile tool for
+tracking and supporting green transportation habits. In Proceedings
+of the SIGCHI Conference on Human Factors in Computing Systems,
+CHI ’09, pages 1043–1052, New York, NY, USA, 2009. ACM.
+
+[2] D. Huang, M. Tory, B. Aseniero, L. Bartram, S. Bateman, S. Carpendale, A. Tang, and R. Woodbury. Personal visualization and personal
+visual analytics. Visualization and Computer Graphics, IEEE Transactions on, 21(3):420–433, March 2015.
+[3] S. Hwang and R. Binx. Meshu - turn your places into beautiful objects.
+http://meshu.io/, 2012. Accessed: August 27, 2015.
+[4] Y. Jansen, P. Dragicevic, P. Isenberg, J. Alexander, A. Karnik, J. Kildal, S. Subramanian, and K. Hornbæk. Opportunities and Challenges
+for Data Physicalization. In CHI 2015 - Proceedings of the SIGCHI
+Conference on Human Factors in Computing Systems, Seoul, South
+Korea, Apr. 2015. ACM.
+[5] A. L. López. A world of languages - and how many speak
+them. http://www.scmp.com/infographics/article/
+1810040/infographic-world-languages, 2015.
+Accessed: August 31, 2015.
+[6] O. O’Brien. Tube tongues. http://oobrien.com/2014/10/
+tube-tongues/, 2014. Accessed: August 31, 2015.
+[7] A. Rezaeian and J. Donovan. Design of a tangible data visualization.
+In Proceedings of the 7th International Symposium on Visual Information Communication and Interaction, VINCI ’14, pages 232:232–
+232:235, New York, NY, USA, 2014. ACM.
+[8] S. Stusak, A. Tabard, F. Sauka, R. Khot, and A. Butz. Activity sculptures: Exploring the impact of physical visualizations on running activity. Visualization and Computer Graphics, IEEE Transactions on,
+20(12):2201–2210, Dec 2014.
+[9] C. Ware. Information Visualization: Perception for Design. Morgan
+Kaufmann Publishers Inc., San Francisco, CA, USA, 2004.
+[10] J. Wood, D. Badawood, J. Dykes, and A. Slingsby. Ballotmaps: Detecting name bias in alphabetically ordered ballot papers. Visualization and Computer Graphics, IEEE Transactions on, 17(12):2384–
+2391, Dec 2011.
+
+

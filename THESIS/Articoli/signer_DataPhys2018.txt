@@ -1,0 +1,451 @@
+Towards a Framework for Dynamic Data Physicalisation
+Beat Signer, Payam Ebrahimi, Timothy J. Curtin and Ahmed K.A. Abdullah
+
+Fig. 1. Various types of interactions with dynamic data physicalisations (pointing on the left, squeezing in the middle and weighting on
+the right) as they might in the future be supported by different end effectors of the tangible hologram (TangHo) [17] platform or other
+dynamic data physicalisation solutions
+Abstract—Advanced data visualisation techniques enable the exploration and analysis of large datasets. Recently, there is the
+emerging field of data physicalisation, where data is represented in physical space (e.g. via physical models) and can no longer only
+be explored visually, but also by making use of other senses such as touch. Most existing data physicalisation solutions are static
+and cannot be dynamically updated based on a user’s interaction. Our goal is to develop a framework for new forms of dynamic data
+physicalisation in order to support an interactive exploration and analysis of datasets. Based on a study of the design space for dynamic
+data physicalisation, we are therefore working on a grammar for representing the fundamental physical operations and interactions that
+can be applied to the underlying data. Our envisioned extensible data physicalisation framework will enable the rapid prototyping of
+dynamic data physicalisations and thereby support researchers who want to experiment with new combinations of physical variables or
+output devices for dynamic data physicalisation as well as designers and application developers who are interested in the development
+of innovative dynamic data physicalisation solutions.
+Index Terms—Data physicalisation, conceptual framework, software framework, interactive data exploration, data analysis
+
+1
+
+I NTRODUCTION
+
+Advanced data visualisation techniques are often used to deal with information overload when exploring and analysing large datasets. These
+visualisations help us in finding hidden patterns and connections but
+might also be used for designing the information space and interactions in order to tell a story and enable the audience to explore the
+(data) landscape with their eyes, as nicely illustrated in a TED Talk
+by David McCandless about The Beauty of Data Visualisation1 . Hans
+Rosling, who introduced new interactive visualisation tools for working with data, further stated that by using the right tools for visual
+data exploration and analysis we might ”let the dataset change your
+mindset”2 .
+Whilst data visualisation only makes use of a single modality (vision)
+for exploring and analysing a dataset, data physicalisation (DP) is a
+recently emerging research field that aims to go beyond a visual data
+representation by encoding data in physical space and, for example,
+enabling haptic interactions with a dataset. A survey on different
+designs for haptic data visualisations and how these are useful for blind
+people to feel line graphs has, for instance, been presented by Paneels
+and Roberts [13]. They showed that not only blind people can profit
+from haptic data encoding, but the haptic modality can also be used
+alongside other modalities to increase the number of variables that can
+be ”visualised”.
+
+• Beat Signer, Payam Ebrahimi and Ahmed K.A. Abdullah are with the
+Web & Information Systems Engineering Lab at Vrije Universiteit Brussel,
+E-mail: {bsigner,pebrahim,aabdulla}@vub.be.
+• Timothy J. Curtin, E-mail: tim@timcurtin.ie.
+
+The term data physicalisation has recently been proposed by
+Jansen et al. [9] as ”A data physicalization (or simply physicalization)
+is a physical artifact whose geometry or material properties encode
+data”. This definition has further been extended by Willett et al. [22],
+suggesting that data physicalisation should be considered in both, embedded as well as situated context. While situated data representations
+display data in proximity to data referents, embedded data representations display data in a way that it spatially coincides with data referents.
+Hogan and Hornecker [6] use the term multisensory data representation
+as an alternative for data physicalisation and have carried out some
+prior work towards a design space for multisensory data representation. The same idea of multisensory information visualisation has been
+discussed by Roberts and Walker [14] in their proposal for a united
+theory of visualisation that unifies multiple senses and allow users to
+integrate different modalities. They motivate further research on the
+identification of different perceptual variables and design strategies
+for representing information across different modalities. Multisensory
+data representation—including for example touch or sound—can help
+in enhancing the perception of complex data relationships. However,
+these new forms of data representation approaches require a better
+understanding of the semiotics of multisensory data design [16]. The
+emerging interest in data physicalisation is also reflected by recent
+workshops about the challenges and future directions for making data
+physical [1] as well as some dedicated data physicalisation websites,
+including an extensive Wiki on data physicalisation3 .
+Physical visualisations are not new and the earliest forms of physical visualisations date back to the use of Mesopotamian clay tokens
+in 8000 BC [15]. While many different forms of physical visualisations
+have been used in the past, these are normally static physicalisations
+which cannot easily be updated when the underlying data changes, or be
+
+1 https://www.youtube.com/watch?v=5Zg-C8AAIGg
+2 https://www.ted.com/talks/hans
+
+rosling at state
+
+3 http://dataphys.org
+
+Final version published in Proceedings of the International Workshop Toward a
+Design Language for Data Physicalization, Berlin, Germany, October 2018
+
+dynamically changed based on some user interaction with the physical
+data representation. A major advantage of using data physicalisation
+for the exploration and analysis of datasets is the fact that physical visualisations can be more efficient as shown in a study by Jansen et al. [8]
+where the interaction with 3D bar chart visualisations on a screen has
+been compared to the interaction with a physical version of the bar
+charts. Vande Moere [11] questions the current use of information displays to simulate real world metaphors which are then used to represent
+abstract data, and proposed different forms of data physicalisation via
+ambient displays and pixel sculptures to go beyond ”the tyranny of
+the pixel”. Instead of using classical screen-based data visualisation
+techniques, abstract data can be physically embodied in data sculptures
+as illustrated in a qualitative study by Vande Moere [12].
+Many sophisticated data visualisations are based on heuristic approaches [3] rather than any structure or grammar. However, in
+The Grammar of Graphics [21], Wilkinson follows a more formal
+and fundamental approach for data-driven visualisation. An early implementation of automatic data visualisation was Mackinlay’s [10]
+automatic design of graphical presentations of relational information
+stored in databases which later resulted in the VizQL language to query,
+analyse and visualise data, and inspired solutions such as the wellknown Tableau4 data visualisation tool. While there is currently no
+formal and fundamental data-driven approach for data physicalisation,
+this might be the key for automatically dealing with complex data
+physicalisations in the future.
+The process of creating static data physicalisations via MakerVis
+has been studied in three case studies by Swaminathan et al. [18] and
+the limitations of current physicalisation fabrication workflows have
+been illustrated. While existing data physicalisation solutions currently
+offer limited support for dynamic updates, there is a need for dynamic
+data physicalisation [9] to support interactive data exploration and
+analysis tasks where the physicalisation is updated based on a user’s
+interaction. Dynamic data physicalisation in the form of bar charts
+on a shape-changing display has, for example, been investigated by
+Taher et al. [19]. In the long term, the vision-driven design research
+on radical atoms and programmable matter by Ishii et al. [7] might
+lead to more flexible materials with programmable physical properties
+which could be applied in data physicalisation. While Ishii’s research
+group is currently developing shape-changing physical interfaces to
+simulate interactions with programmable mater that might be available
+in the future, our lab is working on tangible holograms and the tangible
+hologram (TangHo) platform [17] that can also be used for different
+forms of dynamic data physicalisation.
+The emerging field of data physicalisation is promising for the representation of multidimensional datasets and the exploration and analysis
+of data via multiple modalities, but there are many open research
+problems—as for example stated by Jansen et al. [9]—that have to be
+addressed in order to better understand and develop better data physicalisation experiences. In the following, we list the research problems
+related to our work on a framework for dynamic data physicalisation:
+
+• For a more systematic approach in the design and development
+of data physicalisations, there is a need for a conceptual data
+physicalisation framework as, for example, seen for the domain
+of tangible interaction [20].
+• Rather than implementing data physicalisations from scratch,
+there is a need for data physicalisation software frameworks
+to support designers and developers in the rapid prototyping of
+design alternatives and the evaluation of their performance.
+• The combination of physical interactions and synthetic interactions is a challenging task and there is a lack of data physicalisation interaction design guidelines on how to best combine
+physical with synthetic interactions. Also new forms of flexible
+multi-user interactions that are supported by data physicalisation—
+and go beyond the traditional WIMP interaction—need to be
+further investigated.
+2
+
+DYNAMIC DATA P HYSICALISATION F RAMEWORK
+
+While many existing data physicalisation solutions are built from
+scratch, our objective is to develop a conceptual as well as software
+framework that can be used for the rapid prototyping and experimentation with dynamic data physicalisation solutions. For a more systematic
+approach in the design and development of data physicalisations, there
+is a need for a conceptual data physicalisation framework as, for example, seen for the domain of tangible interaction [20], which can then
+also serve the development of a software framework for dynamic data
+physicalistion. The core of our dynamic data physicalisation framework
+will be informed by an investigation of the dynamic data physicalisation design space as well as a dynamic data physicalisation grammar.
+The software framework for dynamic data physicalisation that we are
+currently developing is going to be extensible via specific software
+drivers in order to ensure that it can deal with future data physicalisation technologies and smart materials. An overview of our conceptual
+framework for dynamic data physicalisation is given in Figure 2.
+User Level
+
+Specification
+
+Assembly
+
+Interaction
+
+Driver
+Selection
+
+Feedback
+Data
+
+Interpreter
+
+Instruction Set
+
+Processing
+
+Intermediary
+Representations
+
+Output
+PhysDIO
+
+Physicalisations
+
+Framework Level
+
+Fig. 2. Conceptual framework for dynamic data physicalisation
+
+• Most existing data physicalisation applications are static and
+cannot be easily updated. In order to support an interactive exploration and analysis of datasets as seen in on-screen visualisation
+solutions (human-in-the-loop data exploration), there is a need
+for new forms of dynamic data visualisation.
+• Many existing data physicalisation solutions follow a heuristic
+approach. In order to build more flexible and data-driven physicalisations, there is a need for a formal and fundamental definition
+in the form of a grammar of data physicalisation.
+• While there is some initial research on the data physicalisation
+design space, there is a need to better understand the design
+space for dynamic data physicalisation, including the physical
+encoding of data and the perceptual effectiveness of this encoding
+via different modalities.
+4 https://www.tableau.com
+
+Data is going to be interpreted based on a number of specifications
+provided by the user (e.g. the set of data dimensions to be physicalised)
+in combination with the instruction set defined by the data physicalisation grammar. The resulting intermediary representation is then
+shown to the user together with possible physical variables in order
+that they can assemble the desired physical device-independent output (PhysDIO) consisting of a selection of these physical variables
+based on their preferences (e.g. a user might prefer haptic over thermal
+physicalisation). In a final phase, the user has the chance to select
+between different available drivers/devices which will then be used for
+transforming the PhysDIO into a concrete dynamic data physicalisation.
+Note that in contrast to existing static data physicalisations, at this
+stage any interaction by one or multiple users with the physical data
+representation might change the underlying specification and result in
+a dynamic update of the corresponding data physicalisation.
+Our goal is to design a software framework for dynamic data physicalisation by envisioning future technological advancements similar to
+
+dynamic data physicalisation. As stated earlier, we take existing technologies into account, but in our vison-driven design research we also
+consider dynamic physicalisations which might currently not yet be
+technically feasible.
+A detailed investigation of the dynamic data physicalisation design
+space helps in coming up with different forms of physical data encodings and a mapping of physical variables to the variables of a data
+physicalisation grammar. Thereby, we have to take into account that the
+features of a physical variable will dictate the type of digital information that it can represent (e.g. depending on how many different values
+a user will be able to distinguish). It is therefore necessary to evaluate
+the perceptual effectiveness of individual physical variables as well
+as the potential combinations of physical variables in order to know
+how effective they are in encoding and communicating data. This can
+happen through the study of existing literature as well as via specific
+experiments which help us to better understand for what kind of data a
+physicalisation makes sense and will ultimately result in an improved
+perceptual effectiveness.
+Fig. 3. User interacting with an early prototype of the TangHo platform
+consisting of a Microsoft HoloLens and two wearable Lego Mindstormsbased robot arms with their changeable end effectors for the physical
+augmentation of digital holograms
+
+the vision-driven design research approach proposed by Ishii et al. [7]
+for programmable matter. While we focus on the fundamental operators and interactions for dynamic data physicalisation, not all of
+the features offered by the core of our framework might already be
+supported by existing data physicalisation technologies. However, our
+framework for dynamic data physicalisation can be extended via specific software drivers transforming the physical device-independent
+output into some concrete data physicalisations. For example, such
+a driver might transform the PhysDIO produced during the processing phase into commands for the tangible hologram (TangHo) [17]
+platform which is currently developed in our research lab and enables
+the experimentation with different physical variables for new forms of
+dynamic data physicalisation. Figure 3 shows a user interacting with
+an early prototype of the TangHo platform.
+Our data physicalisation framework is going to make use of existing
+approaches for importing data (e.g. reading data from a file, connecting
+to a relational database management system (RDBMS) or connecting
+to a cluster). We see our dynamic data physicalisation approach as an
+alternative to pure data visualisation and will therefore not focus on
+other issues of data analysis (e.g. data warehousing, machine learning
+or clustering) but rather assume that users understand that some preprocessing might be necessary depending on the type of data.
+Further, our goal is to make the software framework available to the
+research community in order that other researchers working on data
+physicalisation can profit from its rapid prototyping and extensibility
+features. The resulting framework can be used for building various
+forms of data physicalisation applications, ranging from physical interfaces for the playful exploration and analysis of datasets (e.g. in a
+museum as seen in ArtVis [5]) to the professional use by a data scientist
+in an exploratory data analysis task.
+2.1 Dynamic Data Physicalisation Design Space
+In order to build a dynamic data physicalisation framework, we first
+have to investigate the design space for dynamic data physicalisation
+and evaluate recent technological developments for dynamic data physicalisation. Thereby, we have to define a set of physical variables
+for dynamic data physicalisation and verify their effectiveness in the
+multisensory representation of multidimensional datasets. This can
+be achieved by taking existing work on multisensory data representation [6] into account and by analysing recent technological developments for dynamic data physicalisation. These technological developments range from low-level actuators for implementing physical
+variables such as smoothness, hardness or sponginess to the simulation
+of programmable matter [7] or the use of tangible holograms [17] for
+
+2.2
+
+Data Physicalisation Grammar
+
+We are less interested in designing specific data physicalisations based
+on a heuristic approach but our objective is rather to define a formal
+grammar for dynamic data physicalisation. This formal specification
+can then be used in the automatic and data-driven data physicalisation
+approach shown earlier in Figure 2, which will be able do deal with
+complex physicalisations and interactions. To the best of our knowledge, there is currently no such grammar and data-driven approach for
+dynamic data physicalisation.
+We are currently investigating a way to formally represent physicalisations and defining a set of rules and models to produce them. The
+definition of a grammar for data physicalisation is thereby informed
+by existing work in the domains of Information Visualisation (InfoVis)
+and Scientific Visualisation (SciVis) as well as recent developments
+in Human-Computer Interaction (HCI) and Tangible, Embedded and
+Embodied Interaction (TEI). Note that we are adopting a more general
+meaning of grammar—that goes beyond a grammar for programming
+languages—similar to the work of Wilkinson [21]. The data physicalisation grammar is going to support different types of variables. We
+plan to distinguish between atomic variables which are supported by
+the data physicalisation grammar out of the box and complex variables
+which are produced from atomic variables via the grammar’s algebra.
+The data physicalisation algebra dictates the possible sets, rules and
+operators over physicalisations and defines the set of possible operators
+between physicalisations. It is an open research question whether it is
+possible to apply all existing operators (e.g. unary and binary) to physicalisations or whether we have to define a subset of these operators. An
+advantage of dynamic data physicalisation is that new direct forms of
+interactions for the exploration and analysis of the underlying data are
+supported. Similar to Ishii’s interactions for programmable matter [7],
+we therefore plan to define a set of possible interactions (e.g. squeezing
+or weighting) over physicalisations. These interactions can be atomic
+but the data physicalisation grammar’s algebra should also enable the
+production of more complex interactions out of the atomic ones. Note
+that the data physicalisation grammar forms the foundation for our
+data-driven approach for data physicalisation and the corresponding
+software framework.
+2.3
+
+Design Guidelines
+
+Similar to Bertin’s [2] work for information visualisation, we are developing a systematic catalogue to help designers in choosing the right
+physical variables and combination of modalities when designing interactions for their data physicalisations. Our general guidelines for
+the new field of dynamic data physicalisation will include some formal
+design guidelines in terms of which physical variables and data physicalisations can be used for what type of data. In addition to these data
+physicalisation design guidelines, one also has to investigate guidelines
+for the interaction with data physicalisations and how to best combine
+different physical and digital variables for input as well as output in
+
+order to provide an effective human-information interaction. The definition of these design and interaction guidelines is tightly coupled to
+our framework’s data physicalisation grammar and the guidelines are
+systematically evaluated for their perceptual effectiveness via a growing set of dynamic data physicalisation use cases that are implemented
+based the proposed dynamic data physicalisation software framework.
+3
+
+D ISCUSSION
+
+AND
+
+C ONCLUSION
+
+The proposed framework for dynamic data physicalisation is going
+to serve different user groups. First of all, the grammar for dynamic
+data physicalisation represents a formalisation of the supported physical variables and instructions as well as their potential combinations
+and might foster the discussion within and across different research
+communities—including data physicalisation, human-computer interaction (HCI) or tangible, embedded and embodied interaction—about
+fundamental forms of data physicalisation interactions. Note that the
+grammar is expected to evolve over time based on new insights by
+the research community about possible physical variables and their
+potential combinations to form new dynamic data physicalisations.
+Researchers and developers of new output devices for dynamic
+data physicalisations can also profit from the presented dynamic data
+physicalisation framework since they get immediate access to different
+existing datasets as well as the entire processing and generation of physical device-independent output by only having to implement a software
+driver for their new data physicalisation output devices. Of course also
+data scientists and knowledge workers could profit by having access
+to innovative interfaces for the exploration and interaction with highdimensional datasets which might help to improve their efficiency and
+insights while exploring and analysing rich multi-dimensional datasets.
+Our data-driven approach with a grammar specifying the mappings
+of data to physical variables and their possible combinations to form
+more complex data physicalisations might further guide data scientists
+when creating dynamic data physicalisations and thereby foster the
+gain of knowledge through systematic study [4]. Existing interactive
+clustering approaches in the data science research field might profit
+from new interfaces making use of dynamic data physicalisation in
+order to not only make the decision making more accurate, but also
+more user-friendly and enjoyable for data workers. Note that different
+forms of data physicalisation are often also used in art installations for
+transporting messages about potentially complex datasets and facts to a
+larger audience or to enable post-WIMP interactions with these physical
+installations. The proposed framework for dynamic data physicalisation might support artists in building new forms of tangible multi-user
+interfaces (e.g. as seen in the ArtVis [5] project for digital output only)
+and provide them access to the latest findings on how to combine various physical variables, the best forms of multimodal interactions as
+well as recent developments regarding output devices for dynamic data
+physicalisation.
+It is important to stress that we are interested in a conceptual as well
+as software framework for dynamic data physicalisation that enables
+the experimentation and definition of fundamental guidelines for data
+physicalisation. In our vision-driven research approach we thereby
+ignore the fact that the necessary technology for some of the proposed
+physicalisations might not yet be available, and already want to investigate new forms of interactions that might be supported by new
+forms of data physicalisation output devices in the near future. We
+strongly believe that, similar to the field of information visualisation
+and the work of Bertin [2], there is a need for fundamental research
+on dynamic data physicalisation design guidelines for the representation of higher-dimensional datasets and that the presented dynamic
+data physicalisation framework can serve as a common ground and
+communication platform (e.g. via the formalised data physicalisation
+grammar for data-driven physicalisations) for researchers and developers working on these design and interaction guidelines. By presenting
+and discussing our proposal and current work on a framework for dynamic data physicalisation with the scientific community, we hope
+to establish a working group who might be interested in contributing
+to the idea of a formal data physicalisation grammar and a dynamic
+
+data physicalisation software framework that can serve as a research
+platform for the experimentation and evaluation of emerging forms of
+dynamic data physicalisation.
+R EFERENCES
+[1] J. Alexander, Y. Jansen, K. Hornbæk, J. Kildal, and A. Karnik. Exploring
+the Challenges of Making Data Physical. In Proceedings of CHI EA 2005.
+Seoul, Republic of Korea, April 2015. doi: 10.1145/2702613.2702659
+[2] J. Bertin. Semiology of Graphics: Diagrams, Networks, Maps. Esri Press,
+January 2011.
+[3] A. Cuttone, M. K. Petersen, and J. E. Larsen. Four Data Visualization
+Heuristics to Facilitate Reflection in Personal Informatics. In Proceedings
+of UAHCI 2014. Heraklion, Greece, June 2014. doi: 10.1007/978-3-319
+-07509-9 51
+[4] V. Dhar. Data Science and Prediction. Communications of the ACM,
+56(12), December 2013. doi: 10.1145/2500499
+[5] B. Dumas, B. Moerman, S. Trullemans, and B. Signer. ArtVis: Combining Advanced Visualisation and Tangible Interaction for the Exploration,
+Analysis and Browsing of Digital Artwork Collections. In Proceedings of
+AVI 2014. Como, Italy, May 2014. doi: 10.1145/2598153.2598159
+[6] T. Hogan and E. Hornecker. Towards a Design Space for Multisensory
+Data Representation. Interacting with Computers, 29(2), May 2016. doi:
+10.1093/iwc/iww015
+[7] H. Ishii, D. Lakatos, L. Bonanni, and J.-B. Labrune. Radical Atoms:
+Beyond Tangible Bits, Toward Transformable Materials. interactions,
+19(1), January 2012. doi: 10.1145/2065327.2065337
+[8] Y. Jansen, P. Dragicevic, and J.-D. Fekete. Evaluating the Efficiency of
+Physical Visualizations. In Proceedings of CHI 2013. Paris, France, April
+2013. doi: 10.1145/2470654.2481359
+[9] Y. Jansen, P. Dragicevic, P. Isenberg, J. Alexander, A. Karnik, J. Kildal,
+S. Subramanian, and K. Hornbæk. Opportunities and Challenges for Data
+Physicalization. In Proceedings of CHI 2015. Seoul, Republic of Korea,
+April 2015. doi: 10.1145/2702123.2702180
+[10] J. Mackinlay. Automating the Design of Graphical Presentations of Relational Information. ACM Transactions on Graphics (TOG), 5(2), April
+1986. doi: 10.1145/22949.22950
+[11] A. V. Moere. Beyond the Tyranny of the Pixel: Exploring the Physicality
+of Information Visualization. In Proceedings of IV 2008. London, UK,
+July 2008. doi: 10.1109/IV.2008.84
+[12] A. V. Moere and S. Patel. The Physical Visualization of Information:
+Designing Data Sculptures in an Educational Context. In Proceedings
+of VINCI 2009. Sydney, Australia, September 2009. doi: 10.1007/978-1
+-4419-0312-9 1
+[13] S. Paneels and J. C. Roberts. Review of Designs for Haptic Data Visualization. IEEE Transactions on Haptics, 3(2), April 2010. doi: 10.1109/TOH.
+2009.44
+[14] J. C. Roberts and R. Walker. Using All Our Senses: The Need for a
+Unified Theoretical Approach to Multi-sensory Information Visualization.
+In Proceedings of VisWeek 2010. Salt Lake City, USA, October 2010.
+[15] D. Schmandt-Besserat. Before Writing: Volume 1: From Counting to
+Cuneiform. University of Texas Press, December 1992.
+[16] P. Search. Interactive Multisensory Data Representation. In Proceedings
+of DUXU 2015. Los Angeles, USA, 2015. doi: 10.1007/978-3-319-20898
+-5 35
+[17] B. Signer and T. J. Curtin. Tangible Holograms: Towards Mobile Physical
+Augmentation of Virtual Objects. Technical Report WISE-2017-01, WISE
+Lab, March 2017.
+[18] S. Swaminathan, C. Shi, Y. Jansen, P. Dragicevic, L. A. Oehlberg, and J.-D.
+Fekete. Supporting the Design and Fabrication of Physical Visualizations.
+In Proceedings of CHI 2014. Toronto, Canada, April 2014. doi: 10.1145/
+2556288.2557310
+[19] F. Taher, Y. Jansen, J. Woodruff, J. Hardy, K. Hornbæk, and J. Alexande.
+Investigating the Use of a Dynamic Physical Bar Chart for Data Exploration and Presentation. IEEE Transactions on Visualization and Computer
+Graphics, 23(1), January 2017. doi: 10.1109/TVCG.2016.2598498
+[20] B. Ullmer and H. Ishii. Emerging Frameworks for Tangible User Interfaces.
+IBM Systems Journal, 39(3–4), July 2000. doi: 10.1147/sj.393.0915
+[21] L. Wilkinson. The Grammar of Graphics. Springer, July 2005. doi: 10.
+1007/0-387-28695-0
+[22] W. Willett, Y. Jansen, and P. Dragicevic. Embedded Data Representations. IEEE Transactions on Visualization and Computer Graphics, 23(1),
+January 2017. doi: 10.1109/TVCG.2016.2598608
+
+

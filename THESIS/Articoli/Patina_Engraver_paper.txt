@@ -1,0 +1,1234 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/275347183
+
+Patina Engraver: Visualizing Activity Logs as Patina in Fashionable Trackers
+Conference Paper · April 2015
+DOI: 10.1145/2702123.2702213
+
+CITATIONS
+
+READS
+
+17
+
+521
+
+1 author:
+Moon-Hwan Lee
+Korea Advanced Institute of Science and Technology
+17 PUBLICATIONS 61 CITATIONS
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Industry Funded Projects View project
+
+All content following this page was uploaded by Moon-Hwan Lee on 01 May 2015.
+The user has requested enhancement of the downloaded file.
+
+I Like What I See - Interface Aesthetics
+
+CHI 2015, Crossings, Seoul, Korea
+
+Patina Engraver: Visualizing Activity Logs as Patina
+in Fashionable Trackers
+Moon-Hwan Lee, Seijin Cha, Tek-Jin Nam
+CIDR Lab, Department of Industrial Design, KAIST
+291 Daehak-ro, Yuseong-gu, Daejeon 305-701, Republic of Korea
+{moonhwan, sjcha, tjnam}@kaist.ac.kr
+ABSTRACT
+
+Despite technological improvements in commercial activity
+trackers, little attention has been given to their emotional,
+social, or fashion-related qualities, such as their visual
+aesthetics and their relationship to self-expression and
+social connection. As an alternative integrated approach
+incorporating HCI, fashion, and product design, our project
+made use of the characteristics of patina to improve activity
+trackers as fashionable wearables. We developed the Patina
+Engraving System, which engraves patina-like patterns on
+an activity tracker according to a user’s activity logs. Using
+a piercing technique, the patina of activity logs has been
+made abstract, visually rich, gradually emerging, and
+historically accumulated. During the field trial, we found
+that the patina motivated the participants to increase
+exercises for engraving aesthetic patinas. A tracker with
+patina triggered spontaneous social interactions in face-toface situations. The participants also cherished the trackers
+that held their own history. Based on the field trial, we
+discuss design implications for utilizing patina in designing
+future fashionable technologies.
+Author Keywords
+
+Activity tracker; patina; fashion; digital fabrication.
+ACM Classification Keywords
+
+H.5.m. Information interfaces and presentation (e.g., HCI):
+Miscellaneous.
+INTRODUCTION
+
+Recently, there has been a proliferation of commercial
+activity trackers for monitoring physical activity related to
+health and wellbeing, including Jawbone UP, Fitbit, Misfit
+Wearables, and others [23]. Most of the activity trackers
+collect an activity log and help users reflect on their life by
+visualizing the data in mobile or web applications. Related
+to tracking devices, the field of HCI has mainly contributed
+to practical issues such as how to improve sensing
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. Copyrights for
+components of this work owned by others than ACM must be honored.
+Abstracting with credit is permitted. To copy otherwise, or republish, to
+post on servers or to redistribute to lists, requires prior specific permission
+and/or a fee. Request permissions from Permissions@acm.org.
+CHI 2015, April 18 - 23 2015, Seoul, Republic of Korea
+Copyright 2015 ACM 978-1-4503-3145-6/15/04…$15.00
+http://dx.doi.org/10.1145/2702123.2702213
+
+mechanisms and understand
+methods [4, 5, 9, 26].
+
+diverse
+
+self-monitoring
+
+However, one of the important aspects of activity trackers is
+that they are personal fashion items that play a role in
+personal identity, visual aesthetics, and social
+communication that goes beyond technological features
+such as usability and sensing accuracy etc. [2, 28, 32].
+Though activity trackers have been improved as a personal
+activity monitoring tool, it is necessary to consider issues
+related to HCI’s third wave such as engaging user
+experience and the meaningfulness of digital artifacts [8].
+Considering the way that activity trackers are worn in
+everyday life, it is especially important to investigate how
+they can be improved as fashion items. Since the majority
+of activity trackers are worn in a manner that makes them
+visible, customers inevitably consider not only their
+functionalities but also their visual appearance. Some
+companies have started to raise their competitiveness by
+cooperating with fashion brands because the technological
+aspects of trackers have become otherwise equivalent in the
+market [11].
+As an alternative design approach to activity trackers, we
+focused on the intersection of HCI and fashionable product
+design. In particular, we were interested in the concept of
+patina in activity trackers. Figuratively, patina refers to any
+fading, darkening, or other sign of age that is felt to be
+natural and/or unavoidable [18]. It is known that artists and
+designers often deliberately use patina as a design resource
+for constructing aesthetic properties, lending credibility to
+an object or bestowing a “warm” feeling through art or
+product design [6, 37]. For similar purposes, we applied the
+concept of patina for designing activity tracking systems to
+improve the tracking experience of those who wear trackers
+to monitor activity.
+In this paper, we present the Patina Engraving System
+(Patina Engraver and Patina Tracker), which engraves
+patina-like patterns on the wristband of activity trackers and
+thereby visualizes users’ accumulated activity logs.
+Accordingly, the appearance of the trackers changes along
+with the users’ tracking experience. Using the system, we
+conducted a field trial with 8 participants for 5 weeks to
+learn how the system was used in their lives.
+This paper makes several contributions. First, it details a
+novel activity log visualization technique by applying the
+concept of patina. The Patina Engraving System is
+
+1173
+
+I Like What I See - Interface Aesthetics
+
+CHI 2015, Crossings, Seoul, Korea
+
+proposed as an example of an alternative approach to
+aesthetically represent an activity tracker. The process and
+rationale behind the system design are presented as design
+knowledge. The results of the field trial improve our
+understanding as to whether patina-like engraving enriches
+the tracking experience. Finally, it guides the design of
+future fashionable products with patina by suggesting
+design issues and opportunities.
+BACKGROUND & RELATED WORK
+
+This work is related to the research topics at the intersection
+of personal informatics and fashionable wearables.
+Regarding personal informatics, works on quantified-self
+with activity tracking and visualization of activity logs are
+particularly relevant. Diverse development cases also exist
+in the field of personalized activity tracking in fashionable
+wearables.
+Quantified-self: General Use of Activity Trackers
+
+The area of quantified-self movement has developed
+guidelines as to how to collect and use activity data, often
+from trackers and tracking applications [4, 5, 24, 25]. For
+instance, Rooksby et al. discussed various styles of tracking,
+including goal driven tracking and documentary tracking
+[30]. Li et al. found six kinds of questions that people ask
+about their data: Status, History, Goals, Discrepancies,
+Context, and Factors [25]. They also found that certain
+kinds of questions are more important depending on the
+phases of reflection: Discovery and Maintenance. The
+previous work in this domain contributed to our
+understanding of the practices of tracking systems. It
+emphasized the necessity of producing more than
+technological improvements in activity tracking, the
+importance of considering the emotional aspects of tracking,
+and the notion of developing social tracking beyond the
+ability to publish data to social networks [30]. Nevertheless,
+relatively little attention was paid to a wearable tracker.
+Specifically, this study takes a design approach to activity
+trackers as a fashionable item and attempts to improve their
+emotional and social qualities.
+Visualization of Activity Logs: From Virtual Medium to
+Physical Medium
+
+For supporting effective self-monitoring and motivating
+users to partake in physical activity, visualization has been
+a key issue in personal informatics. The majority of
+commercial trackers mainly target the virtual medium using
+numbers, graphs, and metaphors [10, 31]. Numbers and
+graphs take up little screen space and can be easy to
+interpret, however there can be usability and interpretation
+issues when it comes to larger data sets [36]. Some
+researchers suggested using virtual metaphors such as
+interactive art displays [9] or growing a pet according to the
+activity log [26]. Their research shows that this type of
+visualization can be engaging and fun.
+
+Beyond the virtual medium, research has been carried out
+relating to the use of the physical medium for visualizing
+physiological and activity logs. For instance, Requena
+
+presented research projects to fabricate the physical
+medium as jewelry based on physiological data [29].
+Related to the physical representation of activity logs, Khot
+et al. developed SweatAtoms, which transforms the
+physical activity data into 3D printed artifacts [21]. They
+found that a physical medium made people more conscious
+of their involvement in physical activity. Although the
+previous work showed the potential for utilizing a physical
+medium, there are limitations to deploying this approach in
+activity trackers and tracking systems. As explained in Khot
+et al.’s research [21], the building process using a 3D
+printer is a laborious and time-intensive process that is
+uncomfortable for general users. Additionally, because the
+physical object represents just one moment of tracking,
+users need to generate a number of objects for long-term
+activity logging.
+In our study, we tried to exploit the advantages of the
+physical medium and reduce the burden of the building
+process. In particular, our work differs from previous
+research in that we exploited patina as a physical medium to
+visualize activity logs just as artists deliberately add patina
+for constructing aesthetic properties and simulating
+antiquity in newly-made objects.
+Activity Trackers as Fashionable Wearables
+
+The term fashionable wearables is used to refer to designed
+garments or accessories that combine aesthetics and style
+with functional technologies [32]. The embedding of
+electronics into fashion items has been investigated in
+research for many years, and there are even several
+commercial cases for supporting physical activity. Most of
+them mainly sense and transmit the wearer’s physiological
+and movement data in real-time [1, 35]. As a research
+prototype, Social Fabric Fitness provides a glanceable
+shared screen on the back of a runners’ shirt to increase
+awareness of group fitness performance [27]. Though
+several wearable devices have been designed to sense and
+monitor physical activity, they have been less than
+satisfactory on the fashion front. Like other wearable
+devices, activity trackers are generally designed as plain
+black (or single color) wristbands and look more like digital
+watch straps. To improve the quality of trackers as fashion
+accessories, some fitness tracker companies collaborated
+with luxury fashion brands [11]. Nevertheless, while the
+current design approach might improve trackers’ visual
+appearance when they are worn, the design approach
+focusing on the visual appearance has little relationship
+with the main function of trackers such as activity tracking
+and supporting activity monitoring. Additionally, given the
+popularization of digital fabrication in the HCI field [20, 21,
+36], there is now the potential to strengthen the diverse
+roles of a fashion item by allowing it to express a user’s
+personal identity or improve social connections as well as
+visual aesthetics.
+These cases illustrate the need for an alternative design
+approach that integrates activity log visualization in the area
+
+1174
+
+I Like What I See - Interface Aesthetics
+
+CHI 2015, Crossings, Seoul, Korea
+
+of personal informatics with an understanding of activity
+trackers as fashionable wearables in the fashion and product
+design field. This integration is important not only for
+improving users’ physical activity, but also for supporting
+and engaging user experience in the long-term. To exceed
+the current design approach, which focuses on visual
+aesthetics, this research explored a design approach that
+utilizes activity logs for making patina-like patterns.
+DESIGN EXPLORATION
+
+We exploited the concept of patina for visualizing activity
+logs physically and cumulatively. In what follows, we
+explain the characteristics of patina, our design exploration,
+and the rationale behind our decisions relative to the
+materials and technique used to create patina.
+
+systems by visualizing activity data in the form of patina
+and applying the patina to tracking devices and systems.
+Technique and Material for Engraving Patina
+
+With consideration given to the characteristics of patina, we
+tested visualization techniques in a physical medium and
+materials to simulate patina. In particular, inspired by
+stippling [34] and tattooing, we explored a piercing
+technique that inserts a needle into the surface, which is
+attached to an oscillating unit (solenoid in our case). As the
+unit rapidly and repeatedly drives the needles in and out of
+the surface, the needles leave small dots on the surface.
+
+Visualization of Activity Logs in the Form of Patina
+
+The word patina refers to a thin layer that forms variously
+on the surface of stone, on metals, and on wooden furniture
+(the sheen produced by age, wear, and polishing). It can
+also refer to any change a surface acquires through age and
+exposure [18]. Patina has been used to increase the value of
+artifacts in art and design. Today, the terms patina and
+patination are used in a broader sense, denoting techniques
+for applying processes connected with the ageing of the
+surfaces of works of art or the accumulated changes in
+surface texture and color that result from an object’s normal
+use. Designers have intentionally used some materials on
+the surface of objects to leave patina that gives a sense of
+history [14, 17]. Specifically, according to literature on art
+and culture, the characteristics of patina can be classified as
+below [5, 18, 37]:
+• Abstract: Patina provides information in ambiguous
+ways. The abstract and subtle shape of patina may
+stimulate users’ reflection.
+• Visually rich: Patina is often used to make an object look
+aesthetically pleasing. It is often expressed on the surface
+of the object by changing color or texture as shown in a
+leather product.
+• Gradually emerging (on a physically limited surface):
+Patina is created gradually in a limited space on a surface.
+In the long term, the patina emerges, and its expression
+becomes thicker and richer.
+• Historically accumulated: Patina shows the past history
+of an object’s use. People may leave the patina
+intentionally to mark an event or person. Or the patina
+may be unintentionally generated while the object is
+touched or exposed to the environment.
+The characteristics of patina have already been applied in
+the art and design area. Some cases exist in applications of
+graphical interfaces that metaphorically exploit patina to
+provide information about user history in the HCI area [19,
+33]. Few cases exist for improving the quality of a digital
+device. We tried to utilize physical patina in tracking
+
+Figure 1. Material and technique for engraving patina
+
+By exploring and comparing other fabrication techniques
+such as CNC milling, laser cutting, and 3D printing, we
+found the piercing technique has several advantages for
+visualizing patina. First, its expression is relatively
+noticeable in visual and tactile ways like the cases of tattoo
+or stippling arts. Second, it expresses patina gradually on a
+physically limited surface. Since CNC milling and laser
+cutting takes the surface away, and 3D printing makes the
+surface bigger, there are limits to the amount of patina that
+can be expressed on the same surface. On the contrary,
+piercing can express detailed and gradual traces on a
+limited surface. Third, the set-up and clean-up process of a
+piercing device is relatively convenient. CNC milling and
+laser cutting create lots of dust and they are risky for
+general customers. 3D printing takes a long time to
+construct objects and requires inserting materials
+continuously.
+Throughout the process of exploring materials to pierce,
+such as a silicone pad, leather, etc., we developed material
+to maximize the visual and tactile effectiveness of the
+patina produced by the piercing technique (Figure 1.a). The
+developed material consists of three layers. The first layer
+at the bottom is a silicone pad (1mm). On the silicone pad, a
+brightly colored PVC sheet (125 µm) is attached. Then, as a
+third layer, a dark paint is evenly spread on the PVC sheet.
+When the needle reaches the painted surface, the painted
+layer is stripped down. This causes the bright sheet to stand
+out against the dark painted layer, making the pattern both
+visually and tactually vivid (Figure 1.b).
+
+1175
+
+I Like What I See - Interface Aesthetics
+
+CHI 2015, Crossings, Seoul, Korea
+
+Visual Patterns of Patina
+
+We also explored visual patterns for representing patina that
+reinforce characteristics such as abstract, visually rich,
+gradually emerging, and historically accumulated. Since
+the abstract and visually rich aspects are satisfied by the
+allocation of pierced dots while the historical aspect is
+satisfied by using users’ activity data, we focused more on
+the aspect of gradualness on a physically limited surface.
+To visualize patina on a physical surface, we applied
+stippling, a technique that creates a pattern simulating
+varying degrees of solidity or shading using small dots [34].
+Throughout the exploration, we found that the piercing
+mechanism could be applied in three ways to our material
+to express the characteristics of gradualness and historicity
+(Figure 2). Although other types of visual patterns could be
+used to express patina, we selected the face, line, and fractal
+types that can be modified widely as basic components of
+visual patterns. These basic visualizing types were applied
+in our prototypes.
+
+Figure 3. Patina Tracker
+
+Figure 2. Visual patterns of patina: (a) Stippled face type, (b)
+Stippled line type, (c) Fractal type.
+
+• Stippled face type: By filling a face with dots, it is
+possible to vary the color of the face.
+• Stippled line type: By filling a line with dots, it is
+possible to make the line thicker and clearer.
+• Fractal type: This type is related to a combination of
+lines. We especially utilized a fractal shape that is
+infinitely self-similar, iterated, and detailed theoretically.
+PATINA ENGRAVING SYSTEM
+
+Through the exploration of a piercing technique and
+material and visual patterns, we developed a prototype of
+the Patina Engraving System consisting of the Patina
+Tracker and the Patina Engraver.
+Hardware of Patina Tracker and Patina Engraver
+
+The Patina Tracker uses the three-layered material we
+developed in the wristband part (Figure 3). To fasten the
+band, magnets were attached inside at both ends. As a
+tracking sensor, we utilized the sensor part of Fitbit Flex
+[10], which was embedded at the center of the wristband.
+Additionally, an RFID tag was attached inside the band to
+identify the participant’s ID and load their activity logs.
+
+Figure 4. Patina Engraver
+
+The Patina Engraver mainly consists of two stepper motors
+and a piercing unit (solenoid with a needle) (Figure 4). The
+piercing unit is moved in the XY-plane by two stepper
+motors. The piercing unit drives the needles up-down by the
+solenoid with the speed of 3-5 times per second. The
+diameter of the needle in the piercing unit was 0.35mm.
+During our exploration, it is found that the piercing speed
+and resolution vary depending on the speed of motors and
+the needle size. The rack at the bottom is used to place a
+tracker for engraving. When a tracker is put on the rack,
+magnets under the rack hold the tracker while it is engraved.
+At the same time, the RFID reader under the rack identifies
+whose tracker it is.
+Software of Patina Engraving System
+
+In this system, users’ activity logs are periodically saved to
+the local computer by accessing their Fitbit account (Figure
+5). If the Patina Tracker is placed on the Patina Engraver,
+the engraver identifies the user and loads his/her activity
+logs on the local computer using RFID. Then, the local
+
+1176
+
+I Like What I See - Interface Aesthetics
+
+CHI 2015, Crossings, Seoul, Korea
+
+computer analyzes the activity logs and sends pattern codes
+to the Arduino board in the Patina Engraver. The engraver
+moves the stepper motors and the piercing unit based on
+pre-defined pattern types and the pattern codes from the
+local computer.
+
+noise on the lines. Specifically, when the active times are
+long, the noise value becomes smaller to engrave a more
+clear and vivid line. When the active times are short, the
+dots are engraved sporadically with bigger noise values
+along with diagonal lines.
+• Zone-2. In this zone, calories per week are mapped to the
+length of each zigzag line. From the left to the right, the
+length of a line indicates the amount of activity calories
+from Monday to Sunday. Due to the narrow space, the
+stipple line type was used for engraving.
+• Zone-3. Like Zone-2, we mapped time in bed to each
+line. To magnify the differences among days, patina lines
+were engraved when the time in bed is in the range of
+240–540 minutes.
+
+Figure 5. System overview
+Patterns on Patina Tracker
+
+The overall layout of the patina patterns on an activity
+tracker was decided through several phases of exploration.
+Firstly, we selected (i) the types of activity logs as the
+source data for engraving patina. Among diverse types of
+activity logs, we chose steps, active time (minute), activity
+calories, time in bed (minute), and total walking distance
+(kilometer) that people generally want to know when using
+tracking systems. Then, we considered (ii) shapes for each
+activity log such as zigzag, rectangle etc., (iii) visual
+patterns for engraving patina in the limited space (stippled
+face type, stippled line type, fractal type), and (iv) physical
+location on the surface of trackers. The pattern layout on an
+activity tracker was evaluated by noticeability, possible
+number of engravings, and visual aesthetics. Finally, each
+source data was mapped onto four zones (Figure 6).
+
+• Zone-4. In this zone, we mapped total walking distance
+using the fractal type to show distinct improvement. We
+divided total distance into 3 levels (lv.1: 0–20km, lv.2:
+20–40km, lv.3: 40–60km). When total distance reaches a
+certain level, a more detailed fractal structure is drawn in
+three phases.
+In the Patina Engraving System, the entire engraving
+process took about 5–10 minutes depending on the
+participants’ activity logs.
+FIELD TRIAL
+
+We conducted an “in the wild” study [3] to understand the
+impacts of visualizing activity logs using patina not only on
+functional aspects, but also on the emotional and social
+aspects of the tracker and tracking experience. When
+participants used the Patina Engraving System, we expected
+that a certain amount of time would be needed for them to
+grow accustomed to using the new device. We also
+expected to find various roles of the patina engraving
+process and the trackers besides the natural uses. Therefore,
+we installed the Patina Engraver and Tracker in a natural
+environment for 8 participants for 5 weeks. The sample size
+and the length of the field trial were determined from a
+previous study [3] that discussed field trial methods. Given
+the exploratory nature of our design work, we focused on
+gathering a rich set of opinions rather than quantitative
+findings. As such, our work can be characterized as a form
+of cultural probing [16] and an “in the wild” study that aims
+to encourage reflective thinking about a system.
+Participants
+
+Figure 6. Designed patterns on Patina Tracker
+
+• Zone-1. In this zone, average steps and active times per
+day are mapped to the zigzag line and engraved in the
+stippled face type to cover the middle surface of a
+tracker. Since this zone is most conspicuous when the
+tracker is worn, it was chosen as the area to receive steps
+and active times as source data. In detail, steps are
+mapped by the number of diagonal lines. Considering the
+length of the tracker and the notion that 10,000 steps a
+day is normal, we decided to map 1000 steps as one
+diagonal line. Then active times are used to define the
+
+We contacted sports clubs to recruit a group of participants
+because we expected that they would be interested in
+exercising and activity tracking and would have a close
+relationship with each other. As recommended from a
+previous study [15], the intimate relations among
+participants at the same club could be a stimulus to
+expressing their opinions and providing a greater depth of
+understanding about the field context. Eventually, eight
+participants from the same sports club (a badminton club)
+were recruited for our study. There were 5 male and 3
+female participants with ages varying from 22 to 28 years
+
+1177
+
+I Like What I See - Interface Aesthetics
+
+CHI 2015, Crossings, Seoul, Korea
+
+(M = 24.1, SD = 2.2). All participants played badminton
+more than twice a week together and had close relationships.
+Three of the participants partook regularly in other sports
+such as walking, football, or golf. Participants’ past
+experience of using trackers was also considered in the
+recruitment phase. Three participants had an experience of
+using trackers for about 1 month (M4: Misfit Shine, F1:
+Galaxy Gear Fit, F2: sleep tracking application). We
+expected that the past experience of using trackers would be
+useful for eliciting the potential value of our system.
+Throughout the paper we refer to each participant by sex
+and the week of the interview session (e.g. M5, week 3).
+Method
+
+During the field trial, the Patina Engraver and Trackers
+were used for 5 weeks. To lessen the participants’ burden
+and observe how the system pervaded their normal lives,
+the Patina Engraver was installed in a building which all
+participants could reach within 10 minutes by foot; it was
+also close to the gym where the participants play badminton.
+After starting the study, participants were asked to set up
+their trackers and applications. They then created a Fitbit
+account with an ID and password we assigned them. Using
+them, we could access participants’ raw activity logs.
+Participants were allowed to sync their logs as desired using
+a personal computer or mobile phone.
+During the first week, participants wore the tracker without
+engraving patterns. Participants adapted to the tracking
+process and this period reduced the novelty effect of
+tracking itself. The first week’s interviews included
+questions related to their biographies (ordinary practice of
+exercise and sleeping).
+
+trackers and their activity logs were used to identify the
+detailed situations users mentioned in their interviews. All
+interviews, for a total of 720 minutes, were audio recorded
+and transcribed. Interview transcription and contextual use
+data, including activity data and photos of participants’
+trackers, were categorized by our research team through
+iterative analytic induction. During the analysis, we
+considered the novelty effects and found unexpected uses
+and unreported results from the lead participant by referring
+to existing research [3].
+FINDINGS
+
+Overall, participants were receptive to the idea of engraving
+patina and were engaged with using their Patina Trackers
+and Engraver. Table 1 shows how the trackers were used
+for 5 weeks. The activity logs varied depending on each
+participant’s tracking style. We also found that participants
+frequently forgot sleep recording, which required a mode
+change in the tracker. However, in general, participant’s
+average amount of steps, active time, active calories, and
+time in bed tended to decrease after the 1st week as the
+tracking system became ordinary to them. From the weekly
+interviews, we also confirmed that participants become
+familiar with activity trackers: “Though it was interesting
+to monitor my data at first, I got used to it after using the
+tracker several times. Now I am monitoring it less
+frequently than the 1st week” (M3, week 2).
+Steps
+
+per day
+
+Active
+Time (min.)
+per day
+
+During the 2nd to 4th week, the participants visited us for
+interviews and used the Patina Engraver twice a week.
+Depending on their schedules, we met with them at
+intervals of 3–5 days. Among the two meetings per week,
+one was only for engraving and the other was for interview
+and engraving together. The interviews were conducted
+with a group of two or three participants. Since they had
+close relationships and attended the same sports club, they
+could discuss their experience spontaneously [15]. During
+the interview, we asked questions relating to the role of the
+patina and the functional, emotional, and social aspects of
+the Patina Engraving System. About the social impact, we
+asked how our system was used among acquainted and nonacquainted people.
+In the 5th week, we stopped engraving tasks and participants
+wore a normal Fitbit tracker. In the post-use interviews, we
+asked what they missed the most while using the Patina
+Engraving System and the impacts of the engraving system
+compared to normal trackers. In addition, we asked them
+about the possibility of using patina in other contexts.
+Data Collection and Analysis Method
+
+We mainly analyzed the results based on the weekly and
+post-use interviews. The weekly photos of participants’
+
+Week 1
+
+Week 2
+
+Week 3
+
+Week 4
+
+8816.3
+
+8688.5
+
+7677.4
+
+9085.8
+
+SD = 3889.1
+
+81.2
+
+SD = 33
+
+Active
+Calories
+
+SD = 327.2
+
+Time in
+Bed (min.)
+
+SD = 110.7
+
+per day
+
+per day
+
+776.4
+322.4
+
+SD = 3036.8
+
+63.5
+
+SD = 40.1
+
+779.2
+
+SD = 319.7
+
+290.2
+
+SD = 156.8
+
+SD = 2660.6
+
+59.1
+
+SD = 20.9
+
+718.6
+
+SD = 263.7
+
+210.8
+
+SD = 119.7
+
+SD = 3058.5
+
+66.6
+
+SD = 21
+
+829.9
+
+SD = 246.1
+
+216.8
+
+SD = 116.1
+
+Week 5
+
+6056.2
+
+SD = 2751
+
+52.3
+
+SD = 23
+
+582.4
+
+SD = 371.2
+
+243.3
+
+SD = 147.2
+
+Table 1. Average activity logs during 5 weeks
+
+Figure 7. Participants’ Patina Trackers at 3rd week (after
+engraving 3 times)
+
+Meanwhile, we could observe that participants’ Patina
+Trackers became varied after 5–6 times of engraving
+
+1178
+
+I Like What I See - Interface Aesthetics
+
+CHI 2015, Crossings, Seoul, Korea
+
+(Figure 7). For instance, while the trackers of F1 and M1
+were engraved with thicker patina patterns, those of M3 and
+M4 had less clear patina due to their relatively low level of
+activity. Likewise all participants’ trackers became
+distinguishable. Next, we explain the functional, emotional,
+social impacts of patina engraving on the tracking
+experience and the perception of trackers as fashionable
+wearables.
+Wondering about What Patina Means and Past Activities
+
+One common feature of commercial trackers is to provide
+an activity log using mobile and web applications. Unlike
+applications that show prompt changes in physical activity,
+the abstract and historical aspect of patina on the trackers
+provided summarized information about past activities in a
+subtle way. After patina was engraved on the tracker,
+participants became curious about which parts of the tracker
+had changed and what kind of new patina patterns had
+appeared. They then tried to associate the patina with their
+past activities using mobile phones in the interview
+sessions: “(While looking at Fitbit app) Maybe this part is
+vacant because I did not sleep enough for working
+overtime” (F2, week 2).
+During the interviews in the 4–5th weeks, several
+participants mentioned that they checked their activity
+through the mobile app or website less frequently and their
+activity checking period became longer as they got used to
+tracking. In this situation, the patina tracker became a
+supplement for providing summarized information: “It
+became bothersome to check my activity log in mobile app.
+In that sense, I like this patina because it expresses
+approximate lifestyle” (M3, week3), “Though it is difficult
+to figure out accurate information, this provides indirect
+proof of my activity like a growth ring” (F1, week 3).
+Several participants said they did not need to check detailed
+information through the app or web because they were able
+to expect a general tendency even without them. For them,
+patina was enough for checking their general life cycle.
+Meanwhile, some participants mentioned the limits of
+patina for delivering information. Although patina could
+deliver information about how their activities had changed,
+they mention that it was not suitable for informing them
+about detailed changes such as differences among days or
+weeks: “Because it is hard to figure out the difference as
+more and more patina is accumulated, it will be not good to
+understand my activities per day” (F2, week 2).
+Feeling Pressure for Engraving Aesthetic Patina
+
+The patina and patina engraving put persistent pressure on
+participants to exercise and wear a tracker. We observed
+that participants made an effort to engrave more aesthetic
+and meaningful patina patterns. In our system, as steps and
+active times increase, the zigzag shape in Zone-1 is
+engraved more thickly in the middle of the tracker and
+participants considered this to be more aesthetically
+pleasing (Figure 6, 7). Consequently, participants were
+motivated to increase their exercise. Though the response
+
+about ugliness was not intentional, it seemed because vivid
+and flawless patterns are generally regarded as beautiful in
+commercial digital products. Additionally, since the patina
+was indelible and the engraving affected the entire
+aesthetics of the tracker, participants were conscious about
+this and mentioned that they tried to exercise more in their
+daily life, walking a longer route or using stairs, etc. In the
+case of F1, she thought her patina was ugly due to her short
+exercising times after the 1st patina engraving. During the
+next week, she mentioned that she tried to work out harder
+to create a more beautiful patina at the next engraving:
+“Because this tracker is directly affected by my loose
+activity and showing it physically, it makes me regret my
+insufficient exercising” (F1, week 3).
+While the physical presence of patina put psychological
+pressure on the participants, patina engraving could also be
+regarded as a reward for their activities. Some participants
+felt fulfillment when they looked at their patinaaccumulated trackers during the three weeks of patina
+engraving. The fact that the patina resulted from their
+physical activities was especially fulfilling, as they felt that
+the aesthetically-evolving patina was a reward for their
+efforts: “If I run longer, the patina will increase and
+become thicker, which make me feel proud of my efforts”
+(M3, week 2), “What about using this system in the gym? If
+people engrave patina after working out for a week, they
+would feel rewarded” (F2, week 3).
+Furthermore, we found that the patina engraving affected
+tracker wearing habits as well. Participants were concerned
+about the fact that if they did not wear their trackers
+constantly, the patina would be irrelevant to their general
+lifestyle: “Compared to other tracking devices, I tried
+harder to wear it regularly. This was because it is better to
+make patina which correspond to me” (M4, week 2).
+Having Spontaneous Co-located Interaction
+
+Existing tracking systems support online communication by
+posting an activity log in social network services, showing a
+friend’s activity log, and providing chatting functions, etc.
+However, in our study these functions were used less
+frequently at the end of the study compared to the 1st week.
+Most participants felt reluctant to reveal their activity
+history to the public. For them, it felt like vanity. Also, as
+they were already using other chatting platforms, they did
+not require that in our tracking application. Our system is
+different to the prevalent systems in that activity
+information was shown in the physical world without using
+a virtual medium. Using this system, participants were able
+to reveal their activity history quietly in the physical world.
+Accordingly, we observed that spontaneous interactions
+emerged in face-to-face situations.
+Sharing and Comparing within the Participant Group
+
+Within the participant group, which met frequently in daily
+life, the physical presence of patina allowed participants to
+access each other’s activity logs easily. They said that the
+Patina Tracker was suitable for situations in which they
+
+1179
+
+I Like What I See - Interface Aesthetics
+
+CHI 2015, Crossings, Seoul, Korea
+
+exercised with sports club members in the gym without
+using mobile phones for accessing their activity log.
+Though the abstract shape of patina made it difficult to
+recognize details at a glance, it induced them to compare
+other participants’ patina with their own. F1, F2, and M4
+mentioned that they envied M1’s tracker and were
+motivated and inspired by it. “When we met in the sport
+club in the 2nd week, I found that Dave (M1)’s tracker was
+prettier than mine. And I wanted to make mine like his” (F1,
+week 2). In this way, participants shared other participants’
+information about activities in physical spaces.
+Getting Others’ Attention & Conversing about Patina
+
+Besides the social impact of patina within the participant
+group, we also observed social impacts on people who do
+not know the meaning of patina. For them, the Patina
+Trackers attracted attention due to the evolving nature of
+the accessory and the different patina that emerged
+periodically, thus differentiating them from static
+accessories. M1 said that the normal trackers, which were
+worn during the 1st week before the patina engraving, also
+attracted others attention. However, he said that in the case
+of the normal trackers he could only talk about the
+functional features of the trackers rather than personal
+activities related to tracking. On the other hand, the Patina
+Tracker with accumulated patina enabled communication
+about stories behind the patina and their physical activities
+among the people who did not know what the patina meant.
+In particular, participants could tell personal stories of
+events, growth, and achievement while exercising or
+sleeping: “My colleagues ask me why the patina changed.
+Then I explained about each patina by associating the
+patina pattern with my daily activities” (M1, week 2).
+In addition, they mentioned that the abstract shape of the
+patina had the advantage of hiding private information from
+strangers: “For people who do not know this tracker, they
+will consider it as just a wristband. Rather than engraving
+numbers or graphs, this abstract shape of patina is proper
+not to give details of my life” (M4, week 4). They said they
+would not want to disclose their activity log to strangers.
+Crafting a Symbolic Object that Holds One’s Own History
+
+All of the participants enjoyed the patina engraving process.
+Compared to normal tracking services, they said the
+engraving provided a fun experience. By actually allowing
+participants to engage with the patina engraving process, it
+promoted a sense of engagement: “I think this engraving is
+similar to stitching-up in the sense that the patina emerges
+as I walk more” (F1, week 4).
+However, we observed that their interest in engraving faded
+over time, whereas their interest in the trackers lasted
+longer. In the interviews during the 1st week before the
+patina engraving, many said they would cherish their digital
+log more than the tracking devices. Nevertheless, through
+the patina engraving, they began to feel attachment toward
+the trackers, which contained personalized patina patterns
+and unique appearances. Accordingly, participants
+
+considered the Patina Trackers symbolic objects more than
+just a pedometer: “If this tracker is lost and I have to get a
+new one without my patina, I would feel sorry about that”
+(M5, week 4).
+Meaningful attachment can emerge through the process of
+self-extension, where someone attributes important aspects
+of his or her self to an object [22]. In this system, the
+process of patina engraving helped users customize the
+tracker based on their activity log, which led to users
+symbolically extending themselves into the tracker and
+constructing autobiographical values: “It (patina) is like my
+fingerprint. It is special in the fact that it shows who I am”
+(M2, week 4), “While patina make my tracker prettier, at
+the same time it strengthens symbolic meanings that I am
+training hard or living life to the full” (F3, week 3).
+DISCUSSION
+Design Implications for Fashionable Trackers Using Patina
+
+All fashionable items have physical, psychological, and
+social functions [2]. As found in our study, while
+aesthetically pleasing visual appearance is an integral part
+of fashionable trackers, it is also important to consider its
+psychological and social impacts, including self-expression,
+communication in social groups, and user experience
+around the trackers. In this section, we discuss research and
+design implications to improve the use of patina for making
+fashionable activity trackers.
+Modifying Patina for Personally Meaningful Trackers
+
+In our studies, participants liked the patina engraving
+process that customized a tracker based on their activity log,
+and they agreed that the patina contributed to making the
+tracker personally valuable. In the interviews during the 5th
+week, we discussed the further possibility of improving the
+current system to make a more meaningful tracker.
+First, the selection of personally interesting types among
+diverse activity logs might contribute to making
+personalized trackers. For instance, M3 paid more attention
+to logs about sleep cycle, while F1 was interested in her
+sedentary time. Also, interpreting activity logs according to
+users’ different lifestyles may create more meaningful
+trackers. In our prototype system, longer or thicker patina
+patterns were engraved in proportion to the absolute value
+of the activity logs (steps, active time, calories, time in bed).
+However, the same activity logs can be interpreted
+differently to provide meaningful information. For example,
+F3 wanted to engrave patina based only on the log of a
+specific day of the week when she took exercise regularly.
+If users are able to set the scope of the activity log—
+specific days, time slots per day, etc.—and the system
+utilized these to engrave patina, the tracker with patina
+patterns may be able to show more personal stories about
+their lives and deliver more useful information.
+Moreover, since people have different goals when it comes
+to activity tracking, the patina might need to be engraved
+differently to meet their needs. For some users, walking
+
+1180
+
+I Like What I See - Interface Aesthetics
+
+CHI 2015, Crossings, Seoul, Korea
+
+10,000 steps per day might be enough, whereas for others it
+might be insufficient. If the patina is engraved in proportion
+to the individual goals users set, the users are more likely to
+feel fulfilled or reflect on their lack of activities.
+Using Patina for Sustained Engagement with Activity Trackers
+
+Since activity trackers are used over a long period,
+designing a strategy to ensure sustained engagement is the
+key to their success. According to Fogg, a user needs to
+experience a feeling of progress toward defined goals to
+achieve sustained engagement in activity trackers [12, 13].
+He mentioned that the success from achieving several
+smaller goals provides the positive momentum necessary
+for achieving bigger goals. In that sense, though our Patina
+Trackers could summarize how participants’ activities
+changed over time, they had limitations regarding their
+ability to maintain users’ interests and show their progress.
+Thus, it is necessary to consider ways of utilizing patina to
+motivate users in the long term. During the interviews, one
+of the frequently mentioned solutions for sustained use of
+activity trackers was to strengthen the impact of patina as a
+reward for completing small goals. For instance, it would
+be possible to engrave patina in special shapes when
+achieving a 100 km distance or accomplishing 20,000 steps
+in a day. M5 said that patina might be engraved in a way
+that a specific image becomes clearer gradually, which
+might provide a feeling of completion in the end. In this
+way, people would be able to gain the momentum necessary
+to progress. Thus, in future work, it is necessary to
+investigate whether the patina engraving as a reward can
+support sustained engagement in the trackers.
+Adjusting Social Translucence of Patina
+
+Erickson and Kellogg argued that social translucence is
+necessary in the digital domain [7]. As translucent property
+in the physical world supports graceful human-human
+communication in face-to-face situations, socially
+translucent systems can make users structure social
+interaction with each other and carry on coherent
+discussions. They worried that neither of these dimensions
+of social translucence are a given in the digital domain. In
+that sense, our system supported social translucence by
+engraving physical patina based on a digital activity log. By
+allowing users to see each other’s trackers and their
+engraved patina and make inferences about their physical
+activities, the system extended the space of social
+interaction from the digital environment into the physical
+environment.
+Considering the social translucence of the Patina Tracker
+and its effect, we could find further opportunities to develop
+the Patina Engraving System focusing on co-located
+physical activity. One of the significant qualities of the
+Patina Tracker is its social communication in physical space.
+During the last interview about the improvement of our
+system, several comments related to the use of the tracker
+for a specific group of users. For instance, M4 and M5
+mentioned the patina could be engraved using both group
+
+and individual data—for example, the amount of time they
+exercise together or a comparison of the value of the
+group’s activity level with that of the individual etc.
+Likewise, if we use this system for specific group activities,
+the patina on trackers may act as an emblem of the group
+and accordingly may strengthen peer relations and support
+sustained group activities.
+However, it is necessary to continue exploring suitable
+types of information the patina can provide as well as the
+degree of social translucence. In our study, the Patina
+Engraving System visualized steps, active time, activity
+calories, and time in bed into the abstract shape of patina.
+Though the participants mentioned that the visualization in
+our study was fine to show to the public, they said that they
+would have hated it if the visualization showed details such
+as exact times. For example, if the tracker is too obvious, a
+user might feel shame about his or her lack of exercise and
+might worry about privacy. Since the patina would be
+readable for everyone including strangers, this highlights
+the need to tailor the types of information the patina
+provides, as well as the level of translucence based on the
+sensibilities and privacy concerns of the user.
+Applying Patina to Other Contexts
+
+Participants gave several ideas about the use of patina in
+devices other than activity trackers. They suggested that the
+patina might be helpful to achieve general health related
+goals like losing weight, rehabilitation exercises, or quitting
+smoking. M5 mentioned that people might feel a burden by
+exposing their smoking data to others by engraving patina
+on a Zippo lighter. He expected that other people would be
+interested in the evolving patina and support not smoking.
+Likewise, in future work we need to explore further
+whether the engraving of patina based on health relevant
+data can motivate people to achieve diverse health related
+goals and help them change their behaviors in the long term.
+Also, we see opportunities for applying patina in other
+contexts. For instance, M3 said that it might be good to
+engrave patina on a credit card to warn card holders about
+excessive consumption. He said the patina on the credit
+card might force him to reflect on his spending habits. F2
+mentioned that she wanted to leave physical patina on her
+radio that shows favorite channels. Her idea was that patina
+could accumulate around the tuning dial as the user
+frequently tunes into favorite stations. As mentioned by the
+participants, our design approach to combining patina with
+data about a user’s history can be applied generally in
+product and interaction design. However, since the way of
+using various devices, users’ needs, and the types of
+logging data differ among several cases, further research
+needs to be carried out to explore how patina can be applied
+in general interactive product design.
+CONCLUSION
+
+Our motivation for conducting this study was to make
+fashionable activity trackers that generate an engaging
+experience. Thus, in this paper, we have presented a new
+
+1181
+
+I Like What I See - Interface Aesthetics
+
+CHI 2015, Crossings, Seoul, Korea
+
+design approach for activity trackers by visualizing activity
+logs in the form of patina. Also, with the deployment of the
+Patina Engraving System through an “in the wild” study,
+we explored how participants’ activity tracking experience
+could be affected through patina engraving. We expect this
+research to inspire designs for diverse tracking devices and
+services, as well as general fashion and product designs.
+ACKNOWLEDGEMENT
+
+This research was supported by the National Research
+Foundation of Korea Grant funded by the Korean
+Government (NRF-2014S1A5A2A01010939) and IT R&D
+program of MSIP/KEIT (2014, 10041313, UX-oriented
+Mobile SW Platform).
+REFERENCES
+
+1. Adidas miCoach Elite. http://goo.gl/qECxs3.
+2. Bolton, A. The super modern wardrobe. New York: Harry
+N. Abrahms (2002).
+3. Brown, B., Reeves, S. and Sherwood, S. Into the wild:
+challenges and opportunities for field trial methods. Proc.
+CHI’11, ACM (2011), 1657-1666.
+4. Choe, E.K., et al. A. Understanding Quantified-Selfers’
+Practices in Collecting and Exploring Personal Data. Proc.
+CHI’14, ACM (2014) 1143-1152.
+5. Consolvo, S., Everitt, K., Smith, I., and Landay, J.A.
+Design Requirements for Technologies that Encourage
+Physical Activity. Proc. CHI’06, ACM (2006), 457-466.
+6. DeSilvey, C. Observed decay: telling stories with mutable
+things. Journal of Material Culture, 11, 3 (2006), 318-338.
+7. Erickson, T. and Kellogg, W. Social Translucence: An
+Approach to Designing Systems that Support Social
+Processes. ACM Transactions on Human-Computer
+Interaction, 7, 1 (2000), 59-83.
+8. Fallman, D. The new good: exploring the potential of
+philosophy of technology to contribute to human-computer
+interaction. In Proc. CHI'11, 1051-1060.
+9. Fan, C., Forlizzi, J., and Dey, A. A Spark Of Activity:
+Exploring Informative Art As Visualization For Physical
+Activity. In Proc. UbiComp’12, ACM (2012), 81-84.
+10. Fitbit. http://www.fitbit.com/.
+11.Fitbit and Tory Burch. http://goo.gl/As7ce1.
+12. Fogg, B.J. Persuasive Techology: Using Computers to
+Change What We Think and Do. Ubiquity (2002), 89-120.
+13. Fogg, B.J. “The new rules of persuasion.” RSA Digital
+Journal, Summer 2009. Online.
+14. Fougere, T. Tyndall Table (2012).
+http://thomfougere.com/thomfougere-TyndallTable.
+15. Frey, J., Fontana, A. The group interview in social research,
+The Social Science Journal, 28(2) (1991), 175-187.
+16. Gaver, W.W., Dunne, A., and Pacenti, E. Cultural Probes.
+Interactions (1999), 21-29.
+17. Heijdens’s Broken White. http://goo.gl/nnMuhE.
+
+18. Hiiop, H. The Possibility of Patina in Contemporary Art or,
+Does the ‘New Art’ Have a Right to Get Old? In Koht ja
+paik. Place and Location. Studies in Environmental
+Aesthetics and Semiotics VI Estonian Literary Museum,
+Estonian Academy of Arts (2008), 153-165.
+19. Hill, W., Hollan, J., Wroblewski, D. & McCandless, T. Edit
+wear and read wear. Proc. CHI’92, ACM (1992), 3-9.
+20. Jacobs, J. and Buechley, L. Codeable objects:
+computational design and digital fabrication for novice
+programmers. In Proc.CHI’13, ACM (2013), 1589-1598.
+21. Khot, R., Hjorth, L., Mueller, F. Understanding Physical
+Activity through 3D Printed Material Artifacts. In Proc.
+CHI’14 (2014), 3835-3844.
+22. Kleine, S. S., Kleine III, R. E. and Allen, C. T. How is a
+possession" me" or" not me"? Characterizing types and an
+antecedent of material possession attachment. Journal of
+Consumer Research (1995), 327-343.
+23. Ledger, D. & McCarffrey, D. Inside Wearables, Endeavour
+Partners (2014).
+24. Li, I., Dey, A., and Forlizzi, J. Using Context to Reveal
+Factors that Affect Physical Activity. TOCHI, 19(1) (2012),
+1-21.
+25. Li, I., Dey, A.K.A., and Forlizzi, J. Understanding My
+Data, Myself: Supporting Self-Reflection with Ubicomp
+Technologies. In Proc. UbiComp’11, 405-414.
+26. Lin, J.J., et al. Fish‘n’Steps: Encouraging Physical Activity
+with an Interactive Computer Game. In Proc. UbiComp’06
+(2006), 261-78.
+27. Mauriello, M., Gubbels, M. and Froehlich, J. Social fabric
+fitness: the design and evaluation of wearable E-textile
+displays to support group running. Proc. CHI’14, 28332842
+28. Pan, Y. and Blevis, E. Fashion thinking: lessons from
+fashion and sustainable interaction design, concepts and
+issues. In Proc. DIS’14, ACM, 1005-1014.
+29. Requena, E. LOVE PROJECT. http://goo.gl/o19avO.
+30. Rooksby, J., Rost, M., et al. Personal Tracking as Lived
+Informatics. In Proc. CHI 2014, ACM, 1163-1172.
+31. RunKeeper. http://runkeeper.com/.
+32. Seymour, S. Fashionable Technology: The Intersection of
+Design, Fashion, Science and Technology, Springer. 2008
+33. Schütte, A. A. Patina: layering a history-of-use on digital
+objects. MIT Media Laboratory (1998).
+34. Simpson, I. The Encyclopedia of Drawing Techniques.
+London: Headline (1987), 62–64.
+35. Stack, K. NFL Prospects to Wear Smart, Data Gathering
+Workout Shirt. Gizmodo (2011). http://goo.gl/xxbdan.
+36. Swaminathan, S., et al. Supporting the design and
+fabrication of physical visualizations. In Proc. CHI’14,
+ACM, 3845-3854.
+37. Zancheti, S. M., de Figueirôa Silva, A., Braga, A. C.,
+Gameiro, F. G., Lira, F. B., & Costa, L. S. The patina of the
+city. City & Time, 2 (2) (2006).
+
+1182
+View publication stats
+
+

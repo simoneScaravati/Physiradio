@@ -1,0 +1,250 @@
+Understanding the needs and desires
+of service users in the design and
+creation of meaningful physical data
+representations.
+Ian Gwilt
+
+Abstract
+
+Sheffield Hallam University,
+
+This paper draws on the experiences of a small team of
+researchers, led by Professor Gwilt, who have been
+exploring novel ways of translating data into physical
+formats through an investigation into the potential for
+data-driven objects to help in the communication and
+sharing of data. The paper draws on a selection of
+research projects undertaken within the context of
+healthcare and wellbeing wherein data-objects were
+designed to help a variety of service users engage with
+data. A number of different data-object making and
+development strategies are discussed, and considered
+in terms of their effectiveness as communication tools.
+This discussion includes reflections on; finding and
+creating data sources, engaging with service users,
+thinking about the use of visual language, metaphor
+and material choices, audience needs and experiences,
+contexts of use and deployment.
+Observations on the conceptual process of creating
+hybrid objects and the social-cultural value systems
+employed in reading these artefacts are also debated.
+A list of guiding principles for the creation of
+meaningful physical data representations has been
+developed by the authors and is presented in the
+
+Art and Design Research Centre,
+Sheffield,
+i.gwilt@shu.ac.uk
+Nick Dulake
+Sheffield Hallam University,
+Design Futures
+Sheffield,
+n.dulake@shu.ac.uk
+
+.
+
+context of the epistemology of the data-object and how
+we might implement these methods to ask questions
+around the pedagogy of the Physicalisation of data.
+
+Author Keywords
+Data-objects, co-design, information design,
+information visualisation, physical data
+
+Introduction
+Data is the new digital currency; understanding what
+different forms data comes in, how it is created and by
+whom, where it can be accessed and how it is being
+used are increasingly important questions for a society
+that has embraced digital technology. Without question
+the generation, collection, analysis and use of digital
+data is having a dramatic impact on social, economic
+and political cultures and services (Prendiville, Gwilt, &
+Mitchell, 2017; Mayer- Schönberger & Cukier, 2013).
+As citizens we are actively engaged in producing and
+consuming data, from the monitoring of personal health
+statistics, to the data collected by our various service
+providers (both sanctioned and by default), and
+through the public records that comment on the state
+of the nation.
+As digital data has become more accessible, designers
+and computer scientists have taken to the task of
+visually interpreting data with gusto and a huge range
+of data presentation forms from statistical lists to visual
+representation techniques such as; bar charts, graphs,
+diagrams, illustrations, 3D models, maps, animations,
+and generative designs already exist (Kirk 2016). It is
+in this context that we will consider the use of physical
+objects as carriers of data and ask the questions:
+• Can the creation of physical objects based on data
+extracted from digital information systems change
+
+the way we read, interpret and respond to complex
+information?
+• And by reconceptualising digital information into a
+physical object can we add new insight to information
+to people outside of a scientific or specialist
+community?
+
+Finding and using data sources
+There is an assumption that the new paradigm of open
+data creates an automatic level of transparency in how
+data can be accessed and used. Prior research by the
+authors has shown that many people find it difficult to
+understand and/or relate to statistical lists and graphs
+(Gwilt, Yoxall, & Sano, 2012). As Kennedy suggests
+(2015), we relate to data both cognitively and
+emotionally and this embodied technological experience
+forms an important backdrop to current thinking
+around the Internet of Things (IOT), smart
+environments and objects.
+In a recent research exercise the authors embarked on
+the process of finding, interpreting and using a
+publically accessible, open data set from the UK
+healthcare sector. This process revealed a number of
+problems around how easy it is to identify and use an
+open data source. Further issues were encountered
+around where to locate datasets, what form these
+datasets are stored in, how to read and open file
+formats, as well as concerns around data legitimacy
+and relevance. These issues are often overlooked when
+talking about the public use of data and the process of
+working with data, and would be a good topic to
+explore within the workshop.
+
+knowledge, thinking around context of use, and
+complex and specific audiences.
+
+Figure 1: Data-objects. Testing a range of data visualisation
+forms. In user-testing exercises data gathered on the strength
+and dexterity required to open domestic packaging was
+presented to users to explore what forms and materials might
+aid cognition and engagement. (I. Gwilt, A. Yoxall, K. Sano &
+N. Dulake 2012)
+
+Engaging with service users
+Choices in how to visualize data as a physical object
+should be driven by user needs and expectations and
+context of use. Therefore, it is important to engage
+user communities in as much of the data visualisation
+process as possible. This ranges from including users
+in decisions on what data to work with, what are key
+things to communicate from the data, to thinking about
+the use of different forms and visual metaphors
+through which to interpret and realise the data. A good
+understanding of the needs and requirements of the
+intended audience, and when and how the data is to be
+examined is a must. A conversation around strategies
+for co-creation could also be discussed in the
+workshop; how can we accommodate user needs and
+
+Figure 2: Data-objects used to describe individual pain profiles
+created by young adults suffering with chronic-pain. Pain
+parametrics are manipulated through a software interface that
+allows an individual’s bespoke pain model to be visualized.
+These are then produced using a 3d printing process. (N.
+Dulake & I. Gwilt 2017)
+
+Value systems and reading physical data
+By translating data into a physical object we bring into
+play attributes, properties and values, which are
+typically assigned separately to digital and material
+cultures. The use of visual metaphor, fabrication
+process and material choices have all been seen to
+influence people’s perception of the underlying data there is a relationship established between the physical
+affordances of the object, such as shape, texture, scale
+and weight, and the interpretation of the data that
+object represents. For example, the amount of
+granularity or texture of a surface would appear to
+correlate with the perception of how much data that
+surface represents, e.g. textured surfaces suggest
+more data, smooth surfaces less and so forth. As
+Sennett observed (2009), the qualities of material
+cultures are extremely important when establishing and
+assigning value to the things we use. The data-object
+uses a combination of both digital and material
+
+elements to foster insights and comprehension to
+complex data.
+
+• Carefully examine the chosen data set to identify the
+significant key message/ messages in the data
+• Consider how design choices of form and/or use of
+visual metaphor relate to the underlying data
+• Where possible involve your user community in all
+stages of the design and decision making
+• Make sure the data object’s form and physical
+qualities remain faithful to the underlying data
+• Consider how the use of any fabrication techniques
+and choices in material might amplify or
+sympathetically reflect key trends in the data
+
+Figure 3: The dataseeds project uses the metaphor of the
+sycamore seed to represent NHS open data statistics on ‘falls
+on and from stairs and steps’. Instances of the data are
+physically represented in the form of sycamore seeds that fall
+and spin at different rates to visually and dynamically interpret
+the data - the data informs the surface areas of the wing which
+dictates the spin and falling speed of the data-object. (N.
+Dulake & I. Gwilt 2015)
+
+Guiding principles for creating a data-object
+Each data-object should be designed with a specific
+data-set and audience in mind. Some of the approaches
+that might be undertaken in the creation of a physical
+data-object have been discussed above. The authors
+have drawn up a sequence of guiding principles that
+should be considered before creating a data-object:
+• Consider what the creation/use of a data-object will
+contribute to the communication of the underlying data
+and to whom
+• Consider your audience and what their expectations
+from the data might be
+• Carefully select the data set, paying attention to the
+credibility of the data source
+
+• Consider where and how the data-object might be
+encountered and in what context
+• Consider how the data-object might work with other
+forms and fit into a larger communication strategy
+To conclude, it is important to stress that the authors
+do not envisage that the data-object is a way of
+substituting other forms for communicating data. The
+data-object should be seen as a technique that when
+given the appropriate consideration has the potential to
+add to the understanding and cognition of any given
+dataset. Equally the authors suggest that making data
+publically available is only the first step in thinking
+about how digital data can be accessed and shared in
+meaningful ways by a range of different audiences.
+
+References
+Gwilt, I., Yoxall, A., and Sano, K. (2012). Enhancing
+the understanding of statistical data through the
+creation of physical objects. In Proc. ICDC2012 (2012),
+117–126.
+Gwilt, I. (2013) Book chapter Data-objects: sharing the
+attributes and properties of digital and material culture
+to creatively interpret complex information, in
+
+DigiMedia and Technologies for Virtual Artistic Spaces,
+Dew Harrision (ed), IGI Global, Pennsylvania, USA
+Kennedy, H. (2015) Seeing Data: Visualisation design
+should consider how we respond to statistics
+emotionally as well as rationally. Retrieved Dec 2016
+http://blogs.lse.ac.uk/impactofsocialsciences/2015/07/
+22/seeing-data-how-people-engage-with- datavisualisations/#author
+Kirk, A. (2016) Data Visualisation A Handbook for Data
+Driven Design, Sage, London, UK.
+Mayer-Schönberger, V., & Cukier, K. (2013). Big Data:
+A revolution that will transform how we live, work and
+think. London, UK: John Murray.
+Prendiville, A., Gwilt, I., & Mitchell, V. (2017). Making
+sense of Data through Service Design: opportunities
+and reflections. In: Prendiville, Alison and Sangiorgi,
+Daniela, (eds.) Designing for Service: Key Issues and
+New Directions. Bloomsbury.
+Sennett, R. (2009) The Craftsman, Penguin Books,
+London, UK
+
+

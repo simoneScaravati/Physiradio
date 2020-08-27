@@ -1,0 +1,616 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.24)  6 JAN 2020 19:26
+entering extended mode
+**./questionario.tex
+(questionario.tex
+LaTeX2e <2018-12-01>
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/paralist\paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip43
+\plpartopsep=\skip44
+\plitemsep=\skip45
+\plparsep=\skip46
+\pl@lab=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen105
+\Gm@wd@mp=\dimen106
+\Gm@odd@mp=\dimen107
+\Gm@even@mp=\dimen108
+\Gm@layoutwidth=\dimen109
+\Gm@layoutheight=\dimen110
+\Gm@layouthoffset=\dimen111
+\Gm@layoutvoffset=\dimen112
+\Gm@dimlist=\toks16
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen113
+\WF@size=\dimen114
+\c@WF@wrappedlines=\count91
+\WF@box=\box27
+\WF@everypar=\toks17
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/todonotes\todonotes.sty
+Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
+Package: todonotes 2018/11/22
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks18
+\XKV@tempa@toks=\toks19
+)
+\XKV@depth=\count92
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/frontendlayer\tikz.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-com
+mon.tex
+\pgfutil@everybye=\toks20
+\pgfutil@tempdima=\dimen115
+\pgfutil@tempdimb=\dimen116
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-com
+mon-lists.tex))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-lat
+ex.def
+\pgfutil@abb=\box28
+ (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfrcs.code
+.tex (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf\pgf.revision.tex
+)
+Package: pgfrcs 2019/05/09 v3.1.3 (3.1.3)
+))
+Package: pgf 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgfcore.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/systemlayer\pgfsys.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys.co
+de.tex
+Package: pgfsys 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.cod
+e.tex
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeysfilt
+ered.code.tex
+\pgfkeys@tmptoks=\toks23
+))
+\pgf@x=\dimen117
+\pgf@y=\dimen118
+\pgf@xa=\dimen119
+\pgf@ya=\dimen120
+\pgf@xb=\dimen121
+\pgf@yb=\dimen122
+\pgf@xc=\dimen123
+\pgf@yc=\dimen124
+\pgf@xd=\dimen125
+\pgf@yd=\dimen126
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count93
+\c@pgf@countb=\count94
+\c@pgf@countc=\count95
+\c@pgf@countd=\count96
+\t@pgf@toka=\toks24
+\t@pgf@tokb=\toks25
+\t@pgf@tokc=\toks26
+\pgf@sys@id@count=\count97
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2019/05/09 v3.1.3 (3.1.3)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-pd
+ftex.def
+File: pgfsys-pdftex.def 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-co
+mmon-pdf.def
+File: pgfsys-common-pdf.def 2019/05/09 v3.1.3 (3.1.3)
+)))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyssof
+tpath.code.tex
+File: pgfsyssoftpath.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfsyssoftpath@smallbuffer@items=\count98
+\pgfsyssoftpath@bigbuffer@items=\count99
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyspro
+tocol.code.tex
+File: pgfsysprotocol.code.tex 2019/05/09 v3.1.3 (3.1.3)
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcore.co
+de.tex
+Package: pgfcore 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.tex
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathcalc.code
+.tex
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathutil.code
+.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathparser.co
+de.tex
+\pgfmath@dimen=\dimen127
+\pgfmath@count=\count100
+\pgfmath@box=\box29
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.code.tex
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.basic.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.trigonometric.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.random.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.comparison.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.base.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.round.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.misc.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.integerarithmetics.code.tex)))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfloat.cod
+e.tex
+\c@pgfmathroundto@lastzeros=\count101
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfint.code.tex)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepoi
+nts.code.tex
+File: pgfcorepoints.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@picminx=\dimen128
+\pgf@picmaxx=\dimen129
+\pgf@picminy=\dimen130
+\pgf@picmaxy=\dimen131
+\pgf@pathminx=\dimen132
+\pgf@pathmaxx=\dimen133
+\pgf@pathminy=\dimen134
+\pgf@pathmaxy=\dimen135
+\pgf@xx=\dimen136
+\pgf@xy=\dimen137
+\pgf@yx=\dimen138
+\pgf@yy=\dimen139
+\pgf@zx=\dimen140
+\pgf@zy=\dimen141
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+hconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@path@lastx=\dimen142
+\pgf@path@lasty=\dimen143
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+husage.code.tex
+File: pgfcorepathusage.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@shorten@end@additional=\dimen144
+\pgf@shorten@start@additional=\dimen145
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresco
+pes.code.tex
+File: pgfcorescopes.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count102
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoregra
+phicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgflinewidth=\dimen146
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoretra
+nsformations.code.tex
+File: pgfcoretransformations.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@pt@x=\dimen147
+\pgf@pt@y=\dimen148
+\pgf@pt@temp=\dimen149
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorequi
+ck.code.tex
+File: pgfcorequick.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreobj
+ects.code.tex
+File: pgfcoreobjects.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+hprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorearr
+ows.code.tex
+File: pgfcorearrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfarrowsep=\dimen150
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresha
+de.code.tex
+File: pgfcoreshade.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@max=\dimen151
+\pgf@sys@shading@range@num=\count103
+\pgf@shadingcount=\count104
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreima
+ge.code.tex
+File: pgfcoreimage.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreext
+ernal.code.tex
+File: pgfcoreexternal.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfexternal@startupbox=\box33
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorelay
+ers.code.tex
+File: pgfcorelayers.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoretra
+nsparency.code.tex
+File: pgfcoretransparency.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+terns.code.tex
+File: pgfcorepatterns.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorerdf
+.code.tex
+File: pgfcorerdf.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmoduleshap
+es.code.tex
+File: pgfmoduleshapes.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfnodeparttextbox=\box34
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmoduleplot
+.code.tex
+File: pgfmoduleplot.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-v
+ersion-0-65.sty
+Package: pgfcomp-version-0-65 2019/05/09 v3.1.3 (3.1.3)
+\pgf@nodesepstart=\dimen152
+\pgf@nodesepend=\dimen153
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-v
+ersion-1-18.sty
+Package: pgfcomp-version-1-18 2019/05/09 v3.1.3 (3.1.3)
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgffor.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.cod
+e.tex))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.tex
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgffor.code
+.tex
+Package: pgffor 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.tex
+)
+\pgffor@iter=\dimen154
+\pgffor@skip=\dimen155
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz\ti
+kz.code.tex
+Package: tikz 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibraryp
+lothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@plot@mark@count=\count105
+\pgfplotmarksize=\dimen156
+)
+\tikz@lastx=\dimen157
+\tikz@lasty=\dimen158
+\tikz@lastxsaved=\dimen159
+\tikz@lastysaved=\dimen160
+\tikzleveldistance=\dimen161
+\tikzsiblingdistance=\dimen162
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count106
+\tikznumberofchildren=\count107
+\tikznumberofcurrentchild=\count108
+\tikz@fig@count=\count109
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulematr
+ix.code.tex
+File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfmatrixcurrentrow=\count110
+\pgfmatrixcurrentcolumn=\count111
+\pgf@matrix@numberofcolumns=\count112
+)
+\tikz@expandcount=\count113
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/li
+braries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/li
+braries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/li
+braries\tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/li
+braries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibraryf
+adings.code.tex
+File: pgflibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
+))) ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count114
+\calc@Bcount=\count115
+\calc@Adimen=\dimen163
+\calc@Bdimen=\dimen164
+\calc@Askip=\skip47
+\calc@Bskip=\skip48
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count116
+\calc@Cskip=\skip49
+)
+\c@@todonotes@numberoftodonotes=\count117
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\rotating.sty"
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count118
+\rotFPtop=\skip50
+\rotFPbot=\skip51
+\rot@float@box=\box39
+\rot@mess@toks=\toks32
+)
+(questionario.aux)
+\openout1 = `questionario.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count119
+\scratchdimen=\dimen165
+\scratchbox=\box40
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen166
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
+\everyMPtoPDFconversion=\toks34
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 759.6886pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=540.60239pt
+* \textheight=759.6886pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-80.81725pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ABD: EveryShipout initializing macros
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will 
+most likely cause issues with the appearance of inserted todonotes. The issue c
+an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
+loading the todonotes package. on input line 14.
+
+(domande.tex
+<SCHEMA_PHYSIRADIO.png, id=28, 845.0772pt x 597.432pt>
+File: SCHEMA_PHYSIRADIO.png Graphic file (type png)
+<use SCHEMA_PHYSIRADIO.png>
+Package pdftex.def Info: SCHEMA_PHYSIRADIO.png  used on input line 8.
+(pdftex.def)             Requested size: 135.15059pt x 95.54549pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 81.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 81.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 81.
+ [1
+
+{C:/Users/Simo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./SCHEMA_PHY
+SIRADIO.png>]) [2] (questionario.aux) ) 
+Here is how much of TeX's memory you used:
+ 13088 strings out of 492895
+ 265911 string characters out of 3133482
+ 323709 words of memory out of 3000000
+ 16733 multiletter control sequences out of 15000+200000
+ 7030 words of font info for 25 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,8n,81p,471b,268s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
+2.pfb>
+Output written on questionario.pdf (2 pages, 589766 bytes).
+PDF statistics:
+ 55 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+

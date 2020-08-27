@@ -1,0 +1,602 @@
+Structure, Vol. 13, 483–491, March, 2005, ©2005 Elsevier Ltd All rights reserved. DOI 10.1016/j.str.2005.01.009
+
+Tangible Interfaces for Structural
+Molecular Biology
+Alexandre Gillet, Michel Sanner, Daniel Stoffler,
+and Arthur Olson1,*
+The Scripps Research Institute
+La Jolla, California 92037
+
+Summary
+The evolving technology of computer autofabrication
+makes it possible to produce physical models for
+complex biological molecules and assemblies. Augmented reality has recently developed as a computer
+interface technology that enables the mixing of realworld objects and computer-generated graphics. We
+report an application that demonstrates the use of autofabricated tangible models and augmented reality
+for research and communication in molecular biology. We have extended our molecular modeling environment, PMV, to support the fabrication of a wide
+variety of physical molecular models, and have
+adapted an augmented reality system to allow virtual
+3D representations to be overlaid onto the tangible
+molecular models. Users can easily change the overlaid information, switching between different representations of the molecule, displays of molecular
+properties, or dynamic information. The physical
+models provide a powerful, intuitive interface for manipulating the computer models, streamlining the
+interface between human intent, the physical model,
+and the computational activity.
+Introduction
+With the prevalence of structural and genomic data,
+molecular biology has become a human-guided, computer-assisted endeavor. The computer assists the
+essential human function in two ways: in exploration
+of scientific data, searching for and testing scientific
+hypotheses; and in collaboration between two or more
+scientists, sharing knowledge and expertise. As databases grow, as our structure and process models become more complex, and as software methods become
+more diverse, access and manipulation of digital information is increasingly a critical issue for research and
+collaboration in molecular biology.
+Currently, exploratory research in structural molecular biology is dominated by 3D representations via
+computer graphics. Collaboration, both remote and local, is aided by shared viewing of these interactive visual representations of molecular data. Yet, recent advances in the field of human-computer interfaces have
+not been applied to the technology used by molecular
+biologists—most work in biomolecular structure, and
+genomics is performed in front of a workstation display
+using a mouse and keyboard as input devices.
+The tactile and proprioceptive senses provide key
+*Correspondence: olson@scripps.edu
+1
+Lab Address: http://www.scripps.edu/pub/olson-web
+
+perceptual cues to our ability to understand 3D forms,
+and to perform physical manipulations, but are currently underutilized in most computational activities,
+including structural molecular biology. Recently, the
+concept has arisen that the “sixth sense” of body
+awareness may play a critical role in our fundamental
+understanding of physical laws (Smetacek and Mechsner, 2004). Thus, physical models may provide an enhanced perceptual experience in our comprehension of
+molecular structure and interaction. Early structure research relied heavily on physical models: Pauling used
+his newly-invented space-filling models to depict the
+molecular structures that he solved by crystallography
+and to predict the basic folding units of protein structures (Pauling and Corey, 1950). Watson and Crick used
+brass-wire molecular models to help them devise an
+atomic model of the of DNA double helix (Watson and
+Crick, 1953), which reconciled decades of genetic data.
+These researchers “thought with their hands” by using
+physical analogs to produce important scientific results. Current research in molecular biology now focuses on larger assemblies and on more complex
+interactions, for which the traditional atom-based physical models are inadequate.
+The evolving technology of computer autofabrication
+(“3D printing”) now makes it possible to produce physical models for complex molecular assemblies (Olson,
+2001). Computer autofabrication technology, sometimes called “solid” or 3D printing (Burns, 1993) has
+evolved over the last decade from a rapid prototyping
+tool for product design and manufacture to a class of
+more broadly applied output devices used in many
+contexts where physical representations are helpful. All
+of these technologies utilize a layer-by-layer build-up
+of the physical part with some method of support for
+overhangs in the vertical build direction. The great advantage of these methods is that nearly any shape can
+be built—limited only by the imagination and the structural integrity of the building material. A number of different types of solid printers are on the market, utilizing
+materials ranging from cornstarch to metal and enabling the production of parts with various physical and
+mechanical properties. Solid printers that can produce
+full-color parts are now available.
+The field of augmented reality (AR) has likewise
+emerged over the past decade within the computerhuman interface community. The “transparent computer interface” is a goal driving development of immersive displays, object tracking, haptics, and numerous
+other technologies for virtual reality. An important objective of this development is the creation of a sense of
+user presence in a computational interaction. Much of
+the research into this subject has been focused on
+far- and mid-field tasks, such as motion simulation,
+navigation, and virtual walkthroughs, where the user is
+immersed in the simulated environment. Near field
+activities, including such traditional human tasks as
+tool manipulation, model building, and close inspection
+have been advanced through the use of 3D computer
+graphics for over 40 years. Much of the recent work in
+
+Structure
+484
+
+near-field object presence (Barfield and Weghorst,
+1993) and interaction has focused on improved rendering, stereoscopy, force feedback, and 6D object manipulation techniques (Poupyrev et al., 1997). The application of force-feedback to molecular modeling was
+pioneered by Brooks and coworkers at the University
+of North Carolina (Ouh-Young et al., 1988; Taylor et al.,
+1993). More recent work by Taylor and colleagues has
+resulted in a haptic interface to scanning probe microscopy, termed “the nanomanipulator” (Taylor et al.,
+1993). Augmented reality has also been brought to bear
+on near-field interactions in such applications as diagnostic medicine and surgical planning. More recently,
+the use of real-world proxies, or physical icons (“phicons”) has begun to be explored in augmented reality
+applications to increase the illusion of real interaction
+(Ishii and Hau, 1997; Billinghurst, 1999; Underkoffler et
+al., 1999). Brooks has identified the area of haptics as
+being critical to the sense of presence for near-field
+activities (Brooks, 1999) such as the exploration of molecular structure and function.
+In this paper, we report on an application that demonstrates the use of autofabricated tangible models and
+augmented reality for research in molecular biology to
+enhance the scientific environment for collaboration
+and exploration. The physical models are produced and
+integrated into an augmented reality environment to
+streamline the interface between human intent, the
+physical model, and the computational activity. We
+have developed an AR system that allows virtual 3D
+representations generated by our Python Molecular
+Viewer (PMV) (Coon et al., 2001) to be overlaid on an
+autofabricated model of the molecule. The precise registration of the virtual objects with the real world is
+done using the ARToolKit library developed at the University of Washington (Billinghurst, 1999). While using
+our tangible interaction environment, users can easily
+change the representation shown, and, for example,
+access information about molecular properties of the
+molecules.
+Producing physical molecular models presents both
+new challenges and opportunities for representing molecular properties and behaviors. Unlike an intangible
+computer graphic, the physical model can embody not
+only the visual characteristics of the molecular system,
+but also analogs of some of its physical features. Merging physical and virtual objects into an AR environment
+(Milgram and Kishino, 1994) enables new modes of interaction through the manipulation of tangible models
+and the complex information they represent (Behringer
+et al., 1999).
+We have found that the tangible interfaces that we
+have produced provide users with both enhanced perception and intuitive manipulation of complex biomolecules and their interactions.
+
+Results and Discussion
+Design of Physical Models
+We use PMV (Coon et al., 2001) both to create our virtual molecular objects and to design our tangible mo-
+
+lecular models, greatly simplifying the integration of the
+models with the virtual environment. We use our visual
+programming interface, Vision (formerly called ViPEr)
+(Sanner et al., 2002; Sanner, 2005, this issue of Structure), to integrate nonmolecular features into the virtual
+and physical models. PMV is a modular software framework for designing and specifying a wide range of molecular models, including molecular surfaces, extruded
+volumes, backbone ribbons, and atomic ball-and-stick
+representations. PMV can also handle volumetric data
+from low-resolution structural information and produce
+isocontour surfaces for that data. It allows the design
+of models at different levels of abstraction, resolution,
+and scale for different needs: using representations
+that focus on molecular shape when large systems and
+interactions are presented, and incorporating atomic
+details when needed to look at function at the atomic
+level. Vision is a graphical programming environment
+that allows the integration of computational components as nodes in a visual network editor, enabling
+rapid prototyping of new applications.
+Both PMV and Vision are built within the interpreted
+language Python, which serves as a glue layer to interconnect different software components at a high level
+(Sanner, 1999). We have used Python for a number of
+years in this capacity because of its many desirable
+characteristics: it is open source and object oriented,
+platform independent, extensible and efficient, and has
+excellent introspection capabilities. PMV includes a generic 3D visualization component (DejaVu), which provides a high-level interface to the OpenGL library and
+its geometry viewing application.
+To this, we have added components that provide all
+manner of molecular modeling and visualization functionality, including MSMS, Maximal Speed Molecular
+Surface (Sanner et al., 1996) for the calculation of
+solvent-excluded surfaces, GLE tubing and extrusion
+library (www.linas.org/gle) for the extrusion of arbitrary
+2D shapes along an arbitrary 3D path (as needed for
+ribbon diagrams), Babel (eyesopen.com/babel.html) for
+handling molecular files and coordinates, and RAPID
+Robust and Accurate Polygon Interference Detection
+System (Gottschalk, Lin et al. 1996) for the fast detection of intersections between polygonal models. New
+components have also been developed to export the
+resulting representations from the PMV environment in
+STL (stereolithography) or VRML (Virtual Reality Modeling Language) format as input to the autofabrication
+machinery.
+Designing a physical visualization utilizing autofabrication necessitates requirements well beyond those of
+the virtual models seen on the computer screen. First,
+the model must be a geometrically correct object, with
+inside and outside well defined. Many computer molecular models produce improper geometries with selfintersections and open edges. Second, the model must
+be designed to be mechanically feasible—that is, it
+must hold together (with no “floating” parts), and be
+strong enough to withstand handling and gravity. Issues of material characteristics such as strength and
+anisotropy as well as supplementary support structures
+must be factored into the design of the model. Thus
+with the components available in PMV and Vision, we
+are able to create valid solid objects, add additional
+
+Interfaces for Structural Molecular Biology
+485
+
+Figure 1. Molecular Modeling Coupled with Computer-Aided Design Software Allows for Design and Exact Placement of Affordances
+Here a flexible model of DNA with magnets representing hydrogen
+bond donors and acceptors gives the feel of double helix base
+pair recognition.
+
+support structures if necessary, and export the geometries to the autofabrication machinery. Unlike traditional
+CAD/CAM packages, our environment is tailored to the
+production of a wide variety of molecular representations, resolutions and scales, utilizing the established
+visual vocabulary of molecular modeling.
+In addition to the constraints of producing a physical
+model, there are possibilities to enhance its functionality through design of mechanical or other operational
+features. For more complex representations that incorporate flexibility or other functional characteristics, we
+rely upon supplementing the design using CAD/CAM
+approaches. In collaboration with the University of
+Utah, we have developed a parser to transform atomic
+coordinates into surface/feature-based representations,
+for use in extending the functionality and utility of the
+physical molecular models. Computer aided design
+(CAD) capabilities, such as constructive solid geometric Boolean operations on objects, enable a wide variety of modeling extensions. Such extensions include
+the design of affordances into the models to accommodate analog components, such as magnets to represent bonding capacity, such as hydrogen bond donors
+and acceptors in DNA base pairs (see Figure 1). Other
+mechanical components such as hinges, flexible linkers, and springs can also be built into the models. While
+each autofabricated model can be custom built, it is
+also possible to prototype components that can then
+be replicated using other, less expensive technologies.
+The Utah Group has developed software for replication
+technologies that can fit the atoms to a plane, split the
+model into halves, and create outer and inner models
+for injection molding.
+
+Production of Models
+We have utilized two autofabrication technologies. In
+our testing of the methods, we have found that each
+has definite advantages and disadvantages for the construction of molecular models. The Z-corp process
+(Zcorp 406 color 3D printer) applies a pigment-binder
+mixture to powdered gypsum using ink-jet print heads.
+The parts are finished by infiltrating a strengthening
+agent into the model after construction. This may be
+wax or cyanoacrylate glue if rigid models are desired,
+or an elastomer to produce rubber-like flexible models.
+The process is relatively fast and the materials are relatively inexpensive. The major advantage is that fullcolor models may be constructed automatically (see
+Figure 2). The models, however, can be fragile, and one
+challenge for our future work is to overcome this fragility.
+Stratasys (Stratasys Prodigy Plus) uses a fused deposition method that extrudes a molten ABS plastic filament to form each layer. The process is slower and
+approximately twice the cost for materials and the
+models are monochrome. However, they are far more
+durable, so finer representations, such as ball-andstick models and preassembled operational mechanical parts can be routinely created.
+Augmented Reality Interface
+Physical molecular models, while vastly more informative and intuitive than 2D drawing or textual descriptions, are fixed in form and cannot show everything
+about a structure’s properties. We use computer-based
+spatial tracking and rendering methods to enhance the
+semantic content of our models and to show dynamic
+properties. Augmented reality combines real world
+presence with virtual object presence, giving the illusion of a real interaction by leveraging the natural semantics of physical object manipulation (Fitzmaurice et
+al., 1995; Ishii and Hau, 1997; Brave et al., 1998; Gorbert et al., 1998; Billinghurst, 1999). Our AR interface
+combines real-world user and physical model presence
+with computational models and data. The user manipulates a model, and the model is tracked by a video camera and is displayed on the computer screen. A virtual
+representation (e.g., another 3D rendering of the same
+molecule, textual labels, or a 3D animation) is composited with the video display, and spatially registered with
+the model as the user manipulates and explores the
+structure. The result is a quite compelling sense of virtual object realism (see Supplemental Data for a video
+of the system in operation). Our approach is based on
+the widely-used ARToolKit (Billinghurst, 1999), an opensource software library for developing vision-based AR
+applications. ARToolKit is a software library that can be
+used to calculate the real camera position and orientation relative to physical markers in real time, allowing
+overlay of virtual objects onto the physical markers.
+Some of the features of the library include use of a single camera for position/orientation tracking, marker
+tracking code that uses simple black squares and
+pattern matching software that allows arbitrary patterns to be used, and fast performance for real time
+AR applications. The video tracking recognizes marker
+squares. By analyzing the distortion and scale of these
+
+Structure
+486
+
+Figure 2. A Number of Molecular Models
+Built with Different Materials, Showing a
+Wide Range of Molecular Representations,
+Scales, and Sizes
+
+squares, the translation and orientation of the marker
+can be computed. The pattern within each square is
+recognized and identified with a particular marker
+placement (see Figure 3).
+We have wrapped the ARToolKit in Python to allow
+integration with PMV, creating PyARTK, a stand-alone
+Python module that provides a framework to manage
+markers, displays composite images from video input,
+and allows access to the functionality of the ARToolKit
+library. It has been integrated with PMV to streamline
+both the design and the display of models within the
+same environment. A geometry manager in PyARTK assigns the geometries, animations, and masks to specific AR markers or sets of markers. Changes can be
+made interactively as the modeling proceeds. Computer graphic objects, camera operations, and clipping
+and lighting controls are provided in the interface, along
+with the video tracking and composite display. PyARTK
+tracks the embedded markers and then combines the
+video display of the model with the molecular graphics
+created by PMV.
+We have also added a basic animation facility to Py-
+
+ARTK, which allows run-time paging through different
+computer-generated representations while manipulating and examining the model. It was apparent in early
+tests that masking could be used to enhance the perceptual integration of the physical and virtual objects
+(see Figure 6). The mask is created directly from the
+geometry used to build the tangible model. It is used
+to erase portions of the virtual object that should be
+occluded by the physical model.
+The tangible molecular models are recognized and
+tracked using the square fiducial markers, which are
+placed on the surface of the model. These markers are
+used to register the superimposed virtual object with
+the manipulated real-world object. When designing the
+model in PMV, we can add one or more small square
+marker platforms to the model. Once the model is built,
+printed paper markers are glued onto these platforms.
+The transformations specifying the relationships between the markers and the models are saved during the
+design phase, and later used to compute the correct
+registration to overlap the 3D virtual object with the tangible model. By using several markers, the AR overlay
+Figure 3. The Image Processing Pipeline
+Used in ARToolKit
+Adapted from the ARToolKit 2.33 manual.
+
+Interfaces for Structural Molecular Biology
+487
+
+Figure 4. PyARTK and PMV Are Shown Integrated in the Same Process
+Different windows and graphical user interfaces control a variety of functions. The ARTViewer window is the interface for managing the
+patterns, GeomMgr window provides an interface for setting the geometry assigned to a pattern, and finally, the PyARTK window provides
+the composite graphic and video display. The PMV window is shown with the geometry used to build the tangible model of SOD and the
+vector field used to augment the tangible model.
+
+can be maintained and appropriately occluded while
+being arbitrarily manipulated and viewed from all angles. To facilitate this, we have implemented the concept of a group of markers, so that one model can carry
+several markers that all display the same virtual object
+but with different orientation depending on the location
+of the marker on the model.
+Integration of the PMV and the PyARTK Applications
+PMV and PyARTK are two independent components
+providing two fundamentally different functionalities.
+PMV has built-in knowledge of molecules including the
+ability to compute molecule-specific representations.
+PyARTK provides a python wrapper to the ARToolKit
+library for developing computer vision-based AR applications including multiple object tracking and compositing of computer-generated 3D geometries and video.
+PyARTK has no knowledge of molecules. This crucial
+design features make this software component reusable in a much broader context than molecular visualization and modeling. The ability to compute ribbon diagrams or color a molecular geometry according to a
+given molecular property could in principle be extracted from PMV and added to PyARTK. However, this
+would duplicate functionality and would require the
+repetition of this process for a large and increasing
+number of PMV commands. Instead, we decided to
+interface PMV and PyARTK in order to (1) allow PyARTK
+to gain access to PMV’s ability to handle and represent
+molecules, and (2) streamline both the design and the
+display of models within the same environment. We
+wrote a new PMV command that creates an instance
+of a PyARTK object when executed. When PyARTK is
+started inside the PMV environment, the geometry
+manager obtains knowledge of the geometries computed in PMV. We also gain access to PMV logging capabilities allowing us to generate scripts that can be
+rerun later (see Figure 4).
+
+AR Implementation
+With a software system in place for autofabrication of
+tangible molecular models and integration with an AR
+environment, we could begin to test our hypothesis that
+the perception of the complex shapes and interactions
+of biological molecules can be enhanced by the manipulation of augmented physical models. The implementation of a system where we could easily explore its
+utility dictated some practical design decisions. The integration of the physical models with the virtual augmentation requires the superposition of the two worlds
+into the same perceptual space. There are a number of
+ways to achieve this, including use of a head-mounted
+display where the user sees video of the real world
+scene and the superimposed computer graphic information. Projection of the computer information onto the
+physical model could be another approach. The expense and imperfect performance of these technologies at the present time lead us to a simpler “twoview” solution. By placing the video camera on a stalk
+near the users eyes and positioning a computer screen
+behind the area where the physical models are manipulated, both the physical model and the computer augmented scene can be viewed. By shifting focus, the
+user’s attention can be directed either to the physical
+model or to the augmented scene. This configuration
+has proven to be an effective, inexpensive, and portable solution (see Figure 5). We have demonstrated this
+implementation utilizing readily available, commodity
+USB or Firewire cameras attached to laptop computers
+(Windows, MAC, and Linux). We have found that controlled lighting with USB-powered LED lights helps
+maintain the video tracking in different physical environments.
+Examples
+The following examples demonstrate how this application can be useful in a collaborative environment and
+
+Structure
+488
+
+Figure 5. Set-Up of Augmented Reality Interface
+A Firewire camera can be seen on the stalk above the manipulated
+model. The combined video and computer augmented images are
+displayed on the screen of the laptop computer.
+
+also be a powerful tool for communicating key concepts in molecular biology.
+HIV Protease
+In this first example, we integrated a physical protein
+backbone representation of HIV protease with a computer graphic display of various inhibitor molecules that
+are effective in the treatment of AIDS. We built a backbone representation of HIV protease using the Zcorp
+printer. The geometry is represented by a tube colored
+by the amino acid sequence along the backbone. To
+track the model in any position, we placed three markers on the model, so that in any orientation, at least one
+marker is in the field of view of the video camera. We
+used AR overlay to show the bound conformation of
+five inhibitors within the active site of the protease (see
+Figure 6). Each inhibitor is displayed as a space-filling
+representation and colored by atom type. Text can also
+be displayed giving the names of the inhibitors as they
+are shown. The user can page through each inhibitor
+by using the animation player built within PyARTK. Notice in the figure that a mask is superimposed on the
+physical backbone model, providing correct occlusion
+of the computer graphic with the video texture.
+Superoxide Dismutase
+This example illustrates the function of superoxide dismutase (SOD), a detoxification enzyme that exhibits a
+strong electrostatic funneling effect. The user manipu-
+
+lates a tangible model of the SOD molecule built with
+the Stratasys printer (see Figure 7), and AR enhances
+the monochrome tangible model with color and shows
+dynamic properties. The physical model is represented
+as a spherical harmonic surface, which shows the overall shape of the protein but smoothes out the atomic
+details (Duncan and Olson, 1993). A real-time volume
+rendered electrostatic field is displayed around the protein surface, utilizing 3D texture mapping available on
+modern graphics processing units. A transfer function
+widget can interactively control its appearance. In addition, animated arrows are displayed in the vicinity of
+the enzyme’s active site, to show the field gradient that
+depicts the forces a negatively charged superoxide free
+radical would feel. With this interface, we can also manipulate interactions of two SOD proteins that form a
+dimeric complex, and thus provide an intuitive way to
+guide computational exploration.
+Ribosome
+The ribosome is a complex biomolecular machine composed of two subunits that together build proteins by
+aligning tRNA molecules along an mRNA strand. We
+have created a tangible model of the small subunit (see
+Figure 8) using the Zcorp printer, using a smooth spherical harmonic representation. We augment the physical
+model with a virtual representation of the large subunit,
+to show how the two subunits assemble into the functional complex. We also show an animation of the three
+positions of tRNA at the translation interface of the ribosome.
+Evaluation
+In collaboration with the Human Interfaces Technology
+Laboratory at the University of Washington, we are currently testing the efficacy of augmented models in a
+classroom setting, and their usefulness for basic research by structural molecular biologists.
+The first pilot test involved Biotech Academy program high school students in Seattle. The initial lesson
+was developed around basic protein structure concepts and the structure and function of hemoglobin. We
+produced an appropriate set of hemoglobin models
+and we conducted a weeklong technology assessment.
+The results suggested that the augmented tangible
+models were quite engaging and instructive, but we
+needed to have a more comprehensive lesson plan in
+order to generate quantitative results.
+In our second test, we have created models of the
+twenty naturally occurring amino acids, and designed
+a short lesson to present their structure and function in
+proteins. A pilot study with students from a collegeFigure 6. A Three-Dimensional Virtual Object
+Occluded by the Physical Model
+The pictures show the use of masking to
+give a compelling sense of virtual object realism. The left picture shows the scene with
+the mask, using the geometry of the tangible
+model as the mask. The right picture shows
+the composite image when the masking is
+not in use. Notice how the three red oxygen
+atoms appear to be under the protein chain
+in the left image, while in the unmasked, image the virtual component appears in front
+of the physical model.
+
+Interfaces for Structural Molecular Biology
+489
+
+Figure 7. SOD Model with and without AR
+The electrostatic field is shown with small arrows that point along the local field vectors
+(they appear as small dots in this picture),
+and the potential is shown with volume-rendered clouds, with positive in blue and negative in red. Lower image shows computer
+augmentation of two subunits of the SOD dimer which are tracked and manipulated independently.
+
+level biochemistry class at the University of Washington
+is under way. Two students work together on two tasks,
+guided by a proctor. First, the students examine each
+amino acid, learning about its structure and chemical
+properties. In each case, the augmented reality interface helps students identify the side chain and explore
+different representations. Second, the students explore
+the context of four functionally different amino acids
+within a protein structure. The augmented reality interface displays the local environment of the amino acid
+in the protein, showing the role of the amino acid in the
+protein structure and function. Finally, the students are
+tested for understanding of the relationship between
+structure and function in the amino acids using a simulated mutation experiment. At the time of this writing,
+the results are not yet available.
+We are also evaluating how augmented tangible models can be productively used in basic research by molecular biologists. We have produced a number of models for colleagues in our institute for applications ranging
+from drug design to assembly of large biomolecular complexes, and have received uniformly positive comments
+
+on the value of this approach for enhanced comprehension and communication of structural characteristics.
+Conclusions
+In our experience, we have found that tangible molecular models may provide several advantages over computer visualizations alone. (1) They produce a multisensory engagement which includes visual, tactile, and
+proprioceptive perceptual pathways for learning and
+memory. (2) They provide the capability of analog computation, where physical features such as shape, flexibility, and bonding capacity (e.g., using magnets) represent molecular characteristics. (3) They provide a
+natural and intuitive mechanism for manipulation and
+exploration, without the intervention of limited and indirect mechanisms such as the computer mouse. (4)
+They can provide both overview and detail simultaneously, enhancing contextual observation. (5) They are
+persistent objects, lending themselves to extended observation and contemplation. And (6), by serving as
+shared objects between individuals, the physical model
+tends to enhance social interaction and focus in ways
+
+Figure 8. Ribosome without (Left) and with
+AR (Right)
+The large subunit is shown with a wire cage,
+and one tRNA position is shown in red in a
+space-filling representation.
+
+Structure
+490
+
+that a computer display does not, and thus can enhance collaborative discussion.
+Our current approach to tangible computer interfaces
+for molecular biology has been prototyped in an inexpensive, portable form, using off-the-shelf components. We routinely demonstrate the technology during
+presentations, at the podium, projecting the composite
+video and virtual images for the audience to view. It is
+unfortunate, however, that the true impact of the system is difficult to convey through words and pictures
+alone. This system may be set up in a classroom at
+reasonable cost. PyARTK enables facile combination of
+molecular modeling capabilities with input and output
+in the AR environment. Using PMV along with our system has proven to be a fast and efficient approach to
+develop and test new ideas. Other interfaces such as
+force-feedback devices can be easily added to our existing system by creating appropriate interface modules (Sankaranarayanan et al., 2003). Because model
+manipulation engages the user’s hands, we are exploring speech recognition technology for computer command input.
+In our future work, we plan to develop a spatially
+tracked “data probe” designed to enhance interaction
+between the physical and virtual models. Users will be
+able to point to different places on the tangible model
+and get information from the virtual model. We will further develop our abilities to drive or steer computations
+of molecular interactions using this interface approach.
+We also plan to develop new methods for markerless
+spatial tracking, removing the need for fiducial tracking
+markers. We plan to extend the use and assessment of
+our augmented tangible model technologies to a wide
+range of educational levels and settings, including K–12,
+undergraduate, graduate, and public science exhibits.
+Supplemental Data
+A movie showing the production and utilization of autofabricated
+models of biomolecular structures in an augmented reality environment is available online at http://www.structure.org/cgi/content/
+full/13/3/483/DC1/.
+
+Acknowledgments
+This paper is based upon work first reported at the IEEE Conference Visualization ’04 (Gillet et al., 2004). We would like to thank
+our collaborators E. Cohen, D. Johnson, and R. Reisenfeld at the
+University of Utah, and S. Weghorst, M. Billingshurst, T. Furness,
+and B. Winn at the University of Washington. We also acknowledge
+the National Institutes of Health (NIH BISTI EB00798) and the National Science Foundation (NSF ITR 0121282) for supporting this
+work. This is publication 17043-MB from the Scripps Research Institute.
+Received: November 22, 2004
+Revised: January 11, 2005
+Accepted: January 12, 2005
+Published: March 8, 2005
+References
+Barfield, W., and Weghorst, S. (1993). The sense of presence within
+virtual environments: a conceptual framework. 5th International
+Conference on Human-Computer Interaction, Orlando, FL.
+Behringer, R., Klinker, G., Klinker, G.J., and Mizell, D.W. (1999). Aug-
+
+mented Reality: Placing Artificial Objects in Real Scenes (Natick,
+MA: A.K. Peters Ltd.).
+Billinghurst, M.H. (1999). Collaborative mixed reality. International
+Symposium on Mixed Reality, Yokohama, Japan.
+Brave, S., Ishii, H., and Dahley, A. (1998). Tangible interfaces for
+remote collaboration and communication. Proceedings of CSCW,
+Seattle, WA.
+Brooks, J.F.P. (1999). What's real about virtual reality? IEEE Comput. Graph. Appl. 19, 16–27.
+Burns, M. (1993). Improving Productivity in Manufacturing (Englewood Cliffs, NJ: PTR Prentice Hall).
+Coon, S., Sanner, M.F., and Olson, A.J. (2001). Re-usable components for structural bioinformatics. 9th International Python Conference (IPC9), Long Beach, CA.
+Duncan, B.S., and Olson, A.J. (1993). Approximation and characterization of molecular surfaces. Biopolymers 33, 219–229.
+Fitzmaurice, G., Ishii, H., and Buxton, W. (1995). Bricks: laying the
+foundations for graspable user interfaces. CHI’95, Conference on
+Human Factors in Computing Systems, Chicago, IL.
+Gillet, A., Sanner, M., Stoffler, D., Goodsell, D., and Olson, A. (2004).
+Augmented reality with tangible auto-fabricated models for molecular biology applications. IEEE Visualization 2004, Austin, Texas.
+Gorbert, M.G., Orth, M., and Ishii, H. (1998). Triangles: tangible
+interface for manipulation and exploration of digital information topography. CHI’98, Conference on Human Factors in Computing
+Systems, Chicago, IL.
+Gottschalk, S., Lin, M.C., and Manocha, D. (1996). OBBTree: a hierarchical structure for rapid interface detection. 23rd Annual Conference on Computer Graphics and Interactive Techniques, New Orleans, LA.
+Ishii, H., and Hau, B. (1997). Tangible bits: towards seamless interfaces between people, bits and atoms. CHI ‘97, Conference on Human Factors in Computing Systems, Chicago, IL.
+Milgram, P., and Kishino, F. (1994). Taxonomy of mixed reality visual
+displays. IEICE Trans. Inf. Syst. E77, 1321–1329.
+Olson, A. (2001). Molecular graphics and animation. In International
+Tables of Crystallography, Volume F, M. Rossmann and E. Arnold,
+eds. (Amsterdam: Kluwer International Publishers), pp. 357–368.
+Ouh-Young, M.M., Pique, M.E., Hughes, J., Srinivasan, N., and
+Brooks, F.P., Jr. (1988). Using a manipulator for force display in molecular docking. IEEE Robotics and Automation Conference, Philadelphia, PA.
+Pauling, L., and Corey, R.B. (1950). Two hydrogen-bonded spiral
+configurations of the polypeptide chain. J. Am. Chem. Soc. 72,
+5349.
+Poupyrev, I., Weghorst, S., Billinghurst, M., and Ichikawa, T. (1997).
+A framework and testbed for studying manipulation techniques for
+immersive VR. In Proceedings of ACM Symposium on Virtual Reality Software and Technology 1997 (VRST), pp. 21-28.
+Sankaranarayanan, G., Weghorst, S., Sanner, M., Gillet, A., and
+Olson, A. (2003). Role of haptics in teaching structural molecular
+biology. 11th Symposium on Haptic Interfaces for Virtual Environment and Teleoperator Systems, Los Angeles, CA.
+Sanner, M.F. (1999). Python: a programming language for software
+integration and development. J. Mol. Graph. Model. 17, 57–61.
+Sanner, M.F. (2005). A component-based software environment for
+visualizing large macromolecular assemblies. Structure 13, this issue, 447–462.
+Sanner, M.F., Olson, A.J., and Sphehner, J.C. (1996). Reduced surface: an efficient way to compute molecular surfaces. Biopolymers
+38, 305–320.
+Sanner, M.F., Stoffler, D., and Olson, A.J. (2002). ViPEr, a visual programming environment for python. 10th International Python Conference, Alexandria, VA.
+
+Interfaces for Structural Molecular Biology
+491
+
+Smetacek, V., and Mechsner, F. (2004). Making sense. Nature 432, 21.
+Taylor, R.M., Robinett, W., Chi, V.L., Brooks, F.P., Jr., Wright, W.V.,
+Williams, R.S., and Snyder, E.J. (1993). The nanomanipulator: a virtual reality interface for a scanning tunneling microscope. SIGGRAPH 1993, San Diego, CA.
+Underkoffler, J., Ullmer, B., and Ishii, H. (1999). Emancipated pixels:
+real-world computer graphics in the luminous room. SIGGRAPH
+1999, Los Angeles, CA.
+Watson, J.D., and Crick, F.H.C. (1953). A structure for deoxyribose
+nucleic acid. Nature 171, 737–738.
+
+

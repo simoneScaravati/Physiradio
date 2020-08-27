@@ -1,0 +1,555 @@
+Output to input: concepts for physical data
+representations and tactile user interfaces
+Steve Szigeti, Anne Stevens, Robert Tu, Ana Jofre, Alex Gebhardt, Fanny
+Chevalier, Jonathan Lee, Sara Diamond
+
+To cite this version:
+Steve Szigeti, Anne Stevens, Robert Tu, Ana Jofre, Alex Gebhardt, et al.. Output to input: concepts for physical data representations and tactile user interfaces. 2014, pp.1813-1818.
+�10.1145/2559206.2581333�. �hal-01003948�
+
+HAL Id: hal-01003948
+https://hal.inria.fr/hal-01003948
+Submitted on 11 Jun 2014
+
+HAL is a multi-disciplinary open access
+archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from
+teaching and research institutions in France or
+abroad, or from public or private research centers.
+
+L’archive ouverte pluridisciplinaire HAL, est
+destinée au dépôt et à la diffusion de documents
+scientifiques de niveau recherche, publiés ou non,
+émanant des établissements d’enseignement et de
+recherche français ou étrangers, des laboratoires
+publics ou privés.
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+Output to Input: Concepts for Physical
+Data Representations and Tangible
+User Interfaces
+Steve Szigeti
+
+Alex Gebhardt
+
+Abstract
+
+OCAD University
+
+OCAD University
+
+100 McCaul Street
+
+ag11kd@student.ocadu.ca
+
+Tangible user interfaces and physical representations of
+data are both promising approaches to improving
+insights derived from large data sets. Interactive
+tangible representations of data, which seamlessly
+combine those two approaches, potentially take
+advantage of cognitive processes, data representations,
+and interactions not supported by current approaches
+and may enhance collaboration. This paper describes
+user evaluations of two sets of prototypes comprised of
+physical blocks to represent data. One set uses six
+blocks of identical dimensions and another set uses six
+blocks with different dimensions. The objectives of this
+pilot study include (i) making general observations on
+how users interact with the two prototypes, (ii) making
+observations on the role these tangible interfaces play
+in collaboration, and (iii) comparing the two sets of
+tangible interfaces. We report on the results of the
+study and discuss future work.
+
+Toronto, Canada, M5T 1W1
+sszigeti@ocadu.ca
+
+Fanny Chevalier
+OCAD University
+
+Anne Stevens
+
+fchevalier@ocadu.ca
+
+OCAD University
+astevens@faculty.ocadu.ca
+
+Jonathan Lee
+BBM Analytics
+
+Robert Tu
+
+1500 Don Mills Road
+
+OCAD University
+
+Toronto, Canada, M3B 3L7
+
+rt07kk@student.ocadu.ca
+
+JLee@bbmanalytics.ca
+
+Ana Jofre
+
+Sara Diamond
+
+OCAD University
+
+OCAD University
+
+aj13mj@student.ocadu.ca
+
+sdiamond@ocadu.ca
+
+Permission to make digital or hard copies of part or all of this work
+for personal or classroom use is granted without fee provided that
+copies are not made or distributed for profit or commercial
+advantage and that copies bear this notice and the full citation on
+the first page. Copyrights for third-party components of this work
+must be honored. For all other uses, contact the Owner/Author.
+
+Author Keywords
+Human Factors; Design; Physical visualization; Tangible
+Computing; NUI
+
+Copyright is held by the owner/author(s).
+
+ACM Classification Keywords
+
+CHI 2014, Apr 26 - May 01 2014, Toronto, ON, Canada
+ACM 978-1-4503-2474-8/14/04.
+http://dx.doi.org/10.1145/2559206.2581333
+
+H5.2 User Interfaces: Evaluation/Methodology
+
+1813
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+Introduction
+
+We present the results of a pilot study in which we
+compare two sets of TUIs that are used to interrogate
+and represent data on radio station listening
+demographics. Both TUIs consist of a set of blocks,
+where each block represents a single radio station. The
+uniformly-sized set (see Figure 1) comprised six blocks
+of identical dimensions and the data-sculpture set (see
+Figure 2) comprised six blocks with dimensions
+representing the number of radio listeners (height) and
+the total time they listened (depth) in a 24 hour period
+
+Physical representations of data combine cognition,
+representation and interaction in novel ways, offering
+the potential for discovering insights into a data set
+that traditional WIMP based approaches may not.
+
+Figure 1: The uniformly-sized set of
+blocks (simple TUI). Prototype of
+tangible interface representing six
+radio stations.
+
+Figure 2: The data-sculpture set of
+blocks (data sculpture + TUI).
+Prototype of tangible interface and
+data sculpture representing six radio
+stations. The height of the block
+represents the number of listeners
+and the depth of the block represents
+the total time listened.
+
+As interest in the physical representation of data
+continues to grow, research has focused on one of two
+different but related facets: the tangible interface as
+input and physical representations as output.
+
+Background and motivation
+
+The user evaluation also considered the role of
+collaboration, which may be a key differentiator
+between tangible and WIMP style interfaces. Lee et al
+argue that analysis should include not only the user,
+but the potential social dimensions of the interaction
+which takes places when users engage with each other
+while navigating physical devices [11].
+
+Tangible user interfaces (TUI) afford interactions that
+push the boundaries of traditional WIMP interfaces,
+including the direct manipulation of 2D graphical forms
+[4], the use of gesture [11] and 3D space [11][1].
+Research in TUI explore possible improvements to how
+we can interact with data sets and computer models,
+particularly with regard to learning [3][12] and
+collaborative work [8]. Kim and Maher, for example,
+compared Graphical User Interfaces (GUI) with TUI in a
+collaborative design task, finding that the groups using
+TUI performed multiple cognitive actions in a shorter
+time, made more unexpected discoveries of spatial
+design features, and exhibited more problem-finding
+behaviours [8].
+Physical data representation is the materialization of
+data into physical artefacts, which may offer more
+intuitive approaches to data analysis and lead to
+insights into data sets [13]. Although we are only
+beginning to understand the efficiency of physical
+visualization, evaluations have found that in some
+circumstances they outperform on-screen equivalents
+when retrieving information and that the component of
+touch appears to be a key cognitive aid [6][7].
+
+Methodology
+We undertook two user evaluation sessions, each of
+which involved four participants. Participants were first
+asked to complete ten tasks in response to questions1
+using one set of blocks. The procedure was then
+repeated using the other set of blocks. The order of the
+sets was counterbalanced to prevent order bias. Both
+sessions were video and audio recorded and lasted less
+than one hour.
+
+1
+
+Questions were based on queries that may be asked using
+existing data visualization software. For example, participants
+were asked to determine which radio station had the greatest
+number of male listeners between the ages of 44 to 55.
+
+1814
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+The user interaction of the low fidelity prototypes was
+simulated using a Wizard of Oz technique.2 Participants
+were also asked to complete a post-study survey.
+Data Sets
+Compiled by BBM Canada, the data consisted of
+detailed demographic information on radio listeners and
+the media consumption habits of market research
+participants collected on April 1, 2013 for the Toronto
+area in Canada.
+Apparatus
+In addition to the two sets of blocks described above,
+six cards were used to represent additional data
+variables: radio format, ownership, age range, sex
+(gender), household status, and household size (see
+Figure 3). Sheets of paper were placed on the table
+between the participants to represent a surface on
+which the blocks and cards could be placed to produce
+a visualization of the data. A wall mounted screen was
+positioned in front of the participant group, on which
+the resulting visualizations appeared3.
+
+Figure 3: Prototype of interactive
+data category cards
+
+Participants
+The eight participants were BBM Analytics employees,
+who were over 25 years old, had at least one year of
+experience, and were familiar with data visualization
+software, although their familiarity with the specific
+data set used in the study varied. The two groups were
+
+2
+
+3
+
+This technique allows for rapid prototyping and evaluation since
+the interactions between the user and the tool are simulated
+by researchers (see the work of Greenberg, Carpendale,
+Marquardt & Buxton [5] for a more details regarding a
+technique first proposed by Jeff Kelley.)
+Note that not all the potential combinations of blocks and cards
+could be anticipated and displayed. Researchers described the
+visualization where an actual visualization did not exist.
+
+composed of 2 men and 2 women, and 3 women and 1
+man respectively.
+Procedure
+The first group completed the ten questions using the
+uniformly sized set and then the data-sculpture set,
+whereas the second group began with the datasculpture set and then used the uniformly-sized set.
+While the pilot study did not compare 2D with TUI, we
+wanted to allow for a discussion of the relevance of TUI
+in the context of the participant’s work. Hence we
+asked questions that were similar to queries study
+participants would perform in the course of their work
+using existing 2D analytic software. The questions
+started simply and increased in complexity (see Figure
+4, 5 and 6 for illustration of how a query could be
+answered by manipulating the blocks and cards on a
+sensor pad and viewing the resulting visualization on a
+screen).
+Measures
+The primary variable in the study was the different set
+of blocks. The uniformly-sized set used colour and a
+written label to represent specific radio stations. No
+other data variable was physically represented. The
+data-sculpture set included a physical visualization of
+the total listening time for each radio station and the
+total audience embodied in the dimensions of the block.
+We captured audio and video recordings to allow us to
+measure the time to complete tasks, error rate and to
+capture inter-participant interaction during completion
+of the tasks.
+We asked the participants to complete an online survey
+immediately following their session, in which they
+answered questions regarding perceived collaboration,
+usability of the prototype (using the System Usability
+
+1815
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+Scale), preferences between the sets, and potential
+uses of TUIs.
+
+Results
+
+Figure 4: placing blocks on sensor
+pad to answer query
+(which radio station had the greatest
+number of male listeners
+between the ages of 44 to 55.)
+
+Figure 5: manipulating blocks and
+cards on sensor.
+
+Figure 6: visual output from user
+interaction with blocks on the sensor
+pad
+
+Collaboration and engagement
+Overall, both user sessions provided examples of
+collaboration and active participation. However, there
+were some notable differences between the use of the
+uniformly sized set and the data-sculpture set of
+blocks. We defined collaboration as social interaction
+(handling the blocks, discussing how they should be
+used and helping formulate answers). This was greater
+with the data-sculpture set of blocks, which participants
+recognized in the survey.
+Usability
+We did not observe any differences in the handling of
+the blocks, all of which were light enough to be handled
+by one-hand. Participants were asked to rate the use of
+blocks to analyze the data. Using the System Usability
+Scale (SUS) for measurement, the average score of the
+seven respondents was 76.4. A SUS score above 68 is
+considered above average [2]. Only one participant
+gave the system a score below this benchmark (their
+score was 60). An average score of 76.4, supported by
+positive commentary from participants, suggests that
+they found the block TUI valuable for the analysis of
+data. Six of seven survey respondents agreed with that
+statement that the blocks are a useful way to explore
+the data, and five of seven agreed that this method of
+analyzing data would lead to new insights.
+Preferences
+When asked regarding their preference for either set,
+four out of seven of the respondents preferred the
+uniformly sized set, citing a belief that they led to more
+insight regarding the data. In addition, six of the seven
+
+participants who responded to the survey question
+“which set helped you complete your task more
+quickly?” felt that the uniformly sized set was more
+efficient (the seventh participant did not indicate a
+difference between the two sets). The sessions revealed
+some confusion regarding the data-sculpture set and
+that the inclusion of data in the TUI may have been a
+confounding (instead of an enlightening) factor. It is
+possible that the data-sculpture set required more
+training for effective use than the uniformly sized set.
+One participant felt that physically representing two
+important facets of a radio station’s data gave her an
+immediate impression of the station relative to other
+stations, an impression she did not get from the
+uniformly sized blocks. However, none of the questions
+were answered by the participants using only the
+physical aspects of the block (ie. without recourse to
+the flat surface and screen display.)
+Potential Uses
+Participants were asked if specific types of data would
+lend themselves to the use of blocks for analysis;
+specific data sets used in the course of work were
+proposed. This finding will be used to select data sets in
+future development work and evaluation. Participants
+also compared existing 2D visualizations (which are
+generated by existing software tools to analyze the
+data sets comparable to those used in this study) with
+the use of blocks, generally finding that the block
+concept held potential in revealing insight that existing
+tools did not. As one participant commented,
+I think the blocks will work for any data that has a
+common base as the 3D shape has an advantage over
+common 2D visualizations to display different facets
+of the data in a more manageable fashion. I also find
+that manipulating the blocks is easier than checking
+
+1816
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+off a list of boxes to find the results you want. I felt
+like the visual aspect of the block forces the brain to
+see data differently and prompts questions that a bar
+graph or histogram wouldn't necessarily provoke.
+Although efficiency was not a key measurement in the
+study, the time to complete tasks (the time taken to
+answer each question) was also recorded. The time to
+complete tasks with the uniformly sized set was half
+that of the data-sculpture set for both groups.
+
+Discussion
+Participants in both user sessions expressed a keen
+interest in TUI, finding the use of blocks to be fun,
+although this may have been a product of novelty. The
+pilot study helped us to test various ideas and beliefs
+we held regarding the use of TUIs. For example, we
+believed that the data-sculpture set would lead to more
+efficient responses to our questions since potential
+answers were embedded within the physical
+representation of the data, but this was not the case.
+Even though participants could line up the blocks and
+see differences in terms of height, for example, the
+presence of other aspects of the data (as represented
+by the depth) may have caused some uncertainty,
+reducing efficiency. At times the participants were
+unsure of the correct orientation in which to place the
+blocks; perhaps more training time prior to making use
+of the blocks could have increased efficiency.
+The efficiency of using blocks to analyze data remains
+unclear and requires further study. In this pilot study,
+we focused on gathering qualitative data on how users
+interacted with the TUIs, on how the TUIs spurred
+social interaction, and on how each of our two TUIs
+compared with one another. We were therefore more
+interested in recording the spontaneous group
+
+discussions that arose among participants, rather than
+measuring efficiency, and thus we are hesitant to make
+any claims regarding efficiency. We believe that the
+information gleaned from these tangential group
+discussions is more useful to us at this time than timeto-complete tasks measurements because we are still
+in the process of determining which specific affordances
+are most relevant to the user. The group discussions
+informed possible ways that a query may be answered,
+such as placing blocks on different parts of the input
+surface, stacking, and rotating the angle of the blocks
+in relation to each other and to the participants. This
+interaction between participants suggests a need to
+further study the use of a TUI and whether it may
+instigate social interactions. Social instigation may need
+to be balanced against efficiency as social interaction
+may improve the effectiveness or quality of data
+analysis [8] [12].
+
+Future Work
+The pilot study involved only eight participants, but it
+allowed us to share the concept with a potential user
+group. We would like to better understand the
+differences of data sculpture approach versus non-data
+sculpture and the possible affordances of physical
+blocks. We would also like to better understand the role
+of colour on the perceptions of data. However, we
+believe there are properties beyond efficiency that hold
+promise for TUI, such as improved collaboration and
+accessibility. We would like to better understand the
+role of collaboration in the use of TUIs, particularly if
+collaboration reveals novel insights from data. In other
+words, to what degree can TUIs facilitate human to
+human to computer interaction so that we may uncover
+currently hidden facets of a data set. Contemporary
+artists have led in the creation of evocative data
+
+1817
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+sculptures, a burgeoning art practice which may bear
+future value in providing clues to effective formal
+expression in the use of TUIs [14].
+
+Acknowledgements
+We thank our research colleagues for their contribution
+to this project: Borzu Talaie, David Schnitman, Tea
+Pajkic and Ioana Patrasc. We also thank Maaz Nasir and
+Dr. K. Lyons for sharing a tool they developed to
+measure collaboration (which we adopted for part of
+the participant survey), and David Phillips at BBM
+Analytics. This research is supported by the Center for
+Innovation for Visualization and Data-Driven Design.
+
+References
+[1] Baudisch, P., Becker T., and Rudeck, F. Lumino:
+Tangible Blocks For Tabletop Computers Based On
+Glass Fiber Bundles. In Proc. CHI 2010, ACM Press
+(2010), 1165-1174.
+[2] Brook, J. SUS – A Quick And Dirty Usability Scale.
+In Usability Evaluation In Industry. Taylor & Francis
+Ltd, London, 1996, 189-194.
+[3] Do-Lenh, S., Jermann, P., Cuendet, S., Zufferey,
+G., and Dillenbourg, P. Task Performance Vs. Learning
+Outcomes: A Study Of A Tangible User Interface In The
+Classroom. In Sustaining TEL: From Innovation to
+Learning and Practice. Springer, Berlin, Heidelberg,
+2010. 78-92.
+[4] Gorbet, M.G., Orth, M. and Ishii, H. Triangles:
+Tangible Interface For Manipulation And Exploration Of
+Digital Information Topography. In Proc. CHI 1998,
+ACM Press (1998), 49-56.
+[5] Greenberg, S., Carpendale, S., Marquardt,
+N., and Buxton, B. Sketching User Experiences: The
+Workbook. Morgan Kaufmann Publishers, Waltham, MA,
+USA, 2012.
+
+[6] Jansen, Y., Dragicevic, P. and Fekete, J.-D.
+Evaluating The Efficiency Of Physical Visualizations. In
+Proc. CHI 2013, ACM Press (2013), 2593-2602
+[7] Kenderdine, S., Au, O.K.-C. and Shaw, J. Cultural
+Data Sculpting: Omnispatial Visualization for Cultural
+Datasets. Proc. of Information Visualisation (IV) 2011,
+IEEE (2011), 570- 579
+[8] Kim, M.-J., and Maher, M.-L. The impact of tangible
+user interfaces on spatial cognition during collaborative
+design. Design Studies 29, 3 (2008), 222-253.
+[9] Klum, S., Isenberg, P., Langner, R., Fekete, J.-D.,
+and Dachselt, R. Stackables: combining tangibles for
+faceted browsing. In Proc. of Advanced Visual
+Interfaces (AVI) 2012, ACM Press (2012), 241-248
+[10] Lakatos, D., and Ishii, H. Towards Radical Atoms—
+Form-giving to transformable materials. Cognitive
+Infocommunications (CogInfoCom), IEEE (2012), 37-40.
+[11] Lee, B., Isenberg, P., Riche, N.H., and Carpendale,
+S. Beyond Mouse and Keyboard: Expanding Design.
+Considerations for Information Visualization
+Interactions. IEEE Transactions on Visualization and
+Computer Graphics 18, 12 (2012), 2689-2698.
+[12] Schneider, B., Jermann, P., Zufferey, G., and
+Dillenbourg, P. Benefits Of A Tangible Interface For
+Collaborative Learning And Interaction. In Transactions
+on Learning Technologies, IEEE (2011), 222-232.
+[13] Vande Moere, A. Beyond the tyranny of the pixel:
+Exploring the physicality of information visualization.
+Proc. of Information Visualization (IV) 2008. IEEE
+(2008), 469- 474.
+[14] Viégas, F. B., and Wattenberg, M. Artistic data
+visualization: Beyond visual analytics. In Online
+Communities and Social Computing. Springer, Berlin
+(2007), 183-191.
+
+1818
+
+

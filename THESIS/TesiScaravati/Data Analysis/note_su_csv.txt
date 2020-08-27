@@ -1,0 +1,12 @@
+I sensi son stati portati a boolean. 
+E la "potenzialità" dei sensi è spostata sull'interazione, con il seguente schema:
+- 0 = nessuna interazione possibile se non la semplice vista o il tatto del progetto
+- 1 = l'interazione con l'oggetto cambia i parametri della fisicalizzazione (dato è lo stesso) (esempio sfera)
+- 2 = l'interazione con l'oggetto cambia il dataset o aggiorna la fisicalizzazione 
+
+- inf = l'interazione cambia il tipo di fisicalizzazione (classe) (generatore di phys)
+
+
+PS : so che non è il massimo, però è un tentativo di pseudo oggettività in uno studio che è puramente soggettivo.
+
+Dinamicità intesa come collegamento costante tra la fisicalizzazione e dato ( real time) 

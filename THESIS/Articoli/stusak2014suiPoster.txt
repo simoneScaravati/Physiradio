@@ -1,0 +1,109 @@
+Poster Session
+
+SUI’14, October 4-5, 2014, Honolulu, HI, USA
+
+Projection Augmented Physical Visualizations
+Simon Stusak
+University of Munich (LMU)
+simon.stusak@ifi.lmu.de
+
+Markus Teufel
+University of Munich (LMU)
+teufel@cip.ifi.lmu.de
+
+ABSTRACT
+
+PROTOYPE
+
+Physical visualizations are an emergent area of research and
+appear in increasingly diverse forms. While they provide
+an engaging way of data exploration, they are often limited
+by a fixed representation and lack interactivity. In this work
+we discuss our early approaches and experiences in combining physical visualizations with spatial augmented reality and
+present an initial prototype.
+
+For our initial prototype (see figure 1) an area chart as type
+of visualization was chosen because it offers much space for
+augmentation. It was built out of birch wood, as this type
+of wood is easily processed with a laser cutter and its bright
+tint is well-suited for projection augmentation. Based on
+web technologies 3D models for the projection and 2D vector shapes for the laser cutter were generated. The calibration process was done using mapamok1 . The PV visualizes
+the export of small arms and light weapons of different countries. The projection was used to display labels and legends,
+to show additional data in form of stacked area charts and to
+provide vertical and horizontal guides to simplify comparison
+of different data items. Interaction, e.g. moving the guides or
+changing the data for the stacked area chart was done with a
+remote tablet device.
+
+Author Keywords
+
+physical visualizations; information visualization; projection
+augmentation; spatial augmented reality
+ACM Classification Keywords
+
+H.5.m INFORMATION INTERFACES AND PRESENTATION (e.g., HCI): Miscellaneous
+INTRODUCTION
+
+Physical Visualizations (PV) are visualizations in which data
+is mapped to physical form instead of pixels [1]. Vande Moere [3] writes that PVs have the potential of sparking curiosity and turning data exploration into a fascinating experience.
+Spatial Augmented Reality is used to extend arbitrary physical objects with a digital layer. Shader Lamps by Raskar
+et al. [2] is a popular example in which a projector is used
+to augment real world objects with a texture. As most PVs
+are limited by fixed visual appearance, a digital augmentation
+seems a promising approach to minimize this constraint and
+provide an additional layer for interaction.
+
+Figure 1. Projection Augmented Area Chart
+
+CONCLUSION AND FUTURE WORK
+
+Our exploration reveals that projection augmentation can enhance PVs. Guides for example help to overcome problems
+arising from perspective distortion. The augmentation of the
+PVs surface with additional information can compensate its
+static nature without losing the advantages of physical objects, which can be touched and explored with all senses [3].
+As our early prototype only supports interaction using a remote tablet device the next step is to implement direct touch
+interaction on the PV itself. Another promising approach
+would be to integrate the position of the user and adapt the
+projection depending on their movements.
+
+CONCEPT PHASE
+
+The design of projection augmented physical visualizations
+can be split into several dimensions. The physical visualization itself is the characteristic element and its material (e.g.
+plastic, wood), fabrication (e.g. 3D printer, laser cutter), size
+and space for the projection should be taken into account.
+The projection can differ on the basis of its position (e.g.
+direct projection on the PV, projection near the PV) and its
+purpose (e.g. showing additional information, enabling interaction with the data). Furthermore the input modality should
+be considered (e.g. touching the PV, disassembling and reassembling the PV, remote input device).
+
+REFERENCES
+
+1. Jansen, Y., Dragicevic, P., and Fekete, J.-D. Evaluating
+the efficiency of physical visualizations. In Proceedings
+of CHI ’13, ACM (2013), 2593–2602.
+2. Raskar, R., Welch, G., Low, K.-L., and Bandyopadhyay,
+D. Shader lamps: Animating real objects with
+image-based illumination. In Proceedings of the 12th
+Eurographics Workshop on Rendering Techniques.,
+Springer (2001).
+3. Vande Moere, A. Beyond the tyranny of the pixel:
+Exploring the physicality of information visualization. In
+Information Visualisation, 2008. IV’08, IEEE (2008),
+469–474.
+
+Permission to make digital or hard copies of part or all of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be
+honored. For all other uses, contact the owner/author(s). Copyright is held by the author/owner(s).
+SUI’14, October 4–5, 2014, Honolulu, HI, USA.
+ACM 978-1-4503-2820-3/14/10.
+http://dx.doi.org/10.1145/2659766.2661210
+
+1
+
+145
+
+https://github.com/YCAMInterlab/mapamok
+
+

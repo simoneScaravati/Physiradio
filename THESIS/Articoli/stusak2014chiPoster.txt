@@ -1,0 +1,523 @@
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+Beyond Physical Bar Charts –
+An Exploration of Designing
+Physical Visualizations
+Simon Stusak
+
+Ayfer Aslan
+
+Abstract
+
+Universtiy of Munich (LMU)
+
+Universtiy of Munich (LMU)
+
+Human-Computer-Interaction
+
+Human-Computer-Interaction
+
+Group
+
+Group
+
+Amalienstraße 17
+
+Amalienstraße 17
+
+80333 Munich, Germany
+
+80333 Munich, Germany
+
+simon.stusak@ifi.lmu.de
+
+ayfer.aslan@campus.lmu.de
+
+Physical visualizations only recently started to attract
+attention from the InfoVis and HCI communities. They
+are well known to encourage playful exploration and to
+stimulate curiosity, but are also considered to support
+analytical information visualization tasks. However,
+creating effective and usable physical visualizations has
+not been explored in much detail. In this work, we
+present our early approaches and experiences in
+designing and building novel physical visualizations. We
+started with sketches on paper, created first low fidelity
+prototypes out of cardboard and built the final
+visualizations with thread, acrylic glass and a laser
+cutter. An initial user study was conducted to
+investigate if basic information retrieval tasks can be
+accomplished with our physical visualizations and how
+users interact with them.
+
+Permission to make digital or hard copies of part or all of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that
+copies bear this notice and the full citation on the first page. Copyrights
+for third-party components of this work must be honored. For all other
+uses, contact the Owner/Author.
+Copyright is held by the owner/author(s).
+CHI 2014, Apr 26 - May 01, 2014, Toronto, ON, Canada.
+ACM 978-1-4503-2474-8/14/04.
+http://dx.doi.org/10.1145/2559206.2581311
+
+Author Keywords
+Design Process; Physical Visualization; Information
+Visualization; Tangible User Interfaces
+
+ACM Classification Keywords
+H.5.m. Information interfaces and presentation (e.g.,
+HCI): Design
+
+1381
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+Introduction
+
+Figure 1. Layered flowers
+represent countries, its petals
+different topics.
+
+Physical Visualizations (PVs) are visualizations in which
+data is mapped to a physical form [2]. Artists and
+designers have produced a large variety of physical
+representations of data and companies already used
+them in the early 20th century [1]. They are used to
+convey messages beyond the data itself and can
+engage people to reflect on its meaning [5]. While
+these benefits are widely recognized, their analytical
+value and the creation of effective PVs remain to be
+explored.
+
+Figure 2. Sketch of a rotary disk.
+By rotating parts of the physical
+visualization the displayed countries
+or dimensions can be changed.
+
+In this paper we describe our design process which is
+inspired by rapid prototyping techniques such as paper
+prototyping. We believe that using basic materials (e.g.
+paper and cardboard) in the initial design steps has
+advantages over digital fabrication tools. The use of
+laser cutters and 3D printers is still more time
+consuming, expensive and produce a lot of waste.
+Furthermore access to these tools is needed as well as
+a lot of experience to receive good results. In contrast
+paper and cardboard can be easily processed further
+with common tools such as pencils, scissors or glue,
+which are well-known and accessible to everybody.
+
+different degrees of ‘data physicality’ which vary in the
+level of abstraction of how data is mapped and
+perceived by human senses. He argues that PVs can
+represent information in pleasant ways and turn data
+analysis in an engaging and educational experience.
+The first study that evaluated the efficiency of physical
+visualizations was conducted by Jansen et al. [2]. This
+study compared physical 3D bar charts to their onscreen 2D and 3D counterparts. The physical touch and
+the perfect visual realism of physical objects seem to
+be an essential cognitive aid for information retrieval
+tasks. They point out that further research is needed
+and that recommendations for designing effective
+visualizations are necessary.
+Jansen et al. [3] presented an interaction model for
+beyond-desktop visualizations. They describe a
+modified information visualization pipeline in which raw
+data is processed into a visualization and then rendered
+into the physical world.
+
+Designing Physical Visualizations
+In the following we will discuss our design process. We
+describe our early steps, in which we sketched ideas
+and built low fidelity prototypes out of paper and
+cardboard. Furthermore we present our final designs
+and the results of a conducted focus group.
+
+In addition we present an initial user study in which we
+evaluated two physical visualizations against two digital
+visualizations to investigate if basic information
+visualization retrieval tasks can be accomplished. We
+collected qualitative data through questionnaires, semistructured interviews and observations during the
+study.
+
+Dataset
+To reduce the possible design space we focused on one
+dataset for the entire design process. We used the
+Better Life Index1 dataset published by the
+Organisation for Economic Co-operation and
+Development (OECD). This index allows the comparison
+
+Related Work
+Figure 3. Low fidelity prototype of
+the layered flowers.
+
+The most common type of PVs are data sculptures. The
+physicality of information visualization was extensively
+explored by Vande Moere [5,6,7], who introduced
+
+1
+
+http://www.oecdbetterlifeindex.org/
+
+1382
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+of well-being across countries, based on eleven
+dimensions such as health, income or education. The
+higher the values in each dimensions the better the
+country ranks on the scale. We chose this dataset as it
+is easy to understand and seemed an interesting topic
+for users to analyze.
+
+Figure 4. Low fidelity prototype of
+the thread star plot.
+
+Figure 5. “Middle” fidelity
+prototype of the rotary disk.
+
+Sketches
+To avoid concentrating too much on external influences
+such as material or size, we started by sketching
+different ideas on paper.
+Figure 1 shows an example that is inspired by the
+Better Life Index website and its interactive
+visualization, where the countries are represented by
+flowers and the dimensions by petals. By laying flowers
+in a physical form on top of another a comparison of
+the countries and dimensions is possible. The flowers
+could be fixated in the middle by a screw to enable
+rotation. Using magnets instead of a screw would allow
+an easy disassembling and reassembling.
+The idea of a rotary disk is shown in Figure 2, which is
+inspired by traditional interactive visualizations and
+their controls to e.g. change the view. By rotating or
+sliding parts of the PV it would be possible to change
+the displayed countries or dimensions. The primary
+goal in this approach was to evoke users’ fascination
+and curiosity through playful exploration of the dataset.
+
+Figure 6. Two variations of the
+thread star plot prototype.
+
+Low Fidelity Prototyping
+To get a first impression of the realization and handling
+of the prototypes we built various examples with basic
+materials such as paper and cardboard.
+Figure 3 shows the above mentioned idea of the
+layered flowers. To order the petals according to the
+
+different dimensions we used color instead of labeling
+them. In this early stage of prototyping the problem of
+occlusion from small petals by larger petals was already
+obvious.
+Figure 4 shows the first approaches of a thread star
+plot. The idea was to use bar charts and star plots,
+both well-known 2D visualizations, and combine them
+into one compact physical object. Each of four
+orthogonal arranged layers represents the values of a
+dimension of various countries by a bar chart. A thread
+connects the four dimensions of the same country and
+forms a star plot for each.
+“Middle” Fidelity Prototyping
+To create more sophisticated prototypes we used
+transparent acrylic glass and a laser cutter, which
+enables rapid fabrication with high precision.
+Our approach of a rotary disk is shown in figure 5. Two
+disks with the same size and different cut gaps are
+combined with screws, which in addition serve as
+markers for the data points. We did not pursue with
+this prototype as even small datasets are difficult to
+display due to overlapping gaps on one disk. In addition
+the screws often twisted and prevented easy rotating.
+Further developments of the thread star plot are
+presented in figure 6. The top picture shows the initial
+idea built with transparent acrylic glass, where the bar
+charts and its labeling are carved. We experimented
+with the thickness and the size of the acrylic glass to
+find a good compromise between stability and handling.
+The prototype had no interactive parts so far. To enable
+filtering and reordering we tried various techniques to
+add and remove countries from the prototype. Important
+characteristics for the assembling are the stability once
+
+1383
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+the different parts are connected but also easy handling
+in separating and joining the parts. The most promising
+solution was to attach hook-and-loop fastener at the
+edges of the acrylic glass. To facilitate the reassembling
+with the right orientation we colored the bars according
+to their dimension (see figure 6 bottom).
+
+plot or a bar chart view on the right, dependent on the
+selection made in the matrix view (see figure 7). In
+addition to the static digital visualization (DS) the
+interactive digital visualizations (DI) enabled filtering and
+reordering of the countries.
+Tasks
+
+Figure 7. Screenshots of the digital
+visualizations used for the
+evaluation.
+
+Focus Group
+To get some early feedback regarding our first
+prototypes we conducted a focus group with six
+computer science students. After a general discussion
+about PVs we presented our visualizations. Both the
+flower and the rotary disk prototype were rated
+negatively. Common statements were that they were
+“too confusing”, “difficult to understand” and “hard to get
+any insights from”. Both variations of the thread star plot
+prototype were perceived positively. It is “easy to
+understand” and “the handling/size is suitable”.
+Furthermore the participants liked the idea of
+disassembling and reassembling the countries with the
+interactive prototype.
+
+First Evaluation
+
+Figure 8. The hardware setup that
+was used for the evaluation.
+
+The goal of our first evaluation was to investigate how
+people interact with our PV. Furthermore we were
+interested in how well basic information retrieval tasks
+could be accomplished in comparison to 2D on-screen
+visualizations. The study was inspired by Jansen et al.
+[2].
+Visualizations
+We compared four different visualizations. The two
+variations of the thread star plot (physical static (PS),
+physical interactive (PI)), described in the previous
+section and two 2D on-screen visualizations. The digital
+visualizations displayed a matrix on the left, and a star
+
+The participants were asked to complete the following
+five tasks:
+1.
+
+Which country has the highest value in
+[dimension]?
+
+2.
+
+Order all countries descending by [dimension].
+
+3.
+
+Order [four given countries] descending by
+[dimension].
+
+4.
+
+Rank [four given countries] descending by all given
+dimensions.
+
+5.
+
+Which are the countries with the highest and lowest
+values regarding all dimensions?
+
+Procedure
+Each participant completed an initial training phase in
+which each task was practiced, followed by an
+exploration phase to get familiar with the four
+visualizations. Participants were asked to complete all
+five tasks for each visualization. The input and output
+of the instructions, the tasks and their responses were
+done on a separate touch tablet. Participants were
+instructed to be as accurate and as fast as possible.
+Hardware Setup
+The experimental setup with a laptop, a computer mouse
+and a separate tablet is shown in figure 8. The PVs were
+only present during the relevant condition.
+
+1384
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+Measures
+The task completion time (interval between the press on
+“start” and the press on “done”) as well as the error rate
+were recorded. All errors were normalized between 0
+and 1.
+Participants
+16 participants (6 female) took part in our study. Age
+ranged between 13 and 41 years (mean age 25). Eight
+were computer science students, 2 pupils and 6
+employees. All were right handed, 2 had experience in
+information visualization.
+Design
+A Latin square design was used for the presentation
+order of the visualizations. The order of the four (TODO)
+datasets and questions were kept constant. The main
+factor was visualization (digital static, digital interactive,
+physical static, physical interactive) and the secondary
+factor was task.
+
+Figure 9. Average task completion
+time in seconds per visualization
+(digital static (DS), digital
+interactive (DI), physical static
+(PS), physical interactive (PI)) and
+task (error bars: 95% confidence
+interval).
+
+Hypotheses
+Based on the results of the experiment done by Jansen
+et al. [2] we expect that the digital visualizations
+outperform the physical ones. As tasks 4 and 5 require
+the use of the entire displayed data, we assume a minor
+difference since the PVs provide a particularly good
+overview.
+
+Results
+Aside from the measurements of time and error we
+describe in this section our observations during the study
+and the feedback given by users through a questionnaire
+and a semi-structured interview.
+
+Time and Error
+A repeated measure ANOVA did not reveal a significant
+effect of neither visualization (F(3,45) = 2.781, p = .052)
+nor of task (F(4,60) = 1.996, p =.107) on the error rate.
+Contrary to our assumptions a repeated measure ANOVA
+did not reveal an effect of visualization (F(3,45) = 1.429, p
+= .247) on task completion time. Only the task had a
+significant effect on task completion time (F(4,60) =
+31.271, p < .001). All task completion time measures
+were log-transformed to correct for skewness [4].
+Reported means are antilogged and indicate geometric
+means [4]. Figure 9 summarizes the average task
+completion time per visualization and task. Only task 1
+shows a noticeable separation between the digital and
+the PVs. The static digital visualizations perform best in
+all tasks.
+User Feedback
+When asked to rank techniques according to preference
+the digital interactive visualization was ranked 13 times
+at position one. We furthermore collected subjective data
+through questionnaires using 5-point Likert scales
+ranging from 1 (“strongly agree”) to 5 (“strongly
+disagree”). Participants had the impression that the
+tasks were most easily fulfilled with the digital interactive
+visualization (digital interactive: median=1, all others:
+median=2). It was easier to interact with the digital
+variations than with the physical ones (both digital:
+median=1, both physical: median=2). This corresponds
+with participants’ statements that the PVs are more
+complicated to understand than the digital ones. In
+addition the holding and turning of the PVs was
+mentioned as laborious. The physical static visualization
+aided the completion of the tasks less than the other
+visualizations (physical static: median=2, all others:
+median=1). Both interactive visualizations were more
+
+1385
+
+Work-in-Progress
+
+CHI 2014, One of a CHInd, Toronto, ON, Canada
+
+interesting to interact with (physical interactive:
+median=1, digital interactive: median=1.5, both static:
+median=2).
+Observations
+We observed differences between subjects in the ways in
+which they used and interacted with the PVs. Seven
+participants constantly used only one hand to interact
+with the physical static visualizations, but all participants
+used both hands to interact with the interactive one.
+Four participants did not disassemble the interactive
+visualization, 2 because it seemed impractical, 2 because
+of fear to break something. Often the participants were
+too cautious at the beginning to undo the hook-and-loop
+fastener. However, one participant broke several parts of
+the physical interactive prototype while trying to
+demount it.
+
+Discussion and Future Work
+Our design process shows that the use of simple
+material such as paper or cardboard and common tools
+such as pencils and scissors to build PVs can have
+advantages. In an early stage it is possible to identify
+problems regarding the design and get a good
+impression about size and interaction possibilities.
+Limitations are stability and the general haptic
+characteristics, dependent on the material the final PV
+will be made of. The user study revealed that a mature
+design is crucial if the PVs are aimed at supporting
+analytical tasks. Especially stability and affordances are
+essential properties.
+
+Our next step is to develop a prototyping toolkit, which
+includes different materials and tools to build PVs. We
+would like to present and evaluate this toolkit during
+various workshops. We are also planning to build more
+sophisticated PVs, possibly involving mechanical
+constructions, elastic parts or even liquids. Although
+the PVs we discuss here are only specific instances of a
+much larger design space, we hope to provide a solid
+starting point for a discussion on how to design
+effective physical visualizations.
+
+References
+[1]
+
+Dragicevic, P. and Jansen, Y. List of Physical
+Visualizations. http://www.tinyurl.com/physvis.
+Online, accessed 06-Dec-2013.
+
+[2]
+
+Jansen, Y., Dragicevic, P. and Fekete, J.-D.
+Evaluating the Efficiency of Physical Visualizations.
+CHI (2013), 2593-2602.
+
+[3]
+
+Jansen, Y., and Dragicevic, P. An Interaction Model
+for Visualizations Beyond the Desktop. IEEE TVCG
+(2013), 2396-2405.
+
+[4]
+
+Sauro, J. and Lewis, R. Average task times in
+usability tests: what to report? CHI (2010), 23472350.
+
+[5]
+
+Vande Moere, A. Beyond the tyranny of the pixel:
+Exploring the physicality of information
+visualization. IV (2008), 469-474.
+
+[6]
+
+Vande Moere, A. and Patel, S. Analyzing the design
+approaches of physical data sculptures in a design
+education context. VINCI (2009).
+
+[7]
+
+Zhao, J. and Vande Moere, A. Embodiment in data
+sculpture: a model of the physical visualization of
+information. DIMEA (2008), 343-350.
+
+1386
+
+

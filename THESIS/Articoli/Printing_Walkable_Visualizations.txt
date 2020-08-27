@@ -1,0 +1,773 @@
+Transimage 2018
+Proceedings of the 5th Biennial Transdisciplinary Imaging Conference 2018
+
+Printing Walkable Visualizations
+Dario Rodighiero dario.rodighiero@epfl.ch
+École polytechnique fédérale de Lausanne (EPFL), Switzerland
+
+Photo: from left Dario Rodighiero (EPFL), Prof. Frédéric Kaplan (EPFL),
+and Prof. Bruno Latour (Sciences Po) at DH2014 @ Giorgio Uboldi, (Calibro)
+
+Rodighiero, D. 2018. Printing Walkable Visualizations. In: Proceedings of the 5th Biennial Research Transdisciplinary Imaging Conference,
+TI2018, 18-20 April 2018, Edinburgh, UK. DOI: 10.6084/m9.figshare.6104693
+58
+
+Printing Walkable Visualizations
+
+Dario Rodighiero
+
+Abstract
+
+École polytechnique fédérale de Lausanne (EPFL)
+
+This article concerns a specific actor in the actualization
+process, the media. The conventional media for
+visualizations is the computer screen, a visual device
+that supports the practices of design and reading.
+However, visualizations also appear in other ways, for
+example as posters, articles, books, or projections. This
+article focuses, in particular, on a pretty unusual
+medium called floor or walkable visualization.
+
+Lausanne, Switzerland
+dario.rodighiero@epfl.ch
+
+Author Keywords
+Actualization; Floor Visualization; Digital Humanities;
+Data Visualization; Reading; Visual Representation.
+
+ACM Classification Keywords
+Human-centered computing; Visualization; Empirical
+studies in visualization.
+
+Introduction
+Visualizations are created through the process of
+actualization, which transforms ideas into tangible
+artifacts ready to be used. Actualizing a data
+visualization, hereinafter referred to as visualization for
+the sake of brevity, is a complex process that requires
+the contribution of several actors. To get a real sense of
+its complexity, it should be remembered that actual
+visualizations cannot exist without all of their possible
+variations. This fascinating picture was conceived by
+59
+
+Gilles Deleuze to describe the sense of multiplicity that
+is hidden behind each artifact [4:148]. This multiplicity
+relies on the contribution of human and non-human
+actors such as the author, the client, the data, and the
+media. All of them contribute in different ways to
+actualize a visualization by making it an interactive
+object.
+This article concerns a specific actor in the actualization
+process, the media. The conventional media for
+visualizations is the computer screen, a visual device
+that supports the practices of design and reading.
+However, visualizations also appear in other ways, for
+example as posters, articles, books, or projections. This
+article focuses, in particular, on a pretty unusual
+medium called floor or walkable visualization. Walkable
+visualizations correspond to a specific type of
+actualization, or physicalization [13]. They take the
+form of a large print format that is laid on the ground in
+order to invite people to be part of a collective reading.
+This article deals with this subject matter through two
+empirical case studies, which will now be illustrated and
+discussed in more depth.
+
+hundred highly connected nodes using different media:
+social networks, posters, web sites, email messages,
+mugs, t-shirts, etc. [22]. For the opening, another very
+special media was created in order to welcome the
+conference attendees, the network was actualized in a
+walkable visualization. In other words, attendees were
+invited to explore it by walking directly on it. Although
+they were initially afraid of doing so because the sticker
+was brand new, after a while the instinct of exploration
+guided them to walk on the sticker.
+
+Digital Humanities 2014
+The first case study happened in 2014, during the
+Digital Humanities conference. A round sticker with a
+diameter of six meters was printed and stuck to the
+ground in front of the entrance to the SwissTech
+Convention Center in Lausanne (see figure 1). Shown
+on its surface was a network visualization with all the
+authors that contributed to the conference. The nodes
+of the network represented these authors, who were
+linked and situated according to their co-authorship and
+publication keywords [25]. The idea was to brand the
+conference with this network composed of around eight
+
+Figure 1: The walkable visualization presented a network of all
+the authors accepted to the Digital Humanities conference.
+
+60
+
+Before printing the sticker, there was a discussion
+about the network model. Doubt still lingered over
+whether it would be better to use keywords or the
+names of individuals to represent the nodes. Which
+type would have been better for grabbing the interest
+of the attendees? Keywords would have provided a map
+of the discipline, which might have depicted the identity
+of Digital Humanities and the role of the digital
+humanist within its community [9]. On the other hand,
+individuals would have represented the authors of the
+conference, helping to remind attendees that a
+discipline is pursued by a community and its members.
+The final choice was to use the individuals instead of
+the keywords. Individuals were considered more
+appropriate in order to celebrate the scientific collective
+that has been building a little bit at a time.
+
+Figure 2: Brian Corxall asks for a portrait when lying next to
+his research group [3].
+
+It was a great pleasure seeing the attendees enjoying
+the walkable visualization. Their comprehension of what
+the visualization represented was immediate. After a
+brief moment of studying it, attendees were engaged in
+searching for themselves as in a sort of gamification of
+social networks. Portraits and selfies posted to Twitter
+by attendees were used to celebrate the successful
+discovery of themselves on the visualization (see
+figure 2). The browsing also led attendees to find their
+acquaintances by retracing the social ties that define
+the community structure. The search in the walkable
+visualization was not only an operation of selfrecognition, but also a way to understand the diversity
+of individuals contributing to the Digital Humanities
+community.
+Displaying a public visualization of the Digital
+Humanities community members was a way to
+welcome attendees to the conference. However, from
+the beginning of the conference we realized how strong
+the message of the visualizations was. Members of the
+discipline were proud to be publicly represented,
+likewise the distribution of the conference proceedings.
+Authors were happy to be shown in the visualization,
+but at the same time some people were excluded, like
+the attendees without a publication. For instance, a
+complaint was made from a member of the organizing
+committee, who asked us to modify the visualization to
+add all of them. Of course, that was impossible since
+the branded object had been produced the previous
+week, including the walkable visualization. However,
+such a compliant was very interesting. It was proof of
+people’s attachment to the community as well as its
+representation, and turned us towards a general
+reflection about the difficulty in creating a public
+representation of individuals.
+61
+
+Creating a walkable visualization requires a lot of
+preparation. The first thing to do is to check the
+budget, as large printing can be very expensive. Then it
+is necessary to find a professional in large format
+printing. The sticker for the first case study was
+sponsored by the conference, and the work was
+commissioned to a company based in Lausanne, which
+specialized in visual communication for public events.
+This company could print on slip-resistant surfaces that
+had been especially conceived for external use.
+The visualization of the Digital Humanities conference
+was initially created with Gephi, a tool for network
+analysis [2]. All the relevant data concerning the
+conference publications were treated and imported into
+this software through an algorithm written in R.
+Successively, the nodes were situated using the
+Fruchterman-Reingold algorithm, which optimizes the
+use of circular space, providing a pleasant geometrical
+arrangement [7]. The network was exported in vector
+graphics and modified through Adobe Illustrator in
+order to customize colors and assure its readability (see
+figure 3). As floor visualizations have no standards that
+indicate an appropriate typography, the layout was
+based on some tests performed by reading the network
+at the distance of a standing person, which is around
+1.70 meters. Finally, the labels of the nodes were set
+up at 56 points using the Myriad Pro font on a neutral
+background color, while the thickness of the links was
+balanced to reduce the visual noise.
+
+Figure 3: A reproduction of the final PDF file used to print the
+six-meter visualization for the Digital Humanities conference.
+
+62
+
+Visualizations in the Environment
+The case study of the Digital Humanities conference
+allowed for the identification of three qualities that
+make visualizations walkable; namely, orientation,
+location and size. This section begins by introducing
+these qualities that, successively, were used to define
+the environment, a concept used to make the
+complexity of visualizations visible.
+The orientation of computer screens, for example,
+highly typifies visualizations. These devices, usually
+upright, face towards the readers in front of them and
+hide who is behind them. A horizontal orientation, on
+the contrary, avoids exclusions and invites readers to
+access the visualization from any direction.
+Making a visualization accessible from any direction
+means an appropriate location must be chosen. In
+many war movies, for instance, the military
+intervention is planned around a table where a map lies
+horizontally. This specific location greatly encourages
+social interaction, but at the same time it limits the size
+of the map. The information at the center of the map,
+indeed, has to be readable from the borders. Thus, the
+map cannot exceed a given dimension. If it does
+exceed a certain dimension then the readers should be
+able to enter the map.
+Indeed, entering the map is necessary when its size
+oversteps the limits of the table-location readability.
+During the seventeenth century, the astronomer
+Giovanni Domenico Cassini directed the drawing of a
+planisphere on the floor of the Parisian observatory
+[12:94]. Centered on the North Pole, the planisphere
+represented the known world with a new technique of
+measuring. Cartographers were invited to walk on it to
+
+assess the precision of the new measure, which should
+have produced improvements in the longitudinal
+projection. The Cassini drawing substantially exceeded
+the usual size of the maps occupying a larger surface
+area. Such a size drastically changed the behavior of
+the readers. They were not forced to stay outside the
+map anymore; rather, they were invited to enter it and
+walk on a cartographic version of the world. From this
+example, it can be observed that size is an essential
+consideration for visualizations in order to create
+enough space for walking, which assures the
+simultaneous interaction of the readers.
+Orientation, location, and size are thus fundamental
+qualities for characterizing the environment, or the
+space where the visualization reading occurs.
+Environment is a term that is part of ecological
+psychology, a visual theory introduced by James J.
+Gibson that he used to describe a closed system where
+human and non-human actors mutually interact [8].
+For him, each human has its surroundings, which
+correspond to its individual perspective on the
+environment. Humans interact through their own
+surroundings, which make visible and invisible the
+affordances that the environment can offer. Affordance
+is a term commonly used in different scientific
+disciplines to refer to the general interaction between
+two actors. More precisely, it refers to all the
+opportunities that a thing, a person, or a space makes
+available to others. Donald Norman, for instance, uses
+the concept of affordance when referring to the
+opportunities of interaction that the everyday objects
+offer to users [18].
+The concepts of environment, surroundings, and
+affordance help to more precisely define the interaction
+63
+
+with a visualization. The visualization is not a mere
+object related to its reader, it is part of a system, i.e.
+the environment, which is composed of different actors
+such as the reader. Visualization and the reader are the
+basic pairing which makes the interaction possible.
+However, with respect to the first case study, the
+reader is not alone: more readers can interact
+simultaneously with the same visualization, and within
+the same environment. In addition, orientation,
+location, and size are all elements that characterize the
+environment and encourage certain interaction over
+others. Large floor visualizations, for instance, invite
+exploration by walking instead of by using a mouse. As
+a result, the visualization reading becomes a more
+complex system to which many actors, human and
+non-human, contribute.
+
+64
+
+ENAC Research Day 2016
+The second case study was organized in collaboration
+with the ENAC, the school that groups together the
+institutes of architecture, civil engineering, and
+environmental engineering within the EPFL. Each year
+the ENAC deanship organizes a Research Day event for
+which all its scholars are invited. This event is a time to
+foster new synergies through different activities such as
+conferences, workshops, and showcases. The ENAC
+Research Day of 2016 was the ideal opportunity to
+share a visual representation of the school itself,
+entitled Affinity Map, in the form of a walkable
+visualization. The idea was to stimulate a public debate
+about the organization of the school and sensitize its
+members to the issue of visual self-representation.
+The Affinity Map was a sophisticated visualization that
+presented the general organization of the ENAC
+scholars through their affinities. But what exactly is an
+affinity? The term affinity describes the intellectual and
+operational closeness that may bring, or has brought,
+people to work together. And what exactly is a map?
+The term map is used to indicate that the visualization
+is an instrument for a specific use. For example, large
+organizations are difficult to grasp in their wholeness
+and data visualization can help for this purpose; the
+Affinity Map is thus a possible solution to the problem
+of governance in large academic organizations such as
+the ENAC.
+The Affinity Map followed the relational model of
+networks, arranging the nodes according to the
+strengths of their ties. The Affinity Map was, however,
+an unusual network in that its one thousand scholars
+were grouped by laboratories through a double
+structure of links: several chord diagrams constituted a
+
+larger hexagonal network (see figure 4). In addition,
+the type of the link relation was made visible. The
+result was a visualization able to represent the
+complexity of an academic organization through a
+multi-level and multidimensional network [24,26].
+
+Figure 4: The map of affinities shows ENAC laboratories
+organized in a hexagonal network according to their actual and
+potential collaborations.
+
+65
+
+The location chosen for the installation was the building
+of architecture, whose center hosted a large foyer that
+was a way station for a lot of students and scholars.
+That foyer was an ideal spot to situate the visualization
+as its location assured a high volume of people would
+pass through. A search was run to find a cheaper
+material for printing because the available space
+allowed the creation of a walkable surface that would
+be larger than the first case study. During the search,
+another company offered to print on the tarpaulin, a
+heavy waterproof covering usually employed in truck
+trailers. The cost estimate was not lower for the
+material price but rather for the laying, as it did not
+require a specialist whose hourly labor cost would be
+high. According to the budget restrictions, the foyer’s
+square footage, and the printer size limits, a
+visualization that encompassed 250 square meters was
+finally produced (see figure 5). Three surfaces
+measuring 5 by 15 were printed, making the most of
+the machinery’s maximum width. Successively, a truck
+carried these prints from Lucerne to Lausanne where
+they were lay in side-by-side.
+
+Figure 5: The walkable visualization measuring 250 square
+meters is unveiled during the ENAC Research Day.
+@ Alexandre Gonzalez 2016
+
+66
+
+Contemplators and Participants
+The ENAC Research Day was a pretext to go one step
+further, experimenting with a more complex
+environment. Indeed, the foyer was characterized by a
+much bigger walkable space, as well as by the presence
+of two levels of balconies that allowed readers to step
+ten meters away from the visualization. As a result, the
+map could be read from either a close or a distant point
+of view, in other words from either a close or a distant
+reading. Although these terms represent an abstraction
+of the digital humanist’s approach to the study of a
+corpus of documents [17], their meaning is here
+brought back to the physical sense of distance, which
+might recall the tension that exists between the
+overview and the details of the visual informationseeking mantra [27]. What might be referred to as
+close reading happened by walking on the visualization.
+That action was similar to the interaction of the first
+case study, where readers accessed the details of visual
+information up close. On the other hand, distant
+reading occurred when the readers overlooked the
+visualization from the balconies. That behavior
+resembled the bird’s eye view typical of cartographic
+projections, which gives an expansive view of the whole
+map. The two affordances offered readers access to
+different information: close reading was appropriate for
+looking inside the laboratories to the level of the
+individuals and their affinities, while distant reading
+was suitable for looking at laboratories as basic
+elements. Although Rudolf Arnheim thought floor
+visualizations discouraged the detached contemplation
+that cartography usually provides [1:13], in this case
+study the balconies offered a solution to the problem of
+the closeness by regulating the distance of the reading.
+
+Upon reflection, however, it is interesting to note that
+that double distance of reading was effective because
+of the multiple levels of the map, without them the
+experiment would not have been successful. The
+Affinity Map was indeed designed to display different
+levels of information corresponding to the school
+hierarchy: namely to scholars, laboratories, institutes,
+and the whole organization. Such levels of information
+were blended into a unique visualization using different
+sizes: scholars as small typographical elements, and
+institutes as colors characterizing the large laboratory
+circles. Whereas topographic representation relies on a
+reduction of information according to the mapping
+scale, the Affinity Map yields a continuity integrating
+visual elements of different sizes. This continuity is not
+simulated through images of different resolutions as in
+the case of Google Maps, but is real as its focus is
+based on an optic zoom [14]. The readers can decide
+the information they wish to see by moving back and
+forth from the visualization.
+The human movement of zooming by walking suggests
+a fictional comparison. Jonathan Swift wrote a book
+about the travels of his character Lemuel Gulliver, first
+a surgeon and then a captain of several ships [28]. In
+his exploration of imaginary worlds, Gulliver visited two
+places of different scales: an island called Lilliput where
+inhabitants were much smaller than him, and the land
+of Brobdingnag that was populated by giant-sized
+people. He learned what it meant to be smaller and
+bigger, like the readers during the ENAC Research Day.
+But what exactly did it mean to be smaller and bigger
+for the readers? Readers can either be contemplators or
+participants. The small reader was a participant,
+walking around to discover the smallest pieces of
+information. Its trajectory was a line that creates a
+67
+
+further level of information on the visualization,
+indicating the areas of interest. The position of the
+readers varied inversely when they were on the
+balconies, from which they were contemplators. They
+were able to observe other participants from there who
+were decoding not only the map, but also its usage
+(see figure 6).
+The public presentation of the Affinity Map was a time
+for getting to know each other, but it was also a time to
+make the work of the ENAC scholars publicly viewable.
+Making an individual identity public is not an easy task,
+and neither is having one own identity shown publicly.
+In particular, two situations emerged during the ENAC
+Research Day. A laboratory director did not receive the
+invitation to fill out the annual report and,
+consequently, the relative research group
+representation was pretty empty. There was no solution
+for the public visualization, but the relative data were
+completed the next week and the online map was
+updated. Another laboratory director had the
+publication index completely empty. That was another
+problem related to the data, which was solved in a few
+weeks through the identification of the problem, which
+was related to the data input. Both situations required
+a certain sensitivity as the professors were not happy
+with their public image. However, the operation of
+revealing data was important for two reasons: spotting
+the errors, and make individuals aware of the data they
+enter or, more generally, their digital identity.
+
+Figure 6: Readers from the balconies look at individuals on
+the visualization as a form of supplementary information.
+@ Alain Herzog 2016
+
+68
+
+Digital Floor Installations
+The two case studies presented in these pages are
+examples of static images. However, floor visualizations
+can be dynamic and this section illustrates the different
+digital installations recently produced by Obscura
+Digital and Google.
+Obscura Digital created a dynamic floor visualization in
+2011, called Connections, for the F8 conference, which
+is hosted annually by Facebook. Multiple overhead
+projectors mapped a network visualization on the floor,
+while a device identified few attendees who were
+equipped with RFID in the projection area [19]. The
+result was a dynamic network of individuals related by
+their common interests in Facebook. The major feature
+of this visualization is the identification of the readers,
+and the resulting customization. This customization
+leads the reader to information more relevant to them
+through a filter on the data. However, this technology
+also has some limitations. First, external viewers might
+not find the information relevant that is being filtered
+according to the active readers. Second, dynamic
+visualizations do not offer steady references to lead the
+readers as the digital representation is always different.
+The same year, Google created another dynamic floor
+visualization at the Pavillon de l’Arsenal in Paris. The
+installation was based on Google Maps, the software
+used to show the city of Paris on 37 square meters of
+high-resolution screens [20]. A control station situated
+at the base of the visualization allowed the reader to
+pan or zoom in and out. In addition, viewers could walk
+around the visualization on the catwalk that surrounded
+the map. The installation was attractive because it is
+rare to find a map of such size and detail. Furthermore,
+the view from the catwalks was impressive, the quality
+
+of the image was excellent, and the circulation of the
+readers gave different points of view (as in the case of
+the ENAC Research Day, the combination of close and
+distant reading enriched the reading experience).
+However, two limitations affected the installation. First,
+only one person at a time could interact with the map,
+making the other readers mere passive observers and,
+second, a close reading was not possible as the readers
+cannot walk on the visualization.
+The potential of these dynamic floor visualizations is
+significant, especially with the constant evolution of
+technology that will allow for more seamless use. Some
+of the current limitations are purely technical, like the
+fact that only a few readers are able to interact
+simultaneously on the map. Other limitations are
+economic, for instance the need for screens, projectors,
+graphic cards, software, and professionals make the
+budget of dynamic visualizations very high, largely
+exceeding the creation of a static walkable visualization
+which remains more affordable.
+
+Circulation of Readers and Knowledge
+As previously written, it is reductive to consider a
+visualization without the larger context. The reader, in
+particular, is a necessary actor in this larger context in
+order to make sense of a visualization. As art exists
+when visitors interact with artworks [6], likewise the
+reading exists when a reader interacts with a
+visualization. In addition, the relationship between
+reader and visualization is particularly strong when the
+reader is represented in the visualization itself. The
+experience of the reader, indeed, relies on the act of
+self-recognition [23].
+
+69
+
+Walkable visualizations are situated in public
+environments in order to foster participation, making
+these objects not only shared [11], but above all public
+[16]. This specific setting allows for social interaction,
+making the visualization reading collective. Glances
+move around the visualization as readers search for
+their own selves in a collective performance bore by
+many readers. Once a reader finds themselves, the
+distance between the reader and its representation is
+equal to zero. What happens next is a transformation
+from self-recognition into the act of collective
+recognition: the readers no longer search only for
+themselves, but also for their peers. Looking at the
+individuals, the reading appears as a multitude of acts
+of self-recognition; looking at the whole, the reading
+seems more like a crowded activity of collective
+recognition. The visual representation and the
+individuals are unified through the act of a collective
+recognition.
+The collective reading is helped, no doubt, by the size
+of the visualization. Walkable visualizations are indeed
+able to gather many readers on the same area in a sort
+of collective interaction. However, this interaction is not
+just between the visualization and the readers, but it is,
+above all, among the readers who are the protagonists
+of the performance.
+The environment that exists around the walkable
+visualization offers different affordances. The main
+affordance is represented by the reading itself in which
+the visualization offers its information to the readers.
+However, a specific affordance of walkable visualization
+is represented by the movement of the readers within
+the environment. While visualizations on computer
+screens oblige the reader to stay still, walkable
+
+visualizations encourage the circulation of individuals.
+The readers have to walk around in order to experience
+the visualization from different points of view. This
+movement is similar to the behavior of a sculptor: to
+understand the volume of their artwork, the sculptor is
+obliged to look at the statue from every angle.
+Likewise, the circulation of the reader is a way to
+assimilate the many facets of information.
+However, the movement does not concern a specific
+reader, but rather the collective. The trajectory that a
+reader forms through their movement is part of a larger
+meshwork that is similar to the pattern left by animals
+on the snow [15]. The meshwork shows the usage of
+the visualization through the circulation of the readers,
+but, more specifically, it shows how the readers meet
+each other through interactions (see figure 7).
+Reading a visualization on the screen of a laptop or a
+mobile phone is usually an intimate activity that the
+reader performs alone [10]. Indeed, small screens
+favor a one-to-one reading. However, when the size of
+the media becomes bigger, as in the case of walkable
+visualization, the reading becomes social. It is not just
+because the size of the screen can host more users at
+the same time, but also because the size makes the
+screen content public and visible from longer distances
+[26]. The size of the walkable visualization fosters
+encounters between readers browsing the environment.
+And encounters stimulate discussion among the
+readers. As Philippe Starck commented on the poor
+functionality of his beautiful juicer when he claimed
+that it is an object that would begin discussions,
+walkable visualizations may be considered spaces to
+begin discussions as well. Indeed, the public dimension
+of the walkable visualization is important because it
+70
+
+creates a social space. Reasoning by analogy, it can be
+said that there exist three spaces: the space of the
+practice where the daily work takes place, the space of
+the representation that is aimed at visually
+representing the practice, and the space of the selfrecognition where the readers meet and discuss both
+the natural and the represented spaces.
+The point of this section is that if the intimate reading
+brings new insights, the social reading creates
+knowledge. Assuming that knowledge is the scientific,
+literary, and intellectual culture that is agreed between
+specialists of the same field, the way to improve that
+knowledge is a constructive discussion between these
+specialists. During the two case studies the collectives
+of research were both represented and invited to the
+reading. It was a moment for them to realize to being
+part of a larger collective through the recognition of the
+single and the collective self. An open discussion is the
+basis of every solid community. Data visualization, in
+such cases, allows members of a collective to explore
+the wholeness of their own organization, reflecting on
+its current state and the following steps towards its
+future. As Paul Ricoeur wrote, the self-recognition
+brings forth two directions: the past and the future
+[21]. The past is represented by the memories of
+digital traces that have been transformed into the
+visualization, while the future is represented by the
+promises readers make to plan a common future.
+
+Figure 7: Readers circulating in the environment looking at
+the walkable visualization from different perspectives [5].
+
+71
+
+References
+1.
+
+Rudolf Arnheim. 1982. The power of the center: a
+study of composition in the visual arts. University
+of California Press, Berkeley, CA. Retrieved from
+
+2.
+
+Mathieu Bastian, Sebastien Heymann, and Mathieu
+Jacomy. 2009. Gephi: an open source software for
+exploring and manipulating networks. Proceedings
+of the Third International ICWSM Conference.
+
+3.
+
+Brian Croxall. 2014. Found the @serendipomatic
+team. Need to get @sekleinman and @mia_out in
+one with me. Alas, @fontnerd. #dh2014. Twitter.
+Retrieved January 17, 2018 from
+https://twitter.com/briancroxall/status/486167328
+821088257
+
+4.
+
+Gilles Deleuze and Claire Parnet. 2007. Dialogues
+II. Columbia University Press, New York.
+
+5.
+
+Gérard Desargues and Abraham Bosse. 1648.
+Manière universelle de Mr. Girard Desargues, pour
+pratiquer la perspective par petit-pied. Imprimerie
+de Pierre Des-Hayes, Paris.
+
+6.
+
+Marcel Duchamp. 1994. The creative act. Sub
+Rosa Records, Brussels.
+
+7.
+
+Thomas M J Fruchterman and Edward M Reingold.
+1991. Graph drawing by force-directed placement.
+Software: Practice and experience 21, 11: 1129–
+1164.
+
+8.
+
+9.
+
+James J. Gibson. 1979. The ecological approach to
+visual perception. Houghton Mifflin Company,
+Boston.
+Matthew K Gold and Lauren F Klein. 2016. Debates
+in the Digital Humanities. University of Minnesota
+Press, Minneapolis.
+
+10. Edward T Hall. 1990. The hidden dimension.
+Anchor Books, New York.
+
+11. Jeffrey Heer, Fernanda B Viégas, and Martin
+Wattenberg. 2009. Voyagers and voyeurs.
+Communications of the ACM 52, 1: 87–11.
+http://doi.org/10.1145/1435417.1435439
+12. Christian Jacob. 2006. The sovereign map:
+theoretical approaches in cartography throughout
+history. University of Chicago Press, Chicago, IL.
+Retrieved from
+13. Yvonne Jansen, Pierre Dragicevic, Petra Isenberg,
+et al. 2015. Opportunities and Challenges for Data
+Physicalization. ACM Press, 3227–3236.
+http://doi.org/10.1145/2702123.2702180
+14. Bruno Latour. 2014. Anti-zoom. In Olafur Eliasson:
+contact, Suzanne Pagé, Laurence Bossé, Hans
+Ulrich Obrist and Claire Staebler (eds.).
+15. Henri Lefebvre. 1991. The production of space.
+Blackwell, Oxford; Cambridge, MA.
+16. Andrew Vande Moere and Dan Hill. 2012.
+Designing for the Situated and Public Visualization
+of Urban Data. Journal of Urban Technology 19, 2:
+25–46.
+http://doi.org/10.1080/10630732.2012.698065
+17. Franco Moretti. 2007. Graphs, maps, trees:
+abstract models for literary history. Verso,
+London; New York.
+18. Donald A Norman. 2013. The design of everyday
+things. Basic Books, New York.
+19. Obscura Digital. 2011. Connections for Facebook.
+Obscura Digital. Retrieved 2018 from
+http://obscuradigital.com/work/f8/
+20. Pavillon de l'Arsenale. 2011. Paris, a city in the
+making. Retrieved 2018 from
+http://www.parismetropole2020.com/evenement/
+
+72
+
+21. Paul Ricoeur. 2005. The course of recognition.
+Harvard University Press, Cambridge, MA.
+Retrieved from
+http://golibgen.io/view.php?id=478848
+22. Alexandre Rigal and Dario Rodighiero. 2015.
+Trajectoire d'une représentation cartographique en
+réseau. Cartes & Géomatique 225: 33–41.
+23. Dario Rodighiero and Loup Cellard. 2016. Selfrecognition in data visualization: how people see
+themselves in social visualizations. Retrieved from
+https://infoscience.epfl.ch/record/218454/
+24. Dario Rodighiero, Frédéric Kaplan, and Boris
+Beaude. 2018. Mapping Affinities in Academic
+Organizations. 3: 185.
+http://doi.org/10.3389/frma.2018.00004
+25. Dario Rodighiero. 2015. Representing the digital
+humanities community: unveiling the social
+network visualization of an international
+conference. Parsons Journal of Information
+Mapping VII, 2.
+26. Dario Rodighiero. 2018. Mapping affinities:
+visualizing academic practice through
+collaboration. http://doi.org/10.5075/epfl-thesis8242
+27. Ben Shneiderman. 1996. The eyes have it: a task
+by data type taxonomy for information
+visualizations. IEEE Comput. Soc. Press, 336–343.
+http://doi.org/10.1109/VL.1996.545307
+28. Jonathan Swift. 1800. Gulliver's travels. J.
+Wanamaker, Philadelphia; New York.
+
+73
+
+

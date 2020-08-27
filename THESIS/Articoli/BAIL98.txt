@@ -1,0 +1,652 @@
+202
+
+The use of solid physical models for the study of
+macromolecular assembly
+Michael J Bailey*, Klaus Schulten† and John E Johnson‡
+The use of modern technology in the construction of accurate
+solid macromolecular models based on atomic coordinates
+and electron density functions has led us to re-examine the
+usefulness of physical models as tools for understanding
+molecular assembly and for designing detailed experimental
+and computational studies of the assembly process. Recent
+developments include the construction of new models, which
+have provided insights into the assembly of viruses and light
+harvesting complexes.
+Addresses
+*San Diego Supercomputer Center and Department of Applied
+Mechanics and Engineering Sciences, University of California at San
+Diego, La Jolla, CA 92037, USA
+†Beckman Institute, University of Illinois, 405 North Mathew Street,
+Urbana, IL 61801, USA
+‡Department of Molecular Biology, The Scripps Research Institute,
+10550 North Torrey Pines Road, La Jolla, CA 92037, USA;
+e-mail: jackj@scripps.edu
+Correspondence: John E Johnson
+Current Opinion in Structural Biology 1998, 8:202–208
+http://biomednet.com/elecref/0959440X00800202
+© Current Biology Ltd ISSN 0959-440X
+Abbreviations
+BBV
+black beetle virus
+LH
+light harvesting
+LOM
+laminated object manufacturing
+RP
+rapid prototyping
+SFF
+solid freeform fabrication
+STL
+stereo lithography
+
+Introduction
+This ‘opinion’ does not fit the form of most of the contributions to this volume in that it does not review and
+assess an area of macromolecular assembly with a significant current history. It is more of an ‘opinion’ in the traditional definition of the word — in that the authors have
+had experience with a new approach for constructing
+physical models of macromolecules and seek to demonstrate how these models have provided significant new
+insights into understanding the assembly of the protein
+molecules that form virus particles [1–5] and light harvesting complexes [6–8]. We use this review as an opportunity to provide a brief ‘ancient’ history of the
+development of physical models based on electron density functions and atomic coordinates, and to describe the
+sophisticated technology used to construct current models. We then relate our experiences with the technology
+mentioned above and attempt to demonstrate the fact
+that modern physical models are important tools that significantly extend the understanding of protein assembly
+available from modern three-dimensional computergraphical analysis.
+
+Three-dimensional models
+Humans adapt well to the three-dimensional world of
+every day existence and three-dimensional objects and
+constructions are taken for granted. Most of us, however,
+have significant problems in visualizing three-dimensional
+features of virtual objects such as mathematical functions.
+Three-dimensional imaging of various density functions
+was particularly problematic until the advent of modern
+computer graphics. This has revolutionized our ability to
+visualize and understand three-dimensional images ranging from X-ray and magnetic resonance tomographs in
+medicine, to electron density functions derived from X-ray
+crystallography and cryo-electron microscopy. Prior to the
+development of modern graphics visualization, crystallographers were remarkably successful in representing density functions and the derived models in creative ways with
+physical models. Plotting electron density as contours on
+transparent plastic sheets that are then stacked to generate
+the third dimension has been, and still is, a highly effective
+way of visualizing the three-dimensional electron density
+function. This representation is still of value when requiring a global impression of electron density that is difficult
+to represent in a graphics system.
+Constructing three-dimensional models from electron
+density is exceptionally problematic. A popular and effective approach of representing the surface of the molecule
+is the balsawood model. Construction of these models is
+based on contoured maps stacked on transparent Plexiglas.
+A contour was chosen that represents the surface and then
+on each section of the density a slice of balsawood that corresponded to that contour level was cut. These slices were
+then glued together and the composite is an accurate representation of the molecular surface. The most widely
+used device for constructing atomic skeleton models is the
+Richard’s box [9]. This device allows the model to be constructed from scale atomic model parts that are fitted into
+the density through the use of proper lighting and a halfsilvered mirror that reflects the model into the density.
+This allows accurate fitting of the model parts directly to
+the density, with only slight distortions due to parallax.
+From the coordinates of such models it is possible to create other representations of the model. One of the most
+popular is the wire protein model, which is made using the
+phi psi angles derived from the coordinates of the backbone α-carbon atoms and implements a special device
+invented by Byron Rubin for bending the wire.
+Simplified or reduced physical models of protein assemblies have long been important in illustrating the underlying features of such associations. Probably the most
+creative model maker in the area of virus assembly is
+Don Caspar. In order to visualize the concepts of quasi
+
+Solid physical models for the study of macromolecular assembly Bailey, Schulten and Johnson
+
+equivalence, Caspar and Klug started with paper models
+of icosadeltahedra [10], but then progressed to more
+sophisticated mechanical models that beautifully illustrate the bonding flexibility required by subunits in order
+to accommodate the variations in environment that occur
+during quasi-equivalent virus assembly [11].
+
+203
+
+Figure 1
+
+(a)
+
+Modern model fabrication
+Modern computer technology has made the need for physical models less essential in the interpretation of threedimensional structural results. It has also allowed the
+development of very sophisticated physical models that
+have provided new levels of appreciation for the complimentarity of surfaces in protein assembly and have also
+revealed details of protein interactions that were not fully
+appreciated from the computer graphics representation.
+One of these technologies is based on a device developed
+for the production of prototype machine parts and has
+been adapted for making molecular models. The instrument produces models (in a nearly automated fashion) that
+are comparable to the balsawood models, but are physically robust and amenable for the study of protein associations. The input information that has been used are the
+coordinates of atoms of either individual subunits (light
+harvesting complexes and virus capsids) or a sub-assembly
+fragment composed of three subunits (for virus capsids).
+The coordinate information is converted into a list of strictly contiguous surface triangles that are used to direct the
+machining process. The effective resolution of the models
+is based on the number of triangles derived from the coordinates and, in the examples discussed below, corresponds
+to about 1 Å resolution. Three-dimensional models based
+directly on electron density would require only minor
+modifications compared to the procedures based on coordinates.
+The principal procedure for model construction is a technology known as either rapid prototyping (RP), or solid
+freeform fabrication (SFF). Many technologies are used to
+produce these models [12–14] but regardless of the specific technology, SFF processes are all characterized by additive manufacturing methods instead of the subtractive
+methods as found in traditional numerical control machining. The process used at the San Diego Supercomputer
+Center for making solid molecular models is known as laminated object manufacturing (LOM) and is shown in
+Figure 1. In the LOM process, a roll of paper, available in
+various thickness from 0.0038 inches to 0.0100 inches, is
+fed a section at a time into a work area. The paper has a
+thin layer of glue on the underside. A hot roller (400°F)
+and high pressure laminate the new sheet of paper to the
+previous layers. A laser then cuts the outer and inner outlines of this layer as would be done in constructing a balsawood model. A series of mirrors directs the laser beam
+through a lens tube that is moved in x and y directions by
+a standard pen plotter mechanism. The power provided to
+the laser is carefully calibrated to slice through one and
+only one sheet of paper. After the laser finishes outlining
+
+Laser
+
+(b)
+
+Heater
+
+Layers
+already
+completed
+Take up spool
+
+Supply spool
+
+(c)
+
+Current Opinion in Structural Biology
+
+The tele-manufacturing process. (a) The network organization for using
+the tele-manufacturing facility in an interactive mode through the World
+Wide Web. (b) A schematic representation of the laminated object
+manufacturing (LOM) process. (c) A photograph of the instrument that
+actually manufactures the models.
+
+the outer and inner contours of the model, it crosshatches
+the portions of the layer area that are not included in the
+two-dimensional cross section. Later on, these crosshatch
+cubes are removed as scrap. The process repeats for all layers until completed. The resulting model looks, feels, and
+acts like it is made of wood. Once a LOM model has been
+finished, the scrap must be removed by hand. For some
+models this falls right off and for some it must be dug out
+with dentistry-type tools.
+Additive manufacturing process have some definite advantages when fabricating three-dimensional parts for molecular
+
+Macromolecular assemblages
+
+Two examples of the use of this technology for improving
+our understanding of macromolecular assembly illustrate
+its usefulness.
+
+Virus assembly
+Nodaviruses are simple nonenveloped RNA viruses with
+capsids formed from a single gene product [1]. The virus
+particle contains 180 subunits arranged with T = 3 quasisymmetry and form a polyhedron with a rhombic triacontahedron shape (Figure 2). The structures of three
+members of this family have been solved at near atomic
+resolution [5,15,16]. Black beetle virus (BBV) was chosen
+for study by LOM models. The icosahedral asymmetric
+unit corresponding to the ABC trimer shown in Figure 2
+was initially constructed as a single unit (Figure 3a). Then
+three identical models of the A subunit were made. After
+some effort it was possible to assemble the three A subunits in an identical trimer corresponding to the threefold
+symmetric version of the ABC quasi-trimer in Figures 2
+and 3a. The ABC trimer assembly demonstrated an extraordinary degree of surface complimentarity not previously
+
+Figure 2
+
+(a)
+
+(b)
+
+A5
+
+C5
+
+A
+C
+
+B2
+
+C
+Arm
+
+Arm
+
+dsRNA
+
+B2
+
+C2
+
+modeling. The parts can have almost arbitrary geometric
+complexity and the fabrication can be set up and proceed
+with little or no human preparation. The former is especially advantageous for making models of molecules. One of
+the problems with subtractive manufacturing methods is
+that whatever implement is doing the subtracting needs
+access in order to remove material. For some models, the
+complexity of the geometry prohibits the cutting tool getting as far in as it needs to go, or at least makes it difficult.
+Molecules are the ultimate example of this. Their deep
+channels and grooves make it almost impossible to get a
+machine tool into all the crevices without accidentally
+gouging some portion of the model that we mean to keep.
+The latter point is also significant. Models of molecules
+have both a top and a bottom that require fabrication. For
+typical subtractive methods, such models would need to be
+machined on the top and then flipped over to machine the
+rest. In order to flip the model over correctly, a set of fixtures and clamps would have to be designed and a process
+would have to be put in place to register the model once it
+has been flipped and clamped. This ensures that the model
+is indeed where the machine tool thinks it is. If this is not
+done, then the features on the top half will not align with
+the features on the bottom half. The point is that fabrication methods for molecular model making must not require
+much manufacturing knowledge, or they will not be used.
+To this end, the tele-manufacturing project is using the
+World Wide Web as an interface to the SFF process. As
+shown in Figure 1a, users can submit their geometry stereo
+lithography (STL) files from their favorite browser, have
+those files automatically checked for geometric and topological consistency, have a corrected STL file returned, or
+have the file queued for fabrication. When the model is
+being fabricated, the web page can also be used to get feedback on the manufacturing process, including seeing video
+images from cameras surrounding the machine.
+
+B
+5
+
+204
+
+dsRNA
+
+(c)
+
+A2
+B5
+
+C
+
+Current Opinion in Structural Biology
+
+Schematic and physical representations of the black beetle virus. (a) A
+schematic representation of the nodavirus capsid as a rhombic
+triacontahedron. Each trapezoid represents a protein subunit
+comprising 407 amino acids. The location of duplex RNA and the
+polypeptide arm (residues 20–31 of the C subunit) are shown in the
+diagram. One icosahedral asymmetric unit is defined by the central
+isosceles triangle with a fivefold axis (small pentagon) at the top and
+threefold axes (small triangle) left and right. The labels A, B, and C
+represent the three subunits in each of the 60 icosahedral asymmetric
+units in the T = 3 particle. Although they are identical gene products,
+the subunits are not related by strict symmetry and they are structurally
+slightly different. Note that the A subunits cluster around the fivefold
+symmetry axes of the icosahedron and the B and C subunits alternate
+about the icosahedral threefold axes to form the quasi-sixfold axes. All
+subunits labeled with a letter followed by a number are related to A, B
+or C by an icosahedral symmetry operator indicated by the number
+(e.g. A5 is related to A by an icosahedral fivefold symmetry operation).
+Quasi-symmetry axes relate subunits only locally to a quasi-symmetry
+axis (e.g. the quasi-threefold axis in the central triangle relates A, B and
+C with a high fidelity, but at a greater distance from the axis than it
+relates a fivefold axis to a quasi-sixfold axis). Each asymmetric unit has
+three neighboring asymmetric units. The central triangle has
+asymmetric units on its left and right related to it by fivefold symmetry
+and the third at the bottom related to it by twofold symmetry. Note that
+the joints (junctions between subunits) are not strictly equivalent (they
+are related by quasi-threefold symmetry) although the same surfaces of
+the protein subunits interact (e.g. the C–C2 contact has the same
+protein surfaces juxtaposed as the A–B5 contact). (b,c) Sideviews of
+the joints between asymmetric units. (b) The joint at the bottom of the
+central triangle viewed along the line connecting the two threefold
+symmetry axes. The dihedral angle between these two triangular
+surfaces is 180° (i.e. they are coplanar). (c) The joint at the left of the
+central triangle viewed along the line connecting a fivefold axis to a
+threefold axis. The dihedral angle between these two triangular
+surfaces in this polyhedron is 144°. For proper assembly to occur, the
+trimer interfaces must be able to hinge with a molecular switch
+determining the dihedral angle between asymmetric units. In the
+nodaviruses, the switch is a 10 base pair RNA duplex and a 12 amino
+acid polypeptide (residues 20–31) that are only ordered in the C
+subunits. These form a wedge that prevents the bending of the joint at
+the bottom of the central triangle.
+
+appreciated from graphical studies or obvious from its construction as a single unit. This threefold symmetric ‘artificial’ assembly was interesting because the quasi threefold
+axes relate fivefold axes to sixfold axes and do not form the
+
+Solid physical models for the study of macromolecular assembly Bailey, Schulten and Johnson
+
+205
+
+Figure 3
+
+Subunit interactions of black beetle virus (BBV). (a) A view from the exterior, down the quasi-threefold symmetry axis, of the solid LOM trimer
+model, constructed as a single unit with the coordinates from the A, B and C subunits of BBV. This corresponds to a single icosahedral asymmetric
+unit, and 60 of these units, related by icosahedral symmetry, form the BBV particle. (b) A view into the side of an AB interface (roughly along a line
+connecting the quasi-twofold axis on the bent joint to the quasi-threefold axis in the center of the triangle) formed by two identical A subunits
+related by threefold symmetry. The interface surface has been spread open by inserting a coin into the contact to clearly show the two juxtaposed
+surfaces. (c) The same view with the coin removed, showing the cavity formed by the two surfaces. (d) A view corresponding roughly to (a)
+showing the juxtaposition of two trimer LOM models forming a ‘bent’ contact. (e) The same view with the two trimers separated showing the ‘peg
+into hole’ alignment that guides the assembly of this interface. Given that the hole is formed by the interface of two subunits in the trimer, shown in
+(b) and (c), it is likely that the particles assemble from preformed trimers. Note that prior to assembly, the same interface is exposed to the twofold
+related ‘flat’ joint; however, duplex RNA and residues 20–31 of the C subunits are ordered in this interface and interrupt the ‘peg into hole
+interaction’ leading to the ‘flat’ contact. Indeed, residues 20–31 cover the ‘peg’ and part of this polypeptide inserts into the hole formed by the
+B2–C2 interface, mimicking the peptide ‘peg’ that inserts into the hole at the ‘bent’ joint.
+
+206
+
+Macromolecular assemblages
+
+exact threefold symmetric association seen in the particle
+from which the coordinates were derived. Note that two of
+the subunits (B and C) are associated with quasi sixfold
+axes whereas the third (A) is associated with the fivefold
+axes. This illustrates the fact that identical subunits are
+sufficiently similar to the quasi-equivalent subunits for an
+exact threefold association to be made and that there are
+no significant differences between threefold related AA
+interfaces and quasi-threefold related AB, BC, and CA
+interfaces. This is probably relevant to the assembly
+process because we hypothesize that the first fragment in
+assembly is an ABC trimer with exact threefold symmetry
+and that the observed asymmetry about the quasi-threefold axis in the assembled particle is induced during the
+assembly process.
+After the threefold symmetric particle was made, it was
+noticed that a remarkable cavity was located on the surface
+of the trimer distal to the threefold axis (Figure 3b,c). This
+surface forms the fivefold and twofold associations of
+trimers (Figure 2). The cavities are formed by interfaces
+between threefold related subunits (i.e. AB, BC and CA),
+thus their formation depends on the assembly of the trimer.
+There is a perfectly complimentary protrusion on the surface of the B5 subunit (the subunit related by a fivefold
+clockwise rotation to the B subunit in Figure 2) that fits into
+the cavity formed by the CA interface upon assembly of
+fivefold related trimers (Figure 3d,e), suggesting that this
+assembly is guided by a ‘peg into hole mechanism’.
+Although the structure had been refined at 2.8 Å resolution
+and the subunit interfaces studied extensively with both
+computer graphics and atomic distance analysis, this
+remarkable complimentarity had not been appreciated.
+Indeed, in the BBV refinement paper [3], the interaction of
+the cavity was included in a figure, but its full significance
+had escaped notice until the solid models were made.
+Additional insight was gained from the assembly of the
+trimeric models that were constructed as a single unit
+(Figure 3d). It was clear that the trimeric units related by
+fivefold symmetry (A–B5 contact in Figure 2) could be
+directly assembled as rigid bodies and form an extraordinarily complementary interface (Figure 3d,e). In contrast,
+when the C–C2 association was attempted, the units could
+not be directly joined to form a continuous surface. This
+indicates that the assembly of the C–C2 interface can not
+be approximated as a simple rigid-body association of
+assembling units, but that there are significant alterations
+that occur at this interface during the assembly process.
+The solid models led to further insights when the A–B5
+interface was compared in detail with the C–C2 interface.
+Previous work showed that a 12 amino acid polypeptide
+(residues 20–31 of the C subunit) and 10 base pairs of an
+RNA duplex are ordered at the C–C2 interface and are not
+ordered at the A–B5 interface [5]. This results in a dramatic difference in the dihedral angle at the two interfaces,
+with the A–B5 joint bent (144° dihedral angle) and the
+C–C2 joint flat (180° dihedral angle). The solid model
+
+shows that the ordered peptide directly interacts with the
+protrusion that inserts into the cavity at the A–B5 interface
+and thus dramatically changes the interfacial interactions
+even though the same portion of the subunits are juxtaposed at the two interfaces. A portion of the ordered
+polypeptide actually partially interacts with the cavity at
+this interface, thus participating in a level of molecular
+mimicry that leads to quasi-equivalence.
+
+Assembly of light harvesting complexes
+Light harvesting (LH) complexes, as shown in Figure 4
+establish a scaffold that organizes a hierarchy of circular
+complexes of 300 chlorophylls and 200 carotenoids within
+the photosynthetic membranes of purple bacteria [8].
+Organized into the form of a ring-shaped protein, LH-I, the
+largest light harvesting complex, surrounds a central protein
+complex called the reaction center. The complex of LH-I
+with the reaction center is in turn surrounded by about 10
+smaller proteins, called LH-II, which are also ring shaped.
+The entire system, the photosynthetic unit, absorbs sunlight, efficiently transfers the excitation energy within a few
+picoseconds from the periphery to the reaction center and
+converts the energy into a membrane potential.
+The remarkable overall architecture of the photosynthetic
+unit is matched by the equally remarkable architecture of
+the individual LH-I and LH-II complexes. LH-II of
+Rhodospirillum molischianum is composed of 16 independent
+peptides (eight identical α subunits and eight identical β
+subunits), 24 chlorophylls and eight carotenoids [7]. These
+components self-aggregate within the cytoplasmic membrane, most probably into heterodimers first, each made of
+an α apoprotein, a β apoprotein, three chlorophylls and a
+carotenoid, and then using the heterodimers as building
+blocks for assembly into a ring of eight heterodimers. In the
+case of LH-II from both Rhodopseudomonas acidophila [8]
+and Rhodobacter sphaeroides [6], nine heterodimers aggregate
+into the LH-II complex. The LH-I complex consists of sixteen heterodimers that each contain, however, two chlorophylls and one carotenoid.
+In order to understand how the self-aggregation of the
+individual LH-I and LH-II complexes and the whole photosynthetic unit is achieved from its main building blocks,
+the αβ heterodimers, we resorted to LOM models. We
+thought of several questions regarding the self-aggregation process to investigate with such models. How do
+geometry and energetics contribute to the aggregation of
+a single pair of heterodimers? How is this aggregation
+guided within the cell membrane? How do the single heterodimer building blocks control the overall ring size?
+How do changes of ring size affect the stability of an overall complex? These questions might be pursued through
+modeling calculations, but due to the large size of the
+overall ring systems and the qualitative nature of the phenomenon of self-aggregation, that is, one does not know a
+priori which observables to monitor, an approach through
+LOM models appeared more promising and certainly
+
+Solid physical models for the study of macromolecular assembly Bailey, Schulten and Johnson
+
+Figure 4
+
+207
+
+surfaces by inspection of single surfaces, leading to an
+overemphasis of a few readily recognizable binding hot
+spots as an explanation for adhesion between proteins.
+Once the LOM models of (initially) nine heterodimers had
+been manufactured, we decided to paint the models as
+shown in Figure 4. The colors helped us greatly in both the
+use of the models and the interpretation of our ‘hands on’
+experiments. The first such experiment, the assembly of
+LH-II from eight heterodimer units was possibly the most
+revealing. It turned out that the aggregation of the building blocks did not require any flexibility of the dimer surfaces; the individual components naturally fit together
+tightly without the need for a flexible adjustment of their
+surfaces. This feature implies a favorable entropy of aggregation, that is the heterodimers do not need to explore
+much conformational space in order to interlock.
+The resulting complex strikes the observer with the realization that the heterodimers have purposefully evolved
+corrugated self-complementary surfaces in order to both
+steer the aggregation process and to stabilize the eventual
+aggregates. Any coarse graining of atomic level surface features of LOM models deteriorates adhesion between heterodimers. In fact, the LOM models require about 30,000
+triangles for the proper representation of the surface features of each heterodimer. This corresponds to below
+angstrom resolution and proved necessary in order to properly represent the relevant complementarity of surfaces.
+
+Molecular graphics and laminated object manufacturing (LOM)
+representations of light harvesting (LH) complexes. (a) LH complexes I
+(LH-I, left) and II (LH-II, right), with LH-I surrounding the (barely visible)
+reaction center. The protein complexes are presented schematically as
+cylinders (α helices), tubes (coils), green squares (chlorophylls) and
+yellow liquorice (carotenoids). The (inner ring) α subunits are in blue, the
+(outer ring) β subunits are in magenta. The figure illustrates how LH-I and
+LH-II act as a scaffold that holds rings of chlorophylls in place as well as
+carotenoids. Chlorophylls and carotenoids absorb sunlight and transfer its
+energy to the reaction center. (b) LOM models of an individual
+heterodimer (bottom), LH-II (left), LH-I (middle) and a reaction center
+(right). The LH-I and LH-II models were colored as follows: α apoproteins,
+blue; β apoproteins, red; chlorophylls, green; carotenoids, yellow. The LHII shown (left) is an aggregate of eight heterodimers like the one shown at
+the bottom; LH-I (middle) is an aggregate of sixteen heterodimers. The
+reaction center has been colored brown, light blue and dark blue
+according to its three protein subunits; ubiquinones are colored white.
+The LOM model of the reaction center (right) fits tightly but comfortably
+inside the LOM model of the LH-I ring (middle). (c) The fully assembled
+model of the LH complex.
+
+faster than simulations. It is also notoriously difficult to
+recognize complementary features between binding
+
+The heterodimers are composed of two, rather short, transmembrane helices, a feature that requires the heterodimers to be oriented strictly normal to the membrane
+plane; a tilt would immerse the polar side groups into the
+hydrophobic phase of the lipid bilayer. A pronounced top
+to bottom asymmetry of the heterodimer favors a vectorial
+orientation in the membrane. Manipulation of two heterodimer models that are properly juxtaposed and rotated
+relative to each other readily reveals the proper interlocking geometry of a heterodimer pair. A similar one-dimensional (rotation around the membrane normal) search
+process is likely to govern the rapid self-assembly of LHII within the cytoplasmic membrane.
+One can readily build rings of slightly ‘wrong’ sizes, for
+example, an LH-II ring of only seven units or of nine units,
+that is, one too few or one too many. In both cases the
+LOM models reveal a loose packing with wobbling heterodimer units. This is certainly a feature that results from
+the fact that the heterodimer LOM models stem from an
+eight ring structure, that is, a structure optimized for that
+particular ring size. The model demonstrates clearly, however, that the complementarity and orientation of the corrugated surfaces of the individual heterodimers are precise
+enough to control the overall ring size at eight units.
+The models revealed some altogether unexpected features.
+It was known that LH-II in vivo actually binds sixteen
+
+208
+
+Macromolecular assemblages
+
+carotenoids, rather than only eight as seen in the crystal
+structure. During the crystallization procedure half of the
+carotenoids, that is, one carotenoid per heterodimer, stray
+away. Inspection of the model revealed a channel between
+heterodimer surfaces into which one can fit the missing
+carotenoid. This feature, that is, a deviation from perfect
+complementarity, was not detected by means of molecular
+graphics, even though we had searched extensively for possible binding sites for the additional carotenoids.
+We have also built the LH-I complex from sixteen LOM
+models of the respective heterodimers, and a LOM model
+of the reaction center. This allowed us to build a key section of the photosynthetic unit [6]. The LOM models
+revealed that one can readily clap the LH-I ring over the
+reaction center leading to the unique geometry of the complex. In this complex, LH-I forms an atrium-type space
+adjacent to the reaction center surface with the entrance of
+a functionally important quinone-binding site. One also
+notices that the sixteen unit LH-I ring is considerably more
+flexible in its shape than is the eight unit LH-II ring; it does
+not appear likely that the LH-I ring would assume its proper size and shape without the reaction center template.
+
+Conclusions
+The use of modern technology in the construction of
+highly accurate solid macromolecular models based on
+atomic coordinates and electron density functions has led
+us to re-examine the usefulness of physical models as
+tools for understanding molecular assembly and for
+designing detailed experimental and computational studies of the assembly process. The solid models have sensitized us to the complimentary surface features of protein
+subunits and their interactions. By physically assembling
+the models we have refined our perspectives on assembly.
+We now see that assembly of the nodavirus particle is
+guided by ‘peg into hole’ interface alignments that can
+occur only after the trimer subassembly product has
+formed and that the size and stability of LH complexes
+are as a result of highly structured corrugated associations
+between subunits. These observations strongly suggest
+that assembly pathways are dictated by associations determined by large-scale surface complimentarity and that
+these are only supplemented by the favorable local interactions that had previously dominated our attention in
+both of these structures. With these observations in mind,
+we are pursuing qualitatively more informed computational studies of LH in order to determine the nature of
+the
+adhesion
+forces
+governing
+self-assembly.
+Experimental studies of nodaviruses are currently underway that are designed to identify drugs that interfere with
+assembly, or actually disassemble virus particles by binding with high affinity into the ‘alignment holes’ at the subunit interfaces. Similar efforts will attempt to confound
+the molecular mimicry that is essential for quasi-equivalent assembly. Finally, we are computationally examining
+the associations within other known virus structures to see
+if the assembly principles identified for nodaviruses are
+
+more widely applicable and if they will lead to viable targets for the design of antiviral agents.
+
+Acknowledgements
+The tele-manufacturing of laminated object models is supported by a
+National Science Foundation grant, MIP-9420099 (to MJB). Studies of
+nodaviruses are supported by a National Institutes of Health grant
+GM34220 (to JEJ) and the studies of the light harvesting protein complexes
+are supported by the National Institutes of Health (NIH grant
+P41RR05969), the National Science Foundation (NSF grant BIR 9318159
+and NSF grant BIR9423827) as well as by the Carver Charitable Trust (to
+KS). Dru Clark (San Diego Supercomputer Center) is gratefully
+acknowledged for his role in the tele-manufacturing of the physical models
+and we thank Vijay Reddy for his help in preparing Figures 2 and 3.
+
+References and recommended reading
+Papers of particular interest, published within the annual period of review,
+have been highlighted as:
+
+• of special interest
+•• of outstanding interest
+1.
+
+Johnson J, Reddy V: Structural studies of noda and tetraviruses. In
+The Insect Viruses. Edited by Miller L, Ball L. New York: Plenum;
+1998: in press.
+
+2.
+
+Reddy V, Giesing H, Morton R, Kumar A, Post C, Brooks C, Johnson J:
+Energetics of quasi-equivalence: computational analysis of
+protein-protein interactions in icosahedral viruses. Biophys J
+1998, 74:546-558.
+
+3.
+
+Wery J, Reddy V, Hosur M, Johnson J: The refined structure of an
+insect virus at 2.8 Å resolution. J Mol Biol 1994, 235:565-586.
+
+4.
+
+Cheng R, Reddy V, Olson N, Fisher A, Baker T, Johnson J: Functional
+implications of quasi-equivalence in a T=3 icosahedral animal
+virus established by cryo-electron microscopy and X-ray
+crystallography. Structure 1994, 2:271-282.
+
+5.
+
+Fisher A, Johnson J: Ordered duplex RNA controls capsid
+architecture in an icosahedral animal virus. Nature 1993, 361:176179.
+
+6.
+
+Hu X, Damjanovic A, Ritz T, Schulten K: Architecture and function of
+the light harvesting apparatus of purple bacteria. Proc Natl Acad
+Sci USA 1998, in press.
+
+7.
+
+Koepke J, Hu X, Muenke C, Schulten K, Michel H: The crystal
+structure of the light harvesting complex II (B800-850) from
+Rhodospirillum molischianum. Structure 1996, 4:581-597.
+
+8.
+
+McDermott G, Prince S, Freer A, Hawthornthwaite-Lawless A, Papiz
+M, Cogdell R, Isaacs N: Crystal structure of an integral membrane
+light-harvesting complex from photosynthetic bacteria. Nature
+1994, 367:614-621.
+
+9.
+
+Richards F: The matching of physical models to three dimensional
+electron density maps: a simple optical device. J Mol Biol 1968,
+37:225-230.
+
+10. Caspar D, Klug A: Physical principals in the construction of regular
+viruses. Cold Spring Harb Symp Quant Biol 1962, 27:1-24.
+11. Caspar D: Movement and self control in protein assemblies:quasiequivalence revisited. Biophys J 1980, 32:103-135.
+12. Bailey M: The use of solid rapid prototyping in computer graphics
+and scientific visualization. In SIGGRAPH Course Notes for The
+Use of Touch as an I/O Device for Graphics and Visualization. Edited
+by Spencer S. New York: ACM Press; 1996.
+13. Burns M: Automated Fabrication. Engelwood Cliffs, New Jersey:
+Prentice-Hall; 1993.
+14. Johnson J: Unified Description of All Free Form Fabrication
+Technologies Based on Fundamental Principles. Irvine, California:
+Palatino Press; 1994.
+15. Hosur M, Schmidt T, Tucker R, Johnson J, Gallagher T, Selling B,
+Rueckert R: Structure of an insect virus at 3.0 Å resolution.
+Proteins 1987, 2:167-176.
+16. Zlotnick A, Natarajan P, Munshi S, Johnson J: Resolution of space
+group ambiguity and the structure determination of nodamura
+virus to 3.3 Å resolution from pseudo R32 (monoclinic) crystals.
+Acta Crystallogr 1997, 53:738-746.
+
+

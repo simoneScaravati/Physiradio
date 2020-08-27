@@ -1,0 +1,1113 @@
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 286
+
+30
+INDEXICAL VISUALIZATION—THE
+DATA-LESS INFORMATION DISPLAY
+Dietmar Offenhuber and Orkan Telhan
+
+Contemporary cultures of ubiquitous computing have given rise to new way of interacting
+with digital information through embodied, ambient, contextual, performative means. Yet the
+way we visualize information still largely follows the logic of flat media. Data visualizations
+typically rely on symbolic languages found in charts, maps, or conceptual diagrams. Information
+graphics also frequently use abstractions of concrete objects, such as illustrations and assembly
+diagrams. In Charles Sanders Peirce’s semiology, those two modes of representation would be
+referred to as symbolic and iconic signs. Information representations that transcend the
+established language of the flat display are rare and not always successful. We argue that the
+challenges of communicating embodied and ambient information call for utilizing a third category
+of signs from Peirce’s semiology: the index—a sign that is linked to its object through a causal
+connection. In this chapter, we elaborate on the role of indexical signs in visualization and
+argue that indexical visualization deserves a vital place in today’s computational design, visual
+communication, and rhetoric. Here, we present a series of examples to discuss the properties
+of indexicality and theorize it as a new design strategy that can inform the design process of
+today’s material-based computation and synthetic biological design, which rely on the material
+organization of the sign and the conditions that encapsulate its meaning within its physical
+embodiment.
+
+Introduction
+Visual representations of abstract data are ubiquitous in contemporary culture. Infographics,
+data visualizations, or visual narratives are representations designed with the intention to clarify,
+persuade, or educate. Much has been written about the relationship between their visual
+languages and their underlying objective—how to distinguish a comprehensible visualization
+from an obscure or a truthful map from a misleading one. The resulting canonizations of visual
+languages (Few 2012; Ware 2010) establish guidelines for the mapping data sources to the
+appropriate visual variables (Bertin 1983), which again can be manipulated through a set of
+operations (Schneiderman 1996). Attempts to develop a corresponding visual language for
+information embedded in the physical world are not always successful. Ambient displays mapping
+information to light, sound, or movement remain incomprehensible if the object and mapping
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 287
+
+Indexical Visualization 287
+
+1111
+2
+3
+4
+5111
+6
+7
+8
+9
+1011
+1
+2
+3111
+4
+5
+6
+7
+8111
+9
+20111
+1
+2
+3
+4
+5
+6
+7
+8
+9
+30111
+1
+2
+3
+4
+35
+6
+7
+8
+9
+40111
+1
+2
+3
+4
+5
+6
+7111
+
+are not known (Wisneski 1998). Contextual and location-referenced information is usually
+delivered within the narrow constraints of a smartphone display. In the domain of ubiquitous
+information, arbitrary symbolic languages are bound to fail without established visual
+conventions.
+The disconnect between visual representations and the situation in which they are used also
+hint at the underlying issue of how data relate to the reality they supposedly describe. Instead
+of simply being a collection of given facts, a data set is the result of systematic observation and
+symbolic encoding. To account for this circumstance, Joanna Drucker proposes replacing the
+word ‘data’ with the active form ‘capta’ (taken) (Drucker 2011). If we understand ‘data’ as a
+collection of symbolically encoded observations, could we think of a display that conveys
+information—without the symbolic encoding of data—though its object itself?
+Charles Sanders Peirce’s theory of semiology distinguishes between three categories of signs—
+symbols, icons, and indices. Within the narrow boundaries of Information Visualization, only
+two of these categories, icons and symbols, are primarily utilized—charts, graphs, or the
+underlying data artifacts themselves are examples of symbolic representations, which use a visual
+language that is based on an arbitrary relationship between the sign and the object it stands
+for. Other than a shared convention, the number five and the symbol “5” have no direct
+relationship with each other. Architectural renderings, scientific illustrations, or assembly
+diagrams, on the other hand, are based on iconic signs. They can be decoded, because their
+representations resemble the objects they stand for.
+Maps, diagrams, and most complex visual representations combine aspects of both
+resemblance and arbitrary conventions. However, this visual vocabulary has its limits, especially
+when we want to call attention to phenomena in the physical world around us—the realities
+of our living environment or the processes happening at the microscopic or molecular level.
+As a result, we treat most information as abstract, without considering the possibility that we
+could in fact observe their veracity directly with our senses. This requires that we take a step
+back from treating data as the literally ‘given’ and consider the processes of how they were
+coded and aggregated as observations of a physical phenomenon. Before latent fingerprints can
+be captured in digital form, they have to be made visible through physical particles, chemical
+or biological processes. Before a fragment of DNA can be coded, it has to be amplified by
+several orders of magnitude through Polymerase chain reaction (PCR). The fragments then
+are physically stained with coloring agents to become visible to the bare eyes with a technique
+known as gel electrophoresis.
+The link between data and object is often lost within in the digital domain; however, it is
+also intentionally obscured. The popular model-view-controller (MVC) design pattern in
+computer science, for example, demands a clear separation between code modules that model
+the information from data, the visual display of the data and tasks that allow the users to act
+on the data (Gamma 1995). This abstraction offers obvious advantages, since it boosts the capacity
+to aggregate and process information. However, it can also diminish the awareness of a causal
+link between data and object, which may get manifested as a lack of critical scrutiny of the
+origins and qualities of the data, or on the contrary, a mistrust and outright dismissal due to
+its generation process.
+We believe that there is a third possibility beyond symbolic and iconic representation that
+can fill this gap in our current data-centric worldview; a strategy for visualization that can be
+best described with Peirce’s third family of signs, the indices. As Peirce notes, “The index is
+physically connected with its object; they make an organic pair, but the interpreting mind
+has nothing to do with this connection, except remarking it, after it is established” (Pierce, 9).
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 288
+
+288
+
+Dietmar Offenhuber and Orkan Telhan
+
+A simple example would be the representation of fire, which is commonly found on fire
+extinguishers or vehicles carrying inflammable substances: an abstracted, but nevertheless
+iconic representation resembling a flame. The word “fire” would correspond to a purely symbolic
+representation, consisting of a series of arbitrary symbols. An indexical sign, on the other hand,
+would be the smoke that rises from an actual flame. While the interpretation of the sign may
+still be subject to cultural conventions, its appearance is strictly determined by the material
+basis of the object that signals the meaning.
+The concept of indexical signs is by no means a novelty and has played an important role
+in industrial design history, visible for example in the aerodynamic forms of the streamline
+modern. However, in contemporary digital culture, data are often treated as a ‘raw material’—
+emphasizing their symbolic nature without considering their origin. Within information design
+and visualization, visual and numerical literacy call attention the internal validity of data sets,
+but cannot speak to the external connection with their objects. We think there are reasons
+why it might be worthwhile to explore the design space of indexical visualization. In the context
+of material-based computation, deep embedding of media into the environment, and design
+at the microscopic level, for example, the concept can be useful to call attention to the material
+basis of facts and hidden processes. They can turn us from being consumers of information to
+witnesses of an experiment. It can encourage careful observation and a critical curiosity for the
+ways information and knowledge can be linked to physical phenomena.
+In this chapter, we discuss indexical visualization and design as an alternative approach to
+delivering information. In today’s emerging design practices living and non-living matter can
+be manipulated at the molecular level. The agency and autonomy of bacteria, for example,
+can be repurposed for different applications as if they are machines or computers. We find it
+increasingly important to discuss alternative paradigms that can represent the design affordances
+of such artifacts and look at new ways to design the role of information for communicating
+their functions and behavior. We will start with discussion of examples that employ indexical
+representations and show how information can be conveyed without symbolic encoding. We
+will then feature a number of design principles that can be utilized for different indexical design
+applications and illustrate them with hypothetical cases. We are interested in questions such
+as: What are the representational strategies that constitute indexical visualizations? What are
+their potentials and limits concerning expression, argumentation, and rhetoric?
+Indexical visualizations have been with us for a long time. A broad range of artifacts—analog
+instruments, notations systems, and representations—from art, design, science, and engineering
+embody different characteristics of indexicality. Often, the most common feature shared by
+these devices is the way they are designed to bear the effect that they are meant to communicate.
+Peirce gives a compelling example: “ . . . an old-fashioned hygrometer is an index. For it is
+so contrived as to have a physical reaction with dryness and moisture in the air, so that the
+little man will come out if it is wet, and this would happen just the same if the use of the
+instrument should be entirely forgotten, so that it ceased actually to convey any information”
+(Pierce 1998, 163). Indexical signs often incorporate iconic and symbolic aspects, as in the case
+of photographic paper or the charts drawn by a seismograph. Our concern however is not
+taxonomic—our aim is to distinguish and identify design strategies to emphasize indexical
+qualities that can help making legible the connection between an object and its context. Indexical
+displays address the central demand of ubiquitous computing for situatedness rather than abstract
+universality in its representations and practices. Instead of offering a fixed mapping between
+data and representation, indexical design offers a framework for guiding observation. The main
+point is not to endorse physical information displays over digital ones, but to emphasize the
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 289
+
+Indexical Visualization 289
+
+1111
+2
+3
+4
+5111
+6
+7
+8
+9
+1011
+1
+2
+3111
+4
+5
+6
+7
+8111
+9
+20111
+1
+2
+3
+4
+5
+6
+7
+8
+9
+30111
+1
+2
+3
+4
+35
+6
+7
+8
+9
+40111
+1
+2
+3
+4
+5
+6
+7111
+
+importance of causality in constructing meaning. To this end, the task is to choose and configure
+the material of the display so that it can isolate and constrain the phenomenon of interest such
+that the effect on the display apparatus becomes legible. In a way, it can be stated that indexical
+design is the framing of meaning through the choice of constraints.
+
+Properties of Indexical Visualizations
+Design choices for indexical visualizations can be illustrated through the mechanisms used in
+analog instruments for measurement. Using the example of a pressure gauge, Nelson Goodman
+describes the operations of semantic differentiation that are applied to translate the physical
+behavior of the device into a form of notation: from the analog signal into a visual trace
+(Goodman 1968, 157). While signal and trace are still causally linked, a semantic distance is
+introduced between gas pressure and the pen that produces the mark on paper. We are dealing
+with two different representations of gas pressure: first, the visual trace on paper produced by
+the pen moved by the pressure over multiple intermediary steps. But, second, one could argue
+that also the configuration of the instrument is a representation of the phenomenon, which it
+contains, embodies, constrains and reacts to. Based on these considerations, we can capture
+indexical visualization and design through a number of properties:
+1.
+2.
+3.
+
+4.
+
+5.
+6.
+
+Indexical visualization represents an object through its own embodiment or its immediate
+impact on its environment.
+Designing an indexical visualization means framing the underlying object in such a way
+that it becomes legible.
+The framing happens by applying a set of constraints that act upon the object in such a
+way that only a specific aspect of the object is revealed and isolated from the object’s other
+properties.
+The indexical display remains linked with the underlying phenomenon through its visual
+or audible appearance. To some extent, its appearance is autonomous and not under the
+control of the designer.
+Indexical visualization achieves its rhetorical strength by emphasizing this causal link, which
+allows it to achieve the status of evidence.
+The specific configuration of constraints that act upon the object can be understood as
+the diagrammatic form of indexical visualization.
+
+As an example, the physical configuration of the mercury thermometer (diagram) represents
+temperature (object) through the expansion of mercury (the object’s material embodiment).
+This phenomenon is only legible because the mercury is constrained in a capillary glass tube,
+allowing it to expand only into one direction upon a change in temperature. Adding a
+corresponding spatial scale for comparison and quantification differentiates the amount of
+displacement further. At the same time, all other properties of the mercury are de-emphasized–its
+color, its weight, its unconstrained shape, and so forth. Compared to a digital thermometer
+with its multiple layers of sensing, abstraction, representation, and translation, the effect of
+temperature is rather ‘directly’ observed.
+It is necessary to distinguish between the physical response of the thermometer, which is
+inevitable, and the act of communication, which may or may not happen. While the
+representation of temperature is direct or explicit, the reading or contextualization of it is still
+a learned experience shaped by convention. Furthermore, indices are often difficult to recognize
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 290
+
+290
+
+Dietmar Offenhuber and Orkan Telhan
+
+and interpret. Michael Polanyi describes the example of a student learning to read x-ray images
+of lungs—an ability, for him, that cannot be acquired only by following explicit instructions
+but rather learned over time in a master—apprentice like relationship. Although the information
+on the x-ray is immediate and physically explicit, the interpretation of the subtleties of the
+visual imprint is a slow process. Indexical visualization therefore aims to increase the legibility
+of the index through external constraints (Polanyi, 106).
+
+Indexical Design and its Display
+The manifestations of indexical representations can be diverse, depending on their context and
+medium. Nevertheless, we think that it is possible to describe the design space of indexical
+representations using a few parameters. In our understanding, a main criterion is the causal
+distance between the object and its representation. Is the causal chain of events between object
+and representation short and direct, or the result of many intermediary events? In most cases,
+a shorter, more immediate connection would be preferable.
+A second dimension is the semantic distance between the object and its representation. To
+what extent is the nature of the underlying phenomenon legible in the representation? Is the
+phenomenon translated into an arbitrary visual language or notation? While both dimensions,
+causal and semantic distance, are often linked, it does not necessarily have to be that way. The
+hygrometer in the shape of a weather house, with two figures that emerge from their respective
+doors because they are fixed on a disc that rotates with changing humidity, illustrates this
+difference. The chain of events is short and direct, yet the mechanism is hidden, and the
+representation allows no insight into this process, making it appear almost like a magical device.
+Again, a pure form of indexical visualization would involve a minimal amount of such
+symbolic mediation. These two parameters together span a space in which the indexical qualities
+of different examples can be compared. In this space, a representation with very short causal
+distance and a minimal amount of symbolic mediation would be indexical in the strong sense,
+a representation involving a long chain of causal events and a highly arbitrary representation
+will have very weak indexical qualities. The two parameters span up a two-dimensional space,
+in which the examples discussed in the following sections can be located.
+
+Analog vs. Digital Representations
+Most traditional analog instruments for measurement, recording and displays are indexical to
+varying degrees; a sundial is arguably more than a mechanical clock. The installation Meeting
+by the artist James Turrell is probably one of the purest examples of an indexical display. The
+piece, originally installed in New York’s PS1 institute, invites the visitors to observe the sky,
+framed by a square opening in the ceiling. This indirectly illuminated frame makes it possible
+to observe the subtle color changes of the sky in contrast to the matching illumination level
+of the surrounding ceiling (Adcock and Turrell 1990, 120). Meeting has the shortest possible
+causal distance between the object and its representation. At the same time, Meeting uses a short
+symbolic distance.
+While digital representations that process input from the physical world can also produce
+deterministic and immediate outputs, as the causal link between input and output is obstructed
+through a mediation process, they can be considered indexical only in a weak sense. The
+separation of information from its original context, making information persistent and context
+interchangeable, offers a big advantage compared to analog technologies from a practical
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 291
+
+Indexical Visualization 291
+
+1111
+2
+3
+4
+5111
+6
+7
+8
+9
+1011
+1
+2
+3111
+4
+5
+6
+7
+8111
+9
+20111
+1
+2
+3
+4
+5
+6
+7
+8
+9
+30111
+1
+2
+3
+4
+35
+6
+7
+8
+9
+40111
+1
+2
+3
+4
+5
+6
+7111
+
+FIGURE 30.1
+
+The location of the discussed examples in the space spanned by causal and symbolic
+distance.
+
+standpoint. However, this separation also means that the direct link to the original context will
+disappear or become arbitrary. Scholars studying the human factors of digital media, including
+Mark Weiser, John Seely Brown, and Hiroshi Ishii, have seen this arbitrariness as a disadvantage,
+and argued for emulating indexicality within the digital realm. Concepts such as Calm Technology
+and Ambient Displays are directly inspired by the indexical nature of analog instruments and
+the human capacity to constantly process a multitude of environmental cues without too much
+effort or with the background of attention (Weiser and Brown 1996; Wisneski 2008). In most
+cases, this indexical nature is used as a metaphor rather as the actual driver of the display. Ishii’s
+Tangible Media Group, for example, demonstrated that the amount of network activity can be
+mapped to the rotation speed of pinwheels or similarly the temperature of water from a faucet
+can be represented with colored light illuminating the water stream. While in these examples
+indexical mappings were created between digital and physical phenomena, the research focus
+is on simplifying symbolic relationships, rather than eliminating translation and mediation.
+Although the causal distance between the object and its representation is undiminished, these
+visualizations intend to create the appearance of a direct and immediate causal connection.
+On the other hand, in terms of symbolic abstraction, ambient displays operate with entirely
+arbitrary mappings between input and output, sense and response pairings, making them
+essentially symbolic or iconic signs.
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 292
+
+292
+
+Dietmar Offenhuber and Orkan Telhan
+
+FIGURE 30.2
+
+Meeting (1986), James Turrell.
+
+Other strategies in the digital realm try to minimize the level of symbolic abstraction rather
+than the causal distance between object and display. This can be achieved by establishing a
+clear structural correspondence between the object and its representation. The artist Lisa Jevbratt
+describes her project 1:1 from 1999 as an indexical visualization in which every single pixel
+of the display corresponds to a distinct entity—in this case a computer IP address (Jevbratt
+2003). Unlike in most of our examples, here indexicality does not address the underlying physical
+substrate of computation, and remains in the symbolic realm by using an arbitrary mapping
+between a specific server on the network and a pixel on screen. However, by treating every
+pixel as a distinct marker with a direct correspondence to an object, the representation gains
+indexical qualities. In the same sense, treating a digital file as a raw stream of bytes and sending
+it directly to the sound device of a computer could be seen as an indexical representation within
+the digital realm.
+If we go beyond the symbolic domain of computation, the experience of technical failures
+in the underlying electronic circuits are probably closest to our understanding of indexical
+representations. Failures can reveal underlying properties of systems which are normally hidden.
+“Glitch” artists, who exploit the unintended artifacts of digital media formats, sometimes directly
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 293
+
+Indexical Visualization 293
+
+1111
+2
+3
+4
+5111
+6
+7
+8
+9
+1011
+1
+2
+3111
+4
+5
+6
+7
+8111
+9
+20111
+1
+2
+3
+4
+5
+6
+7
+8
+9
+30111
+1
+2
+3
+4
+35
+6
+7
+8
+9
+40111
+1
+2
+3
+4
+5
+6
+7111
+
+manipulating and destroying the underlying electronic hardware, often exploit this aspect. The
+installation ‘Shockbot Corejulio’ from the group 5voltcore is one such example, where a robotic
+device moves a steel brush over the circuits of the graphics board of the computer it is controlled
+by, triggering short circuits and occasional visual patterns created by the damaged electronics
+(Rebelo and Schroeder 2006).
+In the natural sciences, especially in chemical and biological research, indexicality is the basis
+and necessary justification for almost all representation. The products of laboratories are
+discursive objects or epistemic things, as Rheinberger puts it, with the main purpose of providing
+material evidence for theoretical models (Rheinberger, 9). In scientific publications, symbolic
+representations in form of graphs or scatterplots are typically augmented by photographs or similar
+records of evidence. Sound is also frequently used to represent activity over time. Based on its
+perceptual qualities, sonic displays are inherently indexical rather, since sound usually indicates
+events in the physical world and is a potent medium for communicating causal relationships
+(Hogg and Vickers 2006). In Hubel and Wiesel’s classic neuroscience experiment, the researchers
+mapped visual neurons guided by the audible bursts created by an electrode, which was used
+to capture the activity of a single neuron in the visual cortex of a cat (Hubel 1959).
+In diagnostic tests or chemical analysis, the symbolic distance is very short, since the
+representation follows the dictate of the material properties of the involved substances.
+However, with the emergence of new frontiers in biochemical design, such as synthetic biology,
+it becomes important to assess the ways the supposedly rigid, unmediated, and immediate
+connection between material and what it stands for can be manipulated purposefully. The design
+of the behavior of a chemical or biological marker—when engineered at the level of a singlecell organism introduces new parameters to the design of indexical living matter. The organism,
+as a living design, has the ability to manipulate its own interpretation. It can grow, change,
+mutate, and eventually deviate from its designer’s intentions. Bacteria, for example, exercise
+different preferences based on their environmental conditions. The availability of certain
+chemicals or the presence of other organisms around can influence their behavior. So when
+bacteria is designed to respond to a chemical marker, say produce a visual outcome in response
+to the presence of a particular molecule in its environment, the accuracy, precision, and the
+repeatability of that chemical sign can show great variability based on the way organism exercises
+its agency throughout its life. Thus when the bacteria respond to the chemical phenomena
+and become their own indexical representation, the response can be immediate and direct and
+yet not entirely predictable. However, such index is inherently different from a simple analog
+design; as for example, the way the lead molecule in the thermometer responds to changes in
+temperature. The living organism can inherently exercise its own autonomy and introduce a
+level of indeterminacy to the overall design. On the other hand the intent behind such indexical
+design can also be the actual manipulation and regulation of this autonomy so that it can turn
+into a legible source of information.
+
+Examples
+In the examples presented below, design operates at different resolutions: as pixels, genes,
+molecules, or atoms. In reference to Rheinberger’s notion of epistemic things, we could refer
+to these units as signthings. As already noted, signthings can exercise different levels of agency
+and autonomy depending on their medium. Regardless of the scale on which signthings operate,
+it is important to note that the interpretation context—the framing of the meaning—always
+takes place at the macro level. Any state-, color-, or shape-transition at the microscopic level
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 294
+
+294
+
+Dietmar Offenhuber and Orkan Telhan
+
+has to result in a visible effect that enables quantification, ordering, enumeration, and
+interpretation. Therefore, indexical displays are resolution-independent, making their intrinsic
+properties legible to an external observer.
+In Natalie Jeremijenko’s One Trees public art installation, a hundred trees, cloned from a
+single source were planted across the Bay Area. The artist intended to emphasize the effect of
+spatial variations in air quality and microclimatic conditions on the genetically identical trees.
+Since the external conditions cause every tree to develop in a different way, One Trees is an
+indexical visualization, not only showing but also bearing the effects of changing environmental
+forces and interactions with urban life (Whitelaw, 98). In the related project Clear Skies,
+Jeremijeno designs disposable dust protection masks to measure the particulate pollution Bay
+Area bikers are exposed to during their commute. To read the amount of dust that has
+accumulated in the mask, a grey color gradient is printed on the masks matching the different
+degrees of discoloration and hence pollution.
+All of these signs, the state vegetation, the visible deposits of air pollution, are present in
+the environment and can be read as implicit cues by trained observers. The interventions by
+the designer emphasize these cues and provide a rubric for their interpretation, to translate
+them into explicit data points.
+Beyond art projects, indexical displays can be found in research environment as well as in
+objects of everyday life. They rely on physical, biological, and chemical mechanism and combine
+biological, diagnostic, and therapeutic functions with information design. Personal pregnancy,
+HIV, and cholesterol tests use indexical representations designed to be understood by a broad
+population. By using synthetic or natural markers that respond to chemical or biological
+phenomena, such tests capture causality through material change—indicate presence of factors,
+change, quantity, or frequency through visual feedback.
+Diagnostic For All, a non-profit enterprise, utilizes material-level interaction both for
+registering medical symptoms and for providing visual feedback for advanced diagnosis (Plate
+30.1). In this design, biological reagents stored on traces or wells patterned onto chemically
+treated paper respond to the body fluids of the patients to detect liver complications. Upon
+contact with a patient, the paper device registers change by color and quantifies the phenomena
+through a scale printed onto the device. As the device primarily aims patients in developing
+countries with limited access to professional facilities, it is designed to register the embody the
+colorimetric output until it can be studied further by an expert in a remote location who can
+provide further diagnosis through a digital image of the paper.
+The design of synthetic biomarkers for diagnostic purposes is also a research direction in
+synthetic biology, a field that is concerned with designing living systems with engineering
+methods (Drew 2005). Plate 30.2 shows E.Chromi, a synthetic biology project in which bacteria
+are engineered to detect particular chemical signatures within the human gut flora. By
+incorporating color-making genes into the genome of Escherichia coli (E. coli), designers can
+turn the organism into a biosensor, which can respond to different disease patterns. As E. coli
+senses the chemicals, it can synthesize the proteins that will allow it induce a color-change in
+its physical embodiment. As E. coli with different color markings exit the body, they leave their
+traces on the human manure and provide the user with a visualization of their medical condition.
+Synthetic biology is ultimately concerned with building living systems that function like
+biological circuits or computational hardware. It focuses on designing the biological equivalents
+of switches, logic gates, transistors, oscillators, and other kinds of devices, feedback, and decisionmaking systems that can execute complex computational instructions. Like the color-changing
+E.coli example, these designs exhibit indexical behavior and represent their functions or the
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 295
+
+Indexical Visualization 295
+
+1111
+2
+3
+4
+5111
+6
+7
+8
+9
+1011
+1
+2
+3111
+4
+5
+6
+7
+8111
+9
+20111
+1
+2
+3
+4
+5
+6
+7
+8
+9
+30111
+1
+2
+3
+4
+35
+6
+7
+8
+9
+40111
+1
+2
+3
+4
+5
+6
+7111
+
+outcomes of their functions visually in their material embodiment. Bacteria and other singlecell organisms can be synthesized with custom genomes, which can function like computational
+hardware that can sense, respond, and deliver not only information but also bio-molecular
+payload, compressing the difference between a sign and its material embodiment in the
+biological context.
+Microfluidic systems—dealing with the control and manipulation of fluids at a micro-scale—
+are an important tool of synthetic biology (Plate 30.3). Like advanced thermometers, which
+provide both the biological context and the physical framing—and site—of the biological activity,
+microfluids can be implemented in different materials such as paper, glass, ceramics, or silicones,
+and can be designed to exhibit characteristics known from electro-mechanical and computational
+systems (Whitesides 2006). Microfluidic systems can be used to regulate the flow, mixing, and
+dissemination of chemicals—organic and inorganic fluidic matter—through micro channels.
+These “Lab-on-chips” are also highly informative systems, which can provide information
+regarding material-level interaction through visual patterning, measurement, and spatialization
+techniques embedded within the design of the system. 2D and 3D Bio-arrays, for example,
+are popular experiment design tools that allow the automatic study biomolecular differentiation
+through comparative analysis.
+Micro or mili-capillary environments can also be designed as consumer artifacts that can
+expand their use beyond medical devices. The Oilwell by Orkan Telhan (Plate 30.4) is the
+prototype of a personal biosynthesis machine—a microbial perfumery—that incubates bacteria,
+which can exhibit different colors and smells based on the design of their genomes. The Oilwell
+features a clear silicon housing that functions as an indexical display. Here, the bacteria grown
+in a mix of nutritious media and mineral oil are pumped from an incubator towards a heating
+element through capillary channels. As bacteria go through their certain growth phase, they
+respond to the inhibiting compounds in the media; change color and indicate to the outside
+viewer that they are ready to emit smell. This process can be observed in real-time with plain
+sight like a thermometer. When bacteria is ready, the users can activate the pumps such that
+they can get pushed towards the end of the housing, where they get dropped onto a heating
+element and made to evaporate like a traditional oil lamp. While genetically modified bacteria
+are inevitably killed at the end of the process, the system provides a measure of safety for not
+letting the genetically modified organisms leave their confined environment. The Oilwell uses
+indexical design both as a functional and aesthetic element. Here, the bacteria can be made to
+grow a number of different smells—such as citrus, mint green, or banana odor—in a randomized
+fashion. Each smell can be visualized by a particular color marker—such as amber indicating
+banana, green citrus, and so on—and therefore be observed from outside before the bacteria
+is channeled to the pump. As bacteria go through different cycles of smell production, the
+users can determine when exactly to activate the smell based on its indicator color. Here, while
+the mapping of color to a particular smell could be left to a preference or an arbitrary mapping,
+the way bacteria signals the smell production to the audience is an indexical process. The
+integration of indexical designs to aesthetic and symbolic artifacts offer a new design space that
+can incorporate elements of biochemical design with the rich history of product design that is
+rooted in constructing meaningful experiences through the cultural and historical meaning of
+the artifacts. As a perfume bottle, Oilwell intends to combine the different design cultures of
+product design with biochemical design and pay close attention to different stages of creating
+a user experience from the form of the perfumery to the way its content can communicate its
+fabrication process to its user. Being currently a novel category, artifacts with living designs,
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 296
+
+296
+
+Dietmar Offenhuber and Orkan Telhan
+
+require a different visual language that inevitably extend the ways we design experience and
+meaning without relying on information produced in symbolic or iconic ways.
+For most applications of desktop and mobile computing, the symbolic domain is sufficient
+to represent and act on information. However, when computation is embedded in the physical
+world and carried through living organisms or chemical processes, we need to extend our
+understanding of computation beyond paradigms dominated by computational media and
+information design. Biochemical processes such as DNA assembly, protein synthesis, or bacterial
+transformation can be computationally modeled, viewed, and controlled inside a living organism
+without creating any symbols and information. As users, we can visually observe the process,
+give input, and act on the outcomes through markers that are physically coupled to the processes.
+Symbol-free computation allows us to act directly on the physical matter, avoid the intermediary
+representations, and minimize the distance between cause and effect.
+While pure indexical displays offer a wide variety of affordances from biosynthesis to cellular
+or subcellular imaging and live visualizations, hybrid formats that integrate some form of symbolic
+abstraction (the second axis) into indexical design, offer another promising area of research.
+Hybrid visualization paradigms offer ways to map indexical information onto the symbolic
+domain and allow computation to take different roles in the symbolic or physical domain. A
+citizen-science project could, for example, use cameras to observe the change in the
+environment through a variety of organisms such moss, lichens, or algae which respond to
+PH, humidity, Co2 levels, and so on by a physical change in their appearances1. By digitally
+characterizing the effects of these bioindicators through cameras and sensors, it would be possible
+to device systems that can record changes over time and computationally monitor habitats
+through their own ecologies. In addition to designing feedback loops between indexical and
+symbolic systems, hybrid modalities can also be used to correlate calculated information and
+indexical observation to increase the reliability to symbolic processes. By registering the state
+of living phenomena (i.e. texture, color, etc.) through symbolic means, it becomes possible to
+observe phenomena beyond the life cycles of living systems or the limited durability of physical
+phenomena. The symbolic processes produce information that can be preserved indefinitely
+hence make hybrid systems really viable solutions.
+As we present a multitude of approaches to extend information processing and visualization
+in ubiquitous computing to the indexical domain, advocate for hybrid models, it also becomes
+important to list the limits of indexicality.
+
+The Limits of Staging Indices
+The opportunities for indexical design, as illustrated by the examples above, are bound to certain
+limits. With its emphasis on causal relationships between material conditions, the difficulties
+in physically framing a phenomenon, and the challenges in making the phenomenon legible,
+the practice of indexical visualization operates in a tight space. It is applicable only to a small
+fraction of possible visualization tasks and problems. Beyond the challenges that have been
+already discussed in the earlier sections, we want to mention four other challenges to that pertain
+to the design of indexical visualizations.
+
+Distortion
+While the behavior of indexical displays is determined by the underlying physical processes,
+its appearance can nevertheless be distorted and exaggerated. In the thermometer, for example,
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 297
+
+Indexical Visualization 297
+
+1111
+2
+3
+4
+5111
+6
+7
+8
+9
+1011
+1
+2
+3111
+4
+5
+6
+7
+8111
+9
+20111
+1
+2
+3
+4
+5
+6
+7
+8
+9
+30111
+1
+2
+3
+4
+35
+6
+7
+8
+9
+40111
+1
+2
+3
+4
+5
+6
+7111
+
+the ratio between the dimensions of the capillary tube and the expansion rate of mercury would
+be an important criterion that will determine how much the element will spread in space. As
+the adjustment of this ratio will yield different amounts of spread along the axis, it will inherently
+determine how much visible difference can be indexed from temperature’s effect onto the metal.
+The interpretation of indexical displays relies on the context, which introduces a second
+possibility for manipulation. The marks on the scale placed next to the thermometer can be
+wrongly spaced, or not correspond to the actual behavior of the material, which might show
+linear or nonlinear characteristics. While many of these distortions could be resolved through
+repeated observation of the display under various conditions, it should not be ignored that the
+design of indexical displays includes a rhetoric element—of staging the object in the most effective
+way.
+
+Ambiguity
+The framing in indexical visualizations is a matter of explicating implicit and ambiguous
+information. Since the interpretation of physical traces and phenomena requires some level of
+expert knowledge, an effective representation for non-experts usually means a reduction of
+ambiguity. At the same time, this disambiguation can increase the causal distance between the
+phenomenon and the representation. To be convincing as “evidence,” indexical visualizations
+require the presence of some amount of implicit information and ambiguity to be able to
+construct the basis of interpretation. Ambiguity is a necessary trade-off for the sake of
+minimizing the causal distance to the object. On the other hand, ambiguity can call attention
+to the physical properties of the object, offer additional cues, and therefore make the
+representation more believable—just as artifacts in analog media are an important means for
+verifying the authenticity of a document.
+
+Ephemerality
+Indexical displays change over time and often leave little trace of previous states. Either due
+to their physical characteristics or the way they are framed, it is often not possible to preserve
+their appearance over a longer time or create records of their previous states. If inscriptions
+are created, as in the case of a seismograph, the encoded information often does not have the
+same universally legible quality. The persuasive power of indexical displays is tightly coupled
+to their ephemerality. They are performative and show mechanisms and causalities rather than
+produce data. However, as visualizations, they do not afford the permanence characteristic of
+other representations: They require observation and interpretation, therefore the information
+they convey might not be the same for different observers. At the same time, the display is
+often locked into a specific context. As information displays, indexical visualizations do not
+offer the advantage of what Bruno Latour called “immutable mobiles:” representations of
+information that are both stable and mobile and therefore allow operations that go beyond the
+representations immediate context (Latour 1987).
+
+Agency and Autonomy
+A leather shoe can be bearer of the physical marks on its surface, and thus record the history
+of its users permanently, whereas the skin tissue of a cow will not be able to do this. As the
+live tissue will constantly renew itself, it may, on the other hand, show the effects of immediate
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 298
+
+298
+
+Dietmar Offenhuber and Orkan Telhan
+
+causes—such as the change of color in an area when the tissue experienced a physical impact.
+Indexical visualizations that are designed from state-changing materials, biological or living
+materials introduce new kinds of opportunities and limits to representation. Agency is at the
+expense of ephemerality but introduces an ability to actively respond to change. Agency is also
+a source of active reframing, in which the design can change both its physical and material
+framing and the interpretation contexts at the same time.
+The intent behind the manipulation, engineering, and programming of living matter also
+introduces different degrees and kinds of agency to indexical design. The autonomy exercised
+by single-cell organisms, for example, brings an inherent underspecificity to the overall design,
+subjecting it to operate at higher margins of uncertainty yet with the benefits of microbial
+intelligence. In a designed context, E. coli would be as a signthing, which would be expected
+to act, react, communicate, and live its own being. It will make decisions and bear the
+consequences of its own actions. However, in the meantime, it will be read as an index. Its
+responses to phenomena will be manifested as biological change and become legible under
+different interpretations that will frame it so.
+
+Conclusion
+Indexical strategies of visualization do not foreclose the act of interpretation. Instead of
+delivering quantifiable messages, they offer a framework for observation. In this chapter, we
+described a few principles for information design involving representations that highlight indexical
+properties, rather than employing iconic or symbolic visual languages. Since an indexical sign
+is a direct and necessary result of an underlying process, its appearance can only be indirectly
+manipulated by the designer. Design intervention therefore happens by applying a set of
+constraints that are aimed at making the underlying phenomenon legible. As long as the
+representation remains recognizable as a causal effect of the indicated phenomenon, the display
+becomes a persuasive demonstration of evidence. We intended to revise the place of the index
+among the palette available to the information designer, and identified and discussed a series
+of parameters—such as causal and symbolic distance—to assess different levels of indexicality.
+While the field of indexical design and visualization has not been thoroughly investigated, there
+have been individual attempts to capture indexical properties in visual designs. Our goal was
+to survey a series of examples that qualify as indexical visualizations as we describe them, and
+distill certain attributes and guidelines to design and interpret new kinds of indexical systems.
+While indexical representations currently occupy a somewhat marginal role in design, we expect
+that with the emergence of fields such as synthetic biology or microfluidic applications, they
+will become important in the near future. As we advance in our abilities to engineer molecular
+level responses to materials and use the agency of biological systems for specific design-making
+capabilities, we witness an increasing possibility to design visualizations that can compress the
+space between representation, translation, and mediation through the immediacy of cause-effect
+and input-output relationships.
+Peirce’s semiotic model provides a good backdrop to theorize new kinds of designs that
+can represent phenomena through themselves; exercise a different level of agency that lies outside
+the traditional visualization conventions that is built through icons and symbols. Under the
+category of the index, we described a new category of signs—signthings—that can utilize their
+physical embodiment—living and non-living nature—to exercise such agency. We believe that,
+as they find new places in the visual rhetoric, new types of indexical designs and visualizations
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING A-cg_7 x 10 26/09/2015 09:28 Page 299
+
+Indexical Visualization 299
+
+1111
+2
+3
+4
+5111
+6
+7
+8
+9
+1011
+1
+2
+3111
+4
+5
+6
+7
+8111
+9
+20111
+1
+2
+3
+4
+5
+6
+7
+8
+9
+30111
+1
+2
+3
+4
+35
+6
+7
+8
+9
+40111
+1
+2
+3
+4
+5
+6
+7111
+
+will establish their own reading habits and interpretation conventions and fundamentally
+challenge our former experiences with signs and signifying systems.
+
+Acknowledgements
+We thank Gerhard Dirmoser for his insightful feedback and criticism.
+
+Note
+1
+
+http://nature.com/scitable/knowledge/library/bioindicators-using-organisms-to-measureenvironmental-impacts-16821310
+
+References
+Adcock, Craig E., and James Turrell. 1990. The Art of Light and Space. Berkeley: University of California
+Press.
+Bertin, Jacques. 1983. Semiology of Graphics: Diagrams, Networks, Maps. Madison, Wisconsin: University
+of Wisconsin Press.
+Brown, John Seely, and Mark Weiser. 1996. “Designing Calm Technology.” PowerGrid Journal 1 (1): 75–85.
+Endy, Drew. 2005. “Foundations for Engineering Biology.” Nature 438 (7067): 449–453.
+Drucker, Johanna. 2011. “Humanities Approaches to Graphical Display.” Digital Humanities Quarterly 5
+(1). http://digitalhumanities.org/dhq/vol/5/1/000091/000091.html. (Accessed 08 22, 2014).
+Few, Stephen. 2012. Show Me the Numbers: Designing Tables and Graphs to Enlighten, Second edition.
+Burlingame, CA: Analytics Press.
+Gamma, Erich, John Vlissides, Ralph Johnson, and Richard Helm. 1995. Design Patterns: Elements of Reusable
+Object-Oriented Software. Reading, MA: Addison-Wesley.
+Goodman, Nelson. 1968. Languages of Art: An Approach to a Theory of Symbols. Indianapolis: Bobbs-Merrill.
+Hogg, Bennett, and Paul Vickers. 2006. “Sonification Abstraite/Sonification Concrete: An ‘Æsthetic
+Perspective Space’ for Classifying Auditory Displays in the Ars Musica Domain.” International Conference
+on Auditory Display (ICAD2006), London, UK.
+Hubel, David H. 1959. “Single Unit Activity in Striate Cortex of Unrestrained Cats.” The Journal of
+Physiology 147 (2): 226–238.
+Jevbratt, Lisa. 2003. “Coding the Infome: Writing Abstract Reality.” Dichtung Digital 29 (3).
+Latour, Bruno. 1987. Science in Action: How to Follow Scientists and Engineers through Society. Cambridge,
+MA: Harvard University Press
+Peirce, Charles Sanders, Nathan Houser, and Christian J. W. Kloesel. 1998. The Essential Peirce: Selected
+Philosophical Writings, 1893–1913. Indiana: Indiana University Press.
+Polanyi, Michael. 1998. Personal Knowledge: Towards a Post-Critical Philosophy. London: CRC Press.
+Rebelo, Pedro, and Franziska Schroeder. 2006. “Performing the Order: The Messiness of Play.”
+Performance Research 11 (1): 3–8.
+Rheinberger, Hans-Jörg. 1997. Toward a History of Epistemic Things: Synthesizing Proteins in the Test Tube.
+Redwood City, CA: Stanford University Press.
+Shneiderman, Ben. 1996. “The Eyes Have It: A Task by Data Type Taxonomy for Information
+Visualizations,” In Visual Languages, 1996. Proceedings, IEEE Symposium on, 1996, 336–43,
+http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=545307.
+Ware, Colin. 2010. Visual Thinking: For Design. San Francisco: Morgan Kaufmann.
+Whitelaw, Mitchell. Metacreation: Art and Artificial Life. Cambridge, Mass: MIT Press
+Whitesides, George M. 2006. “The Origins and the Future of Microfluidics.” Nature 442 (7101) (July
+27): 368–373
+Wisneski, Craig et al. 1998. “Ambient Displays: Turning Architectural Space into an Interface between
+People and Digital Information.” Proceedings of the First International Workshop on Cooperative Buildings,
+Integrating Information, Organization, and Architecture: 22–32.
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING PLATES-cg_7 x 10 26/09/2015 09:31 Page 26
+
+PLATE 30.1
+
+A diagnostic paper-chip by Diagnostics For All
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING PLATES-cg_7 x 10 26/09/2015 09:31 Page 27
+
+1111
+2
+3
+4
+5111
+6
+7
+8
+9
+1011
+1
+2
+3111
+4
+5
+6
+7
+8111
+9
+20111
+1
+2
+3
+4
+5
+6
+7
+8
+9
+30111
+1
+2
+3
+4
+35
+6
+7
+8
+9
+40111
+1
+2
+3
+4
+5
+6
+7111
+
+PLATE 30.2
+
+Scatalog —a fictional catalog of human manure stained with genetically engineered E.
+coli
+
+PLATE 30.3
+
+Microfluidic system
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+6620 UBIQUITOUS COMPUTING PLATES-cg_7 x 10 26/09/2015 09:31 Page 28
+
+PLATE 30.4
+
+The Oilwell. Prototype for a microbial perfumery that incorporates an indexical
+display
+
+FIRST PROOFS NOT FOR DISTRIBUTION
+
+

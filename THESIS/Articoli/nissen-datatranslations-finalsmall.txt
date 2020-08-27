@@ -1,0 +1,1009 @@
+Data-Things: Digital Fabrication Situated within
+Participatory Data Translation Activities
+Bettina Nissen
+John Bowers
+Culture Lab, School of Arts and Cultures, Newcastle University, UK
+b.s.nissen@ncl.ac.uk
+john.bowers@ncl.ac.uk
+ABSTRACT
+
+This paper explores a design-led approach to digital
+fabrication which situates it in participatory data translation
+activities to demonstrate that this technology can find
+application beyond its use as tool for manufacture. We
+present two contrasting design contexts in which,
+respectively, data from conference twitter conversations
+and craft practitioners’ movements are translated into
+interactively generated and fabricated physical artefacts.
+We argue that direct involvement in such digital fabrication
+activities can help people invest meaning into artefacts and
+facilitate social interaction and reflection upon their
+activities, while encouraging practitioners to incorporate
+new forms into their own work. On this basis, we
+reconsider digital fabrication within data translation
+activities as situated along an extended ‘trajectory of use’ in
+which reflective, meaningful ‘data-things’ can be created.
+Author Keywords
+
+Digital fabrication; 3D printing; research through design;
+data materialisation; data translation; making; craft
+ACM Classification Keywords
+
+H.5.m. Information interfaces and presentation (e.g., HCI):
+Miscellaneous.
+INTRODUCTION
+
+Digital fabrication is a widely researched topic in the HCI
+community with areas focusing on FabLabs [2, 18], DIY
+maker culture [9, 23], personal fabrication in the home [6,
+13] and as interactive tools [15, 25]. More recently,
+research has also started to explore more varied
+perspectives on the role of digital fabrication in HCI [14].
+Notably, a research area has opened out exploring the
+possibilities and values of digital fabrication situated within
+interactive making activities in different settings.
+For example, Ogawa et al. [17] have studied what they call
+Social Fabrication, a shared experience of digital
+fabrication. They suggest two essential elements for
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. Copyrights for
+components of this work owned by others than ACM must be honored.
+Abstracting with credit is permitted. To copy otherwise, or republish, to
+post on servers or to redistribute to lists, requires prior specific permission
+and/or a fee. Request permissions from Permissions@acm.org.
+CHI 2015, April 18 - 23, 2015, Seoul, Republic of Korea Copyright is
+held by the owner/author(s). Publication rights licensed to ACM. ACM
+978-1-4503-3145-6/15/04…$15.00
+http://dx.doi.org/10.1145/2702123.2702245
+
+realising it, (a) the “setting of a proper frame and topic and
+motivation” and (b) “a way to illustrate both individual and
+collective perspectives” [17, p.58]. Relatedly, Nissen et al.
+[16] studied a shared souvenir making activity where digital
+fabrication technologies were used to make a variety of
+artefacts representing individual and collective views on an
+art exhibition. The shared fabrication activity facilitated
+conversation and reflection concerning the exhibition and
+engendered curiosity in the fabrication technologies
+themselves. This work points to the value of embedding
+digital fabrication into a visitor’s trajectory through the
+exhibition as not just a means for the making of souvenirs
+but for enriching the whole experience of the visit.
+In contrast to these public settings, a domestic context is
+studied by Khot et al. with their SweatAtoms [8] – a system
+for situated digital fabrication in people’s homes, allowing
+them to personally generate “material representations” [8,
+p.3835] of different aspects of their physical activity. With
+their more personal approach to fabrication and physical
+data representations the authors suggest that there is an
+opportunity for design researchers “to print things from
+data” [8, p.3843] to incorporate digital fabrication in their
+HCI design and research practices. This area of context
+specific, situated digital fabrication opens up a new design
+space to investigate digital fabrication situated in other
+contexts and experiences that have not yet been explored.
+The current paper extends this emerging concern to study
+digital fabrication as a process embedded within social
+activities. While it is valuable to gain practical insight into
+the applicability and utility of digital fabrication
+technologies across many different contexts, Nissen et al.
+make a more radical argument for embedding fabrication
+within shared activities. By making fabrication a shared
+process, it is possible for participants to invest meaning in
+artefacts which they might not do if confronted with
+something mass-produced. It is not just that the artefact can
+be personally tailored. Participating in making creates a
+richer view on the skills and know-how involved in making,
+the technologies used, their rationales and any research
+issues surrounding them, as well as providing an occasion
+for conversation and reflection on the context in which the
+making is done. Following Ingold [7], Nissen et al. argue
+that artefacts made this way take on the character of
+‘things’ connected to their circumstances of making, rather
+than alien ‘objects’ created by mysterious processes. While
+it has long been a value expressed by those who practice
+
+participatory design (see Ehn’s classic formulation in [3]) it
+is only recently that researchers [16, 17] have pointed to the
+value of participation in digital fabrication.
+We wish to further this concern for making digital
+fabrication a visible, accountable process potentially open
+to participation. In particular, we wish to explore settings
+which foreground the translation, into digitally fabricated
+form, of data of personal significance. It is a commonplace
+observation that much contemporary everyday activity
+yields data which can be captured and analysed, whether
+these data be the content of social media postings or the
+measurements given by a personal health monitor.
+Increasingly, we hear of the so-called ‘quantified self’ [19]
+or ‘personal informatics’ [12] to encapsulate this
+phenomenon. The critical examination of this trend and
+topics such as what we mean by the very idea of data lie
+beyond the current paper. Instead, we wish to see how our
+interest in shared fabrication processes can open out new
+possibilities for the experience of personally relevant data –
+data relevant to an activity or skill which is currently
+engaging the participants.
+In this paper, we present two cases where we have created
+participatory fabrication activities so as to explore how they
+impact differentially on our design concerns and research
+interests. They contrast in various ways, deliberately, so
+that we can begin to investigate the broad application and
+implications of our approach. In one, we situate digital
+fabrication within a public setting, a conference. In the
+other, we study a craft which is typically practiced in
+intimate, domestic settings, crochet. At the conference, we
+conducted a short-term study with many participants, while
+our work with craft practitioners is a much more extended
+relationship with a few. At the conference, we worked ‘in
+the wild’ in the broader conference setting which did not
+principally concern digital fabrication, while the craft
+practitioners’ engagement with us was much more focused,
+driven in part by a mutual interest in craft skills. At the
+conference, we experimented with translations based on
+data sources which are already public, while with the craft
+practitioners we used techniques to elicit data related to the
+execution of their craft. While these studies differ in terms
+of setting, time-frame, scale, focus, mutual interest and data
+provenance, we have approached both with a concern to
+make our digital fabrication practices open and accountable
+so as to explore the meanings people invest, discover or
+create in things and data. We conclude this paper with a
+comparative account of these contrasting contexts,
+especially noting where we have been less successful, to
+help us develop some concepts which might guide future
+investigations in the HCI community of data translation
+within participatory fabrication activities.
+CONFERENCE TWEET TRANSLATIONS
+Context and Study
+
+This first case study took place at a national conference
+about future digital technologies called Thinking Digital.
+
+The event encouraged us to situate a digital fabrication
+activity within its programme. The attendees are a small but
+very involved community which every year engages with
+one another and the organisers who are an integral part of
+this community. In particular, discussions and
+conversations are broadcast via Twitter through an often
+trending hashtag #tdc14. After investigating twitter data
+from the previous year’s conference, we decided to explore
+how online social interactions could be translated into
+physical forms to engage attendees in offline conversations.
+For this purpose we developed an algorithmic design
+system that would translate overall conference and
+individual tweets into wearable artefacts that might
+resource attendees’ interactions with one another. In order
+to be suitably engaging for the technology savvy audience,
+we decided to use a 3D printer. These decisions guided our
+design as we needed to take into account constraints such as
+fabrication duration and transportability [cf. 16]. After
+initial explorations of different techniques for tweet data
+translation, we decided on a wearable ‘clip’ shape. This
+depicted the timeline of tweet behavior over the course of
+24 hours. The number of tweets per hour was computed and
+‘graphed’ as a pair of ‘ridges’, for all conference tweets
+(bottom) and the individual’s (middle). For example, the
+shape in Fig.1a shows the tweet activity of the 24 hours
+prior to midday of the second conference day. The
+collective tweets (bottom) with the most current amount of
+tweets on the left and going back in time towards the right.
+A spike of tweets can be seen in the morning session with
+minimal amounts of tweets during the night falling off after
+the previous evening’s activity. In comparison, this
+individual’s tweets (middle) show their tweet behaviour
+aligning with the evening and morning activity but showing
+more individual activity during the night. Using the Twitter
+API, we collected all hashtagged tweets throughout the
+conference in real time using a custom script in Processing
+(www.processing.org) which algorithmically generated 3D
+models (Fig.1b) when a Twitter handle was entered.
+
+Figure 1 (a) Fabricated physical shapes (b) digitally generated
+
+At the start of the conference, we introduced the project onstage to encourage attendees to visit our fabrication stand in
+the hall of the conference venue (Fig. 2). We wished to
+make shape generation and fabrication as transparent as
+possible. However, it was clear that attendees would have
+limited time to engage with these activities. We therefore
+focused on keeping the process fairly simple for
+
+participants. Upon entering their Twitter handle, their shape
+was digitally generated on screen and discussed before
+being printed on the 3D Printer. Participants were invited to
+watch and engage with the printing process for their shape
+or optionally return to collect it later.
+
+tweeted about the conference which was a prerequisite for
+any shape to be created. He then went back to the
+conference, tweeted more, and returned to create his shape.
+In these cases the digitally printed artefact encouraged
+reflection and certain behavior changes.
+
+Figure 3: Uses of tweet translations
+
+Figure 2: Fabrication stand with Makerbot and software
+Observations
+
+Over the course of the two-day conference, 24 people
+participated from diverse backgrounds – from computer
+programmers and business people to creative workers and
+cultural organisation representatives. We recorded each
+participant’s engagement with the fabrication activity
+alongside informal conversations with attendees and
+participants. We took field notes and other forms of ad hoc
+observation. Overall the idea of generating a personalised
+shape from one’s tweets was positively received with a
+surprisingly large amount of interest by the attendees, both
+online (via hashtag) and offline (attendee visits). Unpacking
+this general positive reaction, we analyse a number of
+features of interest.
+
+Another attendee who received her shape later at the
+closing party was very excited about her artefact and
+tweeted: “3D printed Twitter badge selfie!! Thanks
+@bettinanissen
+#eyespoppingoutofheadwithexcitement”
+(Fig. 4a). Apart from the enthusiasm for the personalised
+shapes, we have hints that the artefacts might also have
+longer-term value. Receiving additional tweets after the
+event thanking us for the shapes and experience suggests
+the value of the personal artefact post-event, e.g. one
+example included a picture of the shape attached to the
+company’s business logo (Fig. 4b): “Our awesome (and
+unique) 3d printed clip is now installed on our
+documentation. Thanks @bettinanissen”.
+
+Use, Value and Behaviour
+
+When their shapes were generated and fabricated, the
+majority of participants were very enthusiastic about their
+shape, with one of the participant spontaneously hugging
+one of the researchers in excitement. With only four
+participants not returning for their shapes, the overall
+response was positive. The participants were predominantly
+eager to generate their shapes and equally interested in the
+3D printing process. We found several ways the artefacts
+were worn throughout the conference, most commonly on
+conference badges, straps, jackets or shirts (see Fig.3).
+Interestingly, a couple of participants altered their tweet
+behaviour to explore how this would effect their shape. One
+attendee who was not happy with his initial digital shape
+when it was previewed on-screen came back after having
+tweeted more to see if his shape expressed his engagement
+with the conference better before printing it out. Another
+attendee was very keen to have his shape printed but when
+generating a shape it visibly transpired that he hadn’t
+
+Figure 4: Translations (a) in a selfie and (b) on a business logo
+Initiating Conversation
+
+Throughout the later part of the conference and especially
+at the conference dinner we observed several people
+comparing their shapes with one another, for example while
+waiting for food or coffee. Such uses of the shape are many
+and varied. One attendee stated “I’m not very good at
+talking to people at conferences if I don’t know anyone but
+this [shape] gave me something to talk to people about and
+start a conversation.” Other conversations involve people
+comparing their shapes and reasoning about differences
+and, through this, potentially making new contacts.
+When we asked two attendees who were comparing their
+shapes (Fig. 5a) what they were looking to discover, they
+humorously replied that they were trying to find out if they
+are “tweet soulmates” with their tweeting habits becoming
+aligned over the course of the conference.
+
+Reflection and Imagination
+
+Beyond the artefacts starting conversations amongst
+attendees, they also encouraged people to interpret their
+shape in their own way and reflect upon their activities at
+the conference and how they had been translated into
+physical form. One participant, when asked if people talked
+to him about his shape, replied that “everyone did and
+wanted to know what it is”. He then went into a fairly
+detailed description of how he explained it to people
+interpreting the shape as his “embodied tweets about
+technology, innovation, beer and cake” while jokingly
+pointing at different spikes of his tweet translation with
+cake being the biggest spike “because he loves cake”.
+
+However, being situated within a fairly tightly scheduled
+conference program, the forms of participation we could
+develop were limited. Our algorithmic fabrication
+technique, while it still encouraged people to dwell and
+engage, was mindful of the need for rapid response during
+break times so that a number of people would get the
+chance to participate. This did not allow us to explore how
+people might engage with and invest meaning into digitally
+fabricated artefacts when their involvement with making is
+more prolonged. To discuss the relationship between data,
+physical artefact and fabrication in more depth, we initiated
+a much longer-term study..
+CRAFT MOVEMENT TRANSLATIONS
+Context and Study
+
+For this study, we worked with a small group of 4-6 local
+crochet practitioners with varied skill levels (beginner,
+intermediate, professional) over a longer period of time.
+This gave us the opportunity to take a more iterative and
+dialogical approach to design exploration than in the
+previous case study. We could explore different ways of
+engaging the participants with their data and develop
+different data translations and activities.
+Figure 5 (a) Comparison of translations and (b) showing fangs
+
+Initial Workshop
+
+The shapes often elicited imaginative associations from
+participants, particularly when they first encountered them:
+for example “it looks like a cathedral” or it resembled teeth
+or fangs, which was acted out by the participant playfully
+(Fig. 5b). One participant described the artefact as “unique
+fingerprint” comparing it to personalised tangible
+encryption keys. In all these ways, the tweet translation was
+a resource for varied responses from reflection on people’s
+behavior to imaginative responses to the shape and
+possibilities for its use. While the generated shapes needed
+initial explanation of their relation to tweet data, they
+allowed participants to tell their own stories to give them
+meaning. As one participant emphasised: “It’s good that it’s
+abstract so you can make up your own interpretation”.
+
+In an initial workshop we encouraged the participants to
+discuss their experiences and thoughts about their practice
+while encouraging them to simply crochet the way they
+usually would during their weekly meet-ups (Fig. 6a). The
+main topics of the conversations were the importance of the
+crochet hook, its shape, size and the materials it is made of,
+the difficulty in understanding the ‘flow’ or tension of the
+wool and reasons for their preference of crochet over other
+crafts such as knitting, describing crochet as easy to learn,
+addictive, productive, meditative, colourful, creative,
+sculptural and giving a sense of achievement.
+
+Limitations and Challenges
+
+Although digital fabrication has been extensively explored
+in HCI research, several of the tech-savvy conference
+attendees had not seen a 3D printer in action. This made it
+difficult to differentiate participants’ experiences of the data
+translation activity from the novelty effect of the
+technology. However, we believe both aspects add value to
+the overall making experience. This was confirmed by
+participants who were acquainted with digital fabrication
+technology and still interested in the personal tweet
+translations, the processes of making them as well as the
+artefacts themselves. For other participants, the broader
+implications of our work were a key to their appreciation.
+One attendee tweeted “Love crossover from virtual to
+craft.” showing how seemingly separated digital content
+and physical making could be integrated through a
+participatory data translation activity in a craft-like way.
+
+Figure 6: (a) The workshop setting and (b) the sensor hook
+
+While the participants shared their experience and thoughts
+about their practice with us, we additionally captured some
+initial data from their movements through a sensor attached
+to the back of a crochet hook (Fig. 6b). To make this
+process as noninvasive as possible, we used a small
+wireless movement sensor, WAX9 (www.axivity.com), to
+record accelerometer and gyroscope data in real-time while
+the participants were crocheting. We initially asked them to
+each crochet a basic pattern in order to capture comparable
+data that we could then explore for potential data
+translations.
+
+Data Translation Workshops
+
+For the next workshop, we chose to translate the captured
+movements by combining the data into 3D coordinates to
+form path-like patterns. Again, generated by a custom
+Processing script, this translation showed each participant’s
+unique crochet movements as an abstract form (Fig.7).
+
+uncertainty that was expressed (such as “why doesn’t it
+look more like crochet?”) was responded to by developing a
+new translation design with the intention to show the data
+more recognisably as stitches or rhythm. For this purpose
+we translated the x, y and z components of the data into
+three separate, concentric radials (Fig. 10). For example,
+the left radial shape shows fairly steady movements of one
+participant with only minor outliers compared to the more
+varied movements of another participant on the right
+resulting in a more jagged shape.
+
+Figure 7: Three participants’ unique movement translations
+
+These digital translations were then translated again into
+physical forms by laser engraving and cutting a variety of
+materials. Additionally the digital patterns were translated
+into an extruded 3D model via a heatmap script and 3D
+printed. We used a range of materials: card, fabric, perspex
+and wood (Fig. 8). This was due to our growing awareness
+of the importance of the tactile experience of different
+materials to the crochet practitioners. Alongside the laser
+cut translations, we also added print outs of the same paths
+to see if this would elicit a different reaction. In the
+workshop we then presented these materials (Fig.9) without
+the crochet practitioners knowing how the shapes were
+generated and also unidentified so that they didn't know
+which shape was associated with which person. In this way,
+we sought to encourage discussion about the shapes, their
+techniques and the relations between them. We then
+revealed whose shape was whose and were more active in
+explaining and sharing the process with the participants,
+including showing them the sketch that generated the form
+amongst other graph-like representations of their data.
+
+Figure 9: (a) Different materials in the first workshop and
+(b) comparing translations in the second
+
+Figure 10: Radial translations for second workshop
+
+During this workshop we started by discussing the old and
+new shapes that were made before introducing the
+interactive data path generator. Initially, we got them to
+crochet with the sensor-augmented hook blind (Fig.11a) so
+that only the other participants could see the shape being
+generated while the practitioner was focusing on their craft.
+We then let them go through the same process again but
+with the shape being generated visibly on screen. We then
+compared and discussed both shapes and encouraged them
+to choose a shape that we would laser cut together.
+
+Figure 8: One participant’s translations in different materials
+
+For the next iteration, we took on board participants’
+feedback from the first workshop. In particular, there was a
+strong desire to see the shapes being generated live, to “see
+how it works”. This was responded to by developing the
+initial path generation script further so as to be able to
+stream real-time data from the sensor on the crochet hook
+directly to a path being generated on screen. Other
+
+Figure 11: (a) The interactive shape generation system in
+action (b) a personalised laser cut shape
+
+The second part of this workshop took place in our lab’s
+machine room where we showed, explained and used the
+laser cutter (Fig.12) to cut the personalised shapes while
+
+giving participants the possibility to make changes, add
+holes for potential use, or scale to a size they liked
+(Fig.11b). After all the shapes were cut, we closed the
+workshop with a discussion about the process of generating
+and fabricating their shapes. These workshops were all
+documented via audio and video recordings which were
+transcribed for analysis alongside the researchers’ field
+notes and observations.
+
+showed me that I can be quite meticulous and pay attention
+to detail”. This shows how the artefact encouraged the craft
+practitioners to think about their craft practice in a different
+way. Another participant noted: “I was thinking about my
+crochet, I do keep my hands quite still and quite close and
+that’s maybe why it [the shape] is kind of quite narrow”. In
+all these ways, our data translations provided an occasion
+for the practitioners to reflect on and compare their
+different ways of doing their craft.
+Making Meaning Through Association
+
+Figure 12: Laser cutting the shapes
+Observations
+Reflective Conversations
+
+Throughout all the workshops with the crochet
+practitioners, we found that extensive discussions took
+place about different crochet techniques, encouraged by the
+shape of the artefacts and comparisons between them. For
+example, one of the participants observed: “I think this is
+mine because it is quite dense” describing her movements
+as quite jerky. Similarly one of the participants suggested,
+pointing at a more curved shape, “maybe this could be
+yours because you twist more”. This reasoning, comparison
+and sharing of shapes was a common feature in both
+workshops and highlights how these shapes encouraged
+associations and reflection on their crochet techniques.
+In other cases, the conversations about crochet techniques
+and how a person handles their crochet hook were taken as
+suggestive of the participant’s personality. The attendees to
+one workshop reasoned that one shape must belong to a
+person who could not attend because her movements are
+more exaggerated and “that’s the personality that she is”.
+While in other conversations a participant said “I hope this
+is mine” because she liked the particular shape it made
+admiring its neat and symmetrical form.
+Aided by the controlled workshop setting and the directly
+comparable multiple objects, this reasoning and comparison
+work was very noticeable with participants potentially
+seeing a close, valuable relationship between the data
+artefacts and themselves due to the embodied connection
+between the data and their craft practice. As one of the
+participants reflected on her shape after the first workshop:
+“Its form is very concentrated and made me think about
+how I perform craft activities. I have often thought that I am
+a bit clumsy and imprecise when I am working but that
+
+Throughout the workshops numerous associations were
+made between the generated shapes and more familiar
+forms. For example, the radial shapes were associated with
+flowers or poppies, the live generated shapes were
+compared to airplanes, comets, fish, bees or a “cocoon
+made by a drunk caterpillar” (Fig.13b). It is important to
+note how such associations are used in conversations
+between our participants. The shape associations were
+related to the participants’ craft practices in a number of
+interesting and consequential ways. For instance, a shape
+taken to look like a flower was considered as the basis for
+the design of a brooch. In other cases, these associations
+compactly summarised various features of the data, such as
+densities, repeated patterns, curves and outliers. For
+example the association to a bee has a clear distinction
+between a dense body and the less dense curved wings (Fig.
+13a). One participant reflected on this process being
+interesting because “you could see which bits were the
+dense bits and which bits were the bits where you are
+moving around a bit more”.
+
+Figure 13: Shape associations (a) a “bee” and (b) “cocoon
+made by a drunk caterpillar”
+Use, Value and Meaning
+
+Our participants were not confined to these associations of
+generated shapes and familiar forms. For one of the crochet
+practitioners: “I like that it visualises a tradition”. She
+characterised the artefact as being “written in secret crochet
+code” which, for her, signified her “struggling and (more or
+less) succeeding to learn a skill I’d always admired and
+associated with my granny and mum”. In this way, the
+artefact enables her to link up a tradition, her own
+remembrance of her family, and her current struggles. She
+reported that she had taken one of the data translations and
+“placed [it] on my mantelpiece for me to feel proud of ”
+(see Fig.14b), a site one can interpret as a special place in
+her home. Another participant placed her 3D print in her
+
+studio after showing it to her family saying that she finds
+the print and the idea of 3D printing “inspirational”.
+
+through fabricating the shapes “it was more real for me”
+which other participants agreed to.
+Extending the Craft and Reciprocity
+
+Figure 14 (a) 'trying on' the shapes and (b) on the mantelpiece
+
+This shows an interest in the shapes as themselves having a
+potential value in and for her practice, perhaps in terms of
+future developments of it. “I have my piece of 3D printing
+on the shelf in my studio. […] I got to show people at the
+studio especially during the Art Tour and people were
+interested in the idea of transferring movement into a
+sculpture.” Different uses of the artefacts were explored,
+such as coasters, badges or hair clips. “They would look
+great on a jacket with the colour coming through.” Others
+thought of ways to embellish their shape: “I like to put
+flowers on mine”. The relative abstraction of the shapes,
+without any particular pre-determined use, enabled the
+participants to meaningfully appropriate their shapes and
+sparked their creativity. Taken together, these examples
+suggest an emerging recognition that our craft (data
+translation) might come to have a role in theirs (crochet and
+allied practices) either reminding participants of their proud
+embeddedness within a tradition or in terms of providing
+inspiration or actual materials which might be of practical
+use – a point we will shortly return to.
+The (Dis)entanglement of Fabrication
+
+In our later workshop, we involved our crochet practitioners
+end to end in the fabrication process from data capture
+through visualisations to the creation of laser cut shapes.
+One of the participants stated that they “liked having input
+into how they [the shapes] were made […] and seeing the
+different aspects of it”. And when asked about how that
+compared to just receiving their shapes the previous time, a
+participant said it was good “going through the whole
+process of seeing it happening, seeing the difference, how it
+looked on screen, deciding and then printing [laser
+cutting]”. With these comments the participants clearly
+stated the value of their involvement not only in the
+fabrication process but also in data capture and shape
+generation, “so it feels like it kind of has more meaning”
+than in the previous workshop where shapes were presented
+without the crochet practitioners being involved in their
+creation beyond being the source of the data. This shows
+that the more concerted involvement of participants with
+the capture of their own data and first hand acquaintance
+with the steps involved in digital fabrication not only
+encourages reflection and conversation but allows for
+meaningful engagement. One participant commented that
+
+Seeing the shape generated on screen while crocheting
+clearly influenced the participants’ way of crocheting by
+either looking to see what the shape looked like or by
+slowing down to see what happens. One participant even
+stopped to just move the hook around to see how the shape
+responded to her movements. This showed that the
+participants were very keen to understand how the data and
+its translation related to their movements. Indeed, one
+participant wanted to try to perform what she called
+“interpretative crochet” in a joking reference to
+‘interpretative dance’, where she influenced the generated
+shape by the way she crocheted rather than vice versa.
+
+Figure 15: Woodcut printed shape
+
+With these examples, we can already see how the
+practitioners were beginning to become more engaged in
+the overall activity of data capture, translation and
+fabrication, and started to explore possibilities in their own
+interpretative ways. While this was initially done to better
+understand how the data translation occurred, our
+practitioners’ curiosity has developed further with one
+participant developing an idea during the second workshop
+to use one of the laser engraved shapes for woodcut printing
+in her artwork. As we didn’t have enough time to laser cut a
+new personalised shape in this workshop, she took one of
+the pre-fabricated radial ones with her and posted a picture
+of the woodcut print on Twitter only a few hours later:
+“Print of a digital crochet engraving” (Fig. 15). As an artist
+she works with different printing techniques and had her
+own materials ready to hand to test this.
+This example further emphasises a point suggested earlier.
+As our work with the crochet practitioners unfolded and
+they became progressively more aware of, and participated
+in, the making of their data translations, there is a shift from
+the researchers’ interest in exploring the participants craft
+practice to, equally, the participants exploring the
+researchers’ practice to use this as inspiration in their own
+work. This mutual reciprocity of practices was a surprising
+
+development within the project and was in part enabled by
+the longer-term engagement we had with the participants.
+Importantly, it was also clear that, as design researchers, we
+were displaying aesthetic choices and creative judgments in
+our own work and the character of these and their rationale
+became, naturally, matters of curiosity for the participants.
+This relationship between craft and research practitioner
+developed through mutual interest in the other’s practice
+and attests to the engaging aspects of the data translation
+activities we devised. It also shows an extensibility of craft
+practice in creative ways that has potential to combine new
+digital technologies with traditional art and craft practices.
+
+and translation enriches participants’ opportunities for
+meaning making, as does taking part in the fabrication of
+the end-product. As Willis et al. have shown by turning 3D
+spatial drawings into laser cut objects: “There appears to be
+something inherently satisfying in the integral process of
+creating and realizing a design in physical form” [25, p.12].
+Although we agree, their controlled setting differs from our
+‘in the wild’ approach at the conference and our intensive
+exploratory sessions with the practitioners. This has enabled
+us to give more detail as to how such an ‘inherent
+satisfaction’ arises.
+
+DISCUSSION: JOINING THE THREADS
+
+With the tweet translations, we had to obtain adequately
+meaningful data engagement while being mindful of the
+needs of the context. This required us to focus
+on the duration and simplicity of the activity rather than the
+depth of engagement with the data itself. Our later
+workshop with the craft practitioners also brought home to
+us how many steps there were in passing from their
+embodied practice, through data capture, selection, scaling,
+display and fabrication on machines which themselves need
+to be carefully configured with specially edited data files.
+As sociologists of science have repeatedly emphasised,
+these painstaking ‘re-representation paths’ [10] are often
+abbreviated in published accounts with a consequent
+erasure of the craft skills of the researchers themselves. By
+conducting our fabrication sessions in the manner we did,
+where our own conduct became visible and accountable, we
+were reminded of how many steps to the process there
+were, how much aesthetic judgment is built in to the
+creation of shapes, and how skilled the operation of
+fabrication technology is.
+
+Working in two specific contexts we have explored new
+ways for situating digital fabrication within data translation
+activities to enrich reflection and interaction. Let us now
+draw on the findings of both projects and compare the two
+contexts and our experiences in them so as to formulate
+some design concepts which might help shape future
+research on situated participatory fabrication. It is in these
+concepts, exemplified by the work reported here, that we
+intend the main contributions of our research to reside.
+Data Translation as Meaning Making
+
+In both contexts, all participants showed curiosity to find
+out what their fabricated shape would look like and were
+eager to understand how the shape related to their actions.
+The process of engaging participants with their data, be it
+generated in real-time (crochet) or previously created
+(tweets), and involving them in the translation into
+fabricated forms has occasioned interpretative, sense
+making activities. These may concern the significance of a
+particular feature within the form (a spike or a repeating
+pattern), an association with a familiar shape, a connection
+with a particular event, or deliberations on personal history
+or the nature of craft practice. The tweet data was
+encountered, in a sense, ‘ready made’ rather than captured
+in an inspectable way during the fabrication sessions. This
+made it difficult, though not impossible, for participants to
+experimentally modify their behavior to see its
+consequences for data translation and fabrication. For the
+conference attendees, as a consequence, the shapes were
+less ‘legible’ or understandable and needed more
+explanation and description by the researcher. In the craft
+practice workshops in contrast, data was captured live from
+the embodied actions of participants and, accordingly, its
+significance could be interrogated concurrently. The more
+extensive engagement of crochet practitioners in data
+generation and translation, and indeed their participation in
+our whole research process, has helped them create an
+artefact that “feels like it kind of has more meaning”.
+With these differing ways of data engagement, we suggest
+that there is an important relationship between the kind of
+active involvement in the translation of data and the
+meaning invested in the tangible artefacts and the overall
+experience. We suggest that participation in data capture
+
+Situating Data in a Trajectory of Use
+
+Recapturing the steps suggests that it is appropriate to see
+data in a whole trajectory of use, where data might go
+through many translations, including those between
+different material forms. Indeed, our participants often
+considered extending these trajectories into future uses
+beyond the research encounter itself, whether these data
+were tweets or body movements and those future uses were
+as wearable clips or printing blocks.
+If we see fabricated artefacts as situated within an extended
+trajectory of use, this can influence the forms data
+translation and fabrication can take. In both of our cases,
+the relative abstractness and ambiguity [4] of the shapes we
+made helped people appropriate them in a variety of ways.
+While the shapes could be related to tweet behavior and
+craft movements, respectively, they had a visual interest in
+their own right, enabling people to creatively entertain a
+variety of future uses. If we understand data translations
+within a trajectory of use, it seems that they should be done
+under an interesting dual auspice of adequacy to the data on
+the one hand and requisite ambiguity with respect to future
+use on the other.
+
+From Data Materialisation to Data Translation
+
+Throughout this paper, we have referred to our work as
+concerning ‘data translation’ rather than the more common
+phrase of ‘data materialisation’. This is worth commenting
+on. It is important to us that we refrain from a simplistic
+divide between the ‘material’ (e.g. crochet yarn) and
+‘immaterial’ (e.g. digital data) though conflation of the
+digital (or the virtual) with the immaterial is often made
+unreflectively or even as a matter of philosophical
+commitment in some sources [1]. Similarly, the concept of
+‘data sculptures’ [24] as fixed artefacts embodying data to
+convey meaning seems reductive for our purpose. We
+suggest (a) a more active role of the user in the creation of
+the artefact and its meaning, and (b) data being seen not as
+fixed but as a malleable medium open to interpretation and
+translation in multiple ways. We therefore refer to data
+translations to highlight that data is translated through
+different material media and that this can be a painstaking
+process involving careful data refinement, materials
+selection, aesthetic judgment, anticipations of future use. In
+all these respects, speaking of data materialisation
+encourages a simplification of the processes involved. To
+put the point as an aphorism: there is more to 3D printing
+than just printing out.
+Data-Things and Social Objects
+
+We have argued for situating digital fabrication within
+participatory data translation and making practices and have
+outlined some of the benefits of so doing. We feel that our
+approach takes a more fundamental approach than that of
+Ogawa et al [17], as we are not merely focusing on aspects
+of the fabrication process that “stimulates communication
+in society” but are exploring the impact of direct
+involvement in the fabrication process itself – in as
+extended a sense of that process as is practically possible.
+Our work has more in common with Nissen et al. [16] in
+seeing fabrication as a matter to embed within situated
+social practices – in that case, souvenir-making with
+visitors to an art exhibition. We extend this work in a
+number of ways. First, we have explored a variety of
+different settings and practical strategies for fabrication in a
+manner that is in sensitive response to an opportunity and
+its context. Second, we have been able to sustain a longterm relationship with a group of practitioners which has
+helped us to explore a more end-to-end participatory
+fabrication encounter. Third, we have focused on how
+personally-relevant data can be captured and deployed in
+fabrication, conceiving of data in an extended trajectory of
+use.
+To express this compactly and to extend the use of Ingold
+[7] made by [16], we conceive of our artefacts as ‘datathings’ – highlighting that mere objects can become ‘living
+things’ for someone through their participation in the
+making process. In a similar fashion, Nina Simon [22]
+writes about a ‘social object’ “as one that connects the
+people who create, own, use, critique, or consume it. Social
+objects are transactional, facilitating exchanges among
+
+those who encounter them.” We believe that the conference
+attendees and crochet practitioners we have worked with
+orient towards our artefacts as social objects, as data-things.
+From Mutual Curiosity to Hybrid Research Practices
+
+In both of our studies, the curiosity that participants had in
+our research was notable. Part of this is, naturally, to do
+with the relative novelty of the technologies we are using.
+But, above this, our work stimulated people’s imaginations
+into suggesting extensions to our own research as well as
+future uses for fabrication technologies in general. The
+curiosity that participants have for the research process is a
+matter that is often ignored but can well shape the value
+that they perceive in designed artefacts [5].
+This curiosity developed in an unexpected manner in the
+second study which is of particular interest to discuss here.
+As our relationship with the crochet practitioners deepened,
+we have noted that a reciprocal interest in each other’s
+activities as craft emerged. This suggests that we can
+speculate on the possibility of hybrid practices which
+combine craftwork with research in novel ways. In existing
+work, Rosner has investigated how digital technology can
+mediate craft practice [20] and elicit reflection [21], while
+Zoran [27] has combined digitally fabricated elements with
+traditional craft techniques. The relevance and value of DIY
+making to HCI has been acknowledged with Lindtner et al.
+[11] recommending a collaborative approach for
+researchers to work more directly with makers and the
+maker community to develop innovative research
+initiatives. While our work is consistent with these
+approaches and recommendations, in our second study, we
+have tried to forge yet more intimate connections with craft
+practice, first, through exploring the potential of translating
+embodied craft movements into unique tangible artefacts
+and then by deepening the possibilities for reciprocal
+participation between craft and research worlds. Exploring
+what these hybrid craft-research practices might look like
+and what data-things they might make is our future work.
+CONCLUDING REMARKS
+
+Through two case studies, we have progressively explored
+an approach to working with fabrication technologies which
+emphasises participation in data translation and the creation
+of artefacts which are derived from personal experience
+(e.g. tweets) or skill (e.g. craft movements). We have
+demonstrated that direct involvement in digital fabrication
+can help people invest meaning into artefacts and facilitate
+reflection while encouraging practitioners, reciprocally, to
+incorporate new forms into their work. To close, we
+summarise some design concepts arising from our
+reflection on our work and the different contexts in which
+we have engaged. In condensed form:
+• Data translation is a matter of investing meaning. As we
+translate data from one form to another and fabricate
+artefacts on that basis we are creating occasions for
+meaning making and reflection.
+
+• Understand data in a trajectory of use. Data undergoes
+multiple translations and changes of significance, some
+predating our interventions, some which we effect
+ourselves, some which are in the hands of others in the
+future. Accordingly, it is often right to
+• Create artefacts with a requisite ambiguity and
+abstraction to enable varied appropriation in use.
+• Consider personally relevant data as a malleable
+material and facilitate participation in its capture and
+translation so as to create
+• Living data-things rather than ready-made objects.
+Through this, we can open out the possibility of
+• Hybrid research practices where research and other
+crafts are intertwined.
+While it is not always possible to explore all of these
+concepts simultaneously, and one of our studies shows the
+compromises that often have to be made, we hope we have
+outlined a novel image of how personal data can be worked
+with in participatory fabrication activities. In so doing, we
+hope we offer productive perspectives on digital fabrication
+beyond its use as a tool for manufacture, while furthering
+the cultural and research conversations around personal
+data and its use.
+ACKNOWLEDGMENTS
+
+We thank our participants and those who have helped us in
+this work, particularly Andrew Garbett, Thomas Smith and
+Gavin Wood for technical support. This work was funded
+by a UK AHRC KE Hub for the Creative Economy grant
+ref: AH/J005150/1 Creative Exchange.
+REFERENCES
+
+1. Baudrillard, J. The Gulf War Did Not Take Place.
+Bloomington: Indiana University Press, 1995.
+2. Blikstein, P. and Krannich, P. The Makers' Movement
+and FabLabs in Education: Experiences, Technologies,
+and Research. In Proc. IDC '13. ACM (2013), 613-616.
+3. Ehn, P. (1988). Work-Oriented Design of Computer
+Artifacts. Stockholm: Arbetslivescentrum.
+4. Gaver, W., Beaver, J. and Benford, S. Ambiguity as a
+Resource for Design. In Proc. CHI’03. ACM (2003),
+233-240.
+5. Gaver, W., Bowers, J., Boehner, K. et al. Indoor
+Weather Stations: Investigating a Ludic Approach to
+Environmental HCI Through Batch Prototyping. In
+Proc. CHI’13. ACM (2013). 3451-3460.
+6. Gershenfeld, N. Fab: The Coming Revolution on Your
+Desktop-From Personal Computers to Personal
+Fabrication. Basic Books, 2008.
+7. Ingold, T. Making: Anthropolgy, Archaeology, Art and
+Architecture. Routledge, 2013.
+8. Khot, R., Hjorth, L. and Mueller, F. Understanding
+Physical Activity through 3D Printed Material Artifacts.
+In Proc. CHI '14. ACM (2014). 3835-3844.
+9. Kuznetsov, S. and Paulos, E. Rise of the Expert
+Amateur: DIY Projects , Communities , and Cultures. In
+Proc. NordiCHI ’10. ACM (2010). 295–304.
+
+10. Latour, B. Science in Action: How to Follow Scientists
+and Engineers Through Society. Harvard University
+Press, 1987.
+11. Lindtner, S. Hertz, G., Dourish, P. Emerging Sites of
+HCI Innovation: Hackerspaces, Hardware Startups &
+Incubators. In Proc. CHI’14. ACM (2014). 1-10.
+12. Lupton, D. Self-tracking Cultures: Towards a Sociology
+of Personal Informatics. In Proc. OZCHI’14. ACM 2014
+13. Malone, E. and Lipson, H. Fab@Home: The Personal
+Desktop Fabricator Kit. Rapid Prototyping Journal 13,
+4 (2007). 245–255.
+14. Mellis, D., Follmer, S., Hartmann, B. et al. FAB at CHI:
+Digital Fabrication Tools, Design, and Community.
+In Proc. CHI EA '13. ACM (2013). 3307-3310.
+15. Mueller, S., Lopes, P., and Baudisch, P. Interactive
+Construction: Interactive Fabrication of Functional
+Mechanical Devices. In Proc. UIST ’12. ACM (2012).
+599-606.
+16. Nissen, B., Bowers, J., Wright, P. et al. Volvelles,
+Domes and Wristbands: Embedding Digital Fabrication
+within a Visitor's Trajectory of Engagement. In Proc.
+DIS '14. ACM (2014). 825-834.
+17. Ogawa, H., Mara, M., Lindinger, C., et al. Shadowgram:
+A Case Study for Social Fabrication through Interactive
+Fabrication in Public Spaces. In Proc. TEI’12. ACM
+(2012). 57-60.
+18. Posch, I., Ogawa, H., Lindinger, et al. Introducing the
+FabLab as Interactive Exhibition Space. In Proc.
+IDC ’10. ACM (2010). 254-257.
+19. Quantified Self www.quantifiedself.com [acc. Sept’14]
+20. Rosner, D. Mediated Crafts: Digital Practices around
+Creative Handwork. In Proc. CHI EA’10. ACM (2010).
+2955-2958.
+21. Rosner, D., Ryokai, K. Reflections on Craft: Probing the
+Creative Process of Everyday Knitters. In Proc.
+C&C’09. ACM (2009). 195-204.
+22. Simon, N., The Participatory Museum. Santa Cruz:
+Museum 2.0, 2010.
+23. Tanenbaum, J.G., Williams, A.M., Desjardins, A., and
+Tanenbaum, K. Democratizing Technology  : Pleasure,
+Utility and Expressiveness in DIY and Maker Practice.
+In Proc. CHI ’13. ACM (2013). 2603–2612.
+24. Vande Moere, A. Beyond the Tyranny of the Pixel:
+Exploring the Physicality of Information Visualization.
+In Proc. IV’08. IEEE Computer Society(2008). 469-474
+25. Willis, K.D.D, Lin, J., Mitani, J. et al. Spatial Sketch:
+Bridging Between Movement & Fabrication. In Proc.
+TEI’10. ACM (2010). 5-12.
+26. Willis, K.D.D., Xu, C., Wu, K.-J., et al. Interactive
+Fabrication: New Interfaces for Digital Fabrication. In
+Proc. TEI ’11. ACM (2011). 69–72.
+27. Zoran, A. Hybrid Basketry: Interweaving Digital
+Practice within Contemporary Craft. In ACM
+SIGGRAPH 2013 Art Gallery (SIGGRAPH ‘13). ACM.
+324-331.
+
+

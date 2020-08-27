@@ -1,0 +1,257 @@
+Hybrid Fabrication of Physicalizations
+
+Lora Oehlberg
+
+Abstract
+
+University of Calgary
+
+Historically, visualizations have been manually
+constructed and designed by graphic designers,
+facilitating some of the cognitive benefits of
+constructive visualizations. Today, researchers are
+investigating how digital fabrication techniques can
+allow people to quickly yet expressively author
+digitally-designed objects. This workshop paper
+discusses an application of hybrid fabrication – systems
+where a human and a computer collaborate to author a
+physical artifact – to the creation of physicalizations.
+We believe that hybrid fabrication of physicalizations
+can offer opportunities for reflection-in-action around
+datasets, while still resulting in an accurate physical
+representation of data.
+
+Calgary, AB T2N 1N4
+lora.oehlberg@ucalgary.ca
+
+Author Keywords
+Physicalization; Reflection-in-Action; Fabrication.
+
+ACM Classification Keywords
+H.5.m. Information interfaces and presentation (e.g.,
+HCI): Miscellaneous;
+
+Introduction
+Physical representations of data (or, physicalizations)
+are an accessible mode of data representation that
+leverages people’s multi-sensory interactions with
+objects to provoke reflection on data. However,
+
+another way that physicalizations provoke reflection on
+a dataset is through participation in constructing
+physicalizations[3]. People perform “reflection-inaction” [5] as they create a physical prototype of a
+visualization, building deeper intuition about the data
+itself.
+
+reflection-in-action into the practice of authoring datadriven artifacts. In a hybrid system, the computational
+side can handle complex datasets and produce accurate
+geometry; the human, meanwhile, can be invited to
+participate in authoring features at critical opportunities
+for reflection-in-action around the data itself.
+
+In practice, manually creating physicalizations still has
+its weaknesses – humans are not efficient at accurately
+translating abstract data into a physical representation.
+As a result, Information Visualization and HumanComputer Interaction researchers have proposed tools
+to facilitate the creation of Physicalization. This has led
+to tools that automate (e.g., [4]) or assist (e.g., [7])
+the process of generating digital designs for
+physicalizations, that are then created using digital
+fabrication machines. However, this automated design
+tools prevent people from more actively participating in
+actual constructing the physicalization.
+
+Examples
+
+Recently, HCI researchers have begun to explore the
+grey area between manual and automated fabrication
+techniques. In a hybrid fabrication system, both a
+human and a machine participate in creating a physical
+object. This leverages the strengths of computercontrolled fabrication (producing accurate geometry),
+while the human participation introduces interpretive
+flexibility or replaces the need for complex control. By
+leveraging the strengths of both manual and computercontrolled fabrication, HCI researchers have created
+hybrid systems that result in more creative output[2],
+expressive iterative prototyping[10] and computerassistance for hand tools[1,6].
+In the context of constructing physicalizations, hybrid
+fabrication presents an opportunity to reintroduce
+
+In the following section, we discuss two physicalizations
+that could be created using hybrid fabrication
+techniques discussed in past work.
+3D Doodled Water Globe
+Instead of having a 3D printer handle all object
+creation, or having a human follow instructions
+manually[2], a human could take turns with a machine,
+manually adding to a physicalization as needed. For
+example, a 3D printer could produce the bulk of a data
+sculpture, while indicating where to add your own
+ornamentation. This is similar to the approach where a
+machine might go back to ‘repair’ or add on to an
+existing plastic structure [8], except that a human is
+able to communicate their intent during the ‘repair’
+instead of precisely-defined and machine-executed
+geometry.
+For example, a geography instructor could bring a set
+of small 3D printed globes into their class. Pairs of
+students would receive one of these globes, a 3D
+Doodler, and a projection system that could track the
+position and orientation of the globe, and project
+instructions on exactly where to ‘build’ data using the
+3D Doodler. Using the 3D Doodler, students could add
+plastic filament to the existing physicalization to
+represent the amount of water usage per capita in
+different countries. The 3D Doodler could also track (or
+
+limit) how much filament it has extruded, allowing the
+quantity of material to be more tightly paired with the
+underlying dataset.
+‘Pen Pal’ Wall
+A classroom of 5th grade students in Canada has a
+“sister” classroom in Japan; each student has a
+corresponding ‘pen pal’ in the other country to whom
+they write emails as part of a cultural exchange. The
+teachers of the two classes decided to create
+physicalizations in each location to represent the ‘pen
+pals’ in the remote classroom. The teachers take
+photographs of each student, and generate a dataset of
+‘silhouettes’. Using Shaper[11], each student takes
+their turn, tracing their pen pal’s shape along the wall.
+Each time their pen pal sends a letter, the student can
+continue to ‘edit’ the wall using augmented physical
+tools[6] to create a sequence of holes that represent
+the length of the letter. While the final physicalization
+is relatively anonymous, the student will have
+participated in creating and adding the data associated
+with their pen pal. This helps them identify the
+silhouette and datasets that are relevant to them in the
+midst of an otherwise ambiguous physicalization.
+
+fabrication approach. With careful interaction design,
+the human should feel as though the machine is a
+helpful scaffold for them to learn how to create a
+physicalization[9].
+Tracking Human Involvement
+While the machine and the human take turns in
+‘editing’ the object, the machine must continuously
+tracking the human’s involvement and actions. This
+allows the machine to know where and how it should
+intervene in creating the physicalization. The machine
+can also check the accuracy of the human’s actions
+against the data itself.
+Data Experiences in Fabrication
+Hybrid fabrication of physicalizations offer targeted
+moments for people to reflect on data, as it is being
+authored in the physicalization. HCI researchers have
+an opportunity to craft more interactive data
+experiences that are situated in the overall task of
+hybrid fabrication. For example, a system that is aware
+of the human’s 3D Doodling on the Water Globe could
+present more detailed information about the water
+consumption in the particular region of the world where
+filament is being added.
+
+Discussion
+There are several common threads present in these
+examples:
+Balancing Turn Taking
+In the above examples, the human and the machine
+take turns in creating the physicalization. However, this
+interaction needs to be balanced such that the human
+cognitively engages in the task. If a human views their
+job as “babysitting” the machine, then a fullyautomated process would be better than a hybrid
+
+One Machine, Multiple Humans
+Hybrid Fabrication is not necessarily limited to
+operation by a single human; a group of people can
+participate in creating a physicalization (such as in the
+‘Pen Pal’ Wall example). The machine can help
+coordinate the efforts of individual people, ensure that
+the group is consistent in how data is represented and
+ensure the overall accuracy of the physicalization. This
+results in a physicalization where each individual
+participated reflection-in-action on the specific data
+
+points that they helped construct. The act of creation
+would help them recognize the data points that they
+played a role in creating, while maintaining relative
+anonymity for the data points that they did not
+construct themselves.
+
+About the Participant
+Lora Oehlberg is an assistant professor in Computer
+Science at the University of Calgary, and a member of
+the Interactions Lab (iLab). Her research focuses on
+technologies that support collaboration and creativity,
+particularly in the context of fabrication and product
+design. She completed a PostDoc at INRIA-Saclay, and
+has a PhD in Mechanical Engineering from the
+University of California, Berkeley. She has published in
+the Human-Computer Interaction research community,
+as well as at Engineering Design research venues.
+
+References
+1. Harshit Agrawal, Udayan Umapathi, Robert Kovacs,
+Johannes Frohnhofen, Hsiang-Ting Chen, Stefanie
+Mueller, and Patrick Baudisch. 2015. Protopiper:
+Physically Sketching Room-Sized Objects at Actual
+Scale. 427–436.
+https://doi.org/10.1145/2807442.2807505
+2. Laura Devendorf and Kimiko Ryokai. 2015. Being
+the Machine: Reconfiguring Agency and Control in
+Hybrid Fabrication. 2477–2486.
+https://doi.org/10.1145/2702123.2702547
+3. Samuel Huron, Sheelagh Carpendale, Alice Thudt,
+Anthony Tang, and Michael Mauerer. 2014.
+Constructive Visualization. In Proceedings of the
+2014 Conference on Designing Interactive Systems
+(DIS ’14), 433–442.
+https://doi.org/10.1145/2598510.2598566
+
+4. Rohit Ashok Khot, Larissa Hjorth, and Florian “Floyd”
+Mueller. 2014. Understanding Physical Activity
+Through 3D Printed Material Artifacts. In
+Proceedings of the 32Nd Annual ACM Conference on
+Human Factors in Computing Systems (CHI ’14),
+3835–3844.
+https://doi.org/10.1145/2556288.2557144
+5. Donald A. Schoen. 1983. The Reflective Practitioner:
+How Professionals Think In Action. Basic Books.
+6. Eldon Schoop, Michelle Nguyen, Daniel Lim, Valkyrie
+Savage, Sean Follmer, and Björn Hartmann. 2016.
+Drill Sergeant: Supporting Physical Construction
+Projects Through an Ecosystem of Augmented Tools.
+In Proceedings of the 2016 CHI Conference
+Extended Abstracts on Human Factors in Computing
+Systems (CHI EA ’16), 1607–1614.
+https://doi.org/10.1145/2851581.2892429
+7. Saiganesh Swaminathan, Conglei Shi, Yvonne
+Jansen, Pierre Dragicevic, Lora A. Oehlberg, and
+Jean-Daniel Fekete. 2014. Supporting the Design
+and Fabrication of Physical Visualizations. In
+Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems (CHI ’14), 3845–
+3854. https://doi.org/10.1145/2556288.2557310
+8. Alexander Teibrich, Stefanie Mueller, François
+Guimbretière, Robert Kovacs, Stefan Neubert, and
+Patrick Baudisch. 2015. Patching Physical Objects.
+In Proceedings of the 28th Annual ACM Symposium
+on User Interface Software & Technology (UIST ’15),
+83–91. https://doi.org/10.1145/2807442.2807467
+9. L. S. Vygotsky. 1980. Mind in Society: The
+Development of Higher Psychological Processes.
+Harvard University Press.
+10.
+Christian Weichel, Manfred Lau, David Kim,
+Nicolas Villar, and Hans W. Gellersen. 2014. MixFab:
+A Mixed-reality Environment for Personal
+
+Fabrication. In Proceedings of the 32Nd Annual ACM
+Conference on Human Factors in Computing
+Systems (CHI ’14), 3855–3864.
+https://doi.org/10.1145/2556288.2557090
+11.
+Shaper Origin. Retrieved May 5, 2017 from
+https://shapertools.com/
+
+

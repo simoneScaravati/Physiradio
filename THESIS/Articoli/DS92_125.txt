@@ -1,0 +1,585 @@
+INTERNATIONAL DESIGN CONFERENCE - DESIGN 2018
+https://doi.org/10.21278/idc.2018.0125
+
+DATA OBJECTS: DESIGN PRINCIPLES FOR DATA
+PHYSICALISATION
+R. Sosa, V. Gerrard, A. Esparza, R. Torres and R. Napper
+
+Abstract
+This paper describes the principles, methods and strategies for the design of everyday objects that
+embody data – or Data Objects. The work presented in the paper connects the fields of industrial design
+and data physicalisation to introduce the concept of using data as a design material. To support the
+creative synthesis of Data Objects the paper provides a literature review, methods and guidance on the
+creation of Data Objects alongside examples - and possible opportunities, challenges, and future
+scenarios - for the practice, use and the study of Data Objects.
+
+Keywords: big data analysis, design methods, design activities
+
+1. Introduction
+The term “Data Object” and its acronym DO refer to a type of everyday object configured in the
+intersection of two domains: data physicalisation and product design. More specifically, DO are usable,
+functional, and meaningful artefacts whose form and function encode data. These new types of everyday
+objects range from household devices to street furniture, wearable devices, educational materials, and
+interactive exhibits. Precedents exist in visual communication, interaction design, and data sculptures,
+but we suggest that DO remain largely unexplored in product design practice, education, and research.
+This is evident by the relative absence of product design cases in data physicalisation where most
+instances consist of volumetric transformations of conventional two-dimensional graphs and maps,
+sculptural objects whose core character is mainly aesthetic or decorative, or displays of 2D graphic data
+representations onto products (Jansen and Dragicevic, 2017).
+DO are utilitarian objects encountered in everyday activities for which their data-driven features play a
+defining role. Whilst these characteristics are not new, we argue that their integration is under-explored
+in modern product design practice. Therefore, the contributions of this work are to elaborate on the
+definition of DO, to provide informed means to design DO, and to support their future development.
+This paper seeks to inspire and inform work around DO with the purpose of establishing ways to support
+rigorous and creative approaches in the future. The paper begins with a literature review to identify the
+opportunities for extending the role of design in interacting and making meaning from data. Practical
+design approaches for DO are then proposed in terms of design principles alongside two design methods
+with case examples. The paper concludes with a discussion around open challenges and possible areas
+of relevance including data-driven design activism.
+
+2. Opportunities for product design in a data-driven world
+The motivation to identify and study the possibilities of DO derives from an awareness that decisionmaking is increasingly driven by – and relies on – data. In the digital age, substantial amounts of data
+are harvested especially in service of agendas of dominance and hegemony. In a data-driven economy,
+DESIGN INFORMATION AND KNOWLEDGE
+
+1685
+
+governments and private corporations have access to exhaustive and immediate accounts of the lives of
+citizens. Key examples that show the potential public benefit of accessing and contributing to large data
+sets include crowd geo-mapping to predict pandemics (Gregory, 2011), citizen-science (Liu and Singh,
+2004), crime prevention with big data (Speer et al., 2017), and predicting risk assessment in child
+protective services (Pedersen et al., 2004).
+The increasing use of ‘Big Data’ has led to the commodification of data. As a result the collection and
+use of personal information has become a central political concerns in contemporary society (Jarvis and
+Daller, 2013). Unresolved questions remain over access, ownership, and transparency, whilst societal
+action has become crucial to prevent and tackle misuse. Usually justified in terms of safety and
+efficiency, a trend towards increased restricted access could strengthen in the near future alongside
+greater data contributions by unwary individuals. As data becomes a more prolific asset to be traded
+alongside other markers of wealth, product design has the opportunity to address ethical concerns to
+improve access to data by incorporating it creatively and critically as a design material in professional
+practice.
+The opportunities for creative design action in this data-driven world are vast. Graphic design has long
+enhanced access to data with early examples including Snow’s 1854 map of the cholera epidemic in
+London affording analysis and understanding of the disease’s spread (Crossley et al., 2013). Combined
+with advances in computation, visual design principles have been applied to make data more
+understandable and accessible through the use of visual and interactive data representations (Weiner,
+2016). The work presented here aims to extend the role of design in interacting and making meaning
+from data, specifically by escaping “the flatlands of paper and screen” (Tufte, 1990).
+Design principles have been used to transfer screen-based interactions to the physical realm through
+“urban visualisations” (Zamanian and Heydari, 2012). This type of physical representations enables
+tangible and other sensorial access to data (Jansen et al., 2015). These artefacts embed data in the
+physical environment, show information in persuasive, objective, and responsible ways, and allow the
+public to build insights, and potentially engage in participative action (Zamanian and Heydari, 2012).
+Traditional societies also collected, analysed and manipulated data in the physical world. The Klikitat
+and Yakima people kept personal records using an ititamat (“counting the days”) to register and recount
+significant life events on a type of ball of string (Figure 2a) (Schlick, 1994). The Quipu necklace
+similarly encoded statistical and narrative information in knots (Figure 2b) (de la Cova, 1997). Today,
+however, fewer data-driven products exist in comparison to other design fields, and where they do exist,
+they tend to apply rather unsophisticated principles such as surface mapping of two-dimensional
+graphics (Figure 2c) (Kurbak and Yavuz, 2009).
+
+Figure 1. Left: Ititamat ball used as a life-logging device by Native Americans;
+Middle: Quipu necklace from the Andes region circa 30th century BC;
+Right: News Knitter, a garment to visualize customised large-scale data
+The field of product design has long espoused the semantic role that designed artefacts play in our daily
+life (Latour, 1992; Krippendorff, 2006) and yet there has been little use of the extensive quantitative
+data as a driver of that communicative power. Data has yet to join other design strategies to ethically
+drive product interaction such as the use of feedback for behaviour change or cues and prompts to
+incentivise desired and inhibit undesired behaviours (Lockton et al., 2010). Additionally, physical
+representations in design education are encouraged to ‘unlock’ alternative cognitive processes and
+enhance design capabilities (Acuna and Sosa, 2011). Sketching, sculpting, modelling and prototyping
+
+1686
+
+DESIGN INFORMATION AND KNOWLEDGE
+
+are all intended to make sense of the materials designers seek to manipulate (Karana et al., 2008). The
+same justifications could be applied to the processes required to shape data as a design material.
+This paper sets out to describe how product design principles might inform design with data. In addition
+to the creative opportunities available to further product design practice through data physicalisation,
+we identify an ethical responsibility to design for access to data and contribute to the critical engagement
+with ‘Big Data’.
+
+3. Designing Data Objects
+In this section, principles and strategies for the design of Data Objects are described. Building on the
+framework developed by Vande Moere and Purchase (2011) to examine the role of design in information
+visualisation, we draw from a wide literature to inform the specific practice of information visualisation
+in product design.
+
+3.1. Design principles
+We identify four singular design principles to orient design activity towards the differentiating
+characteristics of DO. These principles focus specifically on the data considerations of DO and are
+intended for use alongside existing design principles (Martin and Hanington, 2012), and data
+visualisation principles (Tufte, 1990, 2001; Kostelnick, 2008).
+DO Principle #1: Treat data as a new type of material to design with.
+
+Just like design-led evaluation and selection of materials and transformation processes (Ashby and
+Johnson, 2010), a design-led treatment of data seeks to support an informed, responsible, and organised
+way to transform raw or statistically processed data into Data Objects. In the process of making tangible
+the intangible, selection criteria for data must be considered in relation to the affordances provided.
+Conceived as a new type of material, data have technical characteristics (quantifiable) to be mapped
+onto physical artefacts, i.e., scale and statistical properties including groupings and distributions. Data
+also have intangible characteristics which need to be identified and integrated in the design of DO to
+define the design intentions and directions shaped by the data. In other words, DO that encode data
+about income, time-use, or human trafficking deal with very different units and their design needs to
+consider both the direct and the “second and third-order characteristics” (Karana et al., 2008) of the
+cultural, contextual, and human dimensions of the data.
+DO Principle #2: Design for access and (re)interpretation of the data embedded in the object.
+
+With access to data at their core, DO rely on the identification of a source data set to be represented
+through an easily recognised object form or function – with units, scales, relations, types, and quality of
+the data carefully selected for perceptibility and coherence (Norman, 2013; Jansen et al., 2015).
+Complex data sets can be introduced through layered multisensory interactions which support users to
+interpret the data in manageable parts (Jansen et al., 2015). Principles of organisation - including
+framing, mapping, chunking, hierarchies, layering, priming, similarity, and comparison are applicable,
+while iconic, indexical, and symbolic signifiers to support data recognition and exploration (Chandler,
+2001). These symbols can be used as ‘wayfinding’ elements to reduce formal instruction and prevent
+errors in data interpretation.
+Ultimately, the codification of a DO is determined by a user’s existing cultural conventions and values
+- including their learned expectations, behaviours, beliefs and interpretations associated with data
+(Weinschenk, 2011). The selected data set, its presentation, interface and use of symbols must be
+understood in relation to these conventions. Essentially, designers of DO must ensure that the data
+embedded in the artefact can be easily accessed and re-codified by users (Freire, 2000). Data must be
+truthfully represented for accurate access without requiring additional explanations (Tufte, 1990).
+Designers of DO need to anticipate people asking a range of “Why?” questions when interacting with
+DO. Rather than DO designed to transmit a sterile message to end the conversation, they are better suited
+to support a multiplicity of ideas to trigger conversations framed by intuitive access to concrete and
+specific data. As a result, DO are not about the designers’ views (except incidentally), and their focus is
+on giving agency to users. To this end, testing iteratively during the design process is essential to assess
+DESIGN INFORMATION AND KNOWLEDGE
+
+1687
+
+their capacity to spark many and genuine questions; their power as tools for thinking and engaging with
+topics and new understandings rather than as soapboxing or propaganda; and for legibility, i.e., do
+people react and interact with the DO based on the right data?
+DO Principle #3: Design for cognitive and emotional engagement with the data embedded in the object.
+
+DO are more successful when they afford interaction and use in multiple levels of engagement: from
+first impressions as seemingly innocuous everyday objects to further use and interactions as the data
+embedded in the object, its function, and its use are revealed. DO are likely to fully transmit the data
+they carry when in repeated use or close contact, including active and passive interaction modes
+(Marcus, 2016). Emotional and cognitive connections to the data emerge through playful, explorative,
+or purposeful interactions with the object (Jordan, 2003). Conditioning methods which associate an
+interaction with an unconscious physical or emotional response can orient users to interpret the data.
+Interactions can be designed with an acknowledgement of user progress in knowledge and skill through
+object use by providing feedback that sustains engagement. Principles of motivation, rewards, flows,
+information seeking, progress-mastery-control, competition, and user autonomy can be helpful in this
+regard (Weinschenk, 2011). Where there are multiple users, this type of feedback can be used alongside
+mechanisms of social cognition such as homophily; imitation and empathy; collaboration; peer pressure
+and compliance; and humour to encourage dialogue between users (Freire, 2000; Datta and
+Mullainathan, 2014).
+At a basic level, designing DO for interpretation and engagement draws from principles of
+communication design. In both areas, what users do with the information or the data is what is important.
+In the same way as communication design elements afford ways to represent and transform hitherto
+two-dimensional information for example using typography or animation techniques on a time axis, the
+physical properties of DO affords designers new ways to manipulate data on three physical axes as well
+as a fourth (time) axis. Other elements such as materials, texture, colour, and form can also be explored
+as representational opportunities to shape data. Ultimately, sustained user engagement with the DO will
+be determined by the relevance of the data presented to the user – defined by its ability to shock, inform,
+surprise and delight. The selected data, type of interaction, and opportunities for decoding and
+interpretation must resonate with the intended users, and is likely to emerge from iterative prototyping
+or co-design activity (Manzini and Coad, 2015).
+DO Principle #4: Design to empower people to use the data to rethink and challenge the status quo.
+
+By definition, DO are factual but can hardly be considered neutral, i.e., they accurately map quantitative
+information, but its selection, organisation, and representation is purposeful. DO are peculiarly apt to
+create a counter-narrative - defying unquestioned stereotypes and tropes dictated from the top– by
+inviting users to work with data. Whilst prosaic versions of DO can be propagandistic, the ultimate aim
+for DO is to set the stage, frame the dialogue, and highlight issues and tensions in ways which open
+possibilities and create opportunities for inclusive discussion (DiSalvo, 2012; Sosa et al., 2016).
+Physically embedding mnemonic devices, imagery, analogies, and archetypes within the data object
+provide mechanisms through which people can pose new types of questions. This is supported by
+offloading strategies using the physicality of DO to alter the information processing requirements and
+reduce cognitive demand (Nielsen and Mack, 1994; Weinschenk, 2011). Techniques which ground
+existing mental models in a real and manageable experience prompt reactions that would not otherwise
+have been elicited. Data can be embedded in ways that enhance the lived experience and demand
+immediate action. Embedding incentives for preferred behaviours or perceptions without restricting
+options or significantly changing incentives/penalties can nudge users towards conclusions and their
+own generative questions (Berger, 2014).
+Tentative encodings of data in DO should inspire and invite collective interpretation and dialogue rather
+than prescribe themes and interpretations from a preordained perspective (DiSalvo, 2012; Gerrard and
+Sosa, 2014). Projecting possible future scenarios associated with a present situation, or by tracing the
+histories, discourses, underlying issues, causes, and structures of a present situation can foster dialogue
+between perspectives and create new publics (DiSalvo, 2009; Dunne and Raby, 2013). Ultimately,
+possible behaviour change will be determined by which schemata and frameworks users exist within.
+The data selected for critique, the manner in which the critique is presented and the incentives to critique
+1688
+
+DESIGN INFORMATION AND KNOWLEDGE
+
+must be formulated with an understanding of these schemata in order to make abductive inferences and
+assumptions about how information will be processed and questioned. When relevant, design decisions
+for DO would ideally include their larger context, the immediate setting, the publics, and their
+interactions with and through the built environment (Latour, 1992).
+
+Figure 2. Four design principles for DO: Material, access, engage, empower
+An example is described following the DO principles. “Trashball” by Irwan Ahmett and (Latour, 1992).
+Trashball is a playful object intended to draw attention to the amount of trash in low income areas of
+Jakarta, Indonesia. Trash is collected and gradually formed into a ball which is used to play games of
+catch, football, human skittles, and eventually - as the ball becomes very large - rolled (paraded) around
+the city. The materiality of the object is directly associated with the trash incorporated as the ball is built
+in subsequent layers of flat material -first DO principle. In this case the DO is simultaneously about and
+made of an issue which is problematic because of its pervasive physical presence: urban waste such as
+discarded packaging. The object engages the public by inviting them to help build the ball, a strategy
+particularly successful with the youth -second DO principle. Because Trashball prioritises situated and
+collaborative making, issues of scale are also mapped directly onto an object which strengthens its
+message by continuously growing in size thus mapping the magnitude of the problem -third DO
+principle. A visual and tangible record of the amount of trash is formed along its route, also defined by
+those playing and interacting with the ball. The ball grows satisfyingly quickly providing sufficient
+motivation and feedback for users to continue interacting with it, and frequent breaks in building to
+experiment with new games with the ball provide additional engagement -third DO principle. As the
+ball grows to an absurd size for traditional ball games and becomes more difficult to control – sometimes
+even dangerous – the urgency of the environmental message becomes clear and unavoidable. Those
+involved in creating the ball – potentially also partly responsible for the trash that it is made from –
+become advocates of the message as they are physically and emotionally connected to the ball, and
+justify its existence as a symbol of poor waste management practices -fourth DO principle.
+
+4. Design methods for Data Objects
+We consider here two methods for the design of Data Objects: “Data to Object” and “Object to Data”.
+In the former, the source data guide the design process. In the latter, the target object guides the design
+process. The first method is more “open-ended” as it does not prescribe the type of output other than
+
+DESIGN INFORMATION AND KNOWLEDGE
+
+1689
+
+being a physical object. The second method is a more directed approach, as it seeks to re-imagine a
+specific type of object.
+
+4.1. Method I: “Data to Object”
+One way to structure the design process of DO is to take the materiality of the data as the starting point,
+and proceed to shape the selected data into an everyday object. This DO method is called “Data to
+Object” and consists of the following steps:
+1. Select data sources, filter them, and examine the material properties of the data as you list as many
+conceivable ideas as possible to orient the design of DO based on the data: the publics, the
+messages, the goals, the scenarios.
+2. Build initial 2D and 3D representations of the data to get a sense of amounts, volumes, scales,
+proportions, use of colours, shapes. Develop a feeling of the physical properties and the sensorial
+affordances conveyed by the data.
+3. Develop concepts for objects related to the dataset. Decide on the messages to be encoded in the
+data object and consider these in terms of the perceptual affordances in the data. Develop concepts
+into physical and social dimensions. Features derived from the data can distort the object - break
+expected symmetry, proportion, or scale – while metaphors and symbols can be used to transmit
+meaning. Consider how the geometry can change product function and a user’s expected
+interaction with the object.
+4. Prototype and evaluate the power of the data object to convey data when in use. As with any
+design, it is crucial to involve target users in the evaluation of the data object through
+prototyping and possibly by inviting them to select, curate, and work with the data. Through
+physically engagement, data objects seek to share, build dialogue, and build interpretations. Be
+prepared to go back to prior steps to re-examine previous decisions and consider other
+alternatives.
+
+4.2. Method II: “Object to Data”
+A second way to structure the design process of DO is to take the materiality of a type of everyday
+object as the starting point, and proceed to shape an instance object based on the features of the data
+selected. This DO method is called “Object to Data” and consists of the following steps:
+1. Select the type of objects to be redesigned or re-interpreted and examine their material properties
+including function, shape, semantics and, historic and cultural relevance.
+2. Develop data concepts related to the object. Explore data opportunities which relate to the object
+semantics. Speculative objects may be considered, i.e., versions that are impractical or defy
+common-sense. Different use scenarios for the object might also be considered, along with
+different users and modes and scenarios of use.
+3. Play with the perceptual and conceptual mappings between data and object by manipulating 2D
+and 3D representations. Develop the connections between physical features, data, and the possible
+decoding alternatives available to users. Features derived from the data can be used to distort the
+object, for example to break the expected symmetry, proportion, or scale to map the data onto the
+object. Building physical or virtual is the main activity at this stage.
+4. Prototype and evaluate the ability of the data object to convey data when in use. As with any
+design, it is important to involve target users in the evaluation of the data object through
+prototyping and possibly inviting them to participate in the process. Through physical
+engagement, data objects seek to share, build dialogue, and build interpretations. Be prepared to
+go back to prior steps to re-examine previous decisions and consider other alternatives.
+Due to space constraints, we focus next on the analysis of a case study that illustrates the second method
+“Object to Data” since this has been less obvious for those approximating the design of DO for the first
+time. The examples originate from recent practice facilitated by the authors. Based on this experience,
+we identify three starting points for DO design briefs transitioning from more bounded to more openended. In settings where more focus is required, define and provide to participants a source data base
+(Method I) and/or a target type of object (Method II). When a balance between freedom and similarity
+
+1690
+
+DESIGN INFORMATION AND KNOWLEDGE
+
+of outcomes are required, such as in competition or studio projects with common rubric criteria,
+participants can be asked to select and curate data from a subset provided (Method I), and/or they can
+select from candidate object types or a set of building materials supplied. Thirdly, when more freedom
+is desired, a theme or overall goal for the project can be set, giving agency to participants to select the
+dataset (Method I) or to define the target objects of their own interest (Method II) -and their own choice
+of materials. Most likely, a combination of these strategies will be appropriate, considering the
+characteristics of the project, the participants, the desired outcomes, i.e., a museum exhibition, a school
+project, a public co-design workshop, etc.
+
+5. Case study
+This section presents a case of study of products designed by the first and second authors of this paper
+from 2007 to 2017 as part of their design practice. These projects respond to the design brief of designing
+data objects by applying Method II as described in the previous section. The dual function of a “table”
+is playfully intertwined in these projects to create data tables both as “a set of facts or figures
+systematically displayed, especially in columns” and “a piece of furniture with a flat top and one or
+more legs, providing a level surface”. The everyday tables designed in these projects aimed to enable
+users to physically experience and explore the meanings and consequences of the data sets selected.
+
+5.1. Income Tables
+The Income Tables presented in Figure 3 in a CAD model represent quartiles of annual income per
+capita in Mexico (green table) and New Zealand (blue table) for the year 2007. In this example, the
+difference between the volumes of the table legs represents economic disparity. In one of the tables, the
+disparity becomes so large that the object becomes awkward with little legroom available and a
+prominent disproportion. The intention to disrupt the geometry of these objects is to promote discussion
+of those sitting at the table about the dysfunction of economic disparity, which can become precarious
+or unsafe after an extreme degree of disproportion and imbalance.
+
+Figure 3. Income Tables (2007 by first author); leg volume represents quartiles of
+annual income per capita
+In this case, the focus of the design became the four legs of a canonical table, which were directly used
+to map the data structured in quartiles -first DO principle. The main purpose of this design was to serve
+as an entry example for Data Objects workshops and projects, therefore the object design was kept as
+simple as possible for participants with limited design literacy or experience to visualise an example
+DO. To this end, a simple top slab of constant dimensions is left unmodified between the tables and no
+additional elements or decorations are incorporated. In this sense, the mapping between table legs and
+income quartiles is easily established -second DO principle. From that point, we have observed that it
+becomes easy for people to start thinking of their own data of interest that they can imagine meaningfully
+DESIGN INFORMATION AND KNOWLEDGE
+
+1691
+
+divided in fourths and mapped onto a table’s legs -third DO principle. In testing scenarios, audiences
+have made explicit the notion that the physical presence of these tables and their constant shaping of the
+interactions around them, carry a powerful message in ways that are not possible even with advanced
+visualisations on a screen, which can be effective but whose message dwindles as the visualisation
+disappears from the screen or the screen is shut down. A wide range of variants of these tables have
+been created in class activities and design workshops mapping imbalances and inequality along a variety
+of topics and populations.
+
+5.2. This Table is Occupied
+The Occupy Movement of 2012 was concerned with highlighting inequities in global wealth
+distribution. “This Table is Occupied” is a play on the data voiced by the protesters to show that the
+richest population 20% owns 82.7% of global wealth while the remaining 80% share only 17.3%, with
+the poorest 40% owning virtually nothing. The data is represented in a DO table which seats 5 people
+– each representing 20% of the global population. One member of the group has access to 82.7% of
+table surface area while the remaining five people have access to 17.3% - and, in reality, two of those
+five have very little access to any part of the table surface. Not only does the person representing the
+wealthiest 20% have access to the most table space, they are separated from the majority – with a large
+barrier between them and the other 4 users, and facing a different direction. This divide is a reflection
+on reality, where the world’s richest are increasingly separated from ‘the rest’ by systems which
+provide few opportunities for dialogue between income groups. A secret suggestion for action is
+embedded in the table design where if the table is flipped over, the distribution of table surface is the
+same for each person. The difficult activity of flipping a concrete table represents the difficult task of
+flipping current economic systems which are needed to overcome disparities in global wealth
+distribution.
+
+Figure 4. This Table is Occupied (2017 by second author)
+In this case, the focus of the design was the surface of the table, which was directly used to map the data
+as a percentage of surface area -first DO principle. The original data set was expressed as quintiles but
+a simpler form of separating the extreme quintile from the remaining four was decided to maintain
+clarity and the greatest data outlier to be recognised. The main purpose of this design was to serve as an
+example of the use of layering to assist users to decode the form of the table through use. The seats are
+left unmodified and invite the user to experience the data through available table surface through first
+hand interaction -third DO principle. In use, the physical form of the table shapes the interactions
+between people, communicating a visceral and immediate experience of hidden social realities. The
+need to ‘flip’ the table to enable a discussion between all users prompts a more solution driven
+conversation about taking collaborative and empowered action -fourth DO principle.
+Whilst users can interact with these tables without knowing what they represent, their physical presence
+provides a subtle but ever pervasive reminder of things that “aren’t right” and which call for our
+attention. Crucially, the tables represent the hard facts, around which people can share their views and
+learn from each other in conversations such as those afforded by formal round-table discussions or by
+more casual café settings. The experience of sitting at these tables may be more likely to evoke empathy
+
+1692
+
+DESIGN INFORMATION AND KNOWLEDGE
+
+in those engaged in a provocative and heated exchange of ideas, as they are placed in a facsimile of the
+situation being described. Moreover, ‘non-table’ versions of these examples are also frequently created
+in design workshops, for example the data for the Income table can be mapped onto a range of artefacts
+with four subcomponents such as a cutlery set where the spoons represent the first quartile, forks the
+second, knifes the third, and the tea spoons the fourth -the oversized spoon would align well with a
+metaphor of income used for subsistence. Other object-types besides tables are also suitable for the
+design method “Object to Data”. For example, in a recent workshop, the design of “Altares de Muertos”
+traditionally used in Day of the Death celebrations in Mexico has been used to map a range of crimes
+such as those against women, migrants, and casualties from gun violence and war.
+
+6. Design Objects for Design Activism (DOxDA)
+Design-led activism is defined as design applied “to create a counter-narrative aimed at generating and
+balancing positive social, institutional, environmental and/or economic change” (Fuad-Luke, 2013).
+Thorpe’s (Thorpe, 2012) criteria of design as activism include: to publicly reveal or frame a problem or
+challenging issue; to make a contentious call for change; to work on behalf of a neglected, excluded or
+disadvantaged group; and to disrupt routine practices, or systems of authority. DO are particularly suited
+for design activism through the enabling of people to access and make sense of information which is
+useful to enhance society. Data Objects for Design Activism, or DOxDA transcends working on behalf
+of others. Instead, DOxDA aim to re-frame key features of the present reality and expose people to
+significant issues through verifiable and accurate data. This gives DO an advantage as part of the design
+toolbox for creative activism whilst rejecting the self-importance of design as a “major role in triggering
+and supporting social change” (Manzini and Coad, 2015). Instead, designers creating DO seek to provide
+a verifiable backdrop where conversations and dialogue led by the public can be grounded and
+articulated.
+In this vein, DO are considered as non-human agents, i.e., “material presenters [that] support
+participation” (Bjögvinsson et al., 2012). The key notion in this agency is access; physicalisations aim
+to substantially increase the impact of making information comprehensible to wide groups of people.
+This can be portrayed as a progression from raw data inaccessible to human understanding, proceeding
+to highly specialised statistical means exclusive for data analysts, to info-visualisations aimed at a
+general audience, yet still demanding sophisticated visual literacy skills and specialised technical
+resources such as displays and online access. DO seek to build opportunities for people to intuitively
+reason about data through daily interactions with the built environment, with the goal to support wellinformed dialogue about the present.
+DOxDA can be considered as leverage points (Meadows, 1997) where a small “shift in one thing can
+produce big changes in everything”. DO are aimed at changing “information flows” by affecting the
+physical structure of daily life. DO seek to provide feedback to address the “tendency on the part of
+humans to avoid accountability for their own decisions” (Meadows, 1997). Moreover, DO aim to make
+the goals of the system clearer since “people within systems don’t often recognise what whole-system
+goal they are serving” (Meadows, 1997). At its best, DO are built to trigger mind-set or paradigm shifts
+by making information (physically, socially) present in everyday life, thus making explicit the “deepest
+set of beliefs about how the system works” and “pointing at the anomalies and failures of the old
+paradigm” (Meadows, 1997).
+DOxDA relate to other practices, including Speculative Design, but their orientation is on the present,
+or rather, on alternate versions of the present. In this sense, DOxDA are more reflexive than speculative,
+as they are not focused on presenting what the future could be, but supporting the construction of what
+the present could mean for different actors. By questioning the present trajectories of key well-being
+indicators, DOxDA can inform future-oriented activism fields. Figure 5 shows the distinction between
+speculative approaches and DOxDA: whilst the former as shown in the left represents the present as a
+single point (Dunne and Raby, 2013), the design of DOxDA avoids such assumption by recognising the
+need to account for probable, plausible, and possible versions of the present, and to contribute with data
+representations that help different agents make inferences about the current state of the system, therefore
+by logic widening the spectrum of probable and plausible imagined futures.
+
+DESIGN INFORMATION AND KNOWLEDGE
+
+1693
+
+Figure 5. Data Objects as instruments to understand the probable, plausible, and
+possible versions of the present, leading to an expansion of possible futures
+An alternative option for DOxDA to address in the future is the encoding of speculative data, i.e., data
+that represents fictitious futures and desirable realities. This could be done as a way to compare present
+realities with idealised models (utopian), with future projections of current trends (dystopian), or with
+the anticipated effects of intervening in the system. Visualising alternate versions of the present is
+important because social movements, interest groups and activists tend to embrace a shared set of beliefs
+or perceptions. The increasing complexity of social and environmental changes makes it difficult for
+people to perceive, and difficult to engage with.
+
+7. Discussion
+The design of DO merges three important design dimensions: product semantics, usability, and product
+function. The motivation to connect these three product characteristics is a response to a social evolution
+towards an increasingly data driven world where access to – and understanding of – data has become an
+essential human capability. The wider purpose of info-visualisation is to “help people think about,
+explore, and share data” (Jansen et al., 2015). The intention to embed data in designed products is an
+attempt to provide an alternative medium through which to democratise data – expanding these
+intentions to the physical world.
+While objects have always had the ability to communicate, it has been the normal purview of the product
+designer for the product to communicate internal attributes. These internal attributes are the classical
+elements of industrial design, for example the form language of a car communicating dynamism, or an
+armchair comfort. This form of communication assists the user in making informed decisions about
+using these products, and indeed is manipulated by the industrial designer to achieve particular ends –
+some as altruistic as product purpose, and others which may be viewed nefariously such as simply selling
+more stuff. What DOs enact is an ability for products to communicate information beyond their own
+realm. This may be viewed as a convergence of industrial and communication design, or alternatively,
+a convergence of ordinary products with the “status object”, intended to communicate projected values
+of the owner. It also opens an opportunity for more focussed agency or activism on the part of the
+objects, and their designers.
+
+References
+Acuna, A. and Sosa, R. (2011), “The complementary role of representations in design creativity: sketches and
+models”, In: Taura, T. and Nagai, Y. (Eds.), Design Creativity 2010, Springer London, London.
+https://doi.org/10.1007/978-0-85729-224-7_34
+
+1694
+
+DESIGN INFORMATION AND KNOWLEDGE
+
+Ashby, M.F. and Johnson, K. (2010), Materials and Design: the Art and Science of Material Selection in Product
+Design, Butterworth-Heinemann, Oxford.
+Berger, W. (2014), A More Beautiful Question: The Power of Inquiry to Spark Breakthrough Ideas, Bloomsbury
+Publishing, Chicago, USA.
+Chandler, D. (2001), Semiotics: The Basics, Routledge, New York.
+Crossley, S., Salsbury, T. and McNamara, D.S. (2013), “Validating lexical measures using human scores of lexical
+proﬁciency”, In: Jarvis, S. and Daller, M. (Eds.), Vocabulary Knowledge: Human ratings and automated
+measures, John Benjamins Publishing Company. https://doi.org/10.1075/sibil.47.06ch4
+Datta, S. and Mullainathan, S. (2014), “Behavioral Design: A New Approach to Development Policy”, Review of
+Income & Wealth, Vol. 60 No. 1, pp. 7-35. https://doi.org/10.1111/roiw.12093
+de la Cova, A.R. (1997). Incas Quipu. [online] Available at: http://www.latinamericanstudies.org/quipu.htm
+(accessed 11/2017).
+DiSalvo, C. (2009), “Design and the Construction of Publics”, Design Issues, Vol. 25 No. 1, pp. 48-63.
+https://doi.org/10.1162/desi.2009.25.1.48
+DiSalvo, C. (2012), Adversarial Design, MIT Press, Cambridge, Massachusetts.
+Dunne, A. and Raby, F. (2013), Speculative Everything: Design, Fiction, and Social Dreaming, The MIT Press,
+Cambridge, Massachusetts.
+Freire, P. (2000), Pedagogy of the Oppressed, Continuum, New York.
+Gerrard, V. and Sosa, R. (2014), “Examining participation”, Participatory Design Conference, Association for
+Computing Machinery, pp. 111-120. https://doi.org/10.1145/2661435.2661451
+Gregory, R.J. (2011), “Validity and test development”, In: Gregory, R.J. (Ed.), Psychological Testing: History,
+Principles, and Applications, Global Edition, Pearson Higher Ed, New York.
+Jansen, Y. and Dragicevic, P. (2017), List of Physical Visualizations and Related Artifacts. [online] Available at:
+http://dataphys.org/list/ (accessed 11/2017)
+Jansen, Y., Dragicevic, P., Isenberg, P., Alexander, J., Karnik et al. (2015), “Opportunities and Challenges for
+Data Physicalization”, 33rd Annual ACM Conference on Human Factors in Computing Systems, Seoul,
+Republic of Korea, ACM. https://doi.org/10.1145/2702123.2702180
+Jarvis, S. and Daller, M. (2013), Vocabulary Knowledge: Human Ratings and Automated Measures, John
+Benjamins Publishing. https://doi.org/10.1075/sibil.47
+Jordan, P.W. (2003), Designing Pleasurable Products: An Introduction to the New Human Factors, Taylor &
+Francis, London.
+Karana, E., Hekkert, P. and Kandachar, P. (2008), “Material considerations in product design: A survey on crucial
+material aspects used by product designers”, Materials and Design, Vol. 29 No. 6, pp. 1081-1089.
+https://doi.org/10.1016/j.matdes.2007.06.002
+Kostelnick, C. (2008), “Beyond the Tyranny of the Pixel: Exploring the Physicality of Information Visualization”,
+IEEE Transactions on Professional Communication, Vol. 51. https://doi.org/10.1109/IV.2008.84
+Krippendorff, K. (2006), The Semantic Turn: A new Foundation for Design, CRC/Taylor & Francis, Boca Raton.
+https://doi.org/10.4324/9780203299951
+Kurbak, E. and Yavuz, M.M. (2009), NewsKnitter. [online] Casualdata. Available at:
+http://casualdata.com/newsknitter
+Latour, B. (1992), “Where are the missing masses? A sociology of a few mundane artefacts”, In: Bijker, W. and
+Law, J. (Eds.), Shaping Technology-Building Society. Studies in Sociotechnical Change, MIT Press,
+Cambridge Massachusetts.
+Liu, H. and Singh, P. (2004), “ConceptNet—a practical commonsense reasoning tool-kit”, BT Technology Journal,
+Vol. 22 No. 4, pp. 211-226. https://doi.org/10.1023/B:BTTJ.0000047600.45421.6d
+Lockton, D., Harrison, D. and Stanton, N.A. (2010), “The Design with Intent Method: A design tool for influencing
+user
+behaviour”,
+Applied
+Ergonomics,
+Vol.
+41
+No.
+3,
+pp.
+382-392.
+https://doi.org/10.1016/j.apergo.2009.09.001
+Manzini, E. and Coad, R. (2015), Design, When Everybody Designs: An Introduction to Design for Social
+Innovation, MIT Press, Cambridge, Massachusetts.
+Marcus, A. (2016), Design, user experience, and usability: design thinking and methods, Springer, Switzerland.
+https://doi.org/10.1007/978-3-319-40409-7
+Martin, B. and Hanington, B.M. (2012), Universal Methods of Design: 100 Ways to Research Complex Problems,
+develop innovative ideas, and design effective solutions, Rockport Publishers, Beverly, MA.
+Nielsen, J. and Mack, R.L. (1994), Usability Inspection Methods, Wiley, New York.
+https://doi.org/10.1145/259963.260531
+Norman, D.A. (2013), The design of everyday things, Basic Books, New York.
+Pedersen, T., Patwardhan, S. and Michelizzi, J. (2004), “WordNet: Similarity: measuring the relatedness of
+concepts”, Proceedings of the 19th National Conference on Artifical Intelligence, AAAI Press.
+
+DESIGN INFORMATION AND KNOWLEDGE
+
+1695
+
+Schlick, M.D. (1994), Columbia River Basketry: Gift of the Ancestors, Gift of the Earth, University of Washington
+Press, Seattle, Washington.
+Sosa, R., Torres, R., Cervera, F. and O, R. (2016), “Eliciting creative views of Tertiary Education through
+speculative future scenarios: Robot “O””, TERNZ Conference Tertiary Education Research in New Zealand,
+Dunedin.
+Speer, R., Chin, J. and Havasi, C. (2017), “ConceptNet 5.5: An Open Multilingual Graph of General Knowledge”,
+Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17), pp. 4444-4451.
+Thorpe, A. (2012), Architecture and design versus consumerism: how design activism confronts growth,
+Earthscan, New York.
+Tufte, E.R. (1990), Envisioning Information, Cheshire, Graphics Press, Connecticut.
+Tufte, E.R. (2001), The Visual Display of Quantitative Information, Graphics Press, Cheshire, Connecticut.
+Vande Moere, A. and Purchase, H. (2011), “On the role of design in information visualization”, Information
+Visualization, Vol. 10 No. 4, pp. 356-371. https://doi.org/10.1177/1473871611415996
+Weiner, E. (2016), The Geography of Genius: A Search for the World's Most Creative Places from Ancient Athens
+to Silicon Valley, Simon and Schuster, New York.
+Weinschenk, S. (2011), 100 Things Every Designer Needs to Know about People, New Riders, Berkeley, CA.
+Zamanian, M. and Heydari, P. (2012), “Readability of texts: State of the art”, Theory and Practice in Language
+Studies, Vol. 2 No. 1, pp. 43-53. https://doi.org/10.4304/tpls.2.1.43-53
+Dr. Ricardo Sosa
+Auckland University of Technology, Design and Creative Technologies
+Governor Fitzroy Place, 1010 Auckland, New Zealand
+Email: ricardo.sosa@aut.ac.nz
+
+1696
+
+DESIGN INFORMATION AND KNOWLEDGE
+
+

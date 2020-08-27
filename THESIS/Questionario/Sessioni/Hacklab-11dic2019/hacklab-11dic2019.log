@@ -1,0 +1,313 @@
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Unexpected response: 
+Volume +1
+VOLUME : 86.20
+Volume +1
+VOLUME : 87.20
+Volume +1
+VOLUME : 88.20
+Volume +1
+VOLUME : 89.20
+Volume +1
+VOLUME : 90.20
+Volume +1
+VOLUME : 91.20
+Volume +1
+VOLUME : 92.20
+Volume +1
+VOLUME : 93.20
+Volume +1
+VOLUME : 94.20
+Volume -1
+VOLUME : 93.20
+Volume -1
+VOLUME : 92.20
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Unexpected response: 
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Unexpected response: 
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Unexpected response: 
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> Already on the same station
+API task Disabled
+Volume +1
+VOLUME : 93.20
+Volume +1
+VOLUME : 94.20
+Volume +1
+VOLUME : 95.20
+Volume +1
+VOLUME : 96.20
+Volume +1
+VOLUME : 97.20
+Volume +1
+VOLUME : 98.20
+Volume +1
+VOLUME : 99.20
+Volume +1
+VOLUME : 100.00
+Volume -1
+VOLUME : 99.00
+Volume -1
+VOLUME : 98.00
+Radio 1 - Classical -> Smoke/Mist 
++++ rssi:-78
+Requesting stream: /;
+Fading Volume....
+Chroma Classical - solo classical music
+RESET!ÿ
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x4010f000, len 1384, room 16 
+tail 8
+chksum 0x2d
+csum 0x2d
+vbc204a9b
+~ld
+
+
+Welcome to PhysiRadio!!
+
+Connecting to SSID hacklabcormano.it
+..WiFi connected
+IP address: 
+172.16.1.107
+Attempting MQTT connection...Physiradio connected to MQTT server
+Initialized scheduler
+added api task
+added stream task
+added mqtt task
+Enabled api task
+Enabled stream task
+Enabled mqtt task
+Connecting to Web radio...
++++ rssi:-82
+Radio Connection failed
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+75 % humidity
+Doing mapping for Clouds weather
+Got: Chroma Smooth Jazz:	 --> +++ rssi:-81
+Requesting stream: /;
+Fading Volume....
+Chroma Smooth Jazz:	
+API task Disabled
+API task Disabled
+Radio 1 - Classical -> Smoke/Mist 
++++ rssi:-81
+Requesting stream: /;
+Fading Volume....
+Chroma Classical - solo classical music
+Volume +1
+VOLUME : 86.20
+Volume +1
+VOLUME : 87.20
+Volume +1
+VOLUME : 88.20
+Volume +1
+VOLUME : 89.20
+Volume +1
+VOLUME : 90.20
+Volume +1
+VOLUME : 91.20
+Volume +1
+VOLUME : 92.20
+Volume +1
+VOLUME : 93.20
+Volume +1
+VOLUME : 94.20
+Volume +1
+VOLUME : 95.20
+Volume +1
+VOLUME : 96.20
+Volume +1
+VOLUME : 97.20
+Volume -1
+VOLUME : 96.20
+Volume +1
+VOLUME : 97.20
+Volume +1
+VOLUME : 98.20
+Volume +1
+VOLUME : 99.20
+Volume +1
+VOLUME : 100.00
+Volume -1
+VOLUME : 99.00
+Volume -1
+VOLUME : 98.00
+Radio 2 - Metal -> Clear(sun) + High humidity 
++++ rssi:-77
+Requesting stream: /;
+Fading Volume....
+CHROMA METAL - solo metal
+Volume +1
+VOLUME : 99.10
+Volume -1
+VOLUME : 98.10
+Volume -1
+VOLUME : 97.10
+Volume -1
+VOLUME : 96.10
+Radio 1 - Classical -> Smoke/Mist 
++++ rssi:-83
+Requesting stream: /;
+Fading Volume....
+Chroma Classical - solo classical music
+Radio 2 - Metal -> Clear(sun) + High humidity 
++++ rssi:-79
+Requesting stream: /;
+Fading Volume....
+CHROMA METAL - solo metal
+Radio 3 - SmoothJazz -> Rain/Drizzle/Cloud/Fog  + low humidity
++++ rssi:-77
+Requesting stream: /;
+Fading Volume....
+Chroma Smooth Jazz:	
+Volume +1
+VOLUME : 97.30
+Volume +1
+VOLUME : 98.30
+Radio 4 - SummerHits -> Sunny + low humidity
++++ rssi:-80
+Radio Connection failed
+Radio 4 - SummerHits -> Sunny + low humidity
++++ rssi:-79
+Requesting stream: /energysummer-high.mp3
+Fading Volume....
+Energy rsi Summer
+Volume -1
+VOLUME : 97.40
+Radio 5 - ExtremeMetal -> Thunderstorm/Tornado...
++++ rssi:-78
+Requesting stream: /;
+Fading Volume....
+Radio Caprice - Brutal Death Metal
+Volume -1
+VOLUME : 96.50
+Volume +1
+VOLUME : 97.50
+Radio 6 - LoFi -> Rain/Drizzle/Cloud/Fog  + High humidity
++++ rssi:-78
+Radio Connection failed
+Radio 6 - LoFi -> Rain/Drizzle/Cloud/Fog  + High humidity
++++ rssi:-80
+Radio Connection failed
+Radio 6 - LoFi -> Rain/Drizzle/Cloud/Fog  + High humidity
++++ rssi:-82
+Requesting stream: /stream2
+Fading Volume....
+Lofi hip hop radio(lfhh.org)
+Volume +1
+VOLUME : 98.50
+Volume +1
+VOLUME : 99.50
+Volume +1
+VOLUME : 100.00
+Radio 7 - Xmas Songs -> Snow
++++ rssi:-80
+Requesting stream: /;
+Fading Volume....
+Chroma Christmas - solo Xmas songs
+VOLUME : 0

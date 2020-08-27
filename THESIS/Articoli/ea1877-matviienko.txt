@@ -1,0 +1,507 @@
+Late-Breaking Work
+
+CHI 2017, May 6–11, 2017, Denver, CO, USA
+
+AwareKit: Exploring a Tangible
+Interaction Paradigm for Digital
+Calendars
+Andrii Matviienko
+University of Oldenburg
+Oldenburg, Germany
+andrii.matviienko@unioldenburg.de
+
+Wilko Heuten
+OFFIS - Institute for Information
+Technology
+Oldenburg, Germany
+wilko.heuten@offis.de
+
+Swamy Ananthanarayan
+University of Oldenburg
+Oldenburg, Germany
+s.ananthanarayan@unioldenburg.de
+
+Susanne Boll
+University of Oldenburg
+Oldenburg, Germany
+susanne.boll@uni-oldenburg.de
+
+Abstract
+Digital calendars are a conventional tool for planning meetings and providing information about the availability of others. In this paper, we explore an alternative tangible way
+of interaction with existing electronic calendaring systems.
+Our prototype, called AwareKit, is a tangible toolkit aimed
+at supplementing existing electronic calendar systems and
+exploits quick, fun and playful interaction. It integrates an
+attractive design and utilizes touch and rotation as interaction techniques to access different types of information. In
+this paper, we outline the design concept of AwareKit, its
+hardware implementation and the first usability feedback.
+The results of the pilot usability study showed that AwareKit
+is easy to use and facilitates intuitive and playful interaction.
+
+Author Keywords
+Interactive calendar; Tangible interaction; Physical visualization; Awareness display; Internet of things (IoT).
+
+ACM Classification Keywords
+Permission to make digital or hard copies of part or all of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for third-party components of this work must be honored.
+For all other uses, contact the Owner/Author. Copyright is held by the owner/author(s).
+CHI’17 Extended Abstracts, May 06–11, 2017, Denver, CO, USA
+ACM 978-1-4503-4656-6/17/05.
+http://dx.doi.org/10.1145/3027063.3053111
+
+H.5.m [Information interfaces and presentation (e.g., HCI)]:
+Miscellaneous
+
+Introduction
+Digital calendars play an important role in planning meetings, handling invitations and setting reminders in the professional environment [19]. Moreover, they provide the in1877
+
+Late-Breaking Work
+
+CHI 2017, May 6–11, 2017, Denver, CO, USA
+
+formation regarding colleagues’ availability not only about
+the current moment, but also with regard to the future. Another advantage of digital calendars is their flexible accessibility from both desktop computers and mobile phones
+[23, 21].
+Given these advantages and the ubiquitous usage of digital calendars, in our work we aim to supplement them to
+facilitate quick access to calendar information in a fun and
+interactive manner. Our goal was to explore an alternative
+tangible way to interact with digital calendars via a tangible
+toolkit, called AwareKit (Figure 1). It is not meant to replace
+digital calendars, but rather supplement them in an intuitive,
+fun and interactive manner.
+This networked toolkit provides availability information (day
+and week) for a single or a group of colleague(s) via different feedback modalities, such as light and sound, without
+need for a smart phone or desktop application. The modules in AwareKit, can be rotated, touched and connected to
+provide working colleagues with different calendar information in unique and personalized ways.
+Before diving into system design and implementation, we
+provide an example of a possible usage scenario. Work
+colleagues Mike and Tom enjoy discussing research ideas
+over a cup of coffee when they have a free minute. However, they often lack information regarding each other’s
+availability. Using a tangible figure that represents Mike,
+Tom touches a dedicated module in a quick and playful
+manner, which shows Mike’s availability for today. Seeing
+that Mike is available now, Tom decides to come to his office for a small talk.
+
+Related Work
+Our work has been influenced by prior research in computational toolkits and tangible awareness systems. There-
+
+Figure 1: AwareKit consists of six types of tangible modules.
+Four modules for retrieving availability information (in the center),
+tangible figures and magnetic connectors. Tangible acrylic figures
+used to represent individual colleagues and magnetic connectors
+for communication between modules.
+
+fore, we cover a small subset of related systems that our
+work builds on.
+Tangible systems and interfaces habe been introduced in
+different domains since the early works by Ishii and Ulmer [12]. They have shown to increase awareness via
+various objects and modalities, and further engage interaction through their affordances and physical properties
+[12, 9, 13]. For example, Klemmer et al. [14] presented
+Papier-Mâché, a toolkit for building tangible user interfaces
+using computer vision, bar codes and electronic tags. They
+showed how users could easily build new interfaces and
+adapt applications to other technologies. Ananthanarayan
+et al. [1] presented a computational toolkit that combines
+craft and health, allowing children to craft their own tangible
+1878
+
+Late-Breaking Work
+
+CHI 2017, May 6–11, 2017, Denver, CO, USA
+
+health visualizations based on data from an accompanying wearable device. Results of the study with PhysiKit by
+Housen et al. [10] showed that people get engaged into
+exploring the physical and ambient representation of environmental information by interacting with a physical toolkit.
+
+Figure 2: A Day module.
+
+Figure 3: A Week module.
+
+Figure 4: A Reminder module.
+
+As for tangible awareness systems, Peek et al.[20] proposed a system with a physical representation of instant
+messaging contacts via hanging tangible avatars. Hausen
+et al. [5] presented different ways of facilitating the state
+management for instant messaging systems in an interactive way. They investigated a peripheral interaction for
+changing own state and provided an overview of the states
+of others at a glance. Holleis et al. [8] presented a set of
+small independent displays that communicate with each
+other. By changing the position of these objects one can
+change a user’s state and see it immediately on the object.
+Other ambient awareness systems, such as SpiralClock [3]
+and AmbientTimer [18], showed the feasibility of light as a
+medium to represent information about upcoming events
+in an unobtrusive manner. Other systems, such as ForgetMe-Not [26] and Cubble [15], allowed users to interactively
+change their states and stay connected with distant peers.
+More recent work also showed the feasibility of using a tangible event awareness device based on electronic calendar
+information in the form of a cube [16]. With CubeLendar
+one can access information from an electronic calendar by
+rotating an object and retrieving one chunk of information
+per each cube’s face.
+Much like other tangible toolkits [10, 1, 17], AwareKit is designed as a set of separate modules to provide users with
+more interaction freedom. Each module encapsulates particular functionality and interaction, and aims to increase
+awareness. In order to engage users, the toolkit is designed
+with playful icons, shapes and colors. It also leverages am-
+
+Figure 5: A ToolTip module.
+
+bient feedback mechanisms for usage in an office environment. In the following sections, we describe the design, implementation and the initial usability feedback of our toolkit.
+
+Design Concept
+AwareKit consists of six types of tangible modules. Four of
+the modules enable users to retrieve availability information
+for single or multiple colleagues, and two of the modules
+facilitate communication and interaction between the modules.
+The unique shapes of the four modules are suggestive of
+the action or information they present. The Day module,
+which shows availability over a day, looks like an analog
+clock since it provides an overview of typical working hours
+(7 a.m to 7 p.m.) (Figure 2). The Week module is based
+on an analog calendar representation; it is rectangular
+shaped and provides an overview of the typical working
+days (Monday-Friday) at a glance (Figure 3). The Reminder
+module, which notifies users about a person’s availability, has the shape of a bell, which is well-known and commonly used representation for a reminder in the existing
+software applications, such as Google Notifications1 , Just
+Reminder2 , Nag3 , etc (Figure 4). Finally, the ToolTip module helps in finding out about the states of other modules;
+it looks like a magnifying glass since it provides more information about other objects in a way similar its real life
+counterpart (Figure 4).
+The two components that facilitate interaction between the
+four aforementioned modules include tangible figures that
+
+1
+
+https://plus.google.com/notifications
+https://play.google.com/store/apps/details?id=in.smsoft.
+justremind&hl=en
+3
+https://itunes.apple.com/us/app/nag-multiple-timers-alarms/
+id391957434?mt=8
+2
+
+1879
+
+Late-Breaking Work
+
+Figure 6: An example of a module
+activation.
+
+Figure 7: Communication between
+Day and Week (top view):
+Availability for Wednesday next
+week.
+
+Figure 8: Communication between
+Day and Week (bottom view).
+
+CHI 2017, May 6–11, 2017, Denver, CO, USA
+
+can be assigned to particular colleagues and magnetic connectors that enable communication between the different
+modules. The tangible figure component represents an individual and allows activating all four modules. Tangible
+figures also differ in colors and genders to give users an
+opportunity to create unique and personalized mappings to
+their real colleagues. A user can manually assign a given
+figure to a particular colleague. This figure can also be reassigned to another person in the future.The second magnetic component facilitates connection between the modules (Figure 1).
+A user can activate a module by touching the tangible figure to the top of the module (Figure 6), similar to Nintendo4
+and Lego Dimensions5 games. In the case of the Day and
+Week modules, an activation (signified by a red LED blink)
+shows the associated colleague’s availability via LED indicators. There are 12 LED indicators corresponding to the
+12 working hours for the Day module, and 5 LED indicators for the working days (e.g. Monday - Friday) in the Week
+module. A green light signifies that the person is free (no
+appointments); a yellow light represents that the colleague
+is somewhat free (at least half an hour/day), and a red light
+indicates not free (less than half an hour/day).
+Additionally, the Week module can be tilted to the left or
+right to alternate between the current and subsequent week.
+The LED arrows indicate possible directions for rotation.
+Thus, if the right LED arrow is illuminated, the user is in the
+current week and can look at next week’s availability data
+by tilting the module to the right. Similarly, the user can tilt
+left from the future week to the current week.
+
+4
+5
+
+http://www.nintendo.com/amiibo/
+https://www.lego.com/en-us/dimensions
+
+The Day and Week modules can also be interfaced together using the magnetic connectors at one of four equidistant locations located at the bottom of the modules (Figures
+7 and 8). After connecting the Day and Week modules, the
+user can press the button associated with a particular day
+on the Week module and see detailed hourly availability
+data on the Day module for the selected day.
+One can additionally touch the Day or Week modules with
+multiple tangible figures to see overlapping availability for a
+selected group of colleagues (perhaps to find a free timeslot
+within the group).
+The Reminder module enables users to setup a quick alarm
+for the next available slot in a colleague’s calendar for the
+current day. It indicates a successful and unsuccessful
+alarm setting through a green and red LED, respectively
+(Figure 4). When a colleague becomes free, the module
+rings softly like a bell.
+Finally, the ToolTip module can be used to display the current state information of the other modules on a small LCD
+screen. This is accomplished by placing the ToolTip module
+on top of another module. For example, when the ToolTip
+module is placed on top of the Day module, the screen displays the name of colleague whose availability is currently
+shown. When one touches the Reminder module with the
+ToolTip module, the LCD display shows what the notification is about (Figure 9). In a similar interaction with a tangible figure, the display shows the name of the colleague
+mapped to a particular figure.
+
+System Implementation
+The Day (7,5 x 7,5 cm), Week (12,5 x 5,5 cm), Reminder
+(10,5 x 11 cm) and ToolTip (7,5 x 13,5 cm) modules of
+AwareKit are housed in lasercut clear Plexiglass with a
+semi-opaque Plexiglass top to diffuse LED light. For the
+1880
+
+Late-Breaking Work
+
+CHI 2017, May 6–11, 2017, Denver, CO, USA
+
+purposes of consistency and to facilitate connections with
+the magnetic connectors, all four ambient modules have
+the same height of four cm. The 10 cm tangible Plexiglass
+figures each contain a unique RFID tag on the bottom that
+maps to a particular individual. The magnetic connectors
+(1,2 x 4,5 cm) contain two circular neodymium magnets that
+are connected by thin wire channel.
+Figure 9: Checking a Reminder
+with a ToolTip module.
+
+Figure 10: Participant is
+interacting with AwareKit during a
+pilot usability study.
+
+Each of the ambient modules contains a NodeMCU 8266
+board6 with an integrated Wi-Fi module and powered by a
+LiPo battery that can be charged via two pins at the bottom
+(Figure 8). In addition, each module has an integrated RFID
+reader for touch-based interaction with tangible figures, and
+RFID tags for a touch-based interaction with the ToolTip
+module.
+For the Day, Week and Reminder modules, we used Neopixels7 to represent information, while the ToolTip has a 1.8"
+TFT LCD display for showing textual information. To enable
+interaction with a Week module via rotation, we decided to
+use an accelerometer module to infer tilt.
+Ambient modules are completely autonomous and communicate over Wi-Fi through JavaScript to the Google calendars of all colleagues. For the implementation of AwareKit
+we decided to use the Google scripts service since it provides easy retrieval of information from a Google calendar
+and communication with NodeMCU boards.
+
+Pilot Usability Study
+To evaluate our prototype, we recruited twelve participants
+(six female) aged between 22 and 57 (M = 33.83, SD =
+10.26) from a local research institute. The participants
+had different indoor professional occupations, such as re6
+7
+
+https://en.wikipedia.org/wiki/NodeMCU
+https://www.adafruit.com/category/168
+
+searcher, student assistant, library assistant, secretary
+and service worker. Participants were given three tasks
+which involved all modules, components and interactions of
+AwareKit. For this study, participants received a preconfigured system, but in a future study they will be able to configure it themselves using a custom Android application.
+For the first task participants had to find out the availability
+of a particular colleague for the current day, current week
+and subsequent week. For the second task participants
+had to find out the availability for a group of colleagues for
+a particular hour on a particular day. For the third task participants had to set a reminder for a particular colleague.
+If he was not available at the moment, they were asked to
+check the state of the Reminder module when it rang after
+a couple of minutes. After all tasks were completed, participants were asked to fill in a 10-item questionnaire based
+on the System Usability Scale (SUS) [2]. Additionally, they
+were asked about the usability and implementation problems they experienced while interacting with the toolkit in a
+subsequent interview.
+
+Results
+Overall, participants found AwareKit fun and easy to use.
+The prototype received SUS score of 87.29, where any
+SUS score greater than 70 is considered as usable. They
+were also able to finish all the tasks without additional help.
+The shapes of the modules were functionally intuitive. For
+example: "Tipping was easy and intuitive to do. I find it also
+good that a magnifying glass [ToolTip] gives me more information about the objects. Metaphors were easy to understand." [P4].
+For all three tasks, however, participants had problems
+finding a spot for positioning a tangible figure on top of the
+modules to activate them. During the first and second tasks
+1881
+
+Late-Breaking Work
+
+CHI 2017, May 6–11, 2017, Denver, CO, USA
+
+three participants had problems understanding the encoding of hours on a Day module. For example, P4 said: "It’s
+hard to understand whether she has time at 9 am or time
+between 9 and 10. The mapping was not clear for me." As
+for the last task, six participants perceived a red light on a
+Reminder module as an indication of a person’s unavailability and a green light as a person’s availability, which created
+some confusion. For example, P5 mentioned: "It was weird
+and confusing whether light was about availability or not."
+All participants could see themselves using AwareKit regularly in a working environment. The Day module, however, might be more useful than the Week and Reminder
+modules. For example, P1 said: "I would use a Day and a
+Reminder for short meetings. For meetings in the future I
+would use my electronic calendar."
+
+Discussion & Future Work
+We aim to use AwareKit to increase situational awareness
+in both professional and private environments, since electronic calendaring systems are also widely used among
+family members [4]. Based on these use cases and supporting literature [6, 24], we consider a long-term study with
+repeated interviews and automatic logging of users’ activities. We suspect that AwareKit might be better suited
+for day to day or current week data, since users already
+mentioned during the interviews that if they wanted to look
+ahead next week, they would use electronic calendars.
+From an implementation perspective, we identified three
+main problems from the pilot usability study. Before conducting future experiments, we will add a marker on top of
+the modules indicating the spot for placing tangible figures.
+We also plan on increasing the granularity of hours on the
+Day module and changing the state colors for the Reminder
+module.
+
+Tangible interactive systems are known to facilitate smooth
+transition of attention between background and foreground
+[12, 11]. Moreover, tangible objects provide a sense of intimacy, which is sometimes hard to achieve with screenbased interfaces. Thus, AwareKit has the potential of increasing spontaneous and informal communication among
+colleagues, which influences their productivity and social
+connectedness [7].
+In a working environment, AwareKit can also play the role
+of a "bridge" between spatially distributed teams. This
+would allow us to investigate the seamless transitions between implicit and explicit communication among colleagues.
+This part of social communication is an emerging field
+and has not been comprehensively studied yet [22, 25]. It
+would also be interesting to explore AwareKit in the context of large groups. For example, with 15 colleagues, users
+might have trouble remembering all the tangible figures they
+touched to a particular module or make interaction mistakes.
+Since the modules of AwareKit are completely autonomous
+and ambient, users can also take them to meetings. The
+modules of AwareKit can help colleagues find the next suitable meeting’s date after the meeting is over. It would be
+interesting to explore AwareKit in these different use cases
+to discover boundary conditions of this tangible interaction
+paradigm for calendaring.
+
+Acknowledgements
+This research has been performed with a support from
+German Research Foundation (DFG) funding for project
+SOCIAL (FR 806/15-1 – BO 1645/12-1). We thank all the
+participants of our study for their helpful and constructive
+feedback.
+
+1882
+
+Late-Breaking Work
+
+CHI 2017, May 6–11, 2017, Denver, CO, USA
+
+References
+[1] Swamy Ananthanarayan, Katie Siek, and Michael
+Eisenberg. 2016. A Craft Approach to Health Awareness in Children. In Proceedings of the 2016 ACM
+Conference on Designing Interactive Systems. ACM,
+724–735.
+[2] John Brooke and others. 1996. SUS-A quick and dirty
+usability scale. Usability evaluation in industry 189,
+194 (1996), 4–7.
+[3] Pierre Dragicevic and Stéphane Huot. 2002. SpiraClock: a continuous and non-intrusive display for
+upcoming events. In CHI’02 extended abstracts on
+Human factors in computing systems. ACM, 604–605.
+[4] Kathryn Elliot and Sheelagh Carpendale. 2005.
+Awareness and coordination: A calendar for families.
+(2005).
+[5] Doris Hausen, Sebastian Boring, Clara Lueling, Simone Rodestock, and Andreas Butz. 2012. StaTube:
+facilitating state management in instant messaging
+systems. In Proceedings of the Sixth International
+Conference on Tangible, Embedded and Embodied
+Interaction. ACM, 283–290.
+[6] William R Hazlewood, Erik Stolterman, and Kay Connelly. 2011. Issues in evaluating ambient displays
+in the wild: two case studies. In Proceedings of the
+SIGCHI conference on Human factors in computing
+systems. ACM, 877–886.
+[7] Pamela J Hinds and Mark Mortensen. 2005. Understanding conflict in geographically distributed teams:
+The moderating effects of shared identity, shared context, and spontaneous communication. Organization
+science 16, 3 (2005), 290–307.
+[8] Paul Holleis, Matthias Kranz, and Albrecht Schmidt.
+2005. Displayed connectivity. In Adjunct Proceedings
+Ubicomp, Vol. 5. Citeseer.
+
+[9] Eva Hornecker and Jacob Buur. 2006. Getting a grip
+on tangible interaction: a framework on physical space
+and social interaction. In Proceedings of the SIGCHI
+conference on Human Factors in computing systems.
+ACM, 437–446.
+[10] Steven Houben, Connie Golsteijn, Sarah Gallacher,
+Rose Johnson, Saskia Bakker, Nicolai Marquardt, Licia Capra, and Yvonne Rogers. 2016. Physikit: Data
+Engagement Through Physical Ambient Visualizations
+in the Home. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems. ACM,
+1608–1619.
+[11] Hiroshi Ishii. 2007. Tangible user interfaces. CRC
+Press.
+[12] Hiroshi Ishii and Brygg Ullmer. 1997. Tangible bits:
+towards seamless interfaces between people, bits and
+atoms. In Proceedings of the ACM SIGCHI Conference on Human factors in computing systems. ACM,
+234–241.
+[13] Yvonne Jansen, Pierre Dragicevic, Petra Isenberg,
+Jason Alexander, Abhijit Karnik, Johan Kildal, Sriram
+Subramanian, and Kasper Hornbæk. 2015. Opportunities and challenges for data physicalization. In
+Proceedings of the 33rd Annual ACM Conference on
+Human Factors in Computing Systems. ACM, 3227–
+3236.
+[14] Scott R Klemmer, Jack Li, James Lin, and James A
+Landay. 2004. Papier-Mache: toolkit support for tangible input. In Proceedings of the SIGCHI conference on
+Human factors in computing systems. ACM, 399–406.
+[15] Robert Kowalski, Sebastian Loehmann, and Doris
+Hausen. 2013. cubble: a multi-device hybrid approach
+supporting communication in long-distance relationships. In Proceedings of the 7th International Conference on Tangible, Embedded and Embodied Interaction. ACM, 201–204.
+1883
+
+Late-Breaking Work
+
+CHI 2017, May 6–11, 2017, Denver, CO, USA
+
+[16] Andrii Matviienko, Sebastian Horwege, Lennart Frick,
+Christoph Ressel, and Susanne Boll. 2016. CubeLendar: Design of a Tangible Interactive Event Awareness
+Cube. In Proceedings of the 2016 CHI Conference
+Extended Abstracts on Human Factors in Computing
+Systems. ACM, 2601–2608.
+[17] David A Mellis, Sam Jacoby, Leah Buechley, Hannah
+Perner-Wilson, and Jie Qi. 2013. Microcontrollers as
+material: crafting circuits with paper, conductive ink,
+electronic components, and an untoolkit. In Proceedings of the 7th International Conference on Tangible,
+Embedded and Embodied Interaction. ACM, 83–90.
+[18] Heiko Müller, Anastasia Kazakova, Martin Pielot, Wilko
+Heuten, and Susanne Boll. 2013. Ambient timer–
+unobtrusively reminding users of upcoming tasks with
+ambient light. In IFIP Conference on Human-Computer
+Interaction. Springer, 211–228.
+[19] Leysia Palen and Jonathan Grudin. 2003. Discretionary adoption of group support software: Lessons
+from calendar applications. In Implementing collaboration technologies in industry. Springer, 159–180.
+[20] Nadya Peek, David Pitman, and others. 2009. Hangsters: tangible peripheral interactive avatars for instant
+messaging. In Proceedings of the 3rd International
+Conference on Tangible and Embedded Interaction.
+ACM, 25–26.
+[21] Anna Sell and Pirkko Walden. 2006. Mobile digital calendars: an interview study. In Proceedings of the 39th
+Annual Hawaii International Conference on System
+
+Sciences (HICSS’06), Vol. 1. IEEE, 23b–23b.
+[22] Norbert A Streitz, Carsten Röcker, Thorsten Prante,
+Richard Stenzel, and Daniel van Alphen. 2003. Situated interaction with ambient information: Facilitating awareness and communication in ubiquitous work
+environments. In Tenth International Conference on
+Human-Computer Interaction (HCI International 2003).
+Citeseer.
+[23] Bart van den Hooff. 2004. Electronic coordination and
+collective action: use and effects of electronic calendaring and scheduling. Information & Management 42,
+1 (2004), 103–114.
+[24] Thomas Visser, Martijn Vastenburg, and David
+Keyson. 2010. SnowGlobe: the development of a prototype awareness system for longitudinal field studies.
+In Proceedings of the 8th ACM Conference on Designing Interactive Systems. ACM, 426–429.
+[25] Daniel Vogel and Ravin Balakrishnan. 2004. Interactive public ambient displays: transitioning from implicit
+to explicit, public to personal, interaction with multiple
+users. In Proceedings of the 17th annual ACM symposium on User interface software and technology. ACM,
+137–146.
+[26] Torben Wallbaum, Janko Timmermann, Wilko Heuten,
+and Susanne Boll. 2015. Forget Me Not: Connecting
+Palliative Patients and Their Loved Ones. In Proceedings of the 33rd Annual ACM Conference Extended
+Abstracts on Human Factors in Computing Systems.
+ACM, 1403–1408.
+
+1884
+
+

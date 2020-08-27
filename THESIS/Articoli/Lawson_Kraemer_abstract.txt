@@ -1,0 +1,205 @@
+Pedagogy of CS Unplugged: Lessons
+from Outreach and Education
+Activities in Computer Science
+Aubrey Lawson
+Clemson University
+Clemson, SC, 29631, USA
+aubreyl@clemson.edu
+
+Eileen Kraemer
+Clemson University
+Clemson, SC, 29631, USA
+etkraem@clemson.edu
+
+Copyright is held by the author/owner(s).
+DIS 2017 , June 10–14, 2017, Edinburgh, UK.
+ACM
+
+Introduction
+Data physicalization (or Physicalization) has been defined
+as a "physical artifact whose geometry or material properties encode data"[7]. Organizers of the Pedagogy & Physicalization workshop state in the workshop call that Physicalization has been found useful in introducing people to activities around data collection, processing, and representation,
+and identify reflection on related pedagogy as a major goal
+of the workshop.
+CS Unplugged (CSU), a collection of activities designed
+to demonstrate computer science (CS) concepts to K12 students in a fun and engaging way and without using
+computers[1] also seeks to convey knowledge about data
+collection, processing and representation. CSU activities
+employ Physicalization (objects of various types are used
+to represent elements of data collections) and are also
+typically collaborative and kinesthetic (e.g., students may
+change seats, move physical objects, walk from station
+to station, hold up cards with dots, etc.). Thus, CSU is related to Physicalization. However, while the Physicalization
+community has focused primarily on research questions
+surrounding the design and impact of appropriate and compelling physical representations for data sets of interest,
+the CSU community has placed more emphasis on designing activities that engage students and convey knowledge about the processing of data and on technical rather
+
+than aesthetic aspects of data representation. Still, lessons
+learned from empirical studies of CSU activities may be applicable to Physicalization and reflections on connections
+between CSU activities, outcomes of empirical studies, and
+learning theory may be of interest to the Physicalization
+community.
+The use of CSU activities for outreach is prevalent in the
+computing education community, as described in papers
+such as [1], and belief in the impact of these activities is
+widespread. More recently, such activities have also been
+assumed to be beneficial in an educational context and they
+have been included in regular computing curricula. In the
+following sections we describe how CSU activities have
+been employed in these contexts and briefly describe results of empirical studies that evaluate their impact. We
+then discuss connections to learning theory and possible
+implications for Physicalization in both outreach and educational contexts.
+
+changing the students’ views, but that this process is partial" and found also that students had difficulty in making
+connections between CSU activities and concepts in CS
+[11] and between CSU activities and future careers [10].
+Studies of CSU activities with high school students found
+disinterest from both students, who may view themselves
+as “experienced programmers” and as too mature for this
+style of activity [4], and from teachers, who cited concerns
+about the kinesthetic aspect, effectiveness, and age appropriateness [14].
+In summary, although belief in the impact of CSU activities
+is prevalent, empirical studies to date are mixed; smaller
+studies with potentially confounding factors report great
+success, while larger and more carefully conducted and
+documented studies report fewer increases in desired changes
+in views and attitudes, or even a decline in interest. More
+work to tease out the circumstances under which CSU activities may be used to achieve desired changes in student
+views, attitudes and intentions is needed.
+
+CSU as an Outreach Activity
+CS Unplugged materials have been adopted into a variety of outreach settings (camps, workshops, after-school
+programs) focused on affecting student views about the nature of computer science and the characteristics of those
+with the potential to become computer scientists, and encouraging participants to study CS or to pursue a career in
+computing [1, 2, 4, 6, 8, 11, 10].
+
+CSU in Classroom Instruction
+
+Researchers who studied the impact of such outreach activities found that middle school girls exhibited increased
+interest in CS as a result of participation [8, 6]. However,
+the studies suffered from confounding factors such as selfselection and the inclusion of non-CSU subject matter.
+
+Studies of the use of CSU activities in an educational context have included analyses of the learning objectives of
+CSU activities in terms of Bloom’s taxonomy[12], comparisons of student learning in CSU-based lessons versus in
+lessons using other active learning approaches[13], and
+evaluations of the use of CSU activities as introductory
+units in longer, traditional teaching units[14].
+
+Further explorations of student views, attitudes, and intentions concluded that CSU activities "start a process of
+
+Increasingly, the notion of applying CSU-style activities in
+the context of regular classroom instruction is gaining traction in the CS education community. An open question is
+whether this is appropriate and if so, how these activities
+must be structured and supported to ensure that desired
+learning objectives are met.
+
+The analysis of the CSU activities according to Bloom’s
+taxonomy of educational objectives for cognitive and knowledge domains found that the activities were concentrated
+toward the lower levels of both knowledge and cognition
+and that the more complex dimensions had little to no representation: no activities qualified for meta-cognitive knowledge, few for evaluative cognition, and none for creative
+cognition[12]. The authors conclude that their classification
+“explains and supports” the success of CSU for outreach
+purposes (no cognitive inhibition threshhold is reached
+by participants) but that it also shows that the use of CSU
+in an unmodified form as stand-alone material for teaching concepts at a secondary level is “limited” because the
+learning objectives of CSU activities neither provide comprehensive representation of the field nor do they cover
+the cognitive processes and types of knowledge that are
+needed in this context.
+In an evaluation of the use of CSU activities to teach middle school students about binary representation, the binary
+search algorithm and sorting networks, CSU was compared
+to the use of another active learning technique (e.g., thinkpair-share) on the learning of factual, procedural and conceptual knowledge[13]. No significant difference was found
+between the groups.
+More recently, the same researchers again compared nonCSU approaches to an approach in which CSU activities
+were used as introductory material in a longer, traditional
+teaching unit[14]. Once again, no statistical difference between learning outcomes was found between those taught
+with CSU and those taught with traditional methods.
+Researchers have proposed compensating for the lack of
+content hierarchy and assessment material in CSU by encapsulating CSU within formalized lesson plans [14, 9].
+Rodriguez, et al. isolated specific factors key to success-
+
+ful implementation, including priming activities, individual
+practice, vocabulary worksheets, and relevant tie-ins to real
+world contexts [9].
+
+Discussion
+By promoting student interaction with physical representations of data and processes, CSU activities incorporate active learning and serious play into CS education. Students
+take ownership of their learning and personalize it as they
+interact with the environment. The hands-on, kinesthetic
+component exploits multi-channel input[3], and the visual
+and verbal cues provided should allow students to benefit
+from richer cognitive networks and content acquisition [3].
+Physicalization also enables collaboration and peripheral
+participation as students can learn by observing other students’ interactions with artifacts.
+While CSU and Physicalization capitalize on learning theory with an active, collaborative, and constructivist environment, students need appropriate guidance for content
+knowledge schema acquisition. Physical artifacts provide
+tangible analogies for CS concepts, but analogical reasoning proves more difficult than expected for novices [5].
+Kinesthetic activities can also fall into lower classifications
+along Bloom’s taxonomy for learning outcomes, as students
+may be preoccupied with tinkering and working out procedures without focusing on meta-cognitive knowledge and
+evaluative cognition [12]. Age appropriateness remains
+a concern for teachers who express hesitation to implement detailed physical representations of data or to employ
+kinesthetic methods [4, 14].
+As CSU popularity grows, implementations have brought
+mixed success and concerns remain about bridging CSU
+activities into classroom instruction. An open question is
+whether the same concerns about the extent to which stu-
+
+dents are able to engage in analogical reasoning, learn the
+desired concepts, and transfer those concepts to other domains apply to the pedagogy of Physicalization.
+
+References
+[1] Tim Bell, Frances Rosamond, and Nancy Casey.
+2012. Computer science unplugged and related
+projects in math and computer science popularization.
+In The Multivariate Algorithmic Revolution and Beyond.
+Springer, 398–456.
+[2] Lenore Blum and Thomas J. Cortina. 2007. CS4HS:
+An Outreach Program for High School CS Teachers.
+In Proceedings of the 38th ACM Technical Symposium
+on Computer Science Education (SIGCSE ’07). ACM,
+New York, NY, USA, 19–23.
+[3] James M Clark and Allan Paivio. 1991. Dual coding
+theory and education. Educational psychology review
+3, 3 (1991), 149–210.
+[4] Yvon Feaster, Luke Segars, Sally K. Wahba, and Jason O. Hallstrom. 2011. Teaching CS Unplugged in the
+High School (with Limited Success). In Proceedings of
+the 16th Annual Joint Conference on Innovation and
+Technology in Computer Science Education (ITiCSE
+’11). ACM, New York, NY, USA, 248–252.
+[5] Mary L Gick and Keith J Holyoak. 1980. Analogical
+problem solving. Cognitive psychology 12, 3 (1980),
+306–355.
+[6] Tonya R. Groover. 2009. Using Games to Introduce
+Middle School Girls to Computer Science. J. Comput.
+Sci. Coll. 24, 6 (June 2009), 132–138.
+[7] Yvonne Jansen, Pierre Dragicevic, Petra Isenberg,
+Jason Alexander, Abhijit Karnik, Johan Kildal, Sriram
+Subramanian, and Kasper Hornbæk. 2015. Opportunities and challenges for data physicalization. In Proceedings of the 33rd annual acm conference on human factors in computing systems. ACM, 3227–3236.
+
+[8] Lynn Lambert and Heather Guiffre. 2009. Computer
+Science Outreach in an Elementary School. J. Comput. Sci. Coll. 24, 3 (Jan. 2009), 118–124.
+[9] Brandon Rodriguez, Cyndi Rader, and Tracy Camp.
+2016. Using Student Performance to Assess CS Unplugged Activities in a Classroom Environment. In
+Proceedings of the 2016 ACM Conference on Innovation and Technology in Computer Science Education
+(ITiCSE ’16). ACM, New York, NY, USA, 95–100.
+[10] Rivka Taub, Michal Armoni, and Mordechai BenAri. 2012. CS Unplugged and Middle-School Students&Rsquo; Views, Attitudes, and Intentions Regarding CS. Trans. Comput. Educ. 12, 2, Article 8
+(April 2012), 29 pages.
+[11] Rivka Taub, Mordechai Ben-Ari, and Michal Armoni.
+2009. The Effect of CS Unplugged on Middle-school
+Students’ Views of CS. In Proceedings of the 14th Annual ACM SIGCSE Conference on Innovation and
+Technology in Computer Science Education (ITiCSE
+’09). ACM, New York, NY, USA, 99–103.
+[12] Renate Thies and Jan Vahrenhold. 2012. Reflections
+on Outreach Programs in CS Classes: Learning Objectives for "Unplugged" Activities. In Proceedings of
+the 43rd ACM Technical Symposium on Computer Science Education (SIGCSE ’12). ACM, New York, NY,
+USA, 487–492.
+[13] Renate Thies and Jan Vahrenhold. 2013. On Plugging
+"Unplugged" into CS Classes. In Proceeding of the
+44th ACM Technical Symposium on Computer Science
+Education (SIGCSE ’13). ACM, New York, NY, USA,
+365–370.
+[14] Renate Thies and Jan Vahrenhold. 2016. Back to
+School: Computer Science Unplugged in the Wild. In
+Proceedings of the 2016 ACM Conference on Innovation and Technology in Computer Science Education
+(ITiCSE ’16). ACM, New York, NY, USA, 118–123.
+
+

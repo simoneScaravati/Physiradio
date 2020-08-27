@@ -1,0 +1,1957 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.25)  26 JUN 2020 11:16
+entering extended mode
+**./TesiScaravati.tex
+(TesiScaravati.tex
+LaTeX2e <2020-02-02> patch level 5
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\report.cls"
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2020/06/10 3.45 The Babel package
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2020/06/10 3.45 Babel common definitions
+\babel@savecnt=\count89
+\U@D=\dimen103
+\l@babelnohyphens=\language83
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
+\bbl@readstream=\read1
+)
+\bbl@dirlevel=\count90
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language77) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language77) on input line 108.
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/babel-italian\italian.ldf
+Language: italian 2019/01/05 v.1.4.01 Italian support for the babel system
+\it@lettering=\count91
+\it@doublequoteactive=\count92
+\it@ISOcompliance=\count93
+)) (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count94
+
+
+Package etoolbox Warning: Patching '\begin' failed!
+(etoolbox)                '\AtBeginEnvironment' will not work.
+
+
+Package etoolbox Warning: Patching '\end' failed!
+(etoolbox)                '\AtEndEnvironment' will not work.
+
+
+Package etoolbox Warning: Patching '\end' failed!
+(etoolbox)                '\AfterEndEnvironment' will not work.
+
+) (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen104
+\WF@size=\dimen105
+\c@WF@wrappedlines=\count95
+\WF@box=\box27
+\WF@everypar=\toks17
+Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-04 v0.32 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/kvdefinekeys\kvdefinekeys
+.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen106
+\Hy@linkcounter=\count96
+\Hy@pagecounter=\count97
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count98
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count99
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen107
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count100
+\Field@Width=\dimen108
+\Fld@charsize=\dimen109
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+ (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/atbegshi\atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count101
+\c@Item=\count102
+\c@Hfootnote=\count103
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/atveryend\atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count104
+\c@bookmark@seq@number=\count105
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/rerunfilecheck\rerunfileche
+ck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/uniquecounter\uniquecount
+er.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip43
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen110
+\Gin@req@width=\dimen111
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/paralist\paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip44
+\plpartopsep=\skip45
+\plitemsep=\skip46
+\plparsep=\skip47
+\pl@lab=\toks19
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/lipsum\lipsum.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/l3kernel\expl3.sty
+Package: expl3 2019-05-28 L3 programming layer (loader) 
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/l3kernel\expl3-code.tex
+Package: expl3 2019-05-28 L3 programming layer (code)
+\c_max_int=\count106
+\l_tmpa_int=\count107
+\l_tmpb_int=\count108
+\g_tmpa_int=\count109
+\g_tmpb_int=\count110
+\g__kernel_prg_map_int=\count111
+\c__ior_term_ior=\count112
+\c_log_iow=\count113
+\l_iow_line_count_int=\count114
+\l__iow_line_target_int=\count115
+\l__iow_one_indent_int=\count116
+\l__iow_indent_int=\count117
+\c_zero_dim=\dimen112
+\c_max_dim=\dimen113
+\l_tmpa_dim=\dimen114
+\l_tmpb_dim=\dimen115
+\g_tmpa_dim=\dimen116
+\g_tmpb_dim=\dimen117
+\c_zero_skip=\skip48
+\c_max_skip=\skip49
+\l_tmpa_skip=\skip50
+\l_tmpb_skip=\skip51
+\g_tmpa_skip=\skip52
+\g_tmpb_skip=\skip53
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count118
+\l__intarray_loop_int=\count119
+\c__intarray_sp_dim=\dimen118
+\g__intarray_font_int=\count120
+\c__fp_leading_shift_int=\count121
+\c__fp_middle_shift_int=\count122
+\c__fp_trailing_shift_int=\count123
+\c__fp_big_leading_shift_int=\count124
+\c__fp_big_middle_shift_int=\count125
+\c__fp_big_trailing_shift_int=\count126
+\c__fp_Bigg_leading_shift_int=\count127
+\c__fp_Bigg_middle_shift_int=\count128
+\c__fp_Bigg_trailing_shift_int=\count129
+\c__kernel_randint_max_int=\count130
+\g__fp_array_int=\count131
+\l__fp_array_loop_int=\count132
+\l__sort_length_int=\count133
+\l__sort_min_int=\count134
+\l__sort_top_int=\count135
+\l__sort_max_int=\count136
+\l__sort_true_max_int=\count137
+\l__sort_block_int=\count138
+\l__sort_begin_int=\count139
+\l__sort_end_int=\count140
+\l__sort_A_int=\count141
+\l__sort_B_int=\count142
+\l__sort_C_int=\count143
+\l__tl_analysis_normal_int=\count144
+\l__tl_analysis_index_int=\count145
+\l__tl_analysis_nesting_int=\count146
+\l__tl_analysis_type_int=\count147
+\l__regex_internal_a_int=\count148
+\l__regex_internal_b_int=\count149
+\l__regex_internal_c_int=\count150
+\l__regex_balance_int=\count151
+\l__regex_group_level_int=\count152
+\l__regex_mode_int=\count153
+\c__regex_cs_in_class_mode_int=\count154
+\c__regex_cs_mode_int=\count155
+\l__regex_catcodes_int=\count156
+\l__regex_default_catcodes_int=\count157
+\c__regex_catcode_D_int=\count158
+\c__regex_catcode_S_int=\count159
+\c__regex_catcode_L_int=\count160
+\c__regex_catcode_O_int=\count161
+\c__regex_catcode_A_int=\count162
+\c__regex_all_catcodes_int=\count163
+\l__regex_show_lines_int=\count164
+\l__regex_min_state_int=\count165
+\l__regex_max_state_int=\count166
+\l__regex_left_state_int=\count167
+\l__regex_right_state_int=\count168
+\l__regex_capturing_group_int=\count169
+\l__regex_min_pos_int=\count170
+\l__regex_max_pos_int=\count171
+\l__regex_curr_pos_int=\count172
+\l__regex_start_pos_int=\count173
+\l__regex_success_pos_int=\count174
+\l__regex_curr_char_int=\count175
+\l__regex_curr_catcode_int=\count176
+\l__regex_last_char_int=\count177
+\l__regex_case_changed_char_int=\count178
+\l__regex_curr_state_int=\count179
+\l__regex_step_int=\count180
+\l__regex_min_active_int=\count181
+\l__regex_max_active_int=\count182
+\l__regex_replacement_csnames_int=\count183
+\l__regex_match_count_int=\count184
+\l__regex_min_submatch_int=\count185
+\l__regex_submatch_int=\count186
+\l__regex_zeroth_submatch_int=\count187
+\g__regex_trace_regex_int=\count188
+\c_empty_box=\box28
+\l_tmpa_box=\box29
+\l_tmpb_box=\box30
+\g_tmpa_box=\box31
+\g_tmpb_box=\box32
+\l__box_top_dim=\dimen119
+\l__box_bottom_dim=\dimen120
+\l__box_left_dim=\dimen121
+\l__box_right_dim=\dimen122
+\l__box_top_new_dim=\dimen123
+\l__box_bottom_new_dim=\dimen124
+\l__box_left_new_dim=\dimen125
+\l__box_right_new_dim=\dimen126
+\l__box_internal_box=\box33
+\l__coffin_internal_box=\box34
+\l__coffin_internal_dim=\dimen127
+\l__coffin_offset_x_dim=\dimen128
+\l__coffin_offset_y_dim=\dimen129
+\l__coffin_x_dim=\dimen130
+\l__coffin_y_dim=\dimen131
+\l__coffin_x_prime_dim=\dimen132
+\l__coffin_y_prime_dim=\dimen133
+\c_empty_coffin=\box35
+\l__coffin_aligned_coffin=\box36
+\l__coffin_aligned_internal_coffin=\box37
+\l_tmpa_coffin=\box38
+\l_tmpb_coffin=\box39
+\g_tmpa_coffin=\box40
+\g_tmpb_coffin=\box41
+\l__coffin_bounding_shift_dim=\dimen134
+\l__coffin_left_corner_dim=\dimen135
+\l__coffin_right_corner_dim=\dimen136
+\l__coffin_bottom_corner_dim=\dimen137
+\l__coffin_top_corner_dim=\dimen138
+\l__coffin_scaled_total_height_dim=\dimen139
+\l__coffin_scaled_width_dim=\dimen140
+\c__coffin_empty_coffin=\box42
+\l__coffin_display_coffin=\box43
+\l__coffin_display_coord_coffin=\box44
+\l__coffin_display_pole_coffin=\box45
+\l__coffin_display_offset_dim=\dimen141
+\l__coffin_display_x_dim=\dimen142
+\l__coffin_display_y_dim=\dimen143
+\g__file_internal_ior=\read2
+\l__seq_internal_a_int=\count189
+\l__seq_internal_b_int=\count190
+\c__deprecation_minus_one=\count191
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/l3kernel\l3pdfmode.def
+File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
+\l__driver_internal_box=\box46
+\l__driver_color_stack_int=\count192
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/l3packages/xparse\xparse.st
+y
+Package: xparse 2019-05-28 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count193
+\g__xparse_grabber_int=\count194
+\l__xparse_m_args_int=\count195
+\l__xparse_v_nesting_int=\count196
+)
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+ (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/lipsum\lipsum.ltd.tex
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/todonotes\todonotes.sty
+Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
+Package: todonotes 2018/11/22
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+)
+\XKV@depth=\count197
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/frontendlayer\tikz.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-com
+mon.tex
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen144
+\pgfutil@tempdimb=\dimen145
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-com
+mon-lists.tex))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-lat
+ex.def
+\pgfutil@abb=\box47
+ (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfrcs.code
+.tex (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf\pgf.revision.tex
+)
+Package: pgfrcs 2019/05/09 v3.1.3 (3.1.3)
+))
+Package: pgf 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgfcore.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/systemlayer\pgfsys.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys.co
+de.tex
+Package: pgfsys 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.cod
+e.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeysfilt
+ered.code.tex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen146
+\pgf@y=\dimen147
+\pgf@xa=\dimen148
+\pgf@ya=\dimen149
+\pgf@xb=\dimen150
+\pgf@yb=\dimen151
+\pgf@xc=\dimen152
+\pgf@yc=\dimen153
+\pgf@xd=\dimen154
+\pgf@yd=\dimen155
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count198
+\c@pgf@countb=\count199
+\c@pgf@countc=\count266
+\c@pgf@countd=\count267
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count268
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2019/05/09 v3.1.3 (3.1.3)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-pd
+ftex.def
+File: pgfsys-pdftex.def 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-co
+mmon-pdf.def
+File: pgfsys-common-pdf.def 2019/05/09 v3.1.3 (3.1.3)
+)))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyssof
+tpath.code.tex
+File: pgfsyssoftpath.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfsyssoftpath@smallbuffer@items=\count269
+\pgfsyssoftpath@bigbuffer@items=\count270
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyspro
+tocol.code.tex
+File: pgfsysprotocol.code.tex 2019/05/09 v3.1.3 (3.1.3)
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcore.co
+de.tex
+Package: pgfcore 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.tex
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathcalc.code
+.tex
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathutil.code
+.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathparser.co
+de.tex
+\pgfmath@dimen=\dimen156
+\pgfmath@count=\count271
+\pgfmath@box=\box48
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.code.tex
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.basic.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.trigonometric.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.random.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.comparison.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.base.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.round.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.misc.code.tex)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.integerarithmetics.code.tex)))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfloat.cod
+e.tex
+\c@pgfmathroundto@lastzeros=\count272
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfint.code.tex)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepoi
+nts.code.tex
+File: pgfcorepoints.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@picminx=\dimen157
+\pgf@picmaxx=\dimen158
+\pgf@picminy=\dimen159
+\pgf@picmaxy=\dimen160
+\pgf@pathminx=\dimen161
+\pgf@pathmaxx=\dimen162
+\pgf@pathminy=\dimen163
+\pgf@pathmaxy=\dimen164
+\pgf@xx=\dimen165
+\pgf@xy=\dimen166
+\pgf@yx=\dimen167
+\pgf@yy=\dimen168
+\pgf@zx=\dimen169
+\pgf@zy=\dimen170
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+hconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@path@lastx=\dimen171
+\pgf@path@lasty=\dimen172
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+husage.code.tex
+File: pgfcorepathusage.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@shorten@end@additional=\dimen173
+\pgf@shorten@start@additional=\dimen174
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresco
+pes.code.tex
+File: pgfcorescopes.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfpic=\box49
+\pgf@hbox=\box50
+\pgf@layerbox@main=\box51
+\pgf@picture@serial@count=\count273
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoregra
+phicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgflinewidth=\dimen175
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoretra
+nsformations.code.tex
+File: pgfcoretransformations.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@pt@x=\dimen176
+\pgf@pt@y=\dimen177
+\pgf@pt@temp=\dimen178
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorequi
+ck.code.tex
+File: pgfcorequick.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreobj
+ects.code.tex
+File: pgfcoreobjects.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+hprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorearr
+ows.code.tex
+File: pgfcorearrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfarrowsep=\dimen179
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresha
+de.code.tex
+File: pgfcoreshade.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@max=\dimen180
+\pgf@sys@shading@range@num=\count274
+\pgf@shadingcount=\count275
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreima
+ge.code.tex
+File: pgfcoreimage.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreext
+ernal.code.tex
+File: pgfcoreexternal.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfexternal@startupbox=\box52
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorelay
+ers.code.tex
+File: pgfcorelayers.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoretra
+nsparency.code.tex
+File: pgfcoretransparency.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+terns.code.tex
+File: pgfcorepatterns.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorerdf
+.code.tex
+File: pgfcorerdf.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmoduleshap
+es.code.tex
+File: pgfmoduleshapes.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfnodeparttextbox=\box53
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmoduleplot
+.code.tex
+File: pgfmoduleplot.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-v
+ersion-0-65.sty
+Package: pgfcomp-version-0-65 2019/05/09 v3.1.3 (3.1.3)
+\pgf@nodesepstart=\dimen181
+\pgf@nodesepend=\dimen182
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-v
+ersion-1-18.sty
+Package: pgfcomp-version-1-18 2019/05/09 v3.1.3 (3.1.3)
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgffor.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.cod
+e.tex))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.tex
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgffor.code
+.tex
+Package: pgffor 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.tex
+)
+\pgffor@iter=\dimen183
+\pgffor@skip=\dimen184
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
+))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz\ti
+kz.code.tex
+Package: tikz 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibraryp
+lothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@plot@mark@count=\count276
+\pgfplotmarksize=\dimen185
+)
+\tikz@lastx=\dimen186
+\tikz@lasty=\dimen187
+\tikz@lastxsaved=\dimen188
+\tikz@lastysaved=\dimen189
+\tikzleveldistance=\dimen190
+\tikzsiblingdistance=\dimen191
+\tikz@figbox=\box54
+\tikz@figbox@bg=\box55
+\tikz@tempbox=\box56
+\tikz@tempbox@bg=\box57
+\tikztreelevel=\count277
+\tikznumberofchildren=\count278
+\tikznumberofcurrentchild=\count279
+\tikz@fig@count=\count280
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulematr
+ix.code.tex
+File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfmatrixcurrentrow=\count281
+\pgfmatrixcurrentcolumn=\count282
+\pgf@matrix@numberofcolumns=\count283
+)
+\tikz@expandcount=\count284
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/li
+braries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/li
+braries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/li
+braries\tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/li
+braries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibraryf
+adings.code.tex
+File: pgflibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
+))) ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count285
+\calc@Bcount=\count286
+\calc@Adimen=\dimen192
+\calc@Bdimen=\dimen193
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count287
+\calc@Cskip=\skip56
+)
+\c@@todonotes@numberoftodonotes=\count288
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen194
+\ar@mcellbox=\box58
+\extrarowheight=\dimen195
+\NC@list=\toks34
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box59
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip59
+\multirow@cntb=\count289
+\multirow@dima=\skip60
+\bigstrutjot=\dimen196
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count290
+\float@exts=\toks35
+\float@box=\box60
+\@float@everytoks=\toks36
+\@floatcapt=\box61
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\listings.sty
+\lst@mode=\count291
+\lst@gtempboxa=\box62
+\lst@token=\toks37
+\lst@length=\count292
+\lst@currlwidth=\dimen197
+\lst@column=\count293
+\lst@pos=\count294
+\lst@lostspace=\dimen198
+\lst@width=\dimen199
+\lst@newlines=\count295
+\lst@lineno=\count296
+\lst@maxwidth=\dimen256
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count297
+\lst@skipnumbers=\count298
+\lst@framebox=\box63
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\textcomp.sty"
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/mdframed\mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/zref\zref-abspage.sty
+Package: zref-abspage 2020-05-28 v2.31 Module abspage for zref (HO)
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/zref\zref-base.sty
+Package: zref-base 2020-05-28 v2.31 Module base for zref (HO)
+Package zref Info: New property list: main on input line 763.
+Package zref Info: New property: default on input line 764.
+Package zref Info: New property: page on input line 765.
+)
+\c@abspage=\count299
+Package zref Info: New property: abspage on input line 66.
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/needspace\needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip61
+\c@mdf@globalstyle@cnt=\count300
+\mdf@skipabove@length=\skip62
+\mdf@skipbelow@length=\skip63
+\mdf@leftmargin@length=\skip64
+\mdf@rightmargin@length=\skip65
+\mdf@innerleftmargin@length=\skip66
+\mdf@innerrightmargin@length=\skip67
+\mdf@innertopmargin@length=\skip68
+\mdf@innerbottommargin@length=\skip69
+\mdf@splittopskip@length=\skip70
+\mdf@splitbottomskip@length=\skip71
+\mdf@outermargin@length=\skip72
+\mdf@innermargin@length=\skip73
+\mdf@linewidth@length=\skip74
+\mdf@innerlinewidth@length=\skip75
+\mdf@middlelinewidth@length=\skip76
+\mdf@outerlinewidth@length=\skip77
+\mdf@roundcorner@length=\skip78
+\mdf@footenotedistance@length=\skip79
+\mdf@userdefinedwidth@length=\skip80
+\mdf@needspace@length=\skip81
+\mdf@frametitleaboveskip@length=\skip82
+\mdf@frametitlebelowskip@length=\skip83
+\mdf@frametitlerulewidth@length=\skip84
+\mdf@frametitleleftmargin@length=\skip85
+\mdf@frametitlerightmargin@length=\skip86
+\mdf@shadowsize@length=\skip87
+\mdf@extratopheight@length=\skip88
+\mdf@subtitleabovelinewidth@length=\skip89
+\mdf@subtitlebelowlinewidth@length=\skip90
+\mdf@subtitleaboveskip@length=\skip91
+\mdf@subtitlebelowskip@length=\skip92
+\mdf@subtitleinneraboveskip@length=\skip93
+\mdf@subtitleinnerbelowskip@length=\skip94
+\mdf@subsubtitleabovelinewidth@length=\skip95
+\mdf@subsubtitlebelowlinewidth@length=\skip96
+\mdf@subsubtitleaboveskip@length=\skip97
+\mdf@subsubtitlebelowskip@length=\skip98
+\mdf@subsubtitleinneraboveskip@length=\skip99
+\mdf@subsubtitleinnerbelowskip@length=\skip100
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/mdframed\md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box64
+\mdf@footnotebox=\box65
+\mdf@splitbox@one=\box66
+\mdf@splitbox@two=\box67
+\mdf@splitbox@save=\box68
+\mdfsplitboxwidth=\skip101
+\mdfsplitboxtotalwidth=\skip102
+\mdfsplitboxheight=\skip103
+\mdfsplitboxdepth=\skip104
+\mdfsplitboxtotalheight=\skip105
+\mdfframetitleboxwidth=\skip106
+\mdfframetitleboxtotalwidth=\skip107
+\mdfframetitleboxheight=\skip108
+\mdfframetitleboxdepth=\skip109
+\mdfframetitleboxtotalheight=\skip110
+\mdffootnoteboxwidth=\skip111
+\mdffootnoteboxtotalwidth=\skip112
+\mdffootnoteboxheight=\skip113
+\mdffootnoteboxdepth=\skip114
+\mdffootnoteboxtotalheight=\skip115
+\mdftotallinewidth=\skip116
+\mdfboundingboxwidth=\skip117
+\mdfboundingboxtotalwidth=\skip118
+\mdfboundingboxheight=\skip119
+\mdfboundingboxdepth=\skip120
+\mdfboundingboxtotalheight=\skip121
+\mdf@freevspace@length=\skip122
+\mdf@horizontalwidthofbox@length=\skip123
+\mdf@verticalmarginwhole@length=\skip124
+\mdf@horizontalspaceofbox=\skip125
+\mdfsubtitleheight=\skip126
+\mdfsubsubtitleheight=\skip127
+\c@mdfcountframes=\count301
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count302
+\c@mdf@env@i=\count303
+\c@mdf@env@ii=\count304
+\c@mdf@zref@counter=\count305
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfx\pdfx.sty
+Package: pdfx 2019/02/27 v1.6.3 PDF/X and PDF/A support (CVR/HTH/RRM/PS)
+\pdfx@minorversion=\count306
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+){C:/Users/Simo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfx\l8u-penc.def
+File: l8u-penc.def 2017/06/23 v0.8 Custom LaTeX file, for UTF8 encoded letters 
+and symbols
+LaTeX Info: Composite with undeclared \b in encoding L8U on input line 278.
+)
+\pdfxsafeforxmp@toks=\toks38
+\pdfx@tmptoks=\toks39
+
+
+Package hyperref Warning: Option `pdftex' has already been used,
+(hyperref)                setting the option has no effect on input line 1461.
+
+
+Package hyperref Warning: Option `pdfa' has already been used,
+(hyperref)                setting the option has no effect on input line 1461.
+
+Package hyperref Info: Option `unicode' set `true' on input line 1463.
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\puenc.def"
+File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+Package hyperref Info: Option `psdextra' set `true' on input line 1465.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\psdextra.def"
+File: psdextra.def 2020-05-15 v7.00e Hyperref: Additions to PDF string support
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/colorprofiles\colorprofil
+es.sty
+Package: colorprofiles 2018/11/01 v1.0.1 color profiles for PDF/X and PDF/A sup
+port
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/colorprofiles\colorprofil
+es.tex))
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/stringenc\se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfx\AdobeColorProfiles.tex
+) (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfx\8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+** pdfx: No file TesiScaravati.xmpdata . Metadata will be incomplete!
+<<sRGB.icc>> (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfx\8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+Package hyperref Info: Option `unicode' set `true' on input line 2411.
+Package hyperref Info: Option `unicode' set `true' on input line 2412.
+("C:\Program Files\MiKTeX 2.9\tex/generic/pdftex\glyphtounicode.tex")
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfx\glyphtounicode-cmr.tex
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfx\glyphtounicode-ntx.tex
+) (C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/xmpincl\xmpincl.sty
+Package: xmpincl 2008/05/10 v2.2 Include XMP data in pdflatex
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfx\8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+Using XMP template file: pdfa.xmp
+\xmpinclWrite=\write4
+\xmpinclRead=\read4
+\openout4 = `pdfa.xmpi'.
+
+<<pdfa.xmpi>>) (TesiScaravati.aux)
+\openout1 = `TesiScaravati.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Info: Redefining \it@ocap on input line 87.
+LaTeX Info: Redefining \it@ccap on input line 87.
+
+
+File italian.ldf warning: 
+italian.ldf    With OT1 encoding guillemets are poorly faked
+italian.ldf    Use T1 encoding
+italian.ldf    or specify a font with command \CaporaliFrom
+italian.ldf    See the documentation concerning the babel-italian typesetting 
+italian.ldf    on input line 87.
+
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring OFF on input line 87.
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/generic/gettitlestring\gettitlest
+ring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count307
+)
+LaTeX Info: Redefining \ref on input line 87.
+LaTeX Info: Redefining \pageref on input line 87.
+LaTeX Info: Redefining \nameref on input line 87.
+ (TesiScaravati.out) (TesiScaravati.out)
+\@outlinefile=\write5
+\openout5 = `TesiScaravati.out'.
+
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count308
+\scratchdimen=\dimen257
+\scratchbox=\box70
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen258
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks41
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/epstopdf-pkg\epstopdf-base.
+sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+) ABD: EveryShipout initializing macros
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will 
+most likely cause issues with the appearance of inserted todonotes. The issue c
+an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
+loading the todonotes package. on input line 87.
+
+\c@lstlisting=\count314
+<Immagini/Logo.jpg, id=141, 398.4486pt x 156.585pt>
+File: Immagini/Logo.jpg Graphic file (type jpg)
+<use Immagini/Logo.jpg>
+Package pdftex.def Info: Immagini/Logo.jpg  used on input line 92.
+(pdftex.def)             Requested size: 390.0pt x 153.26826pt.
+[1
+
+ <./Immagini/Logo.jpg>] (TesiScaravati.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 ...testing e analisi feedback}{44}{chapter.3}
+                                                  % [1
+
+])
+\tf@toc=\write6
+\openout6 = `TesiScaravati.toc'.
+
+ [2]
+Capitolo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
+
+ []
+
+[3
+
+]
+<Immagini/mesopotamian_tokens.jpg, id=196, 216.81pt x 148.27396pt>
+File: Immagini/mesopotamian_tokens.jpg Graphic file (type jpg)
+<use Immagini/mesopotamian_tokens.jpg>
+Package pdftex.def Info: Immagini/mesopotamian_tokens.jpg  used on input line 1
+55.
+(pdftex.def)             Requested size: 151.76596pt x 103.79105pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--168
+
+ []
+
+[4]
+<Immagini/emergePhysicalPlots.jpg, id=210, 646.66594pt x 457.71pt>
+File: Immagini/emergePhysicalPlots.jpg Graphic file (type jpg)
+<use Immagini/emergePhysicalPlots.jpg>
+Package pdftex.def Info: Immagini/emergePhysicalPlots.jpg  used on input line 1
+76.
+(pdftex.def)             Requested size: 155.99762pt x 110.41136pt.
+<Immagini/tastybeats.jpg, id=211, 761.84625pt x 368.87813pt>
+File: Immagini/tastybeats.jpg Graphic file (type jpg)
+<use Immagini/tastybeats.jpg>
+Package pdftex.def Info: Immagini/tastybeats.jpg  used on input line 176.
+(pdftex.def)             Requested size: 228.15262pt x 110.46729pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.185 
+       <./Immagini/mesopotamian_tokens.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.198 
+       <./Immagini/emergePhysicalPlots.jpg> <./Immagini/tastybeats.jpg>]
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 233--238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+[8]
+<Immagini/ENG_tableSenses.png, id=257, 106.89937pt x 127.22531pt>
+File: Immagini/ENG_tableSenses.png Graphic file (type png)
+<use Immagini/ENG_tableSenses.png>
+Package pdftex.def Info: Immagini/ENG_tableSenses.png  used on input line 246.
+(pdftex.def)             Requested size: 96.20853pt x 114.50171pt.
+<Immagini/ENG_barplot_1.png, id=259, 433.62pt x 289.08pt>
+File: Immagini/ENG_barplot_1.png Graphic file (type png)
+<use Immagini/ENG_barplot_1.png>
+Package pdftex.def Info: Immagini/ENG_barplot_1.png  used on input line 247.
+(pdftex.def)             Requested size: 173.44492pt x 115.62994pt.
+<Immagini/ENG_interactivity.png, id=260, 433.62pt x 289.08pt>
+File: Immagini/ENG_interactivity.png Graphic file (type png)
+<use Immagini/ENG_interactivity.png>
+Package pdftex.def Info: Immagini/ENG_interactivity.png  used on input line 255
+.
+(pdftex.def)             Requested size: 173.44492pt x 115.62994pt.
+<Immagini/ENG_dynamic.png, id=261, 433.62pt x 289.08pt>
+File: Immagini/ENG_dynamic.png Graphic file (type png)
+<use Immagini/ENG_dynamic.png>
+Package pdftex.def Info: Immagini/ENG_dynamic.png  used on input line 256.
+(pdftex.def)             Requested size: 173.44492pt x 115.62994pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.264 V
+       edremo nei prossimi capitoli come, per il primo caso, ci si sia indir...
+ <./Immagini/ENG_tableSenses.png> <./Immagini/ENG_barplot_1.png>] [10pdfTeX war
+ning (ext4): destination with the same identifier (name{figure.1.4}) has been a
+lready used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.280 
+       <./Immagini/ENG_interactivity.png> <./Immagini/ENG_dynamic.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 286--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+
+ []
+
+
+Overfull \hbox (0.90622pt too wide) in paragraph at lines 303--303
+[]\OT1/cmr/bx/n/14.4 OpenWeatherMap e la scel-ta del-le con-di-zio-ni me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
+
+ []
+
+[11]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 309.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 309.
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 319--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--328
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 339--341
+
+ []
+
+[14]
+<../TesiScaravati/Paper_ensemble_notes_and_tables/Plutchik-wheel.png, id=327, 7
+17.68124pt x 727.71875pt>
+File: ../TesiScaravati/Paper_ensemble_notes_and_tables/Plutchik-wheel.png Graph
+ic file (type png)
+<use ../TesiScaravati/Paper_ensemble_notes_and_tables/Plutchik-wheel.png>
+Package pdftex.def Info: ../TesiScaravati/Paper_ensemble_notes_and_tables/Plutc
+hik-wheel.png  used on input line 350.
+(pdftex.def)             Requested size: 195.0pt x 197.71924pt.
+ [15]
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--372
+
+ []
+
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.372 
+       <../TesiScaravati/Paper_ensemble_notes_and_tables/Plutchik-wheel.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 373--375
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 376--378
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--381
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--386
+
+ []
+
+[18]
+Overfull \hbox (4.73375pt too wide) in paragraph at lines 458--458
+ []|\OT1/cmr/bx/n/12 N#| 
+ []
+
+[19pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.468 
+      ] [20]
+<Immagini/Foto_Physiradio/blended/13.jpg, id=377, 2456.17625pt x 1871.99374pt>
+File: Immagini/Foto_Physiradio/blended/13.jpg Graphic file (type jpg)
+<use Immagini/Foto_Physiradio/blended/13.jpg>
+Package pdftex.def Info: Immagini/Foto_Physiradio/blended/13.jpg  used on input
+ line 481.
+(pdftex.def)             Requested size: 386.10214pt x 294.26929pt.
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.493 \chapter
+              {Physiradio: ideazione e realizzazione del device} <./Immagini/Fo
+to_Physiradio/blended/13.jpg>]
+Capitolo 2.
+<Immagini/Foto_Physiradio/old/MagnetiMarelli_1.jpg, id=383, 2355.80125pt x 2276
+.505pt>
+File: Immagini/Foto_Physiradio/old/MagnetiMarelli_1.jpg Graphic file (type jpg)
+
+<use Immagini/Foto_Physiradio/old/MagnetiMarelli_1.jpg>
+Package pdftex.def Info: Immagini/Foto_Physiradio/old/MagnetiMarelli_1.jpg  use
+d on input line 503.
+(pdftex.def)             Requested size: 195.0pt x 188.41145pt.
+<Immagini/Foto_Physiradio/old/MagnetiMarelliLed_2.jpg, id=384, 924.45375pt x 96
+3.6pt>
+File: Immagini/Foto_Physiradio/old/MagnetiMarelliLed_2.jpg Graphic file (type j
+pg)
+<use Immagini/Foto_Physiradio/old/MagnetiMarelliLed_2.jpg>
+Package pdftex.def Info: Immagini/Foto_Physiradio/old/MagnetiMarelliLed_2.jpg  
+used on input line 503.
+(pdftex.def)             Requested size: 180.569pt x 188.21736pt.
+[22
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.511 	\item U
+              n cabinato vintage Magneti Marelli (anni '40 ca), con un picco...
+ <./Immagini/Foto_Physiradio/old/MagnetiMarelli_1.jpg> <./Immagini/Foto_Physira
+dio/old/MagnetiMarelliLed_2.jpg>]
+<Immagini/Wemos_Lolin_D1_mini_v1.jpg, id=392, 642.4pt x 386.44376pt>
+File: Immagini/Wemos_Lolin_D1_mini_v1.jpg Graphic file (type jpg)
+<use Immagini/Wemos_Lolin_D1_mini_v1.jpg>
+Package pdftex.def Info: Immagini/Wemos_Lolin_D1_mini_v1.jpg  used on input lin
+e 534.
+(pdftex.def)             Requested size: 224.84337pt x 135.25734pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23] [24pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.2.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.554 
+       <./Immagini/Wemos_Lolin_D1_mini_v1.jpg>]
+<Immagini/LCTech_VS1053.jpg, id=412, 432.86719pt x 394.47375pt>
+File: Immagini/LCTech_VS1053.jpg Graphic file (type jpg)
+<use Immagini/LCTech_VS1053.jpg>
+Package pdftex.def Info: Immagini/LCTech_VS1053.jpg  used on input line 557.
+(pdftex.def)             Requested size: 151.50578pt x 138.06787pt.
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.572 
+       <./Immagini/LCTech_VS1053.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 574--576
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 586--587
+
+ []
+
+<Immagini/SchemaWiringsFritzing.png, id=431, 770.88pt x 563.10374pt>
+File: Immagini/SchemaWiringsFritzing.png Graphic file (type png)
+<use Immagini/SchemaWiringsFritzing.png>
+Package pdftex.def Info: Immagini/SchemaWiringsFritzing.png  used on input line
+ 592.
+(pdftex.def)             Requested size: 462.53157pt x 337.86485pt.
+[27] [28pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.2.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.636 	\item I
+              l canale sinistro e il canale destro dello speaker, sono salda...
+ <./Immagini/SchemaWiringsFritzing.png>] [29pdfTeX warning (ext4): destination 
+with the same identifier (name{table.2.1}) has been already used, duplicate ign
+ored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.642 \newpage
+              ]
+Underfull \hbox (badness 10000) in paragraph at lines 645--649
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 672--674
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 687--690
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--695
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 712--713
+
+ []
+
+
+Overfull \hbox (16.04988pt too wide) in paragraph at lines 714--715
+[]\OT1/cmtt/m/n/12 void callback(const char[] topic, byte* payload, unsigned in
+t
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--720
+
+ []
+
+[33]
+Overfull \hbox (16.04988pt too wide) in paragraph at lines 723--724
+[]\OT1/cmtt/m/n/12 connect (clientID, [username, password], [willTopic, willQoS
+,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
+
+ []
+
+[34]
+<Immagini/TaskScheduler_html.png, id=491, 515.67656pt x 679.78969pt>
+File: Immagini/TaskScheduler_html.png Graphic file (type png)
+<use Immagini/TaskScheduler_html.png>
+Package pdftex.def Info: Immagini/TaskScheduler_html.png  used on input line 74
+7.
+(pdftex.def)             Requested size: 331.50238pt x 437.01399pt.
+
+Overfull \hbox (29.9002pt too wide) in paragraph at lines 760--766
+\OT1/cmtt/m/n/12 Task(unsigned long aInterval, long aIterations, void (*aCallba
+ck)(), 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 760--766
+
+ []
+
+[35] [36pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.2.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.766 
+       <./Immagini/TaskScheduler_html.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 771--773
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 778--779
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 780--781
+
+ []
+
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Overfull \hbox (30.80841pt too wide) in paragraph at lines 785--786
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.21442pt too wide) in paragraph at lines 808--809
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (17.01141pt too wide) in paragraph at lines 809--810
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (17.01141pt too wide) in paragraph at lines 824--825
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (30.80841pt too wide) in paragraph at lines 825--826
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (44.60541pt too wide) in paragraph at lines 826--827
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[38]
+Overfull \hbox (51.5039pt too wide) in paragraph at lines 857--858
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (37.70691pt too wide) in paragraph at lines 858--859
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[39] [40]
+<Immagini/screenshot_Physiradio_windows_1.png, id=551, 679.03688pt x 684.30656p
+t>
+File: Immagini/screenshot_Physiradio_windows_1.png Graphic file (type png)
+<use Immagini/screenshot_Physiradio_windows_1.png>
+Package pdftex.def Info: Immagini/screenshot_Physiradio_windows_1.png  used on 
+input line 923.
+(pdftex.def)             Requested size: 197.73148pt x 199.25827pt.
+<Immagini/screenshot_Physiradio_windows_2.png, id=552, 675.27281pt x 686.565pt>
+
+File: Immagini/screenshot_Physiradio_windows_2.png Graphic file (type png)
+<use Immagini/screenshot_Physiradio_windows_2.png>
+Package pdftex.def Info: Immagini/screenshot_Physiradio_windows_2.png  used on 
+input line 923.
+(pdftex.def)             Requested size: 195.77957pt x 199.04637pt.
+<Immagini/physiradio_screenshot_android.jpg, id=553, 1084.05pt x 1927.2pt>
+File: Immagini/physiradio_screenshot_android.jpg Graphic file (type jpg)
+<use Immagini/physiradio_screenshot_android.jpg>
+Package pdftex.def Info: Immagini/physiradio_screenshot_android.jpg  used on in
+put line 929.
+(pdftex.def)             Requested size: 155.99762pt x 277.30486pt.
+ [41] [42pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.2.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.934 \newpage
+               <./Immagini/screenshot_Physiradio_windows_1.png> <./Immagini/scr
+eenshot_Physiradio_windows_2.png> <./Immagini/physiradio_screenshot_android.jpg
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+
+ []
+
+[43]
+Capitolo 3.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 951.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 953--957
+
+ []
+
+[44
+
+]
+<Immagini/SCHEMA_PHYSIRADIO.png, id=580, 845.0772pt x 597.432pt>
+File: Immagini/SCHEMA_PHYSIRADIO.png Graphic file (type png)
+<use Immagini/SCHEMA_PHYSIRADIO.png>
+Package pdftex.def Info: Immagini/SCHEMA_PHYSIRADIO.png  used on input line 976
+.
+(pdftex.def)             Requested size: 156.80273pt x 110.85136pt.
+
+Underfull \hbox (badness 6125) in paragraph at lines 982--984
+[][]\OT1/cmr/m/n/12 Lo sco-po di que-sta de-mo e[] rac-co-glie-re
+ []
+
+Package mdframed Info: Not enough space on this page on input line 1138.
+[45 <./Immagini/SCHEMA_PHYSIRADIO.png>]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 1138.
+ [46] [47]
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+
+ []
+
+\cyclecount=\count315
+\ind=\count316
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 1284--1286
+
+ []
+
+[49pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1286 
+       ]
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1289
+
+ []
+
+<../Questionario/total_barplot.png, id=623, 433.62pt x 289.08pt>
+File: ../Questionario/total_barplot.png Graphic file (type png)
+<use ../Questionario/total_barplot.png>
+Package pdftex.def Info: ../Questionario/total_barplot.png  used on input line 
+1311.
+(pdftex.def)             Requested size: 155.99762pt x 103.99814pt.
+[50pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1318 
+        <../Questionario/total_barplot.png>] [51]
+Capitolo 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1325--1329
+
+ []
+
+[52
+
+] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1348--1349
+
+ []
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1381--1382
+
+ []
+
+[55] [56] [57
+
+]
+Appendice A.
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\Simo\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 1403.
+
+Overfull \hbox (32.09918pt too wide) in paragraph at lines 1410--1411
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.89923pt too wide) in paragraph at lines 1415--1416
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (38.39917pt too wide) in paragraph at lines 1421--1423
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+1429.
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmtt.fd"
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [58
+
+]
+Overfull \hbox (38.39917pt too wide) in paragraph at lines 1492--1493
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (38.39917pt too wide) in paragraph at lines 1498--1499
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+[59]
+Overfull \hbox (32.09918pt too wide) in paragraph at lines 1504--1505
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.59912pt too wide) in paragraph at lines 1510--1511
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.59924pt too wide) in paragraph at lines 1516--1517
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (6.89923pt too wide) in paragraph at lines 1541--1543
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+[60]
+Appendice B.
+
+Overfull \hbox (50.99915pt too wide) in paragraph at lines 1560--1561
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.59924pt too wide) in paragraph at lines 1572--1573
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.89923pt too wide) in paragraph at lines 1573--1574
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[61
+
+]
+Overfull \hbox (44.69916pt too wide) in paragraph at lines 1617--1618
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][] 
+ []
+
+[62]
+Overfull \hbox (50.99915pt too wide) in paragraph at lines 1671--1672
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (50.99915pt too wide) in paragraph at lines 1704--1705
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[63]
+Overfull \hbox (38.39917pt too wide) in paragraph at lines 1723--1724
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (13.19922pt too wide) in paragraph at lines 1733--1735
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (132.89899pt too wide) in paragraph at lines 1753--1754
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[64] (TesiScaravati.bbl [65]
+Underfull \hbox (badness 2644) in paragraph at lines 13--16
+[]\OT1/cmr/m/n/12 Arduino.cc.  Ar-dui-no ide.  []$\OT1/cmtt/m/n/12 https : / / 
+www . arduino . cc / en / main /
+ []
+
+[66
+
+] [67]
+Underfull \hbox (badness 5403) in paragraph at lines 134--139
+[]\OT1/cmr/m/n/12 Michele Maf-fuc-ci.  Blog per-so-na-le per de-scri-zio-ne e s
+pe-ci-fi-
+ []
+
+
+Underfull \hbox (badness 4531) in paragraph at lines 134--139
+\OT1/cmr/m/n/12 che we-mos d1 mi-ni per la ver-sio-ne v1.0 (usa-ta in phy-si-ra
+-
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 134--139
+\OT1/cmr/m/n/12 dio).  []$\OT1/cmtt/m/n/12 https : / / www . maffucci . it / 20
+17 / 05 / 13 / iot -[] con -[] wemos -[] d1 -[]
+ []
+
+[68]
+Underfull \hbox (badness 5592) in paragraph at lines 189--193
+[]\OT1/cmr/m/n/12 Reference.com.  What is a com-for-ta-ble hu-mi-di-ty le-vel o
+ut-
+ []
+
+
+Underfull \hbox (badness 7649) in paragraph at lines 189--193
+\OT1/cmr/m/n/12 doors?  []$\OT1/cmtt/m/n/12 https : / / www . reference . com /
+ science / comfortable -[]
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 211--214
+[]\OT1/cmr/m/n/12 Simone Sca-ra-va-ti and An-drea Ma-rio Tren-ti-ni.  Re-po-si-
+to-ry de-di-
+ []
+
+[69] [70]) [71]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1793.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1793.
+ (TesiScaravati.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1793.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1793.
+
+Package rerunfilecheck Info: File `TesiScaravati.out' has not changed.
+(rerunfilecheck)             Checksum: CFF40B279580064DF73F7E8A92F58193;2392.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 21 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 37966 strings out of 491273
+ 683468 string characters out of 3112170
+ 1017397 words of memory out of 3000000
+ 42361 multiletter control sequences out of 15000+200000
+ 539650 words of font info for 49 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,14n,122p,1355b,12337s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+ <C:\Users\Simo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tct
+t1000.pk> <C:\Users\Simo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/d
+pi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on TesiScaravati.pdf (72 pages, 5974946 bytes).
+PDF statistics:
+ 1346 PDF objects out of 1440 (max. 8388607)
+ 583 named destinations out of 1000 (max. 500000)
+ 442 words of extra memory for PDF output out of 10000 (max. 10000000)
+

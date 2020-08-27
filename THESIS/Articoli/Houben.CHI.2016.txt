@@ -1,0 +1,1074 @@
+Physikit: Data Engagement Through Physical
+Ambient Visualizations in the Home
+Steven Houben1, Connie Golsteijn1, Sarah Gallacher1, Rose Johnson1,
+Saskia Bakker2, Nicolai Marquardt1, Licia Capra1 and Yvonne Rogers1
+1
+
+2
+
+University College London, UCL Interaction Centre; ICRI Cities, Gower Street, London, UK
+Department of Industrial Design, Eindhoven University of Technology, Eindhoven, the Netherlands
+
+{s.houben, c.golsteijn, s.gallacher, rose.johnson.11, n.marquardt, l.capra, y.rogers}@ucl.ac.uk, s.bakker@tue.nlAn
+
+Figure 1. Physikit consists of four physical ambient visualizations (right), and a web-based configuration tool (center) to map
+the sensed data to the cubes to visualize sensor data, such as the SmartCitizen [10] sensor kit (left).
+ABSTRACT
+
+INTRODUCTION
+
+Internet of things (IoT) devices and sensor kits have the potential to democratize the access, use, and appropriation of
+data. Despite the increased availability of low cost sensors,
+most of the produced data is ‘black box’ in nature: users often do not know how to access or interpret data. We propose
+a ‘human-data design’ approach in which end-users are given
+tools to create, share, and use data through tangible and physical visualizations. This paper introduces Physikit, a system
+designed to allow users to explore and engage with environmental data through physical ambient visualizations. We report on the design and implementation of Physikit, and present a two-week field study which showed that participants
+got an increased sense of the meaning of data, embellished
+and appropriated the basic visualizations to make them blend
+into their homes, and used the visualizations as a probe for
+community engagement and social behavior.
+
+We are in the midst of a data revolution where large amounts
+of data are being collected about our behavior, bodies, social
+relations with others and environment. The increased availability of Internet Of Things (IoT) devices that are used for
+community driven data collection offers the potential to allow local organizations, councils, and the public at large to
+discover more about themselves and their environments.
+Community driven sensor kits [10] provide rich information
+about the environment and include data such as noise, air
+quality, temperature, or traffic. They have the potential to
+make users more aware about their lives, the cities they live
+in, and their relation with the environment. While these sensor kits democratize urban sensing, data is often only available through websites or public datasheets with little support
+on how to use or interpret it. Furthermore, for non-expert users, direct representations of urban data in classic visualizations carry little meaning without proper context and framing
+[2, 3]. Users often do not know how and when to interpret,
+relate, and organize data. As a result, it is difficult for users
+to make sense of, and appropriate the data they are collecting.
+
+Author Keywords
+
+Physical Visualization; Ambient Display; End-User Programming; Human-Data design; Internet of Things (IoT)
+ACM Classification Keywords
+
+H.5.2. Information Interfaces. User Interfaces – input devices and strategies, prototyping.
+Permission to make digital or hard copies of all or part of this work for personal
+or classroom use is granted without fee provided that copies are not made or
+distributed for profit or commercial advantage and that copies bear this notice
+and the full citation on the first page. Copyrights for components of this work
+owned by others than the author(s) must be honored. Abstracting with credit is
+permitted. To copy otherwise, or republish, to post on servers or to redistribute
+to lists, requires prior specific permission and/or a fee. Request permissions from
+Permissions@acm.org.
+CHI'16, May 07 - 12, 2016, San Jose, CA, USA
+Copyright is held by the owner/author(s). Publication rights licensed to ACM.
+ACM 978-1-4503-3362-7/16/05…$15.00
+DOI: http://dx.doi.org/10.1145/2858036.2858059
+
+To empower and provide users with better ways to interact
+with data, we propose a ‘human-data design’ approach that
+bridges the gap between non-expert users and their data. Research has shown that physical and tangible interfaces can
+increase awareness and participation through their physical
+properties and affordances [16, 19, 23]. Based on this work,
+we argue that providing physical, tangible and reconfigurable “physicalizations” [23] that match people’s own needs
+and interests, will encourage them to discover and understand the meaning of the data they collect and decide for
+themselves how to best use and share it. This approach does
+not replace existing visualization techniques since physical
+forms and shapes cannot provide the same level of detail and
+
+precision. Rather, it aims at providing a hybrid expressive
+representation [16] of data by providing physical ambient
+cues, signals and alerts that present socially meaningful
+events in the data as changes in the physical environment.
+These changes in the environment can provide enough detail
+to understand the data or entice the user to further explore
+and act upon the data using traditional visualizations.
+To this end, we developed Physikit as a toolkit and technology probe [18] that makes users’ data visible and tangible
+through physical and embedded data visualizations called
+PhysiCubes (Figure 1, right). Physikit consists of (i) a number of PhysiCubes that each provide one unique physical visualization such as movement, light, air or vibration, and (ii)
+a web-based end-user configuration tool that allows users to
+quickly and easily connect data sources (Figure 1, left) to the
+PhysiCubes using a touch-enabled interface (Figure 1, center). Users can explore, interpret and engage with different
+kinds of data by creating simple rules for a variety of physical ambient visualizations. A key research question this
+raises is: whether allowing users to program the mapping
+and relation between data and physical visualizations empowers them to explore, use and engage with data.
+Below, we first present related work, and the design and conceptual background of Physikit. We proceed with a detailed
+description of the technical design of the software and hardware. Next, we describe the results of a field study that explores the use and appropriation of Physikit by five households. We conclude this paper with reflections and discussion of the design and use of Physikit.
+RELATED WORK
+
+Physikit builds on four strands of related work: (i) tangible
+user interfaces (TUI), (ii) ambient information systems, (iii)
+physical visualizations, and (iv) end-user programming.
+Tangible Interfaces
+
+Since the early work by Ishii and Ulmer [19] Tangible User
+Interfaces (TUIs) have been introduced in various domains,
+such as problem solving, programming, music, social communication and education [34]. Tangibles have been used as
+remote control units for media [7, 12], in which interaction
+with the physical artifact is leveraged to control a remote installation. A second class of TUIs such as AutoHan [5], Cognitive cubes [35] and AudioCubes [33] use tangible bits as
+programming or control input to construct objects on a computer device. They use physical shape, form, and flexible
+connections between the cubes as buildings blocks to create
+a rudimentary vocabulary for designing new objects. Because physical cubical building blocks are compelling embodiments of more complex abstractions, they have been frequently leveraged as a learning and exploration tool. For instance, Rinott et al. [32] introduced a suite of cubes with sensors and actuators that were used for tangible interactions.
+Similarly, “The Cubes” [26] uses a set of networked tangibles that can be connected for a game-based learning system.
+Also, Cube-In [28], uses a base tangible and a set of smaller
+
+cubes to allow students to explore electronics through tangible interactions. More recently, Chung et al. [8] introduced
+Cubement, a tool consisting of connected cubes used to create moving physical computing interfaces. Many of these
+systems adhere to the original vision of Ishii and Ulmer [19]
+that focused on interaction with tangibles through direct input. However, the input bandwidth provided by tangibles
+alone is limited compared to traditional or sensor input. Although their physicality helps in transforming data from the
+digital into the physical world, tangibles alone often cannot
+provide users with all the tools needed to effectively explore
+and use diverse data streams. However, by building on the
+principles and ideas of reconfigurable tangibles in data representation, we can revise physical tangible artifacts to primarily function as output devices for data.
+Ambient Displays
+
+Parallel to TUIs, ambient information systems were introduced as systems that visualize abstract interpretations of
+data in the environment or the user’s periphery of attention
+[6, 30]. Ambient systems “present information within a
+space through subtle changes in light, sound, and movement,
+which can be processed in the background of awareness”
+[39][p. 1]. There has been a growing body of research that
+explores the design space of ambient displays and artefacts
+[29]. Early ambient systems, such as ambientRoom [20], Audio Aura [27] and “The Information Percolator” [15] focused
+primarily on showing digital information through output modalities that integrate into the environment. They leverage
+ambient light, auditory sound cues and output, such as water
+fountains, to visualize and provide peripheral awareness on
+peoples’ activities, information or social connections. A
+number of other ambient systems propose specialized artifacts that allow users to use the ambient system in their environment. Cubble [25], for example, uses a cube that lights
+up, vibrates or heats up to allow people in a long-distance
+relationship to communicate. Similar moveable artifacts are
+the moving post-it notes by Probst et al. [31] that can be
+placed in the periphery and can be activated to draw people’s
+attention when needed. Often, these ambient systems rely on
+ephemeral interfaces [11] that have a strong temporal focus
+and use tangible output that appeals to human senses, e.g.,
+sound, air, light, or water. These examples demonstrate how
+information can be visualized in the user’s periphery of attention using output mechanisms that appeal to human senses
+and blend into the everyday work or home environment.
+Similar to TUIs, using physical space shapes awareness and
+allows users to move their attention into the periphery based
+on external stimuli. However, ambient displays are frequently used as passive portals into the digital space that do
+not encode complex data that can be tailored and appropriated by end-users as part of a data exploration.
+Physical Visualizations
+
+Although physical visualizations of data have been in use for
+many centuries, recent innovations in low-cost fabrication
+and embedded physical computing has sparked new interest
+in how physical interactive artifacts can visualize digital
+
+data. Such a data physicalization encodes data in its geometry or material properties [23]. As summarized by Jansen et
+al. [23], physicalizations hold many benefits over classic visualizations as they allow for active perception, can leverage
+non-visual senses and make data easily accessible. Many
+physical visualizations focus on a direct mapping between
+the data and representations. Such static physical visualizations have been used for centuries [23, 41], but more recent
+examples include the use of static 3D histograms [22]. Stusak
+et al. [37] similarly studied the use of static physical bar
+charts. Khot et al. [24] visualized physical activity through
+static material representations, such as graphs, flowers and
+rings. Recent technological advances, such as ShapeClip
+[14] or inFORM [13], are now allowing for dynamic and interactive physical histogram representations of data [38]. A
+second class of physical visualizations are data sculptures
+[41], which encode data using aesthetic features that push the
+physicalization beyond a mere representation of the data, to
+an artifact with sociocultural significance. An example of a
+data sculpture is the Water Lamp [9], which encodes physical
+bits as light-based water ripples. The activity sculptures by
+Stusak et al. [36] use candles, lamps, figures and necklaces
+to encode running activity in socially meaningful representations. Ananthanarayan et al. [1] have also proposed visualizing health technology through personalized visualizations,
+such as using paper cherry blossom leaves, flowers, or felt
+and velcro stick-objects on backpacks. Finally, Yao et al.
+[40] have used biological cells in everyday objects to create
+natural actuators that react to thermal changes. All of these
+examples show the potential for mapping everyday objects
+onto socially meaningful events. Physical visualizations also
+have much potential to leverage active perception, become
+interactive, and integrate into the physical world of the user
+in order to make data accessible. However, existing visualizations either focus on personal abstract representations that
+are not necessarily connected to the original data (data sculptures), or move the data sense-making problem into the real
+world (physicalizations). More research is needed to determine how physical visualizations can be used to (i) enable
+users to explore and interrogate data themselves, and (ii)
+elicit interest to spawn actionable insights about data.
+Pipe-Based End-User Configuration
+
+Previous work has proposed ‘pipe-based’ end-user programming to configure or program interfaces through a visual editor that allows users to connect object by drawing pipes.
+Many ‘pipe-based’ editors, such as Max/MSP [43], Quartz
+[46], LabView [42], SamLabs [45] and NodeRed [44], have
+been used in industry to allow users to create logical configurable relations between an input and output space. This approach has also been applied to programming IoT /smart
+space environments [4, 21]. Physikit decouples the input
+from the tangible cubes and adopts this pipe-based configuration concept to allow users to connect the sensor data to the
+cubes and configure the visualization from their mobile device. The pipe-based approach was chosen because of the
+clearly defined input and output space of the toolkit.
+
+AIMS AND OBJECTIVES
+
+The aim of our research is to explore how configurable physical ambient visualizations can be mapped onto sensed data
+to become ambient data objects. The proposed benefits of
+this hybrid approach is to make the interaction with data
+more accessible by placing data, in the form of configurable
+physical visualizations, into people’s environment (e.g., their
+homes). The goal is to create an awareness and presence that
+can prime people to explore and use the data based on their
+own goals, interests, needs and preferences.
+The Physikit toolkit is designed to work with any data, including environmental, personal, or health data. For the
+study reported here, we chose to investigate how households
+would explore and understand environmental data collected
+in their homes using Smart Citizen [10]. This is an open hardware sensor kit based on the Arduino platform that allows for
+decentralized urban sensing of pollution through a participatory online platform. Citizens deploy their own kit and connect their geotagged hardware over WiFi to an online platform on which the data from the sensors that sense aspects
+of their home are shared and visualized on a public website.
+The sensors include nitrogen dioxide (NO2) and carbon monoxide (CO) gases, sunlight, noise pollution, temperature and
+humidity. The data collected is added to a publically available website for all to see – enabling users to compare their
+data with others. Each stream of data is visualized on a basic
+timeline, showing the trends in the past day, week or month.
+The sensors produce time series interval data that is updated
+once every minute.
+One of the problems with the way Smart Citizen is currently
+set up is that many people find it difficult to understand the
+data. Balestrini et al. [2, 3], e.g., found that users often struggled to make sense of the provided data in its default graphical form. Users also reported that the kit itself became invisible after a while, resulting in people losing interest in the
+data and the kit. This provided us with an opportunity to explore how to make the data more meaningful. By providing
+another layer of physical ambient visualizations – that users
+themselves program to map onto the visualized data – we argue that it can open up a new kind of physical entry point
+that can help users become interested in, and understand the
+data streams more in the context of their own lives.
+PHYSIKIT
+
+The central goal of Physikit is to represent data via physical
+ambient artifacts that can be programmed and configured by
+a non-expert user. In doing so, it allows users to discover
+more about what lies behind the data and decide based on
+their emerging understanding how they can act upon the data.
+Physical Visualization
+
+Physikit provides physical and embedded ambient data visualizations (PhysiCubes), which visualize one unique data
+source through physical dynamic output. A PhysiCube is a
+cubical interconnected artifact that has exactly one type of
+output visualization that can be linked by the user to a data
+input. This notion of an atomic visualization ensures that the
+
+cube communicates the data source in an unambiguous output format as set up by the user. Each PhysiCube visualization has an output range from 0 to the maximum value of the
+output visualization. Sensed input data is mapped to the output range of the visualization.
+
+Figure 2. PhysiCubes are physical ambient visualizations that
+encode sensed data in dynamic physical changes. These visualizations can include different types of physical manifestations
+including movement, thermal effects, air or vibrations.
+
+As depicted in Figure 2, PhysiCubes can include different
+types of output such as movement, thermal changes, air flow,
+vibrations, or light. PhysiCubes can stimulate the visual, auditory and somatosensory systems. They are meant to be
+seen, heard, touched and experienced by users in order to
+elicit them to become interested in the underlying data set.
+Visualization
+
+Independent of the physical visualization that is built into the
+PhysiCube, each cube has the ability to visualize the data
+through three different input-to-output mappings:
+1.
+2.
+
+3.
+
+Continuous: the sensed data is mapped linearly and continuously to the output of the visualization.
+Relative: the output of the cube shows relative changes
+in the data. Relative changes occur in both positive and
+negative directions, signaling changing trends in data.
+Alert: the configured output of the PhysiCube visualizes
+an event when a threshold value that is set by the user is
+reached by the data.
+
+Using these three mapping types as the vocabulary of all
+PhysiCubes ensures an operation consistency across physical visualizations. Independent from the data or output visualization, each cube will respond in the same way when new
+data is visualized. Independent of mapping type, the visualization will be run once when new data is visualized. This
+consistency gives users a stable concept for the exploration
+of combinations of input and output to build a mental model
+of the relation between the data and the output of the
+PhysiCubes. To decouple the input and output space, the cubes do not provide tangible physical input to modify the visualization. The PhysiCube output only changes through
+modifying the source or the values of the input space or data
+set. Physikit, thus, allows only for system- or synthetic interactions, but not for physical interaction [23].
+Appropriation
+
+Once a cube is connected to a data source, it can be placed in
+the environment to function as an ambient visualization that
+provides cues, alerts or signals to signify changes in the data.
+These changes are pushed to the physical visualizations to
+allow users to become aware of the changes in the data.
+
+Physikit provides users with a platform and form factor to
+craft their own physical ambient visualizations. The base design of all PhysiCubes is a cubical artifact that is equipped
+with brackets and hooks that can be used to attach other artifacts, materials or objects, or to attach the PhysiCube to the
+environment. The cube can be embellished, covered or even
+extended to blend more into the home environment of users,
+or to amplify the visibility of the visualizations to extend beyond the basic output modality. For instance, strings, wires,
+fabric, or cloths can be attached to moving parts to extend
+the movement; shreds of paper can be placed before an air
+blowing cube to spread the visualization; or a heat cube can
+be sewn into a cushion or blanket so that users feel the temperature. A cube can also be placed in a cupboard to allow it
+to open the door through its moving parts when data changes.
+
+Figure 3. Data is visualized through four cubes: PhysiLight
+(A), PhysiBuzz (B), PhysiMove (C) or PhysiAir (D).
+PhysiCubes
+
+Physikit in its current implementation provides four cubes:
+PhysiLight, PhysiBuzz, PhysiMove and PhysiAir (Figure 3
+and Figure 1, right). We chose to provide four cubes in the
+first instance in order to constrain the configurability space
+of possible mappings and make it manageable by users on
+their first use of the kit [34]. Each PhysiCube visualizes the
+data in a distinct way: through light, vibrations, movement,
+or air flow. All cubes can visualize data through a continuous
+mapping, visualize an alert whenever a configured threshold
+value is reached, or notify users whenever relative sensor
+data changes in positive or negative directions occur. Continuous and relative changes are visualized constantly, while
+alerts are only triggered one time when new data arrives.
+PhysiLight (Figure 3A) visualizes data through a matrix of
+RGB LEDs. In continuous mode, it can visualize data
+through the number of lights shown, their brightness, or type
+of color. When showing relative changes, the cube visualizes
+positive, negative or no changes of the data through arrows
+and equal signs on the LED matrix, or through colored output
+that uses three configured colors to show relative change.
+When a certain user-defined threshold is reached, the cube
+can 'alert' by visualizing a rainbow pattern or by blinking all
+lights exactly five times.
+PhysiBuzz (Figure 3B) visualizes data through vibro-tactile
+feedback provided by six vibration motors. Continuous data
+can be represented through the number of motors or the pulse
+speed of all motors. Relative changes are visualized through
+a fast pattern of vibrations when the value is higher, slow
+vibrations when the value is lower, and no action when the
+value is the same. Finally, the cube visualizes alerts by buzzing in different intensities from small to huge vibrations.
+
+PhysiMove (Figure 3C) visualizes data through movement
+of a disk at the top plane of the cube. In its current form it is
+shaped like a star. Continuously mapped data can be visualized through the speed of the rotation in clockwise or counterclockwise directions. Relative changes are visualized by a
+counterclockwise movement when the value is lower, clockwise movement when the value increases, and no movement
+when the value is the same. Alerts are shown by moving the
+rotation plate 5 times 90°, or by one full clockwise rotation.
+
+with limitations and a path of least resistance in data explorations. To support users in understanding how to create data
+rules for particular data sets, Physikit provides abstractions,
+thresholds and benchmark values. These values guide users
+in creating data rules that help them build a perception of the
+Smart Citizen data. The type of abstractions include:
+
+PhysiAir (Figure 3D) visualizes data through airflows produced by a small and large fan. Continuous data is visualized
+through the intensity of the big or small fan, or both fans.
+Relative changes in the data can be visualized through turning one fan on when the value is higher, and the other fan
+when the value is lower. When there are no changes, no fans
+are turned on. Alerts are visualized by 5 pulses from the fans.
+
+2.
+
+1.
+
+3.
+
+Input and Output limitations: which mediate and limit
+input and output values that lie beyond the range of the
+PhysiCube output modality and input data set.
+Pipeline limitations: that constrain the amount of connections made between input data and physical visualizations to ensure unambiguous visualization of data.
+Abstract representations: rather than presenting the user
+with raw data, the toolkit provides abstract representations of value ranges in the form of symbols, concepts
+or other understandable representations.
+
+End-User Programming Interface
+
+Figure 4. After connecting the sensor to a cube (A), the user
+can select the type of mapping (B) and configure the output
+visualization (C) through two touch-enabled dialogs.
+Configurability and Guided Exploration
+
+A key challenge is how to make the configuring and programming of the ‘rules’ and mappings between input and
+output easy, understandable and memorable to users. To explore the relation between data and output visualizations,
+Physikit provides a user interface that allows users to configure the relation between data and cubes on two levels:
+1.
+
+Input-Output Connection: users can create pipeline connections between data input and visualizations on the
+PhysiCubes to define a relation between in- and output.
+2. Input-Output Mapping: once the user defines a connection between an input data set and visualization, they can
+determine the mapping (continuous, relative or alert)
+and behaviors (type of output) of the cubes.
+Together, the connection and mapping form a data rule that
+describes how the cubes visualize the data input. Data rules
+can be created, updated, or removed. PhysiCubes can be configured and connected to data in order to explore output modalities and data connections. Using an end-user programming interface (Figure 4), users create data rules to help them
+explore the underlying data source. Although a full inputoutput space allows advanced mappings and relations between the Smart Citizen data and the PhysiCubes, the system
+supports constraints and guidance metrics to provide users
+
+To enable users to create and visually explore the connections between input (Smart Citizen sensors) and output (the
+PhysiCubes), a web-based cross-platform end-user programming tool was developed (Figure 4). This web application
+allows users to add, remove, or change data rules through a
+touch-enabled interface. Through a set of steps, users create
+data rules that define how Physikit visualizes the input data
+on the PhysiCubes. After logging in, the application shows
+existing data rules and visualizes them as connected pipes
+from the input to the output space. Users initiate a new data
+pipe by touching data sources and dragging the pipe to a
+PhysiCube (Figure 4A). Connections can be removed by
+dragging the pipe away from the cube. When a new connection is made, the tool shows the users three input boxes that
+ask the user for details to help them configure the rule. The
+first input screen provides the user with the option to select
+the type of mapping (continuous, relative or alert) between
+input and output (Figure 4B). After confirming the mapping
+type, the user is prompted with a second screen allowing
+them to configure the mapping. Only for the “alert” mapping
+users can provide specific trigger conditions. For example,
+when the user selects the “alert” mapping for the CO sensor
+value, they select the condition by choosing whether they
+want to be alerted in case the value of the sensor is lesser,
+greater or equal to a specific threshold. To guide users in
+making informed decisions when setting thresholds, the interface provides familiar relative terms to select from (e.g.,
+less than inside a chimney, greater than smoker exhaling) rather than absolute numerical values. After selecting and configuring the mapping, users decide in a final input screen
+(Figure 4C) how the mapping is visualized on the output
+cube. For each PhysiCube, the interface provides iconized
+options of all the possible output visualizations based on the
+selected data source and threshold values. To enable users to
+explore what data other Smart Citizen users are collecting,
+users can also connect those sensors to their own cubes. This
+means they can use the PhysiCubes to visualize both their
+own and other peoples’ data to allow them to compare data,
+e.g., to check if their neighbors are noisier than they are.
+
+Implementation
+
+The cubes are the same handheld-size (11x11x11cm) and
+come in different colors to make them distinguishable. They
+are laser-cut from 3mm semi-translucent acrylic. Cubes with
+moving parts have protection mechanisms for users. Each
+cube is equipped with a 5V mini USB connector and power
+switch and can run on battery or power supply and has a customized printed circuit board (PCB) that is powered by a
+3.3V Particle Core WIFI-enabled microprocessor. Physikit
+uses a Node.js website that provides user- and data rule management through a web-socket connection. It connects to the
+Smart Citizen API and processes and cleans sensor data before pushing it to a rule engine that calculates the input-output mapping that controls the individual cubes via the web.
+FIELD STUDY
+
+To study the usefulness, user experiences, usage patterns,
+and appropriation of Physikit, we conducted a two-week
+field study in which it was deployed in five households as a
+technology probe [18]. The goal of the field study was to investigate (i) which input-output connections participants
+would make, (ii) how they leveraged the cubes to explore,
+use and understand the Smart Citizen kit (SCK) data, and (iii)
+how they would appropriate, embellish and craft experiences
+to integrate the cubes into their homes and everyday routines.
+#
+
+Members
+
+h1
+
+Family (f:40, m:44) with two kids (f:5, m:8). Mother is an
+administration manager, father is an operations program
+manager.
+Family (f:37, m:38) with two kids (f:4 months, m:2). Mother
+is police staff; father is insurance executive.
+Co-living room-mates (f:26, m:28). Both are students at a
+university.
+Family (f:28, m:28) with two kids (f:1, m:3). Mother is a research associate, father is an IT manager.
+Couple (f:34, f:39). Work as concierge team leader and account manager.
+
+h2
+h3
+h4
+h5
+
+Housing
+House
+
+House
+Apartment
+House
+House
+
+Table 1. The demographics of the households.
+Participants
+
+Five households from London and South East UK participated in a two-week field deployment. These comprised
+three families with children, one couple living together and
+one co-operative living setup with non-related roommates
+(see Table 1). Each household was given shopping vouchers
+for £50 for their participation.
+Apparatus
+
+Each participating household was given a set of four cubes
+(Light, Buzz, Move and Air) and a Smart Citizen kit (SCK).
+They were told they could place them anywhere in the house.
+They were also given an iPad for access to the Physikit web
+application, and a WiFi base station that was used to connect
+the SCK and the PhysiCubes to the Physikit web platform.
+Participants were allowed to use their own devices to access
+the web app for the smart citizen data and Physikit app.
+Method
+
+The field study consisted of two phases. First, after an induction to the study, signing an informed consent, and collecting
+demographics, the households were interviewed about their
+current knowledge and perspective on sensor data. Next, the
+
+households were given a SCK to deploy in their house. Participants did not receive the PhysiCubes at this stage because
+we wanted them initially to get accustomed to the sensors in
+the kit. Second, after 4 to 5 days, the families were interviewed to probe their insights on the sensor data of the SCK.
+After this second interview, we demonstrated the Physikit
+toolkit to the households until they were familiar with its
+basic operation. They were asked to use Physikit for 10 days
+(240 hours from the start date/time). During these 10 days,
+we performed one phone interview after 2 days to ensure the
+system was technically working, and a home visit after 5
+days to perform a contextual inquiry of the setup. After 10
+days we conducted a final interview in situ to elicit their reflections on the usage of the cubes, as well as their insights
+and usefulness of the data produced by SCKs. Interactions
+on the application and all SCK data were logged. We collected qualitative data using (i) experience sampling via diaries, and (ii) interviews and contextual inquiries at the participants’ homes. Throughout the study, all households were
+asked to maintain a diary in which they could write reflections, ideas, insights and thoughts about Physikit, the SCK
+and the study. Using the iPad, they could also take pictures
+and add comments.
+RESULTS
+
+Overall, the findings suggest that all households were engaged with the PhysiCubes and created a large number of
+rules to explore the data in a range of creative ways. The
+physical cubes provided a powerful way of enabling people
+to connect with their own and to some degree to others people’s data. The understandability and memorability of the
+mappings between what was being sensed and what it meant
+was sometimes ambiguous requiring them to physically annotate and appropriate the cubes. We also found that members of the household had different interests in what was being sensed, which was reflected in the location and positioning of the PhysiCubes. All households engaged with the data.
+Use Patterns
+
+The households could only create rules for the PhysiCubes
+during the second 10 day phase, so usage patterns only reflect phase 2. Together, all households created 161 data rules
+(x̅ : 32.2, min: 9, max: 46, σ = 17.44) during 191 unique visits
+(x̅ : 38.2, min: 10, max: 57, σ = 20.24) to the Physikit web
+application. The Physikit web platform received 91,956 updates from the 5 SCKs, resulting in 299,924 rule executions.
+
+Figure 5. Normalized plot of all rules created during the study.
+
+As seen in Figure 5, about 50% of all rules were created in
+the first 2 days of the second phase. During these 2 days, all
+households together created 77 rules to explore the connections between the sensors and the cubes. After 2 days, rule
+creations stabilized to around 10 new rules per day.
+
+Figure 6. The total number of rules for all five cubes.
+
+In total, most rules were created for the PhysiLight cube (f
+(frequency) = 64; 39.7%) and an almost equal number of
+rules were created for the other three cubes (f = 32; 19.8%
+for PhysiAir; f = 30; 18.6% for PhysiMove, and f = 35; 21.7%
+for PhysiBuzz). The data shows that the light cube was
+clearly the most popular visualization. However, overall the
+light cube did not substantially outweigh other cubes, as the
+use depended greatly on what sensor data people were interested in. As seen in Figure 6, the PhysiLight cube was most
+often connected to the light sensor (f = 24; 37.5%) and the
+humidity sensor (f = 16; 25%) and much less to other sensors.
+For the PhysiAir cube, most connections were made to the
+humidity sensor (f = 11; 34.4%) and the NO2 sensor (f = 8;
+25%). The PhysiMove cube was most often connected to the
+temperature (f = 12; 40%), and the noise sensors (f = 7;
+23.3%). The PhysiBuzz was mostly used with the noise (f =
+13; 37.1%) and temperature data (f = 11; 31.4%). For 43,3%
+of the data mappings there was a relation between the output
+of the visualization and the data (e.g., PhysiLight represents
+light data, or PhysiAir visualizing air pollution). However,
+the other 56.7% of the data mappings did not show any clear
+relation between input and output.
+
+Figure 7. The number of rules created by each households.
+
+In general, users were most interested in noise data (f = 36;
+22.3%), followed by humidity (f = 35; 21.7%), temperature
+(f = 33; 20.4%) and light (f = 32;19.8%). Surprisingly, the air
+pollution data (NO2 and CO) were used less than other data
+(f = 15; 9.3% and f = 10; 6.2%). However, within the 5 households, there were different preferences on how the
+PhysiCubes were set up. As seen in Figure 7, h1 (x̅ = 4.5; σ
+= 2.2), h2 (x̅ = 2.2; σ = 0.8), h4 (x̅ = 10.5; σ = 0.8) and h5 (x̅ =
+11,5; σ = 2.1) have an even distribution of rules across all
+cubes. Only h3 had a peak in the amount of rules for the
+PhysiLight (x̅ = 11.5; σ = 9.5).
+Looking at the type of mapping (alert, continuous or relative), there are clear differences between the cubes. For
+PhysiLight, almost all the data rules used a continuous mapping (f = 31; 48.2%) or alerts (f = 27; 42.1%) while very few
+data rules were set up for relative changes (f = 6; 9.3%).
+PhysiAir was mostly set up for alerts (f = 23; 71.8%) with
+fewer continuous mappings (f = 8; 25%) and only one relative mapping (f = 1; 3.1%). For PhysiMove, there was a more
+
+Figure 8. Normalized overview of all data rules created by the
+five households during the deployment.
+
+even distribution with almost equal amounts of continuous (f
+= 11; 36.6%) and relative (f = 12; 40%) mappings, and a
+lower number of alerts (f = 7; 23.3%). Finally, for the
+PhysiBuzz cube, most data rules were set up for alerts (f =
+19; 54.2%) and relative mappings (f = 10; 28.5%), with few
+continuous mappings (f = 6; 17.1%). In total, households created 76 alerts (47.2%), 56 continuous data rules (34.7%), and
+only 29 relative mappings (18%). This shows that the different cubes have different motion and visual properties that afford different types of mappings depending on the data.
+As shown in Figure 8, participants created rules throughout
+the deployment. The graph shows how long a rule ran on
+each PhysiCube before it was changed or removed. 53.4% of
+all rules (f = 86) were run less than an hour. These were exploratory mappings before households settled on one specific
+rule. The graph also shows repeated connections with the
+same sensor, indicating data rules with different mappings,
+or values. The data shows that although the distribution in
+rules across the cubes was homogenous for most households,
+the duration of the rules were very different in each household. Figure 8 shows usage patterns can be categorized into
+three main approaches:
+1.
+2.
+
+3.
+
+Fixed Connection: one data rule was created and used
+throughout the entire deployment (e.g., PhysiMove, h1).
+Rapid Early Exploration: short early data rule changes
+leading to a fixed and long-term data rule configuration
+for the rest of the deployment (e.g., PhysiAir cube, h2).
+Continuous Explorations: short and long iterative explorations throughout the study. The data shows both homogenous explorations using the same sensor (e.g.,
+PhysiLight cube, h5) and heterogeneous explorations
+switching between sensors (e.g., PhysiLight cube, h4).
+
+User Experience, Appropriation, and Use
+
+The results of phase 1, in which only the SCK was deployed,
+were in line with the results from Balestrini et al. [3] as all
+households struggled with grasping the significance and
+
+meaning of the data as they were uncertain about the correctness and use cases of the sensor readings. Furthermore, the
+interviews also revealed that 3 of the 5 households forgot
+about the kit. The absence of benchmark data made it
+difficult to make sense out the data. One member of h3 noted:
+“In the beginning I looked at the data at least twice a day,
+but I found the data not useful, it simply does not give me
+anything. I don’t understand if the data is good or bad.”
+Three households reported that they also checked the sensor
+data of the other households involved in the study. Since the
+raw data itself did not carry much meaning, they tried to
+compare their own data to the data of other households in
+order to find anomalies and similarities. Two households
+also mentioned that they regularly moved the SCK around in
+the house to explore the sensor readings in different parts of
+the house, because the kit was in the way, or to create sensor
+readings that were much more similar to the other households. More general, the deployment of the SCK helped
+households reflect on which types of sensors are available
+and the potential effects of the pollution. However, both the
+interviews and diary entries showed that none of the households fully understood the data or actively used the kit.
+The quantitative data shows that the cubes were widely and
+regularly used throughout the 10 days of phase 2 of the study.
+The diary and photos taken by the households showed that
+PhysiCubes were primarily placed in the living room and
+kitchen and in only one occasion in the bedroom. The cubes
+were placed on tables (kitchen counter or table) or on the
+window sills, but in a few instances the more subtle cubes
+were placed next to participants’ sofas or bedroom tables.
+Four households mentioned during the interviews that they
+regularly moved the cubes around in the rooms to explore
+where the visualizations would work best, but also depending on which sensor was connected to the cube. The participants reported that these explorations about where to best
+place the cubes were part of the initial data exploration,
+which is supported by the data that shows 50% of the data
+rules were created in the first 2 days of the second phase. In
+general, our interviews showed that participants considered
+the color and shape of the cubes as unobtrusive and beautiful
+as they blended into all homes (as seen in Figure 9).
+
+Figure 9. The PhysiBuzz cube integrated into the house.
+
+The interviews indicated that participants who spent more
+time at home were able to understand changes in data directly
+from the cubes. This was primarily the case for higher bandwidth cubes, such as the move and light cubes. This suggests
+that when people regularly observe the cubes, they can create
+
+a deeper understanding of the input-output relations. The two
+households that spent less time at home found it more difficult to understand changes in the data through the cubes and
+reported to look more at the SCK website. Data rules were
+primarily created by one person in each household who had
+claimed ownership over the configuration. When setting up the data
+rules, this ‘champion’ discussed the
+rules to make sure they only used
+“logical” connections but also to ensure other members of the household
+knew what the visualization meant.
+The social externalization of data
+Figure 10. Sticky Note rules helped users remember what
+each cube was representing, especially when exploring new
+configurations and sensors. In two households, creating data
+rules was a shared responsibility. This introduced problems
+in that others in the household did not know about the newly
+created rules and, hence, did not understand the visualization. To handle this, h3 reported that they simply checked the
+connections in the application. Another strategy used by h5
+was to use sticky notes to share what the cube was visualizing (Figure 10). During the in-situ interviews, we also observed how different members of the household had a different understanding about the cubes. For example, in one
+household, the users linked the color of the cubes to the sensor they represented, so changes in the rules required them to
+reconstruct the meaning of the cubes. As described by H5:
+“You linked them in a different way in your head. I linked
+them color-wise. That’s one difference straightaway.”
+Two households kept the cubes and SCK in the same room
+as it did not make sense to them to visualize data from another physical space. More generally, the diaries and interviews showed that households agreed that the cubes provided
+a suite of possible visualizations that could be employed for
+different use cases. PhysiBuzz, for example, was frequently
+perceived as an extreme visualization that was too loud. As
+seen in Figure 9, h5 placed it on top of a towel to dampen the
+noise and create a more acceptable vibration. However, multiple participants argued that the loudness and intrusiveness
+would be appropriate for alerts. For example, when the CO
+level is at a critical level, a loud warning would be useful.
+The PhysiLight was considered one of the most useful cubes,
+as it had a higher output bandwidth than the other cubes and
+could signal data without the need for people to wait for
+physical changes. In h1, PhysiLight was used by the parents
+to show the noise levels of their children in the house. However, the strategy of using the cube to show the children how
+loud they were backfired as the kids found out through the
+cube that their mom was louder than them. The air cube was
+considered to be abstract as it was hard to understand data,
+and required monitoring. As described by the couple in h5:
+“The fan is also not very intrusive. It’s all about where you
+put it. I could have put it somewhere else and I wouldn’t even
+have known it was going on because it’s a very subtle thing.”
+
+One household proposed to place
+the PhysiAir next to the ecological waste unit to “stink up” the
+apartment when the CO level was
+too high to extend the visualization beyond the perceivable area
+around the cube to the rest of the
+house. PhysiMove was the cube
+that was most frequently appropriated. For example, h3 placed a
+basil plant on top of the PhysiMove (Figure 11) next to a winFigure 11. Basil plant
+dow. The cube was set up to rotate
+if the humidity was below 60%. At the end of the day, the
+household could tell by the direction of the open leaves of
+the plant whether the humidity was OK. They deduced if it
+was too high from whether the plant had started to lean towards the window – in doing so creating a naturally growing
+physical visualization that held historic data. Although
+PhysiLight was perceived as the most useful cube, one
+household argued that once setup, movement was a much
+better visualization. As described by father in h2:
+“The cog one for me was definitely the most interesting one.
+I think we put that one on the carbon monoxide... it would go
+faster as it rose you could visually see the difference.”
+All households reported to sometimes turn of the visualization using the power button. H1, for example, described how
+the kids would turn off the cubes when watching TV. Two
+other households turned them off when they went to bed, like
+other appliances in the house.
+During the final interviews it became clear that all households had an overview of the data of their SCK, and more
+importantly also formed an opinion about the potential accurateness and importance of the data. The cubes helped participants understand changes in the sensed data but also triggered them to investigate what was behind the change. The
+cubes also helped the participants to think and reflect on the
+data changes and made it more meaningful when looking at
+the data provided by the SCK website. The interviews
+showed how Physikit made data more visible to users, resulting in a change and broader interest in the different types of
+data. As described by h4:
+“Since having the Physikit […] I have been more interested
+in noise, humidity, temperature and light – all of which you
+can perceive using your senses.”
+Two households suggested that raw data could be available
+on the cubes since using an iPad to visit a website was sometimes too much effort. Throughout the deployment, participants also became increasingly suspicious about the accuracy of the kit. As their interaction with the data through the
+cubes increased, they realized by comparing their data to
+other households, that some of the sensor data was wrong.
+Using Physikit, all households realized issues with the NO2
+and CO sensors, and even started checking other websites to
+
+see to what degree the data was accurate. This better conceptualization of the data also influenced people’s behavior. H3,
+for example, started opening doors and windows more regularly whenever the humidity value went up and visualized the
+changes on the light cube to monitor changes over time. Two
+of the households also described that although they better understood how the data “worked” and what the sensor meant,
+they also felt powerless about some types of data, such as
+CO, since they could not influence or change it.
+DISCUSSION
+
+Our study demonstrates how 5 households used Physikit to
+explore a variety of data collected in their homes through
+configuring, appropriating and integrating the physical ambient visualizations into their everyday life. The results indicate that Physikit allows people to craft their own experiences, affordances and interpretation of data to help them
+build an engagement with the data set.
+Understanding Data
+
+Although evaluating the in-depth understanding of data was
+not a core purpose of the deployment, the study did reveal
+different ways by which the participants attempted to make
+sense of data. The findings show how the households who
+stayed at home during the day had more time to follow the
+changes over time whereas those who went out to work and
+were away for most of the day had to infer what had happened since they last looked at a cubes. The two households
+that spend most time at home were able to make sense of the
+data from the actuations of the cubes alone. The other households monitored the cubes and when the changes were frequent enough, they used the tablet to visit the website and
+look at the data represented by the cube. In these situations
+the cube itself did not provide enough capabilities to represent all the data changes, but was used as a catalyst that drew
+people in more to explore and understand the data. Users
+were also intrigued to know how they compared with others
+(e.g., were they less noisy than their neighbors or mother?).
+This ability to compare their data with other’s data using the
+cubes proved to be an interesting mechanism to elicit engagement with data, providing in-roads to the sensed data,
+via a particular form of human interest. In two households,
+participants also crafted their own visualizations using the
+cubes as a toolbox by, e.g., placing a basil plant on the PhysiMove. In doing so, they were able to create their own personal ambient device that showed at a glance, historic data
+about their house. Specifically, in the example of the basil
+plant, they could immediately see whether or not the humidity in the house was at the right level, without the need to
+dive into the underlying data. This example demonstrates a
+potential for users to design and craft their own personalized
+physical visualizations that can hold rich historical data.
+Data To Cubes Mappings
+
+The study demonstrates how participants created a diversity
+of rules but also indicated what was of most interest to them.
+The data shows that households were primarily interested in
+the noise, light, and humidity data, and not so much in the air
+pollution data (CO and NO2). The mapping data also shows
+
+that although households created rules between sensors and
+visualizations that had a clear similarity (e.g., light or air),
+most of the created rules in fact did not have any apparent
+relation between sensor data and output visualization. This
+suggests that users are willing and able to explore alternative
+mappings between the input and output space as part of the
+data exploration process. Although the PhysiLight was perceived as the most useful visualization because of its high
+output bandwidth, it did not outweigh the other cubes. Rather, as indicated by the mapping data, different visualizations serve different purposes depending on their affordances
+and output. The light and move cubes were perceived as general purpose visualizations that could depict any data,
+whereas the air and vibration cubes tended to be mapped onto
+specific kinds of events, for example, to provide a warning
+by buzzing loudly. Alerts and constant mappings were much
+more popular than relative changes, which were not used often. Although some of the mapping configurations appeared
+to be quite similar, participants were able to distinguish between them because they had created the mapping themselves and hence knew what they meant.
+In this study, the cubes were used for urban data. However,
+they can also be used in a other contexts such as social media
+events (trending issues, news flashes, new messages), health
+data (glucose levels, blood pressure, heart rate) or public data
+(e.g., swimming pool occupancy, number of people visiting
+a site). The cubes could be positioned at home, work or even
+in public places. The configurable affordances make it possible for people, groups or organizations to create and decide
+themselves. Future research is required to examine how well
+Physikit scales up and is suited to other kinds of settings.
+Flow-Based Programming
+
+The study suggests that people are comfortable with, and understand readily a guided form of end-user programming
+when configuring domestic-based IoT. A guided, abstracted
+and constrained flow-based system on a screen allowed people to quickly and effortlessly explore data connections. The
+well-established pipe-based programming paradigm is an
+easy to use and understandable interface for configuration of
+IoT devices. The interface helped users understand how to
+create, delete or change rules. It also encourages a range of
+data-to-physical mappings to be explored before settling on
+a stable set of connections that make sense and can easily be
+remembered. Although the abstractions and path of least resistance allowed for low configuration work, it also greatly
+limited the options to create more complex rules. While the
+back-end does support complex data aggregation, and combined outputs, the interface does not provide programming
+concepts and UI components to support this. There is, thus,
+an important trade-off between configurability and ease of
+use that needs further research to understand the difference
+between guided and free-form data exploration, but also to
+explore programming of mappings through the cubes themselves. Another problem that emerged from the study is conflict during collaborative rule editing. In two of the households the data rules were created and changed by several
+
+members, thus, creating confusion on both the output on the
+visualizations but also on the correctness of the rules. Potential solutions for this could be to include awareness or ownership cues in the created rules, but more research into collaborative end-user programming is needed to understand
+how people can share rule editing.
+Integration and Appropriation
+
+All households creatively integrated the cubes into their
+homes to find suitable use cases for the visualization in relation to the available data. The cubes were largely used as
+standalone displays. A different form factor, such as using
+smaller cubes or cylindrical shapes, might afford other ways
+by which people could integrate and embed them into their
+homes. In general, our study indicates that using physical
+tangible displays provides much scope for exploring data.
+The cubes stand out and arouse curiosity [17] (e.g., compared
+to digital notifications). They can be placed in the home or
+other places for a group to see rather than popping up on an
+individual’s smartphones (as is often the default mechanism). The portability and color provided the opportunity for
+each cube to have its own distinct personality that can be situated and integrated in people’s homes. They easily afford
+placing on shelves, window sills, kitchen tops, tables, TV
+and so on. They also readily enable adaptations and dressing
+up, such as placing things on top of them (e.g., plants, objects). They can be designed to blend into a room so that they
+become another household object. However, they can also
+encourage individual possession. Different members of a
+household might want the blue one, or the one that moves.
+This can also be turned around; how to share them and decide
+how to map them can be viewed as a tool to explore family
+dynamics. The current study explored the use of Physikit for
+a short period of time, but more studies are needed to investigate the long-term effects and sustainability of ambient
+physical visualizations for various data sets.
+CONCLUSION
+
+Physikit was designed as a new kind of interface for the general public to explore data through reconfigurable and appropriable physical ambient visualizations that represent data
+through movement, vibrations, air and light. Our human-data
+design approach shows that it is possible to provide people
+with tools and mechanisms to craft their own data experiences to build better data concepts. Our field study showed
+how households successfully and creatively appropriated and
+used the kit to integrate data into their homes. The cubes
+probed participants with data changes that resulted in further
+inspection of the underlying data. The study also showed
+how people designed their own experiences using the cubes
+as building blocks. Physikit has shown how it is possible to
+democratize data to the general public in ways that are meaningful, creative, and aesthetic, while opening the door for
+end-user programming to be repurposed in the realm of IoT.
+ACKNOWLEDGEMENTS
+
+This work was supported by ICRI Cities. Thanks to our
+anonymous reviewers for their feedback and helpful suggestions for the improvement of the manuscript.
+
+REFERENCES
+
+1.
+
+Swamy Ananthanarayan, Nathan Lapinski, Katie Siek,
+and Michael Eisenberg. "Towards the crafting of personal
+health technologies." In Proceedings of the 2014 conference on Designing interactive systems, pp. 587-596.
+ACM, 2014.
+
+2.
+
+Mara Balestrini, Paul Marshall, and Tomas Diez. "Beyond
+boundaries: the home as city infrastructure for smart citizens." In Proceedings of the 2014 ACM International
+Joint Conference on Pervasive and Ubiquitous Computing: Adjunct Publication, pp. 987-990. ACM, 2014.
+
+3.
+
+4.
+
+Mara Balestrini, Tomas Diez, Paul Marshall, Alex
+Gluhak, and Yvonne Rogers. “IoT Community Technologies: Leaving Users to Their Own Devices or Orchestration of Engagement?” In EAI Endorsed Transactions on
+Internet of Things, EAI, 2015, Vol. 15 (1).
+Michael Blackstock, and Rodger Lea. "IoT mashups with
+the WoTKit." In Internet of Things (IOT), 2012 3rd International Conference on the, pp. 159-166. IEEE, 2012.
+
+5.
+
+Alan F. Blackwell, and Rob Hague. "AutoHAN: An architecture for programming the home." In Human-Centric
+Computing Languages and Environments, 2001. Proceedings IEEE Symposia on, pp. 150-157. IEEE, 2001.
+
+6.
+
+Saskia Bakker, Elise van den Hoven, and Berry Eggen.
+"Peripheral interaction: characteristics and considerations." Personal and Ubiquitous Computing 19, no. 1
+(2015): 239-254.
+
+7.
+
+Andreas Butz, Michael Schmitz, Antonio Krüger, and
+Harald Hullmann. "Tangible UIs for media control:
+probes into the design space." In CHI'05 Extended Abstracts on Human Factors in Computing Systems, pp. 957971. ACM, 2005.
+
+12. Alois Ferscha, Simon Vogl, Bernadette Emsenhuber, and
+Bernhard Wally. "Physical shortcuts for media remote
+controls." In Proceedings of the 2nd international conference on INtelligent TEchnologies for interactive enterTAINment, p. 9. ICST (Institute for Computer Sciences,
+Social-Informatics and Telecommunications Engineering),
+2008.
+13. Sean Follmer, Daniel Leithinger, Alex Olwal, Akimitsu
+Hogge, and Hiroshi Ishii. inFORM: dynamic physical affordances and constraints through shape and object actuation. In Proceedings of the 26th annual ACM symposium
+on User interface software and technology. ACM, 2013.
+14. John Hardy, Christian Weichel, Faisal Taher, John Vidler,
+and Jason Alexander. "ShapeClip: towards rapid prototyping with shape-changing displays for designers." In Proceedings of the 33rd Annual ACM Conference on Human
+Factors in Computing Systems, pp. 19-28. ACM, 2015.
+15. Jeremy M. Heiner, Scott E. Hudson, and Kenichiro
+Tanaka. "The information percolator: ambient information
+display in a decorative object." In Proceedings of the 12th
+annual ACM symposium on User interface software and
+technology, pp. 141-148. ACM, 1999.
+16. Eva Hornecker, and Jacob Buur. "Getting a grip on tangible interaction: a framework on physical space and social
+interaction." In Proceedings of the SIGCHI conference on
+Human Factors in computing systems, pp. 437-446. ACM,
+2006.
+17. Steven Houben, and Christian Weichel. "Overcoming interaction blindness through curiosity objects." In CHI'13
+Extended Abstracts on Human Factors in Computing Systems, pp. 1539-1544. ACM, 2013.
+
+8.
+
+Jeeyong Chung, Kyungeun Min, and Woohun Lee.
+"CUBEMENT: democratizing mechanical movement design." In Proceedings of the 8th International Conference
+on Tangible, Embedded and Embodied Interaction, pp.
+81-84. ACM, 2014.
+
+18. Hilary Hutchinson, Wendy Mackay, Bo Westerlund, Benjamin B. Bederson, Allison Druin, Catherine Plaisant,
+Michel Beaudouin-Lafon et al. "Technology probes: inspiring design for and with families." In Proceedings of
+the SIGCHI conference on Human factors in computing
+systems, pp. 17-24. ACM, 2003
+
+9.
+
+Andrew Dahley, Craig Wisneski, and Hiroshi Ishii. "Water lamp and pinwheels: ambient projection of digital information into architectural space." In CHI 98 Cconference Summary on Human Factors in Computing Systems,
+pp. 269-270. ACM, 1998.
+
+19. Hiroshi Ishii, and Brygg Ullmer. "Tangible bits: towards
+seamless interfaces between people, bits and atoms."
+In Proceedings of the ACM SIGCHI Conference on Human factors in computing systems, pp. 234-241. ACM,
+1997.
+
+10. Tomas Diez, and Alex Posada. "The fab and the smart
+city: the use of machines and technology for the city production by its citizens." In Proceedings of the 7th International Conference on Tangible, Embedded and Embodied
+Interaction, pp. 447-454. ACM, 2013.
+
+20. Hiroshi Ishii, Craig Wisneski, Scott Brave, Andrew
+Dahley, Matt Gorbet, Brygg Ullmer, and Paul Yarin. "ambientROOM: integrating ambient media with architectural
+space." In CHI 98 Cconference Summary on Human Factors in Computing Systems, pp. 173-174. ACM, 1998.
+
+11. Tanja Döring, Axel Sylvester, and Albrecht Schmidt. "A
+design space for ephemeral user interfaces." In Proceedings of the 7th International Conference on Tangible, Embedded and Embodied Interaction, pp. 75-82. ACM,
+2013.
+
+21. Jens H. Jahnke, Marc D'entremont, and Jochen Stier. "Facilitating the programming of the smart home." Wireless
+Communications, IEEE 9, no. 6 (2002): 70-76.
+22. Yvonne Jansen, Pierre Dragicevic, and Jean-Daniel Fekete. "Evaluating the efficiency of physical visualizations." Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems. ACM, 2013.
+
+23. Yvonne Jansen, Pierre Dragicevic, Petra Isenberg, Jason
+Alexander, Abhijit Karnik, Johan Kildal, Sriram Subramanian, and Kasper Hornbæk. "Opportunities and challenges
+for data physicalization." In CHI 2015-Proceedings of the
+SIGCHI Conference on Human Factors in Computing
+Systems. 2015.
+24. Rohit A. Khot, Larissa Hjorth, and Florian 'Floyd Mueller.
+"Understanding physical activity through 3D printed material artifacts." In Proceedings of the 32nd annual ACM
+conference on Human factors in computing systems, pp.
+3835-3844. ACM, 2014.
+25. Robert Kowalski, Sebastian Loehmann, and Doris
+Hausen. "cubble: a multi-device hybrid approach supporting communication in long-distance relationships."
+In Proceedings of the 7th International Conference on
+Tangible, Embedded and Embodied Interaction, pp. 201204. ACM, 2013.
+26. Jamshaid G. Mohebzada, and Arsalan H. Bhojani. "The
+cubes: A tangible game-based learning system." In Innovations in Information Technology (IIT), 2011 International Conference on, pp. 179-184. IEEE, 2011.
+27. Elizabeth D. Mynatt, Maribeth Back, Roy Want, Michael
+Baer, and Jason B. Ellis. "Designing audio aura." In Proceedings of the SIGCHI conference on Human factors in
+computing systems, pp. 566-573. ACM Press/AddisonWesley Publishing Co., 1998.
+28. Hyunjoo Oh, and Mark D. Gross. "Cube-in: A Learning
+Kit for Physical Computing Basics." In Proceedings of the
+Ninth International Conference on Tangible, Embedded,
+and Embodied Interaction, pp. 383-386. ACM, 2015.
+29. Zachary Pousman, and John Stasko. "A taxonomy of ambient information systems: four patterns of design."
+In Proceedings of the working conference on Advanced
+visual interfaces, pp. 67-74. ACM, 2006.
+30. Zachary Pousman, John T. Stasko, and Michael Mateas.
+"Casual information visualization: Depictions of data in
+everyday life." Visualization and Computer Graphics,
+IEEE Transactions on 13, no. 6 (2007): 1145-1152.
+31. Kathrin Probst, Michael Haller, Kentaro Yasu, Maki
+Sugimoto, and Masahiko Inami. "Move-it sticky notes
+providing active physical feedback through motion."
+In Proceedings of the 8th International Conference on
+Tangible, Embedded and Embodied Interaction, pp. 2936. ACM, 2014.
+32. Michal Rinott, Shachar Geiger, Eran Gal-Or, and Luka
+Or. "Cubes." InProceedings of the 7th International Conference on Tangible, Embedded and Embodied Interaction, pp. 397-398. ACM, 2013.
+33. Bert Schiettecatte, and Jean Vanderdonckt. "AudioCubes:
+a distributed cube tangible interface based on interaction
+range for sound design." In Proceedings of the 2nd international conference on Tangible and embedded interaction, pp. 3-10. ACM, 2008.
+
+34. Orit Shaer, and Eva Hornecker. "Tangible user interfaces:
+past, present, and future directions." Foundations and
+Trends in Human-Computer Interaction 3, no. 1–2 (2010):
+1-137.
+35. Ehud Sharlin, Yuichi Itoh, Benjamin Watson, Yoshifumi
+Kitamura, Steve Sutphen, and Lili Liu. "Cognitive cubes:
+a tangible user interface for cognitive assessment." In Proceedings of the SIGCHI conference on Human factors in
+computing systems, pp. 347-354. ACM, 2002.
+36. Simon Stusak, Aurélien Tabard, Franziska Sauka, Rohit
+Ashok Khot, and Andreas Butz. "Activity sculptures: Exploring the impact of physical visualizations on running
+activity." Visualization and Computer Graphics, IEEE
+Transactions on 20, no. 12 (2014): 2201-2210.
+37. Simon Stusak, Jeannette Schwarz, and Andreas Butz.
+"Evaluating the Memorability of Physical Visualizations."
+In Proceedings of the 33rd Annual ACM Conference on
+Human Factors in Computing Systems, pp. 3247-3250.
+ACM, 2015.
+38. Faisal Taher, John Hardy, Abhijit Karnik, Christian
+Weichel, Yvonne Jansen, Kasper Hornbæk, and Jason Alexander. "Exploring interactions with physically dynamic
+bar charts." In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems, pp.
+3237-3246. ACM, 2015.
+39. Craig Wisneski, Hiroshi Ishii, Andrew Dahley, Matt Gorbet, Scott Brave, Brygg Ullmer, and Paul Yarin. "Ambient
+displays: Turning architectural space into an interface between people and digital information." In Cooperative
+buildings: Integrating information, organization, and architecture, pp. 22-32. Springer Berlin Heidelberg, 1998.
+40. Lining Yao, Jifei Ou, Chin-Yi Cheng, Helene Steiner,
+Wen Wang, Guanyun Wang, and Hiroshi Ishii. "bioLogic:
+Natto Cells as Nanoactuators for Shape Changing Interfaces." In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems, pp. 1-10.
+ACM, 2015.
+41. Jack Zhao, and Andrew Vande Moere. "Embodiment in
+data sculpture: a model of the physical visualization of information." In Proceedings of the 3rd international conference on Digital Interactive Media in Entertainment and
+Arts, pp. 343-350. ACM, 2008.
+42. LabView. Retrieved on January 7, 2015 from
+http://www.ni.com/labview/
+43. Max/MSP. Retrieved on January 7, 2015 from
+https://cycling74.com/
+44. NodeRed. Retrieved on January 7, 2015 from
+http://nodered.org/
+45. SamLabs. Retrieved on January 7, 2015 from
+https://samlabs.me/
+46. Quartz Composer. Retrieved on January 7, 2015 from
+https://developer.apple.com/
+
+

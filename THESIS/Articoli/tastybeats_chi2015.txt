@@ -1,0 +1,1075 @@
+TastyBeats:
+Designing Palatable Representations of Physical Activity
+Rohit Ashok Khot1, Jeewon Lee1, Deepti Aggarwal2, Larissa Hjorth3, Florian ‘Floyd’ Mueller1
+1
+2
+3
+Exertion Games Lab
+Microsoft Centre for Social NUI,
+RMIT University,
+RMIT University, Australia
+University of Melbourne, Australia
+Australia
+{ rohit, jeewon, floyd }@
+daggarwal@student.unimelb.edu.au larissa.hjorth@rmit.edu.au
+exertiongameslab.org
+
+Figure 1: TastyBeats is a fountain-based interactive system that creates a fluidic spectacle of
+mixing sport drinks based on heart rate data of physical activity.
+ABSTRACT
+
+In this paper, we introduce palatable representations that
+besides improving the understanding of physical activity
+through abstract visualization also provide an appetizing
+drink to celebrate the experience of being physically active.
+By designing such palatable representations, our aim is to
+offer novel opportunities for reflection on one’s physical
+activities. We present TastyBeats, a fountain-based
+interactive system that creates a fluidic spectacle of mixing
+sport drinks based on heart rate data of physical activity,
+which the user can later consume to replenish the loss of
+body fluids due to the physical activity. We articulate our
+experiences in designing the system as well as learning
+gained through field deployments of the system in
+participants’ homes for a period of two weeks. We found
+that our system increased participants’ awareness of
+physical activity and facilitated a shared social experience,
+while the prepared drink was treated as a hedonic reward
+that motivated participants to exercise more. Ultimately,
+with this work, we aim to inspire and guide design thinking
+on palatable representations, which we believe opens up
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. Copyrights for
+components of this work owned by others than ACM must be honored.
+Abstracting with credit is permitted. To copy otherwise, or republish, to
+post on servers or to redistribute to lists, requires prior specific permission
+and/or a fee. Request permissions from permissions@acm.org.
+CHI 2015, April 18 - 23 2015, Seoul, Republic of Korea.
+Copyright is held by the owner/author(s). Publication rights licensed to
+ACM.
+ACM 978-1-4503-3145-6/15/04...$15.00.
+http://dx.doi.org/10.1145/2702123.2702197
+
+new interaction possibilities to support physical activity
+experience.
+Author Keywords
+
+Palatable representation; fluidic interfaces; physical
+activity; quantified self; personal informatics; Human-Food
+Interaction (HFI).
+ACM Classification Keywords
+
+H.5.m. Information interfaces and presentation (e.g., HCI):
+Miscellaneous.
+INTRODUCTION
+
+Activity trackers like pedometers and heart rate monitors
+are becoming increasingly popular to support physical
+activity experiences [41]. These devices collect personally
+relevant data such as bodily responses to physical activity
+and provide opportunities to reflect on the collected data
+through self-monitoring [22]. For example, pedometers
+count the number of steps taken in a day, while heart rate
+monitors inform about exercise intensity. Research suggests
+that regular use of these devices can increase user
+motivation for physical activity [35, 43].
+One key aspect of tracking physical activity is visualization,
+which improves understanding of the data [22, 35].
+“Seeing” makes knowledge credible [4] and “greater
+visibility of information puts an added responsibility to act
+on” as pointed out by Viseu and Suchman [45]. For
+example, by visualizing physical activity data, users can
+gain a better understanding of their physical activity levels
+and can make this gained knowledge actionable towards
+
+their health and fitness related aims [22]. However, physical
+activity data such as heart rate is abstract in nature and does
+not have a “natural counterpart that can be graphically
+reproduced”, as noted by Vande Moere [44]; thus
+highlighting the role of designers for creating meaningful
+mappings to communicate this information to the user. In
+response, previous works in the field of HCI have looked at
+different on-screen visualization methods [1, 7, 8, 12, 23].
+A screen, on one hand, offers the capacity to stimulate
+visual senses, but on other hand, often reduces the user
+interaction to just the reading of information due to its flat
+display surface. We think that there is an opportunity to
+explore new ways of engaging with physical activity data
+that should go beyond visualizing data on screens. We
+believe that physical activity data is not just a number, but
+rather a unique and personal outcome that reflects the
+amount of energy expended and efforts invested by the
+user; which we think needs to be emphasized and
+celebrated.
+We, therefore, introduce palatable representations that
+besides improving the understanding of physical activity
+through fluidic visualization also provide an appetizing
+drink to celebrate the experience of being physically active.
+Palatable representation for us involves the use of drinkable
+fluids such as sports drinks to represent physical activity
+data. As a proof of concept, we present TastyBeats, an
+interactive system that utilizes heart rate data of physical
+activity to create a personalized sports drink. TastyBeats
+employs a fountain-based interaction to fashion a fluidic
+spectacle that can also be tasted, thus offering vivid ways of
+engagement with the data. Additionally, the prepared drink
+serves as a refreshment to replenish body fluids that were
+lost during physical activity. As such, palatable
+representations contribute to the human energy cycle, where
+the energy, which is lost during the physical activity, is
+given back to the body in the form of a drink.
+In order to understand how palatable representations can
+support the everyday physical activity experience, we
+conducted “in the wild” [34] field deployments of the
+TastyBeats system. We deployed TastyBeats in three
+households for a period of two weeks where six
+participants, two from each house, interacted with the
+system on a daily basis. Participants were asked to measure
+their heart rate data for the entire day and then prepare a
+drink in the evening. We found that our system increased
+awareness about physical activity and the experience was
+rewarding and motivating for the participants. We utilize
+these findings as well as our experiences of designing the
+system to articulate interesting aspects of palatable
+representations, which we believe opens up new interaction
+possibilities to support the human energy-cycle.
+RELATED WORK
+
+Commercial physical activity sensor systems often support
+visualizations of physical activity data through an
+accompanying website or a smartphone app, where physical
+
+activity data is analyzed through numbers, bar charts and
+graphs. Studies, however, show that many people have low
+graph literacy skills and, therefore, do not easily grasp
+statistical data [15]. As a result, much of the health and
+physical activity related smartphone apps could fall short in
+engaging people. In response, prior works have looked at
+other ways of representing physical activity data.
+Visualization through digital metaphors
+
+Consolvo et al. [7] redesigned mobile phone screens in the
+form of a virtual garden where the flowers grow in size as
+the user performs physical activity; This method of
+visualization motivated participants in maintaining their
+physical activity as participants wanted to make the virtual
+flowers grow. In another system called Fish’n’Steps [23],
+user’s step count was mapped to an animated fish, which
+became happy or sad based upon how many steps the user
+had taken in a day. However, authors found that
+participants were not interested to look at the fish when
+they were inactive because they knew that their sedentary
+activity would make the fish sad [23]. In other works,
+Anderson et al. [1] developed a system called Shakra where
+physical activity of the user was monitored using mobile
+cell signal information; they found that increasing
+awareness about physical activity encouraged reflection
+upon one’s physical activity. These works suggest that
+digital metaphors to visualize physical activity data have
+the potential to motivate users to achieve health goals.
+Visualization through physical metaphors
+
+Along with digital metaphors, researchers have also
+explored physical metaphors for representing physical
+activity data. For example, Jafarinaimi et al. [18] created a
+physical sculpture that provides feedback on sitting in a
+proper posture. Recently, Khot et al. [19] and Stusak et al.
+[40] designed 3D printed physical metaphors to represent
+physical activity data in a material form; their
+accompanying studies reveal that user relationship with
+physical activity gets positively influenced with physical
+metaphors. These works suggest that physical medium has
+great potential to support the physical activity experience.
+Visualization through informative art
+
+Fan et al. [12] explored the feasibility of informative art by
+designing and studying various abstract visualizations of
+physical activity. They found that people have different
+tastes when it comes to appreciating and relating to abstract
+visualizations of their physical activity data. This work
+suggests us to consider varied preferences of the users,
+while designing visualization schemes.
+Visualization through playful systems
+
+Prior works have also utilized physical activity data to
+enhance gameplay experiences and thereby, creating
+opportunities for physical activities around playful systems.
+For example, the Run Zombie Run [36] mobile app
+harnesses an engaging game-based narrative to make users
+
+jog more. Berkovsky et al. [3] have looked at virtual game
+rewards in exchange of physical activity while Nenonen et
+al. [28] utilized heart rate data as a game input. In other
+works, TripleBeat system [29] allows runners to stay in
+their target heart rate zones through virtual competition.
+These works suggest the potential of a playful interface to
+support the physical activity experience.
+Rethinking physical activity representation
+
+Review of the existing literature suggests that there is an
+emphasis on using the digital medium to represent physical
+activity, which not only limits the interaction opportunities
+to visualization but also overlooks the multi-sensory aspect
+of experiencing the physical activity data. Since physical
+activity data can approximately reflect the amount of
+energy invested by the user in a physical activity, we
+believe there is an opportunity to harness this information
+to contribute to the human energy cycle by “giving back to
+the body what it has lost during physical activity”.
+Supporting this, we introduce palatable representations that
+turn physical activity data into an appetizing sports drink.
+Since intense physical activity sessions can cause loss of
+body fluids; sports drinks can help in the recovery of such
+body fluids [37]. However, we are also aware that the
+human energy-cycle is much more complex as the literature
+on exercise and nutrition suggests [37]: We, therefore, do
+not portray that a created sports drink exactly matches with
+an hourly exercise, for instance. However, considering the
+trends in quantified self [41] and food printing [38, 47], we
+see an opportunity to combine the two. For example,
+quantified self focuses on sensing energy expenditure,
+whereas food printing focuses on new ways of producing
+energy that can be consumed. We find this an intriguing
+combination that we believe holds an exciting premise for
+HCI.
+To the best of our knowledge, there has not been any
+exploration on using fluids to represent physical activity.
+However, past works in HCI have explored fluids for
+creating novel interactive experiences. For example, the
+Currency Fountain [9] shows the currency rates using a
+water fountain based display while Geurts et al. [17]
+designed a Splash Controller for interactive play
+experiences with water. Similarly, Steve Mann designed
+various fluidic musical instruments such as the Water
+Hammer Piano [25]. The Student Innovation Contest at
+UIST 2013 featured various fluidic interaction possibilities
+developed using the PumpSpark water fountain kit [11]. A
+few other works explored the use of soap bubbles [42] as
+well as water jets [33] for tangible interactions with
+computer systems. These works illustrate the potential of
+fluids in representing information and creating engaging
+experiences. However, there has not been much exploration
+on drinkable fluids except a system by Daisuke that
+transforms backend web processing data into a drink [10].
+In response, we propose TastyBeats as the first exploration
+of using drinkable fluids to represent physical activity data.
+
+WHAT IS TASTYBEATS?
+
+TastyBeats is an interactive system that transforms heart
+rate data of a physical activity into a personalized drink. We
+employ a fountain-based interaction in the preparation of
+the drink, which not only provides visualization of the
+performed physical activity but also turns this event into a
+spectacular and celebratory event.
+The TastyBeats setup includes a central glass and four
+containers as shown in Figure 1. Each container has a food
+graded water pump [14] fitted at the bottom. These pumps
+shoot drinks from the containers into the central glass
+(Refer Figure 2) and are driven by Arduino [2]. Working of
+the system is explained below.
+
+Figure 2: TastyBeats in action.
+Mapping heart rate data to different drinks
+
+TastyBeats divides heart rate values into four zones
+following Fletcher’s classification of physical activity
+levels based on heart rate [13], however, the range of values
+were slightly adjusted to suit the current interaction. Each
+zone has a characteristic drink as explained below. In the
+current prototype, we have used Mio liquid enhancers [26]
+for preparing the drinks because they came in a variety of
+flavors and they had zero sugar and zero calories. We want
+to highlight that the use of sports drinks was mainly driven
+from the interaction angle; we did not intend to advocate
+sports drinks or the usefulness of them in relation to
+physical activity.
+1) Low activity zone: Water
+
+The first zone is a low activity zone where the user is
+mostly sedentary or doing light physical activities such as
+standing and walking. This zone corresponds to a range of
+heart rate values varying from 60 to 95 beats per minute
+(bpm). Since there is not much physical activity happening
+in this zone, we choose water to represent this zone.
+2) Moderate activity zone: Light flavored water
+
+The second zone describes aerobic activities corresponding
+to a range of heart rate values from 96 to 130 bpm. We
+choose light flavored water such as mango-peach flavor of
+Mio liquid water enhancers to represent this zone.
+
+3) High activity zone: Electrolytes
+
+Third zone describes aerobic activities with high intensity
+and corresponds to a range of heart rate values lying in
+between 131 to 165 bpm. Such activities if done for a
+longer duration may require electrolyte supplements [37].
+We therefore choose Mio liquid enhancer containing
+electrolytes to represent this zone.
+
+(Figure 3). Below we mention the key topics we discussed
+and how we came up with the final design of the system.
+
+4) Intense activity zone: Rich flavored water
+
+The fourth zone corresponds to intense physical activities
+with heart rate values between 166 to 195 bpm that usually
+do not last more than 10 minutes [37]. We choose a dark
+red and rich flavored (Mio fruit punch flavor) drink to
+describe its occurrence in a physical activity session.
+
+Figure 3: Other design options for TastyBeats were discussed
+but not considered due to a) less interaction possibility with
+equidistant pumps, b) self-priming issue with the pumps.
+
+Dynamics of the fluid spectacle
+
+Arranging the containers (setup)
+
+We use Polar H7 heart rate monitor [30] and its
+accompanying smartphone app, Polar Beat to record the
+heart rate data of a physical activity session. The Polar Beat
+app saves the heart rate data on Polar website, from where
+we download the heart rate data in XML format. TastyBeats
+application written in Processing [31] then identifies the
+pattern of heart rate zones from the XML file and sends this
+pattern to the TastyBeats system via serial communication.
+This pattern enumerates identified heart rate zones along
+with their frequency. For example, for a set of heart rate
+values: (69,75,83,102,150), the heart rate pattern would be
+[(zone: 1, freq.: 3), (zone: 2, freq.: 1), (zone: 3, freq.: 1)].
+
+Choosing the physical activity data
+
+Initially, there were ideas about keeping all four containers
+at equal distance from the central glass such as in a semicircular or square fashion (Figure 3a). However, we decided
+to put the containers in a straight line around the central
+glass (as shown in Figure 1) that offered us more interaction
+flexibility. For example, containers that are further apart
+from the central glass give higher elevation for the water
+shoot than the ones that are closer to the central glass;
+making it easier to see the differences in the heart rate while
+witnessing the system interaction.
+
+The TastyBeats system reads the pattern sequentially and
+accordingly drives the pumps from the corresponding
+containers. The pumps shoot the drink into the central glass
+for 2 seconds, so that the central glass can accommodate
+multiple shoots from every container. The central glass gets
+full by 30 shoots with 400ml of drinks. Now, for a longer
+physical activity session, 7-8 hours in our case, we
+optimized our system so that it shoots drink only when the
+pattern moves to a different zone. For example, if the heart
+rate data stayed in the same zone, shooting happens only
+once. The system stops when the pattern gets finished or the
+glass gets filled with 30 shoots.
+
+We chose heart rate as opposed to other physiological
+measures such as METs and steps because heart rate is
+more personal as well as dynamic. As a result, the chances
+that the system would produce distinctly flavored drinks are
+high. For example, an activity comprising of transitions
+between low and moderate activity zones will add water
+and light flavored water respectively into the central glass,
+while an activity causing rapid transitions between different
+zones will add more flavors as well as electrolytes to the
+drink. From our study, we also found that using heart rate
+enabled tracking of other psychological factors such as
+stress, which we believe are also essential while
+considering the overall well being of a person.
+
+Design process and considerations
+
+Creating the personalized drink
+
+We have taken an incremental and exploratory approach for
+designing the TastyBeats system where the data gathered
+from one trial informed the system design for the next trial.
+As such the design inquiry for TastyBeats was carried out
+in three phases as explained below.
+In the first phase, regular focus group discussions were held
+with participants from the community surrounding our
+research lab. The participants came from varied academic
+backgrounds such as industrial design, computer science,
+and HCI, which helped us to draw from their experience
+and discuss advanced topics such as engaging aspects of a
+palatable interface. Several design ideas were proposed for
+the possible interface demonstrating the diversity in user
+expectations as well as choices for an interactive setup
+
+To create a personalized drink, different parameters such as
+smell, texture, viscosity, and flavor were considered.
+However, our design choices were limited due to the
+hardware (pumps) available with us. As a result, we had to
+discard some of the drink parameters. For example, the
+pumps did not work with carbonated water, thus giving
+texture to the drink was not feasible; Additionally, since the
+pumps were not self-primed, they needed to be immersed in
+liquid for pumping (Figure 3b). As a result, we looked only
+at such parameters with which the pumps could work
+successfully. We therefore utilized three parameters: flavor,
+volume and color of the drink to create a meaningful
+mapping between the physical activity data and created
+drink. Flavor of the drink is based on the identified heart
+
+rate zones in the data, while the recurring occurrence of
+these zones within the data contributes to the volume of the
+drink (which increases with the activity duration) thus
+describing both quality as well as the quantity of the
+activity. Finally, color is used to signify the highest reached
+heart rate zone in the data, besides it also creates a visual
+appeal to understand the data even from a distance.
+In the second phase, we exhibited early versions of the
+TastyBeats systems at three different academic venues
+where more than 400 participants interacted with the
+system. Each of these exhibitions helped us to refine our
+design further by resolving issues such as food safety (using
+materials that are food safe). Other findings from the
+exhibitions are explained in [20]. In the final phase, we
+field deployed the system in various houses to study its use
+in everyday context, which we discuss in the next section.
+
+poster explaining the study’s procedure (Figure 5). We also
+provided sanitizers and napkins to clean the glasses and
+accidental spilling of drinks. We also provided users with a
+MacBook Air to run the TastyBeats system. Participants
+were not compensated to participate and the system was
+taken back at the end of the study. Following the cultural
+probing practice [16], we also supplied diaries and asked
+participants to reflect upon their experiences with the
+system.
+
+TASTYBEATS IN ACTION (FIELD STUDY)
+
+We conducted an exploratory “in the wild” study [34] to
+understand how TastyBeats will integrate into everyday
+physical activity experiences and what effect it can have on
+everyday physical activity. Given the exploratory nature of
+this work, we focused on gathering a rich set of opinions
+that illustrate reflective thinking about a system rather than
+a majority.
+Recruitment
+
+The study took place in three households across a large
+metropolitan city for a period of two weeks. In total, we had
+six participants: 1 couple in mid thirties (Chad: 37 yrs.,
+Male; Sarah: 34 yrs., Female), 1 couple in mid twenties
+(Dave: 28 yrs., Male; Sarah: 26 yrs.) and two housemates
+(Adam: 26 yrs. Male; Rahim: 29 yrs., Male). Our intention
+behind using more than one participant from the same
+house was to investigate the affect of palatable
+representations on social dynamics as explored in previous
+works on material representations [19, 40]. Figure 4
+provides demographic details of the participants along with
+their level of physical activity every week (low: 1-2 days,
+moderate: 3-4 days, high: more than 4 days). All
+participants had tried electrolytes-based sports drinks
+before, but their main source of rehydration was water.
+
+Figure 4: Demographic details of our study participants along
+with their level of physical activity (PA).
+Setup
+
+Each house received a kit containing the TastyBeats
+system, two Polar H7 heart rate monitors, two iPods and a
+
+Figure 5: Each house received a kit containing the TastyBeats
+system and a poster explaining the study’s procedure.
+Procedure
+
+We installed the TastyBeats system in every household at a
+location of the participants’ choice (which we noted). We
+first gave a demo on how the system works with dummy
+data and explained the study procedure. We also printed an
+A3 poster detailing the study steps (Figure 5), asking the
+participants to perform the following tasks:
+Tasks in the morning:
+
+We asked the participants to wear the heart rate monitor and
+start the recording of the heart rate data through the Polar
+Beat application installed on the iPod. Usually the
+recording started around 7-8 am when participants began
+their day. We asked participants to continue their day as
+usual which may or may not involve physical activity.
+Tasks in the evening:
+
+In the evening, usually around 5-6 pm, when participants
+returned home from work, we told them to stop the Polar
+Beat application on the iPod and take off the heart rate
+monitor. Once the recording was stopped, the heart rate
+data from the day was synced to the Polar website.
+Participants then prepared the TastyBeats setup, which
+involved pouring water into the four containers and adding
+the liquid enhancers (two pinches) into three of them. We
+then asked the participants to press a button that
+downloaded the data and started the TastyBeats program on
+the provided laptop. The program then started the
+TastyBeats interaction, which involved shooting drinks into
+the central glass based on the heart rate data. The
+interaction lasted around 3-4 minutes. Finally, the
+participant was free to taste the prepared drink.
+
+Data source
+
+The main source of data was the interview conducted at the
+end of the study in participants’ home, which went for
+about 45 to 60 minutes per participant. The post interviews
+focused on participants’ experiences with the TastyBeats
+system. We also utilized the diaries given to the participants
+as well as photos and videos taken by the participants to
+further support the interviews. We visited each household
+two times (first and last day) and spent around 4 hours in
+total with participants at each house. We also maintained
+contact with everyone through emails and phone calls in
+case they needed any technical support. We took notes and
+recorded interviews, which were later coded and analyzed
+for common themes using a grounded theory approach.
+FINDINGS
+
+Given the long time frame necessary to achieving health
+benefits as a result of physical activity, it is often difficult to
+judge the efficacy of short design-led study interventions
+[5, 21]. Instead, it has been suggested that such
+interventions should be judged based on their impact on
+practices [5] and how they brought about changes in
+people’s attitudes (rather than behaviors), fostering
+mindfulness and leaving room for stories [32]. We describe
+below key insights gained from the deployments.
+Accommodating TastyBeats
+
+All participants welcomed the system with curiosity and
+considered it a part of their kitchen ambience. The system
+occupied a space on the kitchen slab in both couples’ home
+(Figure 6). Adam and Rahim, however, placed the system
+in a private room as one of their other roommates had a cat
+and they thought she might mess with the system.
+
+time for the drink; sometimes they had it just after coming
+back from work and some other times a little later.
+Enjoying the interaction
+
+All participants actively took part in making the drink
+everyday and keenly observed how the drink was being
+made through the fountain-based interaction. As such, the
+system became a part of their daily routine. According to
+Adam, the system was “something you always want to see,
+once you come home”, to which Rose added, “its nice to see
+the machine making a drink and the taste of the drink is
+also very good, but it is also very healthy, that way you feel
+good about it.” Along with the drink, the participants also
+appreciated the interactive quality of the system: “the best
+part of it is watching the interaction, shooting into the cup”,
+Dave commented. Rose was delighted to see her heart rate
+transformed into a drink, she mentioned, “compared to
+regular apps with only show the data, this prepares the
+drink, and that way its kind of special, it feels that you are
+getting energy back.”
+Taste as a surprise
+
+Sarah mentioned, “Seeing the drink is one thing, but if it’s
+the same color everyday, then there is no surprise. Surprise
+is the taste, which is different on daily basis.”
+Taste as a satisfaction
+
+Chad also commented, “Tasting it [drink] adds an element
+of satisfaction. It would have been less engaging if I was
+not allowed to drink it.” Adam felt, “it is like drinking your
+own progress, literally.”
+Witnessing the interaction
+
+Chad mentioned, “This (TastyBeats) is kind of neat where I
+can see the different levels mixing in. You actually get to
+interpret how active your day was based upon the drink
+being mixed. So, I think its more of incentive to see it mixed
+because you get a better understanding of why the drink is
+the way it is.”
+Relating TastyBeats to physical activity
+
+Participants mentioned that the presented data in its fluid
+form offered new insights into their physical activity
+routines. As a result, they became more attentive to their
+bodily responses and everyday activities.
+Figure 6: The TastyBeats system was placed on the kitchen
+slab in Dave and Rose’s house.
+Experiencing TastyBeats
+
+All participants tracked their data for around 7-8 hours
+every day. The couples preferred to have their drink after
+dinner usually around 9 pm. Dave mentioned that the drink
+was like a personalized dessert or pleasurable treat for the
+tiring day activity, while referring to the sweet taste of the
+drink, Sarah said: “it is like having a grape juice before
+going to bed”. Adam and Rahim did not have a preferred
+
+Correlating activities to drink
+
+Participants were able to correlate different days’ activities
+with the drink that was created in the evening, which in turn
+encourage them to try new physical activities. Rose tried
+different physical activities such as running, cycling and
+household cleaning on different days. She was able to
+differentiate how her heart rate data in these activities was
+reflected in the drink. Rahim confirmed this by saying: “I
+did see the differences [in the drink], when I had a more
+active day, there were subtle changes in the taste.”
+
+Identifying bodily warning signals
+
+The dark rich flavored drink that Sarah received on three
+consecutive sedentary days made her realize that she had
+very high heart rates. She told her husband about it and
+consequently they looked up the Internet to learn about
+“normal” heart rate values and possible reasons for higher
+values. They then tried to swap around the heart rate
+monitors on the next day to see if there was a fault with it.
+Sarah said: “What it [TastyBeats] made me aware of was
+my heart rate. It is not something that I think of. When I
+saw my high heart rate [through the dark red colored
+drink], I felt my pulse for the first time. It made me think
+about the reasons and found that medication is one of the
+factors [she was on a medication for a while during the
+study period].”
+Motivating to exercise
+
+A recurrent theme was the motivating quality of the system,
+linking to the theme of fulfilling the energy-cycle.
+Participants reported that the system encouraged them to
+not miss their daily workouts. Rose said: “Just to see what
+drinks you get and how much, you feel like going out and
+running, sometimes it’s like an inspiration.” Adam
+responded similarly, “it motivated me to exercise more”.
+On a sedentary day, Chad received a drink containing
+mostly water, to which he replied, “It was little bit
+frustrating to get watery drink, but it was not unexpected.
+That kind of motivated me for more physical exercise the
+next day to get drinks from level 3 and 4.”
+Taking health more seriously
+
+Dave spoke extensively about how TastyBeats made him be
+more serious about his as well as his wife’s health. He said,
+“I will continue cycling to work from now onwards”. Other
+participants also reported that the system encouraged them
+to not miss their daily workouts. Dave, Rose and Chad
+started walking or cycling to the work instead of driving.
+Social dynamics around TastyBeats
+
+Participants said that they often prepared their drinks
+together, laughing and discussing their activities with each
+other. Usually participants saw each other only in the
+evening. As such they did not know precisely how active
+the other person was during the day: The understanding
+came by watching the interaction when other person’s drink
+was being made. Chad said in the interview, “it's good that
+me and Sarah doing it [the study] together, as we get to see
+each other’s heart rate from the drinks being made” [with a
+smile], “in that way, Sarah now knows much more about me
+and my activities.”
+Facilitating competition
+
+Adam felt the system was highly competitive: he competed
+with Rahim in terms of who will burn more calories and get
+a better drink. He narrated to us a funny incident that
+happened during the study. “On Saturday, I stayed at home
+reading and watching TV, I did not go anywhere, but my
+
+friend Rahim went and played some sport [football with
+friends] and did some jogging and stuff like that, so it was
+physically very active day for him and for me it was very
+very inactive, just the opposite. When he came back, we did
+our drinks [together]. We started with him and his drink
+was pretty amazing and very concentrated, using lot of
+drink from [container] 3 and 4 and almost nothing from 1.
+After that it was my turn, since there was no activity by me,
+I did not get anything, just a little bit of water [from
+container 1] and nothing from the other. It was just funny.
+It was so obvious that he did lot of activities and I got what
+I deserved. So we started laughing, it was so fun!”
+Cheating felt bad (tasteless)
+
+Adam further added, “later on the same day, when we were
+having dinner, I felt like having a drink. So what I did, I
+cheated the system. I uploaded Rahim’s data and got the
+same drink that he got. Kind of funny that he did the
+activities and I got the drink. But actually to be honest, it
+didn’t feel good at all, I felt that what I told Rahim too, you
+know what, this drink is personal, I feel like it is yours and I
+am drinking it. It feels like drinking something that does not
+belong to me. So it did not taste good, really honestly.”
+Creating personal affection with drinks
+
+Participants from the other houses also felt that the drink
+was personal to them and is not something to be shared:
+Rose said, “sharing my drink with others is a bit weird, I
+will tell others about it [my drink], but I will not share the
+drink, definitely.” Additionally, Chad was interested to store
+the drink from his intense workouts so that he can cherish
+those activities for a longer time.
+Appreciating TastyBeats
+
+Most participants spoke enthusiastically about the system as
+well as about their participation in the study with their
+friends. To our surprise, Adam maintained voice memos to
+log his as well as Rahim’s interactions with the system.
+Appreciating the palatability
+
+During the follow-up interviews, we discussed various
+possible scenarios in which part of the interaction was
+missing. We asked what if we take away the palatable
+aspect by just mixing colorful water based on heart rate
+data. To which, all participants responded negatively. Chad
+said, “It would probably be less of incentive especially
+when you are wearing the heart rate monitor for exercise
+and at last you can’t drink it. It is like producing something
+but you won’t get a reward out of it, other than some water
+which you can’t keep with you” Dave worried that, “Having
+a drink is something like a reward for what you have done.
+But if it was just water, which you have to throw away, the
+beauty of interaction would have disappeared.”
+Waiting for the rewards
+
+Rahim narrated us the following story, “one day I came
+home running from my office, I was exhausted and needed
+
+something to drink, I could have picked something from the
+fridge, but instead I poured the drink into the glasses and
+then drank it once the interaction was over, that way I knew
+what my heart rate was.” Chad further added, “If I was
+thirsty, it’s a little bit frustrating that you have to set it up
+and then you have to wait. But seeing the interaction is also
+rewarding.”
+Welcoming the abstract visualizations
+
+Dave appreciated the abstract nature of TastyBeats and
+mentioned, “for a non athlete like me, detailed data does
+not make much sense, once in a while you may want to
+know what your heart rate details are, but on a daily basis
+abstract interpretation of data is good enough”.
+Issues with TastyBeats
+
+Along with the positives, participants also mentioned a few
+issues with the system that needs to be addressed.
+Cumbersome heart rate monitoring
+
+Rose and Sarah found wearing the heart rate monitor for the
+whole day as cumbersome. Sarah said, “You need a little bit
+of discipline for putting it on everyday during the rush
+hours in the morning.” To which, Adam proposed a
+solution: “Eventually I will come to know what drink I get
+for what activity. So next time when I had a similar activity,
+I can just look back in history and plug in the data to get a
+similar drink, that way I do not need to wear the heart rate
+monitor or the similar activities.”
+Irregular size drinks
+
+In our system, volume of the drink was based on the
+duration of physical activity and its type. As participants’
+activities varied during the study period, they received
+drinks of different volume. However, Dave did not like
+getting drinks of different volumes, and wished for a
+standard size drink irrespective of the duration of his
+physical activity.
+The leftovers
+
+Participants did not like the fact that containers were open
+from the top, which led to the wastage of the leftover
+drinks. Dave and Adam asked if the system could be sealed
+from the top so that they can reuse the remaining drinks
+rather than throwing them out.
+The spilling
+
+The system occasionally spilled drink on nearby surfaces,
+which was not appreciated by participants, as it required
+cleaning and led to wasting of food. Rose said, “Little
+droplets are okay. But not too much.”
+DISCUSSIONS
+
+We discuss below the experiences that the palatable
+representations of physical activity elicited for our
+participants.
+
+Rewarding aspects of palatable representations
+
+According to the Goal Setting Theory [24], incentives are
+important to sustain a user’s interest in an activity. Previous
+works in HCI have looked on virtual rewards and incentives
+to support physical activity among people [3]. However,
+according to the study by Munson and Consolvo [27],
+virtual points and rewards do not have a lasting impact
+because system assigned rewards are found to support
+motivation only in the early stages of usage. Therefore, it
+may be worthwhile to consider a greater scope of reward
+types. Possibly, rewards that change over time can be a
+valuable benefit for physical activity.
+In this work, we explore this dimension through an
+appetizing drink and a visceral spectacle of creating the
+drink, both of which participants found equally rewarding.
+In case of Chad, even though he was dehydrated due of
+cycling, he waited for the interaction to end to get a
+deserving drink. Participants find watching the interaction
+as the best part of TastyBeats, and were very keen to
+witness the interaction not only for their own but also for
+their partner’s everyday activity. Furthermore, participants
+also developed a personal affection with their drink mainly
+because the drink embodied their personal data. Rose was
+motivated to perform different physical activities to see
+how it would reflect in the drink and what it taste like. One
+participant, Adam, even tried to cheat the system by
+creating drink from his friend’s data, but that drink did not
+taste good for him. Lastly, there was always a surprise
+element associated with how the drink will taste. We
+therefore encourage designers to equally focus on the
+interaction aspects as well as the palatability of the resultant
+drink while designing palatable representation.
+Shared spectacle of personal data triggers discussions
+and playful interactions
+
+Most of the existing works in visualizing physical activity
+is geared towards individual use [41]. Physical activity data
+is often collected and shown on a private computer or
+smartphone screen. In this work, we explored public display
+of data in a private setting like home through a shared
+system of creating a drink. Often the drink was made
+together and participants keenly observed the process of
+making the drink. In that process, they became more aware
+of each other’s physiological state, which in turn triggered
+discussions and playful social interactions. Participants
+often competed to get a bigger drink and shared moments of
+laughter when the prepared drinks were drastically different
+from each other. Recently, a few other works have also
+started to explore public consumption of heart rate data. For
+example, Walmink et al. [46] created an augmented helmet
+that project heart rate data of the wearer in real time to
+fellow cyclists while Curmi et al. [8] allowed public display
+of heart rate data on social networks. These works illustrate
+potential for social interaction in public sharing of data but
+with a risk of privacy. However, in our study, participants
+did not raise privacy concern, as the data was presented in
+an abstract form. Therefore, one way to address privacy
+
+related issues could be to use such abstract forms of
+visualizations that provides basic information about the
+physical activity, but hides intrinsic details from the user.
+Finally, making data public with fluids means that there are
+chances of spillage, which can be fun, but we found that
+participants did not like wasting food (drinks in our case).
+Therefore, there is a tradeoff in terms of the spectacle and
+the palatable quality of the drink.
+STUDY LIMITATIONS
+
+Here, we mention the two main limitations of this work.
+Firstly, TastyBeats creates a drink only at the end of the
+day. There are situations when such a drink might be
+needed right after a physical activity, which was not
+supported by the current version of TastyBeats. Secondly,
+our study reports results from a 2 weeks intervention.
+Longitudinal studies might be needed before drawing
+conclusions on the motivational aspects of the system.
+Despite these limitations, we believe our work offers first
+insights into a palatable representation that could inform the
+design of future systems aiming to support human energy
+cycle through palatable representation.
+CONCLUSION
+
+Main contribution of this work is the first conceptual
+understanding of the design of palatable representations.
+We presented results from an “in the wild” field
+deployments of the TastyBeats system that offers insights
+into how people understand and react to personal data when
+presented in a palatable form. TastyBeats served as a
+mediator for reflective thoughts and discussions besides
+offering a public and vibrant vista of their heart rate.
+Recent advancements in food printing have opened up new
+possibilities for creating engaging interactions and
+experiences around food [6, 38, 39, 47]. However, existing
+explorations mainly utilize mechanical and time-consuming
+techniques to produce food. Through this work, we explore
+another dimension of producing personalized food using a
+vibrant, attractive and familiar setting of water fountains,
+which we think would guide designers towards thinking
+differently about food printing methods.
+Our work also intertwines the two growing fields in HCI,
+namely, quantified self and food printing, thus it might raise
+issues on their relationship and relevance. Our work also
+informs the design of food printing machines, highlighting
+an opportunity to print things “we do not currently have”,
+like heart rate. Our work brings to the fore the idea that one
+can eat one’s own data such as heart rate. This might inspire
+a discussion of the role of HCI in the human-energy cycle.
+In future, it would also be interesting to see how TastyBeats
+is applicable in other settings such as in gymnasiums or
+public events like marathons. Finally, our work has
+scratched only the surface of palatable representation, and
+we encourage designers to consider new possibilities
+
+afforded by such representations to support user’s
+experience with physical activity.
+REFERENCES
+
+1. Anderson, I., Maitland, J., Sherwood, S. Shakra:
+Tracking and Sharing Daily Activity Levels with
+Unaugmented Mobile Phones. Mobile Networks and
+Applications 12, (2007), 185-199.
+2. Arduino, http://www.arduino.cc/.
+3. Berkovsky, S., Coombe, M., Freyne, J., Bhandari, D.,
+and Baghaei, N. Physical activity motivating games:
+virtual rewards for real activity. In Proc. CHI’10, ACM
+(2010), 243-252.
+4. Bloch, M. Truth and sight: Generalizing without
+universalizing. J. Roy. Anthropol. Inst, 14, 2008, 22-32.
+5. Brynarsdttir, H., Håkansson, M., Pierce, J., Baumer, E.
+P. S., Disalvo, C. and Sengers, P. Sustainably
+unpersuaded: how persuasion narrows our vision of
+sustainability. In Proc. CHI’12, ACM (2012), 947-956.
+6. Comber R., Choi, J.H., Hoonhout J. and O'hara, K.
+Editorial: Designing for human-food interaction: An
+introduction to the special issue on 'food and interaction
+design', IJHCS, 2014, 72(2), 181-184.
+7. Consolvo, S., McDonald, D.W. and Landay, J. Theorydriven design strategies for technologies that support
+behavior change in everyday life. In Proc. CHI’09,
+ACM (2009), 405-414.
+8. Curmi, F., Ferrario, M.A., Southern, J., and Whittle, J.
+HeartLink: open broadcast of live biometric data to
+social networks. In Proc. CHI’13, ACM (2013), 17491758.
+9. Currency fountain.
+http://www.koert.com/work/datafountain/.
+10. Daisuke, A. Weburette. In Proc. SA’12, ACM (2012).
+11. Dietz, P., Reyes, G., and Kim, D. The PumpSpark
+fountain development kit. In Proc. DIS’14, ACM
+(2014), 259-266.
+12. Fan, C., Forlizzi, J. and Dey, A. A Spark Of Activity:
+Exploring Information Art As Visualization For
+Physical Activity. In Proc. Ubicomp ’12, ACM (2012),
+81-84.
+13. Fletcher G., Balady G., Amsterdam E., et al. Exercise
+standards for testing and training: a statement for
+healthcare professionals from the American Heart
+Association. Circulation. 2001, 1694-1740.
+14. Food grade mini water pump.
+http://www.lightobject.com/High-temperature100-39CDC-12V-185LMin-29GPH-mini-Water-Pump-Foodgrade-P711.aspx.
+15. Galesic, M., and Garcia-Retamero, R. Graph literacy: A
+crosscultural comparison. Medical Decision Making,
+2011, 31, 444-457.
+
+16. Gaver, W., Dunne, A., and Pacenti, E. Cultural Probes.
+Interactions, 1999, 21-29.
+
+technology promoting healthy behavior and ideal
+weight. In Proc. CHI’11, ACM (2011), 423–432.
+
+17. Geurts, L., and Vanden Abeele, V. Splash controllers:
+game controllers involving the uncareful manipulation
+of water. In Proc. TEI’12, ACM (2012), 183-186.
+
+33. Richter, H., Manke, F., and Seror, M. LiquiTouch:
+liquid as a medium for versatile tactile feedback on
+touch surfaces. In Proc. TEI’13, ACM (2013), 315-318.
+
+18. Jafarinaimi, N., Forlizzi, J., Hurst, A. and Zimmerman,
+J. Breakaway: an ambient display designed to change
+human behavior, In Proc. CHI EA’05, ACM (2005),
+1945-1948.
+
+34. Rogers, Y. Interaction Design Gone Wild: Striving for
+Wild Theory. Interactions 18, 4, 2011, 58-62.
+
+19. Khot, R., Hjorth, L., and Mueller, F. Understanding
+physical activity through 3D printed material artifacts.
+In Proc. CHI’14, ACM (2014), 3835-3844.
+
+35. Ruckenstein, M. Visualized and Interacted Life:
+Personal Analytics and Engagements with Data
+Doubles. Societies, (2014), 4, 68–84.
+36. Run zombie run, https://www.zombiesrungame.com/.
+
+20. Khot, R., Lee, J., Hjorth, L. and Mueller, F. TastyBeats:
+Celebrating Heart Rate Data with a Drinkable Spectacle.
+In Proc. TEI’15, ACM (2015), 229-232.
+
+37. Sawka M., Burke L., Eichner E., Maughan R., Montain
+S., and Stachenfeld N. American College of Sports
+Medicine position stand. Exercise and fluid
+replacement. Med Sci Sports Exerc. (2007), 39, 377-90.
+
+21. Klasnja, P., Consolvo, S., and Pratt, W. How to evaluate
+technologies for health behavior change in HCI
+research. In Proc. CHI’11, ACM (2011), 3063-3072.
+
+38. Schoning, J., Rogers, Y., and Kruger, A. Digitally
+Enhanced Food. IEEE Pervasive Computing, 2012,
+11(3), 4-6.
+
+22. Li, I., Dey, A. and Forlizzi, J. Understanding my data,
+myself: supporting self-reflection with ubicomp
+technologies. In Proc. UbiComp '11, ACM (2011), 405414.
+
+39. Spence, C. and Piqueras-Fiszman, B. Technology at the
+dining table. Flavour, 2013, 2 (1), 16.
+
+23. Lin, J.L., Mamykina, L., Lindtner, S., Delajoux, G. and
+Strub, H.B. Fish’n’Steps: Encouraging physical activity
+with an interactive computer game. In Proc.
+Ubicomp’06, Springer (2006), 261-278.
+
+40. Stusak, S., Tabard, A., Sauka, F., Khot, R., Butz, A.
+Activity Sculptures: Exploring the Impact of Physical
+Visualizations on Running Activity. Visualization and
+Computer Graphics, IEEE, 99 (1), 2014.
+
+24. Locke, E., and Latham, G. A theory of goal setting and
+task performance, Prentice Hall, 1990.
+
+41. Swan, M. Sensor mania! The Internet of things,
+wearable computing, objective metrics, and the
+Quantified Self 2.0. J. Sens. Actuator Netw. 2012, 1,
+217–253.
+
+25. Mann, S., Janzen, R., Huang, J., Kelly, M., Ba, L. J., and
+Chen, A. User-interfaces Based on the Water-hammer
+Effect: Water-hammer Piano As an Interactive
+Percussion Surface. In Proc. TEI ’11, ACM (2011), 1-8.
+
+42. Sylvester, A., Döring, T., and Schmidt, A. Liquids,
+Smoke, and Soap Bubbles - Reflections on Materials for
+Ephemeral User Interfaces. In Proc. TEI’10, ACM
+(2010), 269-270.
+
+26. Mio liquid water enhancers,
+http://www.makeitmio.com/.
+
+43. Tudor-Locke, C., Bassett, B.R., and Swartz, A.M. A
+preliminary study of one year of pedometer selfmonitoring. Annals of Behavioral Medicine, 2004, 158162.
+
+27. Munson, S. and Consolvo, S. Exploring Goal-setting,
+Rewards, Self-monitoring, and Sharing to Motivate
+Physical Activity, Pervasive Health (2012), 25-32.
+28. Nenonen, V., Lindblad, A., Häkkinen, V., Laitinen, T.,
+Jouhtio, M., and Hämäläinen, P. Using heart rate to
+control an interactive game. In Proc. CHI’07, ACM
+(2007), 853-856.
+29. Oliveira, R., and Oliver, N. TripleBeat: enhancing
+exercise performance with persuasion. In Proc.
+MobileHCI '08, ACM (2008), 255-264.
+30. Polar heart rate monitors,
+http://www.polar.com/en/products.
+31. Processing, https://processing.org.
+32. Purpura, S., Schwanda, V., Williams, K., Stubler, W.,
+and Sengers, P. Fit4life: the design of a persuasive
+
+44. Vande Moere, A. Beyond the tyranny of the pixel:
+Exploring the physicality of information visualization.
+In Proc. IV’08, IEEE (2008), 469-474.
+45. Viseu, A., and Suchman, L. Wearable Augmentations:
+Imaginaries of the Informed Body. In Technologized
+Images, Technologized Bodies, Berghahn Books, 2010,
+161–184.
+46. Walmink, W., Wilde, D., and Mueller, F. Displaying
+heart rate data on a bicycle helmet to support social
+exertion experiences. In Proc. TEI’14, ACM (2014), 97104.
+47. Wei, J., Ma, X., and Zhao, S. Food Messaging: Using an
+Edible Medium for Social Messaging. In Proc. CHI’14,
+ACM (2014), 2873-2882.
+
+

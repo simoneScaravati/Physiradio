@@ -1,0 +1,518 @@
+TEI’2018 © ACM, 2018. This is the author’s version of the work. It is posted here by permission of ACM for
+your personal use. Not for redistribution.The definitive Version of Record was published in the Proceeding
+of the Twelfth International Conference on Tangible, Embedded, and Embodied Interaction, pp. 140-147,
+http://dx.doi.org/10.1145/3173225.3173294
+
+Designing an Expandable Illuminated
+Ring to Build an Actuated Ring Chart
+Maxime Daniel1,2
+ESTIA, Estia-Recherche
+F-64210
+64210, Bidart, France
+m.daniel@estia.fr
+
+1
+
+Nadine Couture1,2
+n.couture@estia.fr
+
+Guillaume Rivière1,2
+Univ. Bordeaux, CNRS, LaBRI,
+UMR 5800, F-33405
+33405, Talence, France
+g.riviere@estia.fr
+
+2
+
+Abstract
+Data physicalizations are growing popular in many societal
+domains which indicates a strong potential for fostering
+public engagement thanks to public exhibition (e.g. in train
+stations, in airports, on roundabouts, and in enterprises).
+We focus on dynamic physical charts for visualizing
+renewable energy forecasts in public spaces. To get charts
+readable from any point of view around, we propose a
+physical ring chart inspired by stone cairns. To build this
+physical chart, we designed an expandable and stackable
+illuminated ring. In this paper, we describe the design
+process and the limitations of the first prototype of such
+a ring.
+
+Author Keywords
+Tangible User Interfaces; Data Physicalization; ShapeChanging Interfaces; Actuation; Dynamic Physical Ring
+Charts; Renewable Energy Forecast; Shifting Energy
+Demand; Public spaces.
+
+Introduction
+Tangible User Interfaces "give physical form to digital
+information, employing physical artifacts both as
+representations and controls for computational media"
+[16]. Recently, Data Physicalization has emerged as a new
+research area at the intersection of Data Visualization and
+Tangible User Interfaces. In 2015, Jansen et al. [7] defined
+
+Figure 1: Bar charts displayed with
+InFORM [3].
+
+Figure 2: Physical Data 1 .
+
+Figure 3: EMERGE [15].
+
+a Physicalization as "a physical artifact whose geometry or
+material properties encode data" and propose to think of
+Data Physicalization as a research area that "examines how
+computer-supported, physical representations of data (i.e.,
+physicalizations), can support cognition, communication,
+learning, problem solving, and decision making". Static
+Physicalizations are hard to modify, but the geometry
+or material properties of Dynamic Physicalizations can
+be modified (e.g. by computer-controlled actuators).
+Examples of dynamic physicalizations are physical charts,
+like the bar charts displayed with inFORM [3] (Figure 1),
+like the Physical Data 2 (Figure 2), and like EMERGE [15]
+(Figure 3). As noted by Jansen et al. [7], "The growing
+popularity of data physicalizations in many societal domains
+indicates a strong potential for fostering public engagement.
+This popularity suggests that data physicalizations pique
+interest, and this interest could in turn be leveraged to
+have people spend more time and effort exploring and
+understanding important and complex data".
+In this paper, we explain our interest in using dynamic
+physical charts to foster the shift of energy demand in
+public spaces. We design CairnFORM, a dynamic physical
+ring chart, for visualizing renewable energy forecasts. One
+advantage of these ring charts is to be readable at 360˚.
+They can be used to display data in public spaces where
+people come and go to different directions such as entrance
+halls, roundabouts, public places, train stations and airports.
+We describe the design process of a first prototype of an
+expandable illuminated ring which is the basis component
+of the dynamic physical ring chart. Finally, we list some
+limitations of the current prototype and we evoke future
+works concerning the design and the study of CairnFORM.
+
+Using Dynamic Physical Charts to Foster the
+Shift of Energy Demand in Public Spaces
+Using renewable energy rather than nonrenewable energy
+is a strategy considered as appropriate for reducing
+environmental impact. However, as energy generation
+shifts to renewables and microgeneration1 , the interplay
+between energy supply and energy demand becomes
+more complex to manage. Critical problems, such as peak
+demand, can lead to power outages and make the electrical
+grid inefficient [4]. These issues are amplified by renewable
+energy generation fluctuating with weather conditions (e.g.
+sun, wind, wave, tide) and by a limited energy storage
+capacity [5]. Unless energy storage becomes economically
+and environmentally reliable to balance energy supply
+against energy demand [10], we will need to synchronize
+the energy demand with the availability of renewables.
+During the last five years, researchers have designed and
+studied systems to encourage users in using renewable
+energy when there is plenty of it rather than when there
+is little (i.e. shifting energy demand) [1, 8, 11, 12, 13, 14].
+Most of the designed systems target households and
+help inhabitants to plan their everyday energy usage by
+visualizing renewable energy forecasts using graphical
+charts such as clock charts [8, 13], timeline charts [13]
+and line charts [8, 14].
+To the extent of our knowledge, no dynamic physical chart
+has been used for visualizing renewable energy forecasts in
+a public space. Yet, as evoked by Zuckerman [17], tangible
+interfaces have strengths that can contribute to "change
+what people think and do" [2]: Visibility and Persistance;
+Situatedness; Tangible representation; and Affordances.
+1
+Microgeneration is the small-scale generation of electricity and/or
+heat by individuals, businesses, or communities to meet their own needs.
+2
+http://dataphys.org/list/dynamic-physical-charts-to-communicatecommunity-data/, accessed 13/09/2017.
+
+Through these properties, tangible interfaces such as
+dynamic physical charts can help reducing the intangibility
+and the invisibility of energy that drives citizens away from
+energy [11].
+
+CairnFORM: a Dynamic Physical Ring Chart
+
+Figure 4: A cairn is a stack of
+stones indicating a landmark, a
+path, a border, or a sacred place3 .
+
+Figure 5: An illustration of
+CairnFORM, a dynamic physical
+ring chart.
+
+Figure 6: The actuated skeleton of
+AMPHORM (i.e. without its skin),
+a cylindrical kinetic sculpture [9].
+
+Bar charts are data visualizations commonly used to
+perform data comparisons over time. Therefore, bar charts
+seem relevant for highlighting trends in renewable energy
+forecasts such as incoming peaks of renewable energy.
+In the literature, we found examples of dynamic physical
+bar charts such as bar charts displayed with inFORM
+[3] (Figure 1), Physical Charts2 (Figure 2) and EMERGE
+[15] (Figure 3). However vertical bars are not readable at
+360˚ around because of occlusion effects. This occlusion
+effect can be countered by moving around the interface.
+Nonetheless, users can hardly move around the interface
+in many cases: train stations, public places, airports,
+roundabouts are public spaces where people are in a hurry
+and do not have time to change their point of view.
+To counter this occlusion effect, we propose to use
+a vertical physical chart readable at 360˚ around it.
+Inspired by stone cairns (Figure 4), we propose to design
+CairnFORM, a stack of expandable illuminated rings
+that can morph to different cairn shapes (i.e. defined by
+the number of rings and their diameter). For example, a
+ten-rings-CairnFORM can represent renewable energy
+forecasts for each hour of a workday (i.e. 8 am to 5 pm)
+(Figure 5). The ring’s diameter and brightness would
+both be correlated to the average power forecasted to be
+generated in the hour: for a renewable power generation
+capacity ranging from 0 W to max W, a forecast of 0 W
+would be represented by a fully retracted ring with no
+brightness and a forecast of max W would be represented
+by a fully expanded ring with full brightness.
+
+Designing an Expandable Illuminated Ring
+The expandable illuminated ring is the basis component
+of CairnFORM. To design an expandable illuminated ring,
+we first looked for existing kinetic mechanisms allowing the
+expansion of a ring. In the literature, AMPHORM [9] makes
+use of expandable rings to shape a silicon skin: the result
+is a shape-changing vase (amphora). The aluminium rings
+of the skeleton of AMPHORM (Figure 6) are based on the
+Hoberman mechanism [6]. Based on three existing kinetic
+mechanisms, we iteratively prototyped a new expandable
+ring mechanism. Finally, we added illumination to the
+new expandable ring mechanism to obtain the current
+expandable illuminated ring. All along the design process,
+we eliminated expandable ring mechanisms that do not
+meet the following criteria: 1) the kinetic mechanism has
+inner-space available to put electronics (e.g. actuator,
+sensor) for actuation; 2) the kinetic mechanism maintains a
+regular ring-like shape during and after the expansion; and
+3) the mechanism expands to a ring-like shape nearly two
+times larger than its initial size. We detail these steps in the
+following.
+Existing Expandable Ring Mechanisms
+We found three existing kinetic mechanisms allowing the
+expansion of a ring (Figure 7):
+1. HobermanRing-7points4 (Figure 7a) and
+HobermanRing-12points5 (Figure 7b) are based
+on the Hoberman mechanism and can expand to
+a continuous ring-like shape two times larger than
+its initial size. However during the expansion, the
+ring shape changes in a seven-pointed star with
+HobermanRing-7points and in a twelve-pointed star
+3
+https://pixabay.com/p-2082937, image under CC0 licence,
+downloaded 14/09/2017.
+
+(a) HobermanRing-7points4
+
+(b) HobermanRing-12points5
+
+(c) DiscontinuousRing-6arms-6arcs6
+
+Figure 7: Three existing expandable ring mechanisms.
+
+with HobermanRing-12points. Moreover, very few
+inner-space is available.
+2. The structure DiscontinuousRing-6arms-6arcs6
+(Figure 7c) maintains its ring-like shape during
+the expansion and there is inner-space available.
+However, it only expands to a discontinuous ring-like
+shape less than two times larger than its initial size.
+(a) DiscontinuousRing-4arms-4arcs
+
+Iterative prototyping of a new expandable ring mechanism
+Through iterative prototyping, we designed a new
+expandable ring mechanism. Based on DiscontinuousRing6-6 and inspired by HobermanRing-7/12, we prototyped
+three different expandable ring mechanisms before
+obtaining the current version:
+
+(b) IrregularRing-4arms-8arcs
+
+1. DiscontinuousRing-4arms-4arcs (Figure 8a) can
+expand to a shape three times larger than its initial
+size. However, during the expansion, the ring shape
+changes from a continuous ring to a discontinuous
+rounded square.
+4
+
+https://vimeo.com/32823353, accessed 13/09/2017.
+https://www.youtube.com/watch?v=5eOG-uEqDxU, accessed
+13/09/2017.
+6
+https://www.youtube.com/watch?v=KgYX9m6sG5c, accessed
+13/09/2017.
+5
+
+(c) RingLike-8arms-8arcs
+
+Figure 8: The three expandable
+ring mechanisms made during the
+iterative prototyping.
+
+2. IrregularRing-4arms-8arcs (Figure 8b) can expand
+to a continuous ring-like shape two times larger than
+its initial size. However during the expansion, the ring
+shape changes from a continuous regular ring to a
+continuous irregular ring-like shape.
+3. RingLike-8arms-8arcs (Figure 8c) can expand to a
+continuous ring-like shape two times larger than its
+initial size while maintaining a regular ring-like shape.
+Adding illumination to the new expandable ring mechanism
+Based on the RingLike-8arms-8arcs mechanism (Figure 9),
+our final prototype of an expandable illuminated ring
+(Figure 10) is composed of a column making the ring
+stackable. The ring is actuated by a TRINAMIC stepper
+motor QSH4218-41-10-035 with a transmission gear that
+activates a wheel gear. The wheel activates four pinion
+gears. Each pinion gear activates an axial rack and a
+diagonal rack. At the edge of each rack, there is an arc
+representing one eighth of a ø35 cm ring. When the ring is
+fully retracted, the arcs form the initial ring (ø35 cm). When
+the ring is fully expanded, the arcs form a ring-like shape
+nearly two times larger than its initial size (ø62 cm). The
+ring is illuminated by 24 NeoPixel Digital RGB LEDs (three
+LEDs on each arc). Furthermore, a micro-switch is used to
+sense when the ring is fully retracted.
+
+Figure 9: The CAD model of the mechanism of the final expandable ring6 , designed with OnShape, a Cloud CAD Software.
+
+The column was manufactured in PLA material using 3D
+printing. All other parts were made in translucent PMMA
+material using 2D laser cutting and assembled using
+acetone. The remaining parts, mainly support parts, were
+made in plywood using 2D laser cutting. Bolts, nuts and
+washers were used to assemble all the parts together.
+All LEDs and the stepper motor are powered by a ATX
+computer power supply. The 24 LEDs are controlled using
+an Arduino Mega2560. The stepper motor is controlled
+using an Adafruit stepper motor HAT for Raspberry Pi. The
+micro-switch is read using a pull-up circuit on an Adafruit
+perma-proto HAT for Raspberry Pi. One Raspberry Pi 3 is
+used to communicate with the Mega2560 (serial protocol)
+and the HATs (I2C protocol). The driver is written in Python
+2.7.
+
+Limitations
+We identified four limitations of the current prototype:
+
+• Expansion range. The current prototype expands
+with a 1.8 diameter scale factor (ranging from 35 cm
+to 62 cm). The smallest the expansion range is, the
+more the difference between each ring of the final
+ring chart will be subtle to perceive. In our case, the
+expansion range is 27 cm: to display a 256-point data
+scale, the granularity would be only ∼1 mm, would be
+∼3 mm for a 100-point data scale, and would more
+reasonably be ∼1 cm for a 30-point data scale.
+
+6
+The CAD model is available at: https://cad.onshape.com/documents/
+7d4ecae370a1e03250f148cc/w/40919688efd268263900abc1/e/
+6c37dd97791037a37d7dd39b, accessed 13/09/2017.
+
+• Motion noise. When the ring is expanding, the
+overall structure generates about 60 dB at a distance
+of 1 meter, when the 5 V stepper motor QSH4218 is
+at 60 RPM in double coil mode. This noise makes the
+current ring intrusive: it should be used in situations
+where noise does not reduce usability (e.g. in an
+entrance hall, but not in an office or an open plan).
+
+• Power consumption. In the worst case, the
+prototype draws up to 12.2 W (7.2 W max for LEDs
+and 5 W max for the stepper motor). This case
+occurs when actuating the ring at full brightness with
+the stepper motor in double coils mode (the most
+energy-consuming mode). This case will rarely or
+never occur. However, because the purpose of the
+final ring chart will be to engage users with an energyrelated issue, this chart will have to help in saving
+more energy than it consumes.
+
+• Fabrication cost. A ring costs about 200e to build:
+60e of raw materials (PLA, PMMA, and plywood)
+
+Figure 10: The final prototype of
+an expandable illuminated ring.
+
+manufactured using a 3D printer and a 2D laser
+cutter; 100e of electronics (NeoPixel digital RGB
+LED, stepper motor QSH4218, and micro-switch);
+and 40e of bolts, nuts, washers, aluminium profiles,
+and other products such as PVC glue and acetone. A
+prototype stacking ten expandable illuminated rings
+will cost approximately 2000e for the rings plus 300e
+of electronics to control it (Raspberry Pi 3, Adafruit
+perma-proto HATs, Adafruit stepper motor HATs,
+Arduino Mega2560, and ATX power supply).
+
+Conclusion and Future Works
+In this paper, we propose to use dynamic physical charts
+to foster shifting energy demand in public spaces. We
+think that the tangible properties [17] of physical charts
+
+such as the Visibility and Persistance, the Situatedness
+and the Tangible representation can help mitigating the
+intangibility and the invisibility of energy that drives citizens
+away from energy [11]. Therefore, we propose to use
+a dynamic physical ring chart for visualizing renewable
+energy forecasts. We propose the design of CairnFORM,
+a customizable stack of expandable illuminated rings
+readable at 360˚ around it. Inspired by existing kinetic
+mechanisms, we describe the design process of a first
+prototype of an expandable illuminated ring. Furthermore,
+we identify several limitations of our final prototype of
+an expandable illuminated ring such as the expansion
+range, the motion noise, the power consumption, and the
+fabrication cost.
+In future works, we will manufacture 10 expandable
+illuminated rings. With this stack of 10 rings, we will conduct
+in vitro user studies to assess the readability of ring charts
+when asking users to retrieve incoming peaks of renewable
+energy production. Furthermore, we will study in vivo the
+attractiveness over weeks and months of such dynamic
+physical charts in a public space.
+
+References
+[1] Enrico Costanza, Joel E. Fischer, James A. Colley,
+Tom Rodden, Sarvapali D. Ramchurn, and Nicholas R.
+Jennings. 2014. Doing the Laundry with Agents: A
+Field Trial of a Future Smart Energy System in the
+Home. In Proceedings of the SIGCHI Conference on
+Human Factors in Computing Systems (CHI ’14). ACM,
+New York, NY, USA, 813–822. DOI:http://dx.doi.org/
+10.1145/2556288.2557167
+[2] Brian J. Fogg. 1998. Persuasive Computers:
+Perspectives and Research Directions. In Proceedings
+of the SIGCHI Conference on Human Factors in
+Computing Systems (CHI ’98). ACM Press/Addison-
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+[7]
+
+[8]
+
+Wesley Publishing Co., New York, NY, USA, 225–232.
+DOI:http://dx.doi.org/10.1145/274644.274677
+Sean Follmer, Daniel Leithinger, Alex Olwal, Akimitsu
+Hogge, and Hiroshi Ishii. 2013. inFORM: Dynamic
+Physical Affordances and Constraints Through Shape
+and Object Actuation. In Proceedings of the 26th
+Annual ACM Symposium on User Interface Software
+and Technology (UIST ’13). ACM, New York, NY, USA,
+417–426. DOI:http://dx.doi.org/10.1145/2501988.
+2502032
+Frontier Economics and Sustainability First.
+2012. Demand side response in the domestic
+sector-a literature review of major trials. UK
+Department of Energy and Climate Change,
+Final Report, London, August. (2012). http:
+//www.frontier-economics.com/documents/2013/10/
+frontier-report-demand-side-response-in-the-domestic-sector.
+pdf Accessed 13/06/2017.
+David Hafemeister. 2010. Sustainable Energy - Without
+the Hot Air. American Journal of Physics 78, 2 (2010),
+222–223. DOI:http://dx.doi.org/10.1119/1.3273852
+Charles Hoberman. 1991. Radial expansion/retraction
+truss structures. (June 1991). US Patent 5,024,031.
+Yvonne Jansen, Pierre Dragicevic, Petra Isenberg,
+Jason Alexander, Abhijit Karnik, Johan Kildal,
+Sriram Subramanian, and Kasper Hornbæk. 2015.
+Opportunities and Challenges for Data Physicalization.
+In Proceedings of the 33rd Annual ACM Conference
+on Human Factors in Computing Systems (CHI
+’15). ACM, New York, NY, USA, 3227–3236. DOI:
+http://dx.doi.org/10.1145/2702123.2702180
+Jesper Kjeldskov, Mikael B. Skov, Jeni Paay, Dennis
+Lund, Tue Madsen, and Michael Nielsen. 2015.
+Facilitating Flexible Electricity Use in the Home with
+
+[9]
+
+[10]
+
+[11]
+
+[12]
+
+[13]
+
+Eco-Feedback and Eco-Forecasting. In Proceedings of
+the Annual Meeting of the Australian Special Interest
+Group for Computer Human Interaction (OzCHI
+’15). ACM, New York, NY, USA, 388–396. DOI:
+http://dx.doi.org/10.1145/2838739.2838755
+David Lakatods. 2012. AMPHORM: Form Giving
+through Gestural Interaction to Shape Changing
+Objects. Master’s thesis. Massachusetts Institute
+of Technology (MIT), Cambridge, MA, USA.
+Xing Luo, Jihong Wang, Mark Dooner, and Jonathan
+Clarke. 2015. Overview of current development
+in electrical energy storage technologies and the
+application potential in power system operation.
+Applied Energy 137 (January 2015), 511–536.
+http://wrap.warwick.ac.uk/63615/
+James Pierce and Eric Paulos. 2010. Materializing
+Energy. In Proceedings of the 8th ACM Conference on
+Designing Interactive Systems (DIS ’10). ACM, New
+York, NY, USA, 113–122. DOI:http://dx.doi.org/10.
+1145/1858171.1858193
+Filipe Quintal, Clinton Jorge, Valentina Nisi, and Nuno
+Nunes. 2016. Watt-I-See: A Tangible Visualization of
+Energy. In Proceedings of the International Working
+Conference on Advanced Visual Interfaces (AVI ’16).
+ACM, New York, NY, USA, 120–127. DOI:http://dx.doi.
+org/10.1145/2909132.2909270
+Johann Schrammel, Cornelia Gerdenitsch, Astrid
+Weiss, Patricia M. Kluckner, and Manfred Tscheligi.
+2011. FORE-Watch – The Clock That Tells You
+When to Use: Persuading Users to Align Their
+Energy Consumption with Green Power Availability.
+In Proceedings of the 2nd International Conference
+on Ambient Intelligence (AmI ’11). Springer Berlin
+Heidelberg, Berlin, Heidelberg, 157–166. DOI:
+http://dx.doi.org/10.1007/978-3-642-25167-2_19
+
+[14] Will Simm, Maria Angela Ferrario, Adrian Friday,
+Peter Newman, Stephen Forshaw, Mike Hazas, and
+Alan Dix. 2015. Tiree Energy Pulse: Exploring
+Renewable Energy Forecasts on the Edge of the
+Grid. In Proceedings of the SIGCHI Conference
+on Human Factors in Computing Systems (CHI
+’15). ACM, New York, NY, USA, 1965–1974. DOI:
+http://dx.doi.org/10.1145/2702123.2702285
+[15] Faisal Taher, John Hardy, Abhijit Karnik, Christian
+Weichel, Yvonne Jansen, Kasper Hornbæk, and
+Jason Alexander. 2015. Exploring Interactions with
+Physically Dynamic Bar Charts. In Proceedings of
+the 33rd Annual ACM Conference on Human Factors
+
+in Computing Systems (CHI ’15). ACM, New York,
+NY, USA, 3237–3246. DOI:http://dx.doi.org/10.1145/
+2702123.2702604
+[16] Brygg Ullmer and Hiroshi Ishii. 2000. Emerging
+Frameworks for Tangible User Interfaces. IBM
+Syst. J. 39, 3-4 (July 2000), 915–931. DOI:http:
+//dx.doi.org/10.1147/sj.393.0915
+[17] Oren Zuckerman. 2015. Objects for Change: A
+Case Study of a Tangible User Interface for Behavior
+Change. In Proceedings of the Ninth International
+Conference on Tangible, Embedded, and Embodied
+Interaction (TEI ’15). ACM, New York, NY, USA, 649–
+654. DOI:http://dx.doi.org/10.1145/2677199.2687906
+
+

@@ -1,0 +1,235 @@
+RESET!ÿ
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x4010f000, len 1384, room 16 
+tail 8
+chksum 0x2d
+csum 0x2d
+vbc204a9b
+~ld
+
+
+Welcome to PhysiRadio!!
+
+Connecting to SSID at-main
+......WiFi connected
+IP address: 
+192.168.43.115
+Attempting MQTT connection...Physiradio connected to MQTT server
+Initialized scheduler
+added api task
+added stream task
+added mqtt task
+Enabled api task
+Enabled stream task
+Enabled mqtt task
+Connecting to Web radio...
++++ rssi:-56
+Radio Connection failed
+Connection failed
+Reconnecting for audio stream...
+Reconnecting for audio stream...
+Reconnecting for audio stream...
+Reconnecting for audio stream...
+Reconnecting for audio stream...
+Reconnecting for audio stream...
+Reconnecting for audio stream...
+Reconnecting for audio stream...
+Reconnecting for audio stream...
+Reconnecting for audio stream...
+Reconnecting for audio stream...
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+86 % humidity
+Doing mapping for Clouds weather
+Got: Lofi hip hop radio(lfhh.org) --> +++ rssi:-58
+Requesting stream: /stream2
+Fading Volume....
+Lofi hip hop radio(lfhh.org)
+Volume +1
+VOLUME : 86.20
+Volume +1
+VOLUME : 87.20
+Volume +1
+VOLUME : 88.20
+Volume +1
+VOLUME : 89.20
+API task Disabled
+Radio 1 - Classical -> Smoke/Mist 
++++ rssi:-64
+Requesting stream: /;
+Fading Volume....
+Chroma Classical - solo classical music
+Radio 2 - Metal -> Clear(sun) + High humidity 
++++ rssi:-66
+Requesting stream: /;
+Fading Volume....
+CHROMA METAL - solo metal
+Radio 3 - SmoothJazz -> Rain/Drizzle/Cloud/Fog  + low humidity
++++ rssi:-67
+Requesting stream: /;
+Fading Volume....
+Chroma Smooth Jazz:	
+Radio 5 - ExtremeMetal -> Thunderstorm/Tornado...
++++ rssi:-70
+Requesting stream: /;
+Fading Volume....
+Radio Caprice - Brutal Death Metal
+Radio 6 - LoFi -> Rain/Drizzle/Cloud/Fog  + High humidity
++++ rssi:-68
+Requesting stream: /stream2
+Fading Volume....
+Lofi hip hop radio(lfhh.org)
+Radio 7 - Xmas Songs -> Snow
++++ rssi:-69
+Requesting stream: /;
+Fading Volume....
+Chroma Christmas - solo Xmas songs
+Radio 1 - Classical -> Smoke/Mist 
++++ rssi:-69
+Requesting stream: /;
+Fading Volume....
+Chroma Classical - solo classical music
+API task Disabled
+Radio 1 - Classical -> Smoke/Mist 
++++ rssi:-63
+Requesting stream: /;
+Fading Volume....
+Chroma Classical - solo classical music
+Radio 2 - Metal -> Clear(sun) + High humidity 
++++ rssi:-61
+Requesting stream: /;
+Fading Volume....
+CHROMA METAL - solo metal
+VOLUME : 89.20
+Volume +1
+VOLUME : 90.40
+Volume +1
+VOLUME : 91.40
+Volume +1
+VOLUME : 92.40
+Volume +1
+VOLUME : 93.40
+Radio 1 - Classical -> Smoke/Mist 
++++ rssi:-59
+Requesting stream: /;
+Fading Volume....
+Chroma Classical - solo classical music
+RESET!ÿ
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x4010f000, len 1384, room 16 
+tail 8
+chksum 0x2d
+csum 0x2d
+vbc204a9b
+~ld
+
+
+Welcome to PhysiRadio!!
+
+Connecting to SSID at-main
+.............................................................................................................................................WiFi connected
+IP address: 
+192.168.43.115
+Attempting MQTT connection...Physiradio connected to MQTT server
+Initialized scheduler
+added api task
+added stream task
+added mqtt task
+Enabled api task
+Enabled stream task
+Enabled mqtt task
+Connecting to Web radio...
++++ rssi:-61
+Radio Connection failed
+Connected to API domain!
+GET /data/2.5/weather?q=Milan&APPID=caaaf9c4e90fc42fe0baa94b8f1f6928&units=metric HTTP/1.0
+Response:
+Milan
+Clouds
+86 % humidity
+Doing mapping for Clouds weather
+Got: Lofi hip hop radio(lfhh.org) --> +++ rssi:-67
+Requesting stream: /stream2
+Fading Volume....
+Lofi hip hop radio(lfhh.org)
+Radio 1 - Classical -> Smoke/Mist 
++++ rssi:-67
+Requesting stream: /;
+Fading Volume....
+Chroma Classical - solo classical music
+API task Disabled
+Radio 1 - Classical -> Smoke/Mist 
++++ rssi:-65
+Requesting stream: /;
+Fading Volume....
+Chroma Classical - solo classical music
+Volume +1
+VOLUME : 86.20
+Volume +1
+VOLUME : 87.20
+Volume +1
+VOLUME : 88.20
+Volume +1
+VOLUME : 89.20
+Volume +1
+VOLUME : 90.20
+Volume +1
+VOLUME : 91.20
+Volume +1
+VOLUME : 92.20
+Volume +1
+VOLUME : 93.20
+Volume +1
+VOLUME : 94.20
+Volume +1
+VOLUME : 95.20
+Volume +1
+VOLUME : 96.20
+Volume +1
+VOLUME : 97.20
+Volume +1
+VOLUME : 98.20
+Volume +1
+VOLUME : 99.20
+Volume +1
+VOLUME : 100.00
+Volume -1
+VOLUME : 99.00
+Volume -1
+VOLUME : 98.00
+Radio 2 - Metal -> Clear(sun) + High humidity 
++++ rssi:-74
+Requesting stream: /;
+Fading Volume....
+CHROMA METAL - solo metal
+Radio 3 - SmoothJazz -> Rain/Drizzle/Cloud/Fog  + low humidity
++++ rssi:-71
+Requesting stream: /;
+Fading Volume....
+Chroma Smooth Jazz:	
+Radio 4 - SummerHits -> Sunny + low humidity
++++ rssi:-71
+Requesting stream: /energysummer-high.mp3
+Fading Volume....
+Energy rsi Summer
+Radio 5 - ExtremeMetal -> Thunderstorm/Tornado...
++++ rssi:-67
+Requesting stream: /;
+Fading Volume....
+Radio Caprice - Brutal Death Metal
+Radio 6 - LoFi -> Rain/Drizzle/Cloud/Fog  + High humidity
++++ rssi:-70
+Requesting stream: /stream2
+Fading Volume....
+Lofi hip hop radio(lfhh.org)
+Radio 7 - Xmas Songs -> Snow
++++ rssi:-68
+Requesting stream: /;
+Fading Volume....
+Chroma Christmas - solo Xmas songs
+VOLUME : 0

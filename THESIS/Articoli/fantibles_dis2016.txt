@@ -1,0 +1,2169 @@
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+Fantible
+F
+es: Cap
+pturing Cricke
+et Fan’s
+s Story in 3D
+Rohit Asho
+ok Khot1, Jo
+osh Andres1,1 2, Jenniferr Lai2, Juergg von Kaeneel2, Florian ‘Floyd’ Mu
+ueller1
+1
+2
+Exertion Games Lab,, RMIT Univ
+versity, Austtralia
+IBM
+M Research, Australia
+{rohiit, ja, floyd}@exertiongaameslab.org
+jlai@us.ibbm.com, jvkk@au.ibm.coom
+
+Figure 1: Watching
+W
+cricket on TV and sim
+multaneously diiscussing it on T
+Twitter, create a story that we 3D print as Faantibles.
+A
+ABSTRACT
+
+INTRO
+ODUCTION
+
+S
+Sports fans aree increasingly using social media
+m
+platform
+ms
+liike Twitter to
+o express emottions and sharre their opinions
+w
+while watching
+g sports on TV. These commeentaries describ
+be
+a intense subjeective experien
+nce of a fan watching
+w
+a spo
+ort
+ppassionately. We
+W see an op
+pportunity to attend to theese
+nnostalgic momeents by capturing them into a physical form
+m.
+W
+We present, Fa
+antibles, person
+nalized sports memorabilia
+m
+th
+hat
+hhighlights an individual’s commentary
+c
+about
+a
+sports on
+o
+T
+Twitter along with
+w the uniqueeness of each sports
+s
+match. As
+A
+a first case stud
+dy, we investig
+gate Fantibles for one popullar
+ssport, Cricket. We
+W report insig
+ghts from field
+d deployments of
+F
+Fantibles durin
+ng an ODI Cricket
+C
+match series between
+IIndia and Bang
+gladesh and offfer reflections on the design in
+f
+themes: self-expression
+s
+n, layered sen
+nse
+thhe form of four
+m
+making, ad-h
+hoc interactio
+ons and disstributed sociial
+innteractions. We
+W believe our work
+w
+opens up
+p new interactio
+on
+ppossibilities to support social sports viewing
+g experience an
+nd
+ddesign thinkiing on creeating perso
+onalized sporrts
+m
+memorabilia.
+
+Rahul is a big crickett fan and todayy he is watchinng a cricket
+match between Indiaa and Bangladdesh on TV. Beeing a true
+supporrter of his natiional team, hee is all dressedd up in the
+Indian team jersey (see Figure 1.a). As the match is
+unfoldiing, Rahul is getting exciteed and emotioonal on his
+team’ss performance. He is cheeringg for every ‘6’ scored and
+wicket taken by his team. Buut he is also feeeling sad to
+every w
+miss oout on the expperience of ‘beeing there in tthe crowd’
+where everyone is chanting, chheering and hhaving fun
+togetheer. Now to feeel connected with other co-sppectators of
+the saame match, hhe starts tweeeting his opiinions and
+emotioons about the m
+match (see Figuure 1.b).
+The abbove scenario illustrates a tyypical examplle of home
+viewinng of a crickett match withinn the Asia-paccific region
+where Cricket has a devoted fann following [88,45]. Such
+crickett fans show inncredible passioon towards theeir favorite
+team aand relate to ttheir team’s peerformance as their own
+succes s or failure [19,47]. Hoowever, unlikee stadium
+wing does not offer easy waays to keep
+viewinng, home view
+the spoorts related m
+memories alivee. For examplle, stadium
+viewerrs often bring back tangible memorabilia like match
+tickets , selfies, videoo clips of the m
+match that alloow them to
+remini scence and pproudly displayy their passioon towards
+At home, succh memorabiliia are not
+sports afterwards. A
+readilyy available, altthough fans caan go re-read the twitter
+commeents or watch tthe repeat teleccast of the matcch, we find
+that itt does not offfer the same level of affoordance as
+morabilia wouuld. As such, the home
+tangiblle sports mem
+viewinng might becom
+me an ephemerral experience tthat slowly
+fades aaway from the fans’ memory.
+
+A
+Author Keywo
+ords
+
+S
+Sports souven
+nirs; cricket; social mediaa; 3D printin
+ng;
+pphysical visualiization.
+A
+ACM Classification Keyword
+ds
+
+H
+H.5.m. Informaation interfacess and presentaation (e.g., HCII):
+M
+Miscellaneous.
+P
+Permission to make digital or hard copiies of all or part of this
+t work for person
+nal
+oor classroom use is granted without feee provided that co
+opies are not made or
+ddistributed for profit or commercial ad
+dvantage and that co
+opies bear this notiice
+aand the full citation on the first page. Copyrights
+C
+for com
+mponents of this wo
+ork
+oowned by others thaan the author(s) must be honored. Abstracting with creditt is
+ppermitted. To copy otherwise,
+o
+or repub
+blish, to post on serv
+vers or to redistribu
+ute
+too lists, requires priior specific permission and/or a fee. Request permissio
+ons
+fr
+from Permissions@aacm.org.
+D
+DIS 2016, June 04 - 08, 2016, Brisbanee, QLD, Australia
+C
+Copyright is held by
+y the owner/author(ss). Publication rightts licensed to ACM.
+A
+ACM 978-1-4503-4031-1/16/06…$15.00
+D
+DOI: http://dx.doi.orrg/10.1145/2901790
+0.2901886
+
+This paaper explores aan opportunityy to enrich hom
+me viewing
+experieence of sport by attending to passionatee moments
+during home viewinng a sport, as eexpressed by tthe fans in
+witter feed. W
+We further beliieve that an inndividual’s
+their tw
+
+.
+
+883
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+ssports commen
+ntaries on Twittter if captured and summarized
+inn a tangible fo
+orm could prov
+vide a subjectiv
+ve understandin
+ng
+oof the sports from the perspective
+p
+off a sports faan.
+A
+Additionally, th
+he constructed
+d artifact could
+d also serve ass a
+m
+memorabilia, allowing
+a
+indiv
+viduals to show their passio
+on
+aand to reflect on their meemory of the sporting even
+nt.
+M
+Motivated by this idea and
+d recent advan
+ncements in 3D
+3
+pprinting techn
+nologies, we put forward a concept of
+ppersonalized memorabilia,
+m
+wh
+hich we call Fa
+antibles (refer to
+F
+Figure 2).
+
+viewinng experience oof Cricket fans. To this end,, this work
+contribbutes to the undderstanding off the relationship between
+sports memorabilia, social mediaa and sports vviewing at
+home. 2) We contribuute to the fieldd of physical viisualization
+[23] bby illustratingg an approacch of represeenting two
+differeent sets of infoormation togethher. While Spoortoms and
+ms carry indiviidual meaning,, interlocking tthe models
+Fantom
+illustraates the correlaation of user exxcitement withh respect to
+the gam
+me in a novel tangible way. 3) Finally, baased on the
+insightts gained from
+m the study, w
+we propose a sset of four
+themess to guide desiigners for exteending Fantiblles to other
+sports.
+
+F
+Fantibles stand
+d for fan madee collectibles, whose design is
+innfluenced by not only the sporting
+s
+event but also by th
+he
+ffan’s reactionss to it. Fantib
+bles has two interlocking 3D
+3
+pprinted parts. The first parrt is Fantomss that illustrattes
+eexcitement levels of a sportss fan during a sporting even
+nt.
+T
+The second parrt is Sportoms that describess the crucial daata
+ffrom the sportin
+ng event in a chronological
+c
+circular
+c
+form. As
+A
+ssuch, the Sporttoms provides the
+t context forr the excitemen
+nts
+eexpressed in Fa
+antoms.
+
+RELAT
+TED WORK
+
+As thiss work delves into three relatted topics - sports, social
+media and memorabbilia - we havee categorized thhe existing
+We start by ddescribing the influential
+works accordingly. W
+role off technology inn today’s sportss.
+Interac
+ctive systems
+s enhancing th
+he sports view
+wing
+experi ence
+
+In sporrts, technologyy is often ratedd as a game chhanger as it
+facilitaates means to deepen the innvolvement in sports and
+provid es different w
+ways to betteer understand the sport.
+Vision [42]
+Compaanies like Haawk-Eye [21],, and SportV
+provid e enhanced T
+TV viewing eexperience usiing virtual
+animatted overlays oon live broadcast of sportiing events.
+SlamT
+Tracker [41] proovides fans with a visual representation
+match using scoores and statisstics. Sports staadiums are
+of a m
+also inncreasingly maaking use of larger displayys to show
+additioonal informatioon about the ongoing matcch such as
+score uupdates, replayys and close-upp shots [7] whhile mobile
+apps hhave been buiilt that supporrt live video streaming,
+replayss and statisticaal analysis [1].
+Recentt works have sstarted to recoggnize the specttators’ role
+in spoorts. For exam
+mple, Tomitsch et al. [44] created a
+wirelesss motion-senssor wristband tthat detects appplause and
+allows spectators to be judges off the performaance, while
+Flinthaam et al. [13] ccreated an andrroid app that coollects rich
+metadaata from the sppectators of a llive marathon event. The
+SportsS
+Sense [51] is another system
+m that revealss television
+spectattors’ emotionss during a spoort event in reeal time on
+TV, w
+while Ludvigseen and Veeraasawmy [31] created an
+interacctive banner thhat displays nnoise and movvements of
+sports fan in stadiium. In summ
+mary, numeroous works
+highligght the potentiial of interactivve technology to support
+fans annd to enhance tthe sports view
+wing experiencee. Drawing
+inspiraation from theese works, wee present Fanntibles that
+involvee active particiipation from thhe home spectaators in the
+creatioon of memorrabilia, whichh to the besst of our
+knowleedge has not beeen explored yyet.
+
+F
+Figure 2: Fantib
+bles created fro
+om the individuals’ Twitter datta
+during the Ind
+dia vs. Bangladeesh Cricket seriies. The color off
+tthe Fantibles reesembles the collor of the winning team’s jerseey.
+
+IIn this paper, we
+w exemplify the
+t idea of Fa
+antibles with TV
+T
+vviewing of one popular spo
+ort, Cricket, which
+w
+has so far
+f
+rreceived little attention
+a
+in interaction desig
+gn and HCI. We
+W
+rreport insights from an “in th
+he wild” study that investigattes
+hhow the design
+n of Fantibless could affect an individuall’s
+rrelationship with
+w
+the sports. We recrruited 6 stud
+dy
+pparticipants du
+uring an Interrnational threee match crick
+ket
+sseries between India and Ban
+ngladesh. The duration of each
+m
+match was 8 hours. Participaants continued their practice of
+tw
+weeting whilee watching thee match for all three matchees.
+A
+After each mattch, they receiived 3D printeed Fantibles th
+hat
+w
+were personaliized to their tweets
+t
+and the correspondin
+ng
+ccricket match. At the end
+d of three maatch series, we
+w
+cconducted sem
+mi-structured in
+nterviews to ob
+btain qualitativ
+ve
+ddata about theirr experiences with
+w Fantibles.
+
+Importtance of Sportts Memorabilia
+
+Sports memorabilia hhave a long history of reviviing ‘golden
+memorries’ associatedd with iconic ssports events [111, 19, 20].
+For exxample, many sports fans kkeep match tiickets as a
+token for their mem
+mories associatted with the m
+match they
+memorabilia
+witnes sed in the staddium. Other popular sports m
+
+O
+Our work makees the followin
+ng contributions: 1) We explo
+ore
+aand study the concept of Fa
+antibles to enh
+hance the hom
+me
+
+884
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+items include team jerseys, signed picture frames, sports
+equipment, trophies and also things that fans associate with
+the sporting event such as match tickets and captured
+photographs from the event [20]. These memorabilia enable
+fans to remember enduring battles between the teams and
+how their support and cheering contributed to the winning
+outcome.
+
+interesting patterns and linguistic features that prompted
+emotional response among sports fans on social media.
+Some works have also looked at creating novel
+visualizations to represent tweet data of the sports fans
+onscreen. For example, Kamvar and Harris [24] used
+different color particles to imitate emotions of fans on a
+common plane, while Kempter et al. [26] proposed an
+EmotionWatch, to display different categories of emotions.
+The majority of the existing explorations on visualizing
+individual’s tweets are mainly onscreen, except for the
+work called Emoto [10], which got us thinking towards a
+tangible souvenir and its potential to support visualization
+of tweets. Emoto is a public art display that showcases
+tweet sentiments during the 2012 Olympic games.
+
+However, despite the demand of sports memorabilia [7,14],
+the current exploration on designing sports memorabilia is
+limited [49]. These memorabilia as found in sports heritage
+museums and endorsed merchandise offer a rather arbitrary
+view on the sports. For instance, most sports memorabilia
+embody a generic design that attain to objective facts and
+moments of historical significance such as victories, broken
+records and personal milestones [15,30,40]. However, their
+design does not fully capture the subjective experiences and
+emotional rollercoasters of witnessing a sports match. As a
+result, they miss out on being a true representative of the
+sporting event as it unfolded in time [30]. Connerton [6]
+further argues that momentous events like iconic sports
+matches are experienced and remembered differently by
+each individual fan. He calls such an experience ‘private
+nostalgia’ that originates from the personal memory of the
+event and is different from the ‘collective nostalgia’ of the
+event. Unfortunately, existing works around sports
+nostalgia rarely emphasize and discuss the private nostalgia
+of a fan, which we think is a missed opportunity. Frow [15]
+and Snyder [40] also fear that the commoditization of
+collective sports memory as observed in current
+memorabilia, incurs a danger of only the collective views
+becoming the dominant narrative of the social history of
+sports, which in turn could lead to loss of individual
+memories of the sporting event. The aim of this work is
+therefore to capture and support the private nostalgia in the
+design of sports memorabilia, which thankfully with
+today’s technologies we are beginning to explore.
+
+Research opportunity
+
+Existing works highlight the importance of social media as
+a platform for fans to express their emotions and to feel
+closer to other fans and the game itself. If the role of social
+media is to support the dreams of fans to get closer to the
+sport, players and fans alike, the role of a souvenir is to
+preserve such special moments for the future. Thus, the
+overlap of social media and memorabilia can offer new
+opportunities of recreating memories by translating social
+media interactions and moments into a tangible form.
+Incorporating personal data into memorabilia can add a new
+layer of personality by expanding its context to social
+dimensions, and potentially could also serve as a
+visualization platform to get an abstract summary of the
+game. This research takes into account the current
+popularity of digital fabrication coupled with the existing
+knowledge of affordances of physical visualization [23, 27,
+43], which makes fabrication of physical artifacts more
+accessible. By situating digital fabrication within the
+context of TV sports viewing experiences, this research also
+opens up an exciting new design space.
+DESIGNING FANTIBLES
+
+Fantibles is a personalized sports memorabilia that
+embodies the subjective passionate experience of sports
+viewing in a tangible form. Fantibles capitalizes on the
+trajectory of the individual’s tweets and the progression of
+the sports event in real time to create a unique 3D printed
+souvenir. As such, Fantibles utilizes two data sets: sports
+statistics and social media streams. The sports statistics
+include the essential information (or highlights) of a given
+sporting event, while the social media stream incorporates
+spectator engagement levels during the event. These two
+data sets are transformed into separate 3D printed models:
+Sportoms and Fantoms that interlock with each other.
+Before describing these models, we first explain the
+rationale behind some of our design decisions.
+
+Use of social media during sports events
+
+The rise of social media allows fans to not only follow their
+favorite players and sports on social media but also to
+participate in conversation with like-minded fans [22,
+36,38]. Twitter, for example, is often used as a backchannel
+to share and observe commentary and opinion about an
+ongoing TV sporting event [22], where the first screen is
+the television broadcast of the event while the second
+screen is a smartphone or a laptop used to monitor and
+express opinions about the event. In the past, the interaction
+between fan and athletes was mostly one-sided, where only
+the few fortunate fans getting an opportunity to interact
+with favorite athletes through the cursory of autograph
+signing [38]. Athletes and sports management authorities
+have also acknowledged the role of social media to create
+positive exposure among fans [38]. For example,
+Philadelphia Wings of the National Lacrosse League put
+players’ Twitter handles on the backs of their jerseys [36].
+Kim et al. [28] has done a comprehensive analysis of the
+tweets during the 2014 FIFA world cup in order to identify
+
+Choosing Cricket
+
+We choose Cricket because of its wide popularity in the
+Asia Pacific region with a huge fan base on social media
+platforms [8,45]. For instance, a recent survey [45]
+indicated that 89% of Twitter users in India are cricket fans.
+In the current prototype, we opted for the One Day
+
+885
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+tensionn in terms of how much information should be
+conveyyed in a tangibble form. Figuure 3 illustratees some of
+the eaarlier design ssketches. We discarded these designs
+becausse of the invoolved lengthy modeling annd printing
+proces ses. Additionaally, these deesigns were reepresenting
+multiplle sets of info rmation into oone model, whhich in turn
+was maaking the model complex to iinterpret.
+
+IInternational (O
+ODI) version of
+o cricket as it was scheduled
+aaround the stud
+dy time. An ODI
+O match rou
+ughly lasts forr 8
+hhours and has 100 overs in to
+otal where eacch team plays 50
+5
+oovers. Explainiing the entire rules
+r
+of Crickeet are beyond th
+he
+sscope of this paaper, instead we
+w only narratee the key aspeccts
+oof Cricket that we incorporateed in the design
+n of Fantibles.
+C
+Cricket is a gam
+me played on a large field wiith a bat and baall
+bbetween two teeams, each witth 11 players. Each
+E
+team tak
+kes
+tuurns to bat in
+n order to scorre runs, whilee the other teaam
+bbowls. The first team to bat, scores
+s
+runs and
+d sets a target for
+f
+thhe bowling teaam to achievee. The other teeam then tries to
+aachieve this taarget when theey bat. A criccket match is of
+m
+multiple overs with each over having 6 baall deliveries. A
+pplayer, while batting, can sco
+ore runs by hittting the ball wiith
+hhis bat in the field.
+f
+If the balll crosses the boundary
+b
+line of
+thhe field then the player geets ‘4 runs’; And if the baall
+ccrosses the bou
+undary line aeriially (i.e., with
+hout touching th
+he
+ffield before thee boundary linee), then the plaayer is rewarded
+w
+with ‘6 runs’. Players
+P
+from the
+t bowling teeam can stop th
+he
+bbatting team frrom scoring runs by bowling
+g good deliveriies
+thhat are difficu
+ult to hit and by preventing the ball fro
+om
+ccrossing the bo
+oundary line. Additionally,
+A
+th
+he bowling teaam
+ccan also get th
+he player out,, which is callled as taking a
+‘wicket’ by fo
+ollowing the predefined
+p
+sett of rules (e.g
+g.,
+ccatching the ball before it touches
+t
+the fieeld). These ru
+uns
+sscored in 4’s and
+a 6’s as welll as taken wicckets are cruciial
+aand exciting parts
+p
+of the Cricket
+C
+game. Hence we hav
+ve
+inncorporated th
+hem in our design.
+C
+Capturing Use
+er Excitement
+
+T
+The idea of useer excitement has always been central to th
+he
+ssports. Loy reffers to sports as
+a "intrinsically
+y appealing" an
+nd
+ssuggests that the feature of "problematic outcomes" in
+ssports "lends tension and excitement to
+t the sportin
+ng
+ccontest" [30]. The
+T uncertaintiies in the sportting event creaate
+tension and in turn excitemeent among thee spectators. We
+W
+o capturing user excitemeent
+thhought of diffferent ways of
+dduring a Crick
+ket match. Forr instance, onee option was to
+ccapture user’s heart rate or galvanic
+g
+skin response durin
+ng
+thhe game using
+g wearable deevices. Howeveer, such a setu
+up
+ccould have hindered the privaacy and naturaal sports viewin
+ng
+eexperience. Heence, we opted
+d for a less obstructive way of
+ccapturing useer excitementt, through an
+a
+individuall’s
+eemotional outb
+bursts on Twiitter during a Cricket matcch.
+S
+Since tweets arre publicly vissible by defaullt, their usage is
+nnot heavily load
+ded with privaccy related issuees.
+
+Figure 3: Earrlier design skettches for Fantibbles
+
+As a reesult, instead oof trying to fit all pieces of innformation
+onto oone model, w
+we decided to create two innterlocking
+modelss, building upoon earlier worrk by Nissen eet al. [35].
+The firrst model repreesents the sporrts data while the second
+one deescribes the ffan’s emotionss through tweeets. These
+modelss individuallyy provide iinformation aabout the
+embeddded data suchh as sports andd tweets but w
+when joined
+togetheer reveal addditional infoormation suchh as the
+relationnship betweenn the two. Addditionally, the m
+models are
+3D priinted using thee color of the w
+winning team’’s jersey as
+shown in Figure 2. For example, iff India won the match, the
+models were priinted in Whitee and Blue collors (colors
+two m
+Bangladesh
+of Inddian Cricket teeam’s jersey), whereas if B
+won thhe match thenn the models w
+were printed iin red and
+green. Below we ddescribe the ffinal design oof the two
+modelss.
+
+G
+Giving physica
+al shape to da
+ata
+
+A
+After selecting
+g the data setss: cricket data and tweets, th
+he
+nnext challengee was to turn
+n these two data
+d
+sets into a
+m
+meaningful vissualization thatt communicatees the dynamiics
+oof and emotio
+ons around a sporting eveent. The desig
+gn
+pprocess involved careful exaamination of data
+d
+sources for
+f
+sselecting gamee statistics an
+nd integrating
+g personal datta,
+ccoding, prototy
+yping and testiing the viability of the desig
+gn
+ffor 3D printing
+g. Since we embarked
+e
+to create
+c
+a tangib
+ble
+rrepresentation of sports and tweets data, there
+t
+was also
+o a
+
+SPORT
+TOMS
+
+The nname Sportom
+ms stands forr Sports Atom
+ms, which
+represeents sports dataa in a tangible form. Here, w
+we focus on
+the keyy moments of a sporting eveent that cause excitement
+
+886
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+into thhree levels of excitement: loow, medium annd high. If
+the useer has not tweeeted during a ggiven interval of 5 overs,
+then w
+we consider theeir excitement level during tthat period
+as ‘low
+w’. However, iif the user hass posted a tweeet, then we
+consid er it as a rise iin the excitemeent level of thee user. We
+manuaally parse eachh tweets to idenntify emotionaal outbursts
+outburrsts such as occcurrence of w
+words such ass ‘OMG!’,
+‘wow! ’ or the use of emoticons that illustratee a rise in
+ment level. Thhe absence of excitement inn the tweet
+excitem
+signifiees ‘medium’ level of excittement. Note that these
+excitem
+ments can corrrespond to booth positive annd negative
+emotioons. In the cuurrent design oof Fantoms, w
+we did not
+consid er positive andd negative mom
+ments separateely because
+- irresppective of the polarity - theese emotions aare integral
+parts oof the sports vieewing experiennce.
+
+aamong spectato
+ors and thus may
+m result in generating
+g
+amp
+ple
+tw
+weets. With Sportoms, wee utilize the data about th
+he
+ccompetition between the two playing teamss in terms of th
+he
+rruns scored in 4’s and 6’s and the wickeets taken at an
+ny
+ggiven time. Wee borrow inspiiration from a popular Wago
+on
+W
+Wheel [12] model
+m
+to reprresent this in
+nformation in a
+cchronological order
+o
+because of
+o its simplicity
+y in representin
+ng
+laarge amount of
+o information. As such, the Sportoms serv
+ves
+aas a timeline and consists of
+o 20 bars distributed even
+nly
+aaround a central cylinder as shown in Fig
+gure 4. These 20
+2
+bbars summarizee 100 overs off an ODI crick
+ket match wheere
+eeach bar repressents the time duration
+d
+of 5 overs (on averag
+ge
+8 minutes of gaameplay).
+
+The Faantoms emboddies a floral patttern where eaach petal of
+this m
+model describes the changess in user excitement for
+every interval of 5 oovers (Refer F
+Figure 4). Thee length of
+each ppetal describees the user excitement leevels. For
+instancce, a petal of 00mm length ddescribes a ‘low
+w’ level of
+excitem
+ment, while a petal of ‘10m
+mm’ length annd ‘20mm’
+length describes thhe ‘medium’ and ‘high’ level of
+ment. Additionnally, the heighht of each petall is used to
+excitem
+denotee the frequencyy of tweets durring the given pperiod of 5
+overs. Therefore, eacch subsequent tweet within tthe given 5
+will raise the height of thee correspondinng petal by
+overs w
+1mm. T
+The Fantoms iis read clockwiise starting from
+m the petal
+containning a small bubble on onne of its end. However,
+unlike Sportoms, Faantoms do not have a fixed number of
+petals, rather the pettals are createdd based on thee pattern of
+tweets.. By placing thhe Fantoms on top of the Spoortoms, one
+can eaasily identify the score aand the chroonology of
+excitem
+ment with resp ect to the sportting event.
+
+Figure 4: Fan
+ntibles consists of
+o two interlock
+king 3D printed
+parts - Sportom
+ms that summa
+arizes sports datta, and Fantoms
+that
+t
+represents user excitemen
+nt.
+
+T
+The spike with
+h a small hole denotes
+d
+the staarting 5 overs of
+thhe match and
+d the clockwiise reading of
+o the Sportom
+ms
+ddescribes the progress
+p
+of the match in 5 ov
+vers. Each spik
+ke
+hhas two cylind
+ders of differen
+nt widths placced next to each
+oother. The outeer bigger cylin
+nder (width: 4m
+mm) denotes th
+he
+rruns scored by
+y the batting team while th
+he inner smalller
+ccylinder (width
+h: 3mm) descrribes the wickeets taken by th
+he
+bbowling team during the corresponding
+c
+5 overs of th
+he
+m
+match. Every ‘4’, ‘6’ or ‘wicket’ woulld result in an
+a
+inncrement in th
+he height of the
+t correspond
+ding cylinder by
+b
+11mm. This ch
+hronological mapping
+m
+of the
+t
+informatio
+on
+aallows for easy
+y comparison between
+b
+the two teams in term
+ms
+oof the runs and wickets, which also highlights th
+he
+ddominance of one
+o team over the
+t other.
+
+STUDY
+YING FANTIBL
+LES IN THE W
+WILD
+
+We coonducted a quaalitative field study, to inveestigate the
+use off Fantibles in everyday conntext. We depployed our
+system
+m among particcipants in ordeer to collect a rich set of
+subjecttive data and tto gather ideass and strategiees to future
+design s. We selectedd a major One-day Internationnal Cricket
+series, played betweeen India and Bangladesh. The series
+had thrree matches thhat were playeed on the 18thh, 21st and
+24th off June 2015, eeach match acccounting for m
+more than 8
+hours oof TV viewingg.
+We reecruited six pparticipants byy circulating a call for
+particippation across ddifferent mailiing lists (Referr Table 1).
+The paarticipants werre selected baseed on their inteerest in the
+India V
+Vs. Bangladeshh Cricket series and their willlingness to
+share ttheir experiencces on Twitter.. Additionallyy, we chose
+particippants who couuld watch all thhree matches. T
+The limited
+availabbility of 3D printing resourcces and the m
+manual task
+overloaad prompted th
+the study to bee done with a small pool
+of partticipants: printting the Sportooms required ann hour and
+Fantom
+ms required 220 minutes too print. As suuch, for 6
+particippants per matcch, Fantibles reequired aroundd 8 hours of
+daily pprinting for eaach match. Sinnce the matchees were on
+
+F
+FANTOMS
+
+T
+The name Fan
+ntoms stands for
+fo Fan Atoms as it represen
+nts
+ddata from fanss (their tweets)) in a tangiblee form. Fantom
+ms
+ssummarizes vaaried levels of
+o excitement of sports faans
+dduring the live broadcast of a sporting even
+nt, analyzed fro
+om
+thheir tweets. In
+n the current prototype,
+p
+the analysis is don
+ne
+m
+manually in thee following waay.
+W
+We parse all the tweets posted
+d by an individ
+dual across eveery
+5 overs of a criicket match an
+nd then categorrize these tweeets
+
+887
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+crickett series, we cconducted opeen-ended semii-structured
+intervi ews with partiicipants to undderstand their eexperiences
+Fantibles and hhow Fantibles helped them iin reviving
+with F
+memorries of the Criccket matches. Additionally, the written
+notes were used aas probes to get more inssights into
+particippants’ first haand experiencees. Each intervview lasted
+for arround 45 minnutes and waas audio recoorded and
+transcrribed for analyysis. We usedd thematic codding [5] to
+derive recurring them
+mes from the coollected data.
+
+eevery other day
+y, we had limitted time to priint and distribu
+ute
+thhe Fantibles to
+t each participant before the
+t start of neext
+m
+match.
+Name*
+
+Age
+A (yrs.)
+
+Gender
+G
+
+Nationality
+N
+
+Heather
+Samira
+Nelson
+Shahid
+Rahul
+Dev
+
+20
+26
+25
+28
+32
+30
+
+Female
+F
+Female
+F
+Male
+Male
+Male
+Male
+
+Canada
+Bangladesh
+B
+Bangladesh
+B
+Bangladesh
+B
+India
+India
+
+REACT
+TIONS TO FAN
+NTIBLES
+
+The ovverall responsse from the paarticipants waas positive.
+Particippants appreciaated the novellty and playfull nature of
+the Faantibles and coompared it with their routinne way of
+checkinng sports data on TV and tweeets on a mobile screen.
+
+Table 1: Participants’
+P
+dem
+mographic deta
+ails (*names
+chan
+nged).
+
+First im
+mpression wa
+as to keep the Fantibles
+
+Heatheer expressed jjoy while opeening her firstt envelope
+containning Fantibles (refer Figure 66), “When I took it out of
+the paackage and eveerybody in myy office lookedd over and
+were like: ‘whhat’s that? Itt looks really cool and
+they w
+exciting
+ng’.” Shahid also expressed ssimilar feelingss, “My first
+thoughht was it looks ggood, and I waant to keep it”. Nelson on
+the othher hand said, ““I would not peersonally bougght the idea
+of sporrts memorabiliia but these moodels made mee rethink as
+they aare very goodd representatioons of the gaame, I will
+definiteely keep them””.
+
+W
+We designed a custom weeb-based systeem that extraccts
+tw
+weets from the official tw
+witter account of the chosen
+C
+Cricket series (@ICCLive) and the participants’ twittter
+aaccounts. We manually parssed the particip
+pant’s tweets to
+iddentify user ex
+xcitement levels and the feed
+d the levels back
+inn to the system
+m. The system
+m then creates both the modeels
+ffrom the match statistics coming from the tweets by
+b
+@
+@ICCLive acccount and iden
+ntified user ex
+xcitement leveels
+((refer Figure 5).
+5 We used the
+t Twitter API
+A to fetch th
+he
+weets and utilized
+u
+the constructive solid geomettry
+tw
+techniques witth OpenJSCA
+AD [37] to co
+onstruct the 3D
+3
+m
+models.
+
+F
+Figure 5: Screen
+nshot of the sysstem: a) Users enter
+e
+their twittter
+handle and theen select a matcch from the Cricket series. b) A
+3D model of Fantibles
+F
+is then created based upon the sportss
+data an
+nd users’ own tw
+weets during th
+he match
+
+Figuree 6: Fantibles weere hand-deliveered to each parrticipant in
+an envelope thee next day of th
+he concluded maatch.
+
+Samiraa and Shahid were similarlyy delighted too receive a
+tangiblle testimony fo
+for their loyal following of B
+Bangladesh
+crickett. Samira said with a smile, ““It feels good tto get your
+own trrophy for beingg the biggest ffan”. Out of eenthusiasm,
+four paarticipants voluuntarily took aand shared photos of their
+Fantibbles on differrent social m
+media networks such as
+Faceboook and Instagrram (Refer Figgure 7).
+
+W
+We asked each
+h participant to continue theirr regular practiice
+oof tweeting durring each of th
+he three matches of the chosen
+C
+Cricket series. Once the mattch was over, we accumulated
+aall the tweets frrom every partticipant and creeated 3D modeels
+oof Fantibles. We
+W prepared an envelope for every
+e
+participaant
+w
+where we put both the modeels in along with
+w a paper no
+ote
+thhat contains a brief descrip
+ption about the models and a
+ccouple of quesstions asking participants’ about
+a
+their firrst
+hhand experiencce with these models (Referr Figure 6). Th
+he
+eenvelope was th
+hen personally
+y handed to parrticipants in theeir
+hhome or workp
+place within 24
+4 hours after th
+he Cricket matcch.
+P
+Participants weere asked to an
+nswer the questtions on the no
+ote
+ittself and bring
+g them to the interview. Att the end of th
+he
+
+888
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+confussing for the paarticipants. Deev instead recoommended,
+“Usingg a different sshape like a trriangle or squuare would
+have b een easier to innterpret”.
+Fantib
+bles provided a quick summ
+mary of the ma
+atch
+
+All parrticipants likedd the fact that F
+Fantibles provvides a nice
+summaary of the entirre match at a gllance. Samira m
+mentioned,
+“Whenn I miss some parts of the m
+match, I usually ask my
+husbannd about what happened inn the match inn order to
+know w
+who won and hhow. Sometimees I also check sports and
+news w
+websites, but tthese sites offfer too much oof data. In
+order tto know how the game wennt requires reaading of an
+entire commentary ppage. I wishedd for somethinng simpler
+and eaasy. The Fantibbles give me a pretty good vview about
+what hhappened. Froom the colorss I know whoo won the
+match, by looking att the thickness I can say wheether it was
+a high scoring matchh or low scorinng match, it savves a lot of
+me, definitely”.
+my tim
+
+Figure 7: Partiicipants enthusiiastically posted
+d photographs of
+o
+ttheir Fantibles on
+o Instagram, Facebook
+F
+and Twitter.
+T
+(The text
+iin the picture iss blurred to preeserve participa
+ant’s anonymity
+y.)
+F
+Fantibles beca
+ame part of the
+e home ambie
+ence
+
+P
+Participants deecorated differrent areas of their
+t
+home wiith
+F
+Fantibles (Refeer to Figure 8). Heather for example
+e
+tied tw
+wo
+oof her Fantiblees with a string
+g together and hung her famiily
+ppictures onto it (Figure 8d), while Raahul placed th
+he
+F
+Fantibles on his
+h TV (Figuree 8b). Dev an
+nd Samira glued
+ssmall magnets to Fantibles an
+nd used them to decorate theeir
+ffridge (Figure 8c).
+8
+
+Fantib
+bles made com
+mplex sports d
+data simple to
+unders
+stand
+
+Dev ssimilarly wass impressed by the new
+w way of
+represeenting data in a tangible souuvenir, “I felt iit is a very
+nice rep
+epresentation oof the match. T
+To me, Cricket hhas always
+been aabout graphs aand statistics. I never camee across to
+somethhing like this w
+where you can see how manyy runs were
+made tthrough the maatch. When yoou hold them [[models] in
+your h and, you can ssee over time hhow runs weree made and
+how m any wickets weere taken.”
+Physic
+cality of Fantib
+bles supporte
+ed frequent en
+ngagement
+
+F
+Figure 8: Particcipants used thee Fantibles in different places in
+i
+their home.
+
+Five paarticipants likeed the fact thatt with Fantiblees, they did
+not haave to open thhe computer annd navigate thhrough file
+structuures in order tto interact withh sports and ttweet data.
+Nelsonn mentioned too us, “With thee physical, youu only keep
+what m
+matters to you. With digital, tthere is no succh limit, for
+examp le the entire m
+match data woould take 1 orr 2 MB of
+space in the disk. I w
+would probablly copy my datta onto the
+disk buut would never look at it aggain. But with Fantibles,
+the datta is in physicaal form now. I can now placce my data
+on my desk and it willl be there for aages and I am also sure I
+while. If Fantibles were
+will innteract with iit once in aw
+digital,l, exploring theem would have felt like work””.
+
+E
+Exploring Fantibles for information was fun
+f
+
+Durab ility of Fantiblles was desire
+ed
+
+P
+Participants co
+orrelated their understanding
+g of the Crick
+ket
+m
+match with thee received Fan
+ntibles. At firsst, understandin
+ng
+thhe Fantibles was difficullt for them because of its
+uunfamiliar absttract design; ho
+owever, all parrticipants treated
+thhis as a fun activity that tested their knowledge an
+nd
+m
+memory aboutt the cricket matches
+m
+as weell as their ow
+wn
+tw
+weets. Rahul said to us witth a smile, “It was difficult at
+ffirst for me to
+o understand what
+w
+Fantibless conveys, butt I
+liked the abstra
+actness of it, which
+w
+challeng
+ged my thinkin
+ng.
+A
+And the intereesting part is,, the more I understand th
+he
+m
+meaning, the more I want to keep it.” However, fiv
+ve
+pparticipants sug
+ggested improv
+ving certain paarts of the desig
+gn
+ffor clarity. For example, th
+he use of thin
+nner and thick
+ker
+ccircles to reprresent wicketss and runs reespectively was
+w
+
+Fantibbles were madde up of a bioodegradable maaterial like
+Participants likked the use oof plastic as it lasts over
+PLA. P
+time - however they also raaised the quuestion of
+memorabilia
+environnmental sustaiinability. Plastiic made the m
+durablee and usablee in everydaay context. R
+Rahul was
+impresssed with the qquality and fouund them quitee alike with
+things he has boughtt from the shopps. Dev on the other hand
+wear and tear easily like
+was gllad that Fantibbles does not w
+some oof his preciouss souvenirs do. For example, he showed
+us a sslightly aged and torn Mellbourne Crickket Ground
+(MCG)) ticket, whichh he has boughht five years baack. He has
+kept it as a souvenir to remind him
+m about his firsst match at
+CG. Heather aand Samira wiished if they ccould print
+the MC
+
+889
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+Fantibles in different metals like bronze, silver and gold,
+similar to medals given in spots tournaments.
+
+when a bad decision happened on the ground, or somebody
+hits a ‘6’.”
+
+Fantibles in winning team color was appreciated
+
+Tweets were full of emotions
+
+All participants appreciated the fact that the Fantibles
+embodied the color of the winning team. Dev was surprised
+when he came to know about the colors, “Initially, I did not
+think of the color choices. I thought they were random but I
+was positively taken aback by the use of winning colors.”
+However, Samira and Nelson wanted colors of both the
+teams reflected on the Fantibles. Nelson said, “ I don’t
+know if it is possible, but it would be great to have half
+portion of Fantibles in one team’s color and other half in
+another. In that way I can then easily see the battle between
+the two teams.”
+
+Participants’ tweets showcased a variety of emotions from
+feeling tensed to feeling overjoyed. Surprisingly, most
+tweets occurred during crunch situations in the Cricket
+match. For example, some of the interesting tweets during
+tense situations were, “I am feeling the pressure just by
+watching the game, I wonder how the players stand it…”
+“Nerve, nerve, nerve... this match is all taking it…” “:D :D
+:D :D, Need 6 more big smiles ... [referring to 4 wickets
+that have fallen and 6 remaining]”. Besides ‘4’, ‘6’ in the
+match, other situations such as players reaching personal
+milestones, or breaking records also generated ample
+tweets. However, not all tweets were directly related to the
+match. Sometimes participants even discussed other things
+such as childhood memories. For example, referring to the
+drink trolley that typically comes during the break, Shahid
+tweeted, “In my childhood, I used to wonder how big this
+bottle on the drinks-trolley is.”
+
+Tweets made Fantibles personal and unique
+
+All participants appreciated the use of personal data, their
+tweets during the match in the design, and considered it as a
+thoughtful addition. Nelson said, “Tweets bring something
+new to the world of memorabilia and make them more
+personal”. Dev similarly expressed, “because of the tweets,
+Fantibles felt more unique and personal to me”.
+
+Physicality of Fantibles facilitated offline display of
+emotions
+
+Fantibles offered reflection on self
+
+All participants appreciated how Fantibles are
+representatives of their emotions. Rahul said, “The best part
+is that through these Fantibles, I can take my feelings
+offline and show it to others even after the match is over.”
+Shahid, on the other hand, expressed with joy, “Like most
+fans, I love to express my opinion, anger, disappointments
+and joy during sports. Previously I was expressing myself
+vocally and sometimes with the tweets, the only change, I
+see here is now I have a physical record of it (by looking at
+Fantibles) and that’s nice.”
+
+Using Fantoms and Sportoms in relation to each other,
+Heather was delighted to learn about the things that excited
+her in the match most, “Looking at this guy (a thicker circle
+that denotes runs), it is kind of cool to see, I am more
+excited for the runs. I never realized that”. On the other
+hand, Shahid said, “Fantibles helped me in remembering
+good and bad memories of the match. I like to remember
+bad memories, I remembered the argument on Twitter I had
+with friends that whenever we win the match or series, we
+forget the mistakes we made. We discuss only the victories,
+but it is good to remember the mistakes and challenges that
+are still to be overcome.”
+
+Abstractness supported public display of emotions
+
+Three participants liked the abstract display of their
+excitement levels through Fantoms. Samira said, “Sometime
+I put my frustration in very strong way. Those frustrations, I
+do not want to be revealed in public. But with these models,
+I can now showcase these feelings in an abstract level. No
+one can see my words, all they see is high peaks and I think
+this much of expression is tolerable in public.”
+
+Fantibles prompted tweeting
+
+After receiving the first set of Fantibles, participants came
+to realize how their excitements and tweets gets reflected in
+the floral design pattern of Fantoms. They realized that how
+they could alter its design by changing their tweeting
+behavior. As a consequence, four participants
+enthusiastically expressed their emotions in tweets in
+subsequent matches. Nelson mentioned, “My first reaction
+after receiving the first Fantibles, was to tweet more and to
+see how it would turn out in the design.” He further added,
+“Although after getting the second and third Fantibles, I
+was still excited and the design made much more sense”.
+Heather on the other hand was disappointed for not
+tweeting more. She wanted her Fantoms with full of peaks.
+
+Abstract design facilitated personal narration to unlock
+its meaning
+
+The abstractness of the Fantibles not only concealed their
+emotions but also gave participants an opportunity to
+narrate their subjective experience of the match to
+interested viewers. Heather was thrilled with how the
+models depicted her emotions and said, “When my
+colleague picked up the souvenir in the office, she said it
+was good for decorating. But she didn’t know how to read
+it. It made me feel like if the message was encoded only for
+me and that I am the only one who can unlock its meaning.”
+
+Interestingly, the increased tweeting during a game did not
+cause any distraction to the sports viewing, but rather
+tweeting strengthened their commitment towards Cricket.
+As Rahul mentioned, “Cricket as you know has a little
+break in between the overs, which gives me enough time to
+tweet. In that way, I am letting the world know how I feel
+
+Participants wanted to make Fantibles social
+
+Although all participants liked the personal aspect of
+Fantibles, they all wished if Fantibles could embed social
+elements such as data from their friends. For most, tweeting
+
+890
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+was a routine activity with which they connect with their
+remote friends while watching a cricket match. Samira
+mentioned, “When we post our feelings there, it gives us the
+feeling of being and watching together.” Heather, on other
+hand, wished to incorporate the stadium noise or crowd
+thinking about the match within the design. For her, it
+would be cool to compare her emotional response with her
+friends and other people in the stadium. She further added,
+“It would be really great to take these ideas to the stadium
+and then record and compare your team and opposition
+team’s support over the game.” Nelson remembered about
+the soccer stickers that he used to collect during his
+childhood, he said, “Fantibles reminds me of completing a
+soccer album when we friends used to get together and
+change stickers.” He wanted to extend Fantibles to support
+similar experience.
+
+an iconic match. If you bring home such a cricket ball that
+represent an iconic event or special memory, others might
+find it hard to differentiate it from other ordinary cricket
+balls as they do not hold the same memory. As such,
+memorabilia relate to memories of personal experiences
+and require narration from the owner to unveil the story
+behind them. In other words, the meaning of the sports
+memorabilia is not in the tangible object but is in the mind
+of its owner. As Heather experienced, her colleagues
+wanted to know how to interpret the Fantibles, and required
+her narration to explain the meaning behind large emotional
+peaks. This feature provided her with a sense of privacy and
+control over information that she wants to share with others.
+Layered Sense Making
+
+The player facts and the sports analytics are a core part of
+fan’s intellectual engagement with sports. By exploring
+individual’s social media contribution, we see a potential of
+going beyond the ‘facts and the data’ about sports and an
+opportunity to explore other complementary aspects of
+sports centered on an individual’s subjective experiences. In
+Fantibles, we focused not only on the ‘facts’ and ‘data’
+(‘tell-a-tale”) of a Cricket game but we also put an equal
+emphasis on individual’s contribution to the game of
+Cricket as expressed in their tweets. Earlier studies also
+suggest that people find opinions in shortened forms such
+as in Twitter easier to understand as opposed to longer
+writings in news stories and blogs [3]. However, as per the
+nature of social media, the generated tweets embody a
+digital format and accessing back key moments from one’s
+own tweets or reflecting back upon one’s emotional state
+during the match requires browsing and scrolling through
+pages of tweets. We note that, although twitter limits a
+tweet to 140 chars, there is no limit on how many tweets
+one can send during an ongoing sports event.
+
+DISCUSSION
+
+We discuss participants’ responses to Fantibles across four
+themes as below.
+Self-expression
+
+Twitter supports individuals’ self-expression by allowing
+users to create a desirable representation of themselves to
+other people through their tweets [4]. Within a sports
+context, Twitter supports an individual’s self-expression
+and allows them to display their passion towards the sports
+through their tweets and offer a way to connect with other
+fans. Rinehart [39] highlights the desire of many sports
+fans, who want to be ‘players’ themselves, not as to
+participate in the sport but rather to make their opinion and
+presence count in the sport event as a whole.
+Lowenthal [32] writes, “Individual memories convert
+public events into idiosyncratic personal experiences”. He
+further adds that, “we recall only our own experiences at
+first hand and the past we remember is innately our own”.
+As such, Fantibles captured an individual’s narrative
+(commentary) on sports and reinforced its significance and
+meaning for later usage through transforming it into a
+tangible souvenir that resonates with the identities of the
+sports fan. The use of personal tweets acted as a physical
+signature that made the Fantibles authentic. Fantibles
+served as a tangible testimony and an official recognition of
+being a sports fan. As a result, participants developed an
+emotional attachment with the memorabilia. Their public
+display in different parts of their home further facilitated
+exhibition of one’s devotion to sports, creating an alternate
+representation of self [17]. For instance, Shahid took pride
+in displaying his Fantibles to his friends and visitors to his
+home and it allowed him to share good and bad memories
+of the cricket match he passionately witnessed.
+
+The Fantibles through its abstract design offered a quick
+way for individuals to see an abstract summary of one’s
+tweets (particularly, emotions). Participants welcomed the
+tangible aspect of the memorabilia, which takes them away
+from the screen. According to Kaplan and Kaplan [25], a
+restorative physical environment clears the mind from
+unwanted thoughts and provides opportunities for broader
+reflection by directing attention to only key aspects. A
+sports memorabilia should, therefore, avoid providing too
+much information by keeping the data mapping simple and
+direct. The memorabilia presents the summary of the sports
+along with tweets in a way that can be perceived at a glance
+to the fan. Participants also liked the interlocking nature of
+the Fantibles, which provided them with the opportunity to
+add more layers if the fan wanted to expand meaning. For
+example, as a future work on Fantibles, we can add a third
+layer of data printed on a piece of paper that displays
+textual sports and tweet data. Users can then utilize this
+extra layer along with the Fantibles as a navigator to extract
+further information as shown in Figure 9.
+
+Van den Hoven [48] wrote about the esoteric qualities of
+the tangibles that hold a special meaning for their owner but
+can remain obscure for others. In the sports context, a
+typical cricket ball can be purchased for 20$ but even the
+picture of the same ball gets sold for massive prices if there
+is a distinct memory associated with it such as being used in
+
+891
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+conneccted with her ffriends throughh Facebook andd how they
+enjoy eeach match th eir team playss through chatss as if they
+are alll in the same room. We beelieve that inccorporating
+intrinsiic spatial and social qualitiees of being a ppart of the
+crowd could further eenhance the individual’s sporrts viewing
+experieence at home. For instance, Heather highllighted that
+the spoorts are often a collective soocial viewing eexperience,
+therefoore adding dataa such as her interactions w
+with friends
+on soccial media or crowd noise ffrom the stadiium would
+provid e additional w
+ways to relivve and celebrrate shared
+memorabilia coould make
+memorries. Having ssuch social m
+watchiing sports togeether more enjjoyable and coould invite
+discusssion even afterr the event has ended. We sugggest using
+a moduular interlockinng structure ass practiced in our design
+to embbed data from multiple sourcces. For exampple, friends
+can sticck their Fantom
+ms on top of onne common Spportoms, to
+correlaate their excitem
+ment levels.
+
+Figure 9: An example
+e
+of layerred meaning making approach
+h
+where fans ca
+an print textual data of tweets and sports and
+then use Fanttibles as a navig
+gator to extract further details..
+
+CONC LUSION
+
+This ppaper presents Fantibles as aan exploratoryy design to
+enhancce the home vviewing experiience of sportss fans. We
+design ed two separatte models: Spoortoms and Faantoms that
+when interlockeed together
+emboddies different ddata sets but w
+provid e an understtanding of hoow a fan’s excitement
+We found that the sports
+unfold ed with the ssport event. W
+memorrabilia gave inndividuals oppportunities to experience
+and p erceive eventts on a physsical 3D interrface. Our
+meaning of
+findinggs indicate hhow sports ffans make m
+Fantibbles and value them by makking them a ppart of the
+home aambience.
+
+A
+Ad-hoc Interac
+ctions
+
+IIn line with earlier studiees [27, 29, 48],
+4
+participan
+nts
+ppreferred a meemorabilia thatt is visible in the
+t surroundin
+ng,
+aand that they can
+c interact wiith using their hands to deriv
+ve
+ffurther meaning
+g. Sports mem
+morabilia thereffore should hav
+ve
+aan affordance of ‘place’ as well as ‘usse’. Miller [34]
+ddescribed the tendency of maaterial artifactss to disappear in
+thhe background
+d, which he calls as “humility
+y of things”. Ass a
+rresult, although
+h memorabilia are visible in the surroundin
+ng,
+thhey are not thee sole focus off attention. Th
+herefore, in ord
+der
+too make them noticeable, meemorabilia sho
+ould support ada
+hhoc interaction
+ns with individ
+duals as they move around in
+thhe surroundings. For examp
+ple, two participants attached
+m
+magnets to Fantibles
+F
+and
+d then put Fantibles
+F
+on a
+rrefrigerator so that they beecame noticeab
+ble in everyday
+aactivities. Such
+h an approacch supported frequent ad-hoc
+innteractions witth Fantibles.
+
+Althouugh we exploreed only one spoort (Cricket) thhrough one
+represeentation, we bbelieve this ppaper contribuutes to the
+knowleedge of persoonalizing sporrts memorabiliia through
+four coonceptual desiggn themes thaat designers cann utilize to
+extendd the work to oother sports. Our goal behindd this work
+was noot to propose fiinished final deesign; rather w
+we aimed to
+provokke discussionss and critique around proloonging the
+experieence of sporrt events throough reminisccence and
+lookingg into tangiblee qualities. To tthis end, this w
+work opens
+up neew exciting opportunitiess for creatinng sports
+memorrabilia throughh the use of personal social m
+media. We
+hope oour work helpps to drive D
+DIS forward inn terms of
+design that encomppasses a widee world of spports with
+excitinng new technnologies that support the qualitative
+audiennce experiencess of passionate people.
+
+M
+Material artifaccts also acquiree additional meeaning as peop
+ple
+rreflect on them
+m over time [29
+9, 35]. A recentt study on sporrts
+m
+memorabilia allso highlighted
+d the importan
+nce of narrativ
+ve
+aand the need to
+o support emerrgent behavior in the design of
+ssports memorab
+bilia [49]. Ourr study also refflected that mo
+ost
+pparticipants wanted their Fantibles
+F
+to age
+a
+well, hen
+nce
+aappreciated usee of material that can resisstance wear an
+nd
+tear, howeverr it also briings forward the topic of
+eenvironmental sustainability, which could be addressed
+thhrough selecctive printing
+g and using biodegradab
+ble
+m
+materials.
+
+REFER
+RENCES
+
+1.
+
+Aaaron Ault, Jam
+mes V. Krogmeier, Steven R. D
+Dunlop,
+annd Edward J. C
+Coyle. 2008. eS
+Stadium: The M
+Mobile
+W
+Wireless Footbaall Experience. In Proceedinggs of the
+20008 Third Interrnational Confe
+ference on Interrnet and
+W
+Web Applicationns and Servicess (ICIW '08). IE
+EEE
+Coomputer Societty, 644-649.
+DO
+OI=http://dx.dooi.org/10.11099/ICIW.2008.57
+
+2.
+
+Roobert A. Benneett III. 2014. Spports Fans 2.0:: How
+Faans Are Using Social Media tto Get Closer tto the
+
+D
+Distributed So
+ocial Interactio
+ons
+
+A
+According to McMillan
+M
+and Chavis [33], shared
+s
+emotion
+nal
+cconnection is one of the four key elements that
+t contribute to
+thhe sense of community.
+c
+Emotional bond
+ding among th
+he
+ccommunities can hold tru
+ue despite th
+he geographiccal
+bbarriers. People interact with
+w
+their disstant friends by
+b
+sstarting discusssions on publiic forums, retw
+weeting, postin
+ng
+oon Facebook an
+nd get a sense of being conneected. As Samiira
+m
+mentioned in the post-intterview, how she remained
+
+892
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+Game by David M. Sutera (review). Journal of Sport
+History, 41(2), 369-370.
+3.
+
+4.
+
+5.
+
+Adam Bermingham and Alan F. Smeaton. 2010.
+Classifying sentiment in microblogs: is brevity an
+advantage? In Proceedings of the 19th ACM
+international conference on Information and
+knowledge management (CIKM '10). ACM, 18331836. DOI=10.1145/1871437.1871741
+
+17. Erving Goffman. 1959. The Presentation of Self in
+Everyday Life. Penguin Books.
+18. John M. Goodger and Brian C. Goodger. 1989.
+Excitement and representation: toward a sociological
+explanation of the significance of sport in modern
+society, Quest, 41(3): 25772.
+
+Liam Bullingham and Anna C. Vasconcelos. 2013.
+‘The presentation of self in the online world’: Goffman
+and the study of online identities. Journal of
+Information Science, 39(1), 101-112.
+
+19. Gerald Griggs, Kathryn Leflay and Mark Groves.
+2012. "Just watching it again now still gives me goose
+bumps!”: Examining the mental postcards of sport
+spectators." Sociology of Sport Journal 29, 89-101.
+
+Virginia Braun and Victoria Clarke. 2006. Using
+thematic analysis in psychology. Qualitative research
+in psychology, 3(2), 77-101.
+
+6.
+
+Paul Connerton 1989. How societies remember.
+Cambridge: Cambridge University Press.
+
+7.
+
+Garry Crawford. 2004. Consuming Sport: Fans, Sport
+and Culture: The Consumption Spectacle and
+Surveillance of Contemporary Sports Fans. Routledge.
+
+8.
+
+Nicolas Ducheneaut, Robert J. Moore, Lora Oehlberg,
+James D. Thornton and Eric Nickell. 2008. Social TV:
+Designing for distributed, sociable television viewing.
+Intl. Journal of Human–Computer Interaction, 24(2),
+136-154.
+
+9.
+
+on Human Factors in Computing Systems (CHI '09).
+ACM, 595-604.
+DOI=http://dx.doi.org/10.1145/1518701.1518793
+
+20. Stephen Hardy, John Loy, and David Booth. 2009. The
+material culture of sport: Toward a typology. Journal
+of Sport History, 2009. 36(1): 129-152.
+21. Hawkeye. http://www.hawkeyeinnovations.co.uk/.
+22. Kevin Hull and Norman P. Lewis 2014. Why twitter
+displaces broadcast sports media: a
+model. International Journal of Sport
+Communication, 7(1), 16-33.
+23. Yvonne Jansen, Pierre Dragicevic, Petra Isenberg,
+Jason Alexander, Abhijit Karnik, Abhijit Karnik, Johan
+Kildal, Sriram Subramanian, and Kasper Hornbæk.
+2015. Opportunities and Challenges for Data
+Physicalization. In Proceedings of the SIGCHI
+Conference on Human Factors in Computing Systems
+(CHI '15), ACM, 3227-3236.
+DOI=http://dx.doi.org/10.1145/2702123.2702180
+
+The Economist, 2014.
+http://www.economist.com/blogs/economistexplains/2014/02/economist-explains-1
+
+10. Emoto 2012. www.emoto2012.org
+
+24. Sepandar D. Kamvar and Jonathan Harris. 2011. We
+feel fine and searching the emotional web. In
+Proceedings of the fourth ACM international
+conference on Web search and data mining (WSDM
+'11). ACM, 117-126.
+DOI=http://dx.doi.org/10.1145/1935826.1935854
+
+11. Sheranne Fairley and Sean Gammon 2005. Something
+lived, something learned: Nostalgia’s expanding role in
+sport tourism. Sport in Society, 8, 182–197.
+12. Fergie’s wagon wheel.
+http://www.espncricinfo.com/magazine/content/story/5
+97862.html
+
+25. Rachel Kaplan and Stephen Kaplan. 1989. The
+Experience of Nature: A Psychological Perspective.
+Cambridge University Press.
+
+13. Martin D. Flintham, Raphael Velt, Max L. Wilson,
+Edward J. Anstead, Steve Benford, Anthony Brown,
+Timothy Pearce, Dominic Price, and James Sprinks.
+2015. Run Spot Run: Capturing and Tagging Footage
+of a Race by Crowds of Spectators. In Proceedings of
+the 33rd Annual ACM Conference on Human Factors
+in Computing Systems (CHI '15). ACM, 747-756.
+DOI=http://dx.doi.org/10.1145/2702123.2702463
+
+26. Renato Kempter, Valentina Sintsova, Claudiu Musat
+and Pearl Pu. 2014. Emotionwatch: Visualizing
+finegrained emotion in event-related tweets. In
+Proceedings of the 8th International AAAI Conference
+on Weblogs and Social Media.
+27. Rohit Ashok Khot, Larissa Hjorth, and Florian 'Floyd'
+Mueller. 2014. Understanding physical activity through
+3D printed material artifacts. In Proceedings of the
+32nd annual ACM conference on Human factors in
+computing systems (CHI '14). ACM, 3835-3844.
+http://doi.acm.org/10.1145/2556288.2557144.
+
+14. Forbes. 2013. The Power of Global sports brand
+merchandising.
+http://www.forbes.com/sites/marketshare/2013/02/06/t
+he-power-of-global-sports-brand-merchandising/
+15. John Frow. 1991. Tourism and the semiotics of
+nostalgia. October, 57, 123-151.
+
+28. Jae Won Kim, Dongwoo Kim, Brian Keegan, Joon Hee
+Kim, Suin Kim, and Alice Oh. 2015. Social Media
+Dynamics of Global Co-presence During the 2014
+FIFA World Cup. In Proceedings of the SIGCHI
+
+16. David Geerts and Dirk De Grooff. 2009. Supporting
+the social uses of television: sociability heuristics for
+social TV. In Proceedings of the SIGCHI Conference
+
+893
+
+Everyday Life, Specific Populations
+
+DIS 2016, June 4–8, 2016, Brisbane, Australia
+
+Conference on Human Factors in Computing Systems
+(CHI '15), ACM, 2623-2632.
+DOI=http://dx.doi.org/10.1145/2702123.2702317
+
+visualizations on running activity. TVCG 20, 12
+(2014), 2201–2210.
+44. Martin Tomitsch, Wolfgang Aigner and Thomas
+Grechenig 2007. A Concept to Support Seamless
+Spectator Participation in Sports Events Based on
+Wearable Motion Sensors In Proceedings of the 2nd
+International Conference on Pervasive Computing and
+Applications 2007 (ICPCA '07), IEEE Press, 209–214.
+DOI:10.1109/ ICPCA.2007.4365441
+
+29. David S. Kirk and Abigail Sellen. 2010. On human
+remains: Values and practice in the home archiving of
+cherished objects. ACM Trans. Comput.-Hum. Interact.
+17, 3, Article 10 (July 2010), 43 pages.
+DOI=http://dx.doi.org/10.1145/1806923.1806924
+30. J.W. Loy. 1981. An emerging theory of sport
+spectatorship: Implications for the Olympic games. In
+Human Kinetics, Olympism 262-294.
+
+45. The 2015 #YearOnTwitter in India
+https://blog.twitter.com/2015/the-2015-yearontwitterin-india-in
+
+31. Martin Ludvigsen and Rune Veerasawmy. 2010.
+Designing technology for active spectator experiences
+at sporting events. In Proceedings of the 22nd
+Conference of the Computer-Human Interaction
+Special Interest Group of Australia on ComputerHuman Interaction (OZCHI '10). ACM, 96-103.
+DOI=http://dx.doi.org/10.1145/1952222.1952243
+
+46. Robert J. Vallerand, Nikos Ntoumanis, Frederick L.
+Philippe,Geneviève L. Lavigne, Noémie Carbonneau,
+Arielle Bonneville,Camille Lagacé-Labonté and
+Gabrielle Maliha, 2008. On passion and sports fans: A
+look at football. Journal of sports sciences, 26(12),
+1279-1293.
+
+32. David Lowenthal. 1985. The past is a foreign country.
+Cambridge: Cambridge University Press.
+
+47. Wrey Vamplew. 1998 Facts and artefacts: sports
+historians and sports museums. Journal of Sport
+History, 25, 268-282.
+
+33. David W. McMillan and David M. Chavis. 1986. Sense
+of community: A definition and theory. Journal of
+community psychology, 14(1), 6-23.
+
+48. Elise van den Hoven. 2004. Graspable Cues for
+Everyday Recollecting, Department of Industrial
+Design, Eindhoven University of Technology, The
+Netherlands, ISBN 90-386-1958-8.
+
+34. Daniel Miller. 2010. Stuff. Polity Press, Cambridge.
+35. Bettina Nissen, John Bowers, Peter Wright, Jonathan
+Hook, and Christopher Newell. 2014. Volvelles, domes
+and wristbands: embedding digital fabrication within a
+visitor's trajectory of engagement. In Proceedings of
+the 2014 conference on Designing interactive
+systems (DIS '14). ACM, 825-834.
+DOI=http://dx.doi.org/10.1145/2598510.2598524
+
+49. Diane Watson, Deltcho Valtchanov, Mark Hancock,
+and Regan Mandryk. 2014. Designing a gameful
+system to support the collection, curation, exploration,
+and sharing of sports memorabilia. In Proceedings of
+the first ACM SIGCHI annual symposium on
+Computer-human interaction in play (CHI PLAY '14).
+ACM, 451-452.
+DOI=http://dx.doi.org/10.1145/2658537.2661322 .
+
+36. Steve Olenski. 2012. The lines between social media
+and sports continue to blur. Retrieved from
+http://www.forbes.com/sites/marketshare/2012/02/13/t
+he-lines- between-social-media-and-sports-continue-toblur/
+
+50. Justin D. Weisz, Sara Kiesler, Hui Zhang, Yuqing Ren,
+Robert E. Kraut, and Joseph A. Konstan. 2007.
+Watching together: integrating text chat with video. In
+Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems (CHI '07). ACM, 877886. DOI=http://dx.doi.org/10.1145/1240624.1240756
+
+37. OpenJSCAD. http://openjscad.org.
+38. Ann Pegoraro. 2010. Look who’s talking—Athletes on
+Twitter: A case study. International Journal of Sport
+Communication, 3(4), 501–514.
+
+51. Jian Zhao, Liang Gou, Fei Wang, Michelle Zhou. 2014.
+PEARL: An Interactive Visual Analytic Tool for
+Understanding Personal Emotion Style Derived from
+Social Media. VAST'14: Proceedings of the IEEE
+Symposium on Visual Analytics Science and
+Technology, IEEE, 203-212.
+
+39. Robert.E. Rinehart. 1998. Players all: performance in
+contemporary sport. Indiana University Press (1998).
+40. Eldon E. Snyder. 1991. Sociology of nostalgia: Sport
+Halls of Fame and museums in America. Sociology of
+Sport Journal, 8, 228–238.
+
+52. Siqi Zhao, Lin Zhong, Jehan Wickramasuriya and
+Venu Vasudevan. 2011. Analyzing twitter for social
+TV: Sentiment extraction for sports. In Proceedings of
+the 2nd International Workshop on Future of
+Television. 11-18.
+
+41. SlamTracker
+http://wimbledoninsights.netcommunities.com/ibmwimbledon/slamtracker-explained/.
+42. SportVision http://www.sportvision.com/about.
+43. Simon Stusak, Aurelién Tabard, Franziska Sauka,
+Rohit Ashok Khot, and Andreas Butz. 2014. Activity
+sculptures: exploring the impact of physical
+
+894
+
+

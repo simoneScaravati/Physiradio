@@ -1,0 +1,753 @@
+Feeling Data: Touch and Data Sense
+Deborah Lupton
+News & Media Research Centre
+University of Canberra
+
+This is the author’s accepted version of an article that will be published in a special
+issue on Haptic Digital Media in New Media & Society. It can be cited as a post-print
+version.
+Introduction
+People’s encounters and entanglements with the personal digital data that they
+generate is a new and compelling area of research interest in this age of the
+ascendancy of digital data. The emergence of novel modes of generating digital data
+about humans and their activities and movements has the potential for new ways of
+learning about and conceptualising bodies, selves and social relations. The experience
+of everyday life in many parts of the world is now increasingly datafied – rendered into
+digital data forms. People’s interactions online, their use of mobile and wearable
+devices, and other ‘smart’ objects and their movements in sensor-embedded spaces all
+generate multiple and constant flows of digital data, often about intensely personal
+actions and preferences, social relationships, and bodily functions and movements.
+They are encouraged to take the opportunity to view and reflect on this information
+and use it to optimise their lives, improve their health and wellbeing, contribute to
+their memories or achieve self-knowledge (Lupton, 2016a; 2017; Nafus and Sherman,
+2014; Selke, 2016). In response to the continual data streams and traces generated
+about them, people are learning to come to terms with how their personal information
+is generated and what meanings and value it offers them. They are now called upon to
+engage with a variety of forms of information about themselves and to confront the
+complexities of how these data are used by others.
+Responding to personal data is a highly sensory experience, involving people to
+engage in complex negotiations between assessing the information they receive from
+their embodied senses and that generated from digital devices. The ways in which
+their personal details are translated from digital data into material form are important
+to people’s sensory engagements with their data. Most discussions of personal digital
+data materialisations have focused on two-dimensional visual renderings: data
+1
+
+visualisations that are primarily designed to be looked at. This article is intended as a
+contribution towards understanding the sensory dimensions of personal digital data,
+with a particular focus on the haptic. I explore the topic of how personal digital data
+and their circulations can be made more perceptible and therefore interpretable to
+people with the use of three-dimensional materialisations that invite not only viewing
+but also touching and handling, and in some cases, the senses of hearing, taste and
+smell as well. I argue that these forms of data materialisation are potentially integral to
+new modes of understanding and incorporating personal data into everyday life, living
+with and alongside these data.
+The discussion is structured into several parts. In the first part, I review some of
+the relevant literature on human embodiment, the senses and digital technologies,
+establishing the theoretical basis that is further developed in the article. This is
+followed by a discussion of how the ontologies of personal digital data may be
+theorised. I then introduce the notion of data sense, drawing attention to the sensory
+dimensions of how people interpret their data. I then discuss the ways in which
+personal digital data can be fabricated into three-dimensional forms using 3D printing
+technologies – data physicalisations – so that they can be experienced and responded
+to in multisensory ways. I provide examples of objects created from personal digital
+data that can be handled, displayed as decorative artefacts, worn on the body as
+jewellery and even eaten. Finally, I address the politics of personal data and their
+materialisations. The concluding comments raise some directions for further research
+emerging from this discussion.
+Human embodiment, the senses and digital technologies
+My discussion here draws on sociomaterialist theoretical perspectives to conceptualise
+humans’ encounters with their data as dynamic entanglements of human and
+nonhuman actors. Human sensory responses are highlighted in some sociomaterial
+scholarship. Sensory engagements are considered as both vital to humans’ experiences
+of the world and to meaning- making, and as mediated via their encounters with other
+humans and with nonhumans. Humans learn and act with and through their bodies,
+including their encounters with nonhuman objects, which generate sensation and
+feeling in human bodies (Paterson, 2007; Ash and Simpson, 2016; Paterson, 2009; Pink,
+2015).
+As the French philosopher Merleau-Ponty (1962; 1968) reminds us, we are
+embodied subjects and experience the world through our bodies and our senses. Our
+experiences and our judgements are always part of our ‘being-in-the-world’. For
+Merleau-Ponty, ‘being-in-the-world’ is always intersubjective. Our embodiment is
+always inevitably interrelational or intercorporeal. We experience the world as fleshly
+bodies, via the sensations and emotions configured through and by our bodies as they
+relate to other bodies and to material objects and spaces. We respond to these bodies
+2
+
+and objects with all our senses, and this is essential to human experience, social
+relations and knowing our worlds. Embodiment and interembodiment are now
+frequently mediated via digital technologies. Digital devices may move on or with the
+human body (as in mobiles and wearables), or they may be in situ and directed at
+documenting the movements of bodies (as in CCTV cameras and movement sensors
+embedded in public spaces). Bodies, spaces and places are therefore simultaneously
+digital-material (Pink, Sinanan, Hjorth and Horst, 2016; Pink, 2015).
+Haraway’s (1995; 1985) concept of the cyborg has been seminal in emphasising
+the heterogeneous and historically situated intertwinings of humans and nonhumans.
+She argues that human ontologies must be understand as dynamic and emergent,
+established through relational encounters, including with technologies and other
+objects. In her more recent work, Haraway (2015; 2003) has developed the metaphor of
+‘companion species’, which she describes as ‘post-cyborg entities’ (Haraway, 2015),
+assemblages of humans and nonhumans that live alongside and co-evolve with each
+other. She notes that these assemblages generate new forms of liveliness, relations and
+socialities. Hayles (2012) makes similar points in her work on technogenesis, in which
+she argues that humans think through, with and alongside digital media, and each
+works to change each other. She describes human agency, thought and embodiment
+as enmeshed in and extended through digital devices and networks. Hayles positions
+digital databases as vital components of technogenesis, particularly in the ways that
+knowledges are constituted and archived.
+Recent scholarship in digital media studies has begun to focus on the role of
+the senses and the materiality of digital technologies in people’s experiences and
+practices. Some of this research has addressed the phenomenology of touch. For
+example, tactile ethnographic studies by Pink and colleagues (Pink et al., 2016) and
+Moores (2014) have drawn attention to the role of the haptic sensations encountered
+by the hand when handling and touching digital devices, and how these sensations
+contribute to ways of knowing. This research emphasises the emplaced, contingent
+and emergent nature of digital technology use. It focuses on identifying the details of
+how people incorporate digital devices into their mundane routines, how these
+devices feel ‘right’ or ‘comfortable’ or not, the improvisations in which people may
+engage when using these technologies and how these devices are part of more-thanhuman multisensory worlds.
+Theorising the ontologies of personal digital data
+This scholarship provides a basis for beginning to think through the ontologies of
+personal digital data, and how these data are incorporated into concepts and practices
+of selfhood, social relations and embodiment. Given the mobility and ubiquity of
+contemporary digital devices, they may be understood as lively technologies,
+3
+
+inhabiting and accompanying us in our physical spaces and residing on or with –
+and indeed, as in the case of some digital medical implants or ingestible ‘smart pills’,
+sometimes in – our bodies. These devices have become companions and co-habitants
+with humans (Ash, 2013; Lupton, 2016a, 2016b; Moores, 2012). So too, the digital data
+that these devices generate may also be conceptualised as lively. The first element of
+the vitality of digital data relates to the ways in which they are generated and what
+happens thereafter. The personal digital information that is constantly generated
+contributes to data assemblages that are heterogeneous and dynamic, their character
+changing as more data points are added and others removed. Digital data may be
+described as having their own social lives as they circulate in the digital data
+economy and are purposed and repurposed (Lupton, 2016a).
+Human fleshly bodies interact with digital technologies and lively data to
+produce personal digital data assemblages (Lupton, 2016a). These assemblages
+should be understood not simply as ‘data doubles’ (Haggerty and Ericson, 2000),
+which suggests a two-dimensional shadow of an individual, but as three-dimensional
+configurations. Rather than a static ‘data double’, these assemblages are constantly
+changing as new forms of data are generated and incorporated. The term ‘data
+double’ also suggests an individuated, autonomous materialisation of digital data
+about an individual. In contrast, the digital data assemblage concept emphasises the
+inextricable intertwinings of humans and their data. It also draws attention to the
+material elements of the human-data configuration, such as the spaces, places,
+digital devices and other objects beyond the digital that contribute to these
+assemblages.
+Social research has shown that people often have difficulty conceptualising
+exactly what types of information are generated by or for them as part of their
+engagements with digital technologies. They are also only dimly aware of what
+happens to their personal data beyond their own use, and how other actors and
+agencies may be using their data. Research on public understanding of personal
+digital data has revealed that for most users of online technologies, the ways in
+which their interactions are monitored by companies for targeting them with
+customised advertising is obvious. But beyond these potential uses of their personal
+data, many people have little knowledge of where their data go and who uses them.
+They feel powerless about how others collect data on them and how these data are
+used (Andrejevic and Burdon, 2015; Rainie and Duggan, 2016; Madden and Rainie,
+2015; Kennedy and Moss, 2015; Stark, 2016; Lupton and Michael, 2017).
+It is not surprising that public knowledges about the social lives of their
+personal data are limited. Digital data assemblages are dynamic, responsive and
+distributed forms of selfhood; because of their mutable nature, they are elusive, hard
+to pin down and confront (Lupton, 2016b, 2017). Part of learning to live with our
+digital data assemblages and giving them meaning is coming to terms with their
+nature. We have to work hard to find figures of speech and ways of thinking to
+4
+
+encapsulate the ontology of digital data (Puschmann and Burgess, 2014). The concept
+of digital data, at first glance, appears to describe a wholly immaterial phenomenon
+that does not engage the senses: there seems to be nothing to look at, touch, hear,
+smell or taste. Although the devices that generate, transmit and store digital data –
+mobile and wearable devices, desktop and laptop computers, tablets, sensors
+embedded in objects and physical spaces, servers, modems – are material objects
+that are readily touchable, the data themselves are not. In most conceptualisations,
+digital data are invisible and intangible, to the point that they can be used to
+conduct surveillance – ‘dataveillance’ (van Dijck, 2014) – on people without their
+knowledge.
+An approach drawing on sociomaterialist perspectives recognises the
+entanglements of personal digital data assemblages with human action. Personal
+digital data assemblages are partly comprised of information about human action,
+but their materialisations are also the products of human action, and these
+materialisations can influence future human action. The emergence of digital
+representations of phenomena have stimulated profound questions concerning
+discerning the nature of the ‘real’ and the ‘virtual’, the ‘material’ and the ‘intangible’
+and the role of the senses in this process.
+Drawing on Haraway’s companion species concept, I have elsewhere (Lupton,
+2016b) suggested that thinking of personal digital data assemblages as companion
+species may be a productive way of conceptualising the ontologies of these
+assemblages. Just as we might reflect on how our lively companion devices live
+alongside us, we might also think about our lively personal digital data assemblages
+co-habit with us. As we co-habit with our devices and our data, we co-evolve with
+them. The design of the devices is conceptualised bearing in mind how users may
+interact with them, and users’ habits of practice as they appropriate the devices into
+their everyday lives are responses to the devices’ designs. So too, humans co-evolve
+with their personal digital data assemblages. The data are configured in response to,
+and about, humans’ experiences and bodies. In turn, humans may change their
+modes of being and concepts of selfhood in response to their data assemblages. With
+both our devices and our data, we are interembodied and intersubjective.
+From data literacy to data sense
+The term ‘data literacy’ has become employed in some quarters to describe how
+people learn from data and also how they learn to learn from data (Frank, Walker,
+Attard and Tygel, 2016; Wolff, Gooch, Montaner, Rashid and Kortuem, 2016). This
+perspective has developed predominantly from literatures in informatics, education,
+library services and information literacy research. Contributors to this scholarship
+tend to take a cognitive-centric approach, representing learning as a disembodied
+5
+
+process. They focus on how people interpret and evaluate the validity of digitised
+information and their competencies in accessing and analysing big digital datasets.
+While these aspects are important, the ways in which people generate and
+respond to their own digital data requires greater research attention. I use the term
+‘data sense’ to encapsulate a broader meaning than data literacy. This concept brings
+the body back in. It acknowledges the use of the human senses in people’s responses
+to data, including their personal data as well as big datasets. It also recognises the
+participation of technological sensors. Data sense, therefore, involves entanglements
+of human senses and digital sensors with sense- making. This approach underlines the
+embodied, affective and material nature of engaging with and learning from data
+(Fors, Bäckström and Pink, 2013; Sumartojo, Pink, Lupton and LaBond, 2016); or, as
+Stark (2016) puts it, the ‘visceralities of data’.
+Data materialisations offer a technology for ‘freezing’ lively data assemblages at
+a certain point in time and place, providing data objects that help people make sense
+of their personal information (Lupton, 2017). These data objects represent a specific
+digital data assemblage that existed at the time of freezing – and then goes on to
+change again as more data points are generated and configured into new versions of
+the assemblage and as people engage with them and incorporate them into their
+everyday lives. The privileging of the visual is evident in the ways in which digital data
+are typically presented. The term ‘data visualisation’ is commonly employed to refer to
+the manifestations of digital data that can be configured as visual objects. It is a subfield of information visualisation. In human-computer interaction (HCI) research,
+both information and data visualisation design is directed at communication:
+specifically, facilitating people’s understanding of and engagement with information
+(or, in HCI language, their ‘processing’ of the information). The proceedings of major
+HCI conferences such as the annual Conference on Human Factors in Computing
+Systems (CHI) feature many examples of this type of research.
+Data visualisations involve taking pieces of information and rendering these
+into visual formats, involving the mapping of this information onto a property such as
+shape, colour, size and position and arranging these properties in space so that they
+have a relationship to each other that is designed to convey the meaning of the
+information. These formats are most often two-dimensional images: charts, maps,
+graphs, infographics and other diagrams, some of which may be interactive, moving
+when clicked. Those who work in ‘data viz’ endeavour to produce spectacular and
+aesthetically-pleasing images that not only communicate information clearly, but do
+so in a visually-arresting form.
+When they are encountering visualisations of their personal data, people are
+challenged with interpreting the visualisations in relation to other information about
+their bodies and selves derived from their embodied sensations. It is clear from
+empirical research that for many people the data visualisations generated from their
+personal information is sometimes more ‘real’ to them than the knowledges that their
+6
+
+bodily sensations provide (Lupton, 2016a). Thus, for example, in research with
+colleagues involving people who track their physical exercise using digital devices
+(Lupton, 2017; Sumartojo, Pink, Lupton and LaBond, 2016) we found that people often
+talked about trusting the ‘numbers’ that they see on the data visualisations that their
+app or other software provides them. They talked about not really ‘knowing’ how their
+bodies were responding the exercise until they glanced at their heart rate monitor
+while running or cycling, or reviewed their data after their exercise. These data were
+often viewed as more ‘truthful’ or ‘accurate’ than the haptic and other sensations they
+felt from their bodies as they were exercising. Yet these self-trackers also engaged in
+complex acts of data sense-making that involved drawing on their past experiences of
+self-tracking their cycling trips, their sensory knowledge of how their bodies felt at the
+time of the rides (whether or not they were feeling tired, injured or ill, for example)
+and their sensory judgements of the weather and spatial conditions in which the trip
+took place (how windy or hot it was, how much traffic and other road users there were
+inhabiting the same spaces, whether the roads were slippery with rain and so on).
+In these situations, people are challenged with interpreting and making
+judgements how the details generated by digital sensors, including those about their
+own bodily senses (how their bodies move, function, feel, recover, perform, rest and so
+on), can be trusted and incorporated into their lives. Such encounters with mundane
+data require people to engage in continuing negotiations with the information they
+view on personal visualisations and the knowledges afforded them by their bodies.
+These kinds of phenomena are rarely considered in data literacy research.
+Data physicalisation and haptic sensations
+While the visual materialisation of data remains a dominant concern, a counter-trend
+in the HCI and design literature focuses on the other senses and how they contribute
+to representations and understandings of data. Some digital devices, such as the Apple
+Watch, now rely on haptic sensations (or in Apple’s parlance, ‘taptics’) to deliver
+notifications to wearers, including reminding them to move if the device has sensed
+that they have been sedentary for too long. On its website, Apple describe this ‘taptic’
+function as serving to provide alerts intimately and ‘with a more human touch’ (Apple,
+2014). Visual displays are considered to be less effective than the opportunity to tap a
+wearer of the Watch on the wrist to alert them to notifications and incoming
+messages.
+A field of research that has emerged in HCI devotes attention to the ways in
+which data can be rendered into three-dimensional physical artefacts, commonly
+referred to as ‘data physicalisations’ or ‘physical visualisations’ (Jansen, Dragicevic,
+Isenberg, Alexander, Karnik, Kildal, Subramanian and Hornbæk, 2015; Alexander,
+Jansen, Hornbæk, Kildal and Karnik, 2015; Stusak, 2015). This research focuses on how
+these data forms can support cognition, communication, learning, problem-solving
+7
+
+and decision making. The idea that multisensory experiences are richer and better
+understood than those that tend to emphasise only the visual dimension is evident in
+this literature. It is argued that such artefacts facilitate knowledge of data that
+otherwise would not be available by using such features appealing to haptic sensations
+as texture, stiffness, temperature and weight (Jansen et al., 2015; Alexander et al., 2015;
+Stusak, 2015). Stusak (2015: 439), for example, refers to ‘haptic memory’, or the
+recollection of data that touching or handling data physicalisations can evoke.
+In the 1960s and 1970s, work began on haptic interfaces that sought to provide
+tactile feedback such as vibrations or the use of motion to human users as part of the
+operation of computing equipment. Some of these initiatives were directed at
+rendering scientific data into three-dimensional artefacts and available to haptic
+sensations. From the late 1960s, for example, Brooks et al. (Brooks Jr, Ouh-Young,
+Batter and Jerome Kilpatrick, 1990) in their Project Grope worked to represent
+scientific data – force fields of interacting protein molecules – as 3D materialisations.
+These developments gathered pace in the 1990s. In one project, Fritz and Barner
+(1999) developed a design to render mathematical data into haptic forms for people
+with visual impairments, using the properties of friction and texture. The technologies
+of embodied user interfaces were also developed in the 1990s, in which the user
+interacts with computing technologies by direct physical manipulation. Embodied
+user interfaces, involving the user manipulating the computer device directly, usually
+by tilting it, rotating it or other modes of moving it, is one paradigm of embodied user
+interfaces (Fishkin, Moran and Harrison, 1999).
+Tangible user interfaces is another paradigm of embodied user interfaces. This
+paradigm used devices that engaged haptic responses to digital data by developing
+graspable objects which controlled virtual representations. Hiroshi Ishii and his
+colleagues (Ishii and Ullmer, 1997) were pioneers in the field of tangible user
+interfaces. They used their work on their Tangible Bits project to attempt to bring
+together the world of ‘bits’ (digital information) with that of ‘atoms’ (physical objects
+and architectural surfaces) and people. As demonstrated on the ‘Data Physicalization
+Wiki’ (Data Physicalization, 2016), human societies have rendered information into
+physical forms for millennia, including the clay tokens used by the Mesopotamians,
+the quipus, or knotted ropes used by the Incas, and the Marshall Islanders’ stick charts
+(many more examples are listed on this wiki). Ishii and colleagues were inspired by the
+scientific instruments that had been invented in previous centuries to collect and
+comprehend information. They contended that the richness of understanding the
+manipulation of such physical objects developed had been lost with the contemporary
+focus on two-dimensional data visualisations.
+Designers and data artists have started to use materialisations of data that
+invite haptic responses by rendering them into three-dimensional forms. The concept
+of ‘data sculptures’ has been taken up in many design and data art projects. It is used
+to describe the physicalisation of data that goes beyond the direct representation of
+8
+
+the data to incorporate aesthetic artistic qualities. This brings together information
+physicalisation with tangible user interfaces and creative art making (Stusak 2015).
+Thus, for example, data artist Mitchell Whitelaw used meteorological data from his
+home city of Canberra, Australia, to fabricate a ‘weather bracelet’ that could be worn
+on the arm. He notes on his blog post about the process that he found that people
+responded with fascination to the bracelet:
+The bracelet makes weather data tangible, but also invites an intimate, tactile
+familiarity. People interpret the form with their fingers, recalling as they do the
+wet Spring, or that cold snap after the extreme heat of February; it mediates
+between memory and experience, and between public and private – weather
+data becomes a sort of shared platform on which the personal is overlayed.
+(Whitelaw, 2009)
+Personal data physicalisations
+Thus far, only a small number of designers or HCI researchers have extended the data
+physicalisation idea to render personal data into objects that can be touched. One
+example is a project undertaken by researchers from The Exertion Games Lab at RMIT
+University. This team experimented with using 3D printers in different ways to
+materialise personal body data. Their SweatAtoms project (Khot, Mueller and Hjorth,
+2013; Khot, Hjorth and Mueller, 2014) involved five different material manifestations of
+participants’ physical activity, fabricated on home 3D printers. These artefacts
+included a 3D graph of heart rate data, a flower shape where the length and width of
+the petals represent heart rate duration and intensity, a frog shape that changed in
+size according to the amount of physical activity carried out that day, a die
+representing the six zones of heart beat data and a ring displaying the number of
+hours the person was active. Participants in this project could hold or display their
+artefacts and compare the size of each one with others.
+In researching user engagement with their physical data physicalisations, this
+team found that viewing and handling the objects helped people gain a better sense of
+their bodily data and engaged with it emotionally. They observed that the emotional
+connections people had with their personal data were strengthened by being able to
+handle and display these objects rather than simply viewing visualisations of the data.
+Their participants enjoyed viewing and touching the objects, showing them to others
+and arranging them as decorative items in their homes or on their desks at work. They
+manipulated and displayed their data artefacts in various ways to get a better
+understanding of their data.
+Another HCI team (Stusak, Tabard, Sauka, Khot and Butz, 2014) has drawn on
+the concept of data sculptures to develop ‘activity sculptures’ – 3D printed artefacts
+made from physical activity data extracted from popular apps (collecting information
+9
+
+on the duration of users’ runs, distance covered, average speed and calories expended).
+The artefacts included a human figure, a necklace, a lamp and a jar; each designed to
+be modular so that separate pieces could be fabricated after each of the participants’
+runs and formed together to make the sculpture. The participants expressed some
+interesting responses to the sculptures made from their physical activity data. The
+researchers noted that such factors as curiosity, playfulness and aesthetics began to
+influence the ways in which the participants planned their runs, as they tried to
+control the shape of the pieces that subsequently would be fabricated from their data
+using the 3D printers (Stusak et al. 2014).
+Some data physicalisations using personal data have sought to stimulate not
+only haptic responses but also other sensory encounters as part of encouraging people
+to learn more about and from their data. Design researcher Stephen Barrass employed
+the technique of acoustic sonification to render personal self-tracked data into objects,
+or ‘as a medium for telling stories about numbers’ (Barrass, 2014). He used his own
+data from a year of blood pressure monitoring to produce a version of a Tibetan
+singing bowl – or what he called the ‘Hypertension Singing Bowl’. The bowl was
+fabricated from stainless steel using 3D printing. The act of rubbing the inside of the
+bowl with a special stick produces a sound of a certain frequency. Barrass’s personal
+bodily data were thus configured into an object that has unique visual, tactile and
+aural properties. Each set of data produced a bowl that is slightly different in its
+proportions and, therefore, its acoustic properties. Barrass argued that people can see
+and hear this physical manifestation of their blood pressure readings and also use the
+sound it makes as a reflective stimulus, helping them calm their bodies and reduce
+their blood pressure accordingly. This 3D data materialisation, therefore, can act as
+both a manifestation of personal data and an intervention in the type of data that the
+individual may generate in the future.
+In their Edipulse project (Khot, Pennings and Mueller, 2015), researchers
+fabricated chocolates using 3D food printers and software files with digital data of
+people’s self-tracked heart rate after physical activity. Based on each person’s data, the
+3D chocolate printer made a customised chocolate in the shape of an emoticon or
+words providing encouraging messages. The chocolates’ size depended on the amount
+of physical activity in which the participants had engaged. They therefore acted as
+rewards that could be eaten by the participants. These participants could not only
+view and touch their data, they could taste and smell them as well.
+The politics of personal data materialisations
+I have focused thus far on the potential for data physicalisations to help people engage
+in sense-making in response to their personal digital data. They offer ways of bringing
+into data sense new versions of the possibilities of these data. Beyond this use lies a
+further opportunity for such phenomena to uncover the social and political
+10
+
+dimensions of personal data practices and cultures. Personal data materialisations,
+whatever form and shape they take on, are inevitably very limited representations of
+bodies and selves. The tools used to generate data materialisations work to single out
+some aspects of information over others. The role played by design and concepts of
+aesthetics and indeed, choices about what phenomena are considered to be
+‘information’ are all central to the versions of their data that are delivered to people for
+their review; and by extension, what counts as knowledge and how people should
+learn from these visualisations.
+A body of literature has begun to develop from scholars who take critical
+approaches to digital data visualisation. Writers who have contributed to this
+literature have insisted on approaching data visualisations as politically-charged
+phenomena that are the product of and serve to reproduce tacit assumptions,
+knowledges and power relations. They contend that data visualisation is a form of
+ideological knowledge production, in which certain elements are chosen to be
+manipulated in specific ways to create and emphasise relationships while others are
+ignored or under-emphasised. Powerful interests and existing biases and
+discrimination are frequently reproduced as part of the decisions made in creating
+data visualisations (Gregg, 2015; McCosker and Wilken, 2014; Kennedy, Hill, Allen and
+Aiello, 2016; Kennedy and Hill, 2016; Adema and Hall, 2016). These materialisations,
+indeed, can be considered data ‘performances’, not only conveying but creating
+meaning (Adema and Hall, 2016).
+The persuasive power of these visually-compelling images often overwhelms
+such critical analysis. Such visualisations often tend to be accepted as politically
+neutral and value-free (D'Ignazio, 2015; Hill, Kennedy and Gerrard, 2016). Little
+attention is paid to where the information that is represented in such aestheticallypleasing images comes from, who collects it, how accurate it is and whose interests it
+serves. The decisions made about what data are included and which are not, and
+indeed, what features even count as data, for example, are elided in most data
+visualisations. Like other popular culture artefacts, data visualisations can work to
+stigmatise, marginalise and trivialise disempowered social groups. Some of the most
+interesting work related to data visualisations has come from feminist critics of
+geographic information systems. They have challenged the positivist scientific
+practices and assumptions of this method of mapping and called for alternative
+practices that highlight injustices and inequalities, such as ‘counter mapping’, or
+generating cartographic representations that challenge taken-for-granted assumptions
+and highlight aspects that previously were not visible (for example, Kwan, 2002;
+Elwood, 2008; Pavlovskaya, 2006).
+In some cases, such counter mapping involves the use of material other than
+two-dimensional visual images. For example, feminist geographer Mei-Po Kwan (2002)
+has used 3D digital mapping technologies to generate what she describes as ‘body
+maps’ of women, portraying their movements as life paths in three-dimensional space
+11
+
+and comparing these maps with those of women of different socioeconomic status and
+ethnicity. Other feminist geographers have employed qualitative rather than
+quantitative data in geographic information systems by adding voices and other
+sounds, hand-drawn images, photographs and videos, seeking to display and
+emphasise the richness of information that lies outside numerical data (Pavlovskaya
+2006).
+Just as visual representations are enactments of tacit assumptions and
+embedded power relations, any mode of sensory knowledge, including the haptic, is
+shaped via social, cultural and political processes. There are several levels of mediation
+and remediation operating when embodied sensations are rendered into digital data.
+The sensation of touch, as well as other sensory responses, is mediated through the
+flesh, skin, nerves and receptors of the human body. Physical interactions with
+technologies extend and reconfigure these mediations (Paterson, 2009). Material
+dimensions of human embodiment and practice are mediated via their interactions
+with digital technologies and transfigured into digital forms of information that can be
+transmitted to computing archives. These digitised forms of information can then be
+remediated into digital displays and in some cases, combined and recombined with
+other datasets to generate new data materialisations. Personal data materialisations,
+once delivered back to the people who generated them, can then be used to change
+their practices and attitudes in some ways. They can therefore have material effects on
+people’s lives, which in turn can generate new data assemblages, and so on. The data
+they materialise, and the materialisations themselves, will always be limited and
+reductive, identifying only some elements of embodied sensations and practices.
+Applying this critical perspective to data materialisations involves examining
+the interpretation of individuals’ personal data and recognising ways these may be
+used for their own ends as well as promoting their awareness of what happens to these
+data beyond the individual. This may include developing an understanding of the
+sociocultural dimensions of data materialisations themselves. Intensifying the visceral
+properties of digital information can also serve to provoke people into responding
+more intensely to issues concerning what happens to their personal digital data. The
+emotional responses that data physicalisations can evoke may lead people to engage
+more actively, including at the political level, in challenges to violations of their
+personal data privacy and security (Stark, 2016).
+Some artists have employed 3D printing technologies as part of their critique of
+the ways in which personal data can be used for surveillance purposes. In her art work
+‘Stranger Visions’ (2016), Heather Dewey-Hagborg takes digital genetic data files, turns
+them into phenotypes (the physical manifestations of genomic data) and then prints
+out data sculptures of human heads based on the genetic data. She uses cast-off
+objects that she finds in public places to derive the DNA traces she uses: masticated
+chewing gum wads, fallen strands of hair, cigarette butts or finger nail clippings. Her
+point is to emphasise the extent and range of the detailed information that can now be
+12
+
+collected about people, right down to their genetic profiles, and the inferences that
+can be made about them using these details. This work is designed to be a reminder to
+people of how their bodily traces can be datafied and used for the purposes of others,
+possibly revealing their identities or other sensitive information in the process.
+Such projects suggest the potential of using multisensory data physicalisations
+not only to help people interpret their personal data but to consider their political
+implications. Several HCI projects seek to use 3D-printing technologies as a method of
+inviting members of the public to engage in the act of creating their data objects. The
+idea of such work is to encourage reflection and conversations about the information
+and help people feel as if they have more control of and engagement with their
+personal data by allowing them to make their own artefacts. It is argued that if these
+acts of fabrication take place in a communal setting, they may become less
+individualised, resulting in shared and social experiences of generating personal data
+physicalisations.
+Thus, for example, Nissen and Bowers (2015) have experimented with
+encouraging people to engage in ‘data making by producing ‘data-things’ from their
+own data. These physical data representations become personal data artefacts. Nissen
+and Bowers refer to such activities as ‘participatory data translation’. Such digital data
+physicalisations, they argue, are experienced as less ‘alien’ than mass-produced things
+because their makers have better knowledge of how they are fabricated and they have
+a far more personal provenance. One example of these data-things is the objects that
+were created from the tweets generated by attendees at a conference. The number of
+tweets using the conference hashtag created by each attendee over a period of 24
+hours was fabricated into an object that could be worn as a broach representing the
+extent of that person’s Twitter engagement. The researchers argue that through
+engaging in this process of data translation, participants can gain a sense of the
+reconfigurations that data undergo; or, as I would put it, the liveliness of the data
+becomes more visible.
+Concluding comments
+In this article, I have brought together some different literatures to explore the ways in
+which personal digital data are materialised and interpreted. I have developed the
+concept of data sense as a way of thinking through the intersections and
+entanglements of human bodies, software code, digital devices, space and place and
+the digital data that are generated from these entanglements. Three-dimensional
+personal data materialisations invite users to ‘feel their data’. ‘Feeling data’ has two
+meanings: the sensations of touching these three-dimensional objects and the visceral
+responses that are generated from these and other sensory encounters with data. This
+acknowledges that humans, digital technologies and digital data participate and work
+together in feeling in complex ways.
+13
+
+As I have argued, the negotiations in which people engage when feeling their
+data implications for personal digital data meanings and practices and for data sense.
+Apart from some of the HCI research cited above concerning user experiences, we as
+yet know little about the sensory dimensions of how people interact with their
+personal data materialisations (whether two-dimensional or three-dimensional).
+While these objects are static forms of data, they are also potentially lively – they may
+incite or provoke further embodied and sensory responses. Further research into these
+engagements would go far to provide insights into data sense, including a focus on
+how people collect and engage with their data as part of the sensory routines of
+everyday life.
+A sociomaterialist approach to the body focuses on how bodily assemblages
+possess certain forms of new capacities and power to act by asking ‘What can a body
+do?’ (Fox, 2015). This type of critique raises some compelling issues for further practice
+and scholarship related to three - dimensional and other multisensory materialisations
+of personal data. We might not only ask ‘What can a body do?’, but also ‘What can
+digital data assemblages (which include bodies) do?’ We might also investigate what
+the ‘felt phenomenologies’ (Paterson, 2007) of these assemblages are: how do people
+incorporate them into their everyday lives and what are the sensory dimensions of this
+incorporation? In Merleau-Ponty’s terminology, how are data physicalisations and the
+haptic and other sensations they incite part of ‘being the world’ experiences? In what
+ways do the senses work together – or work against each other – when people are
+engaging in sense-making in response to their digital data assemblages?
+Drawing on the notion of ‘mundane frictions’ articulated by Fors (2015) these
+forms of haptic media might begin to raise important questions about where fit
+become uncomfortable, unsettling or disturbing – where and how they do not ‘feel
+right’. As Frosh and Becker observe, the presence of friction does not need to imply
+conflict or hindrance. Rather, it can be viewed as a productive and positive mode of
+generation of knowledge, identifying dissonances that are central to critique. The
+visceralities that data physicalisations can offer evoke these types of discomforts, and
+in doing so, potentially awaken people to where digital data may not work, fail to fit,
+lose their seamless nature and create friction. Discomfort and disquiet can become
+more than personal affects – they can provoke political responses. We can, perhaps,
+begin to think about a type of haptic politics that may be enacted via data
+physicalisations and data visceralisations, where data simply do not make sense
+because they do not ‘feel right’.
+Returning to the political possibilities of data visceralisation, going beyond
+simply seeking to create sensually- engaging objects in the cause of challenging
+entrenched assumptions and interests can be a way to engage with these issues.
+Approaches that adopt a perspective leading to responses to personal data which
+invite users to take up ludic, creative and improvised engagements (Gaver, Bowers,
+Boehner, Boucher, Cameron, Hauenstein, Jarvis and Pennington, 2013), create their
+14
+
+own data-things (Nissen and Bowers, 2015), encourage them to invest objects with
+even more personal and intimate features by overlaying a patina of personal data on
+them (Lee, Son and Nam, 2016) or demonstrate to them the vulnerability of their data,
+as in Hewey-Dagborg’s art work, may be one way forward. These approaches provide
+possibilities for the generation of alternative or counter perspectives and greater
+opportunities for people to ‘feel’ their data in ways which make sense in the context of
+their own lives. In the process, they may well develop data sense in the tripartite
+meaning that I have introduced here. This acknowledges the entanglements of digital
+sensors, human senses and human sense-making as well as the political and
+ideological implications of data and their materialisations.
+References
+Adema J and Hall G. (2016) Posthumanities: the dark side of 'the dark side of the
+digital'. The Journal of Electronic Publishing, 19.
+http://quod.lib.umich.edu/j/jep/3336451.0019.201?view=text;rgn=main accessed 11
+January 2017.
+Alexander J, Jansen Y, Hornbæk K, Kildal J and Karnik A. (2015) Exploring the
+challenges of making data physical. Proceedings of the 33rd Annual ACM Conference
+Extended Abstracts on Human Factors in Computing Systems (CHI '15). Toronto: ACM
+Press, 2417-2420.
+Andrejevic M and Burdon M. (2015) Defining the sensor society. Television & New
+Media 16: 19-36.
+Apple. (2014) Watch technology. Available at:
+https://www.apple.com/watch/technology/.
+Ash J. (2013) Rethinking affective atmospheres: Technology, perturbation and space
+times of the non-human. Geoforum 49: 20-28.
+Ash J and Simpson P. (2016) Geography and post-phenomenology. Progress in Human
+Geography 40: 48-66.
+Barrass S. (2014) Acoustic sonification of blood pressure in the form of a singing bowl.
+Paper presented at Conference on Sonification of Health and Environmental Data.
+York, UK.
+Brooks Jr FP, Ouh-Young M, Batter JJ and Jerome Kilpatrick P. (1990) Project GROPE:
+haptic displays for scientific visualization. Proceedings of the 17th Annual Conference
+on Computer Graphics and Interactive Techniques (SIGGRAPH '90). Dallas: ACM Press,
+177-185.
+D'Ignazio C. (2015) What would feminist data visualization look like? MIT Center for
+Civic Media. https://civic.mit.edu/feminist-data-visualization accessed 26 January
+2016.
+15
+
+Data Physicalization. (2016) Data Physicalization Wiki. Available at:
+http://dataphys.org/.
+Dewey Hagborg H. (2016) Stranger Visions. Available at:
+http://deweyhagborg.com/projects/stranger-visions.
+Elwood S. (2008) Volunteered geographic information: future research directions
+motivated by critical, participatory, and feminist GIS. GeoJournal 72: 173-183.
+Fishkin KP, Moran TP and Harrison BL. (1999) Embodied user interfaces: Towards
+invisible user interfaces. Engineering for Human-Computer Interaction. Springer, 1-18.
+Fors V. (2015) Sensory experiences of digital photo-sharing - ‘mundane frictions' and
+emerging learning strategies. Journal of Aesthetics & Culture, 7.
+http://www.aestheticsandculture.net/index.php/jac/article/view/30655 accessed 1 May
+2016.
+Fors V, Bäckström Å and Pink S. (2013) Multisensory emplaced learning: resituating
+situated learning in a moving world. Mind, Culture, and Activity 20: 170-183.
+Fox NJ. (2015) Personal health technologies, micropolitics and resistance: a new
+materialist analysis. Health: online first.
+Frank M, Walker J, Attard J and Tygel A. (2016) Data literacy - what is it and how can
+we make it happen? The Journal of Community Informatics. http://www.cijournal.net/index.php/ciej/article/view/1347 accessed 1 December 2016.
+Fritz JP and Barner KE. (1999) Design of a haptic data visualization system for people
+with visual impairments. Rehabilitation Engineering, IEEE Transactions on 7: 372-384.
+Gaver WW, Bowers J, Boehner K, Boucher A, Cameron DWT, Hauenstein M, Jarvis N
+and Pennington S. (2013) Indoor weather stations: investigating a ludic approach to
+environmental HCI through batch prototyping. Proceedings of the SIGCHI Conference
+on Human Factors in Computing Systems (CHI '13). Paris: ACM Press, 3451-3460.
+Gregg M. (2015) Inside the data spectacle. Television & New Media 16: 37-51.
+Haggerty K and Ericson R. (2000) The surveillant assemblage. British Journal of
+Sociology 51: 605-622.
+Haraway D. (1985) Manifesto for cyborgs: science, technology, and socialist feminism
+in the 1980s. Socialist Review 80: 65-108.
+Haraway D. (1995) Foreword: Cyborgs and symbionts: living together in the new world
+order. In: Gray CH (ed) The Cyborg Handbook. New York: Routledge, xi-xx.
+Haraway D. (2003) The Companion Species Manifesto: Dogs, People, and Significant
+Otherness, Chicago: Prickly Paradigm.
+Haraway D. (2015) Birth of the kennel: a lecture by Donna Haraway, August 2000. The
+European Graduate School. http://www.egs.edu/faculty/donna-haraway/articles/birthof-the-kennel/ accessed 26 May 2015.
+Hayles NK. (2012) How We Think: Digital Media and Contemporary Technogenesis,
+Chicago, IL: University of Chicago Press.
+Hill RL, Kennedy H and Gerrard Y. (2016) Visualizing junk: big data visualizations and
+the need for feminist data studies. Journal of Communication Inquiry 40: 331-350.
+16
+
+Ishii H and Ullmer B. (1997) Tangible bits: towards seamless interfaces between
+people, bits and atoms. Proceedings of the ACM SIGCHI Conference on Human
+Factors in Computing Systems (CHI '97). Atlanta: ACM Press, 234-241.
+Jansen Y, Dragicevic P, Isenberg P, Alexander J, Karnik A, Kildal J, Subramanian S and
+Hornbæk K. (2015) Opportunities and challenges for data physicalization. Proceedings
+of the SIGCHI Conference on Human Factors in Computing Systems (CHI '15). Seoul:
+ACM Press, 3227-3236.
+Kennedy H and Hill RL. (2016) The pleasure and pain of visualizing data in times of
+data power. Television & New Media online ahead of print.
+Kennedy H, Hill RL, Allen W and Aiello G. (2016) The work that visualisation
+conventions do. Information, Communication & Society 19: 715-735.
+Kennedy H and Moss G. (2015) Known or knowing publics? Social media data mining
+and the question of public agency. Big Data & Society, 2.
+http://bds.sagepub.com/content/2/2/2053951715611145.abstract accessed 10 December
+2015.
+Khot R, Hjorth L and Mueller FF. (2014) Understanding physical activity through 3D
+printed material artifacts. Proceedings of the SIGCHI Conference on Human Factors in
+Computing Systems (CHI '14). Toronto: ACM Press, 3835-3844.
+Khot R, Mueller F and Hjorth L. (2013) SweatAtoms: materializing physical activity.
+Proceedings of the 9th Australasian Conference on Interactive Entertainment: Matters
+of Life and Death. Melbourne: ACM Press, 1-7.
+Khot RA, Pennings R and Mueller FF. (2015) EdiPulse: supporting physical activity
+with chocolate printed messages. Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems (CHI '15). Seoul: ACM Press, 1391-1396.
+Kwan M-P. (2002) Feminist visualization: re-envisioning GIS as a method in feminist
+geographic research. Annals of the Association of American Geographers 92: 645-661.
+Lee M-H, Son O and Nam T - J. (2016) Patina-inspired personalization: personalizing
+products with traces of daily use. Proceedings of the 2016 ACM Conference on
+Designing Interactive Systems (DIS '16). Brisbane: ACM Press, 251-263.
+Lupton D. (2016b) The Quantified Self: A Sociology of Self-Tracking, Cambridge: Polity
+Press.
+Lupton D. (2016) Digital companion species and eating data: Implications for
+theorising digital data–human assemblages. Big Data & Society, 3.
+http://bds.sagepub.com/spbds/3/1/2053951715619947.full.pdf accessed 7 January 2016.
+Lupton D. (2017) Personal data practices in the age of lively data. In: Daniels J, Gregory
+K and McMillan Cottom T (eds) Digital Sociologies. Bristol: Policy Press, 335-350.
+Lupton D and Michael M. (2017) 'Depends on who's got the data': public
+understandings of personal digital dataveillance. Surveillance & Society, in press.
+Madden M and Rainie L. (2015) Americans' Attitudes about Privacy, Security and
+Surveillance. <http://www.pewinternet.org/files/2015/05/Privacy-and-SecurityAttitudes-5.19.15_FINAL.pdf> accessed 21 May 2015.
+17
+
+McCosker A and Wilken R. (2014) Rethinking ‘big data’ as visual knowledge: the
+sublime and the diagrammatic in data visualisation. Visual Studies 29: 155-164.
+Merleau-Ponty M. (1962) Phenomenology of Perception, London: Routledge & Kegan
+Paul.
+Merleau-Ponty M. (1968) The Visible and the Invisible, Evanston, IL: Nortwestern
+University Press.
+Moores S. (2012) Media, Place and Mobility, Houndmills: Palgrave Macmillan.
+Moores S. (2014) Digital orientations:“Ways of the hand” and practical knowing in
+media uses and other manual activities. Mobile Media & Communication 2: 196-208.
+Nafus D and Sherman J. (2014) This one does not go up to 11: the Quantified Self
+movement as an alternative big data practice. International Journal of Communication
+8: 1785 - 1794.
+Nissen B and Bowers J. (2015) Data-Things: digital fabrication situated within
+participatory data translation activities. Proceedings of the 33rd Annual ACM
+Conference on Human Factors in Computing Systems (CHI '15). Seoul: ACM Press,
+2467-2476.
+Paterson M. (2007) The Senses of Touch: Haptics, Affects and Technologies, Oxford:
+Berg.
+Paterson M. (2009) Introduction: re-mediating touch. The Senses and Society 4: 129140.
+Pavlovskaya M. (2006) Theorizing with GIS: a tool for critical geographies?
+Environment and Planning A 38: 2003-2020.
+Pink S. (2015) Approaching media through the senses: between experience and
+representation. Media International Australia 154: 5-14.
+Pink S, Sinanan J, Hjorth L and Horst H. (2016) Tactile digital ethnography:
+Researching mobile media through the hand. Mobile Media & Communication 4: 237251.
+Puschmann C and Burgess J. (2014) Metaphors of big data. International Journal of
+Communication 8: 20. http://ijoc.org/index.php/ijoc/article/view/2169 accessed 12
+December 2015.
+Rainie L and Duggan M. (2016) Privacy and Information Sharing.
+http://www.pewinternet.org/files/2016/01/PI_2016.01.14_Privacy-and-InfoSharing_FINAL.pdf accessed 30 January 2016.
+Selke S. (ed) (2016) Lifelogging: Digital Self-tracking and Lifelogging - Between
+Disruptive Technology and Cultural Transformation. Wiesbaden: Springer VS.
+Stark L. (2016) The emotional context of information privacy. The Information Society
+32: 14-27.
+Stusak S. (2015) Exploring the potential of physical visualizations. Proceedings of the
+Ninth International Conference on Tangible, Embedded, and Embodied Interaction (TEI
+'15). Stanford, CA: ACM Press, 437-440.
+18
+
+Stusak S, Tabard A, Sauka F, Khot RA and Butz A. (2014) Activity sculptures: exploring
+the impact of physical visualizations on running activity. IEEE Transactions on
+Visualization and Computer Graphics 20: 2201-2210.
+Sumartojo S, Pink S, Lupton D and LaBond CH. (2016) The affective intensities of
+datafied space. Emotion, Space and Society 21: 33-40.
+van Dijck J. (2014) Datafication, dataism and dataveillance: Big Data between scientific
+paradigm and ideology. Surveillance & Society 12: 197-208.
+Whitelaw M. (2009) Weather bracelet - 3D printed data-jewelry. (The Teeming Void).
+http://teemingvoid.blogspot.com.au/2009/10/weather-bracelet-3d-printed-data.html
+accessed 3 May 2016.
+Wolff A, Gooch D, Montaner JJC, Rashid U and Kortuem G. (2016) Creating an
+understanding of data literacy for a data-driven society. The Journal of Community
+Informatics. http://www.ci-journal.net/index.php/ciej/article/view/1286 accessed 1
+December 2016.
+
+19
+
+

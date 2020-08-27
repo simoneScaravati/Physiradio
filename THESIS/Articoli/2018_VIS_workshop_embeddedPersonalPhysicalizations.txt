@@ -1,0 +1,492 @@
+Embedded Personal Physicalizations
+Mathieu Le Goc, Charles Perin, Sean Follmer
+
+To cite this version:
+Mathieu Le Goc, Charles Perin, Sean Follmer. Embedded Personal Physicalizations. Toward a Design
+Language for Data Physicalization, IEEE VIS, Oct 2018, Berlin, Germany. �hal-01910351�
+
+HAL Id: hal-01910351
+https://hal.archives-ouvertes.fr/hal-01910351
+Submitted on 31 Oct 2018
+
+HAL is a multi-disciplinary open access
+archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from
+teaching and research institutions in France or
+abroad, or from public or private research centers.
+
+L’archive ouverte pluridisciplinaire HAL, est
+destinée au dépôt et à la diffusion de documents
+scientifiques de niveau recherche, publiés ou non,
+émanant des établissements d’enseignement et de
+recherche français ou étrangers, des laboratoires
+publics ou privés.
+
+Embedded Personal Physicalizations
+Mathieu Le Goc, Charles Perin, and Sean Follmer
+Abstract— With the emergence of quantified-self, smart devices, Internet of Things and ubiquitous robotics, we envision new
+opportunities to create dynamic embedded physicalizations. In particular, we see new challenges arising in the context of personal
+and casual physicalizations at home. In this paper, we discuss the research directions and potential benefits of dynamic embedded
+physicalizations in the residential context, or Embedded Personal Physicalizations.
+Index Terms—Physicalization; Personal visualization; Casual visualization; Embedded visualizations.
+
+1
+
+I NTRODUCTION
+
+AND
+
+M OTIVATIONS
+
+The field of visualization is at a tipping point. As computers have
+transitioned from massive corporate calculators to personal computers
+to mobile devices, visualization is also becoming increasingly personal.
+Visualization has already moved from supercomputers for scientific
+visualization to desktop tools for information visualization, data science
+and data journalism.
+Nowadays we generate massive amounts of personal data using devices and sensors such as “smart” meters and thermostats in our homes;
+personal devices such as Fitbit trackers, mobile phones, and smart
+watches on our bodies. However, this data is not readily available for
+the individuals to make sense of or get empowered for better decision
+making and behavior change. We argue that for visualizations to become personal, ubiquitous, and play a major role in our everyday lives,
+we need to explore new technologies and approaches to visualizing
+data, designed specifically for a personal usage context. There is a
+need to design interfaces so that this data is used to amplify people’s
+cognition and help them make informed decisions.
+In this paper we argue that embedded personal physicalizations, that
+can leverage multimodal interactions, ambient visualizations, peripheral
+attention, and social group discussions, are a promising approach to
+tackling this challenge. We start by discussing related work around
+ambient personal visualizations, ubiquitous interfaces and robotics,
+actuated physicalizations, and embedded visualization. Building on
+these bodies of work, we illustrate opportunities for physicalizations
+at home through a scenario. We further discuss the challenges and
+research directions of embedded personal physicalizations.
+1.1
+
+Ambient Personal Visualizations
+
+There has been a growing interest in personal visualization and personal
+visual analytics, which brings forth the question: “How can the power
+of visualization and visual analytics be made appropriate for use in
+personal contexts – including for people who have little experience
+with data, visualization, or statistical reasoning?” [4]. There is also
+evidence that people can engage in the act of constructing personal
+visualization at home, promoting self-reflection [22]. One of the key
+aspects of these artifacts is their physical presence within people’s
+intimate spaces, and how they can “serendipitously spark reflection”
+and facilitate “continuous awareness” [22].
+In their discussion of casual information visualization [15], Pousman
+et al. argue that ambient visualizations produce awareness insights –
+insights that come from maintaining awareness of a data stream. For
+example, the act of linking information, such as an one’s Fitbit activity
+• Mathieu Le Goc and Sean Follmer are with Stanford University. E-mail:
+mlegoc, sfollmer@stanford.edu.
+• Charles Perin is with the University of Victoria and City, University of
+London. E-mail: cperin@uvic.ca.
+Manuscript received xx xxx. 201x; accepted xx xxx. 201x. Date of Publication
+xx xxx. 201x; date of current version xx xxx. 201x. For information on
+obtaining reprints of this article, please send e-mail to: reprints@ieee.org.
+Digital Object Identifier: xx.xxxx/TVCG.201x.xxxxxxx
+
+levels with the visible health of one’s house plant, amplifies awareness
+of one’s overall health [1]. Such ambient visualizations can have a
+persuasive role in a personal context [13]. Displays are also becoming
+increasingly smaller thus better suited to personal use [13]. It is also
+important to convey information in a “subjectively pleasant way” in a
+personal context [13]. This aligns with the observation that people who
+craft personal visual narratives using visualization introduce subjective
+elements at all stages of the visualization creation process [23].
+1.2
+
+Ubiquitous Interfaces and Robotics
+
+Zooids [11], small wheeled-robots capable of moving on horizontal
+surfaces and sensing user input. Zooids enable versatile creation of
+ubiquitous robotic interfaces [9]. These can move, manipulate, sense,
+display, and interact with both user and environment thus enabling to
+create rich interactive spaces. Similarly, Cellulo robots [14] allow to
+create tangible user interfaces for diverse learning applications. Each
+robot can accurately move in space and deliver haptic feedback to
+leverage kinesthetic learning.
+1.3
+
+Actuated Physicalizations
+
+Data-in-Place [21] explores ambient dynamic physicalizations to better
+understand their impact and how it can be used to improve the life of
+communities, at street level. Building on shape-changing interfaces,
+Taher et al. [20] introduced Emerge, a dynamic physicalization of a
+3D barchart alongside interaction techniques to support information
+exploration tasks. Dynamic composite physicalization [12] constitute a
+subclass of physicalizations made of multiple elements whose topology
+can be reconfigured, or can reconfigure itself. We presented our implementation of dynamic composite physicalizations using Zooids [11].
+1.4
+
+Personal Physicalizations
+
+Stusak et al. [19] explored physicalizations as representations of personal data such as tracked running activity, and showed that the resulting sculptures engage users in reflective processes and trigger social
+interactions. Huron et al. [5] showed how physicalizations can help
+users with no prior experience in infovis create, use and explain visual
+representations of personal data.
+1.5
+
+Embedded Visualizations
+
+In his talk “Seeing Spaces” [24], Victor depicts a maker space that
+allows makers to prototype and design using advanced seeing tools.
+This space contains the technology to capture and display information
+so that makers can observe and understand complex behaviors, keep
+track of the captured data, and compare parallel design variations in the
+resulting implementations. By capturing and representing information
+concurrently in context, makers have direct and easy access to large
+amounts of information, which would otherwise be complex to distill
+and cumbersome to acquire with traditional tools. Willett et al. [25]
+coin these as embedded data representations, representations that “are
+made up of multiple physical presentations that each independently
+display data related to their respective physical referent”. Embedded
+physicalizations are precised as “consisting of materials or objects that
+are associated with the data referents”.
+
+Meanwhile, the mother wants to install a new wall light in the living
+room. To help her find an appropriate location for the lamp, a group
+of Zooids climb on the walls and start scanning the surface to find the
+location of wall studs and electric cables in the wall. The Zooids align
+to create a line following electric cables, and synchronously flash their
+light in yellow to depict lightning and signify danger. Meanwhile, other
+Zooids detect the multiple studs to indicate potential locations for the
+new lamp. With these Zooids representations, the mother can now see
+in-situ the constraints and the potential spots for her new light fixture.
+From the multiple choices, she decides on an optimal location where
+the lamp will not only be supported by a stud while remaining close to
+electric cables, but also near her couch where she can do her evening
+reading. Happy with her choice, she starts drilling away safely.
+
+Fig. 1. An ambient physicalization representing the weather of the day.
+
+We extend these with embedded personal physicalizations, that
+we define as embedded visualizations that are physical representations
+of data in a personal context such as a home. With embedded personal
+physicalizations, we aim to create pervasive and seamless representations of information in casual contexts, by leveraging the low spatial
+indirection of embedded physicalizations. While they come with new
+challenges, we envision that embedded personal physicalization will
+empower people by augmenting their awareness and understanding of
+their environment, and inform decision making.
+2
+
+O PPORTUNITIES
+
+FOR
+
+P HYSICALIZATIONS
+
+AT
+
+H OME
+
+With new technology come new opportunities for personal physicalizations at the junction of ubiquitous computing, robotics, and casual
+and personal visualizations. Recent advances in Internet of Things
+and ubiquitous computing, alongside with the widespread adoption of
+quantified self and smart devices, now facilitate the creation of large
+networks of sensors that collect data in a wide range of environments.
+This information can then feed embedded visualizations in real-time.
+Traditional sensors can be distributed across the house as well as
+the power grid to collect, monitor, and provide information regarding
+utilities consumption (electricity, water, gas) [16], ambient air quality
+(e.g., presence of dangerous gases such as carbon monoxide), ambient
+temperature, illumination conditions, or human presence.
+This collection of data can already provide residents with statistics
+and trends, to raise awareness regarding their own behavior. Yet in this
+personal context, phone applications or websites can seem intrusive
+or patronizing and raise privacy concerns. A relatively recent study
+also found that both the aesthetics of the representation and the context of use need to be considered when designing visualizations for
+environmental and resource consumption data in people’s homes [17].
+In this section we present situations depicting the daily life of a
+family whose house is equipped for data collection and embedded
+physicalizations. We illustrate this system with a potential variation
+of Zooids [11] (and thus not yet implemented), for which each robot,
+equipped with a variety of sensors, could move freely within the house.
+2.1
+
+Saturday afternoon. While working, the mother doesn’t notice the
+dust building up and air quality degrading rapidly. Some of the Zooids
+measure the air composition at regular intervals, to help monitor the air
+quality in the house. As the Zooids detect increasing amounts of dust
+in the air, several Zooids bring a respirator mask within reach by the
+mother’s toolbox. Meanwhile, another Zooid draws a sign in the dust
+on the floor, to create an additional representation of the poor quality
+of the air. As the mother finishes drilling, she notices the sign drawn by
+the Zooid in the dust and sees the respirator, and feels that her nose is
+starting to be itchy. Now aware of the poor quality of the air, she opens
+the window, put on the respirator and starts cleaning the room.
+Saturday evening. Once dinner is over and the kids have put all the
+dishes away into the dishwasher, the Zooids remind the family that the
+compost bin is almost full and that it’s trash pickup day tomorrow. The
+daughter, seeing the level of her contribution towards household chores
+as indicated by the Zooids, decides to take the compost out. As she is
+heading out with the compost bin, the Zooids near the garbage light up
+to indicate that it too is almost full. The daughter decides to take care
+of both the compost and the garbage at the same time.
+Meanwhile, the older son looks at the physicalizations near the TV
+to choose the family’s entertainment for the evening. He looks at the
+representations of which shows have been watched recently, how much
+each family member enjoyed it, how adventurous the family is feeling
+about what to watch, etc. He does not consider his younger brother’s
+preferences tonight as the Zooids on the family schedule show that the
+younger son is away at a sleepover at his friend Ben’s house.
+Saturday night. After the father comes back from putting the kids to
+bed, both parents decide to take a closer look at the recent biometric
+measurements of their newborn daughter displayed on the ambient
+visualization in the living room (see Fig. 2). The recent evolution of
+the baby’s weight, height, and other statistics indicate to the parents
+that the baby is very healthy and follows the national growth charts.
+Checking the house before bed, the father finds that the compost
+and trash have been emptied, as indicated by the Zooids lights. The
+Zooids do one last final checkup of the house, and they confirm that all
+
+Ubiquitous Sensor Network and Embedded Physicalizations
+
+Saturday morning. The father decides to cook his specialty for the
+weekend family breakfast, an omelette. Looking at the physicalizations
+on the refrigerator of what is available in the fridge, he knows how
+many eggs there are, what vegetables he can incorporate into the dish,
+which ingredients are going bad and need to be used right away, etc..
+Having access to all this information, he is able to serve up a delectable
+dish whilst using urgent ingredients. Zooids keep track of what has
+been used and what ought to be replenished, given the family habits
+when grocery shopping. As the children prepare to leave the kitchen
+to get dressed up, the father looks at the weather forecast for the day.
+He likes to keep a group of Zooids on the side of the fridge to display
+the forecast in the kitchen (see Fig. 1). As these indicate a sunny and
+warm day, the father tells his children to wear T-shirts and hats.
+
+Fig. 2. Parents looking at biometrics and statistics of their newborn baby
+on the in their living room.
+
+the windows and doors are locked, the family dog is safe and sound in
+his little house in the garden, and the electronic appliances are turned
+off. The father climbs into bed next to his wife, ready to discuss the
+fantastic movie his older son had played for the family tonight.
+By making information more available through multiplying and diversifying representations of data within the space, embedded personal
+physicalizations can increase people’s cognition and awareness of their
+surroundings, and trigger reflection and associations of ideas.
+2.2
+
+Personal Physicalizations for Collaboration and Decision Making
+
+In our most recent paper [12], we presented a scenario depicting how
+physicalizations composed of Zooids can support collaboration and
+decision-making. In this scenario (see Fig. 3), a family is planning
+their future summer holidays. They want to find a place that meets the
+expectations of each member of the family. To do this, they physicalize
+a dataset containing information about numerous attractive places. They
+can then explore the multiple dimensions of the dataset and isolate
+places of agreement, based on the result of queries. With this method,
+the whole family collaborates and participates in the decision-making
+process; they discuss and compromise to settle on a location. They
+also create an ambient physicalization that they attach to the kitchen
+wall. This physicalization represents the price of the flight for a few
+locations the family is interested in. Placing this on the kitchen wall
+allows them to keep track of the evolution of the projected costs, as they
+aim at buying tickets when prices would reach the threshold matching
+the budget set by the parents.
+With this scenario, we conjecture that the tangible nature of the physicalization may better support collaboration by bringing the members of
+the family around a physicalization and providing them with a common
+ground, i.e., Reference Space [2]. This allows richer communication
+and thus can improve collaboration. Jansen et al. [8] speculate that
+physicalizations may better engage the audience, fostering our perception, skills, and experience to interact with the physical world [7].
+Based on existing work in the fields of education and tangible user
+interfaces, studies have shown that physicality offers cognitive help
+using, for instance, epistemic actions [3, 10]. We believe that these
+benefits can contribute to better supported collaborations.
+3
+
+C HALLENGES
+
+The space of embedded personal physicalizations is ripe for exploration.
+Not only is it an almost untouched area of research, but it can also
+potentially impact and empower every person, promote the widespread
+use of visualization, and help to develop visualization literacy. Many
+challenges emerge when designing embedded personal physicalizations.
+In this section we describe the most salient of these challenges.
+3.1
+
+Adapting Infovis Priorities in the Home
+
+The golden rules of visualization most likely do not apply in a home,
+which is a personal environment. Most information visualization guidelines are about faithfully and accurately presenting data, for fast and
+efficient perception of trends, values, and relations. In a personal
+context, we argue that other factors such as aesthetics, relatability, persistence, natural integration into the home, and curiosity-triggering, are
+likely to be more important.
+Embedded personal physicalizations are very well suited to this
+context that does not necessarily require accurate representations of
+data. Embedded personal physicalizations are also particularly appropriate for monitoring data streams in real-time, acting as constant
+reminders, and becoming ambient visualizations, as we are used to
+living surrounded by physical, tangible objects.
+In addition, information visualization research often assumes that
+people interacting with visualizations are fully dedicated to the act of
+decoding, analyzing, and interpreting data. This situation is less likely
+to be the case in personal environments. Under such conditions, where
+people split their attention and distribute their cognition in the physical
+spaces they live in, what makes a visualization effective is yet to be
+determined.
+
+Fig. 3. The family uses a dynamic composite physicalization system [12]
+to support collaboration and decision making.
+
+In this particular context, we as a community need to question the
+efficiency and appropriateness of the visual encodings we employ to
+convey data. Some guidelines may not apply to embedded personal
+physicalizations. And perhaps some encodings that we quickly discard
+when designing visualizations are particularly relevant to embedded
+personal physicalizations. Rankings of encodings are based on perceptual studies that measure how fast and accurate people are at reading
+and comparing data values. But there is a growing discussion about
+how these rankings and guidelines can matter less, or even be meaningless, when factors like privacy, subjectivity, emotions and sharing of
+personal stories are more important than fast and accurate perception
+of data (e.g., [1, 4, 17, 23]).
+3.2
+
+Blending Streaming and Historical Physicalizations
+
+Embedded personal physicalizations based on technologies such as
+swarm and robotic interfaces are particularly well-suited to providing
+real-time visualizations of streaming data, gathering insights, enhancing
+human awareness, and aiding collaborative decision-making activities.
+However, because they are more “things” than “stuff” [11], they are
+also ill-suited to visualizing large amounts or aggregations of data.
+On one hand, highly dynamic visualizations that are well-suited to
+visualizing streaming data are likely to help people react immediately
+based on some data updates. On the other hand, visualizations that do
+not update much and are better-suited to comparisons and historical
+analysis, are likely to help people reflect and plan longer-term actions.
+This tradeoff between highly dynamic, token-based visualizations
+and scalable, aggregated visualizations is not specific to physicalizations. For example, Visual Sedimentation [6] explores the challenge of
+transitioning from digital data tokens to aggregates of data over time,
+using the metaphor of the natural process sedimentation process. However, the challenge appears to be bigger in the physical world, subject
+to more constraints than its digital counterpart. While strategies for
+smoothly transforming token-based visualizations into aggregated ones
+are relatively easy to design, explore, and study in the digital world,
+this poses a difficulty in the physical world.
+One of the main challenges in enabling embedded personal physicalizations to support both awareness insights, as well as reflective and
+analytical insights, is to blend visualizations of streaming data with
+visualizations of aggregated data. While the former provides real-time
+feedback, the latter delivers historical information for comparison and
+analysis, helping self-reflection and behaviour changes.
+
+3.3 Evaluating Physicalization in the Wild
+As technologies become more and more available, we see more systems
+emerging as research prototypes or potential products. Yet, we need to
+understand their usability and benefits in personal usage contexts. Very
+much like the Tenison Road project [21], longitudinal studies can help
+refine the new systems and most importantly, understand how they can
+inform and alter our behavior.
+3.4 Requirements
+The following are a few requirements that we deem important for an
+ideal embedded personal physicalization system from both implementation and design perspectives. Additional requirements may be identified
+with further development of implementation specifics.
+Versatility. Embedded personal physicalizations should remain
+setup-agnostic, i.e., they should not need a specific or localized setup
+to work. In personal spaces, one may want to be able to re-arrange
+and move things around freely, bring objects to the living room or to a
+friend’s house. The system should be flexible to be context independent.
+Scalability. The size of the personal physicalizations should remain
+a design variable, to accommodate different spaces as well as different
+resolutions.
+Dynamicity and Interactivity. Embedded personal physicalizations should be dynamic to react to real-time feeds of data. Furthermore,
+interactions should be supported to react to users’ manipulations, allowing collocated input and output.
+Trust. When entering private and intimate spaces, users need to
+create a trust relationship with the system. To this end, the personal
+physicalization system should provide transparency regarding the data
+collection and processing, and ensure ethics in the design.
+Non-Intrusiveness and Privacy. Embedded personal physicalizations should be designed with reflection and relatability in mind.
+Personal physicalizations are not recommendation systems, and thus
+should not provide users with conclusions, but rather with all the element to allow them to make their own decisions. Consequently, embedded personal physicalizations should not disrupt or trouble everyday
+life. One should be able to hide the physicalizations, or obscure what
+they represent.
+3.5 Feasibility
+To our knowledge, only few currently available technologies allow
+to implement embedded personal physicalizations meeting the aforementioned requirements of versatility, scalability and interactivity.
+Zooids [11] are one of these technologies that support embedded personal physicalizations. As a result, the physicalizations presented in
+the scenarios in Sect. 2 are largely inspired by Zooids and what they
+are capable of, as well as potential future improvements. Yet, Zooids
+show clear limitations that prevent creating embedded personal physicalizations as presented in the scenarios. In particular, restrictions due
+to tracking range and cost restrain the extent to which these scenarios
+can be readily implemented. Other technological approaches such as
+ubiquitous robotics [9] as well as shape changing interfaces [18] could
+allow for rich and diverse embedded personal physicalizations.
+4 C ONCLUSION
+Embedded personal physicalizations have the potential to help people
+leverage the massive amounts of personal data that they collect in their
+everyday lives. They offer dynamic, actuated physical representations
+of data that can help families gain awareness insights, participate in
+collective decision-making activities, reflect on their behaviors, and
+change their habits. While embedded personal physicalizations offer
+some unique advantages, they also come with difficult challenges to
+tackle. We provide an initial discussion of these challenges as well as a
+first list of requirements for designing embedded personal physicalizations at home.
+R EFERENCES
+[1] F. Botros, C. Perin, B. A. Aseniero, and S. Carpendale. Go and grow:
+Mapping personal data to a living plant. In Proc. AVI ’16, pages 112–119,
+New York, NY, USA, 2016. ACM.
+
+[2] B. Buxton. Mediaspace–meaningspace–meetingspace. In Media space
+20+ years of mediated life, pages 217–231. Springer, 2009.
+[3] Y. Fernaeus and J. Tholander. Finding design qualities in a tangible
+programming space. In Proc. CHI ’06, pages 447–456. ACM, 2006.
+[4] D. Huang, M. Tory, B. A. Aseniero, L. Bartram, S. Bateman, S. Carpendale,
+A. Tang, and R. Woodbury. Personal visualization and personal visual
+analytics. IEEE TVCG, 21(3):420–433, 2015.
+[5] S. Huron, Y. Jansen, and S. Carpendale. Constructing visual representations: Investigating the use of tangible tokens. IEEE TVCG, 20(12):2102–
+2111, 2014.
+[6] S. Huron, R. Vuillemot, and J.-D. Fekete. Visual sedimentation. IEEE
+TVCG, 19(12):2446–2455, 2013.
+[7] R. J. Jacob, A. Girouard, L. M. Hirshfield, M. S. Horn, O. Shaer, E. T.
+Solovey, and J. Zigelbaum. Reality-based interaction: a framework for
+post-wimp interfaces. In Proc. CHI ’08, pages 201–210. ACM, 2008.
+[8] Y. Jansen, P. Dragicevic, P. Isenberg, J. Alexander, A. Karnik, J. Kildal,
+S. Subramanian, and K. Hornbæk. Opportunities and challenges for data
+physicalization. In Proc. CHI ’15, pages 3227–3236. ACM, 2015.
+[9] L. H. Kim and S. Follmer. Ubiswarm: Ubiquitous robotic interfaces and
+investigation of abstract motion as a display. Proc. UbiComp ’17, 1(3):66,
+2017.
+[10] D. Kirsh and P. Maglio. On distinguishing epistemic from pragmatic
+action. Cognitive science, 18(4):513–549, 1994.
+[11] M. Le Goc, L. H. Kim, A. Parsaei, J.-D. Fekete, P. Dragicevic, and
+S. Follmer. Zooids: Building blocks for swarm user interfaces. In Proc.
+UIST ’16, pages 97–109. ACM, 2016.
+[12] M. Le Goc, C. Perin, S. Follmer, J.-D. Fekete, and P. Dragicevic. Dynamic
+composite data physicalization using wheeled micro-robots. IEEE TVCG,
+2018.
+[13] A. V. Moere. Towards designing persuasive ambient visualization. In
+Issues in the Design & Evaluation of Ambient Information Systems Workshop, pages 48–52, 2007.
+[14] A. Özgür, W. Johal, F. Mondada, and P. Dillenbourg. Haptic-enabled
+handheld mobile robots: Design and analysis. In Proc. CHI ’17, pages
+2449–2461. ACM, 2017.
+[15] Z. Pousman, J. Stasko, and M. Mateas. Casual information visualization:
+Depictions of data in everyday life. IEEE TVCG, 13(6):1145–1152, 2007.
+[16] F. Quintal, C. Jorge, V. Nisi, and N. Nunes. Watt-i-see: A tangible
+visualization of energy. In Proc. AVI ’16, pages 120–127. ACM, 2016.
+[17] J. Rodgers and L. Bartram. Exploring ambient and artistic visualization
+for residential energy use feedback. IEEE TVCG, 17(12):2489–2497, Dec
+2011.
+[18] A. F. Siu, E. J. Gonzalez, S. Yuan, J. Ginsberg, A. Zhao, and S. Follmer.
+shapeshift: A mobile tabletop shape display for tangible and haptic interaction. In Adjunct Publication of UIST ’17, pages 77–79. ACM, 2017.
+[19] S. Stusak, A. Tabard, F. Sauka, R. A. Khot, and A. Butz. Activity sculptures: Exploring the impact of physical visualizations on running activity.
+IEEE TVCG, 20(12):2201–2210, 2014.
+[20] F. Taher, J. Hardy, A. Karnik, C. Weichel, Y. Jansen, K. Hornbæk, and
+J. Alexander. Exploring interactions with physically dynamic bar charts.
+In Proc. CHI ’15, pages 3237–3246. ACM, 2015.
+[21] A. S. Taylor, S. Lindley, T. Regan, D. Sweeney, V. Vlachokyriakos,
+L. Grainger, and J. Lingel. Data-in-place: Thinking through the relations between data and community. In Proc. CHI ’15, pages 2863–2872.
+ACM, 2015.
+[22] A. Thudt, U. Hinrichs, S. Huron, and S. Carpendale. Self-reflection and
+personal physicalization construction. In Proc. CHI ’18, page 154. ACM,
+2018.
+[23] A. Thudt, C. Perin, W. Willett, and S. Carpendale. Subjectivity in personal
+storytelling with visualization. Information Design Journal, 23(1):48–64,
+2017.
+[24] B. Victor. Seeing spaces. Online. http://worrydream.com/SeeingSpaces/,
+2014.
+[25] W. Willett, Y. Jansen, and P. Dragicevic. Embedded data representations.
+IEEE TVCG, 23(1):461–470, 2017.
+
+

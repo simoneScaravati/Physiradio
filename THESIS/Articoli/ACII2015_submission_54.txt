@@ -1,0 +1,486 @@
+2015 International Conference on Affective Computing and Intelligent Interaction (ACII)
+
+Data-Objects: Re-Designing Everyday Objects as
+Tactile Affective Interfaces
+Chang Long Zhu*, Harshit Agrawal*, Pattie Maes
+Massachusetts Institute of Technology
+Fluid Interfaces Group, MIT Media Lab
+Cambridge, MA, USA
+{changzj, harshit, pattie}@media.mit.edu
+Abstract— Data-Objects introduces the idea of re-designing
+physical objects that a person uses every day to act as tactile
+affective interfaces. Data-Objects are a means to provide users
+information about their use of different everyday objects and how
+it affects them. We do this by re-designing the objects to embed
+information in the physical body of the object itself without
+hampering its original functional capability. By 3D printing the
+body in a set period of time, differences in the information
+represented on the physical body over the time are aimed at
+highlighting patterns of how the usage of that object has been
+affecting the user. The overwhelming digital information that we
+are exposed to and the disconnect that it has from what it is
+representing makes the relation of the information to the different
+aspects of our life not effective. We think that using physical forms
+of objects to provide information can make the data more
+meaningful, enhancing the value of the object beyond its intended
+function. Physical forms can provide subliminal and tactile
+feedback to the users as they use the objects throughout the day,
+without specific visual attention. Being present physically ensures
+that people are more conscious of the data and patterns, and
+makes the data visible to other people as well.
+
+Khot et al. observed that material artifacts based on physical
+activity make participants more conscious about their
+involvement in physical activity [4]. We further believe that
+physical objects representing contextually relevant information
+about the effect associated with a particular object itself, will
+over time, serve the purpose of acting like physical diaries, and
+playing significant role in making one mindful of patterns of
+effect of objects in our daily lives. This is especially true for
+various types of data, whose analysis makes sense over a long
+period of time, rather than instantly [5], for example health
+affective data while using a device. Also, physical objects often
+exist in public space, and are readily seen by people around, as
+opposed to digital data, which often is not. This, as observed by
+Vande Moere [6], will increase the likelihood of these objects
+acting as incentives to make people reflect and act upon their
+data patterns. Therefore, through Data-Objects, we aim to add
+more meaning and personalization to everyday objects that we
+use during a day, without being aware of the effect of the related
+activity on us.
+
+Keywords— Material data representation; 3D printing; Tactile
+feedback
+
+1)   Towards Physicalizing data
+There exist a number of ways to represent information today,
+but most of them are digital in medium. On the one hand, the
+virtual medium is beneficial for data visualization as it has
+interactive capabilities (such as allowing for zooming into data),
+and support for dynamic updates of the data. On the other hand,
+the virtual representation has some limitations as to what can be
+experienced with it, as argued by Vande More [6] and Victor
+[7]. For example, the virtual and visual medium requires a flat
+display surface that is less perceivable in daylight and demands
+high visual attention without which one cannot parse the data
+[8].
+
+I.  
+
+A.   Related work
+
+INTRODUCTION
+
+There are many daily objects and devices that people use
+without being cognizant of how the activity associated with that
+object is affecting them. We propose a novel way in which
+people can be made more aware of the effect of use of a
+particular object. We do this by mapping the information of
+usage effect of an object on the physical form of the object itself,
+thereby adding another layer of personalization, meaning and
+function.
+In recent years, we have witnessed the advent of 3D printing
+technology, its declining costs and its easy accessibility to the
+masses [1]. There have also been rapid advancements in sensing
+and data logging technology resulting in a growing interest in
+using sensor technology to foster lifestyle changes in people,
+especially in the health domain [2][3][18]. We see a tremendous
+opportunity in combining these two emerging technologies to
+create meaningful and contextually relevant means of physical
+information representation. 1
+
+Vande Moere [6] argues that a material representation
+carries a meaning beyond the data itself as it “can be touched,
+explored, carried, and even processed”, thus potentially
+encouraging people to reflect on their behavior yielding more
+engaging and educational experiences. A study by Jansen et al.
+[9] compared virtual and material visualizations of physical
+data, and found that visualizations of data in material form can
+be easier to understand for the user because of its 3D features.
+
+*Both authors contributed equally to this work
+
+978-1-4799-9953-8/15/$31.00 ©2015 IEEE
+
+322
+
+In addition to the difficulties of 2D representation, we
+believe there is a major disconnect between the medium of
+information representation and what the information is being
+represented about, often requiring users to connect that gap
+themselves. For example, representing information about the
+consumption of coffee on a tablet has an inherent disconnect in
+the source and medium of representation and how the two
+activities are experienced – one through the coffee cup and the
+other through a flat screen.
+Despite physical forms of data representation have been tried
+in the past, with examples such as [5][8][9], there is still a
+disconnect between what the information is about and where
+people see it. There is no contextual or functional relevance to
+the 3D object when the physical artifact of data remains a
+standalone place with no other functional purpose. Our user
+study, discussed later, points out that this contextual, in-time
+information acts as a trigger to help user be aware of how the
+object’s usage effects them while they use the object throughout
+the day.
+
+Fig. 1 New research space that Data-Objects is covering.
+
+Different data structures represented in textures and forms
+can elicit different emotion to a person. Tsalamlal et al. [13]
+analyzed, through a user-study, the relationships between the
+physical features of an air jet, which simulates tactile sensations,
+and the perception of emotions by participants through the
+variation in valence, arousal, and dominance. This research
+points to how tactile input can be a great means to represent
+feelings of emotion.
+
+Through Data-Objects, we create a means for providing
+information about an object’s effect on a user by physically
+embedding such information on that object itself. We believe
+that our approach of representing information through the
+object’s physical body will offer in-time tactile cues to the users
+as they utilize the object at various times of the day. This is
+opposed to separate stand-alone artifacts where the materiality
+does not play a major role, as the user does not often interact
+with the object physically. As Fogg’s behavior model points out,
+a trigger is needed to cause an action [10]. The Fogg Behavior
+Model shows that three elements must converge at the same
+moment for a behavior to occur: motivation, ability, and trigger.
+Various ways of representing health data are a means of
+providing a trigger to the user to act. However, with digital or
+stand-alone physical data representations, the relevant data is not
+presented to the user while using they carry out an action,
+thereby not providing effective triggers. Data-objects
+approaches to change that by providing contextually relevant
+tactile cues to the user. As highlighted in Fig. 1, Data-Objects is
+aimed to create a new research space of contextually relevant
+physical objects as a means of data representation. By
+highlighting the prior work, we show how this is a new area of
+work.
+
+These works proposed how methods of transmitting data,
+can infer more personal and meaningful information to the users.
+Data-Objects aims to creating physical data to embody personal
+information making the objects we use daily more affective.
+II.  
+
+A.   Datasets
+The affective and physical state of a person can be
+determined by analyzing different physiological parameters
+[15]. With the current advancements in commercial wearable
+devices, such as smart-watches or wristbands that track physical
+and physiological data of our body, it is being feasible to
+understand a person’s activity throughout the day.
+
+2)   Affective persuasive data
+The data that we perceive can be communicated affectively
+by means of computer work. For instance, Swan [11] described
+the past and future of the quantified self (QS) movement, stating
+that it will evolve from data representing physical information,
+to data that represents qualitative knowledge, such as emotions,
+leading to loops for behavior change.
+
+In the current implementation of Data-Objects, we use Heart
+Rate (HR) as the primary source of dataset that we embed in the
+physical form of the objects. We differentiate the HR in different
+scenarios, making it an indicator of the physiological effect of
+use of different objects or activities associated with different
+situations and objects.
+
+Kocielnik et al. [12] proposed LifelogExplorer as a tool to
+generate views of stress data from a person, in order to make it
+easier and accessible to understand personal information that is
+not usually perceivable. Similarly, McDuff et al. [14] described
+AffectAura, a tool that saves user’s valence, arousal, and
+engagement correlated with external information that is utilized
+for users to reflect upon. All these tools discuss various ways of
+capturing information and representing it digitally.
+
+978-1-4799-9953-8/15/$31.00 ©2015 IEEE
+
+DATA-OBJECTS
+
+Data-Objects employs personal physiological data of the
+user that is affected by tasks and activities we perform daily
+through diverse set of quotidian objects. In the following
+sections, we discuss the design of the Data-Objects, by
+describing the data-sets used, the thoughts behind designing the
+objects and the way we fabricate them.
+
+323
+
+Fig. 2. Workflow of Data-Objects.
+
+To collect the heart rate – in beats per minute (BPM) – we
+use a smart-watch, concretely the model Moto 360, which has a
+built-in heart rate monitor. By developing a custom application
+installed in this device, we collect the wearer’s HR in periods of
+3 minutes in order to get an insight of the variation during the
+day.
+
+the heart rate dataset that each object elicits throughout the day,
+we opted to change the shape of the object so that they can be
+perceived as continuous in time.
+The design of each object was parameterized considering the
+shape of the objects, and also analyzing the data representing the
+user’s heart rate. We utilized the program OpenSCAD, an opensource software application for creating 3D CAD models.
+
+The heart rate differs in different activities or in using
+different tools and objects. For this reason, to be able to discern
+them, the user selects the object s/he is using. We also use a
+usage logging application on a computer and phone to map the
+BPM data to phone or computer activity. For mapping BPM data
+to coffee, we ask the user to make notes personally and take that
+information.
+
+1)   Phone Casae
+In recent years, there is an increasing amount of people who
+use mobile phones, spend a large amount of time on it daily. To
+provide information of how phone usage is affecting a person,
+we map the BPM values while a person uses a phone on top of
+a generalized phone case shape.
+
+In order to explore more detailed inner state of the person,
+more data can be combined, such as respiration rate and
+electrodermal activity, as they are directly related to the
+emotional state of a person.
+
+During the process of designing the prototype of the phone
+case, we created different models that could represent the heartrate data (see Fig. 3). We tried both a continuous changing
+model and a more spike-oriented model. After fabricating the
+two and trying it out, we realized that the smoother, continuous
+one, though more pleasant to look at, was tough to get
+information from. We went ahead with the spiked version with
+all the objects.
+
+B.   Design of Objects
+Objects can provide different sensations through their
+difference in shape, temperature, friction or stiffness. However,
+in the current state of the art, objects do not react to the changes
+in the user’s physiological, and ultimately, emotional state.
+Through Data-Objects we add layers of personal data in form of
+physical properties that is perceived by the user subtlety, without
+hampering the usability of the object itself. We present three
+types of objects that are directly related to our everyday work
+and, hence, to our inner state: phone, mouse, and coffee mug.
+
+We plotted the data we collected by transforming the shape
+of its flat area. Taking the time period of one week, we formed
+seven horizontal “lines”, each one representing one specific day.
+Through the variation of height, different tactile sensations are
+perceived in form of change in roughness. In the design for BPM
+data, the continuous flat data represents the average BPM level
+
+As the shape of these three different types of objects differs,
+the design characteristics for each one is considered. By having
+
+Fig. 4. Colored phone case model.
+Fig. 3. Different versions of the Data-Objects phone case: (a)
+discontinuous, and (b) continuous.
+
+978-1-4799-9953-8/15/$31.00 ©2015 IEEE
+
+324
+
+Fig. 5. Data-Objects design models: (a) mouse cover, (b) phone case, and (c) coffee mug sleeve.
+
+of the user to give him/her a clear indication of relative rise or
+fall while using the phone and at what time of the day that would
+happen. In the design, we placed the data where the user can
+perceive the tactile cues while using the phone, without altering
+negatively its usability and being uncomfortable to carry. The
+data points are modeled as flat-headed spikes so as to make them
+easy to interpret and to provide good tactile information.
+Furthermore, another layer of representation to the phone case
+model was added, being represented as color change to give
+visual cues to the user, instead of a single variation in shape (see
+Fig. 4).
+
+C.   Transforming to physical
+With the designs created digitally with the data from the
+person, they were crafted using a 3D printer (Formlabs Form 1+
+Desktop printer).
+III.   USER STUDY
+We conducted a preliminary user study with 7 participants
+(3 female, and 4 male) with average age 23.7. The hypothesis
+we wanted to test was if contextually relevant tactile information
+representation is better for users to understand information about
+effect of use of a particular object, as opposed to noncontextually relevant digital representation. We designed a user
+study where we fabricated Data-Objects’ phone case covers,
+coffee sleeves and mouse covers (DO) for participants based on
+the system described above and gave these to the users for a
+week to use. We also provided them a digital representation
+(DR) of the same data, which they could access at any time of
+the week. This DR serves as a basis to compare the effectiveness
+of dynamic, both in shape and time, of the digital information to
+the users.
+
+2)   Coffe Cup Sleeve
+The second type of object we use is the coffee mug, or
+similarly the coffee cup sleeve that has effect, both positive and
+negative as it is directly related to coffee or tea consuming
+[16][17]. Thorough the day, we may have use of it usually in
+specific times of day.
+We modified a coffee cup sleeve that can be used for a
+standard commercial coffee cup (see Fig 5.c). The values of the
+heart rate data were mapped before, during, and after the use of
+the cup, to a 3D design of the sleeve representing the data, in a
+similar manner as done for the phone case. The design represents
+seven days of a week with each circular ring representing a day,
+this way, the holder can perceive the data of a whole set of time
+period while still having its functionality unaltered The data
+spikes cover 2/3rd of the circular section of the sleeve, and the
+remaining 1/3rd is left blank. This makes the data be noticed
+under the palm and under the fingers, making it easy to get
+tactile feedback through change in shape.
+
+The experiment had a set time period, duration of which was
+seven days, in which the participants were using the objects and
+data we provided. In the conclusion of the experiment, they were
+asked to rate on a scale of 1 to 5 the following attributes of DO
+and DR:
+TABLE I. RESULTS FROM THE USER STUDY
+
+3)   Mouse
+The third element that rises interest to conceive personal data
+is one that is related to both productivity and entertainment in an
+era that is focused on the digital world. The mouse is used to
+represent the variations in physiological signals while in front of
+the computer using applications, either for entertainment or
+productivity. We created a prototype of a casing for a mouse,
+with the objective of giving feedback to the user of the effects in
+the use of it.
+The design, similarly as the cases aforementioned,
+represents data of a specific time period, one week for instance,
+with each horizontal line representing data for one day. The part
+of the mouse where the palm makes the main contact with the
+body was chosen as the area to represent data (see Fig 5.a).
+
+978-1-4799-9953-8/15/$31.00 ©2015 IEEE
+
+325
+
+1)   Ease of accessing the information at various times of the
+day.
+
+people understand and reflect upon their data easily.
+Furthermore, we will also work to identify more objects of daily
+use, and the data sets relevant to those objects, might be even
+more than one set in an object, which we could embed in them
+in their physical form.
+
+2)   Ease of connecting the information accessed with
+activity and objects associated.
+The quantitative results for the seven participants are shown
+in Table I. The average score for the first question was 3.7
+inclined towards DO and for the second was 4.2 inclined
+towards DO as well.
+
+REFERENCES
+[1]   Gershenfeld, N. (2008). “Fab: the coming revolution on your desktop-from personal computers to personal fabrication”. Basic Books.
+[2]   Nike+ running. http://nikeplus.nike.com/plus/
+[3]   Rowe, D. W., Sibert, J., & Irwin, D. (1998, January). “Heart rate
+variability: Indicator of user state as an aid to human-computer
+interaction.” In Proceedings of the SIGCHI conference on Human factors
+in computing systems (pp. 480-487). ACM Press/Addison-Wesley
+Publishing Co..
+[4]   Khot, R. A., Hjorth, L., & Mueller, F. F. (2014, April). “Understanding
+physical activity through 3D printed material artifacts.” In Proceedings of
+the 32nd annual ACM conference on Human factors in computing
+systems (pp. 3835-3844). ACM.
+[5]   Khot, R. A., & Mueller, F. F. (2013, April). “Sweat-atoms: turning
+physical exercise into physical objects.” In CHI'13 Extended Abstracts on
+Human Factors in Computing Systems (pp. 3075-3078). ACM.
+[6]   Vande Moere, A. (2008, July). “Beyond the tyranny of the pixel:
+Exploring the physicality of information visualization.” In Information
+Visualisation, 2008. IV'08. 12th International Conference (pp. 469-474).
+IEEE.
+[7]   Victor, B. (2011). “A brief rant on the future of interaction design.” Worry
+Dream.com.
+[8]   Vande Moere, A., & Patel, S. (2009). “Analyzing the design approaches
+of physical data sculptures in a design education context.” Visual
+Information Communications International (VINCI’09).
+[9]   Jansen, Y., Dragicevic, P., & Fekete, J. D. (2013, April). “Evaluating the
+efficiency of physical visualizations.” In Proceedings of the SIGCHI
+Conference on Human Factors in Computing Systems (pp. 2593-2602).
+ACM.
+[10]   Fogg, B. J. (2002). “Persuasive technology: using computers to change
+what we think and do.” Ubiquity, 2002(December), 5.
+[11]   Swan, M. (2013). “The quantified self: fundamental disruption in big data
+science and biological discovery.” Big Data, 1(2), 85-99.
+[12]   Kocielnik, R., Maggi, F. M., & Sidorova, N. (2013, May). “Enabling selfreflection with LifelogExplorer: Generating simple views from complex
+data.” In Pervasive Computing Technologies for Healthcare
+(PervasiveHealth), 2013 7th International Conference on (pp. 184-191).
+IEEE.
+[13]   Tsalamlal, M. Y., Ouarti, N., Martin, J. C., & Ammi, M. (2013,
+September). “EmotionAir: Perception of Emotions from Air Jet Based
+Tactile Stimulation.” In Affective Computing and Intelligent Interaction
+(ACII), 2013 Humaine Association Conference on (pp. 215-220). IEEE.
+[14]   McDuff, D., Karlson, A., Kapoor, A., Roseway, A., & Czerwinski, M.
+(2012, May). “AffectAura: an intelligent system for emotional memory.”
+In Proceedings of the SIGCHI Conference on Human Factors in
+Computing Systems (pp. 849-858). ACM.
+[15]   Picard, R. W., Vyzas, E., & Healey, J. (2001). “Toward machine
+emotional intelligence: Analysis of affective physiological state.” Pattern
+Analysis and Machine Intelligence, IEEE Transactions on, 23(10), 11751191.
+[16]   Bak, A. A., & Grobbee, D. E. (1990). “A randomized study on coffee and
+blood pressure.” Journal of human hypertension, 4(3), 259-264.
+[17]   Wilson, G. F., & Russell, C. A. (2003). “Real-time assessment of mental
+workload using psychophysiological measures and artificial neural
+networks.” Human Factors: The Journal of the Human Factors and
+Ergonomics Society,45(4), 635-644.
+[18]   Picard, R. W., & Healey, J. (1997). “Affective wearables.” Personal
+Technologies,1(4), 231-240.
+
+In addition to the quantitative data, qualitative feedback from
+the participants was collected as well. The results of our study
+supported the initial belief that there is an increase of ease of
+access and understand by employing tactile information as
+compared to solely visual representation in digital format. It also
+supported our hypothesis that providing data of an object on its
+physical body is beneficial for people to relate the information
+with an activity that is executed with the particular object or
+objects.
+The qualitative statements gave us insights about the benefits
+and drawbacks of our system. A participant raised a valid point
+of having to preserve the various data-objects products over
+weeks to be able to analyze patterns emerging from them.
+Another participant said, “I could figure out information by just
+feeling it, and not consciously looking at it, allowing me to
+access information without giving constant thought. Other
+participant stated, “If I could also have tactile real-time
+information update on the Data-Objects, it will be very nice.”
+This last comment highlights one of the drawbacks of the DataObjects system where-in real-time information is not available.
+While Data-Objects serves the purpose of a physical diary very
+well, it does not support dynamic update of information.
+IV.   CONCLUSIONS AND FUTURE WORK
+This paper discusses a new approach of embedding
+information related to, and emerging from the use of everyday
+objects in the physical body of those objects themselves, making
+the objects more personal and meaningful. We present this idea
+with an aim of reducing the gap between the medium of
+representation of information and the source of that information.
+To put forth the concept, we implemented designs of three
+objects that a person uses everyday to carry out various activities
+using BPM values while a person uses those particular objects.
+We tested our hypothesis that contextually relevant tactile
+information representation is better for users to understand
+information about effect of use of object as opposed to noncontextually relevant digital representation through a
+preliminary user study and found positive results.
+We aim to work on the design of the Data-Objects to take
+the idea forward. Exploration will continue of the aesthetic
+design of the objects we create, and work on better designs to
+represent information. Our two-pronged goal in creating the
+designs is to ensure that the information is easily perceptible to
+the user, both visually and through tactile feedback, and the
+functionality of the object is in no way compromised. Therefore,
+the direction we want to push it in is to make the designs such
+that they do not entirely look like data plots, but at the same time
+are not too abstract so as to not achieve the purpose of letting
+
+978-1-4799-9953-8/15/$31.00 ©2015 IEEE
+
+326
+
+

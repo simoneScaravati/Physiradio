@@ -1,0 +1,988 @@
+P e r v asi v e D isp l a y s
+
+A Survey of Pervasive
+Displays for Information
+Presentation
+This survey of three different pervasive display technologies used for
+information presentation—traditional 2D display media, urban media
+facades, and novel display hardware—identifies five emerging trends
+that cross all three technologies.
+
+U
+
+sing pervasive technology for
+information presentation has
+been at the core of the ubiquitous computing vision since its
+inception. In his seminal article
+on ubicomp, Marc Weiser observed that our
+natural environments convey a wealth of information that can be readily absorbed and yet still
+deliver a positive user experience.1 In contrast, he noted
+that interactions with comSarah Clinch and Jason Alexander
+paratively information-poor
+Lancaster University
+computing were considerably
+Sven Gehring
+more frustrating:
+
+German Research Center for
+Artificial Intelligence (DFKI)
+
+There is more information
+available at our fingertips
+during a walk in the woods
+than any computer system, yet people find
+a walk among the trees relaxing and computers frustrating.
+
+Since this challenge was first articulated,
+the research community has invested significant effort in the domain of so-called
+“pervasive displays” using a wide range of
+technologies. Although this term could be
+considered to envelope a wide range of devices, here we focus on screens embedded
+into public and semipublic spaces, with the
+
+14 PER VA SI V E computing
+
+explicit purpose of displaying digital content to multiple viewers (typically simultaneously). Such displays range from tablet
+or TV-style displays that have been affixed
+to features of the internal or external environment and are visible only within a short
+distance, to large-scale media facades that
+are embedded into the very architecture of a
+space and can be viewed from long distances
+by a huge number of people.
+In this article, we focus on systems designed specifically to present information of
+the type Weiser foresaw (as opposed to entertainment or advertising content, for example), reviewing three significant classes of
+pervasive display technologies: conventional
+2D displays, urban media facades, and bespoke or novel hardware. All three technology areas have a rich history of use for information presentation (displaying news, public
+transport information, and so on), although
+the expected viewing or interaction models
+can shape the level of detail or information
+formatting. For example, many of the urban
+media facade examples discussed provide
+limited information arranged in a format
+designed primarily for its artistic or entertainment qualities.
+No one of these three technologies is a panacea for information presentation, but together
+
+Published by the IEEE CS n 1536-1268/16/$33.00 © 2016 IEEE
+
+they offer the opportunity to provide
+pervasive information display. Although not intended to be comprehensive, this survey focuses on key
+milestone systems for each technology
+approach, providing an overview of the
+current direction of pervasive information presentation systems and identifying emerging trends. Despite considerable differences in both the mediums
+and applications, we identify five interesting cross-cutting themes for pervasive displays as used for information
+presentation.
+
+Large 2D Screens and
+Projections
+Large 2D screens and projections are
+proliferating as a means of presenting
+information in many public and semipublic spaces. Early research focused
+on the use of single screens in workplace environments; for example, the
+Learning Communities Newspaper2
+took the form of a Web-based application projected in a shared space used
+by members of the Learning Communities group at Apple. News stories
+were submitted by group members,
+via email, to inform other members
+and guests about their project work
+and events.
+Deployments of one or more isolated
+displays (as opposed to tiled multiscreen environments) have continued
+to be important in the workplace.
+For example, the AwareMedia 3 deployment of 10 displays (mostly large
+touchscreens) was designed to raise
+awareness and support messaging
+within the surgical ward of a hospital.
+The screens were information-heavy,
+detailing the location of individuals,
+the schedule for specific areas of the
+ward, and current relevant surgical
+records, and providing video and messaging between locations. Evaluation
+interviews three months into the deployment suggested that the displays
+were a useful tool for supporting staff
+and informing their behavior.
+Another approach using 2D screens
+and projections is the creation of
+
+July–septemBer 2016
+
+multiscreen environments that combine multiple screens or projectors
+to build visually immersive environments for information presentation
+at very large scales; such displays are
+particularly useful for the visualization and analysis of large complex da-
+
+leases, and event details.7 The majority of displays in the network are 40inch traditional LCD screens that have
+been affixed to walls inside campus
+buildings (including residential areas
+and lecture theaters). By contrast, the
+UBI-hotspots deployment8 in Oulu,
+
+Although this was an ambient visualization of
+public data... only those familiar with the system
+understood the communicated data.
+tasets. For example, early cave automatic virtual environments (CAVEs)
+were constructed from three or more
+projected displays 4 that created a
+walk-in cube-shaped room. Interactions with the information visualizations in the CAVE were supported
+through a variety of hand-held input devices (such as data gloves or
+a joystick), and trials demonstrated
+use in a wide range of informationintensive applications (including 3D
+medical imaging, architectural walkthroughs, and exploration of astrophysics simulation data). Similar deployments have been created using
+traditional panel displays—such as
+the wall-sized interaction with large
+datasets (WILD) room. 5
+Beyond workplace and laboratory environments, conventional
+displays now abound. The CityWall6 research screen was deployed
+in Helsinki, Finland, to show information during large events. The
+screen supported multiple simultaneous interacting users through its
+large multitouch display. Large networked research deployments, composed of multiple screens, are also
+well-established. For example, the
+e-Campus deployment at Lancaster
+University uses almost 50 screens
+across the university campus to show
+a variety of relevant information such
+as bus times, local weather, press re-
+
+Finland, (which provides a wide array of information and applications)
+features 12 custom-built display units
+that are installed in indoor and outdoor city center locations. Large-scale
+networked display deployments are
+also commonplace in the advertising
+domain (see, for example, www.infoscreen.de).
+Projections are also a common approach for creating temporary installations in urban spaces. For example,
+a recent projection onto the Empire
+State Building in New York used the
+building as a platform for raising
+awareness of endangered species.9 The
+projected display used 40 stacked projectors to create a 57 × 115 meter display that could be viewed from considerable distance and looped through
+digital images of endangered species
+in order to act as a “weapon of mass
+instruction” that informed the local
+public.
+As LCD and projected displays
+are deployed in increasingly variable
+spaces, the challenge of managing the
+presented information also increases.
+Space users are not typically homogenous (perhaps varying over the course
+of a day or week) and are engaged in
+different tasks, so providing display
+content to inform this wide user base
+poses a significant challenge. Furthermore, as displays move from isolated nodes to large-scale networks
+
+PER VA SI V E computing 15
+
+Pervasive Displays
+
+(such as those we’ve described), the
+variety of locations add to the challenges associated with a highly varied
+audience.
+Two approaches can help improve
+the relevance and efficacy of such displays: the first, situatedness, relates
+to the tailoring of displayed media
+
+without equipping the building with
+extensive technology, particularly
+when creating displays with a 3D
+form factor.
+
+Urban Media Facades
+As large 2D screens have moved into
+cities, they have been increasingly
+
+Media facades are a prominent example of how
+we experience urban spaces and how information
+can be displayed.
+to the specific location of the screen.
+This might vary from simply tailoring the clock or weather to local conditions, to displaying community-relevant content, and even to displaying
+hyper-local travel information (such
+as the next bus to depart from the
+specific bus stop at which the display
+is located). The second, personalization, refers to the adaptation of content for the specific user (or group of
+users) standing in front of a display
+(for example, to show feeds from
+their preferred news source or to
+show the time of the next bus back
+to their homes). Research suggests
+that users increasingly expect to see
+situated content,10 and demographic
+information provided by video analytics systems is beginning to enable
+personalized digital media on public
+displays.
+Overall, large 2D screens and projections provide an accessible technology for information presentation that
+can be embedded into most indoor
+and outdoor locations, as reflected
+in the wealth of such screens in our
+everyday environments. Although
+cheap and accessible, the installation
+of these displays can disrupt the aesthetics of a space. As an alternative
+approach, in urban public spaces,
+projections are often used for turning building facades into large screens
+
+16
+
+PER VA SI V E computing 
+
+embedded in the fabric of the very
+buildings themselves. Known collectively as media facades, such installations have rapidly increased over
+the past decade.11,12 Media facades
+are a prominent example of how we
+experience urban spaces and how information can be displayed and made
+interactive. The research community
+has already made rich contributions
+in understanding urban spaces and
+the role and opportunities of media
+facades.
+However, designers and researchers are often in a rush to create new
+installations and remediate previous
+media forms13 and conceptual approaches for urban spaces. Such an
+approach is not necessarily sensitive
+to concerns about people, place, architecture, or urban design, suggesting the need for new understandings
+of these designed objects and how
+they shape our experience of built
+and urban environments.14 Mid-sized
+urban screens, such as video walls
+and digital billboards, are often just
+used as digital replacements for analog billboards. Due to their technical
+capabilities, they provide the advantage of displaying rapidly changing
+content, including animations and
+videos.
+In contrast to video walls, media facades are usually very large. Due to
+
+their physical and digital properties,
+as well as the public setting in which
+they’re usually situated, we face novel
+challenges when designing and developing digital content for media facades. The size of a media facade can
+vary from moderately small facades of
+50 m 2 , such as that at the Academy of
+Fine Arts Saar in Saarbrücken, Germany (www.hbksaar.de); to mediumsized ones, such as the one at the ARS
+Electronica Center in Linz, Austria
+(www.aec.at), covering 5,000 m 2; or
+very large ones, such as the one at
+Allianz Arena in Munich, Germany
+(www.allianz-arena.de), with an area
+of 25,500 m 2 . As a result of their
+enormous size, media facades can be
+visible from great distances, resulting
+in broad exposure of the content displayed on the facade.
+Peter Dalsgaard and Kim Halskov
+explored various types of media facade installations, identifying eight key
+challenges that need to be faced in such
+a public context.15 These challenges
+consider a wide range of issues, including that, due to the public context, urban settings call for new or adapted
+forms of interfaces. Displayed content
+has to suit the medium. It must match
+the technical properties of the facade
+and support the potentially intended
+interactions.
+Furthermore, stakeholder interests
+must be balanced. This can be a critical issue, because the majority of media facades are owned by companies or
+public institutions enforcing strict rules
+about their presence in public. Consequently, it’s important to understand
+that the presented content and visualized data will be exposed to a large audience in a public space. Together with
+the huge variety of supported media
+facade resolutions—they’re often very
+low compared to regular computer
+screens and situated public displays—
+this large-scale data exposure is one of
+the most important constraints for visualizing data on urban screens.
+Although tools exist16 for developing
+and prototyping—and even interacting
+
+www.computer.org/pervasive
+
+with—content and visualizations for
+media facades of arbitrary complexity,
+it’s still uncommon to visualize complex or even people-related data. Besides displaying image content in the
+form of digital advertisements, a common way of visualizing data in urban
+spaces is simply communicating quantitative data, such as traffic, weather,
+and air conditions. Usually, the data is
+visualized in an ambient fashion using
+color schemes and abstract animations.
+Using concrete numbers and detailed
+information is rather rare.
+In “City Bug Report: Urban Prototyping as Participatory Process and
+Practice,” Henrik Korsgaard and Martin Brynskov described their installation in Aarhus, Denmark.17 Their
+deployment explored the concepts of
+digital policy, transparency, and the
+impact of digitization on the changing
+roles of city administration and the
+(digital) public.17 The installation took
+the form of a media facade composed
+of 13 LED pixel arrays mounted on the
+exterior of the city hall tower in Aarhus. Simple color sequences were used
+to represent communication between
+citizens and the city administration
+providing a semantic connection to an
+online platform for citizen feedback
+and reporting issues within the city.
+The facade presented a visualization
+of open records on civic communication between the city departments and
+citizens. Although this was an ambient visualization of public data showing colored dots around the tower,
+only those that were familiar with the
+system understood the communicated
+data. The majority of passersby perceived the installation as a simple light
+installation.
+An early and well-known media
+facade installation visualizing image data was the Blinkenlights project in Berlin, Germany.11 The upper eight floors of an office building
+were turned into the world’s biggest
+(at that time) interactive computer
+screen. To control the content, people
+could use their mobile phones to call a
+
+July–septemBer 2016
+
+dedicated phone number which, when
+connected, allowed them to use their
+phone’s keypad to either control a virtual cursor on the facade or activate
+a previously uploaded animation. The
+only restriction for the visualized data
+was the comparably low resolution of
+8 × 18 pixels.
+
+animations and media content. When
+walking past the facade, the walking
+direction is mapped to animated arrows indicating the walking direction. When people stop and stand in
+front of the facade, they can create
+further animations through body
+gestures. These animations range
+
+Using novel display hardware for information
+presentation has significant potential to enable
+“calm” interaction.
+Another common data visualization in urban spaces is the presentation of passerby movement patterns.
+The movements are usually tracked
+with cameras and are often mapped
+to animated silhouettes or animated
+lights. For example, the installation
+12m4s from LAb[au] (www.lab-au.
+com) featured an interactive media
+facade installation based on average
+walking speed.18 This architectural
+intervention used the movements of
+passersby to generate a real-time visualization. The researchers assumed
+an average walking speed of 12 meters in approximately four seconds,
+and the movements of passersby were
+tracked in real-time with cameras to
+generate a visual (3D particles) and
+auditory (granular synthesis) scape
+on the facade, based on the captured
+image data and ultrasound sensors.
+The visualization was based on the
+position, orientation, and speed of a
+passerby.
+Similarly, the building of the organization La Vitrine Culturelle in
+Montreal, Canada, is equipped with
+a small, low-resolution media facade
+of approximately 23 m 2 consisting of
+35,000 RGB LEDs that change their
+color as a reaction to the movements
+of passersby.12 By connecting the interaction to the movements of passersby, the installation provides various
+
+from snowflakes popping up around
+the user’s silhouette, to movable light
+spots.
+In additional to light-emitting media facades, which can be compared to
+common digital displays, mechanical
+media facades—where the outer surface of the building consists of mechanical elements that can be physically
+altered—sometimes come with data
+visualization as a side effect.11,12 When
+the mechanically movable elements are
+used as shades adapting to the current
+position of the sun, their particular
+position reflects the position and intensity of the sun in a rather abstract
+way.
+
+Bespoke and Novel Hardware
+Both CAVE-like configurations and urban display deployments are typically
+built using conventional display technologies in which flat, 2D pixel arrays
+(such as LCD screens) provide high-resolution visual output. However, early
+information presentation prototypes
+that emerged from efforts to attain
+Weiser’s vision for “calm” computing19
+often took more novel forms based on
+nontraditional hardware, and the use
+of novel display hardware continues to
+be a valuable medium for information
+presentation.
+An early example is Natalie Jeremijenko’s Dangling String,19 comprised
+
+PER VA SI V E computing 17
+
+Pervasive Displays
+
+Figure 1. Emerge, a physically dynamic bar chart. 25 Users can directly or indirectly
+manipulate data points. (Source: Faisal Taher; used with permission.)
+
+of an 8-foot piece of plastic spaghetti
+(string) hanging from a stepper motor
+connected to a nearby Ethernet cable.
+As data was transmitted over the network, the electrical signals caused the
+motor to turn, resulting in movement
+of the string and yielding a peripheral
+audible and visual indication of the
+level of traffic.
+Since this early work, ambient displays have taken a variety of forms using natural and mechanical materials.
+For example, the LaughingLily20 provided an artificial plant mechanized
+to reflect the types of conversation
+occurring in a meeting room (silence,
+productive conversation, or arguments), and the more recent Clouds
+installation at the Open University21
+used 24 custom-built spheres to display the number of people using the
+stairs and elevator in the building.
+The spheres were hung from the ceiling and were equally divided into two
+halves (differentiated through use of
+different colors): half represented elevator use and the other half represented use of the stairs. Each set of 12
+spheres could be moved closer to the
+
+18
+
+PER VA SI V E computing 
+
+ceiling or floor to reflect the changing use of stairs and elevator; vertical
+distance between the Clouds indicated
+the difference between the number of
+people taking the stairs versus those
+taking the elevator.
+Although useful for all kinds of
+peripheral information presentation, the physicality of many novel
+displays provides an ideal medium
+for scenarios such as data visualization, because users can manipulate
+the presented data, letting them gain
+deeper insights. Indeed, researchers have recently identified a role for
+such hardware in promoting engagement with public displays, and encouraging reflection on the information displayed. 22 One such example
+combined a traditional digital screenbased data visualization with physical data plates cut to the shape of the
+line graphs associated with subsets
+of the data. These two data mediums
+were combined to form a single boxshaped display that was deployed in
+urban space. Study of the user interactions showed that the presence of
+physical data plates resulted in more
+
+comparisons between different data
+subsets when compared to an identical deployment with only the digital
+display; the plates therefore led users to generate much deeper insights
+about the data. 22
+While these examples combined
+a traditional 2D screen with a set of
+physical but static data representations, the next generation of displays
+will take a different form—their physical geometry will dynamically change
+shape, reconfiguring their presence in
+3D space to better represent the underlying content. Actuated shape-changing displays fundamentally transform
+our understanding of “displays” from
+a flat 2D pixel arrays to physically dynamic visual outputs. These displays
+use our visual and tactile senses to exploit the perceived affordances inherent in everyday physical objects.23 For
+data visualization, this means displays
+will feature an additional information
+channel—the physical dimension—to
+better convey features and meaning,
+while exploiting the viewers’ rich visual and tactile senses. These novel
+shape-changing displays move toward
+Ivan Sutherland’s vision for the “ultimate display,”24 where a computer controls the existence and form of matter.
+The majority of current examples
+of shape-changing displays are 2.5D
+displays—flat surfaces that host actuated physical pins to generate deformed display surfaces. Faisal Taher
+and his colleagues review the literature of shape-changing displays used
+for data presentation, 25 noting that
+such displays are typically controlled
+using motorized pins, pneumatics, or
+shape-memory alloys. (A continually
+evolving list of shape-changing interfaces is available at www.shapechange.org.) Furthermore, their resolutions vary from a few physical pixels
+(< 10) to 900. 23 As a method of capturing the shape-change capabilities
+of different displays, Anne Roudaut
+and her colleagues describe “shaperesolution,”26 analogous to measures
+of screen-size, resolution, and so on,
+
+www.computer.org/pervasive
+
+that consumers are familiar with in
+typical displays.
+Much like traditional displays, many
+shape-changing displays are built as
+generic output devices. For example,
+the emerging area of data physicalization deals with “physical artefacts
+whose geometry or material properties
+encode data.”27 To explicitly explore
+this domain, Taher and his colleagues
+constructed Emerge, 25 a physically
+dynamic bar chart consisting of 100
+self-illuminating bars that vertically
+actuate to create physical 3D data representations (see Figure 1). Users can
+directly or indirectly manipulate data
+points (including pulling and pushing
+bars and interacting with axis labels)
+to visualize the information through
+annotation, filtering, organization,
+and navigation. In a similar vein, Sean
+Follmer and his colleagues demonstrated physical representations of
+mathematical functions using the 900
+actuating bars of inFORM. 23
+As a first step toward commercialization of physical shape-changing
+interfaces, Tactus Technology’s Phorm
+(www.tactustechnology.com) extrudes
+small buttons from an iPad’s display to
+aid typing on touchscreens. Expansion
+of this concept—pumping micro-fluids
+into a screen overlay—or using a modular shape-change toolkit such as ShapeClip, 28 would let developers transform
+any traditional display into a novel
+physically dynamic data visualizer.
+An alternate view on shape-changing
+interfaces is the use of developing display technologies such as augmented
+reality (AR), virtual reality (VR), and
+holographic displays to present “untouchable” digital content either immersively (VR) or overlaid onto the
+real world. For example, to overcome
+the challenge of presenting high-resolution visual output in the same space as
+physical output, Sublimate augmented
+a shape-display with AR, demonstrating virtual mesh manipulation, geospatial data, and wind tunnel flow. 29
+To generate 3D path visualizations,
+LeviPath levitates and moves, in mid-
+
+July–septemBer 2016
+
+air, multiple small objects using acoustic standing waves. 30 Finger tracking
+facilitates indirect input to manipulate
+the placement of levitating objects.
+Augmenting traditional objects for additional information presentation is
+more commonplace, with a number of
+commercial products available (see, for
+
+with traditional displays, the “price
+per pixel” will reduce as technology
+develops and demand increases. Such
+higher resolution shape-displays will
+both better represent the required
+data and allow significantly larger
+datasets to be rendered. In the meantime, combinations of display tech-
+
+Using novel display hardware for information
+presentation has significant potential
+to enable “calm” interaction.
+example, www.layar.com and www.
+wikitude.com).
+Using novel display hardware for
+information presentation has significant potential to enable “calm” interaction with the ever-growing set of
+information now presented to users
+in all aspects of their daily lives. Although research prototypes have continued to be developed since Weiser’s
+early vision, many have been highly
+tailored to a specific information presentation goal, and few have made
+it to deployments outside of the lab.
+Technologies such as AR, VR, and
+shape-changing displays have the potential to generalize to numerous information presentation scenarios (for
+example, researchers recently proposed using AR displays in domestic environments for human memory augmentation 31). In particular,
+the use of shape-changing displays
+provides an accessible presentation
+medium that does not require the use
+of personal wearables or devices.
+However, this next generation of
+display technology is still immature
+and faces significant hurdles before
+it is suitable for mainstream deployments. The biggest of these challenges
+is improving the scale and resolution
+of physical display hardware. While
+progress is being made in both the
+research and commercial sectors, as
+
+nologies (such as Sublimate’s use
+of high-resolution AR display and
+physical output) can provide an intermediate step for this hardware
+development. 29
+
+Cross-Cutting Trends
+The three presented technology
+classes for pervasive information display each have something to offer—
+no single approach currently appears
+to be the ideal solution. Current deployments often use conventional
+LCD screens, but media facades and
+more varied display hardware are attracting considerable interest for accessible and engaging presentation of
+information to users. Despite obvious
+differences in the three mediums, five
+cross-cutting trends emerged from
+the surveyed literature: an increasing
+emphasis on situatedness, growing
+accessibility and a wider user base,
+support for interaction, new application areas, and challenges in managing user attention.
+An Emphasis on Situated Displays
+Early information displays were typically based on dedicated presentation hardware that had little connection with its setting. However,
+as displays become more varied and
+commonplace, users have a growing
+expectation that a display will have
+
+PER VA SI V E computing 19
+
+Pervasive Displays
+
+some sense of situatedness—that is, it
+will have a connection to the space in
+which it’s embedded.10
+For example, in the conventional
+display domain, a clear shift can be
+observed from immersive VR-based
+systems such as CAVE 4 to situated
+displays that specifically represent
+
+environments, many early displays had
+limited accessibility for the general
+population, but the growing accessibility of displays has led researchers to
+accommodate a diverse viewer audience. For example, the recent CityWall
+deployment was explicitly designed to
+support users, ranging from experts to
+
+This next generation of display technology is
+still immature and faces significant hurdles before
+it is suitable for mainstream deployments.
+changing activities in a space. 32 Media facades in particular are designed
+to be embedded into an existing architectural space, exploiting its characteristics and therefore offering clear
+potential for situatedness. Indeed, recent deployments, such as the 2014
+City Bug report,17 have realized this
+vision. Similarly, although innovations in shape-changing displays can
+provide support for general information presentation, a long-standing
+trend for novel hardware displays has
+been the presentation of information
+in a situated manner (such as Dangling
+String19 and Clouds21).
+In-situ information presentation has
+a number of advantages over other
+forms of information provision. First,
+it offers users increased levels of trust
+in the relationship between the physical space and the data being presented
+(users typically associate ownership of
+a display with the space in which it is
+deployed7). Second, in-situ presentation
+can rely on the physical space to frame
+the information presented. Finally,
+when techniques such as projection are
+used, the physical space can become
+part of the visualization itself.
+A Rise in Nonexpert Users
+A further trend is the growing set of
+varied users encountering information displays. Embedded in research
+
+20
+
+PER VA SI V E computing 
+
+children and senior citizens.6 Equally,
+many media facades can be appreciated by users with varying degrees
+of understanding of the information
+presented. At one level, they can simply be considered as an aesthetic improvement to the space,17 but as users
+develop an understanding of the visualization, they can read more of the information contained within.
+Movement toward an increasingly
+data-driven society is likely to see a
+rapid increase in demand for data visualizations for nonexpert users. We expect pervasive displays to play an important role in meeting this need. The
+public nature of many pervasive displays means they have huge potential
+for accessible information and could
+prove to be an important tool in helping to avoid the creation of a so-called
+“digital-divide” based on information
+availability.
+Increased Support for Interaction
+and Experimentation
+Interaction has long been an important
+theme for pervasive display researchers,
+and it’s now commonplace for deployments to support some form of user
+interaction. As interaction has emerged
+as a more prominent feature of pervasive display deployments, there has
+been a clear shift from relatively static
+information presentation to highly in-
+
+teractive systems. While early interactive systems relied on touchscreens and
+dedicated input devices (such as mice,
+data gloves, and joysticks), many now
+feature interaction with the display
+via smartphones11,33 or through direct
+physical manipulation.25 The ability to
+interact with data can help transform
+a pervasive information display from a
+simple ambient awareness tool to a sophisticated data-access point for viewers that enables browsing and potential
+experimentation with the data being
+visualized, leading to new insights.22
+The production of interactive data
+visualizations on media facades in urban settings is particularly interesting,
+because it poses significant new challenges. In some cases, a display might
+be visible by hundreds or thousands
+of nearby citizens, so providing interactivity for both the large scale of the
+physical display and its large user base
+will require significant innovation.
+More generally though, trends across
+all three technologies indicate that, in
+the near future, most pervasive displays
+will support interaction, and viewers
+will assume an ability to explore, control, and interact with the information
+presented to them.
+The Emergence of New
+Applications
+Early information presentation applications of pervasive displays were
+largely focused on supporting the
+workplace. More recently, news and
+advertising information have become
+commonplace. However, with the
+trend toward situated displays, and a
+wide user base, new applications have
+started to emerge.
+Perhaps the most common of these
+are applications for behavior change
+in which visualization of previously
+unseen data is used to try and encourage viewers to modify their current
+behavior—often for health or sustainability reasons. One example is Breakaway,34 a small custom-hardware desk
+sculpture that moved into a slouching
+pose to reflect the inactivity of a desk
+
+www.computer.org/pervasive
+
+­ ccupant. Once the worker took some
+o
+time away from the desk, the sculpture would return to an upright position. Another example is the Clouds
+installation at the Open University. 21
+It combined both conventional LCDs
+and custom display hardware to encourage use of the stairs in preference
+to the elevator. The installation of 24
+display spheres (described earlier) was
+complemented by an array of plasma
+screens that gave a detailed representation of recent stair and elevator usage.
+Although the potential for behaviorchange applications is clear, there remains a question as to the long-term
+effectiveness of such interventions.
+Therefore, the extent to which they will
+become widely deployed is not obvious.
+However, we do expect new applications for data visualization to develop
+as new display technologies emerge.
+Increased Difficulty in Managing
+User Attention
+Weiser’s original vision of calm computing (that is, interaction with digital
+devices where the interaction is designed to occur in the user’s periphery
+rather than at the center of attention)1
+is often seen as being at odds with the
+increasing trend toward displays embedded in the environment that compete for viewers’ attention. Research
+has shown that modern viewers appear to look at pervasive displays for
+very short periods of time (less than
+two seconds), and many have become accustomed to ignoring them
+altogether—a phenomenon known
+as “display blindness.”35 To combat
+this, display owners and content producers (in particular, advertisers) have
+attempted to develop systems that are
+ever more engaging in an attempt to
+attract viewers’ attention. Such a battle for user attention seems a far cry
+from the idea of displays fading into
+the background as part of the fabric of
+everyday life.
+This difficulty in managing user attention arises in many areas of pervasive displays but is likely to be of
+
+July–septemBer 2016
+
+particular consequence when these
+displays are being used for presenting complex information sets, which
+often require significant time for the
+user to assimilate and comprehend. In
+situations where users actively seek out
+displays and wish to engage with the
+data being shown, this is not a problem. However, where data visualizations are being used for applications
+such as ambient awareness or behavior change, this is likely to present a
+serious challenge. We expect that this
+problem will continue to grow until
+common techniques for communicating levels of interest or expected viewing durations emerge.
+
+I
+
+nformation presentation through
+pervasive displays has long been
+an important focus for ubicomp.
+Consumption of information (as
+generated through social networks
+and IoT, for example) is of growing
+importance, and as we move towards
+data- and information-rich societies,
+the challenge of providing pervasive
+information access without cognitive
+overload is an increasingly significant
+area of research.
+Pervasive displays can help shape
+interactions between users and growing pools of information, supporting
+them in making complex inferences
+and prompting a wealth of new opportunities. However, the choice
+of display medium is an important
+factor in determining the reach and
+usability of information. Current
+pervasive display research is often
+segmented based on the technologies
+involved: commercial products make
+2D screens readily available, embedded technologies allow information
+presentation in urban environments
+through media facades, and novel
+hardware allows tangible and bespoke representations of data. However, it is clear that these technologies
+will exist as part of a comprehensive
+display ecosystem in which users interact with information. As a result,
+
+awareness of research across technology segments, together with an appreciation of common trends, is likely to
+be of importance to a wide range of
+research challenges going forward.
+
+References
+1. M. Weiser, “The Computer for the 21st
+Century,” Scientific Am., Sept. 1991, pp.
+94–104.
+2. S. Houde, R. Bellamy, and L. Leahy, “In
+Search of Design Principles for Tools
+and Practices to Support Communication within a Learning Community,”
+SIGCHI Bulletin, vol. 30, no. 2, 1998,
+pp. 113–118.
+3. J.E. Bardram, T.R. Hansen, and M.
+Soegaard, “AwareMedia: A Shared Interactive Display Supporting Social, Temporal, and Spatial Awareness in Surgery,”
+Proc. 2006 20th Anniversary Conf.
+Computer Supported Cooperative Work
+(CSCW), 2006, pp. 109–118.
+4. C. Cruz-Neira, D.J. Sandin, and T.A.
+DeFanti, “Surround-Screen ProjectionBased Virtual Reality: The Design and
+Implementation of the CAVE,” Proc.
+20th Ann. Conf. Computer Graphics and
+Interactive Techniques (SIGGRAPH),
+1993, pp. 135–142.
+5. M. Beaudouin-Lafon et al., “Multisurface
+Interaction in the WILD Room,” Computer, vol. 45, no. 4, 2012, pp. 48–56.
+6. P. Peltonen et al., “It’s Mine, Don’t
+Touch!: Interactions at a Large MultiTouch Display in a City Centre,”
+Proc. SIGCHI Conf. Human Factors
+in Computing Systems (CHI), 2008,
+pp. 1285–1294.
+7. A. Friday, N. Davies, and C. Efstratiou,
+“Reflections on Long-Term Experiments
+with Public Displays,” Computer, vol. 45,
+no. 5, 2012, pp. 34–41.
+8. T. Heikkinen et al., “Lessons Learned
+from the Deployment and Maintenance
+of Ubi-Hotspots,” Proc. 4th Int’l Conf.
+Multimedia and Ubiquitous Engineering (MUE), 2010; doi: 10.1109/
+MUE.2010.5575054.
+9. C. Hall, “Digital Signage Sends ‘Call of
+the Wild’ at the Empire State Building,”
+Digital Signage Today, 5 Aug. 2015;
+www.digitalsignagetoday.com/articles/
+digital-signage-sends-call-of-the-wild-atthe-empire-state-building.
+10. S. Clinch et al., “Ownership and Trust
+in Cyber-Foraged Displays,” Proc. Int’l
+
+PER VA SI V E computing 21
+
+Pervasive Displays
+
+the Authors
+Sarah Clinch is a post-doctoral researcher at Lancaster University, UK. Her research interests include pervasive displays and personalization in ubiquitous computing systems. Clinch received a PhD in computer science from Lancaster University. Contact her at s.clinch@lancaster.ac.uk.
+
+Jason Alexander is a lecturer in HCI at Lancaster University, UK. His work addresses computing’s physical–digital divide by developing novel interaction techniques and devices. His recent research focuses on exploring shape-changing display technology. Alexander received a PhD in computer science from Canterbury
+University, New Zealand. Contact him at j.alexander@lancaster.ac.uk.
+
+Sven Gehring is a post-doctoral researcher at the German Research Center for Artificial Intelligence (DFKI). His research interests include HCI in urban spaces as well
+as interaction with media facades. Gehring received a PhD in computer science from
+Saarland University, Germany. Contact him at sven.gehring@dfki.de.
+
+Symp. Pervasive Displays (PerDis), 2014,
+pp. 168–173.
+11. H.M. Haeusler, Media Facades—History, Technology, Content, Avedition,
+2009.
+12. H.M. Haeusler, M. Tomitsch, and G.
+Tscherteu, New Media Facades—A
+Global Survey, Avedition, 2013.
+13. J.D. Bolter, R. Grusin, and R.A. Grusin,
+Remediation: Understanding New
+Media, MIT Press, 2000.
+14. G. Sade, “Aesthetics of Urban Media
+Facades,” Proc. 2nd Media Architecture
+Biennale Conf: World Cities (MAB),
+2014, pp. 59–68.
+15. P. Dalsgaard and K. Halskov, “Designing
+Urban Media Facades: Cases and Challenges,” Proc. SIGCHI Conf. Human
+Factors in Computing Systems (CHI),
+2010, pp. 2277–2286.
+16. S. Gehring et al., “The Media Facade
+Toolkit: Prototyping and Simulating
+Interaction with Media Facades,” Proc.
+2013 ACM Int’l Joint Conf. Pervasive
+and Ubiquitous Computing (UbiComp),
+2013, pp. 763–772.
+17. H. Korsgaard and M. Brynskov, “City
+Bug Report: Urban Prototyping as Participatory Process and Practice,” Proc.
+2nd Media Architecture Biennale Conf:
+World Cities (MAB), 2014, pp. 21–29.
+
+22
+
+PER VA SI V E computing 
+
+18. R. Klanten, S. Ehmann, and V. Hanschke,
+A Touch of Code—Interactive Installations and Experiences, Gestalten, 2011.
+19. M. Weiser and J.S. Brown, “Designing
+Calm Technology,” PowerGrid J., vol. 1,
+no. 1, 1996, pp. 75–85.
+20. S. Antifakos and B. Schiele, “LaughingLily: Using a Flower as a Real World
+Information Display,” Proc. 5th Int’l
+Conf. Ubiquitous Computing (Ubicomp),
+2003, pp. 161–162.
+21. Y. Rogers et al., “Ambient Influence:
+Can Twinkly Lights Lure and Abstract
+Representations Trigger Behavioral
+Change?” Proc. 12th ACM Int’l Conf.
+Ubiquitous Computing (Ubicomp),
+2010, pp. 261–270.
+
+25. F. Taher et al., “Exploring Interactions
+with Physically Dynamic Bar Charts,”
+Proc. 33rd Ann. ACM Conf. Human Factors in Computing Systems (CHI), 2015,
+pp. 3237–3246.
+26. A. Roudaut et al., “Morphees: Toward
+High ‘Shape Resolution’ in Self-actuated
+Flexible Mobile Devices,” Proc. SIGCHI
+Conf. Human Factors in Computing Systems (CHI), 2013, pp. 593–602.
+27. Y. Jansen et al., “Opportunities and Challenges for Data Physicalization,” Proc. 33rd
+Ann. ACM Conf. Human Factors in Computing Systems (CHI), 2015, pp. 3227–3236.
+28. J. Hardy et al., “ShapeClip: Towards
+Rapid Prototyping with Shape-Changing
+Displays for Designers,” Proc. 33rd Ann.
+ACM Conf. Human Factors in Computing Systems (CHI), 2015, pp. 19–28.
+29. D. Leithinger et al., “Sublimate: StateChanging Virtual and Physical Rendering to Augment Interaction with Shape
+Displays,” Proc. SIGCHI Conf. Human
+Factors in Computing Systems (CHI),
+2013, pp. 1441–1450.
+30. T. Omirou et al., “LeviPath: Modular
+Acoustic Levitation for 3D Path Visualisations,” Proc. 33rd Ann. ACM Conf.
+Human Factors in Computing System
+(CHI), 2015, pp. 309–312.
+31. A. Colley, J. Rantakari, and J. Häkk i l ä , “Aug ment i ng t he Home to
+Remember: Initial User Perceptions,”
+Proc . 2014 AC M Int ’l Joint Conf.
+Pervasive and Ubiquitous Computing: Adjunct Publication (UbiComp),
+2014, pp. 1369–1372.
+32. R. José et al., “Instant Places: Using Bluetooth for Situated Interaction in Public
+Displays,” IEEE Pervasive Computing,
+vol. 7, no. 4, 2008, pp. 52–57.
+33. S. Clinch, “Smartphones and Pervasive
+Public Displays,” IEEE Pervasive Computing, vol. 12, no. 1, 2013, pp. 92–95.
+
+22. S. Claes and A.V. Moere, “The Role of
+Tangible Interaction in Exploring Information on Public Visualization Displays,”
+Proc. 4th Int’l Symp. Pervasive Displays
+(PerDis), 2015, pp. 201–207.
+
+34. N. Jafarinaimi et al., “Breakaway: An
+Ambient Display Designed to Change
+Human Behavior,” Extended Abstracts
+on Human Factors in Computing Systems
+(CHI), 2005, pp. 1945–1948.
+
+23. S. Follmer et al., “inFORM: Dynamic
+Physical Affordances and Constraints
+through Shape and Object Actuation,”
+Proc. 26th Ann. ACM Symp. User Interface Software and Technology (UIST),
+2013, pp. 417–426.
+
+35. N. Memarovic, S. Clinch, and F. Alt,
+“Understanding Display Blindness in
+Future Display Deployments,” Proc. 4th
+Int’l Symp. Pervasive Displays (PerDis),
+2015, pp. 7– 14.
+
+24. I. Sutherland, “The Ultimate Display,”
+Proc. Int’l Federation of Information
+Processing (IFIP) Congress, vol. 65, no.
+2, 1965, pp. 506–508.
+
+Selected CS articles and columns
+are also available for free at
+http://ComputingNow.computer.org.
+
+www.computer.org/pervasive
+
+

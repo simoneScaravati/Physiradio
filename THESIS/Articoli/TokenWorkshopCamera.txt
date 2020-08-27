@@ -1,0 +1,318 @@
+Challenges of Running Constructive
+Visualization Studies with Children
+Abstract
+Fearn Bishop
+
+ᚃ
+
+Uta Hinrichs
+
+SACHI Group
+
+SACHI Group
+
+University of St Andrews
+
+University of St Andrews
+
+St Andrews, Fife, Scotland
+
+St Andrews, Fife, Scotland
+
+fab3@st-andrews.ac.uk
+
+uh3@st-andrews.ac.uk
+
+Previous work has shown that physical materials such
+as simple plastic tokens can be used to study novices’
+rich and diverse processes of mapping abstract data to
+visual constructs [e.g. 2] which, in turn, can shed light
+onto sense-making processes and inform the design of
+visualization tools. Our research focuses on exploring
+children’s approaches to visual mapping of abstract
+data. We have run a constructive vis study where we
+observed 7-11 year olds construct visualizations using
+physical tokens. While this study brought forth
+interesting findings, we also came across several
+methodological challenges related to the choice of data,
+study tasks, choice of material, and the study
+environment. We discuss how we approached these
+challenges in our study design and the questions this
+raises in the areas of pedagogy and physicalization.
+
+Author Keywords
+
+Figure 1: Children participating in the study at a table, with
+tokens, pencils and rulers set to the side and a paper canvas to
+work on.
+
+Constructive visualization; Data Physicalization;
+Visualization authoring; Visualization construction;
+Novices; Children.
+
+ACM Classification Keywords
+H.5.m. Information interfaces and presentation (e.g.,
+HCI): Miscellaneous.
+
+Introduction
+Data visualization can facilitate sense-making processes
+and problem solving. Recent work has investigated
+how novices engage in visual mapping processes as
+part of sense-making to better understand (1) the
+process itself and (2) how to facilitate it through
+visualization tools [2,3]. The simplicity of physical
+tokens features and use, and their flexibility, make
+them suitable for studies with visualization novices, as
+has been seen with previous studies applying the
+constructive visualization approach [1,2,7].
+It is no coincident that children are taught numerical
+concepts using physical objects [7]. Studies show that
+they use such objects to support offloading cognition,
+allowing the child to process more information, and to
+provide conceptual metaphors which help the child
+understand certain concepts by highlighting parallels
+between the concept and the surrogate objects [4].
+However, apart from such studies on using tangible
+tokens to facilitate math education, we know
+surprisingly little about how children use visual
+representations as part of sense-making and problem
+solving. At a time where children are introduced to the
+concept of abstract data and even visualization tools
+such as Excel at an early age, this is a problem.
+
+Figure 2: A range of
+visualizations created by children
+from highly pictorial(top) to
+highly abstract(bottom)
+
+We have started to investigate children’s visual
+mapping processes following a constructive vis
+approach using physical tokens. While we found
+physical tokens to be a suitable medium for rapidly
+engaging children into such vis construction tasks,
+running such studies with children is a challenge, and
+attention must be put on the choice of vis material,
+data, the study task and the study environment. Much
+more than in studies with adults these choices influence
+child participants’ interpretation of and engagement in
+
+the tasks, which can influence study outcomes. We
+describe our experiences running a constructive vis
+study using physical tokens with children, and discuss
+how we approached methodological challenges and the
+questions these raise in this young research area.
+
+Studying Children’s Vis Construction
+We conducted a study with 22 children aged 7-11 (11
+female, 11 male). Study sessions were run at local
+after-school clubs with two children at a time to help
+them feel at ease, though they worked individually as
+we were interested in their personal approaches (see
+Fig. 1). Children were provided physical tokens in four
+different shapes and colors and a dataset to visualize
+(we chose relatable data, one set about pizza
+deliveries; one about trains). To motivate the activity,
+we told children a story about the data and said it was
+to be visualized using the tokens to communicate it to a
+younger child. The data was presented in a tabular
+form, a format familiar to children of this age. Datasets
+included quantitative, binary and categorical attributes.
+Once children had finished we asked them to explain
+their visualizations.
+
+Methodological Challenges
+When designing the above study, we encountered several
+methodological challenges. Below we discuss these
+challenges, how they manifested themselves in our study
+outcomes, and the questions they raise.
+Vis Materials. Following the lead of previous constructive
+visualization studies [2] we decided to use physical tokens
+in our study as these allow the flexible creation of visual
+constructs without requiring prior knowledge (in
+comparison to current vis tools, that have not been
+designed with children in mind) or specific skills (in
+comparison to sketching). We also considered playdough
+
+Figure 3: Revisions of the set of
+tokens to be used over time.
+
+for its flexibility, but, pilots showed that it encouraged
+highly playful behaviors (e.g. “baking” pizzas) leading
+away from the visualization activity. When designing a
+suitable token set we had to balance the number of colors
+and shapes to allow for flexibility while not overwhelming
+the children with too many choices. We went through
+three iterations (see Fig. 3) and tested different token sets
+with a group of adults first and only then with children to
+spare them frustrations due to basic usability issues [4].
+For flexibility, we provided pencils for children to annotate
+their token constructions.
+The resulting visualizations were surprisingly detailed and
+varied given the limited token set, and span a continuum
+of abstract visual representations and data-driven pictorial
+constructs (see Fig. 2, 4 & 5). Children rated the handling
+of tokens as easy. However, also due to the
+tediousness of working with the tokens, some children,
+especially those with the more elaborate pictorial
+visualizations decided not to represent the entire data
+set. Further vis studies with children should investigate
+the use of other materials (e.g., lego, pencil & paper,
+and playdough) to see how these influence children’s
+mapping processes, their engagement and visualization
+outcomes.
+
+Figure 4: Pencil markings made
+by children ranging from
+numerical to pictorial.
+
+Data. W we tried to provide a relatable data topic to
+children while still including a variety of attribute types.
+However, the data topic may have influenced the
+character of children’s visualizations: 5/8 children who
+used the pizza dataset created more pictorial
+visualizations, compared to 6/14 children using the
+train dataset. Children working with the pizza data
+often remarked at the similarity of tokens to pizza
+toppings, for example, the red circle tokens similarity to
+pepperoni toppings. The ease with which children could
+find such visual parallels between data and tokens may
+have influenced their visual mapping process. The
+tabular presentation of the data may also have affected
+
+children’s visual representations. In 5/11 cases, the
+more abstract token-based visualizations followed a
+table layout (see Fig.4, bottom). Lastly, the data types
+influenced the form of children’s token-based
+visualizations. All children found creative ways of using
+the abstract visuals given by the tokens, e.g., showing
+the number of train carriages. However, we found that
+children frequently turned toward literary visuals (e.g.
+iconic pictures or digits) to represent more abstract
+data that is not directly visible in the real world (e.g.
+time and speed; see Fig.4. top left).
+Three aspects require further investigation: 1) How do
+parallels between real-world concepts inherent in the
+data and the vis materials influence children’s visual
+mappings? 2) How does a (tabular) data presentation
+influence children’s constructed visualizations? and 3)
+How to guide the visualization of more abstract
+attribute types (e.g., temporal data or relations)?
+Task. We deliberately chose to provide children an
+open-ended task, without specific questions to answer
+through their visualization. We wanted to see if they
+would come up with their own questions and focus their
+visualizations around these. While all children provided
+a general overview of the dataset (some included less
+data points than others), and could point out min and
+max values within their visualization, children did not
+think of “slicing and dicing” the data: none of them
+juxtaposed attributes to answer specific questions.
+Future vis studies with children should investigate how
+children’s vis construction differs if given more targeted
+tasks, and how we can provide prompts to encourage
+children to interrogate the data in more versatile ways.
+Environment. It turned out that when running studies
+with children, the study environment is crucial. Afterschool clubs encourage free-form and playful activities,
+and our child participants were in a playful mindset
+when creating their token-based visualizations. They
+could also hear and see their peers doing other things
+
+outside which provided some distraction. Running the
+same study in a classroom environment may have
+influenced children’s exploration of the data and,
+ultimately, their construction of the visualizations.
+Study tasks should be constructed to fit with the
+environment they are presented in, preferably by
+working closely with staff members. We are currently
+exploring vis activities in more focused classroom
+environments, also investigating how to run vis
+construction tasks with larger groups of children.
+Eliciting Reflections. We ran sessions with two children
+at a time to try and create a setup where children
+would reflect on their vis construction process through
+discussion. However, during activities, few discussions
+occurred. While children would readily answer questions
+about their design choices and, when asked, explain
+their visualizations to each other, it was difficult to get
+them to reflect on their visual mapping process.
+Indeed, even for adults, it can be difficult to reflect on
+internal processes if the task is quite novel. We need to
+
+further investigate methods (e.g., through think aloud)
+to initiate discussion and reflection among children
+during and after the vis process.
+
+Conclusion
+The area of vis for young audiences is still quite young.
+We have found constructive vis approaches using
+physical tokens to be a promising way to investigating
+how children visually map abstract data, potentially
+informing the design of visualization tools for children.
+The physical tokens allowed children to construct
+visualizations with ease while providing room for
+creativity. However, on a methodological level we
+encountered several challenges mainly regarding the
+choice of vis material and data, the nature of the
+visualization task, and the study environment. Our
+paper is an early reflection on how choices along these
+dimensions may change children’s visual mapping and
+outcomes. Based on this we hope to stimulate a debate
+on how to engage children into visualization activities for research, pedagogical purposes and beyond.
+
+References
+1.
+
+Solving Number Problems: A Comparison of Young
+Children’s Use of Physical and Virtual Materials.
+
+Huron, S., Carpendale, S., Thudt, A., Tang, A.,
+and Mauerer, M. (2014). Constructive
+
+2.
+
+Computers and Education, 54(3), 622–640.
+
+Visualization. Proc. of DIS’14, 433–442.
+Huron, S., Jansen, Y., and Carpendale, S. (2014).
+Constructing Visual Representations: Investigating
+
+5.
+
+Read, J. C. (2013). CHECk: A Tool to Inform and
+Encourage Ethical Practice in Participatory Design
+with Children. CHI Work-in-Progress.
+
+the Use of Tangible Tokens. IEEE TVCG, 20 (12),
+
+6.
+
+Uttal, D. H. (2003). On the relation between play
+
+2102 - 2111.
+3.
+Figure 5: Further visualizations
+created by children from highly
+abstract(top) to highly pictorial
+(bottom)
+
+4.
+
+Lee, S., Kim, S. H., Hung, Y. H., Lam, H., Kang, Y.
+A., and Yi, J. S. (2016). How do People Make
+Sense of Unfamiliar Visualizations? A Grounded
+Model of Novice’s Information Visualization
+Sensemaking. IEEE TVCG, 22(1), 499–508.
+Manches, A., O’Malley, C., and Benford, S.
+(2010). The Role of Physical Representations in
+
+7.
+
+and symbolic thought: The case of mathematics
+manipulatives. Contemporary Perspectives in
+Early Childhood Education, i, 97–114.
+Wun, T., Payne, J., Huron, S., and Carpendale, S.
+(2016). Comparing Bar Chart Authoring with
+Microsoft Excel and Tangible Tiles, Proc. of
+EuroVis, 111 – 120.
+
+

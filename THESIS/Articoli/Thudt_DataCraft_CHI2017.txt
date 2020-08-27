@@ -1,0 +1,385 @@
+Data Craft: Integrating Data into Daily
+Practices and Shared Reflections
+Alice Thudt
+
+Abstract
+
+University of Calgary
+
+We explore data craft as a means to create mementos
+that integrate data about personal and shared
+experiences into people’s everyday lives. Digital
+mementos, e.g., in form of visualizations, aim to
+support personal and joint reminiscing by leveraging
+personal data archives. However, their digital nature
+can complicate value construction and integration with
+social and everyday practices. We propose to consider
+data craft—the manual crafting of functional objects
+that incorporate personal visualizations—as an
+opportunity to create meaningful physical objects. We
+suggest that the manual creation and habitual use of
+these objects adds to their perceived value and
+authenticity and can spark recollection based on digital
+traces of personal and shared experiences. We
+illustrate the concept of data craft through examples
+and reflect on the resulting objects as keepsakes and
+gifts that strengthen social relationships.
+
+Calgary, AB, Canada
+alice.thudt@googlemail.com
+Uta Hinrichs
+University of St Andrews
+St Andrews, Scotland, UK
+uh3@st-andrews.ac.uk
+Sheelagh Carpendale
+University of Calgary
+Calgary, AB, Canada
+sheelagh@ucalgary.ca
+
+Paste the appropriate copyright/license statement here. ACM now
+supports three different publication options:
+• ACM copyright: ACM holds the copyright on the work. This is the
+historical approach.
+• License: The author(s) retain copyright, but ACM receives an
+exclusive publication license.
+• Open Access: The author(s) wish to pay for the work to be open
+access. The additional fee must be paid to ACM.
+This text field is large enough to hold the appropriate release statement
+assuming it is single-spaced in Verdana 7 point font. Please do not
+change the size of this text box.
+Each submission will be assigned a unique DOI string to be included here.
+
+Author Keywords
+Personal Visualization; Crafting; Data Physicalization
+
+ACM Classification Keywords
+H.5.m. Information interfaces and presentation (e.g.,
+HCI): Miscellaneous;
+
+Introduction
+Mementos and family heirlooms are among people's
+most cherished personal objects [2]. They signify
+
+Figure 1. The defining
+characteristics of data craft.
+
+Figure 2. Felted pillowcases by
+Kim Rees visualizing dreams and
+personal accomplishments [10]
+(Image courtesy of Kim Rees).
+
+Figure 3. Conceptual knitting
+creates patterns from real world
+occurrences. This hat shows
+different events during the TVshow “Saved by the Bell” [4]
+(Image courtesy of Lee
+Meredith).
+
+important relationships and aid people in the
+construction of meaning and identity through personal
+and joint reminiscing [2]. Access to unprecedented
+amounts of data about people's lives provides a
+potentially rich resource for reminiscing. However,
+sharing such data with others and deriving meaning
+from it is still a challenge [11]. For example, while
+people sometimes print digital photos, giving
+quantitative data (e.g., communication or location
+histories) a physical presence at home and making it
+accessible to all family members is more difficult.
+Previous research has highlighted integration with
+everyday practices and discoverability [5,8,9],
+permanence [7], and authenticity [6,7,9] as important
+qualities of physical mementos. However, we still lack
+means to create mementos from digital data that
+incorporate these characteristics.
+We propose data craft as a way to create meaningful
+physical mementos based on digital records of personal
+and shared experiences. Data craft incorporates the
+qualities of physical mementos and invites reflection
+and reminiscing. In data craft, people create functional
+objects that incorporate visual representations of their
+digital records. This practice creates an association of
+the object with a memorable experience or a loved
+person. The habitual use of the crafted everyday
+objects integrates data and the memories it represents
+with people's existing practices. Their physicality allows
+these objects to become lasting gifts or family
+heirlooms that can be rediscovered and shared on a
+daily basis. The process of manual crafting can further
+add to the objects’ perceived value and authenticity.
+
+The Concept of Data Craft
+Crafting has a long tradition of capturing personal,
+family, and cultural histories within functional objects
+
+(see, e.g., quilting) [1,15]. To expand such reflective
+practices, we explore the concept of data craft as a way
+to incorporate data into crafting. Crafted everyday
+objects are enhanced with visualizations of personal
+data to facilitate reflection on otherwise hidden traces
+of people’s experiences and relationships. We define
+data craft as a practice at the intersection of personal
+visualization and manual crafting to create physical and
+functional mementos (see Fig. 1).
+Data craft includes traditional crafts such as felting
+(Fig. 2 [10]), knitting (Fig. 3 [4]) or pottery (Fig. 4 –
+6). The concept (1) describes an approach to integrate
+people’s digital data with their everyday activities and
+(2) contributes to the areas of personal visualization,
+physicaliziation, and digitally enhanced crafting. In the
+following, we define characteristics of data craft in
+relation to valued qualities of mementos. We then
+describe data pottery as an example case of data craft.
+Making Abstract Personal Data Visible & Graspable
+A key characteristic of data craft is the use of personal
+digital records such as activity logs, communication or
+location histories. Previous work on personal
+visualization and visual analytics has advocated for
+visual representations to make personal data accessible
+and interpretable [3]. Visualizations can promote
+reminiscing and storytelling while protecting the privacy
+of sensitive data [3,14]. Data craft takes personal
+visualizations into the physical realm, e.g., in form of
+decorations for functional objects. In this way data craft
+integrates personal visualizations directly with objects
+people encounter and share in their daily lives.
+Enhancing Functional Everyday Objects
+Data craft aims to integrate data with people’s shared
+and personal practices by creating objects that serve
+
+established functions. Previous work has shown that
+people often choose such mundane objects as
+mementos [8,9]. A mementos’ frequent use by
+different family members adds to its accrued value
+[5,8,9]. Discoverability and permanence are valued
+qualities of physical mementos [5,7,8,9]: People often
+place physical mementos of shared experiences in
+visible locations where they can be easily accessed
+[5,8]. Their physicality allows them to become lasting
+parts of people's identities [7], and to be passed down
+multiple generations or given as gifts [8]. In contrast,
+people tend to experience digital data as individual
+possessions, as “more ephemeral”, ”unstable” [9], and
+prone to loss and fragmentation [7]. Data craft
+addresses this by integrating visualizations of this data
+with everyday objects. The resulting objects allow for
+spontaneous encounters and shared experiences with
+quantified data. The decorative visualizations can spark
+reminiscing and sharing memories of relationships and
+past events.
+Manual Crafting
+Previous research has explored digital fabrication to
+create physical representations of personal data for
+reflective purposes [12,13]. In contrast, data craft
+focuses on manual creation processes. In fact, in data
+craft reflection and reminiscing are not just supported
+by the resulting artifact, but also deeply engrained in
+the creation process of this artifact. Effort and personal
+investment add to the perceived value of crafted
+objects [2,15]. In data craft visual exploration and
+encoding become part of the crafting process. This
+engagement with data and associated memories makes
+data craft a deeply reflective activity. Previous studies
+found that people often choose idiosyncratic objects as
+mementos [9]. Typically, such objects are unique and
+
+not reproducible [6,7,9]. The manual process of data
+craft leads to such unique and authentic artifacts.
+The concept of data craft adds new perspectives to
+works in personal visualization and physicalization for
+shared reflection and storytelling, and it inspires new
+ways of engaging with data through traditional crafts.
+
+Reflecting on Relationships through Data
+Pottery
+Data pottery is one example of data craft where
+tableware is created in clay and then decorated with
+visual patterns based on personal data. Below we
+present three artifacts crafted by our first author Alice
+Thudt. We describe how these ‘data pots’ signify
+important relationships and shared experiences and
+invite joint reminiscing, reflection and social interaction.
+PARENTS’ CALL BOWLS: The two bowls shown in Figure 5
+represent Alice’s relationship with her parents based on
+their Skype call history since she moved away from
+home. Both bowls show calls on a three-year timeline:
+on one bowl, each call is depicted as a line; on the
+other bowl calls are shown as dots with one dot
+representing 5 minutes of call time. One bowl was
+intended as a gift to her parents and the other one to
+be kept by herself. The patterns highlight how Alice and
+her parents maintained close contact while apart.
+Cereal bowls are objects that they use every morning,
+which ensures daily encounters with the data and their
+meaning. As Alice states, her intention was for the
+bowls to act as a reminder to keep in touch with each
+other frequently.
+LOVE TEAPOT: The teapot is a memento of Alice’s
+relationship with her partner. It depicts text messages
+containing the word “love” that they exchanged since
+the beginning of their relationship (see Fig. 6). Each
+
+Figure 5. Cereal bowls
+representing Skype-call history
+with parents.
+
+Figure 6. Teapot visualizing
+instant messages containing the
+word "love".
+
+Figure 7. Bowl showing route of a
+shared trip with a friend.
+
+dotted line represents one year; one dot stands for
+10 messages. The visualization shows the progression
+from a long-distance relationship where the couple
+often expressed their love through texts, to recent
+years when living together allowed them to
+communicate directly. Alice: “I chose a teapot for this
+memento because it is a shared object that allows us to
+have a cup of tea together while pondering the
+development of our relationship.”
+MORAY COASTAL TRAIL BOWL: The bowl shown in Figure 7
+is a crafted souvenir of a shared trip with a friend. It
+shows destinations on a trail Alice and her friend hiked
+together in Scotland. The two glazes on the bowl mark
+the coastline they walked, while the white dots on the
+glaze line represent locations where they stopped to
+camp for a night. Alice: “This bowl resembles the shape
+of a bowl we used during the hike and thus creates
+additional associations with the memories of the trip. I
+crafted the bowl as a gift for my friend, to remind her
+of our joint adventure.”
+Below Alice further reflects on her data pottery practice
+and describes how she creates everyday tableware that
+reflect her relationships with friends and family to spark
+(shared) reminiscing.
+Reflective Design and Crafting Process
+“For me, crafting a ‘data pot’ is driven by the personal
+data that I want to turn into a memento and who I
+want to share it with. I decide on the associations and
+encounters I want to enable and take the personality of
+the pot’s recipient into consideration. This influences
+the shape and function of the pot I make as well as
+how it visually reflects the data. Looking through my
+data records is part of a reflective process that often
+sparks memories or emotions. Trying to create patterns
+
+that evoke associations with the events or people, I
+explore possible data visualizations digitally and
+through sketching. I do not include legends so the pots
+reveal their meaning only to insiders or through
+storytelling. My goal is to craft objects that value past
+experiences and create opportunities for meaningful
+interactions with the data, my loved ones and our
+shared stories. I decide on the form and function of
+each pot to evoke associations with a specific
+experience or person, to support activities that allow for
+episodes of reminiscing, or to encourage social
+interactions. As a final step, I shape the pot in clay and
+apply the visual pattern. This process is driven by my
+reflections on the data, my memories as well as the
+materials which influence my design.”
+
+Conclusion
+Data craft allows people to create meaningful personal
+artifacts and shared mementos that can be used in
+daily from digital records. Both the manual crafting
+process and the resulting physical artifact create
+opportunities for reflection and sharing memories.
+Focusing on the creation of functional everyday objects,
+data craft shapes opportunities to integrate personal
+digital data into everyday life where they can be
+serendipitously re-encountered and used together.
+Manual crafting invites the crafter to reflect and
+connect with the memories present in the data and the
+emerging object and gives the objects authenticity and
+a personal touch. Data craft can be integrated into a
+range of traditional crafting practices; we have
+presented data pottery as one of them. Future work will
+investigate ways to support crafters in incorporating
+data into their creative process, explore other means of
+making and empirically study the impact of data craft
+on personal and shared reflection.
+
+References
+1.
+
+Amelon, J. J. 2011. Memory, Identity and the
+Rhetoric of Quilts. Ph.D. Dissertation, Old Dominion
+University.
+2. Csikszenthmihalyi, M., & Rochberg-Halton, E. 1981.
+The Meaning of Things: Domestic Symbols and the
+Self. Cambridge University Press: Cambridge, UK.
+3. Huang, D., Tory, M., Aseniero, B. A., Bartram, L.,
+Bateman, S., Carpendale, S., Tang, A., Woodbury,
+R. (2015). Personal Visualization and Personal
+Visual Analytics. IEEE TVCG 21(3), 420–433.
+4. Meredith, L. 2009. Game Knitting. Retrieved on Jan
+18, 2017 from: http://www.ravelry.com/patterns/
+library/game-knitting
+5. Nunes, M., Greenberg, S., & Neustaedter, C. 2009.
+Using physical memorabilia as opportunities to
+move into collocated digital photo-sharing. Journal
+of Human Computer Studies, 67, 1087–1111.
+6. Odom, W., Pierce, J., Stolterman, E., & Blevis, E.
+2009. Understanding why we preserve some things
+and discard others in the context of interaction
+design. Proc. CHI, 1053–1062.
+7. Odom, W., Zimmerman, J., & Forlizzi, J. 2014.
+Placelessness, spacelessness, and formlessness:
+experiential qualities of virtual possessions. Proc.
+DIS, 985–994. .
+8. Petrelli, D., Whittaker, S., & Brockmeier, J. 2008.
+AutoTopography: What Can Physical Mementos Tell
+us about Digital Memories? Proc. CHI
+9. Petrelli, D., & Whittaker, S. 2010. Family memories
+in the home: Contrasting physical and digital
+mementos. Personal and Ubiquitous Computing.
+153–169.
+10. Rees, K. 2016. Touching Data (Oct 20, 2016).
+Retrieved on Jan 18, 2017 from:
+http://www.periscopic.com/news/touching-data
+11. Sellen, A. J., Whittaker, S., & Sellen, B. A. 2010.
+Beyond total capture: a constructive critique of lifelogging. Communications of the ACM, 53:70–77.
+12. Stusak, S., Tabard, A., Sauka, F., Khot, R., & Butz,
+A. 2014. Activity Sculptures: Exploring the Impact
+
+of Physical Visualizations on Running Activity. IEEE
+TVCG, 20(12), 2201–2210.
+13. Swaminathan, S., Shi, C., Jansen, Y., Dragicevic,
+P., Oehlberg, L. a., & Fekete, J.-D. 2014.
+Supporting the design and fabrication of physical
+visualizations. Proc. CHI, 3845–3854.
+14. Thudt, A., Baur, D., Huron, S., & Carpendale, S.
+2016. Visual Mementos: Reflecting Memories with
+Personal Data. IEEE TVCG, 22(1), 369–378.
+15. Velde, B.P., 1999. The language of crafts.
+Activities: Reality and symbol, pp.95-106.
+Alice Thudt is a PhD candidate in Computational Media
+Design, pursuing her research at the InnoVis Group at
+the University of Calgary. She is interested in using
+visualization to create personally meaningful artefacts
+from personal data. Recent projects have explored
+visualizations for autobiographical storytelling, the
+design of visualizations to reflect autobiographical
+memories, as well as the creation of visual mementos.
+Uta Hinrichs is a Lecturer at the University of St
+Andrews. Her work focuses on designing and studying
+the use and experience of interactive systems that
+facilitate the exploration of (cultural) data collections
+from academic, leisurely, and artistic perspectives.
+Sheelagh Carpendale is a professor at the University
+of Calgary where she holds a Canada Research Chair in
+Information Visualization and the NSERC/AITF/SMART
+Industrial Research Chair in Interactive Technologies.
+Her research draws upon her combined backgrounds in
+computer science and art. By studying how people
+interact with information she works towards designing
+more natural and accessible data representations. She
+combines information visualization and HCI with
+innovative new interaction techniques to better support
+the everyday practices of people who are viewing,
+representing, and interacting with information.
+
+

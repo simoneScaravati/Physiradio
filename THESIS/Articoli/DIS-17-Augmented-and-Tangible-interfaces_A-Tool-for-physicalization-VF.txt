@@ -1,0 +1,310 @@
+Augmented and Tangible
+Environments: A Tool for
+Physicalization of Contents by Children
+in School Context?
+Stéphanie Fleck
+
+Christian Bastien
+
+Abstract
+
+Université de Lorraine - PErSEUS,
+
+Université de Lorraine - PErSEUS,
+
+EA 7312 - 57045 Metz, France
+
+EA 7312 - 57045 Metz, France
+
+stephanie.fleck@univ-lorraine.fr
+
+christian.bastien@univ-lorraine.fr
+
+Alexis Olry
+
+Robin Vivian
+
+Université de Lorraine - PErSEUS,
+
+Université de Lorraine - PErSEUS,
+
+EA 7312 - 57045 Metz, France
+
+EA 7312 - 57045 Metz, France
+
+alexis.olry@univ-lorraine.fr
+
+robin.vivian@univ-lorraine.fr
+
+David Bertolo
+
+Martin Hachet
+
+Université de Lorraine - LCOMS,
+
+Inria- Potioc
+
+EA 7306 - 57045 Metz, France
+
+33405 Talence, France
+
+david.bertolo@univ-lorraine.fr
+
+martin.hachet@inria.fr
+
+The aim of this communication is to present our
+approach to design a tangible and augmented
+environment for learning. In addition to the well-known
+user centered methods for designing interactive
+systems, our approach integrates disciplines such as
+HCI, Ergonomics, Instructional design, and Pedagogy.
+Our work will be illustrated with the presentation of a
+project founded by the French Government. This
+project aims at enabling children and teens to
+conceptualize by themselves. Its main goal is to
+enhance children and teenagers disciplinary and
+collaborative learning at school by promoting social
+relationship, knowledge sharing and the construction of
+concepts to learn through various levers of
+physicalizations.
+
+• ACM holds the copyright on the work.
+
+Author Keywords
+Tangible Augmented Interface; Physicalization;
+Collaborative Learning; Pedagogy; Affordance.
+
+ACM Classification Keywords
+H.5.1. Information Interfaces and Presentation (e.g.,
+HCI): Multimedia Information Systems; H.5.2.
+
+Information Interfaces and Presentation (e.g., HCI):
+User Interfaces; K.3.1. Computers and Education:
+Computer Uses in Education
+
+Introduction
+
+Figure 1: Illustration of our
+instructional design space and
+processes. It shows how the
+learners, the teachers, the
+contents and the technological
+modules are integrated in the
+design of the instructional
+environment.
+
+In educational contexts (formal or informal), many
+difficulties met by the learners come from the
+abstraction level of the contents they have to learn.
+The knowledge can remain elusive to the students.
+Consequently, the teaching can become meaningless
+for them and their motivation can decrease. It is very
+common that a modeling representation, i.e. a
+physicalization of a concept, designed by the teacher or
+provided by a pedagogical support (physical and/or
+digital), does not make sense to the students.
+Moreover, the modeling of content, mediated through a
+support or an interface, cannot be considered without
+taking into account the contents to learn. For example,
+the nature of the knowledge, its didactic structure, as
+well as the educational objectives influences the
+modeling of a concept and its meaningful potential.
+In this position paper, we describe our approach in
+providing a new way to design instructional
+environment for both the learners and the teachers
+(Figure 1).
+
+Empowering the learners in content
+physicalization
+As for the affordance concept defined by Norman [1],
+the previous experiences and/or learning influence the
+perception and the meaning of the environment a userlearner may have. In the same way, the personal needs
+or what the learners expect from a content to learn
+could influence their appraisal [2] and their selective
+attention. Then, the gap between the learners’ mental
+
+model and the mental model of the person who
+designed the support can make the representation of
+the content to learn too complex for the students
+preventing them from learning. Furthermore, the
+learners’ characteristics such as their age, cognitive
+developmental stages and/or learning abilities, impact
+their conceptualization possibilities. Therefore, the
+content modeling should be learner-centered. However,
+the diversity and the heterogeneity of the students in a
+given classroom represent a real difficulty for a
+designer (both form Instructional Design -ID- or
+Human Computer Interaction -HCI-) wanting to provide
+an adapted model for each learner profile.
+All those arguments, supported by active learning
+principles, converge through the need to enable the
+students to physicalize, structure and/or construct by
+themselves the contents to learn. More than providing
+data or knowledge totally modeled by someone else,
+teachers and/or a learning interface should securitize
+and/or guide (i.e. scaffold) the learners in this task.
+
+Tangible and Augmented interfaces to
+scaffold learning
+The IT field currently takes advantage of the
+technological maturity of the Tangible User Interfaces
+(TUIs) or Augmented Reality (AR) to develop new
+human-computer interactions. AR and TUI, as expose
+in numerous previous studies [3-7], open up new
+perspectives for tomorrow's teaching applications. For
+example, a TUI provides a very hands-on approach by
+offering different input affordances (as well as physical
+constraints) to the user, while AR offers a flexible and
+situated way to give visual feedback. As discussed in
+our previous works, the content to learn can then be
+manipulated and augmented in many dimensions of
+
+space and time directly in the physical space (e.g. [8,
+9]).
+Taking into account the two dimensions of the notion of
+tangibility, this type of interface provides the learners
+with various contents that become more tangible; i.e. a
+content to learn i) that the reality could become
+undeniable; and ii) that could be manipulated.
+Providing the possibility of a hybrid physicalization of
+educational contents through Tangible and Augmented
+interfaces may enable the learners to visually and
+physically interact with the knowledge. Therefore, this
+type of interfaces could scaffold the construction of
+robust mental conceptualization and could empower the
+students in their learning tasks.
+
+Collaborative learning in an hybrid
+environment
+
+Figure 2: An example of a e-TAC
+that could be developed in the
+project.
+
+A tangible and augmented environment could enhance
+the nature of the visualisation, and enable the userslearners to investigate the structure of the knowledge
+through direct manipulation. But, we also consider
+essential to develop an environment that enables
+collaborative learning. Such learning aims at
+encouraging knowledge acquisition [10-12], disciplinary
+competences and psychosocial competences (such as
+problem solving, decision-making, critical/creative
+thinking, eloquence and interpersonal skills).
+We think that a Tangible and Augmented Collaborative
+learning environment (i.e. an e-TAC)(see Figure 2)
+could empower the children or teenagers, individually
+and collectively, in the specific skills necessary to
+become autonomous in their learning process.
+Providing the students with multimodal and hybrid
+interactions in their real social environment could
+
+scaffold their abstraction mind in development, and
+their capabilities towards content representation,
+helped by new possibilities to collectively physicalize
+the content to learn. To this end, we will focus on the
+learners’ interactions with the interfaces, the
+knowledge and their peers to identify the factors
+(ergonomics, digital and didactic) that facilitate or not
+learning, while taking into account the heterogeneous
+nature of our target population.
+
+The e-TAC project
+During the workshop, we will discuss the grounding
+elements that guide our approach in designing a
+Tangible and Augmented Collaborative learning
+environment.
+Our project, which started in January 2017, is driven by
+the high expectation for educational and technological
+innovation of the French government. In this
+interdisciplinary project involving digital sciences and
+human sciences, Human-Computer Interaction (HCI),
+Ergonomics and Instructional Design (ID) are coupled
+in a systemic approach in order to develop not only the
+interface but also the content to learn.
+Its main goals are to enhance children and teenagers
+disciplinary and collaborative learning at school by
+promoting social relationship (pairs exchange, work
+groups…), knowledge sharing and the construction of
+concepts to learn through various levels of interactions.
+More precisely, this project aims at enabling children
+and teens to conceptualize by themselves through a
+new type of hybrid space of physicalization.
+
+Finally, another aim is to develop an e-TAC that can be
+expanded outside of the project’s action area while
+meeting learners and teachers needs.
+
+Acknowledgment
+The e-TAC project is financially supported by the French
+government in the e-FRAN call for projects within the
+framework of the Program of Investments for the
+Future (PIA) operated by Caisse des Dépôts et
+Consignation. We thanks all the members of the four
+French research teams involved in this project
+(PERSEUS, CREM-PIXEL and LCOMS from Université de
+Lorraine, and POTIOC from Inria), CANOPE Grand Est
+and l’atelier CANOPE 57, the OPEN EDGE start-up, the
+16 teachers and more than 200 children and teenagers
+who would be part of the co-design process.
+
+References
+
+1.
+2.
+
+3.
+
+4.
+
+5.
+
+Norman, D. A. 1999. Affordance, conventions, and
+design. interactions, 6, 3, 38-43.
+Scherer, K. R. 1999. Appraisal theory. In Handbook of
+cognition and emotion, T. Dalgleish and M. J. Power
+(Eds.), John Wiley & Sons Ltd, New York, NY, US, 637663.
+Gilutz, S., Calvert, S., Kremer, K., Chamberlin, B. and
+Gay, G. Tangible interfaces for children: cognitive,
+social, & physical benefits and challenges. ACM, City,
+2012.
+Horn, M. S., Crouser, R. J. and Bers, M. U. 2012.
+Tangible interaction and learning: the case for a
+hybrid approach. Personal and Ubiquitous
+Computing, 16, 4, 379-389.
+Price, S. and Marshall, P. 2013. Designing for learning
+with tangible technologies. Handbook of Design in
+Educational Technology, 288.
+
+6.
+
+Schneider, B., Jermann, P., Zufferey, G. and
+Dillenbourg, P. 2011. Benefits of a Tangible Interface
+for Collaborative Learning and Interaction. Learning
+Technologies, IEEE Transactions on, 4, 3, 222-232.
+7. Shaer, O. and Hornecker, E. 2010. Tangible user
+interfaces: past, present, and future directions.
+Foundations and Trends in Human-Computer
+Interaction, 3, 1–2, 1-137.
+8. Fleck, S. and Hachet, M. 2016. Making tangible the
+intangible: Hybridization of the real and the virtual to
+enhance learning of abstract phenomena. Frontiers in
+ICT, 3, 30.
+9. Fleck, S., Hachet, M. and Bastien, J. M. C. 2015.
+Marker-based augmented reality: Instructionaldesign to improve children interactions with
+astronomical concepts. In Proceedings of the ACM
+SIGCHI 14th International Conference on Interaction
+Design and Children, 21-28,
+10.1145/2771839.2771842.
+10. Dillenbourg, P. 1999. What do you mean by
+collaborative learning? Collaborative-learning:
+Cognitive and computational approaches., 1-19.
+11. Hutchins, E. 2001. Distributed cognition. In
+International Encyclopedia of the Social and
+Behavioral Sciences., N. Smelser and P. Baltes (Eds.),
+Elsevier Science, Oxford, 2068-2072.
+12. Matthews, R. S., Cooper, J. L., Davidson, N. and
+Hawkes, P. 1995. Building Bridges Between
+Cooperative and Collaborative Learning. Change: The
+Magazine of Higher Learning, 27, 4, 35-40.
+
+

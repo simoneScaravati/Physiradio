@@ -1,0 +1,318 @@
+In Touch with Space:
+Embodying Live Data For Tangible Interaction
+Trevor Hogan, Eva Hornecker
+Dept. of Computer and Information Sciences, University of Strathclyde, Glasgow G11XH, UK
+trevor.hogan@cit.ie, eva@ehornecker.de
+ABSTRACT
+
+This paper introduces two devices; H3 (‘Hydrogen cubed’)
+and a Solar Radiation Dowsing Rod, both crossmodal datadriven artefacts that represent live data streams using haptic-auditory feedback. The motivation for creating these artefacts was to offer casual users the opportunity to interact
+with data that would normally only be explored by experts,
+with the aim of stimulating curiosity, intrigue and awareness. In addition to the description of the devices, we discuss the concept behind their design and initial observations
+from a user study.
+Author Keywords: Tangible Interface, Data Representa-
+
+tion, Casual Users, Embodied Interaction, Crossmodality
+ACM Classification Keywords: H.5.2 [Information Inter-
+
+faces and Presentation]: User Interfaces - Haptic I/O
+INTRODUCTION
+
+Traditionally, the focus within the field of Information
+Visualization (InfoViz) has been to represent data using the
+visual modality aimed at a narrow set of expert users conducting analytical tasks [6]. Recently, subfields such as Information Aesthetics, Artistic Visualization, Data Art and
+Casual Visualization [7] have sought to broaden the use of
+representation modality, widen the target audience and expose alternative data insight. Our research is inspired by
+the emergence of these subfields as well as research completed in the area of sensory substitution and crossmodal
+representation [8]. In particular, we are interested in exploring the experience of tangible and embodied interaction
+with alternative data representations.
+We here introduce H3 and a Solar Radiation Dowsing Rod
+that were created in collaboration with Blackrock Castle
+Observatory, Cork, Ireland and the Irish National Space
+Centre. The motivation for developing these devices was to
+create tangible interfaces that represent and embody the
+data collected by the Observatory. This complex scientific
+data is not normally presented to a lay public audience but
+is utilized by experts to analyze certain phenomenon in our
+solar system and deep space. Our novel devices act as a
+compliment to more traditional information displays using
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. To copy otherwise,
+or republish, to post on servers or to redistribute to lists, requires prior
+specific permission and/or a fee.
+TEI 2013, Feb 10-13, 2013, Barcelona, Spain.
+Copyright 2013 ACM 978-1-4503-1898-3/13/02....$15.00.
+
+text, motion graphics and imagery, with the aim of increasing the visitors’ curiosity and awareness of the phenomenon
+in question. Over the course of one week the devices were
+presented to visitors of the observatory. In the following,
+we describe the underlying motivation, design concept, development process and our initial observations of visitors to
+the observatory using the devices.
+BACKGROUND
+
+The transfer of information from one modality through another has a long tradition. Although the main body of research has focused on accessibility issues, more recently research has broadened the agenda to address issues in the
+wider population. This includes multimodal displays to
+compliment the virtual reality experience and tactile or haptic feedback displays to supplement graphical feedback.
+Most recently the proliferation of mobile phones and PDA’s
+has reinvigorated interest in the field of multimodal and
+crossmodal research (For a more comprehensive overview
+of developments in these fields of research see [8]).
+We define our research as crossmodal representation. Unlike multimodal representations, where each modality is
+used to transmit a different type of information, crossmodal
+representations use different modalities to present the same
+data [5]. As an everyday example, most of us recognize the
+sensation of being alerted to an incoming call or SMS on
+our mobile phones through sounds while also vibrating.
+Another key characteristic of our research is the type of
+audience we are addressing. Infovis, a distinct field of research since the nineties, has traditionally focused on providing expert users with complex visual tools to assist with
+analytical tasks. More recent Infovis subfields, such as Am-
+
+Figure 1. Perceiving data through H3 while reading screen
+based information about hydrogen in deep space.
+
+Figure 2: (A) CORY 32m Radio Telescope, (B) Solar Radiation Dowsing Rod, (C) Mobile Radio Telescope, (D) H3
+
+bient, Social, Artistic Information Visualization seek to
+broaden the audience and the purpose of the tools that are
+created. Pousman et al [7] proposed Casual Visualizations
+(Casual Infovis) as an umbrella term that reframes these
+subfields as a part of, but different from, more traditional
+Infovis. They note four characteristics that differentiate
+Casual Infovis: an extended user population; usage patterns
+beyond work-tasks; potentially personal data types; and
+awareness, social and reflective kinds of insights.
+The third area that we relate our work to is Embodied Interaction. We are interested in not only the embodiment of
+data in tangible representations, but also in allowing for
+embodied interaction with the data [2, 3, 4]. Examples of
+embodying data in physical artefacts can be seen in Infovis
+subfields such as Ambient Infovis, Pixel Sculpture, Object
+Augmentation and Wearable Visualization. These demonstrate how the use of physical material as a communication
+medium allows for rich, cultural connotations that evoke
+user curiosity, fascination and engagement [5].
+DESIGN CONCEPT
+
+Our aim in creating the two devices for this study was to facilitate non-analytical data insight using tangible interfaces.
+The purpose of these is not to replace traditional information visualization techniques but to compliment the range of
+tools available when representing data to the wider population. A collaboration with Blackrock Castle Space Observatory and the Irish National Space Centre provided us with
+the opportunity for access to highly abstract live data as
+well as a public exhibition context. In the design of both
+devices we considered three characteristics: the type of
+user, the modality of the representation and the mode of interaction.
+Our design is aimed at non-expert casual users who are motivated to interact with the artifacts out of curiosity. A key
+feature envisioned in the design process was how users
+would interact with the data. Based on the notion of ‘embodied interaction’ [2, 3, 4] we explored various ways of
+promoting the physicality of the interaction as well as exploring body motion and spatiality to free the representation
+from the traditional screen based format.
+The data represented is captured from two separate sources
+(figure 2). One is a 1.4GHz receiver on a 32-meter (diameter) radio telescope that measures hydrogen levels in deep
+space. The other is a 2.4GHz receiver on a 2-meter (diameter) radio telescope that reads solar radiation levels within
+
+our solar system. We developed a unique design concept for
+each set of data.
+We wanted the real-time Hydrogen levels to be perceivable
+by visitors anywhere within the Observatory. To facilitate
+this, we developed a concept that allows visitors to carry a
+data-driven responsive cube with them as they move about.
+When the visitor interacts with the cube (by shaking it) the
+latest Hydrogen levels are displayed via vibrator motors
+embedded in the cube. The intensity of the vibration is
+mapped to the levels captured from the telescope (the
+higher the stronger the vibration). A core characteristic of
+this concept is to allow the visitor to use the device while
+simultaneously reading information in other modalities
+(text, video and imagery) about Hydrogen and other related
+phenomenon presented throughout the Observatory.
+As the 2-meter telescope can be directed at a specific point
+in Space we sought to offer control of this functionality to
+the user, as well as representing the data read by the telescope. To do this we borrowed the concept of a dowsing
+rod. Traditionally this tool is used to locate underground
+water sources; it is said that people feel the rod pulling
+them towards these sources. We implemented this by embedding electronic hardware into a piece of wood shaped
+like a dowsing rod. The reason we choose the metaphor of a
+dowsing rod is that experts may use solar radiation levels as
+an indicator to locate objects in our solar system.
+The user can select a position in space by pointing the rod
+upwards, and confirms by pressing a button located on one
+of its handles. The coordinates of this heading are sent to
+the telescope, which then maneuvers to point in this direction. Once the telescope has reached the heading it sends
+the solar radiation level from this point in the solar system
+to the rod. This triggers the rod to vibrate, with the data
+value mapped to the intensity of the vibration again.
+DEVELOPMENT
+
+Besides of developing two bespoke data-driven artefacts,
+we also had to develop a strategy for real-time acquisition
+of data from both telescopes and to communicate this wirelessly to each device. To acquire the data we utilized the
+COSM [7] platform. A custom program on the computer attached to each telescope collects the latest data and sends it
+to an account on COSM. Any computer connected to the
+Internet can then retrieve this data.
+
+the vibration commencing depends on the distance the telescope must rotate; the longest wait is approximately five
+seconds.
+
+Figure 3. Solar Radiation Dowsing Rod system design. (A) LED
+strip (red, orange, green), (B) embedded IMU module, (C) two
+embedded 5v vibration motors, (D) push button, (E) armband
+pack including a microcontroller, 9v battery, wireless radio frequency module, (F) PC connected to telescope, (G) 2-meter radio
+telescope with 2.4GHz receiver, (H) COSM Server.
+
+H3 (figure 2D) is a wireless cube (7cm side length) constructed from semi-opaque Perspex. To perceive the latest
+hydrogen levels users gently shake the cube. This action is
+detected by an accelerometer connected to a microcontroller within the cube. The microcontroller then sends a request to COSM for the latest data using a wireless radio
+frequency module. When this data is retrieved, it activates
+four vibrating motors fixed to the internal faces of the cube,
+which vibrate for four seconds. When they stop, the user
+may shake the cube again.
+The Solar Radiation Dowsing Rod (figure 3) controls the
+heading of a 2-meter radio telescope as well as represent its
+real-time data through haptic feedback and sound. When
+developing this device we tested numerous types of wood
+for the most effective transmission of vibrations through the
+wood and finally choose Ash. Embedded in the wood is an
+Inertial Measuring Unit (IMU) module (that includes a 3axis accelerometer, gyroscope and a compass module), a
+LED strip (green, red and orange), a push button and two 5volt vibration motors. An armband pack is connected by
+wires to the rod and contains a microcontroller, a wireless
+radio frequency module and a 9v battery.
+To communicate the latest heading of the dowsing rod a
+custom program retrieves the pitch and yaw values from the
+IMU and write these to a text file. This file is uploaded to a
+server via FTP. A custom script on a computer connected to
+the telescope continuously listens for this file to be updated.
+Once this happens, the script parses the values and instructs
+the motors on the telescope to rotate to this heading. While
+this happens, three orange LEDs flash in sequence to inform the user that the telescope is moving. When the telescope has reached the new heading it reads the solar radiation levels and uploads these to COSM. The microcontroller constantly listens for updates on COSM. Once it reads a
+new value it activates the vibration motors embedded in the
+rod for four seconds and turns on a red LED for this time.
+The duration of time between choosing a new heading and
+
+Initially we designed both devices to represent the data
+through the haptic modality only. However, when we produced the first prototypes we discovered that distinctive
+sounds were a by-product of the vibration, depending on the
+material and the method used to affix the vibration motors.
+When the vibration motors in H3 spin fast, they produce a
+loud high-pitched sound whereas the soft wood in the rod
+dampens the vibration to produce a lighter ‘humming’
+sound. We believed that these sounds enhanced the use of
+the devices and thus explored numerous techniques before
+choosing one that produced the clearest audio feedback.
+USER OBSERVATIONS
+
+To assess the user-experience of both devices we presented
+them to visitors of Blackrock Castle Observatory, which is
+open to the public all year round. Over the course of one
+week approximately one hundred visitors used the devices
+while we conducted observations and some informal interviews. The focus of this study was not to expose any usability issues relating to the use of the devices. We were more
+interested in observing people’s responses and probing
+them about how they felt while interacting with them. The
+age of visitors ranged from 5 to 65 years old. All visitors
+indicated that they have an interest in Space, however, none
+had any prior knowledge of issues related to hydrogen levels in deep space or solar radiation levels in our solar systems. Before visitors began to use the devices they signed a
+consent form; following this a researcher briefly explained
+each of the devices. A researcher was in place at all times to
+assist the participants and the interactions were captured using a video camera and digital audio recorders. When appropriate, researchers asked the participants about how they
+felt and what they were imagining while using both devices.
+These responses were recorded through field notes by the
+researcher. Although the analysis is not fully complete, below we present some initial observations from this study.
+We observed that users were continuously switching their
+attention and gaze when interacting with the devices. Once
+they began to use the dowsing rod they would look upwards
+(away from the device) to aim at a point they sought to target. On occasion, users looked through the windows to use
+visual reference points such as the Sun and Moon when selecting a heading. Once they confirmed this point (pressed
+the button) their attention then moved to the rod, until it began to vibrate. At this point they would again gaze upwards
+at the point they had chosen. When asked what they felt
+while they looked at the rod most answered that they were
+imagining the telescope rotating and felt that they must
+keep the rod still while this took place. Whereas when they
+looked upwards participants indicated that they felt their attention should be focused on where the vibration and
+sounds are coming from: “It’s up there somewhere that is
+making this thing shake and buzz.” This switch of focus
+
+was also observed with users of H3. As designed for, when
+users interacted with H3 they walked around the observatory, browsing other information about Hydrogen in Space
+and other related phenomenon. However, although they
+were able to interact with the device while walking around,
+when the device began to vibrate they stood still. However,
+they did not look at the device, but continued to read other
+information. One participant stated: “That kind of thing
+(points to an image of a hydrogen cloud) feels like this (referring to the vibration of the cube) it sounds fuzzy but it
+feels as clear as the image and the sensation stays in your
+hands for a while, kin of like an echo”. Referring to the
+connection between H3 and the phenomenon it represents,
+another participant remarked: “It is so weird to think that
+the buzzing I feel in my hands has been caused by something so far away, and if you really think about it’s so far
+away that it doesn’t even exist any more, that is so strange”
+The buzzing feedback feels real and physically present,
+while participants know intellectually how far the source is
+away. This may make the experience more memorable then
+a static graphical representation.
+We also observed a high level of social interaction around
+both devices. These were the centre of attention for groups
+of visitors and in particular families. As one member of the
+group interacted with a device, the other members probed
+them with questions related to how the experience felt: P1
+“Does it hurt?” P2 “No it tingles, kinda like an electric
+shock but nice.” P1 “Does it feel stronger than before?”
+P2 “Yes, I think the radiation levels are higher at this part
+of the sky” P1 “You must be pointing at the sun” P2 “No I
+think I would know if I was pointing at the sun, that would
+definitely hurt me.” This relates in particular to the vibrotactile modality, as the user of the device is the only one
+who can perceive this. On occasion, groups attempted to
+share the experience by having several members touching
+parts of the device. During these occasions they would
+compare how they perceived the characteristics of the feedback. Observing families with the devices, we noticed that
+these seemed to encourage parents to explain their interpretation of the data to children. Feedback from parents revealed that using the devices was an enjoyable experience
+for all members of the family because they offered easy access for all members of the family, including younger children. One parent remarked: “Although I know very little
+about radiation out there, it helped me explain what I do
+know to L (10 year old daughter) when I saw how excited
+she was as it buzzed in her hand. Now I have to learn more,
+to answer all her questions when we get home.”
+Finally our observations revealed some misconceptions that
+people had while using the dowsing rod. On many occasions, people pointed the rod at objects within the observatory, anticipating that these objects would have high levels
+of radiation. Interestingly, people also were reluctant to
+point in a direction if another person was in their line-ofsight and rather chose to walk around them to point at a
+clear area.
+
+CONCLUSION AND FUTURE WORK
+
+In this paper, we have described the motivation, design
+concept and development of two bespoke data-driven artefacts that embody live data through tangible interfaces.
+These artefacts allow visitors to a Space Observatory to
+perceive complex scientific data that would normally only
+be viewed and analyzed by experts. Over the course of one
+week we observed and interviewed visitors while they used
+the devices, with an overwhelmingly positive response. Our
+observations indicate that the tactile experience of the information representation engaged visitors and felt less abstract, more real than purely graphic representations.
+Moreover, it triggered social interactions and conversation
+both about the perceived signal and its meaning. Although
+our analysis is not yet complete, preliminary findings indicate that representing complex data through non-traditional
+modalities seems to be more appealing for a casual user.
+We believe that representing data through a modality that is
+not associated with expert use, such as complex visualizations and graphs, can stimulate intrigue, awareness and curiosity about the represented phenomenon. We do not propose that this type of representations to replace traditional
+information visualization techniques but to compliment the
+range of tools available for representing data beyond the
+expert audience to a wider population.
+Following completion of the analysis of this study, our future work will focus on exploring the moment-to-moment
+experience of individual users while interacting with the
+devices. Using techniques such as phenomenological interviews, our aim will be to investigate further the findings
+exposed here and reveal other issues that are difficult to uncover through observational studies.
+REFERENCES
+
+1.COSM, http://www.cosm.com/
+2.Dourish, P. (2001). Where The Action Is: The Foundations of Embodied Interaction. MIT Press.
+3.Hornecker, E., Buur, J. (2006). Getting a Grip on Tangible Interaction: A Framework on Physical Space and Social Interaction. Proc. of CHI’06. 437-446. ACM Press.
+4.Larssen, A.T., Robertson, T., Edwards, J. (2007). The feel
+dimension of technology interaction. Proc. of TEI’07,
+ACM, 271 – 278, ACM NY.
+5.Lenay, C., Canu, S., Villon, P. (1997). Technology and
+perception: the contribution of sensory substitution systems. Proc. of Cognitive Technology. 44-53. IEEE.
+6.Moere, A. V. (2008). Beyond the Tyranny of the Pixel:
+Exploring the Physicality of Information Visualization.
+Proc. of Information Visualisation 2008, 469-474. IEEE.
+7.Pousman, Z., Stasko, J., & Mateas, M. (2007). Casual information visualization: depictions of data in everyday
+life. IEEE transactions on visualization and computer
+graphics, 13(6), 1145-52, IEEE.
+8.Wall, S., & Brewster, S. (2006). Sensory substitution using tactile pin arrays: Human factors, technology and applications. Signal Processing, 86(12)
+
+

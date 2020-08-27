@@ -1,0 +1,924 @@
+SCIENCE ADVANCES | RESEARCH ARTICLE
+COMPUTER SCIENCE
+
+Making data matter: Voxel printing for the digital
+fabrication of data across scales and domains
+Christoph Bader,1 Dominik Kolb,1 James C. Weaver,2 Sunanda Sharma,1 Ahmed Hosny,3
+João Costa,1 Neri Oxman1*
+
+INTRODUCTION
+
+While physical visualizations and representations of data are as old as
+prehistoric cave paintings (1), modern approaches still predominantly
+rely on the two-dimensional (2D) display of 3D data sets on planar
+computer screens. Scientific visualizations account for a wide range
+of such virtual information displays, including volumetric rendering
+of patient data obtained from magnetic resonance imaging (MRI) or
+point-based rendering of geospatial data obtained from photogrammetry methods. These visualizations map, process, and represent data and
+aim to allow a user to gather insights through perception and computeraided interaction (1).
+Although conventional screen-based media visualizations are
+known to be effective, it has been argued that physical manifestations
+of data sets can leverage active and spatial perception skills, enabling a
+more comprehensive understanding of presented information in an inherently intuitive manner (2). Immersive visualization through virtual
+and augmented reality displays aims to improve the shortcomings of
+2D information displays but currently lacks the tangible interaction
+offered by physical information displays. Advancements in the accessibility and affordability of digital fabrication workflows, such as additive manufacturing, enable a “resurrection” of data in their physical
+manifestation. Consequently, the representation of data sets in a physical form through digital fabrication has emerged as a research area and
+practice (3). More broadly, the manifestation of data as a physical embodiment is often collected under the term “data physicalization” (4) or
+“physical visualization” (5).
+One of the earliest additive manufacturing methods introduced for
+the fabrication of scientific visualizations in physical form was powderbased binder jetting (6). This method has become particularly popular
+as it enables the digital fabrication of boundary representations with
+associated colored textures. While this approach allows the use of color
+as a parameter for the encoding of information on an object’s surface,
+1
+The Mediated Matter Group, Media Lab, Massachusetts Institute of Technology,
+Cambridge, MA 02139, USA. 2Wyss Institute for Biologically Inspired Engineering,
+Harvard University, Cambridge, MA 02138, USA. 3Dana-Farber Cancer Institute
+and Harvard Medical School, Boston, MA 02215, USA.
+*Corresponding author. Email: neri@mit.edu
+
+Bader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+the supplied data format must be given as a closed two manifold triangle mesh with associated texture or vertex attributes. Therefore, common representations used in scientific visualization must be converted
+to these boundary representations through geometry processing tasks,
+which may, in turn, result in partial loss or alteration of the data set at
+hand. Alternatively, crystal laser engraving provides a method to directly fabricate discontinuous data sets. In this process, a pulsed laser
+beam creates a large number of etched points captured within an optically transparent material. However, because this method works by
+introducing damage to a material, it is restricted to monochromatic
+visualizations and is limited in the spatial density of dots that can be
+achieved. Furthermore, the enclosing geometries are mostly constrained
+to simple forms such as rectangular blocks. Complex data sculptures—
+such as objects visualizing sound, landscapes, or graph-like structures—
+are often produced using selective laser sintering, where a laser fuses
+powder in a layer-by-layer fashion to form a solid object. Because of
+its ability to fabricate complex geometries without support scaffolds,
+it is suitable in cases in which intricate objects are required. However,
+given the very nature of the fabrication process, it does not enable the
+production of parts with varying translucency or color.
+Furthermore, despite the availability and progression of 3D printing
+technology, fundamental 3D printing workflows have remained essentially unchanged for the past 30 years. These workflows are limited by
+the fact that shape specification is directly linked with material specification. This limitation is also reflected in the STL (stereolithography)
+file format, which was introduced three decades ago for the first stereolithographic 3D printers and is still considered the standard file format
+for additive manufacturing.
+The STL file format represents objects through a closed regular surface, which is described by a list of triangles, defined through their vertices. During the 3D printing process, each surface is considered a solid
+object, where space inside the triangle boundary representation is occupied by a single material. Unfortunately, these design and additive
+manufacturing workflows do not think “beyond the shell” of objects,
+despite the fact that commercially available 3D printers can print up to
+seven materials simultaneously. This means that to 3D print any data
+set, especially those that are not naturally representable as surfaces, all
+1 of 12
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+
+We present a multimaterial voxel-printing method that enables the physical visualization of data sets commonly
+associated with scientific imaging. Leveraging voxel-based control of multimaterial three-dimensional (3D) printing,
+our method enables additive manufacturing of discontinuous data types such as point cloud data, curve and graph
+data, image-based data, and volumetric data. By converting data sets into dithered material deposition descriptions,
+through modifications to rasterization processes, we demonstrate that data sets frequently visualized on screen can
+be converted into physical, materially heterogeneous objects. Our approach alleviates the need to postprocess data
+sets to boundary representations, preventing alteration of data and loss of information in the produced physicalizations. Therefore, it bridges the gap between digital information representation and physical material composition.
+We evaluate the visual characteristics and features of our method, assess its relevance and applicability in the production of physical visualizations, and detail the conversion of data sets for multimaterial 3D printing. We conclude
+with exemplary 3D-printed data sets produced by our method pointing toward potential applications across scales,
+disciplines, and problem domains.
+
+Copyright © 2018
+The Authors, some
+rights reserved;
+exclusive licensee
+American Association
+for the Advancement
+of Science. No claim to
+original U.S. Government
+Works. Distributed
+under a Creative
+Commons Attribution
+NonCommercial
+License 4.0 (CC BY-NC).
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+
+METHODS
+
+Similar to Bader et al. (8, 12), we used high-resolution material dithering to achieve optical transparency and color gradients in the produced artifacts. An overview of our method is shown in Fig. 1. For a
+given data set or a collection of data sets, an approximating hull must
+be generated first. This hull can be a rectangular box or any other containment such as a detailed boundary representation of the enclosed
+shape. The dimension of the hull, combined with the resolution of
+Bader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+the 3D printer, determines the number of layers the printer will fabricate for a given representation. Then, for each layer, internal material
+information sourced from the given data set was computed. This process was specific to the type of data set used and was detailed for point
+cloud, volume, line, and image-based data sets in Results. Any area
+within the layer that was not occupied by the data set—but was inside
+the approximating hull—was specified as transparent. Per-layer material
+information was then converted to material-mixing ratios. This was
+achieved by looking up the specific material-mixing ratio in a comprehensive material information database and assigning this mixing ratio
+to each pixel. The material information database was constructed by
+characterizing material properties and matching them with materialmixing ratios. This was done by producing a set of exemplar specimen
+with known material-mixing ratios specified through the material deposition descriptions and subsequently characterizing them. Materialmixing ratios were then materially dithered (13) into droplet deposition
+descriptions, from which the 3D printer could determine where to deposit which material. The droplet deposition instructions could be binary raster layers, one for each material of the 3D printer, encoding
+whether or not a droplet should be deposited at a pixel’s location for
+the particular material. An example of this process is shown in Fig. 2,
+where opaque and transparent materials were mixed at different ratios,
+resulting in a gradient from opaque to transparent.
+However, material-mixing ratios did not linearly translate to perceivable, optical properties. Only objects with high transparent material
+content showed differences in transparency, while objects in the range
+of 0 to 70% transparent material content barely exhibited any variation
+in transparency, especially in the thick regions of a given sample (Fig. 2).
+This phenomenon must be taken into account for the visualization of
+volumetric data because a linear mapping from material information to
+material mixing will not yield linear changes in perceivable transparency or translucency.
+Whereas color is linked to an object’s reflectance, translucency is
+not linked to measurable physical or perceptual quantities, which
+makes the establishment of psychometric functions for converting
+physical quantities associated with translucency to perceptual uniformity particularly difficult. As a result, we used transmittance measurements and a lookup table as described in fig. S4 to partially reduce
+the nonuniformity of material-mixing ratios and perceived translucency. However, other more sophisticated models using scattering and absorption in conjunction with psychophysical experiments have been
+recently proposed (14).
+In particular, the high resolution of our method allows for the
+physical visualization of finely detailed information. Ordinarily, these
+3D-printed objects would be too fragile or—as in the case of an unconnected point cloud—otherwise impossible to print as self-supporting
+structures. Nonetheless, these structures can easily be produced within
+a transparent enclosure. In this way, it is possible to additively manufacture feature sizes below 1 mm that closely resemble what can be visualized on screen. Given the nature of the dithering process, highly
+transparent features will however begin to blur and may appear fuzzy
+because mixing ratios with high clear content will result in overly dispersed droplets of opaque material. Geometric primitives made out of
+pure opaque material were perceivable even at small scales—specifically,
+at a diameter of 0.01 mm (in the case of a line) or a diameter of 0.1 mm
+(in the case of a sphere)—whereas geometric primitives made out of
+more transparent material were barely visible at that scale. For visualizations, these feature sizes must be considered, and thinner elements
+have to be mapped to material-mixing ratios of higher opaque content
+2 of 12
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+
+data first must be converted into a boundary representation. Specifically for scientific data, this conversion process is problematic, as, in many
+cases, it introduces computational overhead, alteration of data, and
+even loss of information. We show two examples of these drawbacks
+in figs. S1 and S2.
+Here, and in contrast to the methods described above, we present an
+approach to physical data visualization through voxel printing using
+multimaterial 3D printing to improve the current data physicalization
+workflows. Multimaterial 3D printing with photopolymeric materials
+enables the simultaneous use of several different materials, and by
+using dedicated cyan, magenta, yellow, black, white, and transparent
+resins, full-color models with variable transparency can be created.
+The ability to create objects with and inside transparent material
+enables the physical visualization of compact n-manifolds (n ≤ 3) such
+as unconnected point cloud data, lines and curves, open surfaces, and
+volumetric data.
+Multimaterial 3D printers (7) operate by depositing droplets of several ultraviolet-curable resins in a layer-by-layer inkjet-like printing
+process to construct high-resolution 3D objects. High levels of spatial
+control in manufacturing can be achieved by generating a set of layers
+in a raster file format at the native resolution of the printer, where each
+pixel defines the material identity of a droplet and its placement in 3D
+space. The set of layers can be combined into a voxel matrix. A printer
+can then process these droplet deposition descriptions given as a voxel
+matrix to digitally fabricate heterogeneous and continuously varying
+material composites. This approach is often described as bitmap-based
+printing (8) or voxel printing (9).
+Commercially available multimaterial 3D printers can have a build
+envelope of 500 mm × 400 mm × 200 mm with a droplet deposition
+resolution of 600 and 300 dots per inch and a layer separation of down
+to 12 mm, which results in 929 billion individually addressable material
+droplet positions, or voxels, through the approach described above.
+This high-resolution build space enables two key characteristics relevant for physical visualization: (i) volumetric color and opacity gradients, achieved by varying the spatial density of droplets of different
+materials, and (ii) preservation of detail, achieved through a clear enclosure volume, which allows the digital fabrication of highly detailed
+structures with fine features.
+While multimaterial 3D printing is used in the sophisticated design
+processes of advanced products (10) with complex geometries (11), it
+has only recently been used for the generation of data sculptures
+containing data-informed patterns (12). Our approach to physical data
+visualization through voxel printing using multimaterial 3D printing
+presented herein enables direct digital manufacturing of numerous data
+sets commonly found in scientific visualizations through rasterization,
+without the need to create intermediate representations for 3D printing.
+As a result, the method and its various applications point toward the
+elimination of the digital/physical divide, bridging digital on-screen data
+and their physical manifestations.
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+
+if they are to be retained (see fig. S3). While very thin features can be
+produced through the deposition of opaque material inside transparent
+enclosures, the manageable limit for the production of external geometric features through this technology, including printing, cleaning, and
+postprocessing, is approximately 0.5 mm.
+Models shown herein were printed on a Stratasys Objet500 Connex
+(two material), Stratasys Objet500 Connex3 (three material), and
+Stratasys J750 (six material) 3D printers. VeroClear (RGD810) was used
+as transparent material, while for colors, VeroWhitePlus (RGD835),
+VeroBlackPlus (RGD875), VeroYellow (RGD836), VeroCyan (RGD841),
+and VeroMagenta (RGD851) were used.
+
+RESULTS
+
+Point clouds
+Point clouds are often encountered in scientific visualizations as they
+are frequently used for geospatial imaging. They are particularly prominent in geographic information systems, commonly obtained by LiDAR
+(light detection and ranging), where they are used to capture digital
+elevation maps (15) or to observe the development of agricultural
+(16) or urban environments (17). Further areas of application include
+archaeology, where point clouds are used to capture and preserve artiBader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+facts and sites (18). A point cloud is usually defined as a set of points
+represented by its coordinates, where each point may contain additional properties such as color, normal direction, and luminance. Additive
+manufacturing typically requires boundary representations; thus, a given
+point cloud must first be converted through processes such as Poisson
+surface reconstruction (19), resulting in a triangulated mesh that is usable for common 3D printing workflows. However, if a closed surface is
+not a necessity by design, and the given point data set is particularly
+disconnected or fragmented, volumetric voxel printing presents a valuable alternative. Rather than reconstructing a surface, we can directly
+rasterize each point to a layer used in the multimaterial 3D printing
+process. In this way, we can use the point cloud data for the creation
+of a 3D printable artifact, without applying intermediate conversion
+steps, which may alter or distort the original data.
+The conversion of point cloud data to 3D material deposition description is shown in Fig. 3. First, the dimensions of an enclosure that
+will act as a transparent container to hold the point cloud are determined. This enclosure can be an accurate boundary representation created from the points through surface reconstruction methods, a convex
+hull, or a simple bounding box. The enclosure is oriented such that
+minimal z height can be achieved. The dimensions, resolution, and
+number of layers needed to build up the volume of the 3D print are
+3 of 12
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+
+Fig. 1. General workflow for the conversion of data sets to 3D-printed data physicalizations. For a given composition of data sets (A), a hull is generated first (B). Here, the
+composition of data sets contains a volumetric (1), point cloud (2), graph (3), and image stack (4) data set. (C) The enclosure, together with the available printer resolution, thus
+determines the dimension and number of the generated layers. The data set is then processed for each layer (D), according to “Volumes,” “Point clouds,” “Curves and graphs,”
+and “Image-based” sections, respectively (E), to generate, to generate per-pixel material information. Here, every layer’s pixel contains an associated position and is given the
+actual data set and additional information governing the desired appearance of the final physical visualization. The material information of each data set is then composited
+(F) and converted to material-mixing ratios (G). Finally, the material-mixing ratios are dithered to binary bitmap layers (H), one for each material given in the printer.
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+
+calculated from the enclosure. This is generally dependent on the x, y, z
+resolution of the multimaterial 3D printer, the dimensions of the object,
+and the 3D printer’s build envelope.
+The point cloud is traversed layer by layer in the direction perpendicular to the print bed (z axis in Fig. 3), generating a raster image for
+each layer (Fig. 3C), and the layers are separated by the z-step size of the
+printer. Each of these layers’ pixels carries information about its position
+in space (Fig. 3D). We use this information in combination with the
+layer height to spatially query, for each pixel in each layer, the point cloud
+data for the next 1 to n nearby points within a certain distance threshold
+or radius from the pixel (Fig. 3E). This spatial query can be efficiently
+implemented using common spatial data structures. The advantage of
+using a spatial data structure is the localization of data in regions or
+clusters, which can be stored in physical memory on a single page or
+disk block.
+On the basis of the queried points’ material information, the pixel’s
+material information is determined. The points’ material information
+can describe color, opacity, stiffness, or any other material properties,
+which may be encoded through the original data acquisition process in
+the point cloud.
+Bader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+The spatial indexing returns the n closest points within a distance
+threshold and their associated information, which can then be used
+to filter the found information. Filtering can be done in several different
+ways. For example, using distance-weighted averaging, the queried n
+closest points can be evaluated and weighted, such that information
+from adjacent points has more influence than information from points
+that are farther away. The resulting value is then used to determine the
+material information for the querying pixel. Other filters may include
+any mapping of the found queried values and respective distances. If the
+spatial query does not result in any point within the given threshold but
+lies within the enclosing object, the querying pixel’s material information will be specified as fully transparent. If a radius property is associated with a point, we can discard the point from further evaluation if
+the distance from pixel to point is below this radius.
+After filtering the points, material-mixing ratios are determined
+from the filtered material information. The pixel’s material information
+is an m-dimensional vector of material ratios, where the number of
+vector components is equal to the number of materials in the printer.
+This vector determines the desired material mixing for the spatial location specified by the pixel. To determine this vector of material-mixing
+4 of 12
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+
+Fig. 2. Variability in optical transparency as a function of transparent to opaque resin mixing ratios. (A) A typical single layer of different material-mixing ratios
+acquired through material dithering. White pixels in the bitmap represent physical material droplets of opaque and transparent material, respectively. Numbers relate to
+transparent material ratios, and in combination, the two material descriptions result in an opacity gradient. The corresponding 3D-printed objects are shown in (B). Here, it
+is apparent that visual characteristics are not linearly related to material-mixing ratios. In (C), we show that perceivably separable differences accumulate at mixing ratios of
+high clear material content and that small changes in additionally deposited opaque material droplets can have a dramatic change in perceived opacity.
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+Fig. 3. Point cloud data processing workflow and representative 3D-printed models from point cloud data sets. (A) Initial point cloud data containing pointspecific attributes. (B) Determination of containment for the point cloud. (C) The containment, combined with the available printer resolution, determines the
+dimension and number of the generated layers. (D) The point cloud is processed for each layer. (E) For each pixel within a single layer, the point cloud is queried
+for nearby points, which are interpolated and rasterized to generate the final material data. (F) Material information is dithered into binary material deposition descriptions. (G) and (H) show representative 3D-printed models from point cloud data sets. (G) The point cloud representing a statue from the Tampak Siring Temple in Bali
+consists of 3.6 million points and was generated through an automated, cloud-based, photogrammetric processing service (38). The digital elevation model of the
+moon shown in (H) is represented through a point cloud of 21 million points. The data were captured by NASA’s Lunar Reconnaissance Orbiter, which was launched in
+2009 and has since orbited the moon (39).
+
+ratios, a lookup of the specific material-mixing ratios in the material
+information database is performed, and material-mixing ratios are assigned to the pixel.
+Finally, each layer containing the material-mixing ratios is dithered
+into the material droplet deposition descriptions in the form of a binary
+Bader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+raster file. One bitmap raster file specifies the spatial region in space in
+the build envelope of the printer where material of a respective material
+type should be deposited. A 0 in the bitmap indicates no deposition of
+material, whereas 1 indicates deposition of material. This set of bitmap
+files is then sent to the printer to instruct it to build a part accordingly.
+5 of 12
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+
+Volumes
+Volumetric data can be obtained from numerous scientific fields. In the
+medical sciences, for example, volume-based data are generated from
+magnetic resonance and x-ray computed tomography (CT) approaches.
+In simulations, volumetric representations are used for spatial domain
+discretization in finite-difference and finite-element approximations of
+partial differential equations for the modeling of fluids and solids. For
+the representation of a discretized scalar or multidimensional field, the
+use of regular or adaptive grids—where each grid node stores one- or
+multidimensional information—is quite common. Additive manufacturing processes use surface representations that, for a given volume,
+can be generated by using isosurface extraction methods such as marching cubes (22) or dual contouring (23). However, these methods produce visible loss in detail when compared to the original data set, and
+volumetric gradients of the original data cannot be reproduced with
+these methods. Moreover, to assign uniquely different materials to distinct regions in space, distinctive domains must be isolated through
+segmentation methods (24), which can further complicate data preprocessing for 3D printing. By using voxel-printing methods, superfluous preparation overhead and loss in detail can be prevented. This
+approach enables one to directly translate volumetric property gradients
+to 3D printable material gradients. Hence, if preservation of the given
+data representation is of importance, including volumetric color, transparency, or continuous material property transitions, our method
+presents a valuable alternative to current practices.
+Our method for additively manufacturing objects that are represented as volumes is given in Fig. 4. First, an outer enclosure containing
+the volumetric data is specified, from which the dimensions and number of layers containing material information are calculated. This can be
+done via a simple bounding box or a more complex extracted isosurface
+as shown in Fig. 4 (G and H, respectively). However, if the source volume provides a clear distinction between those voxels that do not represent internal information and those that do, this boundary description is
+redundant and a 3D printable surface can be reconstructed from the
+volume alone. Similarly, in the process of printing point clouds, the volBader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+ume data are processed layer by layer (Fig. 4D), and for every layer, a
+material description in raster file format is generated. The spatial
+information of each pixel is used to sample the volume, and interpolation methods such as trilinear interpolation can be used to determine
+the pixel’s material information (Fig. 4E). Pixels placed within the outer
+shell, not occupied by the volumetric data itself, will result in transparent resin droplet information. Voxel data can be directly converted to a
+rasterized description by matching the source volume’s voxel resolution
+to the printer’s droplet-voxel resolution. Using this approach, however,
+does not permit the visualization of intermediated transparencies potentially encoded in the voxel. Hence, interpolation of the voxel data
+for each pixel in a printing layer might be necessary for best results
+(Fig. 4E). As previously shown, each layer is dithered to raster files
+containing the material droplet deposition descriptions (Fig. 4F).
+Figure 4 (G and H) shows two examples of volumes additively
+manufactured through our method, where properties from the source
+volumes are converted into transparent material gradients. Figure 4G
+shows an example where the flow of three fluids is simulated inside a
+volume, resulting in chaotic mixing and the formation of realistic
+patterns. Figure 4H shows a cross section of the volume of a patient’s
+hand with arthritis that was captured through CT scanning. The data
+stored in the captured volume represent radiodensity in the Hounsfield
+scale, which represents the relative inability of electromagnetic radiation
+to pass through different tissues and bone in the human body. On
+screen, these data sets are usually visualized as grayscale gradients,
+where white represents the densest bone areas and black represents
+air, with the intermediate grayscale values corresponding to other tissue
+types in the patient. In Fig. 4H, the radiodensity gradient in the captured
+CT scan volume is converted to a material gradient of opaque white
+material (bone) and completely transparent material (skin/soft tissue).
+An isosurface generated from the CT scan was used as the outer volume
+containment. As the examples show, some data sets have a natural enclosure, such as the CT scan of a hand shown in Fig. 4H that can be
+obtained through isosurface reconstruction, while others, such as the
+fluid shown in Fig. 4G, do not. Therefore, the choice of enclosure needs
+to be made on a case-by-case basis. Our method is not constrained to
+regular grids, and we give an additional example of volumetric data represented as a tetrahedral mesh in fig. S7. The level of detail and high
+fidelity of the seamlessly varying transparency gradient in the above
+examples demonstrate the strength of our approach, especially for the
+reproducible additive fabrication of volumetric data. In contrast, common 3D printing workflows using segmentation strategies are not capable of producing this level of visual quality.
+Curves and graphs
+Visualizations using curves and graphs are one of the simplest techniques to present complex information in a comprehensible fashion.
+While graphs and networks are typically known to represent spatial relationships, curves and line-based visualizations are often used to convey a sense of motion where it is not otherwise perceivable. For example,
+superposition of nuclear magnetic resonance spectroscopy structures of
+macromolecular complexes are often visualized through graphs (25),
+while velocity and magnetic fields are often showcased by flow lines,
+generated by tracing particles in the given fields. For common printing
+workflows, such 1D curve and graph data must be converted to closed
+two-manifold meshes. For curves, this can be easily achieved by lofting
+operations, while for graphs and networks, algorithms generating polygonal struts are common (26). The generation of surface geometries
+causes significant computational overhead, especially for data sets with
+6 of 12
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+
+This described process is executed for each generated layer. A layer is
+generated at machine-dependent vertical layer deposition heights (for
+example, at every 12 mm) from the enclosing object’s lowest to highest
+positions. After the last layer is processed and the material deposition
+instructions have been sent to the printer, a physical object will be additively manufactured. Two examples using this method are shown in
+Fig. 3 (G and H).
+Figure 3G contains an archaeological point cloud consisting of
+3.6 million points, generated through photogrammetry methods (18)
+provided through a cloud-based photogrammetric processing service
+(20). The point cloud was processed from its original obtained form
+with minor postprocessing operations. In addition to 3D coordinates,
+an RGB color attribute was associated with each point extracted from
+the accompanying image data. The point radius in Fig. 3G was specified
+as 0.5 mm, resulting in a surface thickness of about 1 mm and an overall
+opaque, solid appearance of the printed object. Figure 3H shows a
+digital elevation model of the moon, provided as gridded data records
+by NASA’s Planetary Data System and captured by the Lunar Orbiter
+Laser Altimeter aboard the Lunar Reconnaissance Orbiter (21). The
+data consist of 21.2 million points with color information that was generated as a function of surface elevation. For this example, a point radius
+of 0.125 mm was used, resulting in an approximately 0.25-mm-thick
+semitranslucent surface.
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+Fig. 4. Volumetric data processing workflow and representative 3D-printed models from volumetric data sets. (A) Initial volumetric data from which an external
+enclosure is generated in (B). (C) Layers are generated and processed in parallel. (D) Here, a voxel intersecting a layer is shown and (E) for each pixel within a given layer, its
+position information is used to find interpolated values for per-pixel material data from the surrounding voxel. (F) Material information is dithered into binary material
+deposition descriptions. (G) and (H) show representative 3D-printed models from volumetric data sets. (G) A computational fluid simulation of the chaotic mixing of white
+and green fluids in a transparent volume. (H) A CT scan of the left hand of a patient with arthritis. The radiodensity information stored in the CT volume is mapped to a
+material gradient of opaque white and transparent material. White areas represent bone with the highest density and transparent regions represent skin and soft tissue,
+while semitransparent gradients in between represent lower-density bone, muscles, and tendons. In this example, the transparency was globally adjusted to emphasize
+the subtle differences in bone mineral density, while the local skin contours define the external hull geometry of the hand.
+
+many lines, curves, and intersections. We therefore propose a method
+that integrates curve and graph data directly with the voxel-printing
+process, without the need to generate a mesh structure.
+Figure 5 illustrates our voxel-printing method for processing curve or
+graph data. Properties such as color and transparency can be stored in
+Bader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+the vertices of line segments or, for example, in the case of Bezier curves,
+in their control points. The input data are traversed layer by layer, and—
+for each pixel within each layer—the spatially closest line segment or curve
+in a given distance is queried (Fig. 5E). The properties associated with the
+input data set are interpolated at the point on the curve or line segment
+7 of 12
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+Fig. 5. Curve and graph data processing workflows and their representative 3D-printed models. For the input curve or graph data (A), an enclosure is specified (B) from
+which dimensions and number of printing layers are determined (C). (D) For each pixel in each layer, the closest curve or line segment is queried (E), and properties associated with
+the curve or line segments are interpolated and rasterized to the layer. (F) Every material information layer is dithered into binary material composition layers, one for each material
+that is needed to fabricate the input data set. (G) Protein crystal structure of apolipoprotein A-I. The data set consists of 6588 points (representing each atom) and 13,392 line
+segments, representing the interatomic bonds. (H) White matter tractography data of the human brain, created with the 3D Slicer medical image processing platform (37),
+visualizing bundles of axons, which connect different regions of the brain. The original data were acquired through diffusion-weighted MRI, where 48 scans are taken for each
+MRI slice, to capture the diffusion of water molecules in white matter brain tissue, which is visualized as 3595 individual fibers. The fiber data set consists of a total of 291,362 line
+segments that are colored according to their orientation in 3D space.
+
+that is closest to the current pixel while still within a point-to-line distance threshold, and the evaluated information is assigned to the querying
+pixel. Each material information layer is then again dithered to material
+deposition descriptions. By using a transparent enclosure, especially detailed visualizations with many discontinuous elements are producible.
+Bader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+Figure 5 (G and H) shows two examples of line-based data sets.
+Figure 5G shows the reconstruction of the 3D structure of apolipoprotein
+A-I, a protein necessary for lipid metabolism in the human body. The
+data were taken from the Protein Data Bank (27), an Internet database
+that archives the 3D structures of large biological molecules. These data
+8 of 12
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+are commonly visualized on screen in the form of a ball-and-stick
+model, where atoms are visualized as points and their bonds to neighboring atoms are visualized as line segments. The lines are voxel-printed
+according to the method described above, whereas the points are processed according to the method described in the “Point clouds” section.
+Figure 5H shows white matter tractography data of a human brain.
+The fibers in this visualization represent bundles of axons in high resolution, which connect different regions of the brain. These fiber data
+are created using diffusion tensor imaging, a process that captures the
+diffusion of water molecules in white matter brain tissue through MRI.
+The line segments are color-coded according to their 3D orientation. In
+this example, an isosurface was extracted from the MRI data to act as an
+easily interpretable transparent enclosure.
+
+Fig. 6. Representative 3D-printed models of image-based data. (A) In vitro reconstructed living human lung tissue on a microfluidic device, observed through
+confocal microscopy (29). The cilia, responsible for transporting airway secretions and mucus-trapped particles and pathogens, are colored orange. Goblet cells, responsible for mucus production, are colored cyan. (B) Biopsy from a mouse hippocampus, observed via confocal expansion microscopy (proExM) (30). The 3D print
+visualizes neuronal cell bodies, axons, and dendrites.
+Bader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+9 of 12
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+
+Image-based
+Image-based data sets are frequently used to record the fine structural
+details of 3D objects. Such a format allows for convenient previewing,
+editing, and file handling. Furthermore, this format of data representation is most prevalent in biomedical imaging disciplines, such as radiology (x-ray, CT, MRI, and ultrasound) or confocal microscopy, where
+physical volumes are observed layer by layer and captured as image
+stacks. A different approach uses a single image to store spatial information, mostly elevation or displacement, in scalar or multidimensional
+raster formats. One such example is digital elevation models in geographic information systems, where height maps are used to represent
+topographic surface elevation (fig. S8). Similarly, bump-, normal-, and
+vector-displacement maps are frequently used in visualization to repre-
+
+sent depth and surface features in the context of the reproduction of
+archaeological or cultural heritage artifacts (28).
+As image-based data sets are already in a raster file format, they are
+easily integrated into our voxel-printing workflow. In most cases, an
+image stack must be preprocessed before the voxel-printing process
+to achieve the best visual results. Noise filtering or image alignment
+can be important preprocessing steps. Following preparation, image
+stacks can be processed using an approach similar to that described
+in the sections above. As the input image stack and the material information layers are both in a raster file format, one pixel from the image
+stack could be mapped to one pixel in the material description. However, since several material droplets are needed to generate intermediate
+material compositions, for best results, one pixel from the image stack
+should be interpolated to several pixels in the material description.
+Figure 6 shows two examples of voxel-printed image data captured
+via optical microscopy methods. Figure 6A contains a confocal microscopy data set that embodies in vitro reconstructed living human lung
+tissue grown in a microfluidic device (29). The data set shows physiological pseudostratified airway epithelium, as found in the human lung.
+Here, the transparency of the cilia was slightly altered to better emphasize the organization of the other cell types. The confocal microscopy
+image stack in Fig. 6B shows a magnified tissue sample of a “Brainbow”labeled mouse hippocampus, imaged through expansion microscopy
+(proExM) (30). With this microscopy method, a specimen is anchored
+to a swellable gel that physically expands the sample before it is observed
+under a conventional microscope, offering results comparable with the
+use of specialized super-resolution microscopes (30).
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+APPLICATIONS
+
+Presurgical planning
+Three-dimensional printing as a visualization method is already being
+used to create models for presurgical planning and intraoperative orientation, reducing risks for the patient and shortening the duration of
+surgical procedures (34). The typical process for creating additively
+manufactured medical visualizations involves a CT scan or an MRI
+scan, where the scanned image data are segmented and converted into
+a set of distinct model parts with homogeneous material compositions
+per part (24).
+Given that the initial volumetric data are converted into discrete
+parts, valuable volumetric information is lost, compromising both the
+integrity and consistency of the raw data. A useful strategy to account
+for such data loss is to segment the scan into several model parts that
+can be printed as an assembly, where every part is assigned a different
+material. These segmentation workflows are, however, time-consuming,
+and the resulting model only coarsely approximates the original
+scanned data, resulting ultimately in loss of visual fidelity. In contrast,
+our approach for deriving the material composition of the 3D-printed
+model directly from the scanned data avoids the aforementioned
+Bader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+challenges. We argue that our approach is capable of reproducing
+the original data more quickly and with higher visual fidelity, proving
+to be beneficial, especially in surgical scenarios where visual accuracy is
+desirable.
+The examples shown above focus on high-resolution visualization of
+data through 3D printing of optically transparent yet rigid materials.
+The incorporation of flexible materials in the printing process could potentially enable the reproduction of scanned body parts such as organs,
+bones, and soft tissue such that they can be physically dissected as part
+of the presurgical planning process.
+Learning and education
+Three-dimensional printing is already being used as a tool for the preparation of educational content in various fields ranging from anatomy
+(35) to chemistry (36) and mathematics. This widespread adoption may
+be attributed to the technology’s increasing availability and its ability
+to produce complex yet customized objects at a low cost. In addition,
+additive manufacturing can be used to digitally fabricate customized
+teaching/learning aids as an alternative for ready-made, hands-on educational materials and model kits.
+The implementation of the voxel-printing methods described
+herein, in combination with 3D objects printed with high spatial resolution in manufacturing, may result in the production of artifacts with
+evermore engaging qualities, reducing or altogether overcoming hurdles
+associated with data that are “lost in translation,” and a compromised
+quality of scientific communication. The 3D-printed display technologies presented herein do not require specialized hardware or electronics
+to function, making them easy to use and accessible to a broad range of
+audiences. Moreover, they are produced as single solid objects, making
+them robust and durable. The models produced with our methods can
+be used in classrooms, science centers, and museums, as stand-alone
+visualizations or tangible accompaniments for existing screen-based
+visualizations.
+
+DISCUSSION
+
+The data physicalization framework proposed herein offers a unified
+approach that enables the production of physical visualizations based
+on a wide variety of data sets found in scientific visualizations, exceeding
+the visual quality of common fabrication workflows and methods as described in Introduction.
+By using recent advances in multimaterial 3D printing technologies
+in combination with voxel printing, the presented process allows less
+preprocessing (such as segmentation and hole filling) of the used data
+sets compared to methods using boundary representations. This, in
+turn, reduces information loss and enables a more direct translation
+of data to matter. In addition, larger data sets can be fabricated at minimal additional processing cost by circumnavigating the generation of
+boundary representations and working on the data directly as is shown
+in fig. S1. As illustrated, for large assemblies of line structures, a 3D strut
+algorithm is traditionally used to create a tubular enclosure for every
+polygon chain, which consequentially increases the vertex count of
+the new data set by a factor of 10 compared to the original file. This file
+size increase can be mitigated through the processes outlined in the
+“Curves and graphs” section.
+In this way, our methods allow the production of objects with minimal information loss, compared to other 3D printing methods as
+illustrated in fig. S2. For example, an image stack has to be converted
+into a 3D volumetric data structure, where every image pixel is mapped
+10 of 12
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+
+Conservation and preservation of cultural artifacts
+Three-dimensional printing technologies have advanced by increasing
+the achievable resolution in 3D-printed objects and allowing more and
+more materials to be used in the printing process. This, in turn, makes
+the lifelike reproduction of objects feasible and motivates the use of 3D
+printing technology in the cultural heritage sector. These efforts can
+be observed in the recreation of the Temple Lion (currently based at
+Harvard’s Semitic Museum) through 3D printing or the initiative to 3D
+print Cornell University’s collection of circa 10,000 cuneiform tablets
+from ancient Mesopotamia (31).
+The Venice Charter states that the aim of restoration “is to preserve
+and reveal the aesthetic and historic value of the monument and is based
+on respect for original material and authentic documents. It must stop
+at the point where conjecture begins, and in this case moreover any extra work which is indispensable must be distinct from the architectural
+composition” (32). This statement implies that common geometry processing tasks used in the visualization and reconstruction of cultural
+heritage, such as Laplacian smoothing or volumetric diffusion for hole
+filling (33), should be minimized or entirely avoided. However, to
+achieve the watertight representations required to produce 3D printable
+replicas using traditional surface meshing-based workflows, these
+methods are unavoidable. Our voxel-printing method can partially
+eliminate this need for the generation of surfaces from 3D-scanned
+point clouds by instead 3D printing point cloud data directly within
+transparent volumes. In addition, the use of multiple color material
+resins in combination with continuous material gradients between
+colors achieved by high-resolution dithering allows a wide range of
+color fidelity in the potential replica.
+The incorporation of materials such as transparent resins for
+controlled translucency enables the creation of realistic object replicas
+with subsurface light transportation. Furthermore, the use of flexible
+materials helps to mimic stiffness in a recreated artifact, making it
+not only visually realistic but also “materially faithful.” While standards
+for representation and reliable conversion methods have yet to be developed, the workflows presented here could help in laying the groundwork for the large-scale adoption and utilization of this technology,
+making these methods valuable for applications in the representation
+and conservation of cultural heritage.
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+
+CONCLUSION
+
+Here, we have shown that a variety of data sets commonly found in scientific visualization can be directly manufactured into physical entities
+Bader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+by using voxel-based 3D printing. The methods described and implemented herein point toward new design opportunities for which the
+perceived barriers between the digital and physical domains can be obviated with ease, enabling the physical visualization of almost any type
+of data set. Resulting physical visualizations closely resemble, if not perfectly match, their screen-based analogs, making this process valuable
+for data analysis and visualization workflows across disciplines and
+scales. It is thus likely that scientific visualization tools in the future will
+incorporate methods similar to the ones described herein, enabling
+users to access, edit, and digitally fabricate visualizations at the press
+of a button. Moreover, in the future, capabilities and protocols to convert digital data into their physical embodiments such as those demonstrated herein may reveal insight into the subject they are representing
+and propose—for example, through haptic engagement—materially
+informed and sophisticated ways to engage with those objects in real life.
+SUPPLEMENTARY MATERIALS
+Supplementary material for this article is available at http://advances.sciencemag.org/cgi/
+content/full/4/5/eaas8652/DC1
+Supplementary Information
+fig. S1. White matter tractography data, created with the 3D Slicer medical image processing
+platform (37).
+fig. S2. Image stack that captures data observed through protein-retention expansion
+microscopy (30).
+fig. S3. Variability in optical transparency as a function of transparent opaque resin mixing
+ratios and feature size.
+fig. S4. Transmittance behavior of material samples with different transparent-to-opaque
+material ratios.
+fig. S5. Two observed visual characteristics that arise from the use of the transparent build
+material.
+fig. S6. Comparison of 3D renderings to 3D-printed models produced with our method.
+fig. S7. Brief illustration of the conversion of tetrahedral meshes to 3D printable models
+through our method.
+fig. S8. Elevation map of a portion of the Brooks Range in Northern Alaska.
+
+REFERENCES AND NOTES
+1. S. K. Card, J. D. Mackinlay, B. Shneiderman, Readings in Information Visualization: Using
+Vision to Think (Morgan Kaufmann Publishers Inc., San Francisco, 1999), vol. 1, p. 686.
+2. C. O’Malley, S. Fraser, Literature Review in Learning with Tangible Technologies
+(Futurelab, 2004).
+3. S. Swaminathan, C. Shi, Y. Jansen, P. Dragicevic, L. A. Oehlberg, J.-D. Fekete, Supporting
+the design and fabrication of physical visualizations, in Proceedings of the SIGCHI
+Conference on Human Facotrs in Computing Systems (ACM, 2014), pp. 3845–3854.
+4. Y. Jansen, P. Dradicevic, P. Isenberg, J. Alexander, A. Karnik, J. Kildal, S. Subramanian,
+K. Hornbaek, Opportunities and challenges for data physicalization, in Proceedings of the
+33rd Annual ACM Conference on Human Factors in Computing Systems (ACM, 2015),
+pp. 3227–3236.
+5. Y. Jansen, P. Dragicevic, J.-D. Fekete, Evaluating the efficiency of physical visualizations,
+in Proceedings of the SIGCHI Conference on Human Factors in Computing Systems
+(ACM, 2013), pp. 2593–2602.
+6. M. J. Bailey, Layered manufacturing for scientific visualization. Commun. ACM. 48, 42–48
+(2005).
+7. O. Sagi, Polyjet Matrix Technology: A New Direction in 3D Printing (Stratasys Ltd, 2009).
+8. C. Bader, W. G. Patrick, D. Kolb, S. G. Hays, S. Keating, S. Sharma, D. Dikovsky, B. Belocon,
+J. C. Weaver, P. A. Silver, N. Oxman, Grown, printed, and biologically augmented:
+An additively manufactured microfluidic wearable, functionally templated for synthetic
+microbes. J. 3D Print. Addit. Manuf. 3, 79–89 (2016).
+9. E. L. Doubrovski, E. Y. Tsai, D. Dikovsky, J. M. P. Geraedts, H. Herr, N. Oxman, Voxel-based
+fabrication through material property mapping: A design method for bitmap printing.
+Comput. Aided Des. 60, 3–13 (2015).
+10. N. Oxman, D. Dikovsky, B. Belocon, W. C. Carter, Gemini: Engaging experiential and
+feature scales through multimaterial digital design and hybrid additive–subtractive
+fabrication. J. 3D Print. Addit. Manuf. 1, 108–114 (2014).
+11. C. Bader, N. Oxman, Recursive symmetries for geometrically complex and
+materially heterogeneous additive manufacturing. Comput. Aided Des. 81, 39–47
+(2016).
+
+11 of 12
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+
+to a volume voxel. Since each image of the stack already was collected at
+high resolution, the generated volumetric data structure of 2 billion
+voxels makes any processing on this data set prohibitively computationally intensive. For 3D printing, the generation of an STL file through
+isosurface extraction can result in a surface description consisting of a
+huge number of polygons that still fail to capture the fine details of the
+original file.
+Furthermore, this approach allows the data to be readily translated
+from screen-based representations to physical models. The data objects
+achieve a similar visual resolution and similarly high fidelity to the
+digital visualizations, which is currently not possible through any other
+method in the context of data physicalization. At the same time, the data
+objects can be closely matched to the appearance of their screen-based
+counterparts, as is shown in fig. S6. This is mostly due to the relationship
+between rendering and 3D printing established by fundamentally using
+the same workflows. While data visualized for on-screen rendering are
+transformed and rasterized to a 2D image displayed on a screen, in our
+method, data are transformed and rasterized to 2D layers that are then
+used in the fabrication process. In comparison to screen-based visualization where one image is displayed, the fabricated object contains
+thousands of layers where each layer has equivalent resolution to one
+displayed image, and while typical interactive editing of data and other
+user interface features are no longer available in the 3D-printed models,
+intuitive tactile and material interactions are gained.
+Still, the precise transition from real physical object over data acquisition to replication through 3D printing remains challenging. The
+characterization of perceived transparency and the creation of psychometric mappings from material properties to perceptual uniformity is
+still a very new and ongoing area of research (14) and will improve these
+transition processes in the future.
+Furthermore, our method comes with two drawbacks, both of which
+are associated with the clear build material. It is impossible to print
+without support material, which either supports overhanging geometries or acts as a glue layer that stabilizes the data objects during the
+printing process. Therefore, for example, in the case of data visualization
+within a clear bounding box, at least one cuboid side facing the printer
+bed will be contaminated with support material. While support material
+removal is quick and straightforward, it leaves those areas that were exposed to the support material with a matte finish. In case of the clear
+material, the matte finish affects optical clarity, as seen in fig. S5 (A and
+B). However, because this is just a surface effect, optical clarity can be
+restored by polishing and clear-coat lacquering the 3D-printed artifact,
+which, in the case of a basic geometric shape, can be achieved within 15
+to 30 min. A further effect observed when working with the clear material is light refraction from curved surfaces. As seen in fig. S5C, due to
+the high surface curvature of the brain folds, the fiber tractography data
+inside the 3D print are radically distorted, but when viewed from the
+opposite flat polished cross section in fig. S5D, the brain has a transparent, glass-like finish that allows an undisturbed view of the fiber data.
+This visual characteristic must be considered when creating curved
+surfaces for a data object. However, considering the advantages that
+the clear build material brings to the fabrication process and the fact that
+the actual data physicalization process can be somewhat autonomous,
+minor design constraints and postprocessing steps are acceptable.
+
+SCIENCE ADVANCES | RESEARCH ARTICLE
+
+Bader et al., Sci. Adv. 2018; 4 : eaas8652
+
+30 May 2018
+
+33. J. Davis, S. R. Marschner, M. Garr, M. Levoy, in Proceedings of the 1st International
+Symposium on 3D Data Processing Visualization and Transmission (IEEE, 2002),
+pp. 428–441.
+34. V. Waran, V. Narayanan, R. Karuppiah, S. L. F. Owen, T. Aziz, Utility of multimaterial 3D
+printers in creating models with pathological entities to enhance the training experience
+of neurosurgeons. J. Neurosurg. 120, 489–492 (2014).
+35. P. G. McMenamin, M. R. Quayle, C. R. McHenry, J. W. Adams, The production of anatomical
+teaching resources using three-dimensional (3D) printing technology. Anat. Sci. Educ.
+7, 479–486 (2014).
+36. V. F. Scalfani, T. P. Vaid, 3D printed molecules and extended solid models for teaching
+symmetry and point groups. J. Chem. Educ. 91, 1174–1180 (2014).
+37. A. Fedorov, R. Beichel, J. Kalpathy-Cramer, J. Finet, J. C. Fillion-Robin, S. Pujol, C. Bauer,
+D. Jennings, F. Fennessy, M. Sonka, J. Buatti, S. Aylward, J. V. Miller, S. Pieper, R. Kikinis,
+3D Slicer as an image computing platform for the Quantitative Imaging Network.
+Magn. Reson. Imaging 30, 1323–1341 (2012).
+38. P. Alliez, F. Forge, L. de Luca, M. Pierrot-Deseilligny, M. Preda, Culture 3D Cloud: A Cloud
+Computing Platform for 3D Scanning, Documentation, Preservation and Dissemination of
+Cultural Heritage (2017); http://c3dc.fr.
+39. G. A. Neumann, Lunar Orbiter Laser Altimeter Data (version 4), NASA PDS Geoscience
+Node (2009); http://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/.
+Acknowledgments: We thank GETTYLAB and the Robert Wood Johnson Foundation for
+their generous support of our scientific research into programmable materials and living
+devices. We also thank N. Kaempfer (creative director of art, fashion, and design), B. Belocon,
+and G. Begun at Stratasys Ltd. for enabling the production of some of the models shown
+herein and their dedication and insights enabling the work in this paper. We thank B. Ripley,
+K. Benan, and S. Asano for providing data sets used in this study. Funding: This study
+was funded by the Robert Wood Johnson Foundation (grant no. 74479) and GETTYLAB.
+Author contributions: C.B. generated models from existing data sets, digitally fabricated
+3D models, generated data sets, produced specimens for transparency tests, and wrote
+software tools used herein. D.K. generated models from data sets, digitally fabricated models,
+and documented most of the produced models. J.C.W. consulted on digital fabrication
+methods and techniques as well as the choice of data sets used. S.S. assisted in the choice
+of data sets. A.H. helped on the characterization of the 3D-printed materials. J.C. helped
+with photography of the 3D-printed data sets. N.O. (principal investigator) directed
+and guided the research. All authors contributed to the production of the final manuscript.
+Competing interests: C.B., D.K., J.C.W., and N.O. are authors on a patent application filed
+by the Massachusetts Institute of Technology that describes methods similar to those described
+in this work (application no. 15/628,635; publication no. 20170368755; filed 20 June 2017;
+published 28 December 2017). All other authors declare that they have no competing interests.
+Data and materials availability: All data needed to evaluate the conclusions in the paper
+are present in the paper and/or the Supplementary Materials. Additional data related to this
+paper may be requested from the authors.
+Submitted 27 December 2017
+Accepted 27 April 2018
+Published 30 May 2018
+10.1126/sciadv.aas8652
+Citation: C. Bader, D. Kolb, J. C. Weaver, S. Sharma, A. Hosny, J. Costa, N. Oxman, Making data
+matter: Voxel printing for the digital fabrication of data across scales and domains. Sci. Adv. 4,
+eaas8652 (2018).
+
+12 of 12
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+
+12. C. Bader, D. Kolb, J. C. Weaver, N. Oxman, Data-driven material modeling with functional
+advection for 3D printing of materially heterogeneous objects. J. 3D Print. Addit. Manuf. 3,
+71–79 (2016).
+13. W. Cho, E. M. Sachs, N. M. Patrikalakis, D. E. Troxel, A dithering algorithm for local composition
+control with three-dimensional printing. Comput. Aided Des. 35, 851–867 (2003).
+14. P. Urban, T. M. Tanksale, A. Brunton, B. M. Vu, S. Nakauchi, Redefining A in RGBA:
+Towards a Standard for Graphical 3D Printing, https://arxiv.org/abs/1710.00546 (2017).
+15. H. Wang, Y. Zhang, P. Li, X. Zha, in Joint Urban Remote Sensing Event 2013 (JURSE, 2013),
+pp. 13–16.
+16. K. Koenig, B. Hölfe, M. Hämmerle, T. Jarmer, B. Siegmann, H. Lilienthal, Comparative
+classification analysis of post-harvest growth detection from terrestrial LiDAR point
+clouds in precision agriculture. ISPRS J. Photogramm. Remote Sens. 104, 112–125 (2015).
+17. R. Richter, M. Behrens, J. Döllner, Object class segmentation of massive 3D point clouds
+of urban areas using point cloud topology. Int. J. Remote Sens. 34, 8394–8410 (2013).
+18. M. Pierrot-Deseilligny, L. De Luca, F. Remondino, Automated image-based procedures for
+accurate artifacts 3D modeling and orthoimage generation. Geoinformatics FCE CTU
+6, 291–299 (2011).
+19. M. Kazhdan, H. Hoppe, Screened poisson surface reconstruction. ACM Trans. Graph.
+32, 1–13 (2013).
+20. Culture 3D Cloud (2017).
+21. NASA, NASA PDS Geoscience Node (2009).
+22. W. E. Lorensen, H. E. Cline, in Proceedings of the 14th Annual Conference on Computer
+Graphics and Interactive Techniques (ACM, 1987), vol. 21, pp. 163–169; http://portal.acm.
+org/citation.cfm?doid=37401.37422.
+23. T. Ju, F. Losasso, S. Schaefer, J. Warren, Dual contouring of hermite data. ACM Trans. Graph.
+21, 339–346 (2002).
+24. F. Rengier, A. Mehndiratta, H. von Tengg-Kobligk, C. M. Zechmann, R. Unterhinninghofen,
+H. U. Kauczor, F. L. Giesel, 3D printing based on imaging data: Review of medical
+applications. Int. J. Comput. Assist. Radiol. Surg. 5, 335–341 (2010).
+25. S. I. O’Donoghue, D. S. Goodsell, A. S. Frangakis, F. Jossinet, R. A. Laskowski, M. Nilges,
+H. R. Saibil, A. Schafferhans, R. C. Wade, E. Westhof, A. J. Olson, Visualization of
+macromolecular structures. Nat. Methods 7, S42–S55 (2010).
+26. G. W. Hart, An algorithm for constructing 3D struts. J. Comput. Sci. Technol. 24, 56–64
+(2009).
+27. H. M. Berman, J. Westbrook, Z. Feng, G. Gilliland, T. N. Bhat, H. Weissig, I. N. Shindyalov,
+P. E. Bourne, The protein data bank. Nucleic Acids Res. 28, 235–242 (2000).
+28. A. Reichinger, S. Maierhofer, W. Purgathofer, High-quality tactile paintings. J. Comput.
+Cult. Herit. 4, 1–13 (2011).
+29. K. H. Benam, R. Villenave, C. Lucchesi, A. Varone, C. Hubeau, H. H. Lee, S. E. Alves,
+M. Salmon, T. C. Ferrante, J. C. Weaver, A. Bahinski, G. A. Hamilton, D. E. Ingber, Small
+airway-on-a-chip enables analysis of human lung inflammation and drug responses
+in vitro. Nat. Methods 13, 151–157 (2016).
+30. P. W. Tillberg, F. Chen, K. D. Piatkevich, Y. Zhao, C. C. Yu, B. P. English, L. Gao, A. Martorell,
+H. J. Suk, F. Yoshida, E. M. DeGennaro, D. H. Roossien, G. Gong, U. Seneviratne,
+S. R. Tannenbaum, R. Desimone, D. Cai, E. S. Boyden, Protein-retention expansion
+microscopy of cells and tissues labeled using standard fluorescent proteins and
+antibodies. Nat. Biotechnol. 34, 987–992 (2016).
+31. M. Neumüller, A. Reichinger, F. Rist, C. Kern, 3D printing for cultural heritage: Preservation,
+accessibility, research and education, in 3D Research Challenges in Cultural Heritage
+(Springer, 2014), pp. 119–134.
+32. International Council on Monuments and Sites, International Charter for the conservation
+and restoration of monuments and sites (The Venice Charter, 1964), pp. 1–4;
+www.international.icomos.org/charters/venice_e.pdf.
+
+Making data matter: Voxel printing for the digital fabrication of data across scales and
+domains
+Christoph Bader, Dominik Kolb, James C. Weaver, Sunanda Sharma, Ahmed Hosny, João Costa and Neri Oxman
+
+Sci Adv 4 (5), eaas8652.
+DOI: 10.1126/sciadv.aas8652
+
+http://advances.sciencemag.org/content/4/5/eaas8652
+
+SUPPLEMENTARY
+MATERIALS
+
+http://advances.sciencemag.org/content/suppl/2018/05/24/4.5.eaas8652.DC1
+
+REFERENCES
+
+This article cites 23 articles, 0 of which you can access for free
+http://advances.sciencemag.org/content/4/5/eaas8652#BIBL
+
+PERMISSIONS
+
+http://www.sciencemag.org/help/reprints-and-permissions
+
+Use of this article is subject to the Terms of Service
+Science Advances (ISSN 2375-2548) is published by the American Association for the Advancement of Science, 1200 New
+York Avenue NW, Washington, DC 20005. 2017 © The Authors, some rights reserved; exclusive licensee American
+Association for the Advancement of Science. No claim to original U.S. Government Works. The title Science Advances is a
+registered trademark of AAAS.
+
+Downloaded from http://advances.sciencemag.org/ on June 11, 2019
+
+ARTICLE TOOLS
+
+

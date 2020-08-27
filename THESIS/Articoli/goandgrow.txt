@@ -1,0 +1,1201 @@
+Go and Grow: Mapping Personal Data to a Living Plant
+Fadi Botros
+
+Charles Perin
+
+University of Calgary
+
+University of Calgary
+
+Bon Adriel Aseniero
+University of Calgary
+
+botrosfadi@gmail.com
+
+charles.perin@ucalgary.ca
+Sheelagh Carpendale
+
+baasenie@ucalgary.ca
+
+University of Calgary
+
+sheelagh@ucalgary.ca
+ABSTRACT
+Motivation is a key factor for introducing and maintaining healthy
+changes in behaviour. However, typical visualization methods (e.g.,
+bar-, pie-, and line charts) hardly motivate individuals. We investigate how a plant—a living visualization—whose health relies on
+the plant owner’s level of activity, can engage people in tracking
+and self-reflecting on their fitness data. To address this question, we
+designed, implemented, and studied Go & Grow, a living plant that
+receives water proportionally to its owner’s activity. Our six-week
+qualitative study with ten participants suggests that living visualizations have qualities that their digital counterparts do not have.
+This includes people feeling: emotionally connected to their plant;
+sentiments such as pride and guilt; and responsibility towards their
+plant. Based on this study, we introduce the Goal Motivation Model,
+a model considering the diversity of individuals, thus supporting
+and encouraging a diversity of strategies for accomplishing goals.
+
+CCS Concepts
+•Human-centered computing → Information visualization;
+
+Keywords
+Fitness, Living Visualization, Personal Visualization, Plant.
+
+1.
+
+INTRODUCTION
+
+Citizens of industrialized nations are subject to sedentary behaviour (prolonged sitting at home, work, or in cars) which can
+lead to health complications such as obesity [13]. Adopting an
+active lifestyle is difficult [24], but the simple act of self-monitoring
+can lead to healthy behaviour change [33]. More and more people
+are now self-monitoring with the emergence of tracking devices
+which measure health data (e.g., steps, calories, and heart rate) [33].
+However, the typical way of visualizing such data is through standard bar and line charts, which hardly motivate people [1]. Finding
+motivation is key to ushering in behaviour change [20]. Thus, visualizing activity data in engaging ways has been studied using e.g.,
+virtual metaphors [6, 22], physical metaphors [17, 19, 34] and video
+games [2, 26]. We explore living visualizations to extend this trend.
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for components of this work owned by others than the
+author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or
+republish, to post on servers or to redistribute to lists, requires prior specific permission
+and/or a fee. Request permissions from permissions@acm.org.
+
+AVI ’16, June 07 - 10, 2016, Bari, Italy
+c 2016 Copyright held by the owner/author(s). Publication rights licensed to ACM.
+ISBN 978-1-4503-4131-8/16/06. . . $15.00
+DOI: http://dx.doi.org/10.1145/2909132.2909267
+
+Figure 1: The Go & Grow system linking individuals’ activity
+data to the amount of water that their personal plant receives.
+While Personal Informatics (PI) tools typically rely on one’s
+self-motivation, we relate the health of a plant to one’s activity
+level. Taking care of a plant can be a strong motivation to maintain
+healthy activity levels. Constant watering is crucial for a plant’s
+longevity, but a single day of under-watering will not result in its
+death. Likewise, people need regular exercise to remain healthy.
+Based on design criteria gathered from existing literature, we
+implemented Go & Grow, a computer-equipped cyclamen flowering plant that waters itself different amounts of water everyday
+according to one’s progress towards a daily step goal (see Figure 1).
+By stimulating the plant with varying amounts of water, the plant
+becomes a living visualization of the individual’s step data.
+Results from a six-week long qualitative study indicate that participants gained an increased awareness of their activity level and
+adapted their daily behaviour. They developed feelings that standard visualizations may not trigger: emotional connection to the
+plant, pride, guilt, and responsibility. We further introduce the Goal
+Motivation Model, composed of four levels of goal abstraction surrounding individuals who track their fitness data. We discuss how
+this model considers the diversity of individuals, and thus supports
+and encourages an array of strategies for accomplishing goals.
+
+2.
+
+BACKGROUND AND RELATED WORK
+
+The emergence of personal trackers has prompted the research
+area of PI. PI focuses on helping people make use of personal data
+(including fitness data) for self-reflection, gaining self-knowledge,
+and making actionable decisions for healthy lifestyle changes [20].
+However, previous work in PI has shown that designing tools that
+help people make lifestyle changes is difficult [20], and that people quickly stop using activity trackers. In a recent study, 65%
+and 75% of participants stopped after two and four weeks respectively [32]; this happens regardless of fitness change [33]. This may
+be explained by difficulties from finding motivation and interpreting
+visualizations hindering people from continued use of PI tools [20].
+We review research from Information Visualization (Infovis) and
+HCI that relates to engagement as a strategy for motivation, and
+describe work that inspired us to use a living plant as a visualization.
+
+2.1
+
+Engagement as a Source of Motivation
+
+Engagement is a broad term which, in our context, we define as a
+state of emotional involvement that leads one to commit or invest in
+a certain activity. Ideally, engagement leads one to commit to an
+activity in order to achieve or maintain good fitness levels.
+Engaging through Personable Visualizations. One way of engaging people with their data is to provide them with insightful
+and personable visualizations. Infovis is well suited for this, as its
+purpose is to help people to gain insights about data [28]. However,
+applications for individuals who track their own fitness data have
+different goals and criteria from traditional Infovis applications—
+which focus on supporting experts working with large amounts of
+data. Efficiency is not necessarily the measure of success for personal or casual visualizations [15, 30] intended for use in everyday
+life. Instead, other factors such as motivation, aesthetics, playfulness and pleasure are essential [34], as these can engage people in
+exploring their data, in having moments of self-reflection [21, 35],
+and in gaining insights in non-professional contexts [31].
+Companies such as Fitbit and Garmin provide online dashboards
+for visualizing fitness data using standard visualizations such as
+bar-, pie-, and line-charts. While these visualizations may be simple
+enough to be understood by most people, they do not seem to be
+motivating, as people quickly stop using them [32]. In contrast, nontraditional or abstract visual representations (i.e. without precise
+numbers) improve people’s awareness of their data [5]. This is
+confirmed by evaluations of technologies such as: Ubifit Garden
+which uses a virtual garden to motivate people to be more active [6];
+and Fish’n’Steps which uses a virtual fish and tank to convey step
+counts [22]. Abstract visualizations can also provide a sense of
+privacy while still conveying high-level information [1].
+These observations suggest that personable visualizations, which
+are both personal “interactive visual data representations for use in
+a personal context” [15] and affective because they are pleasant and
+likeable, are a promising avenue for motivating people in collecting
+and reflecting on their everyday life data.
+Applying Cognitive Behavioural Strategies and Social Context.
+Goal-setting [23], self-assessment, and monitoring of progress [10]
+are well-known cognitive strategies to help people in behaviour
+change. In an HCI context, such strategies can increase people’s
+awareness of their data and motivate them to exercise more [11].
+Berkovsky et al. [2] used virtual game rewards in exchange for
+physical activity, and Nenonen et al. [26] used real-time heart rate
+data to control an interactive biathlon computer game. Both showed
+that goals and achievements can encourage people to be more active.
+Industrial technologies (e.g., Fitbit, Garmin) focus on using cognitive behavioural strategies with social media and data sharing to
+motivate people to increase their activity levels. Consolvo et al. [3]
+found that groups of friends sharing their step counts over three
+weeks in order to achieve a group goal increased their awareness
+and gained more motivation to exercise. This may be due to the positive impression people want to maintain in their community [33].
+Inciting Emotions. HCI and Infovis researchers have found that
+emotions can engage people with data. Affective expression of
+representations is a factor of engagement [25] and emotions can
+evoke affective experiences [7]. This is echoed by studies related to
+activity data. For example, Tong et al. [36] developed a game that
+connects the health of a virtual pet with the owner’s physical activity.
+Participants in their study developed a connection with their virtual
+pet and felt the need to be more active. Similarly, many participants
+in the study of Fish’n’Steps exhibited emotional attachment to the
+virtual organisms visualizing their step counts [22].
+Norman argues that one’s affection for beautiful things is crucial
+to engagement, interest, and pleasure [27]. Plants are enjoyed for
+
+their aesthetics, trigger short- and long-term positive emotions regardless of a person’s sex and age [12], and can improve health [18].
+
+2.2
+
+Towards Living Visualizations
+
+Since living plants affect people emotionally and can change
+people’s behaviour [12, 18], researchers have used virtual plant
+metaphors to represent data. For example, Wang et al. [38] used
+a flower metaphor for visualizing Facebook data, and found that
+virtual representations of living entities could trigger insights. While
+some studies showed that virtual metaphors can motivate people
+to change their behaviour [4, 22], others argue that their impact on
+a person’s motivation and behaviour remains unclear [9]. Overall,
+the HCI and Infovis communities have focused on virtual representations [3, 4, 9]; however, there is a growing interest in using
+physical metaphors to represent data (e.g., [16, 37]). Using physical
+metaphors to represent personal data have great potential to motivate
+people to gain awareness and change their behaviour [17, 19, 34].
+From these two trends, it appears that both virtual and physical plant metaphors can improve awareness and lead to behaviour
+change. Infotropism [14] presents both a living and a robotic plant
+responding to the use of either a recycling or a trash container: the
+plants receive light from one side according to which container
+waste is put in. The plants then become visualizations of the proportion of trash and recyclables that are collected. Results from a
+study suggest a clear difference between the two types of plants:
+the robotic plant lost the interest of people after two days, while the
+living plant sustained their interest—with participants still caring
+for it after the two weeks of the study. They also found that with
+the living plant, some people changed their behaviour because they
+started caring for the plant and felt obligated to keep it alive, instead
+of a desire to recycle more.
+We build on Infotropism to explore how people’s attachment to
+living visualizations can be an engaging motivator for behaviour
+change. In contrast to Infotropism, which explored how the tilt of a
+plant can reflect group behaviour, where a group is responsible for
+the plant, we explore how the health of a plant can reflect individual
+behaviour, where an individual is responsible for the plant.
+
+3.
+
+DESIGN CRITERIA
+
+Looking over the literature, the increasing availability of fitness
+tracking devices has led to considerable research that assess how
+technology can help people in increasing their awareness of, and
+in improving, their activity level. We combine the strategies that
+have been proven successful for engaging people with their personal
+data: personable visualization, social context, cognitive behavioural
+strategies, and inciting emotions. Since people are usually emotionally attached to plants, we use this medium as a way of triggering
+emotions and engaging individuals with their activity data. From the
+literature, we identified design criteria that can have a positive effect
+on individuals’ engagement, awareness, and behaviour change:
+DC1 Abstract representations are more efficient than typical barchartlike visualizations for self-reflecting on personal data [5,6,22].
+DC2 Aesthetic, playful, and pleasurable representations engage
+people with everyday data and trigger emotions [21, 31, 34].
+DC3 Goals that affect the representation leverage successful cognitive behavioural strategies [2, 11, 23].
+DC4 Representations that can be shared leverage the benefits of
+the social context on engagement [3, 33].
+DC5 Representations that trigger emotional commitment favor both
+short-term and long-term engagement [22, 25, 27, 36].
+DC6 Non-virtual living representations leverage both physical metaphors and living plant metaphors, as well as the sustainable
+interest for living things [14, 17–19, 34].
+
+Fitbit
+App
+
+Raspberry Pi
+
+Water amount
+
+Fitbit API
+
+FITBIT.COM
+
+Number of Steps
+
+GO & GROW
+SERVER
+
+Sync
+
+Water Pump
+Sync
+
+Water Tank
+Number of Steps Amount of Earned Plant’s Name
+Towards Daily Goal Water Available
+
+Fitbit Tracker
+
+“Water Now” Basic Statistics
+Button
+
+Online Dashboard
+
+Cyclamen Flower
+
+Figure 2: Overview of Go & Grow. The plant owner wears a Fitibit tracker. Once they sync their tracker with Fitbit.com, the Go &
+Grow server will access their activity data, and compute the amount of water earned corresponding to the number of steps walked.
+Every midnight, the server sends the earned water amount to the Raspberry Pi, which waters the Cyclamen plant accordingly. The
+owner can log on to an online dashboard to monitor their step and earned water levels, and to manually water the plant.
+
+4.
+
+GO & GROW SYSTEM
+
+The six design criteria informed our design of Go & Grow (see
+Figure 2), a system composed of a flowering plant, an irrigation
+system, and a step-count tracker. The amount of water given to a
+plant reflects the step count of the plant owner. Using a living plant
+to represent one’s activity already satisfies four design criteria:
+• DC1: The data is represented loosely (aspect, characteristics,
+health of the plant), not with precise numerical values.
+• DC2: A plant is an aesthetically pleasing thing.
+• DC5: People gain affection for plants and emotionally engage
+with them; they are less likely to let plants die than bar charts.
+• DC6: A plant is a non-virtual living representation.
+System Overview. Assume Anna is a person using a Fitbit tracker.
+Anna syncs her tracker with her online Fitbit account using the
+Fitbit application whenever she wants. Every midnight, the Go &
+Grow server accesses Anna’s daily step count through the Fitbit API,
+and converts this step count into the amount of water to give to the
+plant. The server then sends this water amount to the wifi-connected
+irrigation system, which automatically waters the plant accordingly.
+Anna can see her daily progress, step count, and watering history in
+the online dashboard. Anna can also use the dashboard to water her
+plant in real time, based on her current number of steps.
+Go & Grow Server. Once Anna syncs her Fitbit tracker, the Go
+& Grow server accesses her step data via the Fitbit API and converts
+her current step count to a percentage of completion towards her
+daily step goal. As her percentage of completion increases, Anna
+earns water. The earned water is represented as a percentage of the
+optimal daily dosage of water that the plant needs.
+Everyday at midnight, the server sends the watering amount to
+the irrigation system and resets the step counter. However, the plant
+can only be watered in 25% increments (25%, 50%, 75% and 100%)
+in order to motivate people to achieve goals (DC3). For example,
+if Anna walked 8,500 steps and her goal is 10,000, she will earn
+85% of water, but her plant will only get 75% of it’s optimal daily
+dosage. The difference, 10%, will be banked (available for later
+use). If Anna achieves higher than 100% of her goal then the plant
+will get 100% of its water and the extra water will be banked.
+Online Dashboard. Anna’s online dashboard contains a green
+progress bar showing her progress towards her daily step goal and a
+blue bar showing how much water she has in stock. In the dashboard
+shown in Figure 2, the Anna has achieved 70% of her daily goal, but
+she can only use 50% of the water. Once Anna has earned at least
+25% of water, she can click on the “Water Now” button to water
+her plant immediately, otherwise it will happen automatically at
+
+midnight. We implemented this functionality because: i) it gives the
+plant owners the opportunity to water their plant before midnight,
+as the pump makes some noise; and ii) plant owners can water their
+plant in real-time and observe that the system works as expected.
+Irrigation System. The irrigation system consists of a Raspberry
+Pi (Version 2 Model B) and an aquarium water pump (3.5 gph
+Tom Aquarium Aqua Lifter Pump). The Wi-Fi enabled Raspberry
+Pi receives the amount of water from the server, and converts this
+amount to the time in seconds that the water pump must be turned on.
+The electronic components are fastened in a plastic box (20 × 10 × 5
+cm). All the parts were bought from online stores and cost less than
+US $90, which makes the system easy to build and reproduce.
+Cyclamen Plant. Although this may not look to be the most
+complicated part of the system, there are many variables to consider
+for choosing a plant. The main considerations are:
+P1 Its aesthetics: the plant should be aesthetically pleasing.
+P2 Its sensitiveness to water: the amount of water the plant receives
+should quickly impact its health and appearance.
+P3 Its robustness to dryness: although the plant should be sensitive
+to water, it should be “forgiving” and be robust enough to not
+die immediately if not watered for a single day.
+P4 Its environment requirements: the plant should be able to grow
+indoors, sometimes with little natural sunlight.
+We considered many plants before choosing the Cyclamen. We
+considered tomato plants, which are sensitive to water and provide
+fruits, but are not particularly aesthetically pleasing, have a strong
+scent, and give fruits only when outdoor; mint, which grows fast, but
+triggers allergies; impatiens, which are aesthetically pleasing and
+sensitive to water, but inexplicably died during our tests. We finally
+chose Cyclamens, which satisfy P1 to P4; we also did not encounter
+any issue with them. Cyclamens are valued for their flowers with
+upswept petals and vibrant colors (P1). Properly watered, they grow
+flowers at a rapid rate of 1–2 flowers per week, but their flowers
+will dry up quickly if they lack water (P2). A quick reapplication
+of water will cause the plants to revitalize (P3). Persistent dry soil,
+however, will impede healthy growth and will cause the plants to
+die. Cyclamens thrive in cooler temperatures and do not require
+direct sunlight, making them ideal for indoor settings (P4).
+To determine the exact daily dosage of water Cyclamens need to
+grow healthily without being under or over watered, we consistently
+gave three cyclamen plants different amounts of water everyday
+for four weeks. We recorded observations such as flower color,
+leaf color, soil moisture, and number of flowers of each plant, and
+deduced the optimal daily water dosage to be 35 mL.
+
+G5
+
+G2
+
+G4
+
+G3
+
+G1
+
+I3
+
+2.6
+
+7.4
+
+I5
+
+I4
+
+I1
+
+I2
+
+Gaverage Iaverage
+
+ALREADY USED A TRACKING DEVICE
+INTERESTED IN FLOWERS/PLANTS
+
+BEFORE PHASE 2
+
+SATISFIED WITH CURRENT ACTIVITY LEVEL
+STRUGGLE TO BE MORE ACTIVE
+ANTICIPATE BEHAVIOR CHANGE
+ANTICIPATE RESPONSIBILITY FOR THE PLANT
+
+IMPROVEMENT GOALS
+
+Figure 3: Go & Grow setup for the group participants.
+
+We ran a six-week study with ten participants using Go & Grow.
+We designed this study to explore living visualization for representing personal fitness data; and to examine people’s reaction,
+motivation, and engagement with a personal living visualization.
+
+ACTIVITY
+CHANGE
+
+5.1
+
+INCREASED
+AWARENESS
+
+GO & GROW QUALITATIVE STUDY
+
+IF PRECISE
+
+5.2
+
+Participants
+
+We recruited ten volunteers by email and word of mouth with no
+monetary compensation; this was to recruit people who were solely
+interested in tracking their steps and linking their data to a plant.
+We recruited five individuals I1–5 (three male) aged 21–63 (mean
+31). There were two students, one engineer, one teacher, and one
+manager. We recruited five group participants G1–5 (two male) aged
+20–30 (mean 24) through a mailing list. All were students working
+in the same place, knew each other well, and interacted on a daily
+basis. We lent a Fitbit Zip to participants who did not own a Fitbit.
+
+5.3
+
+Go & Grow Deployment
+
+The individuals placed the plant at a location of their choice at
+home. Three set up their plant in their kitchen, one in their bedroom
+
+IF ABSTRACT
+
+WAS MOTIVATED BY HAVING A GOAL
+GOAL BANKING WAS A GOOD THING
+
++50
+
+AFTER PHASE 2
+
+PLANT AS A
+VISUALIZATION
+
+169.1
+
++25
+0
+-25
+
+19.4
+
+14
+
+31.6
+
+35.7
+19.5
+
+9.4
+
+36.3
+20.7
+
+-23.4
+
+IMPROVED
+NEUTRAL
+DECLINED
+
+ACTIVITY CHANGE SELF-ASSESSMENT
+TOOK UNUSUAL WALKS
+TOOK LATE WALKS TO REACH GOAL
+
+NO YES
+
+EVERYDAY HABITS CHANGED
+NOT AT ALL
+
+A LOT
+
+THE PLANT
+GOT AWARE OF
+ACTIVITY BY
+LOOKING AT:
+
+NO YES
+
+THE WATER TANK
+THE FITBIT DEVICE
+THE DASHBOARD
+
+NEVER
+>1/WEEK
+>1/DAY
+
+AFFECTED HIS/HER BEHAVIOUR NOT AT ALL
+
+A LOT
+
+[G] MAKES THE DATA HIDDEN/SEMI-PRIVATE
+REFLECTS WELL THE DATA AT A HIGH LEVEL
+MOTIVATES BECAUSE ALIVE / AESTHETIC
+
+NO NEUTRAL YES
+
+IS MORE ENGAGING THAN A VIRTUAL ONE
+LOOKED AT THE PLANT N TIMES EACH DAY
+
+EMOTIONAL
+CONNECTION
+
+NO YES
+BAD BOTH GOOD
+
+STEP COUNT CHANGE (%)
+
+GOT MORE AWARE OF ACTIVITY LEVEL
+
+Study Design
+
+HAD PRIDE
+
+0 1 2 3 4+
+NO
+
+A BIT YES
+
+HAD AN EMOTIONAL CONNECTION
+FELT RESPONSIBLE
+
+NO YES
+
+FELT GUILTY WHEN INACTIVE
+
+FUTURE SOCIAL
+USE
+CONTEXT
+
+The study consisted of two phases, with each phase being followed by a recorded semi-structured interview.
+Phase 1 consisted of a three-week period during which participants wore a Fitbit tracker. During this phase, we determined the
+average daily step count of each participant as a baseline that we
+later used to determine their daily goals. The first phase lasted three
+weeks to limit the novelty effect, because most people stop using
+their tracking device after three weeks [32]. After the first phase, we
+conducted short (15–30 min) entry interviews and collected participants’ demographics, levels of activity, previous experiences with PI
+systems, and thoughts on the study. We asked participants to name
+their plant, both for privacy purposes and to initiate the emotional
+connection. The second phase began right after the entry interviews.
+Phase 2 consisted of a three-week period using Go & Grow. We
+linked the Fitbit accounts of participants to their Go & Grow system.
+We set the daily step count goal of participants to be their average
+daily step count during Phase 1 plus 10% – so that participants
+would have to walk a bit more than usual. We introduced them to
+the online dashboard, and told them to sync their Fitbit at least once
+a day. At 11pm every day, participants who had not synced their
+Fitbit yet would receive an email reminding them to sync. At the end
+of Phase 2, we conducted 20-40 min semi-structured exit interviews
+containing both questionnaire questions and open questions.
+Conditions: The only design criteria which is not enforced by Go
+& Grow is DC4: sharing the representation. Thus, we considered
+two types of participants. Individuals have their Go & Grow at home
+and do not interact with other participants of the study. Group participants are friends placed in a competitive setting, with the plants
+of all group participants being side-by-side in a shared workplace.
+
+NO NEUTRAL YES
+
+FEEL GOAL WILL BE DIFFICULT TO REACH
+[G] CONFORTABLE
+WITH DATA IN PUBLIC:
+
+5.
+
+NO YES
+
+[G] SENSE OF COMPETITION
+
+[G] PLANT WAS A TOPIC OF CONVERSATION
+
+NO YES
+
+[I] TALKED ABOUT IT WITH FRIENDS/FAMILY
+FELT SOCIAL PRESSURE
+WOULD KEEP USING THE SYSTEM
+ACTUALLY KEPT USING THE SYSTEM
+
+NO
+
+A BIT YES
+
+NO MAYBE YES
+NO YES
+
+Figure 4: Topics and categories are in rows. [G] / [I] indicate that the row concerns only group participants / individuals.
+Participants are in columns; G[1-5] are group participants, I[15] individuals, {G, I}average averages. Cross indicate no data.
+and one in their living room; all were near a window. For the
+group participants, we built a Go & Grow with one Raspberry Pi
+controlling five pumps, each connected to one plant. We set up
+this system in the semi-public lunch area, next to the main entrance
+of the workplace. Because plants were given names, participants
+did not know which plant belonged to whom. Since there were no
+windows nearby, we added a LED light fixture to illuminate the
+plants during day hours (see Figure 3).
+
+6.
+
+RESULTS
+
+We transcribed entry and exit interviews and complemented them
+with the numerical Likert scale answers. We analyzed the transcripts
+using open coding and affinity diagramming. We extracted 112
+codes that we organized into 41 categories. We then grouped related
+categories into 8 emerging topics. We used Bertifier [29] to create
+Figure 4, presenting the summary of these results. The results from
+the entry interviews are summarized in the “Before Phase 2” section
+in Figure 4. We report the results from “After Phase 2” section in
+more detail below, according to the topics listed in Figure 4.
+Goals. All seven participants who mentioned goals found it
+motivating to have a goal. This motivation was not always directly
+related to the plant, e.g., “I was more obsessed with reaching the
+100% than actually watering the plant” [I3]. Five participants
+enjoyed goal banking, e.g., “it was nice to know that even if I was
+
+not getting all of my steps done today, my plant was still getting
+water” [G5]. However, I4 found it demotivating: “if I had steps
+carry over then I didn’t really care to do that many that day” [I4].
+Activity Change. All but G4 increased their average step count
+during Phase 2 compared to Phase 1. Five participants felt that they
+had improved their activity level during the past three weeks.
+Behaviour Change. All but two participants mentioned taking
+unusual walks. These walks included: asking friends to go for a
+walk, e.g., “I would tell my friends that we have to go for a walk
+because I need steps” [G1]; taking a walk with their dog, e.g., “If
+knew that I wasn’t going to hit it for a day then I would go take [dog]
+for a walk” [I1]; and extending walks, e.g., “if I was at the end of
+a walk and I see that I still haven’t reached my step goal yet by a
+little bit then I would extend the walk” [I3]. I2 also changed their
+behaviour for steps banking instead of for reaching the goal that
+day: “I was going on vacation and I’m like oh well I should try get
+an extra 300% [of water] before this just in case I don’t have access
+[to internet]” [I2]. Seven participants mentioned taking unusual
+walks late in the day to reach their goal, e.g., “when I wasn’t at my
+goal . . . I would pace back and forth down the hallway” [I1].
+Six found that their everyday habits had changed during the study.
+These changes include walking instead of being inactive, e.g., “when
+I wasn’t doing anything then I would go ’well I might as well go for
+a walk and get some steps in” [I2]; changing meeting habits, e.g.,
+“just for both our sakes, we do walking meetings now” [I5]; being
+more consistent, e.g., “I feel I’ve developed a habit now so that’s
+awesome” [I3]; and changing the way of doing everyday things,
+e.g., “If I was very close to my goal at night, make sure it will get
+a whole bunch of extra steps, like bouncing around. Or when you
+brush your teeth, you walk back and forth” [G5].
+Increased Awareness. Nine participants mentioned that they
+either became aware of their activity level, e.g., “it created an
+awareness of how sedentary I am” [I5], or became more aware than
+before, e.g., “It’s not like I didn’t know about those numbers before
+but now I feel . . . I should be on top of this a bit more.” [G4]. Five
+participants said that they gained their activity awareness by looking
+at the plant; two by looking at the water; all by looking at the Fitbit
+multiple times a day and at the dashboard at least once a week.
+Plant as a Visualization. Participants told us that the plant affected their behaviour by an average score of 3.3 (1: not at all; 5: a
+lot). Three group participants liked that the plant showed their data
+in a semi-private way, e.g., “I could compare in a way but not really.
+I like how it was hidden” [G4]. Four participants mentioned that
+the plant represented their data at a high level, e.g., “it was pretty
+responsive to being watered. . . . I think if you didn’t see a big visual
+difference then it wouldn’t have been as motivating” [I1]. Others
+were more neutral, e.g., “it wasn’t a very precise display” [G5].
+All but two mentioned the aesthetics and the living aspects of
+the plant as factors of motivation, e.g., “It was kinda interesting to
+observe these flowers grow and bloom” [I3]. They all stated that
+they would not have felt the same with a virtual plant. The fact that
+the plant can die was the most frequent comment, e.g., “a plant is a
+living organism. With a virtual plant, if it dies then you don’t really
+care” [G3], and “I feel like with a virtual plant I could always sign
+up for a new account . . . but with a real flower, I could kill it” [G4].
+Emotional Connection. All but one participant looked at their
+plant at least once a day. Eight felt pride, mentioning their plant to
+friends, e.g., “I told [friend] about it . . . people thought it was cool”
+[G2], colleagues, e.g., “I would start proudly talking about my plant”
+[G3], and family members, e.g., “I showed it to my family. I showed
+a picture to a couple of people” [I4]. Others had secret pride, e.g.,
+“I have secret pride in my plant, it didn’t die, that’s really nice” [G5].
+Six told us about their emotional connection with their plant, e.g.,
+
+“I developed a connection with the plant” [I1]. Some mentioned
+caring about the plant as if it was a pet, e.g., “It was almost like
+. . . having a pet . . . you’re taking care of it” [G3]. Two did not feel
+connected to the plant, e.g., “I just didn’t connect to the plant” [I5].
+All but two mentioned that they felt responsible to keep the plant
+alive and healthy, e.g., “I didn’t want it to die! I felt responsible”
+[I1]. Some talked about the long-term impact of this responsibility,
+e.g., “I wasn’t just thinking about it for the first week then forgetting
+about it. I was actively conscious . . . the entire time that my flower
+was dependent on my performance” [G3].
+Five mentioned guilt, e.g., “If I didn’t water it then I was feeling
+guilty” [I1], in several ways, including: because of their laziness,
+e.g., “I’d felt kind of mean if it didn’t get watered just because
+I didn’t feel like walking” [G5]; because they were not properly
+watering the plant, e.g., “I still felt guilty when I didn’t have at least
+100% water every night” [I3]; and when they received an automatic
+email, e.g., “Every time I got an email . . . I would feel guilty” [G2].
+Social Context. Four group participants mentioned that the plants
+were a common point for discussion with colleagues, e.g., “It was
+actually quite entertaining to . . . have a common point to talk about.
+We stood around the plants and discussed” [G3]. They all talked
+about their plant with family and friends, e.g., “They [friends/family]
+still ask me about how my plant is doing every time they see me now,
+so it’s a constant reminder to keep being active” [I3].
+Six participants felt social pressure during the study. Other people
+seeing their plants motivated group participants, e.g., “I would have
+found it embarrassing if it weren’t doing well, because people were
+paying attention to the plants” [G5]; as well as having their plant
+being compared to other plants, e.g., “I didn’t want my plant to be
+the worst looking one” [G4]. Individuals mentioned positive social
+pressure coming from both family members and friends, e.g., “if it
+started dying then [my family] would say something about it” [I3].
+Future Use. After three weeks of Phase 2, we offered the participants the opportunity to keep using the system. Eight decided
+to continue. The two who did not keep using it had reasons that
+interfered: I1 moved to a new city and could not take the plant with
+them and I4 lost the Fitbit tracker on the day of the exit interview.
+
+7.
+
+DISCUSSION
+
+Overall, participants increased their awareness of their activity
+level. During the three weeks of the study, participants also changed
+their habits towards a more active lifestyle. Based on our results,
+we discuss i) the impact of a living visualization, and ii) people’s
+diversities as a factor when designing PI tools. We then introduce
+iii) the Goal Motivation Model, which is based on the degree of goal
+abstraction, captures different motivations, and supports diversity.
+
+7.1
+
+The Impact of a Living Visualization
+
+Our results indicate that the emotional commitment to the living visualization is a key factor in motivating and engaging people
+towards improving their activity level. Participants connected emotionally to their plant – all mentioned that they did not want to let
+their plant die. Participants felt sadness, guilt, and pride towards
+their plant, and even compared the plant to a pet. The two participants who first told us that they did not feel connected to the plant
+later told us the opposite. I3 initially said “I personally feel very
+indifferent about the plant” but later expressed feelings of responsibility for the plant (“I feel some kind of self-obligation every night
+to make sure that I’ve gotten enough steps”); felt guilt (“I felt kinda
+guilty if I didn’t have enough water by the end of the day”); and
+cared for the life of the plant (“I would not have cared at all if the
+flower was virtual”). I3 further said that the plant affected their
+behaviour: “I would be about to eat . . . something fattening then I
+
+would see the plant and that would somehow make me feel guilty.”;
+concluding “I did care about [the plant] unconsciously”.
+This emotional commitment is probably due to the living visualizations being different from raw numbers, standard visualizations,
+and virtual metaphors, because they are alive. Although the plant
+is not the method by which people gain the most information about
+their activity level, it is the plant that the participants committed to
+the most. A living visualization gives meaning to an otherwise less
+meaningful goal of reaching an arbitrary numerical goal.
+
+7.2
+
+Goal Meaningfulness
+Goal Abstractness
+
+high
+Social
+Goal
+
+Emotional Goal
+
+Substitute
+Goal
+
+Numerical
+Goal
+
+9768
+
+Considering the Facets of Diversity
+
+People tracking or willing to track their activity data have diverse
+activity levels, goals, and motivation; they cannot be reduced to one
+single kind of stereotyped person. Our results highlight four types
+of diversity: 1) of activity levels, 2) of schedules, 3) of motivations
+and goals, and 4) of strategies for accomplishing goals.
+1. Diversity of activity levels. People have an activity level ranging from nearly nothing to extremely high. However, standard tools
+do not consider this diversity. For example, Fitbit.com attributes the
+exact same goal of 10,000 daily steps to any new user.
+Preset goals may be impossible to reach for someone with a low
+activity level. People with low activity levels in our study committed
+to the plant and did not care much about the actual numbers. These
+people still benefit from the social commitment since: i) the raw
+data is difficult to read because a living visualization is an abstract
+representation; and ii) both a professional athlete and a non-active
+person can compare their living visualizations because the goal is
+set to be relative to the activity of the person.
+In contrast, people with high activity levels in our study tended to
+commit more to the numerical value than to the plant.
+2. Diversity of schedules. When people have relatively consistent schedules, a daily goal is reasonable and favours consistency.
+Some of our participants had erratic schedules, unexpected events,
+deadlines, illnesses—a few of the many factors that can disturb daily
+activities. They may be discouraged quickly if their goal has to
+be reached every day. The living visualization and goal banking
+helped tackle this issue. First, the living visualization is a forgiving
+visualization. having less water for a couple of days altered the
+plant’s appearance slightly, but did not kill it. This results in minor
+punishments for someone who had been less active for a day or two.
+Second, goal banking can be capitalized. Goal banking consisted
+of capitalizing extra amounts of water. Participants used the stored
+water on days when they could not reach their goal.
+3. Diversity of motivations and goals. Motivators included
+having a healthy plant, earning water, and achieving a numerical
+goal. In fact, participants were motivated by several of these aspects
+at once and pursued them with varying degrees of commitment.
+Even those with a low activity level, whose motivation mostly came
+from the plant and the social context, sometimes gained motivation
+for achieving the numerical goal. Inversely, those with a high activity level, mostly motivated by the numerical goal, also gained
+motivation through the social context, the water level, and the plant.
+4. Diversity of strategies for accomplishing goals. Our results
+revealed three strategies that participants employed to ensure that
+their plant would receive the maximum amount of water every day:
+• Changing everyday habits is a long-term behaviour change,
+that occurred for participants who preferred to change everyday habits rather than having erratic behaviours, typically by
+taking the stairs instead of the elevator and walking to work;
+• Planning for inactivity is a mid-term behaviour change that
+occurred when participants anticipated a period of inactivity.
+They banked water by taking long walks the days before to
+ensure that their plant would get enough water everyday;
+
+low
+
+Commitment
+
+Awareness
+
+Commitment
+
+Living
+Visualization
+
+Awareness
+
+Commitment
+
+Social
+Context
+
+Awareness
+
+Abstracted
+Activity
+
+Precise
+Activity
+Tracker
+
+Commitment
+
+Awareness
+
+Figure 5: Goal Motivation Model. The four levels of goal
+abstraction—activity tracker, abstracted activity, living visualization, and social context—play a role in one’ awareness and
+behaviour change and have a commitment–awareness tradeoff.
+• Reacting under pressure is a short-term behaviour change that
+occurred when participants realized that they would not reach
+their daily goal, typically by taking walks late at night.
+Summary. Standard ways of visualizing personal activity data
+tend to be generic approaches which do not consider these facets
+of diversity. Our results show that these facets of diversity are all
+factors of engagement. Based on this observation, we introduce
+the Goal Motivation Model, which supports and even encourages
+considering the facets of diversity when designing PI tools.
+
+7.3
+
+Goal Motivation Model
+
+From our results we derive the Goal Motivation Model, illustrated
+in Figure 5, that supports and encourages considering the facets
+of diversity. This model, based on the degree of abstractness of
+visualizations, results in a tradeoff between an person’s commitment
+to a goal and their awareness of their activity level. We describe the
+four levels of abstraction that surround a person in this model.
+1. The precise activity tracker is the standard activity monitoring tool that provides a concrete numerical goal. Few people
+commit to this numerical goal, as evidenced by the quick drop off
+from activity trackers [32]. On the other hand, this level is the most
+powerful way for people to increase their awareness by providing
+them with precise numbers. In our study, even participants who
+already used an activity tracker and an online dashboard before the
+study became more aware of their activity level. Our interpretation
+is that people can increase their awareness of their activity level
+through activity trackers if they have an external motivation to look
+at their device every day—the plant in our study. This was echoed
+by our participants, e.g., “Before, sometimes I wouldn’t even check it
+at all for a couple of days, but during the study I would check every
+day to make sure that my plant would get watered” [G4]. In brief,
+this level provides the most precise information about the activity,
+but does not seem to engage people to commit to a goal.
+2. The abstracted activity is the intermediate level between the
+precise activity tracker and the abstract living visualization. Water
+level does provide a slightly abstract visualization, similar to a bar
+chart. This level results in a substitute goal to the goal of reaching a
+number of steps. The key point is that the step count is not an end
+in itself, and neither is the earned amount of water. In this cascaded
+approach, the step count goal is a means by which people can collect
+water; the height of water goal is a means by which they can achieve
+
+their concrete goal—maintaining a living entity. Some people may
+focus on this activity measure instead of their step count, since the
+abstracted measure contributes more directly to their goal of keeping
+the plant alive. The abstracted activity shown by the water level
+also provides people with more awareness than the plant because
+the activity level is represented in a less abstract way. The substitute
+goal can also be used to bank abstracted activity.
+3. The living visualization results in an emotional goal. People
+emotionally connect to the living visualization, and commit to the
+meaningful goal of keeping it healthy. They commit to achieving
+this goal because the visualization is a living entity whose life
+depends on their activity. They feel sad when the living entity looks
+unhealthy; proud when it looks healthy; and guilty when they are
+inactive. This variety of feelings does not occur when looking at
+numbers or bar charts. Although the living visualization results in
+a strong commitment towards the goal of keeping a living entity
+healthy, it does not provide people with much awareness of their
+activity level. This is due to the abstractness of the visualization,
+which in particular does not reflect short-term activity changes.
+4. The social context surrounds the person with regards to the
+living visualization. This context can include other people tracking
+their fitness data in a competitive/comparative setting with friends,
+family, and colleagues. Social context creates positive pressure to
+maintain the living visualization’s health, creating a social goal.
+This social goal relates to Fogg’s [8] principles of competition,
+cooperation, and recognition, which bring intrinsic motivation. In
+this level, the social goal is meaningful: it consists of feeling proud
+of the health of the living visualization in front of other people.
+The entourage does not know the numerical value associated to the
+person’s goal, and does not need to know how the living visualization
+is maintained. They just know that the health of the plant is somehow
+related to the level of activity of the person.
+Goal Motivation Model and the facets of diversity. The model
+supports all facets of diversity discussed in section 7.2. It supports
+the diversity of activity levels, ranging from low to high, by using
+leveled goals with increasing abstractness. It supports the diversity
+of schedules, ranging from regular activity to erratic schedules, by
+1) letting people commit to the forgivable living visualization; and
+by 2) providing them with a way to compensate inactive days with
+very active days. It supports the diversity of motivations and goals
+and the diversity of strategies for accomplishing goals, because it
+is flexible, which lets people decide the degree of abstractness they
+commit to and their strategy to reach their goal(s). This model
+relates to Fogg’s [8] functional triad. Participants in our study were
+motivated by all three aspects of the functional triad (social aspect,
+tool and medium), however, with a commitment–awareness tradeoff
+illustrated in Figure 5 according to participants’ diversity.
+
+7.4
+
+Limitations and Future Work
+
+Our qualitative study revealed the existence of factors of engagement with personal activity data. The purpose of this study was to
+shed light on these factors and to deepen our understanding of what
+motivates people in tracking and self-reflecting on their personal
+activity data. Like many similar studies, the short duration of our
+study makes it difficult to claim that people changed their long-term
+behaviour. Instead, this work opens the space of using living visualizations for personal data. Our results will inform further research
+in this area, and we suggest different strategies to expand both the
+Go & Grow system and the Goal Motivation Model in the future.
+Long-term response: While our study unveiled interesting results,
+a longer study would be able to explore the long-term effects of a
+living visualization on awareness and behaviour change. However,
+the fact that eight participants kept using the system after the end of
+
+the study is a positive indicator of enduring interest in the system.
+Confounding factors: More studies are needed to fully understand
+the effect of individual factors on motivation and awareness.
+Limits of goal banking: Goal banking allowed for forgiveness.
+However, having an excess of earned water discouraged some participants from being active. A limit could be placed on the amount of
+water stored, or water accumulation could be prevented by adjusting
+the daily goal based on recent performance. Gradually increasing
+their step goal would actively challenge those who have increased
+their activity level. Similarly, gradually decreasing the step goal of
+those who have been struggling could provide encouragement.
+Beyond steps and water: Other controls could be applied to other
+factors that influence a plant’s growth, e.g., varying amounts of light
+and adding fertilizer. Similarly, step count does not fully represent
+one’s activity level. Other metrics such as heart rate, calories burnt
+and floors climbed, could be used to control different parameters
+that affect plant growth, e.g., lighting according to floors climbed,
+adding fertilizer according to calories burnt, etc.
+Timeliness of change: The plant gave little short term feedback of
+activity level. Short term feedback could be increased by adding dye
+to the water, which travels up the plant and tints the petals. A plant
+that receives more water would be more vibrantly coloured. Making
+the living visualization less abstract in the Goal Motivation Model
+would affect the tradeoff between the timeliness of change of the
+plant and the abstractness of the visualization. Abstractness offers
+forgiveness and privacy—two important factors of engagement.
+Ethical issues: Living visualizations are not constrained to plants.
+Some participants made a parallel between taking care of a plant
+and taking care of a pet, which raises some important ethical issues.
+
+8.
+
+CONCLUSIONS
+
+We explored living visualizations as a tool to engage individuals
+to gain awareness of their activity level and motivate them to be
+more active. We designed, implemented, and evaluated Go & Grow
+as a proof of concept of living visualizations. By linking individuals’ step count to the amount of water that their plant receives, we
+revealed unexplored aspects of personal activity tracking. Notably,
+we found that individuals emotionally commit to the goal of keeping
+the living visualization alive, regardless of their activity level. Living visualizations differ from existing tools and virtual metaphors,
+because they trigger feelings such as pride, sadness and guilt.
+By analyzing the results from our study, we distilled four goals
+with different levels of abstractness that individuals can commit to,
+based on which we built the Goal Motivation Model. This model
+considers the diversity of individuals, thus supports and encourages
+diverse strategies for accomplishing goals. Because it encompasses
+four levels of goal abstractness, it can be applied beyond activity
+tracking, paving the way for designing technologies that will help
+individuals commit to personal goals in their everyday life.
+
+9.
+
+ACKNOWLEDGMENTS
+
+This research was supported in part by NSERC, SMART Technologies, and AITF. We thank the participants to our study. We also
+thank Tamara Flemisch, Terrance Mok, and Tiffany Wun for proofreading the paper; as well as David Ledo for drawing our fictional
+character, Anna.
+
+10.
+
+REFERENCES
+
+[1] L. Bartram. Design challenges and opportunities for
+eco-feedback in the home. IEEE CG&A, 35(4):52–62, 2015.
+[2] S. Berkovsky, M. Coombe, J. Freyne, D. Bhandari, and
+N. Baghaei. Physical activity motivating games: Virtual
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+[11]
+
+[12]
+
+[13]
+
+[14]
+
+[15]
+
+[16]
+
+[17]
+
+[18]
+
+rewards for real activity. In Proc. CHI, pages 243–252. ACM,
+2010.
+S. Consolvo, K. Everitt, I. Smith, and J. A. Landay. Design
+requirements for technologies that encourage physical activity.
+In Proc. CHI, pages 457–466. ACM, 2006.
+S. Consolvo, P. Klasnja, D. W. McDonald, D. Avrahami,
+J. Froehlich, L. LeGrand, R. Libby, K. Mosher, and J. A.
+Landay. Flowers or a robot army?: Encouraging awareness &
+activity with personal, mobile displays. In Proc. UbiComp,
+pages 54–63. ACM, 2008.
+S. Consolvo, D. W. McDonald, and J. A. Landay.
+Theory-driven design strategies for technologies that support
+behavior change in everyday life. In Proc. CHI, pages
+405–414. ACM, 2009.
+S. Consolvo, D. W. McDonald, T. Toscos, M. Y. Chen,
+J. Froehlich, B. Harrison, P. Klasnja, A. LaMarca, L. LeGrand,
+R. Libby, I. Smith, and J. A. Landay. Activity sensing in the
+wild: A field trial of ubifit garden. In Proc. CHI, pages
+1797–1806. ACM, 2008.
+C. Feng, L. Bartram, and B. E. Riecke. Evaluating affective
+features of 3d motionscapes. In Proc. SAP, pages 23–30.
+ACM, 2014.
+B. Fogg. Persuasive Technology: Using Computers to Change
+What We Think and Do. Morgan Kaufmann Publishers Inc.,
+San Francisco, CA, USA, 2002.
+R. Gasser, D. Brodbeck, M. Degen, J. Luthiger, R. Wyss, and
+S. Reichlin. Persuasiveness of a mobile lifestyle coaching
+application using social facilitation. In Proc. PERSUASIVE,
+pages 27–38. Springer-Verlag, 2006.
+W. Hardeman, S. Griffin, M. Johnston, A. L. Kinmonth, and
+N. J. Wareham. Interventions to prevent weight gain: a
+systematic review of psychological models and behaviour
+change methods. Int. J. Obes. Relat. Metab. Disord.,
+24(2):131–143, Feb 2000.
+D. Harrison, P. Marshall, N. Berthouze, and J. Bird. Tracking
+physical activity: Problems related to running longitudinal
+studies with commercial devices. In Proc. UbiComp, pages
+699–702. ACM, 2014.
+J. Haviland-Jones, R. Hale, and T. McGuire. An Environmental Approach to Positive Emotion: Flowers, Evolutionary
+Psychology. Evolutionary Psychology, pages 104–132, 2005.
+J. O. Hill, H. R. Wyatt, G. W. Reed, and J. C. Peters. Obesity
+and the environment: where do we go from here? Science,
+299(5608):853–855, 2003.
+D. Holstius, J. Kembel, A. Hurst, P.-H. Wan, and J. Forlizzi.
+Infotropism: Living and robotic plants as interactive displays.
+In Proc. DIS, pages 215–221. ACM, 2004.
+D. Huang, M. Tory, B. Aseniero, L. Bartram, S. Bateman,
+S. Carpendale, A. Tang, and R. Woodbury. Personal
+visualization and personal visual analytics. IEEE TVCG,
+21(3):420–433, March 2015.
+Y. Jansen, P. Dragicevic, P. Isenberg, J. Alexander, A. Karnik,
+J. Kildal, S. Subramanian, and K. Hornbæk. Opportunities and
+challenges for data physicalization. In Proceedings of the 33rd
+Annual ACM Conference on Human Factors in Computing
+Systems, CHI ’15, pages 3227–3236. ACM, 2015.
+R. A. Khot, L. Hjorth, and F. F. Mueller. Understanding
+physical activity through 3d printed material artifacts. In Proc.
+CHI ’14, pages 3835–3844. ACM, 2014.
+E. J. Langer and J. Rodin. The effects of choice and enhanced
+personal responsibility for the aged: a field experiment in an
+
+institutional setting. J Pers Soc Psychol, 34(2):191–198, 1976.
+[19] M.-H. Lee, S. Cha, and T.-J. Nam. Patina engraver:
+Visualizing activity logs as patina in fashionable trackers. In
+Proc. CHI, pages 1173–1182. ACM, 2015.
+[20] I. Li, A. Dey, and J. Forlizzi. A stage-based model of personal
+informatics systems. In Proc. CHI, pages 557–566. ACM,
+2010.
+[21] I. Li, A. K. Dey, and J. Forlizzi. Understanding my data,
+myself: Supporting self-reflection with ubicomp technologies.
+In Proc. UbiComp, pages 405–414. ACM, 2011.
+[22] J. J. Lin, L. Mamykina, S. Lindtner, G. Delajoux, and H. B.
+Strub. Fish’n’steps: Encouraging physical activity with an
+interactive computer game. In Proc. UbiComp, pages
+261–278. Springer-Verlag, 2006.
+[23] E. A. Locke and G. P. Latham. Building a practically useful
+theory of goal setting and task motivation: A 35-year odyssey.
+American Psychologist, 57(9):705, 2002.
+[24] B. H. Marcus, L. H. Forsyth, E. J. Stone, P. M. Dubbert, T. L.
+McKenzie, A. L. Dunn, and S. N. Blair. Physical activity
+behavior change: issues in adoption and maintenance. Health
+Psychology, 19(1S):32, 2000.
+[25] J. H. Murray. Inventing the Medium: Principles of Interaction
+Design As a Cultural Practice. The MIT Press, 2011.
+[26] V. Nenonen, A. Lindblad, V. Häkkinen, T. Laitinen,
+M. Jouhtio, and P. Hämäläinen. Using heart rate to control an
+interactive game. In Proc. CHI, pages 853–856. ACM, 2007.
+[27] D. Norman. Emotion & design: Attractive things work better.
+interactions, 9(4):36–42, July 2002.
+[28] C. North. Toward measuring visualization insight. IEEE
+CG&A, 26(3):6–9, May 2006.
+[29] C. Perin, P. Dragicevic, and J.-D. Fekete. Revisiting bertin
+matrices: New interactions for crafting tabular visualizations.
+IEEE TVCG, 20(12):2082–2091, Dec 2014.
+[30] Z. Pousman, J. Stasko, and M. Mateas. Casual information
+visualization: Depictions of data in everyday life. IEEE
+TVCG, 13(6):1145–1152, Nov. 2007.
+[31] J. Rodgers and L. Bartram. Exploring ambient and artistic
+visualization for residential energy use feedback. IEEE TVCG,
+17(12):2489–2497, Dec 2011.
+[32] P. C. Shih, K. Han, E. S. Poole, M. B. Rosson, and J. M.
+Carroll. Use and adoption challenges of wearable activity
+trackers. In Proc. iConference, 2015.
+[33] B. J. Speck and S. W. Looney. Effects of a minimal
+intervention to increase physical activity in women: daily
+activity records. Nursing Research, 50(6):374–8, 2001.
+[34] S. Stusak, A. Tabard, F. Sauka, R. Khot, and A. Butz. Activity
+sculptures: Exploring the impact of physical visualizations on
+running activity. IEEE TVCG, 20(12):2201–2210, Dec 2014.
+[35] A. Thudt, D. Baur, and S. Huron. Visual mementos: Reflecting memories with personal data. IEEE TVCG, 2015.
+[36] X. Tong, D. Gromala, L. Bartram, F. Rajabiyazdi, and
+S. Carpendale. Evaluating the effectiveness of three physical
+activity visualizations — how people perform vs perceive. In
+IEEE VIS Electronic Proceedings, 2015.
+[37] A. Vande Moere. Beyond the tyranny of the pixel: Exploring
+the physicality of information visualization. In Proc. IV, pages
+469–474, July 2008.
+[38] S. Wang, Y. Tanahashi, N. Leaf, and K.-L. Ma. Design and
+effects of personal visualizations. IEEE CG&A, 35(4):82–93,
+July 2015.
+
+

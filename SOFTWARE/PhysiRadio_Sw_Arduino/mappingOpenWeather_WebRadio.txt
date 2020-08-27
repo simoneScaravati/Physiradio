@@ -1,0 +1,33 @@
+
+MAPPING FOR OPEN WEATHER API TO TRASLATE INTO SPECIFIC AUDIO STREAM:
+
+WEATHER CONDITION --> MUSICAL GENRE (INTRODUCE BIAS):
+
+- Thunderstorm 
+- Drizzle
+- Rain
+- Snow
+- Clear
+- Clouds
+
+- Atmosphere:
+Mist 	
+Smoke 
+Haze
+Dust
+Fog
+Sand
+Dust
+Ash
+Squall
+Tornado
+
+
+RADIO STATIONS : 
+//CALM RADIO - SOLO PIANO:          	http://streams.calmradio.com:1228/stream/1/
+//MEGA GYM - solo gym music :   	http://5.135.183.124:8069/stream
+//CHROMA METAL - solo metal :  		http://148.251.184.14:8022/;
+//AAH RADIO - solo classical/baroque:	http://78.129.251.150:10002/stream
+//101 Smooth Jazz - solo smooth jazz: 	http://www.vip-radios.fm/stream/101-Smooth-Jazz
+//Chroma Christmas - solo Xmas songs:	http://148.251.184.14:8044/;
+

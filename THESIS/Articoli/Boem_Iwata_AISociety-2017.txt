@@ -1,0 +1,1906 @@
+AI & Soc
+DOI 10.1007/s00146-017-0752-1
+
+OPEN FORUM
+
+‘‘It’s like holding a human heart’’: the design of Vital + Morph,
+a shape-changing interface for remote monitoring
+Alberto Boem1 • Hiroo Iwata2
+
+Received: 9 July 2017 / Accepted: 21 July 2017
+ Springer-Verlag London Ltd. 2017
+
+Abstract Based on the concept of data physicalization, we
+developed Vital ? Morph, an interactive surface for
+remote connection and awareness of clinical data. It
+enables users located in remote places to monitor and feel
+the vital signs measured from a hospitalized person through
+shape-change. We propose shape-changing interfaces as a
+way of making data physicalization a richer, intriguing and
+memorable experience that communicates complex information and insights about data. To demonstrate and validate our proposed concept, we developed an exploratory
+study about the design and its implications. For evaluating
+the social impact of shape-changing interfaces in the context of remote monitoring, we presented Vital ? Morph in
+several Media Art festivals. We collected and analyzed the
+feedback from the visitors during the exhibitions, and
+discussed the possibilities of the proposed system. A preliminary evaluation shows how shape-changing displays
+are perceived by users, which establishes not only the
+potential benefits but also highlights the concerns that
+several users have raised. Through this study, we aim to
+contribute to the design of remote monitoring systems by
+providing a novel approach for displaying clinical data that
+consider the richness of the physical world. In today’s
+information-driven society, we should not just focus on
+
+& Alberto Boem
+alberto@vrlab.esys.tsukuba.ac.jp
+Hiroo Iwata
+iwata@kz.tsukuba.ac.jp
+1
+
+Empowerment Informatics, School of Integrative and Global
+Majors, University of Tsukuba, Tennodai 1-1-1, Tsukuba
+305-8573, Japan
+
+2
+
+Faculty of Engineering, Information and Systems, University
+of Tsukuba, Tennodai 1-1-1, Tsukuba 305-8573, Japan
+
+how abstract data are collected and analyzed, but also on
+how it can be presented and incorporated into our daily
+lives.
+Keywords Shape-changing interfaces  Remote
+monitoring  Information technologies  Haptics 
+Vital signs
+
+1 Introduction
+Remote monitoring can be regarded as a subdivision of
+telemedicine that involves the use of audio, video,
+telecommunication and information processing techniques
+to remotely monitor patient status. Usually, the data collected are displayed on screens and monitors. However, the
+commonly used numerical and waveform visualization
+techniques and pixel-based displays are unable to adequately depict the embodiment of data and to intuitively
+represent data in forms easy for our consumption and
+comprehension (Van de Moere 2008).
+Data collection and analysis is usually perceived to be
+within the exclusive domain of scientific enquiry. The most
+common image that comes to our mind whenever data are
+mentioned is a series of numbers presented in a spreadsheet.
+However, because of the widespread use of embedded sensor
+networks and mobile systems, data have penetrated our
+everyday lives, which has raised a new set of questions. Most
+of these questions pertain to the integration and engagement
+of data. Many questions are also related to the methods used
+for displaying data and making it comprehensible to humans.
+This is done by the visual representation of data present in the
+form of a sheet filled with numbers as histograms or charts.
+We can notice that in the common discourse there is a tendency to talk about data in a general and abstract manner.
+
+123
+
+AI & Soc
+Fig. 1 A complete view of
+Vital ? Morph and its main
+components: a the
+Vital ? Morph interface,
+composed of (1) the Vitals, and
+(2) Morph; b a software that
+simulates the functions of a vital
+signs monitoring station;
+c another morph that can be
+placed at a different place from
+a and can communicate with it
+
+This attitude reveals a belief that data can be disembodied
+from its source. However, data are not neutral; it can actually
+help people take appropriate action. In the healthcare
+domain, the expert who can analyze and interpret a patient’s
+data has become extremely critical. In addition, medical
+device firms often make it very difficult for patients to access
+their own data (Iaconesi and Persico 2016). However, we are
+witnessing the emergence of a tendency that Nafus (2016)
+calls the domestication of data, which can be defined as the
+process of consumption and adoption of data using widely
+available technologies such as personal computers or mobile
+phones. Though, in the past, even these technologies were
+originally designed for very specific applications, they have
+quickly proliferated once people started adopting them in
+their everyday lives. The concept of domestication of data
+does not refer to a process of making people ‘data scientists’.
+On the contrary, it concentrates on emerging and possible
+ways of using, sharing, and engaging with abstract data,
+which also include clinical data. To become a part of our
+everyday experience and environment, data will need to be
+transformed from an abstract entity to an explicit and tangible material entity. Here, tangible does not necessarily
+mean that abstract data can be touched or grasped; it just
+implies the presence of data in the physical world to help
+people relate to its existence (Ishii and Ullmer 1997).
+Even though digital and information technologies have
+commonly been described as ‘immaterial’, in recent years,
+there has been a resurgence in the interest in exploring the
+material qualities of abstract data. Driven by the increasing
+prevalence of Internet of Things (IoT), this discussion has
+been taken up in fields such as Media Art and human–computer interaction (HCI). The notion of neomateriality (Paul
+2015) captures such emerging forms of reality wherein digitally augmented objects and appliances transform everything
+into information. Materials that are shaped by information
+objects mirror a reality composed of embedded processes and
+data. Recently, in HCI, the practice of data physicalization
+(Jansen et al. 2015) has been introduced as a novel paradigm
+for making abstract data perceptible to humans by encoding it
+into the physical qualities of materials. In contrast to common
+
+123
+
+approaches like data visualization and data sonification,
+physicalization has the potential to open new ways of physically engaging people with information (Willett et al. 2017).
+The emergent area of research on shape-changing interfaces is
+directly related to such issues. The goal of shape-changing
+interfaces is to represent the continuous change in the flow of
+digital information using novel materials that can depict data
+based on its physical qualities.
+In this study, we introduce the development and evaluation
+of Vital ? Morph (Fig. 1), a shape-changing interface used
+for remote monitoring through data physicalization.
+Vital ? Morph is composed of a series of reactive materials
+that can physically represent the vital signs of a patient located
+remotely in real time, for the benefit of his/her parents and
+friends. Through this research, we aim to explore how the
+engagement and awareness of physiological measurements of
+a remote patient can be improved through dynamic physicalization and shape-change. We will test our system for a
+specific case based on a fictional scenario of remote monitoring, involving a patient hospitalized in the Intensive Care
+Unit (ICU). The patient’s vital signs are physicalized at a
+remote location using the Vital ? Morph technique. Through
+this study, we will review the conceptual spectrum of representing abstract information in a physical manner and relate it
+to the emerging field of shape-changing displays. The design
+metaphors, technical implementation, and system evaluation
+will be described in detail. To assess and prove the proposed
+concept, we will present an exploratory study in two steps. The
+first step involves the evaluation of the system’s basic performance. The second step is a user study conducted during
+two festivals of Media Art, where Vital ? Morph was presented as an interactive installation.
+
+2 Design concept: bio-inspired principle
+By designing Vital ? Morph, we explored a bio-inspired
+approach not only as an aesthetic element, but also as a
+way to find novel designs for distributing abstract data in
+space, exploring ways to relate the data to material
+
+AI & Soc
+
+properties, and enabling interactions from the system’s
+characteristics.
+2.1 Life, data, and materials
+The continuous production of information and communication of data are usually expressed through verbs such as
+‘‘stream’’ and ‘‘flow’’. It is very common to refer to processes such as ‘‘data streaming’’ and ‘‘information flow’’.
+Such expressions evoke the image of the relentless movement that characterizes natural elements like air and water.
+In fact, this analogy can be extended to physiological
+processes like blood circulation or respiration. By observing such expressions, we can note that the invisible
+behavior of our information society is characterized by
+elements of movement, changes in time, and production of
+energy. However, this flow cannot be physically perceived
+by humans. As a simple example, we cannot hold a stream
+of water; we can just feel it by inserting the hands into a
+torrent. Similarly, the flow of electrons or the waves of a
+Wi-Fi network cannot be physically grasped. The use of
+such expressions in daily life suggests that maybe the next
+step in information society will involve us getting physically closer and connected to the unstoppable flow of
+digital information and data production. Shape-changing
+interfaces seem to be a suitable way of facilitating such a
+shift. However, there is still a big gap: the difficulty in
+finding materials that can offer the same malleability that
+we can observe in simulations with 3D computer graphics
+and real-time synthesis of digital sounds. We have imagined and designed a novel material, a material capable of
+adapting its own characteristics to the flow, frequency and
+amplitude of the information, in our case, the vital signs. It
+should be similar to a rheological material, which is a
+material that can change its physical state in response to a
+received stimulus. For this, we have developed a perceptually equivalent system, which can mimic the behavior
+and qualities of this imaginary material.
+2.2 Diatoms
+Biological organisms have inspired artists, designers and
+engineers since a long time. Especially, architects have
+often referred to organisms for finding novel forms, and
+structural and aesthetic solutions. The impact can also be
+observed in product design, wherein the curved and organic
+styles have been used for rethinking the shape and form of
+different objects such as cars and photographic cameras.
+However, such bio-inspired approaches were only used for
+designing and shaping static objects and architectural elements (Lynn 1999). Moreover, information flow and data
+production happens in time. In his seminal work on biology, D’Arcy Thompson (1992) analyzes the evolution of
+
+organisms from the point of view of his theory of transformation. He noticed that the form of an organism and its
+evolution is an event in space and time. Most importantly,
+he said that from a mathematical point of view ‘‘organic
+form is found […] to be a function of time’’ (Thompson
+1992). The aspect of time and its relations with shapechange thus becomes very important. Biological organisms
+are also well known for their efficient use of material,
+energy, and management of complex processes. Among the
+vast variety of these organisms, diatoms generate considerable interest. Diatoms are a large group of microscopic
+single-celled algae, which can be found in nearly every
+habitat characterized by water. They possess some interesting functional, structural and topological characteristics.
+We took some elements of diatoms as a reference for
+designing the functions, behavior, and appearance of
+Vital ? Morphs:
+(a) Transformation of external stimuli: Diatoms are
+regarded as one of the largest groups of photoplanktons,
+which are organisms that, through a process of photosynthesis, take the sun’s energy and convert it into nutrients.
+Because of this characteristic, diatoms represent one of the
+most vital components in ocean and fresh water
+ecosystems.
+Implementation: Vital signs represent the ‘nutrient’ of
+the material that is brought to life by translating abstract
+data into physical motion and shape-change.
+(b) Deformability: Diatoms not only take nutrients from
+light, they also absorb them through water. This is made
+possible by the elaborate perforations on their shell, made
+of a silica-based material. The cell wall is composed of a
+cytoskeletal structure called frustule that consists of two
+halves. The combination of the structural and the material
+qualities allows diatoms to perform significant deformations of their overall structure to withstand high loads.
+Implementation Deformability became an important
+aspect of the design of our interface. We decided to distribute different degrees of deformability among the different elements. One element is deformed by the received
+data to display it through its surface, while another can be
+actively deformed by the users.
+(c) Morphology Diatoms grow as single cells. However,
+they can form filaments and simple colonies. Such colonies
+are composed of cells connected usually by organic threads
+or by attaching to different substrates like plants.
+Implementation From these characteristics, we derived
+the modularity and spatial configuration of the global
+Vital ? Morph interface as a colony of physicalizations.
+(d) Monitoring and information retrieval Diatoms are
+often specific to particular habitats because they exhibit
+tolerance to different environmental variables such as the
+chemical composition of the water in which they live. As a
+result, diatoms are used extensively in environmental
+
+123
+
+AI & Soc
+
+assessment and monitoring. Since the silica walls do not
+decompose, diatom shells found in marine and lake sediments are used to interpret historical conditions of the
+environment.
+Implementation Even though in Vital ? Morph we have
+not incorporated the possibility of retrieving historical
+information, this function of diatoms, which allows them to
+display information through the characteristics of their
+shapes, is a fundamental concept used for the design of the
+interface.
+
+3 Background and related work
+Our research builds on three main strands of related work.
+First, we will discuss the most common strategies used in
+clinical environments for making physiological data perceptible to users such as physicians. In contrast to these
+approaches, we will then introduce some alternative
+methods for presenting abstract data in home-like environments. Special attention will be given to examples that
+explore the presentation of data through static physical
+artifacts, the concept termed as data physicalization.
+Lastly, we will extend such ideas through shape-changing
+interfaces and review examples from recent literature.
+Throughout this section, we will detail the background
+research and the open issues related to our research.
+3.1 Vital signs and remote monitoring
+Vital signs are measurements of the body’s most basic
+functions widely evaluated in healthcare. These measurements are taken to assess the general physical health conditions of a patient, to detect potential diseases in advance,
+and to assess progress toward recovery. There are four
+primary vital signs which are considered standard in most
+medical settings: body temperature, heart rate, respiratory
+rate, and blood pressure. For the simplest cases, the measurement and monitoring of vital signs are performed
+directly by clinicians using their own senses or with the use
+of technological aids such as thermometers and stethoscopes. Such direct monitoring is a practice that connects
+the clinician and the patient through physical contact when
+they are at the same location. However, with the introduction of information technology in clinical environments, the act of measurement and analysis has become
+increasingly distinct (Nangalia et al. 2010). Now, between
+the clinician and the patient, multiple stages and processes
+have been devised. Measurements of vital signs are conducted using appropriate sensors and transmitted from the
+patient to clinician. Such measurements can be integrated
+with other historical data describing the state of the patient
+to provide in-depth analysis and to facilitate decision-
+
+123
+
+making. Such a practice is commonly referred to as remote
+monitoring, which can be defined as the use of telecommunication technologies to provide and support healthcare
+when physical distance separates the participants. Patients
+and clinicians can be in different cities, countries, continents, or even in planets (Korhonen et al. 2003; Cermack
+2006). One of the first successful applications of remote
+monitoring was observed in 1961, when the physiological
+data of the first human in space—the Russian astronaut
+Yuri Gagarin—were continuously monitored by doctors on
+earth. Recently, in HCI, several researchers have proposed
+the inclusion of family members and online communities in
+remote monitoring to make it a less socially disorganizing
+experience (Johnson and Ambrose 2006).
+3.2 Perceptualization of physiological data
+Even though many efforts have been made to develop new
+bio-sensing techniques and signal processing algorithms, little
+study has been conducted on the perceptualization of physiological data (Jovanon et al. 2001; Maciejewski et al. 2005).
+By the term perceptualization, we refer to the process of
+translation of abstract data and information into modalities
+that appeal to a variety of human senses. In remote monitoring,
+the most commonly used sense is the visual sense. Data are
+commonly presented through dedicated displays (CRT and
+digital screens) that visualize the different vital signs through
+time-series plots such as waveforms, and numerical values
+(Kusunoki et al. 2013). Such displays are an essential part of
+clinical care. However, such a way of presenting physiological
+measurements through waveform can be dated back to the first
+recording of a human electrocardiogram (ECG) done in 1887
+by Augustus Waller. Even with the introduction of computerbased monitoring, such displays and visualizations have
+undergone little change (Görges and Staggers 2008). Only
+small enhancements, such as color displays or the inclusion of
+trending have been incorporated into displays (Drews and
+Westenskow 2016). Along with the visual, the auditory and
+haptic senses are also being addressed. Sound is mostly used
+for alerting clinicians of critical events with acoustic feedback-like alarms (Dubus and Bresin 2014). Vibro-tactile displays attached on the physicians’ fingers have also been
+proposed and tested in a possible combination with auditory
+notifications (McLanders et al. 2014).
+In recent years, multimodal type of displays has started
+to attract the attention of researchers and clinicians (Bitterman 2006). However, little attention has been directed
+towards finding alternative modalities for displaying clinical data that can be understood by ordinary people. If we
+are evaluating the possibility of integrating remote monitoring into daily-life environments, different strategies for
+the perceptualization of vital sign measurements should be
+considered.
+
+AI & Soc
+
+3.3 Ambient displays
+One way of making abstract data perceptible and integrating it with our living environments is through ambient
+displays (Wisneski et al. 1998). These are interfaces that
+convey information and abstract data to the user by
+encoding information in elements available in living
+environments, and presenting changes through output
+modalities such as light, sound, and motion embedded in
+devices that resemble household appliances (Heiner et al.
+1999). The idea of ambient media emerged with the
+introduction of the concept of Ubiquitous Computing
+(Weiser 1991), and later, with the vision of Tangible Bits
+(Ishii and Ullmer 1997). This vision was driven by the idea
+of giving a physical form to digital information by making
+bits tangible and directly manipulable through a seamless
+coupling between physical objects and abstract data in the
+real world by creating a proximity quality to everyday
+human activities. Computation is widely spread in our
+environment, but digital information does not possess any
+inherent spatial layout or presence in the physical world.
+Ambient displays have gained an increasing interest in the
+community of HCI and Media Art, resulting in a growing
+body of research that explores the design space and possible usage of ambient media. However, it was very difficult to introduce such displays in the market and most of
+them still remain as prototypes. Through repeated user tests
+it was noticed that even if the comprehension of an ambient
+display increases over time, the display usage decreases
+over a long period of time (Mankoff et al. 2003).
+3.4 Data physicalization
+Recent innovations in low-cost fabrication and embedded
+computing have sparked a new interest in how physical
+artifacts can present and integrate digital information into
+our environment. Along with techniques such as data
+visualization and sonification, Jansen et al. (2015) have
+proposed data physicalization. Data physicalization is a
+way of encoding abstract data into material properties and
+using the inherent capabilities of objects to communicate
+meaning and functionality using the natural affordances
+they possess. This can lead to alternative representation
+media that learn from humans’ experiences and interpret
+the world around them. However, physical representations
+of abstract data have been developed by humans since
+centuries. Such a way of representing information also
+played a role in shaping the horizons of science and culture
+in the last century. Let us look back at the molecular
+models of Penicillin created by Dorothy Crowfoot Hodgkin
+in 1945, or the physical model of myoglobin developed in
+1958 by Kendrew and colleagues. Such physicalizations
+enabled better understanding of complex data sets and gave
+
+spatial representation to elements such as molecules. Data
+physicalization offers a multitude of potential benefits over
+its purely visual and sonic counterparts (Willett et al.
+2017). First, abstract data encoded in the material qualities
+of a physical object can be directly manipulated. Such
+characteristics are very different from those of ambient
+displays, which are mostly based on ephemeral elements
+(such as light and air) and are mostly designed as peripheral devices. Second, the physical modality can offer a
+wider range of new possibilities for interaction compared
+to on-screen visualizations since physicalizations require
+active engagement from the user. If ambient displays are
+good at showing changes of data over time, data physicalizations can better embody information in objects that
+can be grabbed and actively explored by users. Third, data
+physicalizations can be integrated into the life and environment of users, allowing the presentation of abstract
+information in a more direct, complex and even pleasurable
+way compared to other types of media used for information
+presentation (Brown and Hurst 2012).
+Data physicalizations can have also an artistic purpose.
+Digital data have rapidly become a new ‘‘material’’ used by
+artists to investigate the contemporary landscape. This
+trend was exemplified by the term information aesthetics
+(Manovich 2008), which describes visually pleasing artifacts that communicate information. An interesting example of information aesthetics is a data sculpture (Van de
+Moere 2008), which is a direct representation of data in a
+physical form with its only function being to convey the
+suitable meaning to viewers. However, the data mapping
+metaphor employed in data sculptures may not be immediately understandable. This forces viewers to reflect on the
+process and on how data are embodied in a physical form.
+Moreover, viewers must interpret these data-driven objects
+by the affordances the objects convey. Information translated into physical artifacts can be grabbed, touched, and
+carried like souvenirs or jewelry. An interesting example of
+a data sculptures is the ‘‘Chemo Singing Bowl’’ (Barrass
+2016). This is a 3D-printed sounding sculpture which
+embodies the data of blood pressure recorded over a period
+of 1 year from a patient who underwent chemotherapy for
+breast cancer.
+However, despite the many examples that have been
+proposed, any investigation on the social impact and usage
+of such type of displays is still at a nascent stage.
+3.5 Shape-changing interfaces
+While static physicalizations can be useful and attractive,
+they must be designed and fabricated in advance, and
+modifications of their physical characteristics are often
+limited once created. If we refer to the original definition of
+ambient displays, we can see that its proposition was to
+
+123
+
+AI & Soc
+
+turn everyday architectural spaces into interfaces. By
+changing the state of physical matter, ambient media can
+contain and be controlled by data-driven values. Even if a
+lot of work was done in controlling elements such as light
+and sound for the sake of deploying information, we are
+still exploring ways to make physical form equally
+mutable and controllable. Recent approaches tried to
+explore this possibility of controlling the physical characteristics of the interface (Vertegaal et al. 2008). Previous
+studies in the field of tangible user interfaces (TUIs) made
+use of physical actuation and motion as a way of
+embodying digital information (Pangaro et al. 2002). This
+was viewed as a ‘logical step’ in TUIs, where ‘‘physical,
+tangible elements are not merely dynamically coupled to
+the digital attributes and information, but are themselves
+dynamic, self-reconfigurable devices that can change their
+physical properties depending on the state of the interfaces,
+the user, or the environment’’ (Poupyrev et al. 2007).
+Mechanical actuation has been used to preserve the consistency between the digital and the physical world.
+Examples include dynamic force-feedback displays for
+virtual reality (Iwata et al. 2001, 2005) or physical renderings of computer-simulated 3D models.1
+The definition of shape-changing interfaces was introduced for the first time by Coelho and Zigelbaum (2011)
+for describing an emergent class of interfaces that aims to
+make use of computationally enabled materials and soft
+mechanics for the creation of transformable surfaces. This
+concept was driven mainly by the availability and the
+growing volume of research on the so-called smart materials. Shape-changing materials can be defined as materials
+that undergo a mechanical deformation under the influence
+of direct or indirect stimuli. Information delivery is a key
+use of shape-change and dynamic data physicalization can
+be considered as one of its most interesting and challenging
+fields of applications.
+However, most of the current dynamic physicalizations
+make use of widely used visual metaphors borrowed from
+data visualization such as pie charts2 and animated bar
+charts (Follmer et al. 2013; Hardy et al. 2015; Taher et al.
+2017). These shape-changing interfaces support the translation of pixel-based data by translating the change in a
+pixel’s value into corresponding changes in height. This is
+only one of the many possibilities that can be explored,
+such as the mapping of data to physical variables of
+materials such as smoothness, hardness, sponginess, all of
+which provide additional feedback and methods for data
+physicalization (Jansen et al. 2013). Shape-changing
+interfaces have been also explored in the field of telepresence, such as rendering of physical parts of a distant user
+1
+2
+
+https://artcom.de/en/project/kinetic-sculpture/.
+https://www.microsoft.com/en-us/research/project/physical-charts/.
+
+123
+
+(Leithinger et al. 2014), or supporting intimate connections
+by enriching mobile phones with shape-changing characteristics (Hemmert et al. 2013, Park et al. 2015). Even
+though most of the examples mentioned above are presented using mechanical or pneumatic actuation, the longterm goal of such research is to directly control and make
+use of material properties on a molecular level, and
+embody digital information directly into material properties. This has led to exploration of techniques mutated from
+chemistry and synthetic biology such as the use of magnetorheological materials (Wakita et al. 2010) and dynamic
+skin synthesized by living cells (Yao et al. 2015). The
+vision of ‘‘Radical Atoms’’ (Ishii et al. 2012) represents
+one of the main driving forces in this research area because
+it poses some very fundamental questions: how to interact
+with physical interfaces that transform their shape, conform
+to the constraints and inform users? But even as many
+researchers have tried to answer such questions in different
+ways in recent years, the answers are still not clear and are
+mostly tentative.
+Though such a long-term goal seems very exciting and
+promising, the research on shape-changing interfaces is
+still at a very nascent stage. As noted by Rasmussen et al.
+(2012) there is a lack of application focus on specific
+scenarios, and the direction this research will take is still
+not clear. In addition, there are no shared or proven evaluation methods for such interfaces. This is because most of
+the research is focused on exploring and developing
+enabling technologies. The lack of adequate studies makes
+it difficult to evaluate or imagine the potential social
+impacts and implications of shape-changing interfaces.
+We can see that even though the perceptualization of
+vital signs has been investigated, only visual and auditory
+displays have been considered. We have observed that
+there are very few studies that have used dynamic physical
+interfaces to present and display data, and even fewer
+studies have investigated the interactions and social impact
+of such shape-changing interfaces. Through Vital ? Morph, we aim to contribute to the current research on
+dynamic data physicalizations by exploring the relations
+between physiological data, materials, and shape-change in
+the context of remote monitoring. We are particularly
+interested in investigating design metaphors that differ
+from current examples through a bio-inspired design.
+
+4 Design requirements and system configuration
+Vital ? Morph is composed of two main elements: (1) five
+self-actuated devices enclosed in (2) a deformable container. We named the former Vitals and the latter Morph
+(Fig. 2). In this section, we introduce the design guidelines
+and functions of Vital ? Morph. We will simulate a
+
+AI & Soc
+Fig. 2 Three studies of the
+form and spatial layouts of
+Vital ? Morph inspired by
+diatoms: a a paper model; b a
+graphical representation; c a
+physical model used for testing
+the possible shapes and
+dimensions
+
+Fig. 3 A representation of the
+envisioned scenario: remote
+monitoring of a hospitalized
+person by a family member
+through the use of
+Vital ? Morph
+
+fictional scenario that we have developed to place
+Vital ? Morph in context, and help readers understand the
+aims of the project better. This scenario will also provide a
+reference for the user study and future applications that will
+be discussed later in this study. Lastly, we present the
+design metaphor chosen for designing the appearance and
+the functions.
+
+and monitor the Vitals. They notice that the indicator
+associated with the respiration is moving slow, while the
+one that indicates the pulmonary arterial pressure is
+behaving erratically. Before leaving home, Mr. Antonini
+takes these two Vitals with him. The other family members
+decide to split the others. In the evening, when they all
+come back home, they will put them back together. Before
+leaving, Mrs. Ohnuki slowly moves the Morph (Fig. 3).
+
+4.1 Fictional scenario
+4.2 Design guidelines
+Mrs. Ohnuki lives in Japan with her husband Mr. Antonini
+and their two children. Mr. Antonini’s mother, named
+Giovanna, is hospitalized in Italy following a difficult
+surgery. Since the couple lives in Japan, it is difficult for
+them to remain updated about the condition of Giovanna,
+which is quite complex. She suffers from respiratory issues
+caused by the surgery and also due to her age, which is
+80 years. The family in Japan has a Vital ? Morph
+installed in their living room, barring the heart rate monitor, which Takeo, Mrs. Ohnuki’s son, keeps near his bed. In
+the morning, the family members meet around the display
+
+To implement our concept, we conceived three main
+design guidelines. The first concerns the Vitals, the second
+the Morph, and the third is a combination of both. The
+different characteristics expressed by these guidelines will
+be assessed and tested later in this study (Sects. 5 and 6)
+through an evaluation of the system performances and a
+use case.
+(1) Dynamic physicalization of vital signs The Vitals
+should not be designed for just analyzing data, but also for
+interpreting, or feeling, it. Each Vital must be able to
+
+123
+
+AI & Soc
+
+receive a specific stream of data, display it through shapechange of its surface, and address either the visual or the
+tactile channel. In the current application, we choose five
+vital elements, since this is the number of the fundamental
+vital signs. In this case, the Vitals should also act as a
+physical surrogate of a remotely located patient. With
+respect to the form factor, the Vitals should be self-contained and autonomous (both in terms of power and communication capabilities) and have a shape and dimension
+suitable for a human hand. The user must be able to grab
+the Vitals from inside the Morph, and carry them around.
+(2) Mediated remote touch The Morph must perform
+two functions: (1) it should act as a constraint for the Vitals
+by delimiting the area where they can be placed; (2) it
+should be suitable for remote communication through
+shape-sharing. If the Vitals are used for displaying the vital
+signs received from the Hospital, the Morph is conceived
+with the opposite function. It should enable two-way
+communication between the two places. By linking two
+Vital ? Morphs through an internet connection, it should
+be possible for the patient and his/her relatives to communicate through the Morphs. The deformations caused on
+one side are reflected on the other interface. Like the
+Vitals, the shape-changing characteristics of the Morph
+should be able to address and appeal to both the visual the
+haptic senses.
+(3) Social connectedness and co-monitoring By coupling the Vitals with the Morphs, a physical display can be
+created. The relation between the Morph and Vitals should
+be spatial. When both are combined, the five physicalizations (i.e., the Vitals) can be observed together in the same
+space, next to each other. Users at home can get an overview of the overall status of the vital signs measured on the
+patient. Comparisons can be made by looking at the Vitals.
+Substantial changes in data can be detected by just
+observing the characteristics of shape-change, such as
+frequency and speed. The Morph should also invite users to
+stay around it, to encourage group activity. Users should
+also be able to remove the Vitals from the Morph. In this
+case, the monitoring should become a more private and
+intimate experience. In addition, users must be able to carry
+the Vitals to different places, as we had discussed in the
+fictional scenario.
+
+5 Technical implementation and system
+evaluation
+In this section, we introduce the process of implementation
+of Vital ? Morph. Its main components include a software
+that simulates a vital sign monitoring station and the
+physical elements including the Vitals and the Morphs. We
+will also discuss the data selected for the current prototype.
+
+123
+
+Digital recordings
+of Vital Signs
+ECG
+ART
+
+Laptop server
+
+RESP
+PAP
+
+client 3
+
+Software
+
+client 4
+client 5
+
+CVP
+
+Morph B
+
+client 1
+client 2
+
+Microcontroller
+
+Vital 1
+Vital 2
+Vital 3
+Vital 4
+Vital 5
+
+Morph A
+
+Fig. 4 Representation of the communication flow in the Vital ? Morph system
+
+The system architecture is shown in Fig. 4: a customized
+software running on a laptop, which reads the recordings of
+the vital signs and transmits them wirelessly to the Vitals.
+Another subsystem manages the communication between
+the two Morphs through a microcontroller.
+5.1 Simulation of a vital sign monitoring station
+5.1.1 Data selection
+The signals used for this prototype are actual recordings of
+a patient’s vital signs. We carefully select a specific dataset
+from the PhysioBank, a public database of physiological
+data.3 To make it similar to the scenario described in
+Sect. 3, we selected a 24-h recording of an 80-year-old
+woman hospitalized after surgery, who suffers from respiratory problems. Such a dataset helps us present a more
+realistic version, which also includes actual problematic
+and critical situations encountered. From the selected
+dataset, we extracted five vital signs: heart rate (pulse),
+arterial blood pressure (ART), pulmonary arterial pressure
+(PAP), central venous pressure (CVP), and respiratory rate.
+5.1.2 Software
+We developed a software for simulating the tasks of a vital
+sign monitoring system and for managing the wireless
+communication. First, the software reads a text file that
+contains the recordings of each vital sign. Since these
+recordings have a very high fidelity and speed, we perform
+a down-sampling of the dataset. Second, each data element
+is scaled and formatted for transmission to the corresponding Vital element. For the communication protocol,
+we choose Bluetooth. To keep a flexible environment, the
+data are directly mapped to the control of the Vitals’
+actuators. In the current version of the system, we
+employed a direct mapping between the vital signs and the
+actuators that they are going to control (Fig. 5). Using the
+3
+
+https://physionet.org/physiobank/.
+
+AI & Soc
+ART
+
+2000
+1000
+0
+-1000
+
+30
+20
+10
+
+6250
+
+6252
+
+6254
+
+6256
+
+6258
+
+6260
+
+6262
+
+6264
+
+6266
+
+6268
+
+0
+6270
+
+normalized data
+
+raw data
+
+Fig. 5 A sample of the arterial
+pressure (ART) measurements
+that show the relations between
+the raw signal (original
+recordings of vital signs) and
+the normalized version
+processed by the software
+
+time in milliseconds (ms)
+
+Fig. 6 A section of the Vital
+highlighting the different
+components: 1 microcontroller,
+2 bluetooth transceiver, 3
+lithium–polymer battery, 4
+servo motor, 5 shaft and
+direction of rotation, 6 spring, 7
+paper cylinder
+
+software, it is also possible to control the frequency of the
+input data and to change the level of the mapping between
+the signal and the degrees of rotation for controlling the
+rotation of the actuator in the Vitals. A standard wave plotstyle visualization is also provided, which serves as a quick
+debugging element and shows the vital signs to the audience in a form that they can easily understand.
+5.2 Physical objects
+5.2.1 Vitals
+The Vitals are composed of an actuation system, a
+microcontroller, a Bluetooth transceiver, and a power
+source encapsulated in a custom-made structure and surrounded by a deformable cylindrical surface (Fig. 6). To
+
+implement the desired shape-changing features, we
+designed an actuated surface that resembles the features of
+the bio-inspired material described in the previous section. Our aim is to provide a physical shape-changing
+display that can represent the differences in the behavior of
+data over time through deformations. Their surface should
+be able to deform continuously and reproduce each stream
+of data consistently.
+The biggest challenge was the implementation of the
+mechanism for deformation. Some work has already been
+done regarding soft robotics involving the design and
+implementation of simple robots that are able to deform
+and adapt themselves to the changing conditions of the
+environment. An interesting example is the circular robot
+developed by Sugiyama and Hirai (2006). This robot is
+modeled as a rheological object and it is composed of a
+
+123
+
+AI & Soc
+
+series of eight shape-memory alloys (SMAs) type actuators
+attached to a rubber shell. When such actuators contract,
+they cause a deformation of the shell. For the sake of
+portability and autonomy, we adopted a similar approach
+but with a single actuator—a micro servo type of motor.
+This enables the precise control of angular position,
+velocity and acceleration. Since the deformation of the
+surface is caused by a single actuator, a series of customized horns have been developed. Each servo motor is
+equipped with four extended horns, two on the upper part
+connected directly to the active shaft of the motor, and two
+in the lower part, connected to the extensions attached to
+the passive one. The horns on the top of the actuator are
+then vertically linked to a passive rotational shaft placed on
+the bottom of the structure. Such extensions are then
+attached to the surface through four small springs. The
+deformation is caused by the rotary motion of the servo
+motor. The data are received by the microcontroller that
+controls the angular position (degrees). When the shaft of
+the servo rotates, the springs pull the surface and this
+causes a deformation. When the actuator is at 0 of rotation, it means that the data received are at the minimum
+value. In such a case, the Vital appears to be a static
+cylinder. Since the movement of the actuator is transmitted
+to the surface through springs, they not only deform the
+surface, but also produce a noticeable force every time the
+servo motor rotates. In other words, each time the values
+change from low to high (and vice versa) the actuator
+moves and the springs release a force (Fig. 7). For the
+deformable surface, we used a cylinder made of paper that
+was coated with a layer of liquid latex. This helps increase
+the deformation effect, prevents tearing of the paper, and
+makes the material feel similar to the human skin. The
+cylindrical surface is then attached to the bottom of the
+actuation module through a plastic stand. This prevents the
+cylinder from moving freely and also enhances the quality
+of the shape-changing effect. In addition, we have fabricated a skin made of a four-way stretchable fabric that can
+
+allow the elements to be covered and to hide the entire
+mechanism, if so desired.
+5.2.2 Morphs
+The Morph is designed as a robotic input–output surface,
+composed of a closed link system of actuators and joints
+(Fig. 8). In the current implementation, the Morph is presented in two synchronized deformable surfaces, which can
+be placed in two different environments. In contrast to the
+shape-change of the Vitals, where the deformation occurs
+in response to data, the deformation in the Morph is produced by the direct action of the users. When a user
+deforms one element, it transmits its current shape to the
+other that will then reproduce it. This action can also be
+done in both ways. We have defined this function as shapesharing. This concept describes the usage of paired remote
+Controls
+
+Link
+
+Actuator
+
+Fig. 8 Closed link system of the Morph elements
+
+Fig. 7 a The five Vitals used in Vital ? Morph. b The deformations produced by the data stream on one Vital (ECG)
+
+123
+
+Passive joint
+
+AI & Soc
+
+robotic systems for teleoperation, and it was previously
+introduced by Sekiguchi et al. (2001) to describe their
+RobotPHONE system. This system uses two robotic arms
+placed in different locations. Such robotic elements are
+embedded into a stuffed puppet and are arranged in a
+master–slave configuration. Using the concept of a telephone call, wherein a user applies a force to one arm and
+transmits the movement to the paired device, we adapted it
+for designing the Morph by abolishing the master–slave
+relation between the two devices, and instead established
+an equal relation between the devices. The Morphs have a
+circular shape that mirrors that of the Vitals. Both the
+Morphs are composed of a series of eight actuators linked
+together. We choose an analog-feedback servo motor,
+which combines position sensing and mechanical movement in a single element. Then, the motors are connected to
+each other using a customized linkage.
+In the current version, the two Morphs are connected
+and synchronized through a microcontroller (Arduino
+Mega), which implements a direct mapping between the
+position sensor of the actuators in one Morph and the
+position control of the motors in the linked Morph, and
+vice versa. An internet-based version is currently under
+development.
+Finally, the actuators are covered with a soft surface
+composed of an elastic fabric reinforced internally with a
+sponge material. This element helps enrich the tactile
+qualities of the device, and makes it more appealing by
+hiding the mechanical components (Fig. 9).
+
+6 Performance evaluations of the system
+In this section, we present an evaluation of the basic performances of Vital ? Morph. Such tests serve to assess
+two main design requirements: the ability of the Vitals to
+produce haptic feedback through shape-change and to
+
+Fig. 9 Two interconnected Morphs
+
+confirm that the two interconnected Morphs can transmit
+their shape correctly.
+6.1 Haptic quality of data physicalization
+To prove the effectiveness of our implementation, we
+measured the force produced by one Vital element corresponding to the changes in data. The force was measured
+through a series of tests by attaching a piezoelectric force
+sensor to a user’s index finger and recording the moments
+when the surface of one of the Vitals touches it. From the
+sensor, we also recorded the variations in the voltage for a
+period of 10 min. We repeated the measurement for each
+different type of data. At the same time, the position of the
+actuator was also recorded. Figure 10 depicts two samples:
+one is related to the ECG and the second is for respiration.
+It is observed that a force is generated when there is a
+consistent change in the data (peaks). At its highest value,
+the recorded force corresponds to 0.8 N, which is enough
+to be perceived by an average user. The respiration data
+analysis shows the reason that the values are very low and
+not changing, which indicates a critical condition of the
+patient. Visually this is represented by an almost static
+appearance on the device. When a user looks at the Vitals,
+the deformation of the surface makes the flow of the data in
+time visually perceptible. In addition, the user can also feel
+the changes in the data by touching. Even a small variation
+can produce a noticeable force. Through such an evaluation, we can confirm that the Vitals can provide haptic
+feedback based on one important characteristic of the data,
+such as the maximum change. This shows that dynamic
+data physicalization can address not only the vision, but
+also the sense of touch.
+6.2 Shape-sharing capabilities
+To assess the amount of error that occurs in the transmission of shape between two linked Morphs, we performed a
+series of measurements to compare the area of the sender
+and the receiver Morph. We selected three main gestures,
+which have been derived through the observation of users
+(see Sect. 8). These are (1) horizontal squeeze, (2) vertical
+squeeze, and (3) a gesture randomly selected that cannot be
+classified into the previous two categories (Fig. 11). The
+first two gestures represent the maximum contraction
+possible, respectively, horizontally and vertically. On the
+other hand, the third category of gesture includes more
+subtle deformations that can involve only some parts of the
+shape, or simple variations of the static circular shape. The
+test was performed by placing two Morphs close to the
+each other. We recorded 10 trails per gesture with a video
+camera. After the acquisition, we selected and isolated the
+frames where the transmission of the shape happened.
+
+123
+
+AI & Soc
+
+ECG
+40
+
+30
+
+20
+
+10
+
+60
+50
+40
+30
+20
+10
+
+2000
+
+2020
+
+2040
+
+2060
+
+2080
+
+2100
+
+0
+2120
+
+force measured in millivolts (mV)
+
+rotation in degrees (°)
+
+50
+
+time in milliseconds (ms)
+
+Respiration
+26.5
+
+26
+
+25.5
+
+25
+
+60
+50
+40
+30
+20
+10
+
+2000
+
+2020
+
+2040
+
+2060
+
+2080
+
+2100
+
+0
+2120
+
+force measured in millivolts (mV)
+
+rotation in degrees (°)
+
+27
+
+time in milliseconds (ms)
+
+Fig. 10 Two samples that show the relation between the position of the actuator (corresponding to the measured vital sign) and the force
+measured on a user’s finger. The chosen samples are for the electrocardiogram and the respiration impedance
+
+Fig. 11 Examples of the reproduction of the shape between a transmitting (X) and a receiving (Y) Morph. Three different gestures are presented:
+1 horizontal squeeze, 2 vertical squeeze, 3 other type of deformation
+
+Then, we have traced the area of each shape. Since it
+represents a complex and non-uniform curve, we simplified
+its geometry. By superimposing a grid made of equal cells,
+we calculated the area of each shape using the Pick’s
+theorem. For each gesture, we calculated the mean area for
+the sender (X) and the receiver (Y). Then, we derived the
+
+123
+
+difference between the two areas and consequently the
+percentage of the error in the transmission. It was found
+that the lowest error is observed in gesture 3 (?0.02%).
+The error observed in the gesture number 1 and 2,
+respectively, are ?0.3% for the horizontal and ?0.2% for
+the vertical squeeze. Since these two gestures represent
+
+AI & Soc
+
+very extreme contractions, we can conclude that it is very
+difficult to reproduce extreme contractions or expansions.
+One of the reasons can be found in the friction produced
+between the actuators at the surface.
+Another element that is relevant to shape transmission is
+time, which dictates how fast the deformation is and for
+how long the act of deformation is performed. We have
+observed that slow deformations ([45 s) generate better
+results in shape reproduction while faster deformations are
+more likely to negatively affect the accuracy of
+transmission.
+
+7 User study in media art exhibitions: aims
+and issues
+Vital ? Morph was exhibited at the Arts Electronica Festival (Linz, Austria) and the Tsukuba Media Art Festival
+(Tsukuba, Japan), respectively, in September and December 2016. The former is one of the major international
+events in the field of Media Art, while the latter is a local
+event mostly attended by families and amateur enthusiasts.
+During these occasions, we had the opportunity of
+observing how a varied audience interacts with Vital ? Morph, and of investigating their reactions and opinions.
+We conducted a user’s study using a mixed method of
+observations, notations and non-structured interviews.
+Through this study, we wanted to assess the social acceptance of Vital ? Morph and examine how shape-change is
+perceived by users. Moreover, we were also interested in
+obtaining a better understanding of the social impact of
+such interfaces, the concerns they raise and the opportunities they present.
+7.1 User studies in media art exhibitions
+In the past, we have found that media art exhibitions represent an interesting platform for testing interactive systems outside the laboratory (Iwata 2005). Hands-on
+demonstrations in an open environment should not just be
+considered a way of testing an interactive device, but also
+an essential step of the research process. This is more
+relevant for systems and interfaces characterized by
+unconventional interactions and unique appearances.
+Venues like Media Art festivals and exhibitions can provide many benefits for a qualitative research. First, they
+help reach a very large group of possible users, composed
+of people of different ages, genders, nationalities, and
+degrees of expertise with interactive technologies. Second,
+such events remain open for a long period of time, allowing
+people to freely try and evaluate the system. Third, by
+interacting with the audience, it is possible to conduct
+unstructured interviews.
+
+7.2 Problem statement
+The evaluation and assessment of shape-changing interfaces is a problematic aspect that characterizes this
+research area. Due to their unique characteristics, shapechanging interfaces cannot be compared to other systems.
+Moreover, there are no standardized measurements and
+frameworks available for performing an effective evaluation. In particular, the investigation of the social acceptance
+of shape-changing interfaces is still one of the biggest
+unanswered questions in the research community (Rasmussen et al. 2012). To our knowledge, only one study has
+been published (Park et al. 2015) with the aim of investigating the effect of shape-change in a real-life scenario,
+using an ethnographic method. However, this study was
+limited to shape-change applied to existing mobile devices
+and between loving couples.
+For our study, due to the difficulties of testing the system in a real scenario (hospital), we have designed an
+ambient installation where Vital ? Morph was placed. It
+represents an approximation of the experience we wanted
+to assess. This approach is used in many exhibits and
+museums for providing a context in which artifacts can be
+better understood by visitors.
+7.3 Test environment and exhibition design
+Vital ? Morph was presented to the audience through a
+setting that can help them contextualize the system into an
+environment that tries to explicitly replicate the scenario
+we had developed in Sect. 3. The spatial arrangement,
+lighting, and furnishing are used for supporting the narration of the story. The exhibition space consisted of a unique
+room that we divided in two spaces: a ‘‘home’’ area and a
+‘‘hospital’’ area. These spaces are divided by a curtain
+(Fig. 12).
+When the audience first enters the room, they get into
+the ‘‘home’’ area, and the ‘‘hospital’’ space is hidden
+behind the curtain. The ‘‘home’’ area plays the role of a
+living room where people can meet and gather around
+Vital ? Morph. The interface is placed on the top of a
+white plinth (100 9 50 9 50 cm). A spotlight is used for
+highlighting these elements. When the audiences cross the
+curtain, they find themselves in the ‘‘hospital’’ area. On one
+side of the room, we created a simple version of an ICU
+with a bed and a monitor, which represents the stream of
+vital signs with a standard wave plot visualization. Near the
+bed, on a second white plinth, we placed a second
+Vital ? Morph, but without the Vitals and only the shapesharing interface. In this area, the plinth is shorter
+(50 9 50 9 50 cm), because we wanted to force the
+audience to interact with the interface by sitting on the bed,
+
+123
+
+AI & Soc
+
+Fig. 12 1 Plan of the installation; 2 the actual set up at the Arts Electronica Festival
+
+like any hospitalized person will do. The bed and the
+second Vital ? Morph are also highlighted using two
+spotlights.
+7.4 Subjects
+During the exhibition at the Arts Electronica Festival, more
+than 600 people visited the installation. The festival lasted
+for 5 days, and the exhibition was opened for 8 h per day.
+We observed around 200 people actively interacting with
+Vital ? Morph, out of which we interviewed 40 people. In
+this context, the audience was composed of a very wide
+variety of respondents with an almost equal distribution
+between males and females, with an average age ranging
+between 15 to 70 years. Most of the visitors were from
+European countries (especially Austria, Germany, and
+Italy), but we also tried to include visitors from the UK,
+USA and countries like China, Japan, and South Korea. On
+the other hand, at the Tsukuba Media Art Festival, majority
+of the audience was Japanese. Moreover, here, the gender
+distribution was almost equal, with a similar range of age,
+but a significant proportion of visitors included families
+with young children. The Tsukuba Media Art Festival
+lasted for 8 days, open for 7 h each day. Being a local
+venue, the number of visitors was lower as compared to the
+Arts Electronica Festival: with 200 people visiting our
+installation and 100 interacting with our system. Here, we
+interviewed 20 participants. In both the exhibitions, the
+audience was composed of first-time users of Vital Morph.
+7.5 Methodology
+Each visitor was introduced to the installation with a verbal
+explanation of the aims and the concept of the installation.
+This was done through an oral narration of the fictional
+scenario. Till then, we had not informed the users about the
+interactions and usages of the system. They were then able
+to test Vital ? Morph without any constraint and for as
+long as they wanted to. During the two exhibitions, most of
+
+123
+
+the visitors came in groups of two to six people. We
+observed the users and noted down the sequence of their
+interactions. After the observation stage, we asked the
+users some specific questions to assess the perceptual
+qualities of the interface. Lastly, we encouraged the visitors
+to talk freely about their overall experience with the system
+and to give their opinions regarding the social impact of
+Vital ? Morph. We collected the answers and then selected the most common and significant responses to arrive at
+relevant results.
+
+8 Results
+In this section, the results of the user study are presented.
+The results of the observations regarding the behavior of
+the users towards Vital ? Morph are then assessed by a
+series of interviews with the aim of probing the experience
+of the visitors.
+8.1 Observations of users’ behavior
+Through a constant observation of the behavior of the
+visitors, we recognized a series of recurrent interactions
+that the users performed with Vital ? Morph. These
+actions were categorized by following the chronological
+order in which they happened and divided into four macrointeractions. By macro-interactions, we mean a general
+interaction that groups some different variations of a similar interaction. Such kind of classification is required
+because shape-changing and organic interfaces allow for
+continuous interactions. These are characterized by different levels of nuances that are very difficult to categorize
+with the use of strict terminologies. The observations that
+follow have helped us to validate the effectiveness of the
+interactions possible with Vital ? Morph.
+Observing and exploring At first, we noticed that almost
+all users (97%) were observing the Vital ? Morph placed
+in the ‘‘house’’ area. If it was a group, they were gathering
+
+AI & Soc
+
+around the plinth where Vital ? Morph was placed. Very
+few visitors (3%) went behind the tent before stopping in
+the first part of the installation. After a period of observation that typically lasted between 1 min to 3 min, the
+users started to touch the different parts of the interface.
+Because of their constant movement, the Vitals were the
+elements that immediately attracted the visitors’ attention.
+Re-composing and de-composing After a brief inspection, usually one of the visitors was grabbing one Vital and
+removing it from the Morph. We have defined such an
+action as de-composing. By holding it in his/her hands, the
+users started to report to others their feelings and thoughts.
+If there was a group of people, the person with the Vital
+was passing it to another user. For example, parents where
+passing it to their children. After this first exploration, other
+people where grabbing the remaining Vitals. With the
+Vitals in their hands, people were commenting to each
+other and developing a series of thoughts mostly about
+their tactile experience. In addition, an exchange of different Vitals among users was observed. Phrases like ‘pass
+me the heart beat’ or ‘take the respiration’ were accompanying such actions. Visitors also were moving around the
+installation while holding the Vitals in their hands. After a
+period ranging from 2 to 7 min, the users put the Vitals
+back inside the Morph as a final action. We have named
+this action as re-composing, and it can be viewed as the
+consequence of the first action of de-composing. We
+observed that most of the people were re-composing the
+interface together (90%) and only a few left them alone
+(10%). Subsequently, when Vital ? Morph came back to
+the initial state, the visitors reverted to the observation
+phase (Fig. 13).
+Shape-sharing Between the actions of de-composing
+and composing, when all the Vitals had been removed from
+inside the Morph, visitors started to pay attention to the
+Morph. At this stage, the users where already moving
+around the installation. The identification of the functions
+of the Morph was slower compared to those of the Vitals
+
+and happened through several steps. Usually, when visitors
+were crossing the curtain and moving from the ‘‘house’’
+area to the ‘‘hospital’’ area, they discovered the other
+Morph placed near the bed. At this point, a user would sit
+on the bed and start to touch the Morph. The visitors
+identified that the two Morphs were connected and synchronized when a person in the ‘‘house’’ area was notifying
+the other with sentences like ‘It’s moving!’ or other oral
+comments confirming that the interface was responding.
+From this moment, the users on the two sides were trying to
+test and explore the possible ways of interacting with the
+Morphs. Most of the users were manipulating the Morph
+with two hands (85%), a few with one hand (5%), and
+some even with a single finger (8%). Some people performed other actions (2%) such as lifting the Morph.
+Within the actions performed with two hands the two most
+one finger
+5%
+one hand
+8%
+
+other 2%
+other
+10%
+
+two hands
+85%
+
+vertical
+squeeze
+30%
+
+horizontal
+squeeze
+60%
+
+a
+one hand 8%
+not moving
+5%
+watching
+20%
+other
+2%
+
+two hands
+70%
+
+other
+15%
+
+hugging
+80%
+
+b
+Fig. 14 Interactions with the Morphs as an input device (a) and as an
+output (b). Details will be provided in the discussion
+
+Fig. 13 Users interacting with
+the Vitals at the a Tsukuba
+Media Art Festival and at the
+b Arts Electronica Festival
+
+123
+
+AI & Soc
+
+Fig. 15 Recordings of the interactions between two Morphs. We can devise four types of gestures performed by users: 1 still, not moving, 2
+vertical squeeze, 3 horizontal squeeze, 4 other type of deformation
+
+Fig. 16 Visitors interacting
+with the Morphs: a at the Arts
+Electronica Festival and b at the
+Tsukuba Media Art Festival
+
+common actions were squeezing the interface horizontally
+(60%) and the vertically (30%). Only a very small percentage of users (10%) tried to perform other types of
+manipulations (Fig. 14). This can be noticed by looking at
+the recordings of the position sensors of the actuators in the
+Morphs. From Fig. 15, it is possible to notice a sample
+wherein such recurrent actions can be devised. Earlier, we
+had observed that time was an important element in the
+development of such actions. We observed that the
+majority of users (98%) tried to deform the Morph very
+quickly at first. However, after some attempts, these users
+were trying to reduce the speed of their movements and
+performing their actions at a much slower pace. The
+interaction with the Morphs was usually the longest,
+ranging from 1 min (the shortest) to 10 min (the longest),
+with an average of 6 min. However, we noticed that the
+users that spent more time interacting with the Morphs
+([ 5 min) were keen to try different manipulations.
+Tactile communication The use of the Morphs was not
+only limited to active deformations of the interface
+(Fig. 16). It can also reproduce and play back such deformations. Before responding to a stimulus, users where
+taking time to feel the deformations produced by the
+
+123
+
+Morph on their body. It was interesting to observe how
+people were experiencing this shape-sharing function as an
+output. The use of both hands as a way to feel the motion
+was the most common (90%). It was done by placing the
+palm of their hands along the sides of the Morph. In
+addition, we observed many users placing their arms in a
+manner mimicking the gesture of hugging (10%). Very few
+tried to use other body parts such as the face (2%).
+8.2 Interviews
+The analysis of the results of the interview process demonstrated homogeneity in the type of responses from visitors in
+both the exhibitions. After a process of analysis of the various
+answers and comments provided by the users, we identified
+six major topics: emotional response, design choices, tactile
+and kinesthetic communication, multi-sensory interactions,
+social impact, and criticalities (Fig. 17).
+Emotional response At first, the users were queried
+about their emotional response to the experience, especially how they perceived Vital ? Morph. The most
+recurrent comment can be summarized with the expression
+‘it looks like a living organism’ (95%). Several visitors
+
+Tactile and
+kinesthetic
+communication
+
+Design and
+material choices
+
+Fig. 17 Results of the
+interview process. Details are
+provided in Sect. 8.2
+
+Emotional
+response
+
+AI & Soc
+
+The change of shape have increased my experience
+I can't understand the relations between Vital Signs
+and shape-change
+It looks like a living organism
+Indifferent / no answer
+It feels good in my hands
+The change of shape have increased my experience
+It’s like hugging
+Importance of the quality of the movement
+Importance of the correct reproduction of the shape
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90 100
+
+Percantage (%)
+
+made similar comments using other words such as ‘‘organs’’, ‘‘insects’’, or ‘‘hamsters’’. More detailed comments
+emerged after visitors held the Vitals on their hands. At this
+stage, the most recurrent comments were ‘it’s like holding
+a human heart’, and ‘I feel like I’m touching a blob’. Some
+users also related the feeling to the force produced by the
+Vitals. One user described ‘The force I feel, it’s kind of
+pulsating…It moves in my hands. I can feel something
+rhythmical. It’s constant but sometimes it changes. I think
+it’s something alive’. Irrespective of the kind of vital sign
+that was displayed, the users strongly identified the system
+with something living, and related their experience with
+imaginative ideas, like having a living organ between their
+hands. Aside from such comments, some users felt a sort of
+mismatch between the feelings and the ability of understanding the meaning of the shape-change. ‘I can feel, yes,
+but I don’t know exactly what it means’. Others were
+demanding more clarity in the representation of data ‘I
+don’t know if this movement is right or wrong’ or ‘I would
+like to have a reference point. For example, I don’t know
+how to judge this motion. Is this heart beat rate good or
+not?’ Some of these visitors even commented ‘I’m not able
+to understand the relations between the vital signs and the
+movement’. However, when asked to comment if the
+change in shape increased their perception of data, 80% of
+the visitors answered positively.
+Design and material choices Throughout our survey, we
+recorded a general appreciation of the aesthetics and feel of
+the interface. Moreover, many users appreciated the tactile
+qualities of the system. Comments such as ‘It feels good in
+my hands’ (60%) and ‘I like the feeling when I’m touching
+it’ (40%) were equally distributed towards both the Vitals
+and the Morphs. Children were especially attracted by the
+possibility of being engaged in different haptic experiences. Being an interface highly based on tactile elements,
+Vital ? Morph shows that to make shape-changing
+
+interfaces acceptable, the choice of the materials used plays
+a key element in the design.
+Tactile and kinesthetic communication The interaction
+with the Morph elements was another element we assessed
+during the interviewing process. We were especially
+interested in understanding if shape-sharing can be
+understood by users and in identifying the ways in which
+they approach it. Contrary to our expectations, users valued
+the quality of the movement produced (70%) more than the
+correct reproduction of the shape. Many commented that
+there was a difference between fast and slow movements.
+‘When I’m using it (the Morph) I like to move it fast. When
+I receive it I like the slow movements’. Then, we asked the
+visitors to comment about their experience. Most of them
+were interested in exploring the two-way communication.
+However, they looked lost and found it difficult to understand how this communication should be performed. ‘This
+seems to be a conversation. Two people communicating…but I have never experienced something like
+this…however it’s fun’. ‘I have no idea no idea how to
+develop a way of communicating. I mean, it seems easy,
+you have just to move it. But I don’t know what it means.
+Especially I don’t know the meaning when I see the
+answer, when the other person’s motion is played on the
+one I’m facing. I don’t know’. Some users highlighted that
+the absence of audio and video for remote communication
+resulted in a diminished experience. ‘Usually I use the
+phone or Skype to communicate with friends. This is
+something that I have never experienced. You have to
+touch it’. ‘I find this way of communication very interesting, normally you share your voice, not movements’.
+When asked to comment about how they perceived the
+Morphs, users related it to gestures like hugging and
+embracing another person. ‘For me this is similar to hugging, like when you hold a person with your arms’; ‘I will
+say that it reminds of the gestures you use when you
+
+123
+
+AI & Soc
+
+embrace someone, usually a parent, a friend’. A common
+comment that was following such sentences was highlighting such limitations. Many users felt that to really
+perceive such tactile communication, temperature is missed. ‘In order to communicate the sensation of hugging,
+and especially the feel that another person is being hugged,
+besides the force and the shape, warmth of the arms are
+very important. Without it it’s just like cold, like technology’ and ‘I would like to feel the temperature of the others,
+like the warmth or coldness of the hands’.
+However, 80% of the users said that these characteristics
+improved their feeling of being connected to another person. An interesting comment was ‘It’s very abstract but…it
+makes me imagine the other, what is doing, what is
+thinking’.
+Social impact In the last part of the interview process,
+we asked the visitors to freely comment on the possible
+introduction of Vital ? Morph in their lives. The majority
+of users expressed surprise and interest about the system.
+This could be because most of the visitors had never
+experienced a shape-changing interface in the past. In
+addition, the purpose of Vital ? Morph generated a positive interest. Especially, visitors of an age exceeding
+40 years often related their experience with Vital ? Morph
+with their own personal stories of having parents or relatives hospitalized in reanimation or Intensive Care Units. ‘I
+remember when my mother was hospitalized years ago…I
+cannot say if I wanted to have this (Vital ? Morph) at that
+time…but it makes me think…actually, I was really nervous sometimes because of the distance…however, I don’t
+know because I have never used something like this (Vital ? Morph). But the distance, the sensation of being
+powerless was high’ or ‘Last year my brother was in a
+hospital after a surgery, I was thinking what would have
+been…because it’s true in these situations you are not
+aware of what is happening, you are distant. You can visit
+them only few times. Especially like me that I was living
+far away. He was not able to talk at the phone for weeks’.
+We should note that many of the oldest members of the
+audience suggested that an interface like Vital ? Morph
+can be very useful in the current aging society, because it
+can add a more physical and tactile dimension to the possibility of being aware of the conditions of a distant patient.
+‘You know, here in Japan we are an aging society. People
+are getting old and the younger are very busy’; another ‘I
+think it can be really useful in the future. We lost contact
+with people, physical contact. I will encourage such ways
+to create a more physical contact among people’. We also
+collected the opinions of a group of four visitors that are
+working in an Intensive Care Unit in a hospital in Austria.
+They emphasized on the issues of communication between
+the ICUs and the outside. In their opinion, finding a novel
+way to connect people in this situation is very important.
+
+123
+
+‘In an Intensive Care Unit everything is very complex,
+even the light…the communication is really problematic’;
+another adds ‘I have never thought about this possibility…it’s a strange concept’, ‘it’s true communication there
+(in the ICUs) it’s a real problem, especially with the
+outside’.
+Critical points Apart from these comments, we recorded
+some very critical reactions. One explained that ‘it’s a very
+creepy […] I don’t want it’, another ‘It’s noisy, it’s
+weird…I don’t know…when I see all of these things
+moving (the Vitals) like this (makes a gesture that mimics
+their movement, like wobbling) it makes me suffering
+because seems to me that someone is suffering’. A third
+articulated her concern more strongly ‘I will be really
+scared of having such device in my house […] and if it will
+stop ? […] this can become a strong reminder of death’.
+These visitors were extremely concerned about having this
+constant presence in their lives and opined that they would
+find it difficult to handle a surrogate of a person who is
+probably suffering. The system malfunctions can become a
+serious issue since they can be related to a much more
+tragic event. In addition, these users highlight that
+Vital ? Morph can be really invasive in their daily lives,
+by being a constant reminder of the condition of a loved
+one.
+
+9 Discussion of the results
+Our findings and contributions point to a series of design
+implications for using dynamic data physicalization for
+remote monitoring. We have identified five main implications that concern the design of the physical interface and
+the social impact and acceptance of Vital ? Morph.
+9.1 Data aliveness
+As observed by many comments made by users, the association between shape-change and vital signs appears to be
+very powerful. In addition, having a physical display that
+exhibits the qualities of a living organism seems to enrich
+the embodiment of data through shape-change. These
+claims are also supported by the recent literature in actuated tangible and shape-changing interfaces that has
+emphasized the importance of designing life-like movements for conveying meanings (Schmitz 2010; Hemmert
+et al. 2013; Park et al. 2015). However, physical animation
+is not enough. The combination with tactile feedback
+proved to be fundamental to let people experience different
+characteristics of the data displayed by the shape-changing
+surface of the Vitals. In contrast, users have asked for
+richer haptic experiences when the only act was a communication between two people, such as in the case of the
+
+AI & Soc
+
+Morphs. The interplay between visual and tactile clues in
+Vital ? Morph suggests a careful consideration of the
+design and distribution of these two sensory characteristics
+among the interface.
+9.2 Physical presence of the abstract
+We found that shape-change, either visual, tactile or both is
+not enough by itself. The type of data that drives the
+actuation must be clear. As presented in the observations
+and later observed during the interviews, this association
+helped users increase their sense of closeness and
+engagement with the data and the distant persons. Previous
+studies revealed that sharing physiological signals can
+facilitate and promote connectedness by making distant
+people feel closer (Sommerer and Mignonneau 2004;
+Janssen et al. 2010). It seems that people tend to interpret a
+shared physiological signal (such as heartbeat) as a part of
+the other, which suggests to them that a distant person is
+physically closer. A single signal can become a representation of an entire absent body. This is connected to a
+phenomenon defined by Garnæs et al. (2007) as ‘‘presencein-absence’’. According to Slovák et al. (2012), such
+physical connection can be compared to the one triggered
+by physical tokens of loved ones that people keep close as a
+reminder of a distant person. Especially the Vitals have
+suggested that when an object becomes enhanced with realtime physiological signals, it can serve as a strong representation of the distant other. In addition, the use of tangible objects as ‘‘physical surrogates’’ has proven to be an
+intuitive method of sustaining long-distance relationships
+(Greenberg and Kuzuoka 1999). A recent research in social
+robotics (Nakamichi et al. 2014) opined that even a very
+simple and almost abstract appearance of an intelligent
+device can be a very powerful factor for conveying a sense
+of physical presence.
+9.3 Remote monitoring as a tactile experience
+As we already noticed, an interesting characteristic of
+shape-changing interfaces is that they serve as an effective
+type of multi-sensory display. In the case of Vital ? Morph, the visuo-tactile elements are present at the same
+time, but they become perceptible to the user only when he/
+she changes the interaction. By only looking at the interface, the temporal characteristics of the signals are
+revealed. When the user inserts his/her hand in the interface and grabs a Vital, it become conscious of the changes
+in data through the tactile channel. These two characteristics of the signal do not have to be selected explicitly, but
+the user has to change the type of interaction. This is
+achieved in a very natural way, just like grabbing an object.
+From our point of view, such interactions with shape-
+
+changing materials have the potential to shift data exploration from a purely analytic activity to a more phenomenological one. Most of the current research in tactile
+display employs a co-located tactile and visual feedback
+through the use of video projection on actuated surfaces
+(Leithinger et al. 2014; Lindlbauer et al. 2016). Such
+solutions can obviously enrich the interface with a more
+detailed and rich feedback, but it still implies a separation,
+which shape-changing interfaces aim to reduce.
+9.4 Sociality and emergence
+Remote monitoring was always considered to be an activity
+performed by specialists. Usually this is also assumed to be
+an association between a physician and a patient, not other
+people such as family members. By observing the actions
+of de-composing and re-composing, it is possible to notice
+that Vital ? Morph can potentially promote remote monitoring as a social activity. This can be enabled both by the
+form factor (the use of circular shapes) and functional
+elements (the modularity of the interface). This is supported by the research on TUIs, where circular tabletop
+arrangements of digitally augmented objects have shown a
+high potential to promote collaboration and social inclusion
+(Kaltenbrunner et al. 2006). However, such elements are
+derived by the chosen design metaphor, a group of biological organisms called diatoms. A bio-inspired metaphor,
+if used not only for aesthetic reasons but as a reference for
+designing a system, can help simplify and organize complex relations and make interactions between users and the
+interface seem like emergent phenomena.
+9.5 Involvement and distance
+Translating abstract data into a physical form seems to
+make users more likely to question the process of how data
+get represented. This is especially true with very sensitive
+measurements such as vital signs. As suggested by the
+comments that we have collected, users reacted by pointing
+out many issues and made numerous comments, and also
+offered suggestions. As we mentioned, proper evaluation of
+shape-changing interfaces for data physicalization is a very
+problematic task. We see our contribution as an addition to
+the growing variety of alternative data representations.
+Only by increasing the diversity in the digital ecosystem
+will it be possible to understand and evaluate which kind of
+display and metaphor works better, and for which type of
+data. This will tell the extent to which people would like to
+be involved in the process of understanding, manipulating,
+and getting engaged with data. Even if we have reported
+some very critical comments, they actually reinforce the
+idea behind the power of dynamic physicalization of data.
+Such a way of representing data does not make people
+
+123
+
+AI & Soc
+
+indifferent. Even if it was a minority, we found such critical comments insightful and helpful in addressing some
+elements that are usually not considered in the design and
+evaluation of novel shape-changing interfaces.
+
+In this era, wherein we are witnessing a convergence
+between digital fabrication, smart materials, and interconnected devices, it is important to develop strategies and
+methodologies for making abstract data perceptible to users
+and integrate it into our daily lives.
+
+10 Future work
+
+Acknowledgements We would like to thank Kai Sasaki and Shori
+Kano for the help provided during the development of Vital ? Morph. In addition, we want to thank Prof. Hideaki Kuzuoka,
+Masakazu Hirokawa, and Alessio Chierico for the fruitful discussions
+and comments provided during the development of this manuscript.
+
+A lot more work is needed for deploying Vital ? Morph in
+real-life scenarios and it will require some very critical
+steps. At first, some of the technical issues should be
+resolved, such as issues related to power and actuation. The
+progress in embedded systems and novel materials can also
+help make the Vitals even smaller, so that they can occupy
+lesser space. Apart from such technical implementations, it
+is essential to conduct a research involving hospitals,
+patients and their families. Moreover, if the final goal is the
+deployment of Vital ? Morph in society, the research
+cannot be dissociated from improvement in policies and
+infrastructure for sharing private and clinical data among
+public networks. This is a discussion that goes beyond the
+scope of this study.
+
+11 Conclusion
+Our user study confirmed the effectiveness of the prototype, in terms of social acceptance, conceptual understanding, and design metaphor. Vital ? Morph was
+designed as a new kind of shape-changing interface oriented to ordinary people. We wanted to explore a novel
+way of getting engaged with vital signs through dynamic
+data physicalization. We gathered very insightful comments, especially the negative comments underlining the
+fact that such a way of representing abstract data can be
+very invasive and portent. Despite being critical, users
+were not indifferent and were proactive in envisioning and
+proposing specific usage and considering the possible
+social impact of an interface like Vital ? Morph. In
+addition, even if the research on shape-changing interfaces
+and data physicalization is still in an initial state, with our
+study, we tried to contribute to this field by providing a
+novel design metaphor inspired by a bio-inspired principle,
+which marks a departure from previous examples that have
+been based on common statistical ways of presenting data
+through histograms and pie charts. The evaluation of the
+system in a public space, such as a Media Art installation,
+presented an alternative way to test novel systems and
+observe reactions of first-time users. Through the development of Vital ? Morph, we hope to contribute to the
+exploration of novel ways to present data and make remote
+monitoring a social activity and a new form of data
+domestication.
+
+123
+
+References
+Barrass S (2016) Diagnosing blood pressure with acoustic sonification
+singing bowls. Int J Hum Comput Stud 85(C):68–71. doi:10.
+1016/j.ijhcs.2015.08.007
+Bitterman N (2006) Technologies and solutions for data display in the
+operating room. J Clin Monit Comput 20(3):165–173. doi:10.
+1007/s10877-006-9017-0
+Brown C, Hurst A (2012) VizTouch: automatically generated tactile
+visualizations of coordinate spaces. In: Proceedings of of
+TEI’12. doi:10.1145/2148131.2148160
+Cermack M (2006) Monitoring and telemedicine support in remote
+environments and in human space flight. Br J Anaesth
+97(1):107–114. doi:10.1093/bja/ael132
+Coelho M, Zigelbaum J (2011) Shape-changing interfaces. Pers Ubi
+Comput 15(2):161–173. doi:10.1007/s00779-010-0311-y
+Drews FA, Westenskow DR (2016) The right picture is worth a
+thousand numbers: data displays in anesthesia. Hum Factors
+48(1):59–71. doi:10.1518/001872006776412270
+Dubus G, Bresin R (2014) A systematic review of mapping strategies
+for the sonification of physical quantities. PLoS One 9:4. doi:10.
+1371/journal.pone.0096018
+Follmer S, Leithinger D, Olwal A, Hogge A, Ishii H (2013) inFORM:
+dynamic physical affordances and constraints through shape and
+object actuation. In: Proceedings of UIST’13. doi:10.1145/
+2501988.2502032
+Garnæs K, Grünberger O, Kjeldskov J, Skov MB (2007) Designing
+technologies for presence-in-absence: illustrating the cube and
+the picture frame. Pers Ubi Comput 11(5):403–408. doi:10.1007/
+s00779-006-0072-9
+Görges M, Staggers N (2008) Evaluations of physiological monitoring displays: a systematic review. J Clin Monit Comput. doi:10.
+1007/s10877-007-9106-8
+Greenberg S, Kuzuoka H (1999) Using digital but physical surrogates
+to mediate awareness, communication and privacy in media
+spaces. Pers Technol 3(4):182–198. doi:10.1007/BF01540552
+Hardy J, Weichel C, Taher F, Vidler J, Alexander J (2015) ShapeClip:
+towards rapid prototyping with shape-changing displays for
+designers. In: Proceedings of CHI’15. doi:10.1145/2702123.
+2702599
+Heiner JM, Hudson SE, Tanaka K (1999) The information percolator:
+ambient information display in a decorative object. In: Proceedings of UIST’99. doi:10.1145/320719.322595
+Hemmert F, Löwe M, Wohlauf A, Joost G (2013) Animate mobiles:
+proxemically reactive posture actuation as a means of relational
+interaction with mobile phones. In: Proceedings of TEI’12.
+doi:10.1145/2460625.2460669
+Iaconesi S, Persico O (2016) La cura. Codice Edizioni
+Ishii H, Ullmer B (1997) Tangible bits: towards seamless interfaces
+between people, bits and atoms. In: Proceedings of CHI’97.
+doi:10.1145/258549.258715
+
+AI & Soc
+Ishii H, Lakatos D, Bonanni L, Labrune JB (2012) Radical atoms:
+beyond tangible bits, toward transformable materials. Interactions 19(1):38–51. doi:10.1145/2065327.2065337
+Iwata H (2005) Art and technology in interface devices. In:
+Proceedings of VRST’05. doi:10.1145/1101616.1101617
+Iwata H, Yano H, Nakaizumi F, Kawamura R (2001) Project
+FEELEX: adding haptic surface to graphics. In: Proceedings of
+SIGGRAPH’01. doi:10.1145/383259.383314
+Iwata H, Yano H, Ono N (2005) Volflex. In: Emerging technologies
+SIGGRAPH’05. doi:10.1145/1187297.1187329
+Jansen Y, Dragicevic P, Fekete JD (2013) Evaluating the efficiency of
+physical visualizations. In: Proceedings of CHI’13. doi:10.1145/
+2470654.2481359
+Jansen Y et al (2015) Opportunities and challenges for data
+physicalization. In: Proceedings of CHI’15. doi:10.1145/
+2702123.2702180
+Janssen JH, Bailenson JN, Ijsselsteijn WA, Westerink JHDM (2010)
+Intimate heartbeats: opportunities for affective communication
+technology. IEEE Trans Affect Comput 1(2):72–80. doi:10.
+1109/T-AFFC.2010.13
+Johnson GJ, Ambrose PJ (2006) Neo-tribes: the power and potential
+of online communities in health care. Commun ACM
+49(1):107–113. doi:10.1145/1107458.1107463
+Jovanon E, Starcevic D, Radivojevic V (2001) Perceptualization of
+biomedical data. In: Akay M, Marsh A (eds) Information
+technologies in medicine, vol I. Medical simulation and education. Wiley, New York, pp 189–204
+Kaltenbrunner M, Jorda S, Geiger G, Alonso M (2006) The
+reacTable*: a collaborative musical instrument. In: Proceedings
+of IEEE WETICE’06. doi:10.1109/WETICE.2006.68
+Korhonen I, Parkka J, Van Gils M (2003) Health monitoring in the
+home of the future. IEEE Eng Med Biol 22(3):66–73. doi:10.
+1109/MEMB.2003.1213628
+Kusunoki DS, Aleksandra S, Zhang Z, Burd RS (2013) Understanding
+visual attention of teams in dynamic medical settings through
+vital signs monitor use. In: Proceedings of CSCW’13. doi:10.
+1145/2441776.2441836
+Leithinger D, Follmer S, Olwal A, Ishii H (2014) Physical telepresence: shape capture and display for embodied, computermediated remote collaboration. In: Proceedings of UIST’14.
+doi:10.1145/2642918.2647377
+Lindlbauer D, Grønbæk JE, Birk M, Halskov K, Alexa M, Müller J
+(2016) Combining shape-changing interfaces and spatial augmented reality enables extended object appearance. In: Proceedings of CHI’16. doi:10.1145/2858036.2858457
+Lynn G (1999) Animated form. Princeton Architectural Press, New
+York
+Maciejewski R, Choi S, Ebert DS, Tan HZ (2005) Multi-modal
+perceptualization of volumetric data and its application to
+molecular docking. In: Proceedings of world haptics conference.
+doi:10.1109/WHC.2005.97
+Mankoff J, Dey AK, Hsieh G, Kientz J, Lederer S, Ames M (2003)
+Heuristic evaluation of ambient displays. In: Proceedings of
+CHI’03. doi:10.1145/642611.642642
+Manovich L (2008) Introduction to info-aesthetics. http://www.
+mariabuszek.com/kcai/PoMoSeminar/Readings/
+ManovichInfoAesthetics.pdf. Accessed 15 June 2017
+McLanders M, Santomauro C, Tran J, Sanderson P (2014) Tactile
+displays of pulse oximetry in integrated and separated configurations. In: Proceedings of HFES’14. doi:10.1177/
+1541931214581158
+Nafus D (2016) The domestication of data: why embracing digital
+data means embracing bigger questions. In: Proceedings of
+EPIC’16. doi:10.1111/1559-8918.2016.01097
+Nakamichi D, Nishio S, Ishiguro H (2014) Training of telecommunication through teleoperated android ‘‘Telenoid’’ and its effect.
+
+In: Proceedings of IEEE RO-MAN. doi:10.1109/ROMAN.2014.
+6926396
+Nangalia V, Prytherch DR, Smith GB (2010) Health technology
+assessment review: remote monitoring of vital signs—current
+status and future challenges. Crit Care 14(5):233. doi:10.1186/
+cc9208
+Pangaro G, Maynes-Aminzade D, Ishii H (2002) The actuated
+workbench: computer-controlled actuation in tabletop tangible
+interfaces. In: Proceedings of UIST’02. doi:10.1145/571985.
+572011
+Park YW, Park J, Nam TJ (2015) The trial of Bendi in a coffeehouse:
+use of a shape-changing device for a tactile-visual phone
+conversation. In: Proceedings of CHI’15. doi:10.1145/2702123.
+2702326
+Paul C (2015) From immateriality to neomateriality: art and the
+conditions of digital materiality. In: Proceedings of ISEA 2015.
+http://isea2015.org/proceeding/submissions/ISEA2015_
+submission_154.pdf. Accessed 15 June 2017
+Poupyrev I, Nashida T, Okabe M (2007) Actuation and tangible user
+interfaces: the Vaucanson duck, robots, and shape displays. In:
+Proceedings of TEI’07. doi:10.1145/1226969.1227012
+Rasmussen MK, Pedersen EW, Petersen MG, Hornbæk K (2012)
+Shape-changing interfaces: a review of the design space and
+open research questions. In: Proceedings of CHI’12. doi:10.
+1145/2207676.2207781
+Schmitz M (2010) Concepts for life-like interactive objects. In:
+Proceedings of TEI’11. doi:10.1145/1935701.1935732
+Sekiguchi D, Inami M, Tachi S (2001) RobotPHONE: RUI for
+interpersonal communication. In: Proceedings of CHI EA’01.
+doi:10.1145/634067.634231
+Slovák P, Janssen J, Fitzpatrick G (2012) Understanding heart rate
+sharing: towards unpacking physiological space. In: Proceedings
+of CHI’12. doi:10.1145/2207676.2208526
+Sommerer C, Mignonneau L (2004) Mobile feelings-wireless communication of heartbeat and breath for mobile art. In: Proceedings of ICAT’04
+Sugiyama Y, Hirai S (2006) Crawling and jumping by a deformable
+robot. Int J Robot Res 25(5–6):603–620. doi:10.1177/
+0278364906065386
+Taher F et al (2017) Investigating the use of a dynamic physical bar
+chart for data exploration and presentation. IEEE Trans Vis
+Comput Gr 23(1):451–460. doi:10.1109/TVCG.2016.2598498
+Thompson D (1992) On growth and form. Cambridge University
+Press, Cambridge
+Van de Moere A (2008) Beyond the tyranny of the pixel: exploring
+the physicality of information visualization. In: Proceedings of
+IV’08. doi:10.1109/IV.2008.84
+Vertegaal R, Poupyrev I (eds) (2008) Special issue: organic user
+interfaces. Commun ACM 51(6)
+Wakita A, Nakano A, Kobayashi N (2010) Programmable blobs: a
+rheologic interface for organic shape design. In: Proceedings of
+TEI’11. doi:10.1145/1935701.1935760
+Weiser M (1991) The computer for the 21st century. Sci Am
+265(3):94–104
+Willett W, Jansen Y, Dragicevic P (2017) Embedded data representations. IEEE Trans Vis Comput Gr 23(1):461–470. doi:10.1109/
+TVCG.2016.2598608
+Wisneski C et al (1998) Ambient displays: turning architectural space
+into an interface between people and digital information. In:
+Streitz NA, Konomi S, Burkhardt HJ (eds) Cooperative buildings: integrating information, organization, and architecture.
+Cobuild 1998, Lecture Notes in Computer Science, vol 1370.
+Springer, New York, pp 22–32
+Yao L et al (2015) bioLogic: natto cells as nanoactuators for shape
+changing interfaces. In: Proceedings of CHI’15. doi:10.1145/
+2702123.2702611
+
+123
+
+

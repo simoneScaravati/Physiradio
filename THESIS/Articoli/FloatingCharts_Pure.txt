@@ -1,0 +1,558 @@
+Omirou, T., Marzo, A., Subramanian, S., & Roudaut, A. (2016). Floating
+Charts: Data Plotting using Free-Floating Acoustically Levitated
+Representations. In 2016 IEEE Symposium on 3D User Interfaces (3DUI
+2016): Proceedings of a meeting held 19-20 March 2016, Greenville, SC,
+USA (pp. 187-190 ). Institute of Electrical and Electronics Engineers (IEEE).
+https://doi.org/10.1109/3DUI.2016.7460051
+
+Peer reviewed version
+
+Link to published version (if available):
+10.1109/3DUI.2016.7460051
+Link to publication record in Explore Bristol Research
+PDF-document
+
+This is the author accepted manuscript (AAM). The final published version (version of record) is available online
+via IEEE at http://ieeexplore.ieee.org/document/7460051/?arnumber=7460051. Please refer to any applicable
+terms of use of the publisher.
+
+University of Bristol - Explore Bristol Research
+General rights
+This document is made available in accordance with publisher policies. Please cite only the published
+version using the reference above. Full terms of use are available:
+http://www.bristol.ac.uk/pure/about/ebr-terms
+
+Omirou, T., Marzo, A., Subramanian, S., & Roudaut, A. (2016). Floating
+Charts: Data Plotting using Free-Floating Acoustically Levitated
+Representations. 1-4.
+
+Peer reviewed version
+
+Link to publication record in Explore Bristol Research
+PDF-document
+
+University of Bristol - Explore Bristol Research
+General rights
+This document is made available in accordance with publisher policies. Please cite only the published
+version using the reference above. Full terms of use are available:
+http://www.bristol.ac.uk/pure/about/ebr-terms.html
+Take down policy
+Explore Bristol Research is a digital archive and the intention is that deposited content should not be
+removed. However, if you believe that this version of the work breaches copyright law please contact
+open-access@bristol.ac.uk and include the following information in your message:
+• Your contact details
+• Bibliographic details for the item, including a URL
+• An outline of the nature of the complaint
+On receipt of your message the Open Access Team will immediately investigate your claim, make an
+initial judgement of the validity of the claim and, where appropriate, withdraw the item in question
+from public view.
+
+Floating Charts: Data Plotting using Free-Floating
+Acoustically Levitated Representations
+Themis Omirou*
+
+Asier Marzo Perez
+
+Sriram Subramanian
+
+University of Bristol
+
+University of Bristol
+
+University of Sussex
+
+ABSTRACT
+Charts are graphical representations of numbers that help us to
+extract trends, relations and in general to have a better
+understanding of data. For this reason, multiple systems have been
+developed to display charts in a digital or physical manner. Here,
+we introduce Floating Charts, a modular display that utilizes
+acoustic levitation for positioning free-floating objects. Multiple
+objects are individually levitated to compose a dynamic floating
+chart with the ability to move in real time to reflect changes in data.
+Floating objects can have different sizes and colours to represent
+extra information. Additionally, they can be levitated across other
+physical structures to improve depth perception. We present the
+system design, a technical evaluation and a catalogue of chart
+variations.
+Keywords: Acoustic Levitation, Charts, Physical visualizations
+Index Terms: User interface Evaluation/ methodology
+1
+
+INTRODUCTION
+
+Charts are a way of visualizing data that facilitates extracting
+trends, relations and in general allow us to have a better visual
+insight of raw numbers. By representing numerical values as visual
+information (i.e. position, size or colour), we take advantage of our
+inherent skill set to analyse the spatial world [3]. Consequently,
+there has been a significant interest in evolving the way that visual
+information is presented to the users. This information can be
+displayed in various ways, either with physical objects or digitally
+on a computer screen.
+Several types of physical visualizations (physicalizations)
+related to charts have been created. For instance, 3D-printed static
+objects can be used to represent charts [4] but they lack the ability
+to change dynamically without the need of rebuilding the objects or
+user intervention. Another possibility is to utilize actuators to move
+columns or other physical entities [2][8] but the scalability, power
+consumption and occlusions are still to be improved; something as
+simple as a scatterplot is yet to be presented [3].
+Here, we use for the first time acoustic levitation to create
+displays capable of rendering free-floating dynamic physical
+representations of data. The displays are called Floating Charts and
+are constructed by joining together building blocks. Each building
+block has a different configuration of ultrasonic speakers that can
+levitate and control one or a group of particles inside it. This
+enables the creation of displays of various sizes and characteristics,
+in which the levitated particles represent different values of data.
+Acoustic levitation suspends objects in mid-air and can translate
+them around 3D paths. This is a new opportunity for creating
+dynamic physical visualizations without the restrains of gravity or
+mechanical actuation.
+
+* Themis.Omirou@bristol.ac.uk
+
+Anne Roudaut
+University of Bristol
+
+We believe that there are several advantages in building a display
+capable of representing acoustically levitated charts. Firstly, the
+levitated objects can be moved accurately and at a considerable
+speed, enabling information that gets updated in real time.
+Secondly, the floating particles do not require any physical support
+and thus do not occlude each other, allowing the user to have better
+viewing angles. Thirdly, the values are represented by physical
+objects that do not need to emit light to be visualized with the
+benefit of reducing eye fatigue; also, this enables a more natural
+perception of depth. Finally, acoustically transparent
+embellishments can be intertwined with the system, which can have
+a significant effect on our perception of the presented data.
+In this paper, we create a modular system that represents charts
+using mid-air floating objects actuated individually with acoustic
+levitation. Additionally, we present a list of modifications that can
+be applied to the levitated objects to enhance the displayed
+information (e.g. using coloured beads of different sizes or fabrics
+and threads connecting them).
+2
+
+PRINCIPLES OF ACOUSTIC LEVITATION
+
+Sound waves can exert forces and completely suspended them in
+air [1]. The most basic arrangement to produce this effect is a
+transducer (sound emitter) and a reflector on top [9], this creates a
+standing wave and particles levitate in its nodes (i.e. areas of low
+amplitude). By changing the phase of the transducers, movement
+of the particle can be achieved [5][6][7].
+Ochiai et al. [6] presented a system composed of 4 opposing
+arrays of ultrasonic speakers that could suspend and move objects
+in 3D space. Later, Omirou et al. [7] created a modular system
+composed of 2 opposing arrays of speakers; the system was used
+for the physical representations of 3D paths. Recently, acoustic
+levitation has been achieved with all sort of geometries and even
+single-sided arrangements using a holographic method [5].
+Here, we present a modular display that uses the holographic
+method to create dynamic physical representations of data
+composed of dozens of free-floating particles that are levitated and
+moved independently.
+In this paper, we use levitators composed of two arrays of
+transducers. The arrays are in a flower pattern with 7 transducers
+arranged in a hexagon. The distance between the transducers was
+approximately equal to the wavelength and therefore the flower
+array makes a better use of the constructive interferences at the
+target point. Also, the hexagonal pattern permits to pack more
+transducers in less space. The geometries we tested are the two
+opposed arrays, a reflector and an array, L-shaped, and V-shapes.
+To apply the holographic method in our levitators, first all the
+transducers get focused in the target point by adjusting their phases;
+then, a π-phase difference is added to one of the arrays. For the
+reflector, it is enough to generate a focal point at the target point
+since the reflected wave will create the standing wave pattern. More
+details about this method can be found in [5].
+
+3
+
+FLOATING CHARTS DISPLAYS
+
+In this section we present the composition of Floating Charts
+displays. An instance of the display is made by assembling different
+building blocks together. The levitating objects inside the building
+blocks are denominated as floating values, a collection of them
+form a Floating chart.
+3.1
+Building Blocks
+In this section we explore the possibilities of the most promising
+arrangements. We tested these geometries of building blocks to
+minimize the amount of transducers required, their size and the
+interferences created when joined together.
+3.1.1 Two-opposed
+In this block, two flower arrays face each other and are separated
+by a distance of 6cm. Smaller distances are possible, with the
+maximum separation for stable levitation being 10 cm. Also, larger
+separations imply that the building blocks have to be assembled
+together leaving bigger gaps between them for avoiding
+interferences. Although the levitating particle is occluded from the
+top, the system presents a very good visualization angle from any
+direction, and can be visualized laterally from any angle.
+A display composed of 4 columns and 3 rows of two-opposed
+blocks is presented in Figure 1. Each building block is separated by
+2cm, this distance was selected to allow individual movement along
+the vertical axis with minimal interference between neighbouring
+building blocks.
+3.1.2 Reflector
+The second type of building block utilizes only a single array with
+an opposing reflector made of transparent acrylic. The acoustic
+wave is reflected off the acrylic and a standing wave is formed
+between the acrylic and the array. This block requires half the
+amount of transducers but its manoeuvrability and range is reduced.
+An interesting feature of this block is that it can be viewed from the
+top through the transparent acrylic. However, this block is more
+suitable for static representations since the levitated particles can
+only be moved laterally. In Figure 2.a we show a display composed
+of 4 of these blocks in a row that share the same transparent
+reflector. The particles were preplaced at the appropriate heights.
+3.1.3 L-shape
+L-shape blocks are created by placing two flower arrays at a 90º
+angle as shown in Figure 2.c. The particles have good
+manoeuvrability in this block and can be observed from any angle
+but not from the back. The main disadvantage of these block is that
+it can only accommodate one particle given the tilted pattern of the
+standing wave.
+3.1.4 V-shape
+V-shape blocks are composed of two flower arrays placed at a
+35o angle as shown in Figure 2.b. There are no obstructions from
+any viewing angle since the objects levitate above the block.
+However, it is limited in terms of range, strength and speed.
+3.2
+Floating Values
+Inside each of the building blocks an object can be levitated and
+moved to the target position to represent different numbers. We
+denominate these particles as floating values. Different
+characteristics of the particles can be modified to reflect the value
+that they represent. The default floating values used in our system
+are white expanded polystrerine beads of approximately 2 mm.
+
+Figure 1: A Floating Chart display composed of 4x3 two-opposed
+blocks. Floating values of various colors are levitated at
+different heights to represent numerical values of tabular data.
+The dimensions of the display are 14x17x8cm and the particles
+are 2mm in diameter.
+
+a
+
+b
+
+c
+d
+
+Figure 2: a) A Floating Chart made of 4x1 reflector blocks. The
+dimensions of the display are 14x17x8cm and the particles are
+4mm in diameter. b) A Floating Chart composed of 4x2 V-shape
+blocks, the particles are 2mm in diameter. c) A Floating Chart
+composed of 4 L-shape blocks, the particles are 2mm in
+diameter; (d) the digital counterpart of the floating chart
+
+3.2.1 Height and Movement
+The main property of the floating value is its height which is
+directly proportional to the value it represents. The height can be
+changed dynamically to reflect real-time modifications of the
+value.
+Additionally, the objects can be moved along other axis and
+therefore different repetitive movements (e.g. vertical, horizontal
+or circular) can be used for each floating value. These movements
+can change in speed or length to represent complex values such as
+imaginary numbers or the standard deviation. Moreover these
+movements can be used to create time-based visualizations.
+3.2.2 Size and shape
+Floating charts support levitation of beads of different size,
+ranging from a diameter of 0.6mm to 5mm (Figure 3.a). The size
+of the bead can be used not only to enhance visual perception but
+also to convey extra information of the number. For instance, the
+size can represent the importance or reliability of the value.
+Additionally, the shape of the bead can change from spherical, to
+disks or other planar shapes.
+
+a
+
+b
+
+c
+
+d
+
+e
+
+dh
+
+g
+
+f
+
+Figure 3: a) Beads ranging from 0.6mm to 5mm in diameter, flat
+bead on the bottom. b) Different colors applied to the beads. c)
+Fluorescent paint. d) the nodes can allocate up to 5 beads of
+2mm. e,f,g) a thread joining the beads. h) Acoustically
+transparent fabrics are intertwined with the Floating Chart.
+
+3.2.3 Colour
+The particles can be painted or coated with different colors to
+show similarities in the dataset or attract attention towards specific
+areas. Varied substances can be used for coloring the bead ranging
+from traditional colors (Figure 3.b) to fluorescent pigments (Figure
+3.c) that would allow to visualize the charts in dark environments.
+3.2.4 Number of particles
+Particles can be stacked in the same column to create columns
+instead of single dots (Figure 3.b). Columns are useful to create bar
+charts whereas individual points can be used for scatterplots. Also,
+each node can allocate up to five 2mm polystyrene beads at the
+same time (Figure 3.d). The amount of particles per node reflects
+an extra discrete number that ranges from 1 to 5 and it can be used
+to indicate the stars of a hotel when the height is used to convey the
+price.
+3.2.5 Lines
+Threads can be attached to a single levitated object or passed
+through multiple of them. A horizontal thread can join beads to
+enhance the perception of the different values, (Figure 3.f), while a
+vertical thread can be used to represent columns of different heights
+either in a straight (Figure 3.e) or bent line (Figure 3.g). These
+threads do not directly affect the sound field, but they make the
+levitated objects heavier and more unstable when they move.
+3.2.6 Physical Integrations
+Acoustically transparent materials with micro-holes, such as cloth
+or metallic meshes can be placed inside the levitators without
+reducing the strength of the levitation. These physical structures
+can be intertwined with the floating charts (Figure 3.h) to embellish
+the charts to motivate user approach.
+3.3
+
+Implementation
+
+3.3.1 Hardware
+The ultrasound transducers (MA40S4S, Murata Electronics,
+Japan) used in Floating Charts have 1cm of diameter with a central
+frequency of 40kHz, a beam spread angle of ±40° (measured at 6dB points) and sound pressure levels of 120±3 dB (measured on
+the axis at z = 30cm).
+These transducers are driven with a custom-made electronic
+circuit. The circuit boards use XMOS L1-128 processors (XMOS,
+
+Bristol, UK) to generate a control signal of 3.3V and 40KHz for
+each channel. A MOSFET circuit per channel amplifies the square
+wave signal to 15V. The driver boards can generate the signals for
+the transducers with a phase resolution of π/10. Our electronics
+allowed us to drive up to 192 transducers with a power consumption
+of 26 Watts (15V x 1.7A).
+A computer running our custom software calculates the phase
+delays for the target levitation points and sends the phases to the
+driver boards through a UART serial port. The phases could be
+updated at up to 67 frames per second. The levitated particles are
+expanded polystyrene spheres ranging from 0.6 to 5 mm of
+diameter (Custompac Ltd., Castleford, UK).
+3.3.2 Software
+The software that controls the phase of each transducer was
+implemented in Java, using the holographic method [5] which does
+not require any optimization to run in real-time. The software is
+able to read datasets from an Excel spreadsheet and map the
+numbers to the target heights of each floating value, taking into
+account the limitations of each building block in terms of levitation
+volume.
+4
+
+TECHNICAL EVALUATION
+
+In this section we analyse the technical capabilities of each of the
+building blocks. These values can guide the design of the display
+depending on the required update speed, size of the floating values
+or capacity for holding threads.
+The working volume represents the area in which a particle can
+be controllably moved. The limits in this area are due to the
+attenuation of sound with distance and the directive nature of the
+transducers. The working volume for different building blocks is
+presented in Figure 4. For the Two Opposed design, this area
+expands laterally, slightly further than the transducers end, and
+transversally up to half a centimetre from the transducers. In the Lshape design, the area gets slightly reduced frontally since the
+pushing force from the vertical flower needs to be counteracted by
+the horizontal flower. The Reflector block design features working
+slices instead of volumes meaning that the particles have to be
+preplaced at the desired height and can be moved laterally within
+that height; the lateral span increases as the wave gets closer to the
+reflector and so do the slices. In the V-shape design, the working
+volume is reduced in height and can only go 1cm above the
+transducers because none of the flowers emit directly contrary to
+gravity. To obtain the working volume, a particle was placed in the
+centre of the levitator and moved along one axis until it fell.
+The repositioning error of the particles was approximately 0.3
+mm. and was measured by taking a front picture of a particle,
+moving 1cm away, returning it to the same position and taking
+another picture. A ruler was used to transform between pixels and
+cm. The absolute error is relative to the wavelength and phase
+resolution, that is 0.42 mm in our systems (wavelength = 8.57mm,
+phase resolution = 20).
+The linear speed for positioning the particles was up to 17cm/s
+laterally and 2cm/s vertically with the two-opposed block. L-shapes
+offered slightly slower movements and both reflectors and Vshapes were around three times slower. This occurs because the
+trapping forces were not enough to supress the oscillatory
+behaviour that the particles exhibit when they are translated in midair. To measure the linear speeds, the particles were moved along
+one axis in oscillatory movements of 2cm amplitude, and the speed
+was increased until the particle was ejected.
+Forces of the order of μN were generated on the levitated
+particles since they were made of expanded polystyrene (29Kg per
+m3) and had diameters ranging from 0.6mm to 5mm.
+
+The two-opposed block design generated the strongest forces
+transversally, since the arrays were placed perpendicular to the
+gravity direction, and a standing wave was generated with arrays
+that are directly facing each other. Two-opposed design was
+capable of levitating the biggest particles even when they had
+threads attached. For the same reason, Reflector blocks design had
+good strength since the reflected wave was perpendicular to the
+incident one. L-shape blocks design had less strength because only
+one array was perpendicular to gravity and in the V-shape blocks
+design, the strength was the weakest since the force component to
+counteract gravity was obtained as an addition of the two flowers.
+A summary of the values is shown in Figure 4. When several
+blocks are combined to create displays of multiple floating
+particles, the presented values decrease since even small
+interferences from one block slightly affects the others.
+5
+
+DISCUSSION
+
+Floating Charts offer some advantages compared with other
+dynamic physical displays. They can be handheld without affecting
+the levitation, allowing the users to explore them. The power
+consumption per actuated unit is low. Also, the used beads are
+inexpensive and available in big quantities, thus they can be easily
+replaced, shaped or painted to provide richer information.
+5.1.1 Use Cases
+A simple plug-in for Excel can be used to synchronize the digital
+charts with the Floating charts. That is, any change in the data
+values is reflected in physical space allowing users to even use both
+the physical and digital representations to make decisions and
+identify trends. Another possibility would be a public display, to
+which users can upload pictures of charts with their phones; the
+public display analyses the chart for extracting the numerical values
+and represents them as a Floating Chart.
+5.1.2 Limitations
+Floating Charts enable scatterplots, bar charts and some
+additions like lines between data points. However, other types of
+charts like pie charts are still not realizable. Similarly, the points in
+the scatterplots cannot be in any random positions since there
+should be a minimum distance between them.
+The amount of beads used was limited and consequently the
+complexity of the data that could be represented, yet a 4x3
+scatterplot was a good first step. As Floating Charts are modular,
+bigger systems can be created to promote collaborative graph
+inspection without the need of mounting devices on the users. By
+using more directional transducers or by reducing the frequency,
+distance between the levitated objects can be reduced thus
+increasing the resolution of the system.
+Future research should focus on the interaction with Floating
+Charts. A limitation of the presented systems is the fact that the
+users were unable to directly touch the levitated objects without
+reducing the robustness of the system in terms of maintaining
+levitation. A certain amount of user interaction is still possible but
+if a non-acoustically transparent object is placed between the
+levitated object and the transducers, then the wave will be reflected
+and the object will fall. The same will happen if air is blown onto
+the array either by the user or from another source.
+While the frequency used in our system is not audible to humans,
+several animals such as dogs will be able to hear the ultrasonic
+noise.
+
+a
+
+Speed
+Strength
+
+b
+
+Speed
+Strength
+
+c
+
+Speed
+Strength
+
+d
+
+1cm
+
+Speed
+Strength
+
+Figure 4: Working volume (pink area), speed and strength for: (a)
+two-opposed, (b) reflector, (c) L-shaped and (d) V-shape blocks.
+6
+
+CONCLUSION
+
+An acoustic levitation display for representing dynamical freefloating charts has been presented. The displays are modular and
+are created by assembling different building blocks. Building
+blocks are structures with different transducer configurations that
+can levitate particles inside them. Each levitating particle
+represents a data value and thus a collection of them form a chart.
+Several modifications can be applied to the levitating particles to
+enhance the presented information.
+This paper is the first showing a display capable of controlling
+independently a significant amount of levitated particles.
+7
+
+ACKNOWLEDGMENTS
+
+This work has been supported by the Center for Doctoral
+Training in Communications, EPSRC Grant EP/I028153/1 and the
+FET grant 309191 for the GHOST project.
+REFERENCES
+[1]
+[2]
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+
+[7]
+
+[8]
+
+[9]
+
+H. Brandt, Levitation in Physics, Science, New Series, Vol. 243, No.
+4889, pp. 349-355, Jan 20, 1989.
+S. Follmer, D. Leithinger and H. Ishii. inFORM: dynamic physical
+affordances and constraints through shape and object actuation. In
+Proceedings of the User Interface Software and Technology ’13 (),
+pages 417–426, 2013.
+Y. Jansen, P. Dragicevic, P. Isenberg, J. Alexander, A. Karnik, J.
+Kildal, S. Subramanian and K. Hornbæk. Opportunities and
+Challenges for Data Physicalization. In Proceedings of the 33rd
+Annual ACM Conference on Human Factors in Computing
+Systems ‘15 (New York, NY), pages 3227-3236, ACM, 2015.
+Y. Jansen, P. Dragicevic, and J.D. Fekete. Evaluating the efficiency
+of physical visualizations. In Proceedings of the SIGCHI Conference
+on Human Factors in Computing Systems ’13 (New York, NY), pages
+2593-2602, ACM, 2013.
+A. Marzo, S.A. Seah, B.W. Drinkwater, D.R. Sahoo, B. Long and S.
+Subramanian. Holographic acoustic elements for manipulation of
+levitated objects. Nat. Commun. 6:8661, 2015.
+Y. Ochiai, T. Hoshi and J. Rekimoto. Pixie dust: graphics generated
+by levitated and animated objects in computational acoustic-potential
+field. ACM Transactions on Graphics’14, 2014.
+T. Omirou, A. Marzo, S. A. Seah, and S. Subramanian. LeviPath:
+Modular Acoustic Levitation for 3D Path Visualisations.
+In Proceedings of the 33rd Annual ACM Conference on Human
+Factors in Computing Systems’15 (New York, NY), pages 309-312,
+ACM , 2015.
+F. Taher, J. Hardy, A. Karnik, C. Weichel, Y. Jansen, K. Hornbæk and
+J. Alexander. Exploring Interactions with Physically Dynamic Bar
+Charts. In Proceedings of the 33rd Annual ACM Conference on
+Human Factors in Computing Systems’15 (New York, NY), pages
+3237-3246 ACM, 2015.
+R.R. Whymark. Acoustic field positioning for containerless
+processing. Ultrasonics 13, 251-261. 1975.
+
+

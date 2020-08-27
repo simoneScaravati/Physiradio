@@ -1,0 +1,845 @@
+Authors copy: DOI: http://dx.doi.org/10.1145/2513506.2513519
+
+Blending the repertory grid technique with focus groups
+to reveal rich design relevant insight
+Trevor Hogan
+Dept. of Computer and Information Sciences
+University of Strathclyde, Glasgow G11XH, UK
+hello@tactiledata.net
+ABSTRACT
+
+In the context of better understanding and describing the
+role of modality in data representations, this paper proposes
+the blending of the Repertory Grid Technique, a proven and
+tested elicitation method, with focus group methods, thereby offering researchers an efficient method of obtaining
+subjective perceptions on a defined area of interest. We
+demonstrate the potential of this blended approach by conducting two empirical studies that investigate the same artifacts, using two different approaches. The first study follows the classic Repertory Grid approach, while the second
+adapts this by utilizing the RepGrid in a focus group session. In comparing these, we will illustrate how using a
+blended approach can validate and reveal further meaning
+about the data collected. Furthermore, we will demonstrate
+that this can be achieved in a more natural manner than that
+of a typical RepGrid study, which can be extremely demanding for both the participant and the researcher while
+the study is being conducted.
+Author Keywords
+
+Repertory Grid Technique, Focus Groups, Data Representation, Design, Methodology, Discourse
+ACM Classification Keywords: H.5.1 [Information Inter-
+
+faces and Presentation]: Multimedia Information Systems Evaluation/methodology
+INTRODUCTION
+
+Recently we have witnessed a shift in focus within HumanComputer interaction (HCI), from measuring the performance of systems based on efficiency and effectiveness to
+exploring user-experience based on hedonic qualities [9]
+and the felt experience of technology [20]. Developing a
+better understanding of user-experience is not only important at the later stages of the design cycle, it is also valuable when making critical decisions throughout the design
+process [9]. Investigating the user-experience of designed
+artifacts can either be achieved by seeking trends across a
+group of people or by looking at the idiosyncratic views of
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. To copy otherwise,
+or republish, to post on servers or to redistribute to lists, requires prior
+specific permission and/or a fee.
+DPPI 2013, September 3 – 5, 2013, Newcastle upon Tyne, UK.
+Copyright © 2013 ACM 978-1-4503-2192-1/13/09...$15.00.
+
+Eva Hornecker
+Bauhaus-Universität Weimar, Fak. Medien,
+Bauhausstr. 11, D-99423 Weimar, Germany
+eva@ehornecker.de
+individuals. Although peoples’ idiosyncratic experiences
+may expose valuable design relevant data, exploiting trends
+across a homogeneous group of individuals can be far more
+useful information for a designer. The act of capturing peoples’ experiences can be a difficult task in itself, however,
+identifying themes common across a group of individuals
+adds further difficulties due to the subjective nature of experience.
+A method that has proven to be a valuable tool at revealing
+how people construe their experience of designed artifacts
+is the Repertory Grid (RepGrid) technique. However, this
+method has some limitations. RepGrid studies are typically
+conducted with individuals, which can be time consuming
+as well as extremely demanding for both the participant and
+the researcher while the study is being conducted. Also, although the data collected during a RepGrid study reveals a
+lot about what the participant experienced when interacting
+with the artifacts under investigation, it offers very little
+about why they experienced them in this particular way. A
+method that does address this issue is focus groups. Focus
+groups reveals information in a way which allows researchers to find out why an issue is salient, as well as what is salient about it [19]. Focus groups are also a very efficient
+form of exploration and evaluation, however, because of
+their open approach a skilled, unbiased moderator is needed
+who master techniques to refocus conversations. In this paper we propose to blend these two techniques, which will
+enable a design researcher to carry out a RepGrid study that
+incorporates a focus group session to expose rich design
+relevant insight in an efficient structured manner.
+THE REPGRID TECHNIQUE AND FOCUS GROUPS
+
+The Repertory Grid Technique is a methodological extension of George Kelly’s Personal Construct Theory (PCT)
+[20]. Kelly proposed PCT as a replacement for the two major approaches to human understanding at the time – Behaviourisms and Psychodynamics [15]. He suggested that
+instead of treating people as ‘subjects’ we should look at
+them as if they are scientists who are continuously trying to
+make sense of events around them. They do this by construing and constructing personal theories that allow them to
+predicate future encounters and behaviours. Central to PCT
+is the idea of ‘the construct’. Constructs, as the name suggests, are grounded in the psychological concept of constructive alternativism, and are based on the belief that humans draw their understanding and description of the world
+
+Authors copy: DOI: http://dx.doi.org/10.1145/2513506.2513519
+they inhabit based upon their own personal experiences and
+that they distil these into labels (personal constructs). Kelly
+argued that good only has meaning when compared to bad,
+thus, all constructs are bipolar dimensions (i.e. sad – happy.) He proposed the RepGrid technique as a method to
+elicit peoples’ personal constructs. This technique collects
+rich data during a structured, reflective process where individual participants are asked to compare a set of elements
+(object, events or people) along self-chosen bipolar attributes (constructs). Elicitation is commonly done in an interview. Often, participants are finally asked to rate the elements against each construct. Although the RepGrid technique was initially conceived as a method for use within
+clinical psychology, over time it has been used in many diverse research fields such as education, politics, marketing
+and information systems (for a comprehensive overview of
+the RepGrids’s use in these domains see [7:168-226]) and
+has continuously evolved.
+Like the RepGrid, focus groups have been in use since the
+middle of the 21st century. Originally called focus interviews, they were used by social scientists to examine the
+morale of the U.S. military during WWII. Although the
+technique has been widely used in market research, difficulties in demonstrating rigor in analysis and fear of researcher
+bias meant that the technique was not fully embraced by academic research until the 1980’s [24]. Focus groups can be
+conducted at various stages of a research project, during the
+preliminary or exploratory stages of a study or as a method
+of evaluation. Their main purpose is to obtain perceptions
+on a defined area of interest in a natural, non-threatening
+environment. Most importantly, for researchers interested in
+exploring user-experience, the data that gathered is qualitative, and consists of experiences, opinions, ideas, and motivations for behaviour, rather than ‘figures and facts’ [19]. A
+well-known problem of focus groups is that they may become dominated by assertive and vocal individuals.
+The RepGrid and Focus Groups in Design
+
+Apart from some notable examples (cf. [6]), the use of
+RepGrids within the field HCI design has been less plentiful than in other research fields. The earliest example that
+we could find is from 1980, where Quinn [21] investigated
+the RepGrid technique as a method to assess cognitive
+complexity as a correlate of creativity. This was followed
+by Jerrard [13] who employed it to analyze design decisionmaking. More recently, there have been further attempts to
+adopt the use of the RepGrid within the field of HCI research and design. Most notably, Hassenzahl & Wessler [8]
+suggested that personal constructs, elicited during a
+RepGrid study may have the potential to reveal design relevant data. They note that designers are mainly interested in
+the differences between products rather than differences in
+individuals, thus examining personal constructs elicited
+from a group of individuals might reveal rich insight about
+the artifacts that they interact with. It could be argued that
+Hassenzahl and Wessler’s article revitalized interest in the
+
+RepGrid technique within HCI. Since then, in the broader
+field of design, we have seen the RepGrid technique used
+by Cunningham [4] to classify audio within the context of
+sound design, Bang [2] used it to explore peoples’ emotional experiences with fabrics, and Fallman and Waterworth
+[6] employed it to explore how people interact with mobile
+phones. Hassenzahl et al [10] subsequently showed how the
+RepGrid technique can be a valuable tool for designers, by
+not only exploring issued related to traditional usability but
+also as a technique that reveals “highly design relevant” issues such as ‘adequacy concerns” and ‘hedonic qualities’.
+Focus groups also offer design researchers a flexible technique that can be employed at various stages of the design
+cycle, to elicit user needs, for feedback on concept sketches
+or prototypes, or to let participants generate new ideas. Focus groups can also be used for final concept refinement.
+Tremblay et al [26] highlight several reasons why focus
+groups are a highly relevant and rigorous approach for refining and evaluating design artifacts, these include, its ability to allow for the emergence of ideas or opinions that are
+not usually uncovered in individual interviews, and offering
+design researchers the opportunity to collect large amounts
+of rich data. Notwithstanding these benefits, there are
+known issues with focus groups, such as their likelihood of
+becoming dominated by individuals, the reliance on moderators’ skills and experience in facilitating discussions, and a
+lack of clear procedures that could guide newcomers to the
+approach [1]. Nevertheless, focus groups are widely used in
+design, often in combination with other approaches (e.g.
+[18, 3]).
+RESEARCH CONTEXT
+
+The work presented here is part of a wider PhD project that
+explores the role representation modality plays in peoples’
+experience of data. Human-data interaction has greatly
+evolved in recent years, research fields such as Ambient
+Displays, Artistic Visualization, Data Art and Casual Visualization are now producing artifacts that represent data beyond the visual modality [11, 27]. This move towards representing data beyond the visual modality has led us to
+question: what qualities are important to people when describing their experience of data representation? For instance would people describe their experience of data represented through sound in similar terms than if the data was
+represented through other modalities e.g. haptic or visual?
+Methodology
+
+To answer this question and also to compare our blended
+approach to that of a classic RepGrid study we conducted
+two separate studies that both investigated the same set of
+data-driven interfaces, each of which is an embodiment of
+different representation modalities i.e. haptic, visual and
+auditory. As part of this study three data-driven interfaces
+were created that represent one data stream via the aforementioned modalities. The source of the data is a live
+stream of the Hydrogen levels in deep Space. This data is
+
+Authors copy: DOI: http://dx.doi.org/10.1145/2513506.2513519
+
+Figure 1. 1: Sample range of colours emitted from the visual interface. 2:Visual Interface, 3: Haptic Interface and 4: System
+Design (a. Radio telescope b. COSM server c. Auditory interface d. Haptic interface e. Visual interface.
+
+gathered by Blackrock Castle Observatory and the Irish National Space Centre, both based in Cork, Ireland. The rationale for using this source was that we have worked with
+this data in the past [12] and it has proven to be a reliable
+and constant stream of data. To acquire the data we utilized
+the COSM platform1. A custom program on the computer
+attached to the telescope collects the latest data and sends it
+to an account on COSM, and then any computer connected
+to the Internet can retrieve and utilize this data (Fig. 1:4).
+Data-Driven Interfaces
+
+When designing the three data representation interfaces we
+focused on producing a set of extremely simple objects
+whose primary function was to represent the data via a particular modality.
+The haptic interface represents the data through the haptic
+modality utilizing vibro-tactile feedback (see Fig. 1:3.) It
+consists of a 30cm x 30cm wooden surface that comfortably
+accommodates only two hands. The rationale for such a size
+was that all three modal interfaces should be similar in regards to the number of people who could interact with them
+at any one time. Nevertheless, as Fig. 1:3 illustrates, participants figured out ways to share the experience by putting
+their hands close together on the board. The vibration is
+generated through ten 5-volt motors that are embedded into
+the underside of the wood. The speed of these motors is
+controlled by a microcontroller that is connected wirelessly
+to a computer. Through a custom program, a constant connection is maintained with the COSM server where the latest value retrieved from the radio telescope is stored. The
+speed of the motors increases or decreases depending on the
+latest reading (high levels cause strong vibration while low
+levels cause weak vibrations.)
+The visual interface represents the data through a range of
+colours, from green to red, which is emitted from six RGB
+LED’s. The interface consists of a hollow wooden cube
+(10cm side) with a 2cm hole in the top face (Fig. 1:2). A
+microcontroller, which is housed in the interior of the cube,
+controls the colour of the light being emitted from the
+LED’s. It is connected wirelessly to the same program as
+the haptic interface. When the program captures high values
+it instructs the microcontroller to emit red light from the
+LED’s. If, however, the reading is low, it instructs the
+1
+
+https://xively.com/
+
+LED’s to glow green. Values in-between these two extremes cause the LED’s to emit the range of colours in the
+colour spectrum between red and green (i.e. medium values
+triggers purple light, medium-high values triggers orange
+light and so on), Fig. 1:1 shows a selection of different colour ranges emitted from the cube.
+The auditory interface utilizes a custom program that dynamically generates a digital sound and plays this through a
+set of head-phones. The headphones are connected to a
+computer running the program all the interfaces are connected to. The frequency of this sonic tone represents the
+latest data values. When the program reads the latest value
+from the COSM server it translates this value into a certain
+frequency. The higher the Hydrogen values the higher the
+frequency of the tone and visa versa.
+PROCEDURE
+
+In all, 24 individuals (16 male, 8 female) participated in
+both studies, all of which were final-year digital media students, with a mean age of 24 (Min = 21, Max = 28). Initially, these participants were divided into two groups of 12,
+with one group participating in Study 1 (the traditional
+RepGrid approach) and the other in Study 2 (the blended
+approach). Both studies were conducted in a large room,
+where the three data interfaces were positioned in separate
+corners. The follow-on interviews and focus group session
+also took place in this room. The following sections describe the procedure followed by both studies, divided into
+the various stages of a RepGrid study (Element Familiarization, Construct Elicitation and Rating.) In each case we will
+first describe the typical traditional procedure and follow
+this by presenting our proposed amendment.
+Element Familiarization Session
+
+Study 1 (traditional): This stage of the study is dedicated to
+making the participant familiar with the elements that are
+under investigation. The researcher typically introduces
+each separate participant to the elements and allows some
+time for him/her to interact with them. During the first
+study, following a short explanation of each interface, each
+of the 12 participants was allowed 15 minutes, one after another, to engage with all three elements. A researcher was
+present in the room at all times to answer any questions,
+while also encouraging the participants to move between all
+the interfaces and not to stay with one for too long.
+
+Authors copy: DOI: http://dx.doi.org/10.1145/2513506.2513519
+Study 2 (blended): In a typical RepGrid study this stage is
+quite informal, however, as part of our proposed blending
+of the two methods this stage was of critical importance.
+Following a short introduction to the three data interfaces,
+all 12 participants were allowed 45 minutes to interact with
+them. The participants were divided into groups of four,
+spending fifteen minutes interacting with each interface before moving on to the next in a round-robin pattern. All
+groups were encouraged to openly discuss their perception
+and experience as well as discussing the pertinent qualities
+of the interfaces with each other. This session was recorded
+using video cameras and audio recording equipment. The
+transcriptions of these recordings form the central component of the subsequent analysis.
+Construct Elicitation
+
+Study 1 (traditional): During a typical RepGrid study, following the familiarization session, the individual participants are interviewed separately to elicit their personal constructs. The method we used is the minimum-context triad
+form of construct elicitation. From the triad of elements the
+participant was asked to describe how two elements are
+similar (convergent pole) but different from the third (divergent pole) [7]. This continued until the participant was
+noticeably having difficulties in ascribing new and unique
+attributes to the elements. In cases where the participant
+found it difficult to elicit more than five constructs the researcher would repeat some of the recorded constructs and
+ask them ‘why’ this attribute is important to them. This
+method, known as ‘laddering’, assists the participant in defining the constructs further and in many cases leads to new
+constructs being elicited. Research has shown that the
+amount of constructs elicited during a RepGrid study typically ranges from 5 – 17 [7]. In the 12 sessions conducted
+during this study an average of 11 constructs were elicited
+from each participants.
+Study 2 (blended): In our blended approach, instead of interviewing the participants individually, we conducted a focus group session, which was mediated by a researcher, to
+elicit constructs from the group. We also used the minimum-context triad form of construct elicitation in this session. It commenced by asking all 12 participants to write
+down as many personal constructs as they could think of,
+much like the typical RepGrid study. After a few minutes
+participants were asked to explain their constructs aloud
+and the group openly discussed each of these. Although the
+group were in control of which constructs were discussed at
+length, if the researcher felt that the discussion was not progressing the laddering technique was also used. A construct
+(or possibly now these could be called ‘group attributes’)
+was only recorded if the majority of the group agreed with
+its inclusion. Once the group achieved consensus, the construct was recorded on a large whiteboard in the room by
+the researcher. This process was repeated until the group
+could no longer think of meaningful distinctions or similarities among the triad of artifacts. This session was also rec-
+
+orded using video and audio equipment, and was subsequently transcribed for use in the analysis of the study.
+Rating
+
+Study 1 (traditional): Typically the third and final stage of a
+RepGrid study is dedicated to linking the elicited constructs
+to the elements under investigation. This is done by rating
+or ranking each element against each construct until a completed RepGrid is produced (Fig. 2.) In this study each participant was presented with a printout of their RepGrid,
+which consisted of their bipolar constructs displayed in the
+rows and the elements in the columns. The participant was
+asked to rate (Likert scale 1-7) each element against the
+constructs so that 1 being the convergent pole (left) and 7
+being the divergent pole (right). Once this had been completed the participants were asked to read over the grid and
+confirm that they agreed with it.
+Study 2 (blended): In the blended approach, the group of
+participants was not asked to rate elements. Instead, they
+were asked to dichotomize, meaning that each element was
+either one dimension of the construct or the other. This
+method was used in Kelly’s original RepGrid studies. This
+process involved the whole group discussing and debating
+whether each element belongs at what end of the bipolar
+dimension. Once consensus was achieved, the group decision was recorded by the researcher i.e. the visual modality
+is construed as comfortable but the haptic and auditory modality are construed as uncomfortable (Fig 2. (S2A).)
+Again, this part of the study was recorded, transcribed and
+used as part of the analysis.
+DATA PROCESSING
+
+Our proposed adaption also extends into the analysis of the
+data gathered during study. During a typical RepGrid study
+a grid is produced for each participant, these can be analysed as individual grids or condensed into one group-grid
+by using various quantitative and qualitative methods. In
+our adapted approach only one grid is produced. The following sections provide a description of the procedure of
+processing the data gathered during both studies. First, we
+will present the traditional approach, this will be followed
+by illustrating the methods used as part of our adaption.
+Study 1 (traditional)
+
+The overall aim of processing the data is to compress the
+individual grids (12 in our case) into one group-grid. During the study a total of 130 unique personal constructs were
+elicited by the 12 participants, these constructs were input
+into the software application WebGrid 52, which was developed to handle data gathered during a RepGrid study.
+This application uses FOCUS analysis to sort the grid,
+which shows the highest possible correlation between constructs and elements. This is accomplished by reordering
+
+2
+
+WebGrid 5 http://gigi.cpsc.ucalgary.ca:2000/
+
+Authors copy: DOI: http://dx.doi.org/10.1145/2513506.2513519
+the rows (constructs) and columns (elements) to produce a
+‘FOCUSed Grid’ that places the constructs and elements
+that are statically similar to one another next to each other
+[23]. By using this FOCUSed Grid we were able to identify
+certain clusters of constructs that were statistically similar
+or identical to other constructs. For the purpose of this
+study we applied two rules when identifying clusters: firstly, constructs must be statistically >95% similar and secondly, a cluster must include four or more constructs. Our
+analysis indentified 13 clusters, which incorporated 105 different constructs. The remaining 25 constructs were not statistically similar enough to be part of a cluster.
+The next stage involves providing titles for the clusters. To
+exclude researcher bias, each cluster was given the title
+from a construct within that particular cluster i.e. the cluster
+Comfortable – Uncomfortable, includes the constructs
+{smooth, appealing, relaxing, comfortable} and {piercing,
+dull, agitated, uncomfortable}. Then, the ratings of each
+cluster were calculated. Instead of the arithmetic mean, the
+median value was calculated. We used the median value as
+studies have shown that calculating the arithmetic mean understates extreme values, which may be at odds with the
+majority of participants. Following this, a ‘Display Grid’
+was produced that included 13 bipolar clusters (Fig. 3.) The
+final stage of data processing involves producing a map using Principal Component Analysis (PCA). This further
+helps to reveal trends and clusters within the data (Fig. 4.)
+PCA is normally relied on heavily during quantitative analysis of RepGrid data [7].
+Study 2 (blended)
+
+Our adapted approach requires minimal processing of the
+data, as the participants themselves complete this through
+discussion and debate during the focus group session. In all
+a total of 24 constructs (group attributes) were elicited during the group session. To refine this list, we also input them
+into WebGrid 5, which produced a FOCUSed Grid. As the
+elements were dichotomized against each construct and did
+not apply ratings, the rules we applied to reveal clusters in
+this grid were much more severe than in the traditional approach. These rules were as follows: the constructs must be
+statistically identical (100%) to each other, while also being
+semantically similar, i.e. the bipolar constructs {engaging –
+non-engaging}, {exciting – relaxing} and {stimulating –
+non-stimulating} were conflated into one cluster which we
+titled {Stimulating – Non-Stimulating}. The final ‘Display
+Grid’ that was produced can be seen in Fig. 2.
+COMPARING THE GRIDS
+
+Before we present the analysis of the grids we briefly compare the content of the two FOCUSed Grids produced. We
+find a number of clear similarities between the two grids
+(Fig. 2 and Fig.3). We have reordered both grids to highlight possible similarities. The first nine constructs (A- I)
+can be pared with a counterpart on the other grid, from S2A
+and S1A ({Comfortable – Uncomfortable}) to S2I and S1I
+
+Figure 2. FOCUSed Grid produced during the focus group.
+
+Figure 3. The FOCUSed Grid collated from the 12 individual
+grids (shading used to highlight similar ratings.)
+
+({Clear-Confusing}-{Obvious-Abstract}). From these nine
+pairs, we can see that the first four are almost identical,
+whereas the remaining five were classified as semantically
+similar by the research team. To verify these similarities
+and avoid researcher bias we used a Thesaurus as well as
+consulting with a number of people who were not part of
+this research project. We note that there is a similarity in
+65% of the elicited constructs, this however leaves 5 constructs that do not demonstrate any resemblance to constructs elicited using the other approach.
+GRID ANALYSIS
+
+In presenting the analysis of both studies it is not our intention to be exhaustive; we are more concerned with highlighting the key aspects of the analysis as a means to compare both approaches. Before we present our proposed
+adaption to analyzing RepGrid data, which is integral to our
+proposed blended approach, we will first briefly illustrate a
+typical method of analyzing the data through Principle
+Components Analysis.
+Study 1 (traditional): Principal Component Analysis is a
+distance-based method of analyzing RepGrid data. It produces a PCA map that illustrates the degrees of correlation
+between and among constructs and elements, by calculating
+the statistical distance between them. The first component
+(x-axis) of the PCA map (Fig. 4) accounts for 61.7% of the
+variance and together with the second, 38.3% (y-axis), it
+
+Authors copy: DOI: http://dx.doi.org/10.1145/2513506.2513519
+
+Figure 4: Principal Component Analysis of the Group Grid.
+
+identifies 100% of variance in the data. Although this is extremely high, it is not unexpected as there were only 3 elements used in the study. When we examine these two components we can interpret the first as being related to type or
+level of engagement the participants thought they had with
+the interfaces. Constructs close to this axis include: curious,
+engaging, provocative and intriguing. The other component
+we read as being related to the material and sensory qualities of the elements, whether they felt comfortable or uncomfortable and also whether they stimulated more than
+one sense (multimodal) or not (monomodal).
+We also see from the PCA map that there are three strong
+clusters formed close to each modality. Firstly, a dimension
+of the cluster (Aesthetic, Calming – Scientific, Intrusive) is
+closely grouped with the Visual Modality. We could infer
+from this that the participants considered the visual modality not only construed as highly aesthetic and extremely
+calming, but that the other interfaces (haptic and auditory)
+are not seen as demonstrating these attributes. We also may
+suppose that the participants associate a sense of calming
+with aesthetic qualities as they are tightly clustered on the
+map. We can also highlight a possible anomaly close to this
+cluster with the positioning of the construct: Stimulating.
+From a semantic perspective, this attribute would seem to
+contradict the construct Calming, which is close by. In the
+case where we have two constructs that are statistically similar, but demonstrate very little semantic similarities, we
+would need to return to the participants to question the
+meaning of this, as we do not have any data that can shed
+further light on this issue. The other clusters include (Multimodal, Tangible) which is clustered around the haptic
+modality and (Abstract, Virtual, Typical) which form a
+cluster close to the auditory modality. The positioning and
+clustering of these attributes can be used to develop further
+understanding about how the participants construe their experience of the modalities under investigation in this study.
+Study 1 (typical): As can be seen above, a RepGrid study is
+typically analyzed using a combination of quantitative
+
+(FOCUS and PCA) and qualitative methods (Content Analysis). In our adaption, we propose taking a primarily qualitative approach. This procedure involves transcribing and
+analyzing the familiarization and focus group sessions as
+examples of discourse. This discourse was treated as relating to the experience of using the three interfaces. The process involves tracing the emergence of the elicited constructs through the discourse to reveal further insight related
+to their meaning. We will also demonstrate how this technique can be used to validate the grid and extract constructs
+that were not elicited during the study. The accounts are also scrutinized for the kind of discovery that might be useful
+in informing the design of data representations. Along with
+the transcripts, we also examined our field notes compiled
+during and after the study. It is important to note that as part
+of this study field notes were an integral element and were
+already “a step toward data analysis” [19].
+Discourse
+
+In the focus group session, it was agreed that both the haptic and auditory interfaces be described as Stimulating, unlike the visual interface which they agreed was NonStimulating. When we examined the transcripts we found
+extracts that concur with this choice of construct. On one
+occasion, when a group were interacting with the haptic interface their discussion was as follows:
+P1 “But when this one (haptic) goes from low to high you
+notice much more than the visual one, it makes you think
+more because it grabs your attention” P4 “...I would much
+prefer the sensation in my hand” P2 “Yeah true, but would
+you really know that it was at the highest” P4 “Does that
+matter, as long as it is grabbing your attention well then it
+works, vibration works better than lights for me...”
+We can see in this extract that the participants are comparing the two modalities (haptic and visual) and negotiate the
+importance of stimulation, while some are willing to trade
+the communicative value of the modality for stimulation.
+P4 even qualifies whether the interface works or not purely
+on the basis of it “grabbing your attention.”
+Another construct elicited during the study was Sociable –
+Isolating. The group described the haptic and visual modality as being Sociable while describing the auditory modality as being Isolating. The following conversation provides a rationale for ascribing these constructs to the elements.
+P2 “None of us have any idea what the levels are when we
+are not using the headphones, at least with the other we can
+push in beside someone else to see the colours and we all
+had our hands on the vibration mat at one time, ” P4 “That
+is not just down to the headphones, I have my own idea of
+what certain sounds mean, but that is not the same for colours” P2 “You can also think about it more without someone asking you about it...” P4 “...This one (audio) is different from the other ones, I’d say” P3 “Yeah, it’s the only
+
+Authors copy: DOI: http://dx.doi.org/10.1145/2513506.2513519
+one that you have to make your own mind up about what’s
+going on, the others you can look around a see what other
+people think but this one you have to explain what you feel
+first before can gauge what others think...”
+This discourse is referencing aspects that could be construed as generating shared meaning (Sociable) within a
+group P3 “look around a see what other people think”, as
+well as including dialogue that points toward purely independent thoughts (Isolating) P4 “I might perceive something different from you”. We believe that these extracts
+highlight an important issue related to the meaning of the
+construct, as it rather seems to describe the (incidental)
+properties of the interface, and not the modalities used to
+represent the data. The auditory modality is the only one
+that cannot be experienced by more than one person at a
+time. The haptic modality is carried through a vibrating surface, and contrary to our design intention, which was to only support single user interaction, it did afford multiple
+hands to be placed on the surface at once. The visual modality was also designed to only support single user interaction. However, although the hole in the cube is quite small,
+the participants soon realized that by placing a hand over
+the hole the colour is reflected for all to see. Thus, although
+all interfaces were designed for only one person, the audio
+interface was the only one that maintained this, leading us
+to believe that this is the reason why the group considered it
+to be isolating and not sociable like the other interfaces.
+The group also agreed to describe the visual interface as
+aesthetic, while describing the haptic and auditory modalities as practical. During the discussions participants in one
+of the groups spoke about the visual interface in the following way:
+P1 “I think it is really pretty, pretty colours I mean” P4
+“Yeah, it is prettier than the sound one” P1 “that’s because
+you can’t possibly describe sounds as pretty” P3 “Yes you
+can, the sound of little birds chirping can be pretty” P3
+“That is because the birds are also pretty and not just the
+sounds they make” P1 “well you surely can not say a vibration is pretty” P3 “That’s true...”
+It is clear from this conversation that members of the group
+explicitly ascribed aesthetic qualities to the visual modality
+itself. They were not concerned with the physical container
+that the colours were being projected in. They also question
+whether abstract sounds and the sensation of vibration can
+be considered pretty.
+Another group, while viewing the visual interface, discussed:
+P4 “what is causing that?” P2 “I don’t know” P3 “neither
+do I” P2 “but I don’t really care what’s causing it, isn’t it
+enough just to know that something is causing it... P4
+“What do you mean?” P2 “It’s creating these lovely colour
+changes and that’s enough for me” P4 “that’s not all it’s
+doing” P2 “I know but sometimes it is nice just to look at
+
+cool things happening and not bother about why it’s happening” P4 “It’s pretty cool alright... “
+We see here that when the participants engaged with a modality, which they perceive as aesthetically pleasing, the
+communicative value of the modality becomes somewhat
+irrelevant. When P4 states that he doesn’t “really care
+what’s causing it”, he is challenged by P2, but reaffirms his
+position and explains that “sometimes it is nice just to look
+at cool things”.
+These are three examples of how we trace the emergence
+and explore further meaning of the constructs through the
+dialogue recorded during the study. It not only provides us
+with a better understanding of the underlying meaning of
+the constructs, but we can also use this discourse to validate
+the constructs and possible even extract new constructs that
+were not elicited during the study. An example of the emergence of a new construct during analysis follows.
+When we examined the transcripts, we noticed that on a
+number of occasions the participants described the visual
+and haptic modality as being harsh and alarming, while
+comparing them to the soothing and smooth qualities of the
+auditory modality. On one occasion the group agreed when
+P4 stated “the light on your eyes is very harsh especially
+when it gets to red”. Another example can be seen in the
+following extract (which was recorded while the group
+were interacting with the auditory modality): P1 “It’s much
+smoother than the lightbox” P4 “what do you mean by
+smoother?” P1 “I mean, it’s more soothing” P2 “I
+wouldn’t say that the colours were alarming, maybe a bit
+harsh on your eyes but this was only when I look really
+closely at it” P4 “I find with this one is not as harsh as the
+other two and that makes you want to listen to it for longer...”
+Following this discovery the research team agreed to add
+the construct {harsh – soothing} to the groups RepGrid.
+Themes
+
+As well as tracing the emergence of the elicited constructs
+and revealing new constructs, a number of themes emerged
+from the transcripts. In this section we highlight three exemplar themes that are grounded in the gathered data, Referencing the life-world, Misunderstanding multimodal
+feedback and Visualizing non-visual modalities. This analysis is not meant to be exhaustive, it is merely presented to
+illustrate the potential of blending both approaches to reveal
+rich design relevant insight.
+Referencing the life-world: Throughout the study we noted,
+on many occasions, that the participants sought analogies
+with objects they encounter in their daily lives to help them
+describe the experience of the three interfaces. Examples
+include one participant describing the haptic feedback as
+being: “like a washing machine when it’s spinning very
+slow”. Another participant spoke about the visual feedback
+being “like the Photoshop spectrum from cold to hot, blue
+
+Authors copy: DOI: http://dx.doi.org/10.1145/2513506.2513519
+to red.” while another participant disagreed “No, you
+should think about the colours in a rainbow, the blue is at
+the bottom and red at the top”. When attempting to describe the auditory interface, the following participants discussed: P1 “When you listen to it, it sometimes sounds like
+the sound of your engine in a car” P2 “Yeah, I was thinking that as well, but mostly when it is low” P3 “I think it
+sounds like it is accelerating and decelerating.” These realworld analogies also incorporated other data-visualizations
+e.g. P4 “So if a lot of hydrogen is hot then the hotter the
+colour the higher the hydrogen” P1 “but if you think about
+it, the colours on a thermometer go blue, purple, pink and
+red” P4 “what kind of thermometer do you own?” P1 “we
+have one at home, we use it in the oven so it must be good
+to stand that heat and its’ labels are coloured blue, purple,
+pink and red so I’m guessing that this is the same.”
+Misunderstanding multimodal feedback: Although the
+haptic interface was designed to represent the information
+only through vibration, the motors used in the interface also
+produced a sound that seemed to cause some confusion
+with the participants. While the interface did incorporate
+two sensory modalities (auditory and haptic) we do not
+consider it to be a multimodal interface as the sounds were
+generated purely as a consequence of the vibration motors
+and were not specifically designed to represent the data.
+Notwithstanding, in this case we observed that mixing two
+modalities within the one interface caused confusion for
+practically all of the participants. This is illustrated in the
+following exchanges:
+P4 “It sounds like it should feel stronger... it feels wrong
+that the sound doesn’t match the vibration” P3 “but it is
+the vibration that is causing the sound, isn’t it?” P4 “yes,
+but I would feel better about it if loud sounds would have
+strong vibrations.”
+This issue was further highlighted during another
+conversation between members of a different group: P2
+“Would you rate that sensation pretty low?” P1 “I would
+rate it as low” P2 I think it is hard to judge the vibration on
+its own because the sound gets in your way.” One
+participant even went so far as to say: “If you didn’t have
+the sound it would be an entirely different experience.” We
+observed on one occasion that a male participant asked a
+female member of the group to put her hands over his ears
+so as to block out the sounds being produced by the device.
+When this was done he explained that the experience was
+completely different, stating: P3 “I am telling you when you
+block the sound out the vibration feels like a lot more” P4
+“What do you mean, stronger?” P3 “Yeah, stronger” P1
+“more intense?” P3 “and that.”
+Visualizing non-visual modalities: When we examined the
+transcripts we observed that the participants conversed
+about ‘imagining’ and ‘visualizing’ while engaging with the
+haptic and auditory interface, but this was not the case with
+the visual interface. The following extract sums this up: P1
+“I think it is harder to imagine another picture when you
+
+are looking at something” P3 “What do you mean?” P1
+“Well, if you look at something you are seeing that thing so
+you don’t really imagine looking at other things, but when
+you hear or feel something you are more inclined to make a
+picture in your head, aren’t you?” P4 “I get you.”
+At no point, when engaging with the visual interface, did
+any participant use visual references to help them better
+understand what was being represented. Yet on many
+occasions when using the other interfaces, the participants
+used visual analogies to further elaborate on what they
+heard and felt. While feeling the vibrations from the haptic
+interface, one participants asked another: P4 “Do you think
+that whatever we are feeling here can be seen out there…”
+P2 “I think I have seen picture it before, do you know the
+ones from the Hubble telescope..” P3 “I have one as my
+sreensaver, is that what we are feeling? Cool!” P4 “I
+didn’t think about that, I know them, there are some really
+cool images of them, all the different colours, like nothing
+you have seen before...so this is actually that, wow!” The
+use of visual analogies around the non-visual modalities
+was also observed with the audio interface. On one
+occasion when a group was discussing how the radiotelescope is static and its movement was caused by the
+Earths’ rotation P4 remarked “You cant see the earth
+moving but if you think about it you can kind of hear the
+slow rotation of the earth, it’s weird, I wouldn’t of thought
+about that until she (P2) said it and now its all I see”.
+DISCUSSION AND CONCLUSION
+
+The discussion is divided into two parts. We first focus on
+issues related to the methodological adaptation of the
+RepGrid approach, and then discuss issues that have arisen
+through this work that might have implications for the future design of data representations.
+Methodology
+
+To begin with, our blended approach utilizes a structured
+and methodologically validated approach within a focus
+group session, thus extending the repertoire of focus group
+techniques. Some commonly cited problems with focus
+group studies include the need for a carefully trained researcher, who must understand how to refocus conversations, and that researchers have less control over the data
+produced than in other quantitative studies or one-to-one interviewing [19]. We believe that incorporating the structured approach of the RepGrid helps to keep the participants focused during the study and does not require as
+much input from the researcher. The RepGrid technique also helps to control the data gathered during the focus group
+session. With a traditional focus group study, the data to be
+analyzed is in the form of transcripts. This can be extremely
+daunting for a novice or even a skilled researcher. However, in our proposed adaption, the RepGrid that is produced
+provides the researcher with an ideal platform to commence
+the analysis of the transcripts. We do appreciate that the researcher must first learn to conduct and analyze a RepGrid
+
+Authors copy: DOI: http://dx.doi.org/10.1145/2513506.2513519
+study; despite of this we believe that the demands on the researchers during and after the study are significantly less
+than that of a typical focus group study.
+Moreover, our blended approach can also be interpreted as
+an extension/adaptation of the RepGrid approach. We
+should first clarify that the adaptation of the RedGrid technique we propose here is not meant as a replacement of the
+classical approach. On the contrary, we still advocate the
+use of the classic approach in certain circumstances. We do,
+however, believe that blending the RepGrid technique with
+focus groups affords new opportunities for researchers to
+expose further insight, while also validating the elicited
+constructs and exposing new constructs that may have been
+missed by the participants in the formal elicitation session.
+In the analysis of the discourse presented in the previous
+sections, we cited an example of scrutinizing the transcription for further meaning with respect to the constructs
+{Stimulating/Non-Stimulating}. Here we could see that the
+transcriptions exposed further meaning that would not be
+possible if following the typical RepGrid approach.
+We also used the example of examining the transcripts to
+better understand the construct {Sociable – Isolating}. Here
+we see that the transcripts revealed important information
+that may not have being picked-up during a typical RepGrid
+study. Apart from the fact that the nature of an individual
+interview may not elicit constructs such as sociable or isolating, the discourse presented above revealed that the participants seemed to ascribe this attribute to the interface and
+its environment, and not to the representation modality.
+When designing the modal interfaces to be used in the study
+we purposefully created interfaces that offered only singleuser interaction. However, during the study we observed the
+participants soon found ways of getting around the singleuser interaction by squeezing more than two hands onto the
+haptic interface and using their hands and sheets of paper to
+reflect the light from the visual interface. Although on one
+occasion we observed participants attempting to share one
+headset, the predominant interaction with the audio interface was by one individual. We believe that the transcripts
+may have exposed a fault in the design of the interfaces and
+so we believe that this construct is in fact not a valid attribute of the modalities. This may have been misconstrued if
+this construct had been elicited during a typical RepGrid
+study.
+Our proposed blending of the methods also affords researchers an opportunity to uncover constructs that were not
+explicitly elicited during the study. In our analysis we presented the rationale for the inclusion of the construct
+{Harsh – Soothing} in the final RepGrid. It is, however,
+important to ask why this construct was not recorded during
+the group elicitation session. Initially we had assumed that
+the group would have mentioned it, but may have felt that
+this construct was too similar to another i.e. {Comfortable –
+Uncomfortable}. However, after a thorough examination of
+
+the transcript, at no point did any participant use either
+harsh or soothing when formalizing the constructs.
+Design
+
+Although the primary objective of this research is to present
+our blended approach and compare it to a typical application of the RepGrid, we also believe that the design relevant
+insight that was exposed during our study contributes to the
+ongoing design of data representations. Due to brevity, we
+can only discuss some of the key findings; we focus on
+those that emerged during our blended approach.
+Style over Function: In the analysis we presented a further
+exploration of the constructs {Aesthetic – Practical}. The
+discourse indicates that the participants demonstrated less
+trust for the representation modality that they considered to
+be aesthetically pleasing, than those that they construed to
+be more practical or utilitarian. This may led us to question
+whether it is possible for a data representation to be beautiful and functional at the same time. This is an ongoing concern for disciplines such as Information Aesthetics [14], Artistic Visualization [22] and Inforgraphics [13], which are
+focused on balancing the communicative and aesthetic
+qualities of data representation.
+Crossmodal Representation: We reported in the analysis
+that all groups demonstrated a sense of confusion that
+seemed to be caused by the mixing of modalities in the haptic interface. They perceived the strength of the vibration
+not to be at the same intensity as the sound it was emitting.
+It is clear to us, from examining the transcripts, that the participants’ expectations were not met when they placed their
+hands on the surface of the haptic interface. Although we
+do not classify the haptic interface as being one, this may
+highlight an important concern for the design of crossmodal
+interfaces in general. Crossmodal interfaces differ from
+multimodal ones in so far as they use more than one modality to represent the same data. Our analysis indicates that
+when using more than one modality to represent the same
+data, these modalities must be of equal intensity, otherwise,
+through confusion or frustration, the user may misinterpret
+or ignore the expected data insight, as one participant pointed out “...the sound doesn’t match the vibration.”
+CONCLUSION
+
+In this paper we proposed a blending of two methods and
+compared it to a typical application of the RepGrid technique. We conducted this while investigating the role of
+modality in data representations. While maintaining the integrity of a classic RepGrid study, we incorporated a focus
+group session, which can be used to produce a multi-person
+RepGrid that does not require the use of statistical measures
+and analysis. We demonstrated how the focus group discourse that surrounds the elicitation of the constructs could
+be used as a resource to reveal further meaning, to validate
+the inclusion of constructs, and to reveal new constructs
+that may have been missed by the participants during the
+formal elicitation session. We do however recognize some
+
+Authors copy: DOI: http://dx.doi.org/10.1145/2513506.2513519
+limitations to our proposed approach. Firstly, although we
+state that by integrating a focus group into a RepGrid study
+it makes the procedure more efficient, the time saved while
+carrying out the study is easily lost when transcribing and
+analyzing the obtained data. We also acknowledge and appreciate that the data collected may be more difficult to analyze than typical RepGrid data, which is normally processed using software applications. Notwithstanding these
+limitations, to our knowledge, since the inception of the
+RepGrid technique, no adaptation has been purported to
+produce rich qualitative data during a group session. We believe that our proposed blended approach has enough potential to equip a designer or researcher who wishes to better
+understand people’s experience of designed artifacts while
+also revealing rich design relevant information.
+ACKNOWLEDGMENTS
+
+We are thankful to the anonymous reviewers for their valuable comments! Furthermore, we thank the participants of
+the study and to Cork Institute of Technology for their continued support and funding.
+REFERENCES
+
+1. Adams, A., Cox, A.L. Questionnaires, in-depth interviews and focus groups. In P. Cairns and A.L. Cox, eds.,
+Research Methods for Human Computer Interaction.
+Cambridge University Press UK, 2008, 17–34.
+2. Bang, A. L. Fabrics in function - emotional utility values. Proc. of Nordes 2007, (2007), 1–10.
+3. Burns, A. D., Evans, S. (2000). Insights into Customer
+Delight. Proc. of CoDesigning’00, Springer, 195-203.
+4. Cunningham, S. Applying Personal Construct Psychology in Sound Design Using a Repertory Grid. Proc. of
+AM’10, ACM NY, 2010, Article 8.
+5. Fallman, D., Waterworth, J. A. Dealing with User Experience and Affective Evaluation in HCI Design: A Repertory Grid Approach, Workshop paper, CHI’05.
+6. Fallman, D., Waterworth, J. Capturing user experiences
+of mobile information technology with the repertory
+grid technique. Human Technology 6, 2 (2010), 250–
+268.
+7. Fransella, F., Bannister, D., Bell, R. A Manual for Repertory Grid Technique. Wiley-Blackwell. (2003).
+8. Hassenzahl, M., Wessler, R. Capturing Design Space
+From a User Perspective: The Repertory Grid Technique Revisited. International Journal of HumanComputer Interaction 12, 3 (2000), 441–459.
+9. Hassenzahl, M., Tractinsky, N., User experience - a research agenda. Behaviour & Information Technology,
+2006. 25(2): p. 91-97.
+10. Hassenzahl, M., Beu, A., Burmester, M. Engineering
+Joy. IEEE Software 18, 1 (2001), 70–76.
+
+11. Hogan, T., Hornecker E. (2012) How Does Representation Modality Affect User- Experience of Data Artifacts? Proc. of HAID’12, Springer 2012, 141-151.
+12. Hogan, T., Hornecker, E. In Touch with Space: Embodying Live Data For Tangible Interaction. Proc. of
+TEI’13, ACM, (2013), 275-278.
+13. Jerrard, R. Quantifying the Unquantifiable: An Inquiry
+into the Design Process. Design Issues 14, 1,1998, 40–
+53.
+14. Karapanos, E., Martens, J.-B., Hassenzahl, M. Accounting for diversity in subjective judgments. Proc. of
+CHI’09, ACM Press (2009), 639–648.
+15.Kelly, G.A. The Psychology of Personal Constructs.
+2nd edn. London Routledge (1955/1991).
+16. Lankow, J., Josh Ritchie J., Crooks R. 2012. Infographics: The Power of Visual Storytelling. Wiley.
+17. Lau, A., Vande Moere, A. Towards a Model of Information Aesthetics in Information Visualization. Proc. of
+IV’07. IEEE Computer Society. (2007) 87-92.
+18. Mazza, R. Evaluating Information Visualization Applications with Focus Groups  : the CourseVis experience.
+Proc. of BELIV’06, ACM Press (2006), 1–6.
+19. Morgan, D. L. 1988. Focus groups as qualitative research, Sage, London.
+20. McCarthy, J., Wright, P. 2004. Technology as Experience. The MIT Press.
+21. Quinn, E. Creativity and Cognitive Complexity. Social
+Behavior and Personality: an international journal 8(2)
+(1980), 213–215.
+22. Shaw, M.L.G., Gaines, B.R. Comparing conceptual
+structures: consensus, conflict, correspondence and contrast. Knowledge Acquisition 1, 4 (1989), 341–363.
+23. Shaw, M.L.G., Thomas, L.F. FOCUS on education—an
+interactive computer system for the development and
+analysis of repertory grids. International Journal of
+Man-Machine Studies 10, 2 (1978), 139–173.
+24. Stewart, D.W., P.N. Shamdasani, and D.W. Rook
+(2007) Focus Groups: Theory and Practice, 2nd edition,
+vol. 20, Newbury Park, CA: Sage Publications.
+25. Tan, F.B., Hunter, M.G. The repertory grid technique: a
+method for the study of cognition in information systems. MIS Quarterly 26, 1 (2002), 39–57.
+26. Tremblay, M.C. et al. Focus Groups for Artifact Refinement and Evaluation in Design Research Evaluation
+in Design Research. Communications of the Association
+for Information Systems 26, 27, 2010 599-618.
+27. Vande Moere, A. Beyond the Tyranny of the Pixel: Exploring the Physicality of Information Visualization.
+Proc. of InfoVis’08 , (2008), 469–474.
+28. Viégas, F.B., Wattenberg, M. Artistic data visualization:
+beyond visual analytics. Proc. of OCSC’07, Springer.
+(2007) 182-191.
+
+

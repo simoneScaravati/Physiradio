@@ -1,0 +1,417 @@
+Exploring the role Physicalizations can
+play in STEM Learning
+Sarah Hayes
+Cork Institute of Technology,
+Cork, Ireland
+sarah.hayes@mycit.ie
+Trevor Hogan
+Cork Institute of Technology,
+Cork, Ireland
+Trevor.hogan@cit.ie
+Kieran Delaney
+Cork Institute of Technology,
+Cork, Ireland
+Kieran.Delaney@cit.ie
+
+Paste the appropriate copyright/license statement here. ACM now
+supports three different publication options:
+• ACM copyright: ACM holds the copyright on the work. This is the
+historical approach.
+• License: The author(s) retain copyright, but ACM receives an
+exclusive publication license.
+• Open Access: The author(s) wish to pay for the work to be open
+access. The additional fee must be paid to ACM.
+This text field is large enough to hold the appropriate release statement
+assuming it is single-spaced in Verdana 7 point font. Please do not
+change the size of this text box.
+Each submission will be assigned a unique DOI string to be included here.
+
+Abstract
+We present an overview of our research into the role
+data physicalizations can play in enhancing STEM
+learning with young people. As objects that by their
+very nature embody and allow the manipulation of
+data, physicalizations present an ideal method for
+permitting students to engage with curriculum subject
+matter in more extensive modes and formats than
+traditional learning materials. In this paper we present
+the motivation and long-term aims of the research
+project will be discussed, as well as work completed to
+date and current studies being undertaken as part of
+this research project. Furthermore, we present a vision
+of the future directions our research will take over the
+next three years, which will cumulate in the
+development of a series of data physicalizations for use
+in the teaching and learning of STEM subjects in
+secondary schools.
+
+Author Keywords
+Data physicalization; Tangibles for learning; materials
+
+ACM Classification Keywords
+H.5.m. Information interfaces and presentation (e.g.,
+HCI): Miscellaneous;
+
+Introduction
+The importance of young people pursuing careers in
+Science, Technology, Engineering and Mathematics
+(STEM) is widely recognized [9]. It is also recognized
+that some of the most prevalent modern social issues,
+such as climate change, cancer research, famine and
+pollution, are more than likely going to be solved
+through work undertaken in STEM fields [13]. However,
+in order for these sectors to grow, it follows that more
+students in second level education must opt to continue
+studying STEM subjects. Therefore, an effort must be
+made to ensure STEM subjects are being delivered in
+an engaging and inspiring way.
+Our research aims to contribute towards this effort by
+focusing on how physical data representations can be
+used to increase student learning and engagement with
+STEM subjects at a classroom level. The long term aim
+of this work is to develop a series of data
+physicalizations that can be used in a practical way in
+classroom situations by teachers and students to
+promote engagement and understanding of STEM
+concepts and datasets. The design and development of
+these objects will follow an iterative approach, with
+feedback from stakeholders (i.e. students and teachers)
+guiding design choices at every stage. Part of this
+process is the design of a study aimed at gaining an
+understanding of people’s feelings about and
+perceptions of the materials that have most commonly
+been used to construct tangible user interfaces (TUIs)
+over the past decade. The methodology, stages and
+work related to this study will be outlined and discussed
+in subsequent sections of this paper.
+The concept of designing data physicalizations for the
+teaching of STEM subjects is a relatively novel one,
+
+with little grounding in existing research. However,
+given the close connection between the fields of Data
+Physicalization and Tangible Interaction, the work
+completed in the latter area towards developing
+educational tools will be used to guide and inform our
+research. The following provides an overview of this
+related work.
+
+Data and Tangibles for Teaching and
+Learning
+The use of tangibles and physical apparatuses to
+support STEM learning is not a new concept, and has in
+fact been studied for over fifty years. A concise
+historical summary of this is provided by Patricia Moyer
+[14]. She comments on Jean Piaget's [15] research
+which suggested that children aged seven to ten years
+old work in primarily concrete ways and that the
+abstract notions of mathematics may only be accessible
+to them through embodiment in practical resources.
+More recently, Hollins [11] has contributed towards
+improving our understanding of the importance of
+tactical engagement and of using our hands in the
+learning process. Multiple researchers have suggested
+that TUIs have potential for supporting children’s
+informal and formal learning [23; 6]. As one of the
+aims of using tangible interaction is to design user
+experiences that are embodied, natural and fun [8; 3]
+TUIs are therefore ideally suited to use by children. It is
+assumed that physical interfaces are easier to use,
+support learning and development, and can facilitate
+collaboration [4; 10; 22; 23]. For example, researchers
+have used child development theory to provide
+guidelines on how to design tangibles for children [1]
+
+and have compared how children interact with tangible
+versus graphical user interfaces [2].
+
+Figure 1: Material samples used by
+Jung and colleagues during their
+material probe study
+
+Tangible computing is highly suited to the design and
+development of children’s learning activities because it
+leverages both familiar physical artefacts and digital
+computation. Hands-on learning provides outlets for
+children to expand their interests, and promotes growth
+of critical thinking [16]. Projects from the
+Transformative Learning Technologies Labs address this
+problem through developing a variety of physical-todigital educational tools for STEM [5]. From the few
+examples provided above alone, the potential for this
+body of research for enhancing educational activities is
+easily apparent. Our research aims to contribute
+towards these existing efforts by approaching the issue
+from a Data Physicalization standpoint.
+
+Material Survey
+
+Figure 2: Soap-bubble interface used
+by Döring and colleagues
+
+The first study we are completing as part of this
+research is an investigation into the current state of the
+materials space for the development of TUIs. This study
+will explore people’s perceptions of common TUI
+materials. The study of experiences prompted by
+materials is not a new idea – indeed, there are many
+examples of related studies that have sought to
+understand different aspects of materials. Tholander
+and colleagues investigated the idea of agency in
+relation to the emerging properties of materials and
+demonstrated how interaction design is often driven by
+the characteristics of materials [19]. Additionally,
+Schmid and colleagues identified the importance of the
+role of materials in TUI design by proposing an inverted
+design process that places materials at the forefront of
+the design cycle [17]. Research into people’s
+experiences of materials has also been completed. Jung
+
+and colleagues [12] used a ‘material probe’ approach
+that invited people to tell stories and play with a set of
+various materials, before exploring how they differ or
+compare to digital devices. Döring and colleagues [7]
+conducted a related study in which a soap-bubble
+interface (fig. 2) was used to explore a materialscentred approach to tangible interaction. As this study
+includes only one type of material, it prompts the
+concept of exploring peoples’ perceptions of a larger
+number of TUI materials - something we aim to achieve
+through our current research focus.
+
+Current Research Focus
+Currently, we are focused on completing an ongoing
+study into people’s perceptions of materials used to
+create TUIs. Thus far, we have completed an extensive
+literature review of conference proceedings and online
+resources to form a list of frequently used materials for
+developing TUIs. Examples of TUIs from which
+materials were identified can be seen in Figure 3. This
+list will be used to identify materials used in the next
+phase of our study, which we are in the process of
+implementing at this point in time. This phase involves
+the completion of a blended Repertory Grid (Rep Grid)/
+focus group study which will explore people’s
+perceptions of a set of twelve materials. This study will
+take place over the course of an hour and a half
+session, during which twelve participants will be asked
+to first interact in small groups with the twelve
+materials before engaging in a group Rep Grid session
+to elicit personal constructs associated with each
+material. Materials will be presented in form of an
+approximately 20cm by 30cm rectangle, in an effort to
+encourage people to think of them as ‘materials' rather
+than ‘objects’. The Rep Grid aspect of the study will
+involve all participants forming one group, and being
+
+a.
+
+Sand: Inner Garden [18]
+
+b.
+
+Wood: Tangible Scores
+[20]
+
+c.
+
+Rubber: MagnetoWear
+[21]
+
+Figure 3: A selection of examples
+from our material survey.
+
+asked identify a similarity between two or more
+materials of their choosing, and a contrast between
+these materials and at least one other. For example,
+one participant may identify two materials as being
+‘bendy’, and another as being ‘rigid’. Once a group
+consensus is reached on whether or not a suggested
+construct applies, it is either included and recorded on
+a whiteboard, or excluded and discarded. Data will be
+collected in four ways during the study - (1)
+transcriptions of the Rep Grid filled out by the
+researcher on the whiteboard, (2) audio and video
+recordings of the session, (3) transcripts of group
+discussions and (4) field notes taken during the
+session. This data will be used to both feed into the
+next stage of the study (see Future Work section) and
+to provide qualitative data to further clarify participant
+opinions and choices of language and meaning.
+
+different materials with technology affects people’s
+interactions with them. Building on the insights
+established during the materials study phase into the
+associations and experiences people have with the
+studied materials, we will begin a series of exploratory
+activities into how these perceptions alter or are
+enhanced by the addition of multi-sensory technologies.
+Additionally, we will begin engaging with stakeholders
+(i.e. teachers and second-level students) in exercises
+exploring how data physicalizations can intersect with
+the current STEM curriculum in Irish secondary schools.
+Through a series of semi-structured interviews, focus
+groups and interactive workshops, we will work towards
+arriving at a series of openings for our research to
+complement and improve upon the current educational
+materials for STEM learning. This will provide a starting
+point for initiating the design process for our artefacts.
+
+Future Work
+
+Finally, a prime objective in the immediate future of our
+research is to design and implement a series of digital
+literacy studies with user groups. Although it is
+generally assumed that teenagers have strong digital
+literacy skills, the extent, depth and variety of these
+skills must be explored in order for us to successfully
+design technological tools for these users. Similarly, the
+technical knowledge of teachers must be explored, to
+ensure user needs are being met within the constraints
+of their knowledge and abilities. Through the
+completion of each of the above exercises, we will
+move further towards the design and implementation of
+data physicalizations objects that can be used
+practically in classrooms. In doing so, we aim to arrive
+at an understanding of how data physicalization
+artefacts can be employed to further STEM learning and
+student engagement.
+
+The immediate goal of our research following the
+completion of the Rep Grid stage is the undertaking of
+a large scale analysis of all materials used in TUIs. The
+qualitative data collected during the Rep Grid phase will
+then be used to form categories in a survey to
+investigate how each material is perceived by a wider
+audience. Participants will access this survey using
+Amazon’s Mechanical Turk1 service. This will allow us to
+collect data from hundreds of participants. The data
+collected from this stage of the study will provide the
+basis for a useful tool for analyzing, selecting and
+designing with materials for TUIs. For example, it could
+be consulted by designers during the prototyping
+process to aid in the selection of materials for a TUI.
+After completing the present study into the materials
+space for TUIs, we intend to explore how augmenting
+
+1See
+
+https://www.mturk.com/
+
+References
+1.
+
+Antle, A.N. 2007. The CTI framework: informing
+the design of tangible systems for children. In
+Proceedngs of the first international conference on
+Tangible and Embedded Interaction (TEI '07), 195202.
+
+2.
+
+Antle, A.N. et al. 2009. Hands on what?: comparing
+children's mouse-based and tangible-based
+interaction. In Proceedings of the 8th international
+conference on Interaction Design and Children. 8088.
+
+3.
+
+Baauw, E., and Markopoulous, P. 2004. A
+comparison of think-aloud and post-task interview
+for usability testing with children. In Proceedings of
+the 2004 conference on Interaction Design and
+Children: building a community. 115-116.
+
+4.
+
+Bakker, S., Antle, A.N., Van Den Hoven, E. 2012.
+Embodied metaphors in tangible interaction design.
+Personal Ubiquitous Comput. 16, 4, 433-449.
+
+5.
+
+Blikstein, P. 2010. A New Age in Digital Tangible
+Interfaces for Learning. Learning in the Disciplines:
+Proc. of ICLS 2010. ISLS.
+
+6.
+
+Carbonneau, K. J., Marley, S. C. & Selg, S. C.
+2013. A meta-analysis of the efficacy of teaching
+mathematics with concrete manipulatives. Journal
+of Educational Psychology. Vol 105 (2) pp. 380-400
+
+7.
+
+Döring, T., Sylvester, A. and Schmidt, A. 2012.
+Exploring material-centered design concepts for
+tangible interaction. In Proceedings of the 2012
+ACM annual conference extended abstracts on
+Human Factors in Computing Systems Extended
+Abstracts (CHI EA ’12). 1523.
+
+8.
+
+9.
+
+Dourish, P. 2001. Where the action is: The
+foundations of embodied interaction. MIT Press,
+Cambridge, UK.
+Duffy, M. 2016. "Michael Duffy: Stem Education
+Critical for Country’s Future". The Irish Times. Web.
+Accessed 20 Apr. 2017.
+
+10. Hengeveld, B. 2008. Let me actuate you. In
+Proceedings of the 2nd international conference on
+Tangible and Embedded Interaction. 159-166.
+11. Hollins, E. R. 2015. Culture in school learning:
+Revealing the deep meaning. Routledge.
+12. Jung, H. and Stolterman, E. 2011. Material probe:
+exploring materiality of digital artifacts. In
+Proceedings of the fifth international conference on
+Tangible, embedded, and embodied interaction
+(TEI ’11). ACM. 153.
+13. MacCraith, B. "It's Time To Get Serious About STEM
+Education In Ireland". Silicon Republic. 2014. Web.
+21 Apr. 2017.
+14. Moyer, P. (2001) Are we having fun yet? How
+teachers use manipulatives to teach mathematics.
+Educational Studies in Mathematics 47: 175-197.
+Netherlands: Kluwer.
+15. Piaget, J. 1952. The Child's Conception of Number.
+New York: Humanities Press.
+16. Resnick, M., & Silverman, B. 2005. Some
+reflections on designing construction kits for kids.
+Proc. of IDC 2005 ACM Press, 117– 122.
+17. Schmid, M., Rümelin, S. and Richter, H. 2013.
+Empowering materiality: inspiring the design of
+tangible interactions. In Proceedings of the 7th
+International Conference on Tangible, Embedded
+and Embodied Interaction (TEI '13). ACM. 91-98.
+18. Sol Roo, J., Gervais, R. and Hachet, M. (2016).
+Inner Garden: an Augmented Sandbox Designed
+for Self-Reflection. In Proceedings of the TEI ’16:
+Tenth International Conference on Tangible,
+Embedded, and Embodied Interaction (TEI ’16).
+ACM. 570–576.
+19. Tholander, J. Normark, M. and Rossitto, C. 2012.
+Understanding agency in interaction design
+materials. In Proceedings of the SIGCHI Conference
+on Human Factors in Computing Systems (CHI
+'12). ACM. 2499-2508.
+
+20. Tomás, E. (2016). Tangible Scores. In Proceedings
+of the TEI ’16: Tenth International Conference on
+Tangible, Embedded, and Embodied Interaction
+(TEI ’16). ACM. 669–674
+21. Vijay, R. S. and Goyal, S. (2016). MagnetoWear. In
+Proceedings of the TEI ’16: Tenth International
+Conference on Tangible, Embedded, and Embodied
+Interaction (TEI ’16). ACM. 597–602.
+22. Xie, L., Antle, A.N. Motamedi, N. 2008. Are
+tangibles more fun?: comparing children's
+enjoyment and engagement using physical,
+graphical and tangible user interfaces. In
+Proceedings of the 2nd international conference on
+Tangible and embedded interaction. 191-198.
+23. Zaman, B., Van den Abeele, V., Markopoulos, P.
+and Marshall, P. 2012. Editorial: the evolving field
+of tangible interaction for children
+
+

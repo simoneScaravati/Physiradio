@@ -1,0 +1,1042 @@
+Opportunities and Challenges for Data Physicalization
+Yvonne Jansen, Pierre Dragicevic, Petra Isenberg, Jason Alexander, Abhijit
+Karnik, Johan Kildal, Sriram Subramanian, Kasper Hornbæk
+
+To cite this version:
+Yvonne Jansen, Pierre Dragicevic, Petra Isenberg, Jason Alexander, Abhijit Karnik, et al.. Opportunities and Challenges for Data Physicalization. Proceedings of the ACM Conference on
+Human Factors in Computing Systems (CHI), ACM, Apr 2015, New York, NY, United States.
+�10.1145/2702123.2702180�. �hal-01120152�
+
+HAL Id: hal-01120152
+https://hal.inria.fr/hal-01120152
+Submitted on 29 Nov 2016
+
+HAL is a multi-disciplinary open access
+archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from
+teaching and research institutions in France or
+abroad, or from public or private research centers.
+
+L’archive ouverte pluridisciplinaire HAL, est
+destinée au dépôt et à la diffusion de documents
+scientifiques de niveau recherche, publiés ou non,
+émanant des établissements d’enseignement et de
+recherche français ou étrangers, des laboratoires
+publics ou privés.
+
+Distributed under a Creative Commons Attribution - NonCommercial - ShareAlike| 4.0
+International License
+
+Opportunities and Challenges for Data Physicalization
+Yvonne Jansen1 , Pierre Dragicevic2 , Petra Isenberg2 , Jason Alexander3 ,
+Abhijit Karnik3 , Johan Kildal4 , Sriram Subramanian5 , Kasper Hornbæk1
+1
+University of Copenhagen, 2 Inria, 3 Lancaster University, 4 Nokia, 5 University of Bristol
+jansen.yv@gmail.com, {pierre.dragicevic, petra.isenberg}@inria.fr, {j.alexander,
+a.karnik}@lancaster.ac.uk, johan.kildal@nokia.com, sriram@cs.bris.ac.uk, kash@di.ku.dk
+
+Figure 1: Examples of data physicalizations: (left) population density map of Mexico City co-created by Richard Burdett and
+exhibited at the Tate Modern (photo by Stefan Geens), (center) similar data shown on an actuated display from the MIT Media
+Lab [70], and (right) spherical particles suspended by acoustic levitation [61]. All images are copyright to their respective owners.
+ABSTRACT
+
+Physical representations of data have existed for thousands
+of years. Yet it is now that advances in digital fabrication,
+actuated tangible interfaces, and shape-changing displays are
+spurring an emerging area of research that we call Data Physicalization. It aims to help people explore, understand, and
+communicate data using computer-supported physical data representations. We call these representations physicalizations,
+analogously to visualizations – their purely visual counterpart.
+In this article, we go beyond the focused research questions
+addressed so far by delineating the research area, synthesizing
+its open challenges, and laying out a research agenda.
+Author Keywords
+
+Data physicalization; visualization; tangible user interfaces;
+shape-changing interfaces; physical visualization
+ACM Classification Keywords
+
+H.5.m. Information Interfaces and Presentation (e.g., HCI):
+Miscellaneous
+INTRODUCTION
+
+More than 7000 years ago, the Sumerians used clay tokens
+to represent quantitative data well before inventing written
+language [59]. The Incas never even developed a writing system but relied on Quipus – complex assemblies of knotted
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for components of this work owned by others than ACM
+must be honored. Abstracting with credit is permitted. To copy otherwise, or republish,
+to post on servers or to redistribute to lists, requires prior specific permission and/or a
+fee. Request permissions from permissions@acm.org.
+CHI 2015, April 18–23, 2015, Seoul, Republic of Korea.
+Copyright is held by the owner/author(s). Publication rights licensed to ACM.
+ACM 978-1-4503-3145-6/15/04 ...$15.00.
+http://dx.doi.org/10.1145/2702123.2702180
+
+ropes – for data storage and retrieval [3]. Scientists in the 19th
+century used physical representations as essential teaching and
+research aids [15] for organic chemistry and thermodynamics.
+Today, designers are crafting data sculptures to convey meaning and emotion in data [79]. All such physical representations
+help people think about, explore, and share data.
+Similarly, for centuries people have been developing visualizations for flat surfaces, such as maps or genealogies printed
+on papyrus, paper, tapestries, and now computer screens. Yet,
+recent and anticipated technological advances in digital fabrication, tangible user interfaces [63], shape displays [54], and
+programmable matter [30] are radically changing the fidelity
+and flexibility with which data can be made physical (see
+Figure 1) while decreasing the cost of doing so. We see an
+unprecedented opportunity to create new forms of physical
+representations – they will be self-reconfigurable, freely manipulable, and will eventually support data analysis tasks as
+complex as performed on today’s desktop computers.
+This article identifies Data Physicalization as an emerging
+research area that uses physical data representations to help
+people explore and communicate data. So far work in this area
+has been scattered and has focused on specific questions, thus
+an overview is needed to establish this area and to advance its
+research. We illustrate the current and future potential of physicalizations through usage scenarios and discuss their possible
+benefits. We clarify how this area relates to other domains
+such as Visualization [10] and Tangible User Interfaces [31]
+by illustrating its focus on data analysis (versus other forms
+of interface usage) in a physical form (versus visual presentation only). We then synthesize a research agenda for Data
+Physicalization detailing challenges such as how to encode
+data physically, how to support interaction, what enabling
+technologies are needed, and how to evaluate physicalizations.
+
+WHAT ARE DATA PHYSICALIZATIONS?
+
+We propose that:
+A data physicalization (or simply physicalization) is a
+physical artifact whose geometry or material properties
+encode data.
+For instance, the physicalization in Figure 1–left is a wooden
+three-dimensional model of Mexico City where height encodes
+population density. The photo in the middle shows a physicalization of similar data, but dynamic. Here, the physicalization
+is used as a detail view to explore a larger information space
+displayed on an adjacent large screen [70]. While the photo on
+the right is a technology demonstration, it shows the potential
+to use free-floating particles to encode data [61].
+The above definition should be taken as a working definition.
+A similar definition has been given for physical visualizations [34], and the terms can be used interchangeably. We
+prefer physicalization as it aligns with neologisms such as
+sonification and haptification [56] without favoring one specific sense. By extension, we also refer to physicalization as
+the process of producing physicalizations (to physicalize is
+to give data physical shape), and as a research area. These
+three meanings are consistent with the way visualization is
+currently informally employed by the Visualization community. However, the lack of an explicit distinction can easily
+generate confusions that we wish to avoid here. To reinforce
+this we use capitalization when referring to research areas.
+Other Examples of Physicalizations
+
+The idea of turning data into physical artifacts is not new, with
+many physicalizations already in everyday use [15]. Today’s
+physicalizations are mostly static, but can offer potential perceptual, cognitive, and communicative value that neither paper
+nor computer displays may be able to offer.
+An example of current use of physicalizations is shown
+in Figure 2–left, where Kevin Quinn, a chief engineer at
+General Motors, uses a custom Lego-based board to oversee and update problems and progress in production lines
+(tinyurl.com/mwilson2012). To him, two important benefits of
+this physicalization are the constant availability of information
+and the motivational factor for his engineers who like to see
+the progress of their work publicly reflected on the board.
+Medical doctor and public speaker Hans Rosling (Figure 2–
+right) uses physical representations to emphasize his messages
+during his presentations (tinyurl.com/roslingBox). He uses
+physicalizations for their communicative and perhaps persuasive power. In the shown example, he discusses the divide
+between the world’s rich (blue box) and poor (green boxes)
+and illustrates possible effects of policy changes by moving
+these boxes between piles. His physicalizations are useful
+and effective in communicating information which individuals
+may find difficult to comprehend due to unfamiliar magnitudes
+and scales. It can also carry a shock value.
+Future Usage Scenarios For Physicalizations
+
+To further illustrate the potential of data physicalizations, we
+provide three usage scenarios which are fictional and to a large
+extent ignore current technological limitations.
+
+Figure 2: Manually-updated physicalizations used by an automotive engineer (left, image c General Motors) and by Hans
+Rosling during a public talk (right, image c TED).
+Science Museum
+
+A visitor to a museum walks into a room which describes the
+earth’s changes in climate. She picks up stones that physicalize the change of temperatures on Earth backwards in time.
+She can get a good sense of the differences between ice ages
+and hotter periods – but when she gets to the volcanic beginnings and the stones quickly heat up, she drops them. At the
+hurricane diorama, miniature hurricanes of the past 50 years
+move over a map of North America covered in dense fog, with
+only the eyes of the storms allowing a peak inside. The visitor
+places her hands over two of the eyes, and the differences in
+pressure give her the sensation of the intensity of the hurricanes at their peak. She reaches into the eye of the stronger
+hurricane and feels a strong drag on her hand when it crosses
+the eyewall. She can easily judge how devastating it was.
+Explaining Complex Systems
+
+A government analyst developed an improved multi-variate
+model that predicts the economic position of her country. During a meeting, she physicalizes past and predicted time-series
+data for indicators such as GDP, income tax rates, and unemployment, into line charts (physicalized as wires). Uncertainties in the system are illustrated by wires expanding into cones
+that cover the ranges of plausible values. To illustrate the
+requirements for ensuring a 2% growth in GDP, the analyst deforms and compresses the GDP cone and shows the effect on
+tax revenue. Once she has reached a realistic growth objective,
+the dynamic physicalization is frozen and static 3D printed
+models are created for the policy makers in the audience.
+Neurosurgical Planning
+
+A neurosurgeon scans the brain of a patient who suffers from
+an asymptomatic tumor. He physicalizes the data into a
+visually and haptically realistic brain model made of programmable matter (i.e., microscopic particles that can dynamically re-arrange themselves and change their properties [30]).
+With a caress, he makes the brain semi-translucent to reveal
+the tumor’s localization. He then takes a scalpel and cuts the
+brain into slices. He lays the slices side-by-side to identify and
+mark the tumor’s tendrils. He then stacks the slices again and
+they re-assemble back into a monolithic object. With a poking
+gesture, he then turns the brain into a 3D connectivity graph to
+reveal functional correlations between brain regions. He pulls
+dense clusters of links apart to see them more clearly. After
+this sequence of explorations he gains the insight that the tumor may soon affect important perceptual and cognitive brain
+functions and recommends immediate scheduling of surgery.
+
+We see many possible benefits of physicalization on the perceptual, cognitive, and societal levels. We discuss some of
+them here. Currently, however, the empirical literature offers
+scant evidence about the merits and possible limitations of
+data physicalizations. Consequently, this discussion draws
+upon the insights from other fields. We later identify the lack
+of empirical studies as a major element of the research agenda
+for Data Physicalization. For now, we note that these potential benefits need to be traded off against the costs of data
+physicalizations, in particular the cost of creating them.
+
+work hand-in-hand. For example, stroking a surface produces
+sounds that nuance tactile information on texture [9, Chap 7].
+A rich repertoire of gestures is available for gathering both
+visual and non-visual information. Lateral hand motions can
+reveal an object’s texture, holding it unsupported can reveal its
+weight, while following contours can reveal the details of its
+shape [38]. Informative sounds can also be produced by knocking an object or by scratching its surface [4, 11]. These are
+all “built-in interaction techniques” and none of them need to
+be explicitly implemented and documented. Such interactions
+are hard to emulate with output devices (e.g., [35]).
+
+Leveraging our Perceptual Exploration Skills
+
+Making Data Accessible
+
+THE BENEFITS OF DATA PHYSICALIZATION
+
+Humans have evolved a highly complex sensorimotor system
+that allows them to efficiently extract information from the
+physical world [9]. We explain why physicalizations can tap
+into these skills more deeply than classical computer setups.
+Active Perception: A major benefit of physicalizations is that
+they better exploit our active perception skills. Perception has
+evolved as an active process, that is, it strongly relies on motor
+control [20]. For example, a physical object like a hand-sized
+physicalization can be visually inspected by turning it around,
+by moving it closer, or by taking it apart. A large-scale physicalization can be explored by walking around. In contrast,
+on-screen visualizations need to explicitly support active perception by coupling input with output devices, that is, by being
+“interactive”, possibly introducing usability issues. For example, visual exploration of large information spaces typically
+requires navigation tools such as pan-and-zoom. Although
+powerful, these tools are often inconsistent across applications
+and constantly need to be rediscovered and learned.
+Depth Perception: Another benefit of physicalizations is their
+better leverage of our spatial perception skills. Since physical
+objects give rich cues of shape and volume, 3D data can be perceived with less effort and more accuracy on physicalizations
+than on computer displays – even stereoscopic ones [34].
+Non-visual Senses: While vision is a dominant sense, it is not
+the only way by which we explore the world. As our earlier
+scenarios illustrated, touching a physical object can reveal a
+whole set of additional information such as texture, stiffness,
+temperature, and weight [27] – it becomes a haptic display of
+information [38]. Hearing also provides information on object
+properties [11]. Even smell or taste can can signal warning or
+invitation. All senses can participate in information gathering
+and they each have unique characteristics that can be leveraged
+by physicalizations. Touch, for example, requires close contact
+with the object, meaning that materials can be manipulated
+to influence our emotional states [27]. Physicalizations can
+take advantage of these additional sensory channels to convey
+a larger range of meanings than a simple visual display.
+Intermodal Perception: The idea of conveying data to several senses has been around (e.g., [26,42,56]) but has typically
+followed a multimodal approach, where multiple output devices address the senses separately. In contrast, data physicalization follows an intermodal approach [64] that guarantees
+cohesive and realistic multisensory experiences. When inspecting physical objects, perceptual senses are tightly coupled and
+
+Since physicalizations can address non-visual senses, they
+can make data analysis more accessible to visually-impaired
+people. Traditional approaches use raised paper to convey
+maps and charts [12, 16], or cork boards with pins and rubber
+bands to teach mathematical functions [41]. Novel interactive systems are trying to improve these techniques [41, 42]
+but often follow a multimodal approach and thus do not fully
+leverage our perceptual exploration skills. With physicalizations, visually-impaired data analysts may be able to explore
+data through the geometry and material properties of data artifacts in more ways than possible with currently established
+techniques. For instance, they could explore physicalizations
+with both hands to gain an overview, possibly using tactile
+pre-attentive cues [10] to identify interesting features that they
+could then explore in detail. At the same time, such physicalizations could be designed to remain compatible with visual
+exploration and thereby foster collaboration between sighted
+and unsighted analysts.
+Cognitive Benefits
+
+We expect physicalizations to benefit cognition and learning. Physical representations have been widely used in classrooms, for example, to teach basic mathematics [19] and chemistry [77]. A large body of evidence from educational psychology suggests that manipulable physical representations
+facilitate understanding and learning [48]. Part of this research
+is motivated by the embodied cognition thesis, according to
+which cognition is supported by the body and the physical
+world [7]. Similar arguments have been made for the benefits
+of tangible user interfaces [48, 63]. Although the artifacts used
+in classrooms and educational psychology studies are typically not physicalizations (i.e., they do not convey data), we
+assume that some of their cognitive and educational benefits
+will transfer to physicalizations. Given the key role of physical
+manipulation in learning, we believe this to be especially true
+for rearrangeable and interactive physicalizations [33].
+Bringing Data into the Real World
+
+Apart from their perceptual and cognitive benefits, physicalizations allow individuals and groups to relate to data in new ways.
+The Tangible User Interface community has already pointed
+out that embedding physical artifacts in the space around us
+offers possibilities beyond those of virtual objects [28]. In
+comparison to screen-based visualizations, physicalization
+can similarly offer to bring data to many more places and
+aspects of our social lives. In particular, since physicalizations
+can be anywhere and are always “on”, they can be used as
+
+ambient data displays and support casual visualization [53].
+Furthermore, data is increasingly present in museums and art
+galleries in the form of data sculptures [15], that is, physicalizations created by designers and artists whose purpose is
+to communicate meaning and elicit reflection on data [43].
+Meanwhile, more and more makers and fabrication enthusiasts physicalize data for sharing or for personal purposes [68].
+Even fashion is being impacted, as people are already wearing
+personal data in the form of jewelery (e.g., www.meshu.io).
+Engaging People
+
+An emerging challenge in information visualization – particularly in the area of data journalism – is to engage large
+audiences with data [14]. There is anecdotal evidence that
+physicalizations may aid individuals in engaging with and
+communicating information to others more effectively than
+with digital representations. Our earlier example showed Hans
+Rosling using physicalizations to communicate world statistics
+(see Figure 2–right). The growing popularity of data physicalizations in many societal domains indicates a strong potential
+for fostering public engagement. This popularity suggests that
+data physicalizations pique interest, and this interest could in
+turn be leveraged to have people spend more time and effort
+exploring and understanding important and complex data.
+Summary
+
+We have put forward several arguments suggesting that physicalizations can be beneficial. We do not expect them to be
+beneficial in all situations, but the number of favorable situations will undoubtedly increase as technology advances. The
+increasing popularity of physicalizations provides another argument for studying them, irrespective of their practical merits
+and drawbacks. Flat surfaces – such as paper and later computer screens – have long been the primary media for visualization, but this is rapidly changing. While data physicalization
+is becoming part of our society, scientific research is lagging
+behind. The TUI community is only starting to consider data
+exploration scenarios [18], while the Visualization community
+only recently started to explore physical designs [75] and carry
+out studies on physicalizations [34, 66].
+DATA PHYSICALIZATION AS A RESEARCH AREA
+
+So far we covered data physicalizations as artifacts. We discussed why such artifacts can be beneficial, and hinted at how
+current and future technology will allow us to create more
+powerful interactive data physicalizations.
+We now discuss Data Physicalization as a research area. We
+show that it is not simply a subset of existing fields, but a
+new research area that opens up new research questions and
+challenges beyond what existing fields are concerned with.
+We propose to think of Data Physicalization as:
+a research area that examines how computer-supported,
+physical representations of data (i.e., physicalizations),
+can support cognition, communication, learning, problem
+solving, and decision making.
+Data Physicalization relates to two broad topics: (i) the support
+of data analysis through visualization and (ii) the support of
+human-computer interaction through physical objects.
+
+Data Physicalization and Visualization
+
+Data Physicalization is related to the fields of Information
+Visualization (InfoVis) and Scientific Visualization (SciVis).
+Since the two fields are most often separated by the type of data
+they address [44], we use Visualization as an umbrella term
+for “the use of computer-supported, interactive, visual representations of data to amplify cognition” [10]. This definition
+includes four aspects closely related to Data Physicalization: a
+focus on external representations, computing, interaction, and
+the ultimate goal of enhancing humans’ cognitive abilities to
+deal with data. One key difference is that Data Physicalization
+does not explicitly focus on the visual channel but instead
+attempts to tap into perceptual exploration skills more broadly.
+Another important difference is that Data Physicalization excludes systems that convey data solely through flat visual
+displays, although it does include hybrid setups such as deformable visual displays [1, 17, 58, 65], provided the geometry
+or material properties of the display surface encode data. Consistent with our definition of data physicalizations, the focus is
+on the physicality of data representation, not on the physicality
+of interaction. Thus most setups involving multi-touch and
+large display surfaces are not the focus of Data Physicalization, despite the “physicality” of direct touch interaction and
+locomotion in space. However, the field is clearly concerned
+with how touch – both as input and sensory modality – and
+locomotion can support data analysis with physicalizations.
+While Data Physicalization is concerned with physicalizations
+whose construction or actuation is computer-supported, interaction with physicalizations can also take place in the physical
+world without computer assistance [34]. Furthermore, handmade physicalizations of which many historical examples
+exist [3, 15, 59] may not involve computers at all, but are relevant to Data Physicalization when they can inform and inspire
+the design of modern, computer-supported physicalizations.
+Data Physicalization and TUI
+
+The area of Tangible User Interfaces (TUI) studies interactive systems that “give physical form to digital information,
+employing physical artifacts both as representations and controls for computational media” [71]. While this view clearly
+emphasizes the physical representation of information, the
+physical representations themselves are generally not meant
+for data exploration and analysis tasks. Several TUI systems
+have been developed for such tasks, but they typically use
+physical objects as controls, while the data itself is visualized
+on a screen [72] or top-projected [49, 73]. Although controls
+can encode information through their physical arrangement,
+this information entirely originates from the user and is not
+meant to be explored to gain insights as in Figure 2–left. Thus
+it does not constitute data in the Visualization sense [10].
+Overall, there is large overlap between TUI and Data Physicalization, though they differ in focus. While both necessarily
+involve input and output and share many concerns, the former
+mostly focuses on information input and manipulation tasks
+(with output being used to assist in the task) while the latter
+mostly focuses on information output and exploration tasks
+(with input being used to assist in the task). The area of TUI
+has been remarkably productive in addressing technological
+
+and theoretical challenges, and its work will be important both
+to implement data physicalizations and inform their design.
+Conversely, simple data exploration scenarios have started to
+be used to illustrate actuated TUIs [70], suggesting that the
+idea of data physicalization is making its way into the community and may well become a major drive for TUI research.
+
+Three main challenges are involved in creating perceptually
+effective physical designs to convey digital data: (a) understanding the design space of physical data representations,
+(b) understanding the perceptual effectiveness of different approaches, and (c) finding out how to implement these designs.
+
+Examples of Data Physicalization Research
+
+Charting the Design Space – Physical Variables
+
+Several research papers have already started to address questions raised by Data Physicalization. Early on, Vande Moere
+and colleagues pointed out the potential of data sculptures as
+a medium and the need to study them more deeply [43, 75, 79].
+Later, several papers were published in Visualization and HCI
+venues that investigate empirical [34], design [67,69], and conceptual [32, 33, 75, 79] questions regarding physicalizations,
+as well as specific application domains [68]. However, the
+physicalizations investigated are static and none of this work
+involves novel input and output technologies. Conversely, as
+far as we know, none of the work on new user interface technologies explicitly addresses Data Physicalization questions.
+ENABLING TECHNOLOGIES
+
+The area of Data Physicalization both depends heavily on available technologies, and can contribute to shaping the emergence
+of future technologies. Research has already demonstrated
+the process for composing and creating one-off static physicalizations using fabrication technologies [68, 69]. Dynamic
+physicalizations, on the other hand, require computer-driven
+control of physical geometry or of material properties.
+A range of technologies for controlling physical geometry have
+been explored in the area of shape-changing interfaces [54,58],
+many of which could be used to implement dynamic data physicalizations. Several systems offer discretized shape control
+through arrays of motorized bars [18, 52], winch-actuated
+wires [15], or tiltable tiles [1]. Complex dynamic geometries
+can be also created by assembling actuated modules [30, 60].
+Alternatively, continuous shape deformation can be achieved
+through, e.g., pneumatic or hydraulic actuation [17, 78], or
+shape-memory alloys [58]. Microrobotics can also be used to
+position multiple physical objects on a 2D plane [21, 45, 57],
+while free 3D positioning through levitation is currently being
+researched [39, 61]. Physical geometry encoding can be complemented with color encoding through the use of deformable
+visual displays [47, 65], sets of actuated visual displays [1],
+or projection mapping [5]. Finally, technologies also exist
+for dynamically controlling material properties such as stiffness [17,35,54], weight [46], or transparency [17], all of which
+can be used as additional dimensions to encode data.
+While many of the above systems are bulky and only allow
+limited control over geometry and material properties, they lay
+the foundation for the promise of programmable matter [30].
+RESEARCH AGENDA
+
+Data Physicalization brings with it many research questions
+and challenges regarding the design, implementation, and evaluation of physicalizations. We split up open research questions
+into four main themes: (i) how to convey data effectively, (ii)
+how to employ animation and support interaction, (iii) covering specific applications, and (iv) evaluation methodologies.
+
+Designing Physical Data Representations
+
+Data Physicalization and Visualization share the problem of
+finding suitable transformations from digital data to humanreadable representations. The standard visual encoding process in Visualization maps each data point to a visual mark
+(i.e., a graphical primitive) and each data attribute to a visual
+variable (e.g., position, area, length, or hue) [13]. If we want
+to create physicalizations that are meant to be readable – as
+opposed to purely artistic data sculptures [36] – we need a
+similarly principled way of encoding data.
+Researchers have begun to address this challenge by applying
+2D and 3D visual encodings to physicalizations [69]. However,
+classical visual encodings largely ignore the multisensory nature of physical exploration that we previously highlighted as
+a benefit. Visual variables can be complemented with haptic
+variables such as resistance, friction, and temperature [22].
+Roberts and Walker suggested the identification and use of
+such variables for each of our five senses [56]. However,
+considering senses separately does not fully capture the way
+information is encoded and accessed in the physical world [64].
+For example, a smooth surface like glass or metal tends to be
+highly reflective, feels cold when touched, and silent when
+caressed. All these cues together participate in the perception
+of a single integrated physical property, “smoothness”.
+We argue that instead of studying individual sensory (e.g., visual or haptic) variables, it is necessary to study how they can
+be combined in physicalizations. We propose to call physical properties such as smoothness, hardness, or sponginess,
+physical variables. Physical variables are not inherently haptic, nor visual. They are also typically perceived actively,
+through exploratory actions involving hand, head, and body
+movements [20, 33]. Identifying, exploring, and classifying
+physical variables is a research challenge that will be key to
+understanding the design space of data physicalizations.
+Understanding what is Effective
+
+When engaging in the design of physicalizations, one needs
+to know the design space of physical variables but also how
+effective they are at encoding and communicating data.
+Perceptual studies in Visualization [13] have resulted in guidelines on how visual variables are best employed. For example,
+length as a visual variable is known to be perceptually effective at conveying quantitative values, while color hue is
+not [13]. Although initially developed for flat media, we can
+use many of these guidelines as a starting point for designing
+physicalizations. Yet, work on visualizations for wall-sized
+displays [6] cautions against a direct transfer. It showed that
+certain viewing angles change the effectiveness of visual variables and suggests that different effects may be found as well
+for data physicalizations. Work has also suggested that 3D
+spatial encodings are perceived more effectively when made
+physical than when shown on a screen [34].
+
+In addition to studying how the use of visual variables transfers
+to non-flat spatial encodings, guidance is needed for conveying data to non-visual senses. Besides informal guidelines for
+haptic variables [22], we are unaware of any guideline for using physical variables. Data Physicalization needs to develop
+empirical guidelines similarly to those in Visualization, and
+consider similar questions such as: what are the just-noticeable
+differences that a physical variable can convey? Can it convey
+quantitative, ordinal, or nominal data best? Are there physical
+variables that can be perceived pre-attentively? Importantly,
+studies need to assume an active – rather than a fixed and passive – observer [20]. Also, the many interactions between the
+senses that physical variables address, as well as the interactions between the variables themselves, likely make their study
+very challenging compared to the study of visual variables.
+Besides perceptual efficiency, discoverability and recognizability also need to be considered. While the presence of
+visual cues is easy to detect, the presence of physical cues like
+weight may not be. Physicalizations should be designed so
+that users can quickly identify which physical variables convey
+information, and how. This requires understanding to what
+extent people’s experience in perceiving the physical world
+can be transferred to physicalizations, and how much requires
+explicit learning. Data physicalization researchers may need
+to be involved in developing new data encoding conventions,
+as well as helping promote physicalization literacy.
+There are other aspects of data physicalization design besides
+the choice of appropriate physical encodings. For example
+physical size: a large physicalization such as in Figure 1–left
+can convey large amounts of data and be explored collaboratively. However, it cannot be manipulated and examined like
+a hand-sized physicalization [34]. Thus the effects of form
+factor and size will also need to be better understood.
+Finally, the potential support for engagement previously discussed will also need to be studied. It is unclear which physical
+representations would contribute most to an engaging experience. Processing fluency – the ease with which an observer
+can decode an object – has also been shown to affect people’s
+preferences [55]. Thus other qualities of physical variables
+need to be studied besides their perceptual effectiveness.
+Implementation Challenges
+
+Digital fabrication technologies greatly facilitated the process
+of prototyping and creating static physicalizations [68, 69] but
+even the most elaborate digital fabrication machines available
+today have not been built with data physicalization in mind.
+Multi-material 3D printers can interleave different source materials to gain some form of control over properties such as
+color, opacity, or deformability, but the range of materials
+available is still very limited [25, 47]. Much more research is
+needed before machines can accurately render physical variables such as thermal conductivity, weight, smell, or taste.
+A further challenge is to ensure reproduction fidelity of physical variables across different machines. Materials also need to
+be chosen such that the variable they encode does not “run out”
+or depletes due to repeated user interactions. This requires
+careful consideration, as certain properties like temperature
+or deformation can change the value of the encoded variable
+
+after successive use. One way of addressing physical variable
+depletion is through active physicalizations, where an external
+energy source can be used to maintain a physical variable such
+as temperature at a desired value.
+Active physicalizations can address other hard problems of
+physicalization implementation, such as free positioning in 3D
+space. While an on-screen visualization can have free-floating
+objects, physicalizations are subject to gravity. Technologies
+have been explored to address this, such as the use of magnetic
+fields [39], bubbles [62], or acoustic levitation [61] (see Figure
+1–right). However, fine control over 3D geometry is hard and
+no technology exists yet that can successfully physicalize data
+encodings as simple as 3D scatterplots.
+Finally, prototyping and building physicalizations involve complex workflows, ranging from laborious and low-fidelity manual crafting to custom programming (less laborious but requires expertise) to fully automatic (lower entry requirements
+but little control over the design) [69]. Thus, one challenge
+is to characterize possible fabrication workflows and classify
+them as to their benefits and drawbacks, including how fast
+physicalizations can be created or replicated, how accurate
+they are, how expensive the required material is, their environmental impact, and which skills are required to create them.
+Supporting Animation and Interactivity
+
+While physical encodings are important to convey a dataset
+effectively, building dynamic data physicalizations can help
+support not only reusability across datasets, but also a wider
+range of analytical and communication tasks. Here, we discuss
+two main challenges: (a) how to design effective dynamic
+physicalizations, and (b) how to implement them.
+Designing Dynamic Physicalizations
+
+So far we considered a fixed dataset with a fixed physical representation. Most on-screen visualization systems are however
+dynamic, and are therefore able to visually reflect (1) changes
+in datasets, (2) changes in data operations such as filtering
+and aggregation, (3) change from one data representation to
+another, (4) changes in visualization settings such as color
+scales and sorting order, and (5) view transformations such
+as pan, zoom, or rotate [33]. These operations can be either
+triggered by the system (they are animated) or by the user
+(they are interactive). Much research is needed on how to
+support similar features on data physicalizations.
+Previous work on animated visualizations examined how to
+turn abrupt visual changes into animated transitions [24]. Although we expect most dynamic physicalizations to support
+animated transitions by design, it remains a challenge to design them such that they appropriately convey the changes to
+the observer. In particular, it remains unknown whether optimal settings for timing apply to animations in 3D space and
+animations of other physical variables, and what the perceptual
+limits of concurrent changes in these variables are.
+Designing interaction with physicalizations is likely even more
+challenging. As discussed before, a key characteristic of physicalizations is their built-in support for interaction techniques
+that generally need to be explicitly implemented on regular displays. A hand-held 3D physicalization can be manually turned
+
+around. Modular physicalizations can be disassembled, reassembled, rearranged, aligned, thus already covering a range
+of analytical tasks [33, 67]. We call such interactions physical interactions to contrast them with what we call synthetic
+interactions requiring sensing, actuation, and computation.
+The primary research challenge in designing effective interactive physicalizations is to find how to best combine physical
+with synthetic interactions. For example, with modular or
+malleable physicalization designs based on LEGOs or clay, a
+range of tasks can be manually accomplished through physical
+interaction, including updating datasets (see Figure 2–left),
+filtering data, or even changing their representation. At the
+same time, computer assistance is clearly desirable in many
+cases to accomplish repetitive or computational tasks.
+Designing synthetic interaction techniques for physicalizations
+may require readapting – or more likely reinventing – interactive visualization. For example, should we support dynamic
+filtering through physical range sliders [72], or through more
+physical, direct manipulation gestures [18]? Some functionalities may not map to any manipulative gesture. Filtering
+on non-encoded dimensions, for example, will likely require
+alternative interaction mechanisms, such as symbolic gestures
+or instruments. Regardless, Data Physicalization will need to
+study ways of smoothly integrating synthetic with physical
+interaction, while avoiding “Midas Touch” issues common in
+gesture-based interfaces [40]. A key question is how much automation is necessary, and whether automation can be used in
+a way that preserves the cognitive benefits offered by physical
+object manipulation.
+As with physical encodings, recognizability and discoverability of interactions are important. While synthetic interactions
+that rely on direct manipulation or familiar controls can convey
+their function through physical affordances (e.g., a handle or
+a switch), not all interaction styles can be easily expressed
+with affordances. Examples include symbolic and/or mid-air
+gestures [18]. The most effective interaction designs for data
+exploration also likely depend on factors such as the type of
+data, the size of the physicalization, and the number of users.
+Implementation Challenges
+
+While we often speak of computer displays as being dynamic
+displays, we want physicalizations to be more generally reconfigurable. Reconfigurability is required to switch datasets,
+to physicalize dynamic data (e.g., from a streaming source),
+or to get different perspectives on the same dataset. Recall
+that these operations can be either automatically triggered
+by the system (animation), or invoked by the user, either via
+sensing and actuation (synthetic interaction) or through purely
+physical manipulation (physical interaction).
+Reconfigurability is required to implement rich physical interactions. For example, a modular 3D bar chart supports
+reordering [32], and a LEGO-based physicalization could support even more tasks. However, limited reconfigurability can
+be desirable. Information as to which states and operations are
+meaningful can be conveyed as physical constraints, by adding
+mechanical features such as attachments [69] or bindings [67].
+Physical constraints have been already used in TUIs [72] but
+largely remain to be explored for physicalizations.
+
+Actuated physicalizations can switch physical states without
+human intervention. Actuation provides support for animation,
+and once combined with sensing, for synthetic interaction. A
+key element to consider from the implementation perspective
+is the degree of self-reconfigurability of hardware technologies,
+as well as the speed with which the devices can reconfigure
+themselves. Self-reconfiguration taxonomies [54, 58] are key
+to better understanding to what extent different technologies
+can support data physicalization. For example, 2.5D shape displays [18] can support 3D bar charts of a certain size as well as
+solid terrain visualizations, but not 3D scatterplots. Although
+such devices are ultra-fast and can support slick interactions
+once combined with sensing, support for other physical representations requires a higher degree of self-reconfigurability.
+The technological complexity required is high, and much more
+research is needed to achieve full spatial flexibility [30].
+Novel technologies are also needed to dynamically convey
+variables other than geometry. Prototypes exist that can dynamically control softness [17, 54] or weight [46], but more
+work is needed before we can “actuate” a range of physical
+variables such as reflectivity, porosity, rugosity or taste. The
+ultimate physical display that can dynamically control not
+only its shape and colors, but also its material properties still
+belongs to science-fiction, but is an exciting goal to pursue.
+More work is also needed to better understand the practical
+trade-offs between different technologies, especially between
+digital fabrication and actuated devices. Despite its many
+benefits, actuation only supports temporal multiplexing, that
+is, showing a single dataset or view of a dataset over time. In
+contrast, many passive physicalizations (analogously to paper
+print-outs) can be easily duplicated, produced in different
+versions, arranged side-by-side, and explored. As passive
+physical objects they are both permanent and disposable, two
+properties that are lost when switching to actuated technology.
+Finally, over-arching the above technological challenges is the
+importance of making the value of physicalizations greater
+than their construction cost (e.g., time, money) [74]. Only
+when this benefit is achieved can physicalizations become
+mainstream. The cost of producing data physicalizations can
+be reduced with appropriate tools that aid in their construction,
+both for static [69] and for dynamic physicalizations.
+Application-Specific Challenges
+
+Even though physicalizations promise many possible benefits,
+we expect them to apply differently depending on application
+scenarios. Thus, we need to identify the application areas that
+can draw immediate benefit in relation to the required cost
+and effort of creating them, and to understand the trade-offs
+involved [74]. Gaining such an understanding may also help
+develop physicalizations that target large audiences [14].
+Consider education as an example. As mentioned earlier, physical artifacts have been shown to facilitate learning [19, 48].
+Physicalizations could further help students understand data
+from topics such as meteorology, history, physics, or chemistry [15, 77], or help them learn about data representations [75]. They could support a way of learning that is not
+purely auditory or visual. Students could share and compare
+data objects, and even author their own [29, 75]. Yet we need
+
+to understand how such physicalizations should be designed
+to best support collaborative learning activities. It is also an
+open question to which extent physicalization literacy has
+to be taught to students before they can begin to understand
+physical encodings less familiar than 3D bar charts.
+Using a physicalization will likely not remain a solitary activity [23]. Physical objects can easily be shared as long as
+collaborators are co-located [68], but in many cases people
+work over a distance. With current visualization tools, we can
+create snapshots to share by email or on paper, or to show
+during talks. Static physicalizations could be similarly shared
+through fabrication instructions, or dynamic physicalizations
+could be remotely synchronized. Many challenges are involved in identifying and implementing appropriate solutions.
+Evaluation-Specific Challenges
+
+Evaluating physicalizations is both important and difficult. On
+a methodological level, Data Physicalization shares challenges
+with HCI and Visualization on how to conduct evaluations.
+Given the focus on data representation, many of the evaluation
+issues are shared by the Visualization community [37, 50, 74].
+A pending challenge is to find appropriate ways of studying
+how people engage in data exploration when no clear task
+is defined [10]. Another concerns the choice of criteria for
+assessing the merits of data representations that go beyond
+pure time and error metrics. For example, the benefits of the
+physicalizations used by Rosling (Figure 2–right) likely lie in
+their pedagogical and persuasive power. Other criteria relevant
+to physicalizations include the insights gained from interacting
+with them [51], the extent to which they promote engagement
+and behavior change, their memorability [8], and the affective
+responses they elicit [26]. Taking inspiration from work on
+visualization evaluation scenarios [37], it also seems important to explore methodologies for understanding how people
+reason, collaborate and communicate with physicalizations.
+In terms of research methods, comparative evaluation is of
+importance – in particular to empirically establish the benefits
+of physicalizations. A difficulty lies in the proper phrasing of
+research questions and choice of experimental manipulations.
+It is important to identify a fair alternative presentation method
+(or modality) as a baseline of comparison. Regular computer
+displays are an important baseline, but others include paper
+and ink, whiteboards, or advanced computer displays such
+as stereoscopic or volumetric displays. All these baselines
+need to be tested before we can claim to have strong formal
+evidence for the merits of physicalization.
+It is also crucial, yet difficult, to only manipulate the presentation modality in order to avoid experimental bias. Data
+encodings should be kept the same or similar across modality
+conditions for comparisons to be informative [34]. Support
+for interaction should also be kept as similar as possible. For
+instance, it would be unfair to compare a static physical visualization with an on-screen visualization system augmented
+with rich and powerful interaction techniques. Technological
+advances in actuated physicalizations will make it possible to
+support similar interaction functionality, but keeping interaction styles comparable across presentation modalities while
+balancing ecological validity will remain a challenge.
+
+Another example of a potential confound is physical size. It is
+already known that display size can have an effect on data exploration efficiency [2]. Therefore, when evaluating the effects
+of physicality, physical size has to be kept the same for the
+comparison to be fair, e.g., wall-sized on-screen visualizations
+need to be compared to room-sized physicalizations.
+Finally, the issues of exploring, evaluating, and implementing
+physicalizations all are linked and we need new methods to
+address them concurrently. For example, how can we investigate a range of synthetic interactions without being subject to
+current technical limitations? One possibility is to use proxy
+technologies [32], for instance, building static physicalizations
+for gesture elicitation studies [76] to inform the design of
+synthetic interactions with future actuated physicalizations.
+CONCLUSION
+
+Data Physicalization is an emerging area of research that examines how computer-supported, physical renditions of data
+can support cognition, communication, learning, problem solving, and decision making. It is related to and bridges traditional fields such as Visualization and Tangible User Interfaces
+through its combined focus on data exploration and analysis
+with physical data representations, we call physicalizations.
+We outlined many possible benefits of physicalizations in
+use and multiple research challenges and opportunities that
+remain to be addressed. The goal of this paper is to open the
+discussion about Data Physicalization as a research area, by
+providing a first working definition of physicalization artifacts
+and an initial proposition of the area’s research focus.
+Data Physicalization is a particularly exciting research area as
+many questions remain unanswered and much can be learned
+from related disciplines. Visualization researchers, for example, can find novel contexts to apply their knowledge on the
+design of data representations, psychologists can contribute
+methodologies and studies for understanding how physical interactions influence cognition, hardware enthusiasts can work
+on novel ways to implement powerful shape-changing dynamic physicalizations, and Tangible and Human-Computer
+Interaction researchers can contribute knowledge on how to
+best design and implement interactions for physical data representations. There also remain many fruitful application
+domains to be explored for both serious data exploration with
+physicalizations as well as more casual use. Data Physicalization research is truly at its beginning and researchers now
+have the great opportunity to shape and influence it.
+With this paper, we hope to inspire the creation of a community
+around research on Data Physicalization that will begin to
+address the outlined as well as new and emerging challenges
+and opportunities. We hope the outcome will be exciting
+examples of how our thinking, learning, problem solving, or
+communication can be enriched with data physicalizations.
+See the dataphys.org website for further developments.
+ACKNOWLEDGMENTS
+
+We thank Benjamin Bach for his help on the neurosurgical
+planning scenario. This work has been supported by the EC
+within the 7th framework programme through the FET Open
+scheme’s GHOST project (grant #309191) and by the Danish
+Council for Strategic Research (grant #10-092316).
+
+REFERENCES
+
+1. Alexander, J., Lucero, A., and Subramanian, S. Tilt
+Displays: Designing display surfaces with multi-axis
+tilting and actuation. In Mobile HCI (2012), 161–170.
+2. Andrews, C., Endert, A., Yost, B., and North, C.
+Information visualization on large, high-resolution
+displays: Issues, challenges, and opportunities.
+Information Visualization 10, 4 (2011), 341–355.
+3. Ascher, M., and Ascher, R. Mathematics of the Incas:
+Code of the Quipu. Dover Publications, 2013.
+4. Barrass, S. Digital fabrication of acoustic sonifications. J.
+Audio Eng. Soc. 60, 9 (2012), 709–715.
+5. Benko, H., Wilson, A. D., Zannier, F., and Benko, H.
+Dyadic projected spatial augmented reality. In Proc. UIST
+(2014), 645–655.
+6. Bezerianos, A., and Isenberg, P. Perception of visual
+variables on tiled wall-sized displays for information
+visualization applications. TVCG 18, 12 (2012),
+2516–2525.
+7. Borghi, A. M., and Cimatti, F. Embodied cognition and
+beyond: acting and sensing the body. Neuropsychologia
+48, 3 (2009), 763–773.
+8. Borkin, M., Vo, A., Bylinskii, Z., Isola, P., Sunkavalli, S.,
+Oliva, A., and Pfister, H. What makes a visualization
+memorable? TVCG 19, 12 (2013), 2306–2315.
+9. Calvert, G., Spence, C., and Stein, B. E. The Handbook of
+Multisensory Processes. MIT Press, 2004.
+10. Card, S., Mackinlay, J. D., and Shneiderman, B., Eds.
+Readings In Information Visualization: Using Vision To
+Think. Morgan Kaufmann Publishers, 1999.
+11. Carello, C., Wagman, J. B., and Turvey, M. T. Acoustic
+specification of object properties. In Moving Image
+Theory: Ecological Considerations. Southern Illinois
+University, 2005, 79–104.
+12. Challis, B. P., and Edwards, A. D. N. Design principles
+for tactile interaction. In Haptic Human-Computer
+Interaction. Springer, 2001, 17–24.
+13. Cleveland, W. S., and McGill, R. Graphical perception:
+Theory, experimentation, and application to the
+development of graphical methods. J. Am. Stat. Assoc. 79,
+387 (1984), 531–554.
+14. Danziger, M. Information visualization for the people.
+Master’s thesis, MIT, 2008.
+15. Dragicevic, P., and Jansen, Y. List of physical
+visualizations. dataphys.org/list, 2012.
+16. Edman, P. Tactile Graphics. AFB, 1992.
+17. Follmer, S., Leithinger, D., Olwal, A., Cheng, N., and
+Ishii, H. Jamming user interfaces: Programmable particle
+stiffness and sensing for malleable and shape-changing
+devices. In Proc. UIST (2012), 519–528.
+18. Follmer, S., Leithinger, D., Olwal, A., Hogge, A., and
+Ishii, H. inFORM: Dynamic physical affordances and
+constraints through shape and object actuation. In Proc.
+UIST (2013), 417–426.
+19. Froebel, F. The Education of Man. A. Lovell & Co, 1885.
+20. Gibson, J. J. The Ecological Approach to Visual
+Perception. Psychology Press, 1986.
+21. Gilpin, K., Koyanagi, K., and Rus, D. Making
+self-disassembling objects with multiple components in
+the Robot Pebbles system. In ICRA (2011), 3614–3621.
+
+22. Griffin, A. L. Feeling it out: the use of haptic
+visualization for exploratory geographic analysis.
+Cartographic Perspectives, 39 (2001), 12–29.
+23. Heer, J., Ham, F., Carpendale, S., Weaver, C., and
+Isenberg, P. Creation and collaboration: Engaging new
+audiences for information visualization. In Information
+Visualization, LNCS. Springer, 2008, 92–133.
+24. Heer, J., and Robertson, G. G. Animated transitions in
+statistical data graphics. TVCG 13, 6 (2007), 1240–1247.
+25. Hiller, J., and Lipson, H. Design and analysis of digital
+materials for physical 3d voxel printing. Rapid
+Prototyping Journal 15, 2 (2009), 137–149.
+26. Hogan, T., and Hornecker, E. How does representation
+modality affect user-experience of data artifacts? In
+Haptic & Audio Inter. Design. Springer, 2012, 141–151.
+27. Hornecker, E. The role of physicality in tangible and
+embodied interactions. Interactions 18, 2 (2011), 19–23.
+28. Hornecker, E., and Buur, J. Getting a grip on tangible
+interaction: a framework on physical space and social
+interaction. In Proc. CHI (2006), 437–446.
+29. Huron, S., Jansen, Y., and Carpendale, S. Constructing
+visual representations: investigating the use of tangible
+tokens. TVCG 20, 12 (2014), 2102–2111.
+30. Ishii, H., Lakatos, D., Bonanni, L., and Labrune, J.-B.
+Radical Atoms: Beyond Tangible Bits, toward
+transformable materials. Interactions 19, 1 (2012), 38–51.
+31. Ishii, H., and Ullmer, B. Tangible Bits: towards seamless
+interfaces between people, bits and atoms. In Proc. CHI,
+ACM (1997), 234–241.
+32. Jansen, Y. Physical and Tangible Information
+Visualization. PhD thesis, Université Paris-Sud XI, 2014.
+33. Jansen, Y., and Dragicevic, P. An interaction model for
+visualizations beyond the desktop. TVCG 19, 12 (2013),
+2396–2405.
+34. Jansen, Y., Dragicevic, P., and Fekete, J.-D. Evaluating
+the efficiency of physical visualizations. In Proc. CHI
+(2013), 2593–2602.
+35. Kildal, J. Kooboh: Variable tangible properties in a
+handheld Haptic-Illusion box. In Proc. EuroHaptics’12.
+Springer, 2012, 191–194.
+36. Kosara, R. Visualization criticism—the missing link
+between information visualization and art. In Proc. IV
+(2007), 631–636.
+37. Lam, H., Bertini, E., Isenberg, P., Plaisant, C., and
+Carpendale, S. Empirical studies in information
+visualization: Seven scenarios. TVCG 18, 9 (2012),
+1520–1536.
+38. Lederman, S. J., and Klatzky, R. L. Hand movements: a
+window into haptic object recognition. Cogn. Psychol. 19,
+3 (July 1987), 342–368.
+39. Lee, J., Post, R., and Ishii, H. ZeroN: Mid-air tangible
+interaction enabled by computer controlled magnetic
+levitation. In Proc. UIST (2011), 327–336.
+40. Lee, J. C. In search of a natural gesture. ACM Crossroads
+16, 4 (2010), 9–12.
+41. McGookin, D., Robertson, E., and Brewster, S. Clutching
+at straws: using tangible interaction to provide non-visual
+access to graphs. In Proc. CHI (2010), 1715–1724.
+
+42. McGookin, D. K., and Brewster, S. A. SoundBar:
+Exploiting multiple views in multimodal graph browsing.
+In Proc. NordiCHI (2006), 145–154.
+43. Moere, A. V. Beyond the tyranny of the pixel: Exploring
+the physicality of information visualization. In Proc. IV
+(2008), 469–474.
+44. Munzner, T. Process and pitfalls in writing information
+visualization research papers. In Information
+Visualization. Springer, 2008, 134–153.
+45. Murata, S., Yoshida, E., Kamimura, A., Kurokawa, H.,
+Tomita, K., and Kokaji, S. M-TRAN: Self-reconfigurable
+modular robotic system. TMECH 7, 4 (2002), 431–441.
+46. Niiyama, R., Yao, L., and Ishii, H. Weight and volume
+changing device with liquid metal transfer. In Proc. TEI
+(2014), 49–52.
+47. Olberding, S., Wessely, M., and Steimle, J. Printscreen:
+fabricating highly customizable thin-film touch-displays.
+In Proc. UIST (2014), 281–290.
+48. O’Malley, C., and Fraser, S. Literature review in learning
+with tangible technologies. Tech. rep., Futurelab, 2004.
+49. Piper, B., Ratti, C., and Ishii, H. Illuminating clay: A 3-D
+tangible interface for landscape analysis. In Proc. CHI
+(2002), 355–362.
+50. Plaisant, C. The challenge of information visualization
+evaluation. In Proc. AVI (2004), 109–116.
+51. Plaisant, C., Fekete, J., and Grinstein, G. Promoting
+insight-based evaluation of visualizations: From contest
+to benchmark repository. TVCG 14, 1 (2008), 120–134.
+52. Poupyrev, I., Nashida, T., Maruyama, S., Rekimoto, J.,
+and Yamaji, Y. Lumen: interactive visual and shape
+display for calm computing. In SIGGRAPH Emerging
+Technologies (2004), 17.
+53. Pousman, Z., Stasko, J. T., and Mateas, M. Casual
+information visualization: Depictions of data in everyday
+life. TVCG 13, 6 (2007).
+54. Rasmussen, M. K., Pedersen, E. W., Petersen, M. G., and
+Hornbæk, K. Shape-changing interfaces: a review of the
+design space and open research questions. In Proc. CHI
+(2012), 735–744.
+55. Reber, R., Schwarz, N., and Winkielman, P. Processing
+fluency and aesthetic pleasure: Is beauty in the
+perceiver’s processing experience? Personality and
+Social Psychology Review 8, 4 (2004), 364–382.
+56. Roberts, J. C., and Walker, R. Using all our senses: the
+need for a unified theoretical approach to multi-sensory
+information visualization. In VisWeek Workshop (2010).
+57. Romanishin, J., Gilpin, K., and Rus, D. M-blocks:
+Momentum-driven, magnetic modular robots. In Proc.
+IROS, IEEE/RSJ (2013), 4288–4295.
+58. Roudaut, A., Karnik, A., Löchtefeld, M., and
+Subramanian, S. Morphees: Toward high “shape
+resolution” in self-actuated flexible mobile devices. In
+Proc. CHI (2013), 593–602.
+59. Schmandt-Besserat, D. How Writing Came About.
+University of Texas Press, 1996.
+60. Schweikardt, E., and Gross, M. D. roBlocks: A robotic
+construction kit for mathematics and science education.
+In Proc. ICMI (2006), 72–75.
+61. Seah, S., Drinkwater, B., Carter, T., Malkin, R., and
+Subramanian, S. Dexterous ultrasonic levitation of
+millimeter-sized objects in air. UFFC 61, 7 (2014),
+1233–1236.
+
+62. Seah, S. A., Martinez Plasencia, D., Bennett, P. D.,
+Karnik, A., Otrocol, V. S., Knibbe, J., Cockburn, A., and
+Subramanian, S. SensaBubble: A chrono-sensory mid-air
+display of sight and smell. In Proc. CHI (2014),
+2863–2872.
+63. Shaer, O., and Hornecker, E. Tangible user interfaces:
+Past, present, and future directions. Found. Trends Hum.
+-Comput. Interact. 3 (2010), 1–137.
+64. Spelke, E. S. The development of intermodal perception.
+In Handbook of Infant Perception. Academic Press, 1987,
+233–273.
+65. Steimle, J., Jordt, A., and Maes, P. Flexpad: highly
+flexible bending interactions for projected handheld
+displays. In Proc. CHI (2013), 237–246.
+66. Stusak, S., and Aslan, A. Beyond physical bar charts: An
+exploration of designing physical visualizations. In Proc.
+CHI-EA (2014), 1381–1386.
+67. Stusak, S., Tabard, A., and Butz, A. Can physical
+visualizations support analytical tasks? In Posters of
+IEEE InfoVis (2013).
+68. Stusak, S., Tabard, A., Sauka, F., Khot, R., and Butz, A.
+Activity sculptures: Exploring the impact of physical
+visualizations on running activity. TVCG 20, 12 (2014),
+2201–2210.
+69. Swaminathan, S., Shi, C., Jansen, Y., Dragicevic, P.,
+Oehlberg, L., and Fekete, J.-D. Supporting the design and
+fabrication of physical visualizations. In Proc. CHI
+(2014), 3845–3854.
+70. Tang, S. K., Sekikawa, Y., Leithinger, D., Follmer, S., and
+Ishii, H. Tangible cityscape, 2013. tinyurl.com/tcityscape.
+71. Ullmer, B., and Ishii, H. Emerging frameworks for
+tangible user interfaces. IBM Syst. J. 39 (July 2000).
+72. Ullmer, B., Ishii, H., and Jacob, R. J. K. Tangible query
+interfaces: Physically constrained tokens for
+manipulating database queries. In Proc. INTERACT
+(2003), 279–286.
+73. Underkoffler, J., and Ishii, H. Urp: A luminous-tangible
+workbench for urban planning and design. In Proc. CHI
+(1999), 386–393.
+74. Van Wijk, J. J. The value of visualization. In Proc. VIS
+(2005), 79–86.
+75. Vande Moere, A., and Patel, S. The Physical
+Visualization of Information: Designing Data Sculptures
+in an Educational Context. In Visual Information
+Communication. Springer, 2010, pp. 1–23.
+76. Wobbrock, J. O., Morris, M. R., and Wilson, A. D.
+User-defined gestures for surface computing. In
+Proc. CHI (2009), 1083–1092.
+77. Wu, H.-K., and Shah, P. Exploring visuospatial thinking
+in chemistry learning. Science Education 88, 3 (2004),
+465–492.
+78. Yao, L., Niiyama, R., Ou, J., Follmer, S., Della Silva, C.,
+and Ishii, H. PneUI: Pneumatically actuated soft
+composite materials for shape changing interfaces. In
+Proc. UIST (2013), 13–22.
+79. Zhao, J., and Vande Moere, A. Embodiment in data
+sculpture: A model of the physical visualization of
+information. In Proc. DIMEA (2008), 343–350.
+
+

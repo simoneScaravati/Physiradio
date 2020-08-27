@@ -1,0 +1,278 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/260699515
+
+Can Physical Visualizations Support Analytical Tasks?
+Conference Paper · October 2013
+
+CITATIONS
+
+READS
+
+8
+
+262
+
+3 authors, including:
+Simon Stusak
+Ludwig-Maximilians-University of Munich
+12 PUBLICATIONS 97 CITATIONS
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Data physicalization View project
+
+Activity Based Computing (ABC) View project
+
+All content following this page was uploaded by Simon Stusak on 17 October 2014.
+The user has requested enhancement of the downloaded file.
+
+Can Physical Visualizations Support Analytical Tasks?
+Simon Stusak
+
+*
+
+University of Munich (LMU)
+
+Aurélien Tabard
+
+†
+
+University of Munich (LMU), Université Lyon 1
+
+Andreas Butz
+
+‡
+
+University of Munich (LMU)
+
+Figure 1: Two alternative physical visualizations, where each data case is represented by an engraved circle (a) or hole (b). The x axis
+represents energy sources, the y axis countries and the z axis time (c). Each layer can be rotated about time axis.
+
+ABSTRACT
+While physical objects have been used to represent information
+for a long time, physical visualizations only recently started to
+attract attention from the InfoVis and HCI communities. In this
+article we present our early experiments in designing physical
+visualizations for supporting data analysis. Based on Amar’s
+taxonomy of analytical tasks [1] we show that physical
+visualizations can support a number of analytical activities but
+that further research is needed to support all activities. Based on
+our analysis, we propose promising directions for future research.
+
+As a starting point for this exploration, we examine to which
+extent PVs can support established analytical tasks of the InfoViz
+domain. Based on Amar’s taxonomy of analytical tasks [1], we
+discuss how these tasks are supported, and analyze the benefits
+and drawbacks of PVs for each of these tasks.
+2
+
+CASE STUDY: LAYERED 2D PLOTS
+
+As Jansen and Dragicevic showed with their curated lists 1,2 of
+physical visualizations (PVs), artists and designers designed and
+produced a wealth of physical representations of data. They are
+well suited for playful exploration and stimulate curiosity and
+awareness [2]. As a physical object that can be explored by all
+senses, they are less prone to creating information overload and
+distress [6]. Vande Moere [4] writes that the use of physical
+materials as a communication medium allows for rich, cultural
+connotations that evoke user fascination and engagement. He
+argues that PVs can represent information in pleasant ways and
+turn data analysis in an engaging and educational experience.
+While these benefits are widely recognized, the analytic value of
+physical visualizations remains to be explored [5].
+
+To better understand their properties, we built and experimented
+with PVs for a range of different datasets and in various form
+factors. We cut our prototypes from transparent acrylic glass using
+a laser cutter, which enables rapid prototyping with high precision
+for creating accurate PVs.
+Figure 1 a) and b) show two alternative PVs of a country
+indicator dataset from Gapminder 3 similar to the datasets used by
+Jansen et al. [3] (more images of different PVs can be found in
+our flickr gallery 4). Data is plotted along 3 dimensions to provide
+a compact representation. The PV consists of layered 2D plots, in
+which the x axis represents energy sources, the y axis countries
+and the z axis (layers) time (see Figure 1 c). Each data case is
+represented by a hole in the respective layer. The width of this
+hole represents the percentage of energy production from the
+respective source by the respective country for a given year. This
+PV is easy to interpret because it relies on a well-established 2D
+visualization. Combined with a generic dataset, people were
+readily able to interpret it. Moreover, it has the unique property of
+being articulated: Layers can be rotated independently from each
+other about the time axis. Although the PV we discuss here is only
+a specific instance of a much larger design space, we use it as a
+starting point to ground the discussion and offer promising
+research directions 5.
+
+*
+
+3
+
+Keywords: Tangible, Visualization, Physical visualization.
+Index Terms: Computing methodologies → Visual analytics.
+1
+
+PHYSICAL VISUALIZATIONS
+
+simon.stusak@ifi.lmu.de
+aurelien.tabard@ifi.lmu.de
+‡
+andreas.butz@ifi.lmu.de
+1
+http://www.aviz.fr/Research/PassivePhysicalVisualizations
+2
+http://www.aviz.fr/Research/ActivePhysicalVisualizations
+†
+
+SUPPORTING ANALYTICAL TASKS
+
+We reviewed several taxonomies of analytical task for
+information visualization [1, 7, 8] and decided to use the
+taxonomy by Amar et al. [1], because it focuses on user-centered
+activities rather than on data representation,
+3
+
+http://www.gapminder.com
+http://www.tinyurl.com/pv-stusak
+5
+See poster and Flickr gallery for more examples.
+4
+
+3.1 Task 1: Retrieve value
+Finding the attribute values of specific cases in the data set is
+fundamental and often constitutes a subtask of other analytical
+tasks. Our PV allows locating, viewing and grasping all presented
+values, and physical touch seems to be an essential cognitive aid
+[3]. Retrieving exact values is also possible with the help of a
+physical measuring tool, such as a vernier caliper, if the PV was
+built in the appropriate scale.
+3.2 Task 2: Filter
+Filtering data based on various criteria is effective in getting
+further insight into a limited subset of the data. Our visualization
+allows filtering out specific years by rotating the corresponding
+layers. It also affords focusing visually on one source/country
+combination and its changes over time. More efficient filtering
+methods could be used to highlight only specific elements.
+3.3 Task 3: Compute Derived Value
+Computing an aggregate numeric representation, such as the
+average or the sum of specific attributes, is not supported by our
+PV. It would require sophisticated mechanical construction or
+digital augmentation, which are promising topics of investigation.
+3.4 Task 4: Find Extremum
+Finding attributes with maximum or minimum values with our
+visualization is possible in various ways. Along the time axis, one
+can easily spot the widest and narrowest layer by looking along
+the hole across slices. In order to find the maximum value for a
+given country and year, we need to slide out the respective layer
+and compare all holes in a source row. This is more difficult
+visually since the differences between the values can be small, but
+touching or using rigid objects can also be used for comparisons.
+3.5 Task 5: Sort
+The PV we built supports sorting along the time axis by loosening
+the screw and rearranging layers. A specific country/source
+combination can, for example, be sorted in ascending order by
+stacking layers according to increasing hole sizes. Sorting along
+the country and source axes is not supported and would probably
+require more complex mechanical arrangements, such as Bertin’s
+original data matrices.
+3.6 Task 6: Determine Range
+The range of an attribute can be understood by looking at all its
+unique values. Our visualization supports recognizing whether an
+attribute’s range of values is wide or narrow by looking along the
+respective axis. For example, it is easy to see that the electricity
+production from nuclear sources in France has a wide range.
+3.7 Task 7: Characterize Distribution
+The characterization of the distribution of an attribute’s values
+over the data set is limited. Our PV shows well where changes of
+the values are taking place and whether these are frequent and
+large or whether in contrast an attribute has many similar values.
+However identifying distributions is limited by the static
+arrangement of our physical visualization.
+3.8 Task 8: Find Anomalies
+Finding outliers or unexpected values is often a good basis for
+further exploration of a data set. Our PV supports this task well by
+providing a good overview of the entire data set. Since large
+changes in size are perceived preattentively by the visual system,
+outliers within a specific year can efficiently be spotted by a quick
+look at the respective layer. As another example, there are small
+
+View publication stats
+
+changes in electricity production year by year in most countries. A
+large shift can easily be recognized in the use of nuclear sources
+by France or in the use of oil sources by Japan in the seventies.
+3.9 Task 9: Cluster
+Grouping similar items together is only possible along the time
+axis, because within a layer, values cannot be rearranged. One can
+focus on specific groups visually and by pointing physically but
+clustering is quite limited. Dynamic visual highlights or physical
+rearrangement could enable efficient clustering.
+3.10 Task 10: Correlate
+Determining useful relationships between the values of different
+attributes is supported by our PV. For example, it is easy to
+discover that every country, with the exclusion of Turkey is using
+nuclear sources of electricity. The fact that Japan shifted their
+electricity production from coal and hydroelectric to oil in the
+seventies, can also easily be seen.
+4
+
+SUMMARY AND DIRECTIONS FOR FUTURE RESEARCH
+
+As the analysis above shows, many analytic tasks can be
+supported by PVs and they provide a particularly good overview
+of the data set. Some tasks require the use of additional tools, e.g.,
+for measuring; others require mechanical manipulation or even
+disassembling and reassembling the PV. The fact that PVs are
+three-dimensional objects, which can be visually and haptically
+explored from all directions, provides a very efficient way to
+combine visual and physical manipulation to focus on specific
+dimensions or elements in the data set.
+In order to further chart the design space of PVs, researchers can
+start from established digital visualizations as in our example. A
+promising field of exploration is the construction of mechanically
+functioning visualizations, which allow dynamic exploration of a
+data set. We have shown how a simple rotation axis can already
+support the analytic tasks of filtering and sorting, and we believe
+that other tasks, such as relating or the calculation of derived
+values can be realized by more sophisticated mechanical
+constructions, possibly involving non-rigid, elastic parts or even
+liquids. We hope to provide a solid starting point for a more
+systematic exploration of this fascinating design space.
+REFERENCES
+1.
+2.
+3.
+4.
+
+5.
+6.
+7.
+
+8.
+
+R. Amar, J. Eagan, and J. Stasko. Low-level components of analytic
+activity in information visualization. In InfoVis’05, 2005.
+T. Hogan, E. Hornecker. In Touch with Space: Embodying Live
+Data For Tangible Interaction. In Proceedings of TEI'13, pages 275278, 2013, ACM.
+Y. Jansen, P. Dragicevic, and J.-D. Fekete. Evaluating the efficiency
+of physical visualizations. In Proceedings of CHI'13, pages 2593–
+2602, New York, NY, USA, 2013, ACM.
+A. Vande Moere. Beyond the tyranny of the pixel: Exploring the
+physicality of information visualization. In 12th International
+Conference on Information Visualisation, IV'08, pages 469-474,
+2008, IEEE.
+A. Vande Moere and S. Patel. Analyzing the design approaches of
+physical data sculptures in a design education context. In Visual
+Information Communications International (VINCI’09), 2009.
+R. S. Wurman. Information Anxiety, Doubleday, New York, 1989.
+J. Yi, Y. Kang, J. Stasko, J. and J. Jacko. Toward a deeper
+understanding of the role of interaction in information visualization.
+In IEEE Transactions on Visualization and Computer Graphics
+13(6): 1224–1231, 2007.
+M. X. Zhou and S. K. Feiner, Visual task characterization for
+automated visual discourse synthesis. In Proceedings of CHI '98, ,
+pages. 392-399, New York, NY, USA, 1998, ACM.
+
+

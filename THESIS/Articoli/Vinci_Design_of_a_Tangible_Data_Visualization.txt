@@ -1,0 +1,458 @@
+This is the author’s version of a work that was submitted/accepted for publication in the following source:
+Rezaeian, Alireza & Donovan, Jared
+(2014)
+Design of a tangible data visualization. In
+Nguyen, Quang Vinh, Wu, Yingcai, Bednarz, Tomasz, & Huang, Tony
+(Eds.)
+VINCI 2014: Proceedings of the 7th International Symposium on Visual Information Communication and Interaction, ACM Digital Libraries, Sydney,
+Australia, pp. 232-235.
+This file was downloaded from: https://eprints.qut.edu.au/70452/
+
+c Copyright 2014 ACM
+
+Notice: Changes introduced as a result of publishing processes such as
+copy-editing and formatting may not be reflected in this document. For a
+definitive version of this work, please refer to the published source:
+https://doi.org/10.1145/2636240.2636869
+
+Design of a Tangible Data Visualization
+Alireza Rezaeian
+
+Jared Donovan
+
+Creative Industries Faculty
+
+Creative Industries Faculty
+
+Queensland University of Technology
+
+Queensland University of Technology
+
++61 4 3836 7178
+
++61 7 3138 3135
+
+alireza.rezaeian@student.qut.edu.au
+
+j.donovan@qut.edu.au
+
+ABSTRACT
+In this paper we describe the design of DNA Jewellery, which is a
+wearable tangible data representation of personal DNA profile
+data. An iterative design process was followed to develop a 3D
+form-language that could be mapped to standard DNA profile
+data, with the aim of retaining readability of data while also
+producing an aesthetically pleasing and unique result in the area
+of personalized design. The work explores design issues with the
+production of data tangibles, contributes to a growing body of
+research exploring tangible representations of data and highlights
+the importance of approaches that move between technology, art
+and design.
+
+containers for data [1]. Our tangible data-visualizations are not
+simple geometric forms, but complex shapes whose physical form
+is directly derived from an underlying data set.
+
+Design, Experimentation, Human Factors.
+
+This project also seeks to explore issues of personalized items.
+Desires for personalization raise many issues for design. Every
+person is unique. We have our own ways of looking, behaving,
+speaking, acting, thinking, learning, deciding and choosing. The
+purpose of this study is not to find the answer why we are
+different. Rather, it is to address the need for personalized design
+that people exhibit. Every person has a unique taste and chooses
+differently. We have our favorite colors and styles, and some
+people even choose clothes to reflect their identity. In this respect
+freedman makes a valuable point about data visualization, which
+is that it doesn’t need “...to be boring to be functional or
+extremely sophisticated to look beautiful" [2]. In other words it is
+possible to create data visualizations to be both beautiful and
+functional. This project sets out to create a visualization of
+personal (DNA profiling) data that is both aesthetically pleasing
+and readable by the user.
+
+Keywords
+
+2. RELATED WORK
+
+Categories and Subject Descriptors
+H.5.2 [Information Interfaces
+Interfaces – Interaction styles.
+
+and
+
+Presentation]:
+
+User
+
+General Terms
+
+Tangible data, Personalised items, 3D printing.
+
+1. INTRODUCTION
+The increased availability of 3D printing opens up new
+possibilities for expanding visual display of data to also make use
+of tactile qualities and three-dimensional form as carriers of
+meaning in data visualisations [5]. Producing tangible datavisualisations as physical forms seems promising in several
+respects. Being able to hold and rotate physical objects could
+allow people to easily see the data from different angles and build
+a bodily understanding of the shape of the data, and making use of
+the tactile surface qualities of a physical form could support the
+layering of multiple dimensions of data and better enable people
+to get a ‘feel’ for the data [3].
+In contrast to data-visualization approaches that make use of 3D
+computer rendered graphics presented through the use of displays
+[4], this work explores the possibilities of 3D-printed tangible
+objects that can be directly held and handled (or even worn).
+Although these objects are ‘tangible’ things, our approach should
+be distinguished from research into Tangible User Interfaces
+(TUIs), firstly because the work presented here is not interactive
+and secondly because whereas TUIs often provide for the display
+and manipulation of data, this is typically through the use of
+simple geometric forms as interactive ‘phicons’ which act as
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that
+copies bear this notice and the full citation on the first page. To copy
+otherwise, or republish, to post on servers or to redistribute to lists,
+requires prior specific permission and/or a fee.
+VINCI 2014, August 5-8, 2014, Sydney, Australia.
+Copyright 2014 ACM 978-1-4503-2765-7… $10.00.
+
+There is a growing body of research exploring tangible
+representations of data to which our work contributes. Measuring
+Cup is a data form project by Mitchel Whitelaw that presents 150
+years of Sydney temperature data in a cup-shaped object about 6
+cm high [6]. The Weather Bracelet is another project by Mitchel
+Whitelaw in which he created a wearable data object, based on
+365 days of Canberra weather data using 3D printing.
+Several companies have already begun offering personalised
+products based on DNA profile data. Dutch DNA provides custom
+made forms of jewelry or furniture based on DNA profiling
+information1. DNA11 is another website that creates portraits and
+personalized art canvases based on a person's DNA profile2.
+The increasing availability of DNA analysis and profiling services
+combined with the possibility for personalisation of product
+production through technologies such as 3D printing raise many
+issues for design. The purpose of this study is to explore how
+issues of personalization play out in relation to data of a
+particularly personal kind – DNA profile data
+
+3. DESIGN APPROACH
+We initiated the design process using DNA profile data to
+generate the first design. We improved the design over multiple
+cycles that included interpreting data, editing the design, creating
+the digital 3D model, preparing the model for 3D printing and
+1
+
+http://www.dutchdna.nl/dutch-dna/
+
+2
+
+http://www.dna11.com/about-us
+
+actual production. At the end of each step we analyzed the results
+based on the goal to create a personalized wearable object,
+maintaining the balance between data readability and aesthetics of
+the design.
+Our key questions for the design were:
+•
+
+What are the design considerations for tangible data
+visualization in this project.
+
+•
+
+How to design a personalized item e.g. bracelet or ring
+based on DNA profiling data as an example for personal
+data in this project.
+Figure 1: Mapping of DNA test result data
+
+4. DESIGN OF THE FORM
+For the purposes of this study, we worked with one of the authors’
+own DNA profiling data obtained through an online DNA
+identification service based on the PowerPlex® 16 System.
+Humans have 23 chromosomes and each of these chromosomes
+has a long and a short arm. The test results we obtained for the
+DNA provided a listing of significant DNA markers within the
+sample. Using information from the UCSC Genome
+Bioinformatics website3, we identified which chromosome and
+which arm on the chromosome (short or long) each of the markers
+in our test results belonged to (Table 1).
+
+This mapping was then used as the basis for generating a 3D
+model of the data by angling the left and right arms up and
+wrapping them around to form a circular structure that could be
+worn as a bracelet or ring and create the iconic shape of DNA
+helix (Figure 2).
+
+Table 1: Actual DNA profiling data in PowerPlex® 16 System
+rearranged and added chromosome column
+Chromosome
+
+STR Locus
+
+Alleles Called
+
+2p
+
+TPOX
+
+3p
+
+D3S1358
+
+17
+
+4q
+
+FGA
+
+22
+
+5q
+
+CSF1PO
+
+5q
+
+D5S818
+
+7q
+
+D7S820
+
+8q
+
+D8S1179
+
+11p
+
+TH01
+
+8
+
+11
+
+10
+
+12
+11
+8
+
+11
+
+12
+6
+
+12p
+
+vWA
+
+13q
+15q
+
+D13S317
+Penta E
+
+16
+
+17
+
+16q
+
+D18S539
+
+9
+
+11
+
+18q
+
+D18S51
+
+13
+
+14
+
+21q
+
+D21S11
+
+28
+
+30
+
+21q
+
+Penta D
+
+10
+
+11
+
+Xp,Yp
+
+Amelogenin
+
+13
+11
+
+Male (XY)
+
+With this information, we developed a visual mapping shown in
+(Figure 1). In this figure the blue squares indicate the 23
+chromosomes counting from top to bottom. The white circles
+indicate the position of the result for each marker on either the
+short (left side) or long (right side) arms of the chromosome. The
+white squares are counting units to indicate how far along the arm
+the marker’s result is situated. Finally, the centre line shifts either
+left or right as it goes from top to bottom depending on whether
+each marker is on the long or short arm of its chromosome.
+3
+
+http://genome.ucsc.edu/
+
+Figure 2: Mapping wrapped into circular form
+
+4.1 Design of Tactile Elements
+To facilitate readability of the data in a final 3D printed form, it
+was necessary to find an alternative to the colour-coding used in
+the above diagrams. The 3D printing technology that we used
+supports only single material such as plastic, ceramic or silver and
+since we wanted to engage more tactile sense rather than visual
+we developed a surface texturing system to distinguish our design
+units visually and tactilely. (Figure 3) shows a test print of a range
+of candidate textures that were tested as part of an iterative
+process of designing this surface texturing. It was important
+throughout the design process to create physical models of the
+design, because details of tactile and visual feel are impossible to
+judge from 3D renderings alone. For example, in the test printing
+shown in (Figure 3), many of the surface details that were clearly
+
+delineated in the computer rendering became indistinct in the
+physical object.
+
+either a left or right-facing arm (4.2, 4.3). Finally, for the result
+units, we applied a frame with a hollow centre to make it stand out
+both visually and tactilely (4.4).
+One issue with wrapping the arms into a circular form (Figure 2)
+is that some of the longer arms may cross over each other. In one
+respect, this crossing-over is desirable because it makes the
+overall form stronger and more wearable, but for the readability of
+the individual units, it could cause ambiguities and conflicts in the
+surface texturing system described above. We dealt with this in
+the visualisation by combining textures where markers crossed
+over. This is shown in the bottom row of Figure 4, which shows
+(from left to right) two counting units crossing (4.5), counting
+units and result units crossing (4.6, 4.7) and two result units
+crossing (4.8).
+
+4.2 Final Printing of Jewellery
+After creating suitable textures we combined all the elements into
+a final tangible design. Even though we had settled on the final
+form for the piece, there were still several iterations of test prints
+required to find a final form that would reliably print and was
+strong enough to actually be worn. Initially, we printed braceletsized pieces as shown in (Figure 5).
+
+Figure 3: Texture study digital 3D vs. actual print
+From this and other test printings of different textures, we
+developed a system for distinguishing between centre units,
+counting units along the arm of the chromosome and result units,
+which would translate well into a printed form (Figure 4).
+
+Figure 5: 3D printed bracelet of DNA profile data
+
+Figure 4: Textures of individual units (top)
+and combined (bottom)
+For the centre units, we kept a smoother texture so that the units
+would join together into the centre line (4.1). For the counting
+units, we found that diagonal lines across each unit worked well
+because they served as a visual and tactile guide along the arm of
+the chromosome. The direction of the diagonal could also indicate
+
+Once we were satisfied with the form of the bracelet-sized pieces,
+we produced a ring-sized piece in silver, which is shown in
+(Figure 6). There were less tangible texture details in silver
+version due to small size of the ring and limitation to produce
+such details in small scale but we produced the silver version to
+fulfill the need of personalized item and take the project beyond
+prototyping and get as close as possible to actual production.
+An aspect we found attractive about the final form is that although
+the data is not immediately obvious, it can still be deciphered.
+Thus the form requires some level of engagement from the
+
+wearer. The form also manages to be evocative of DNA without
+relying on obvious visual clichés such as a double helix.
+
+Figure 6: Final 3D print of DNA Ring in silver
+
+5. DISCUSSION
+This project has allowed us to explore some of the issues involved
+in the design of tangible data visualisations. We adopted an
+iterative process in this project, where each iteration included
+design, creation and reflection that helped us to move our design
+towards the final result.
+They were 4 equally important elements in this project:
+I.
+
+Creating an actual physical item (production)
+
+II.
+
+Aesthetics of designing item (design & aesthetic)
+
+III.
+
+Visualizing data and keeping it easy enough to read
+(data readability)
+
+IV.
+
+Creating a personalized item (personalization)
+
+If we wanted to put more effort on either one of these elements,
+we should have sacrificed the other. For example adding details in
+order to improve the aesthetic value would likely make it more
+difficult for the user to read the data and perhaps more difficult or
+impossible to produce. Similarly if we wanted to concentrate on
+data visualization and keep it so simple and straightforward it
+would likely lack some aesthetic qualities.
+
+One important lesson from the design process was the importance
+of moving between digital and physical materials of design
+throughout the process.
+Further work remains to be done in terms of producing more
+designs for other people and seeing how they relate to and
+imagine them. To see how people might perceive their differences
+through their bracelets to figure out if these items reflect any of
+our characteristics (at least biologically). For instance, perhaps
+there are those who have the same length on their 3rd arm of their
+bracelets; they have some similarity; because they have these
+similarities on their DNA. Or even if this is not really possible
+from such a simple profile data it would still be interesting to see
+if people perceive their DNA to be similar to others or how this
+leads them to reflect on their DNA in relation to others.
+
+6. REFERENCES
+[1] Fishkin, K. P. (2004) A taxonomy for and analysis of
+tangible interfaces. Personal and Ubiquitous Computing,
+8(5), 347–358. doi:10.1007/s00779-004-0297-4
+[2] Friedman, V. (2008) Data Visualization and Infographics |
+Smashing Magazine. Accessed April 20, 2013.
+http://www.smashingmagazine.com/2008/01/14/mondayinspiration-data- visualization-and-infographics/
+[3] Moere, A. (2008) Beyond the tyranny of the pixel: Exploring
+the physicality of information visualization. In Proc. IV’08,
+IEEE
+[4] Shneiderman, B. (2003) Why Not Make Interfaces Better
+Than 3D Reality? IEEE Comput. Graph. Appl., 23(6), 12–15.
+doi:10.1109/MCG.2003.1242376
+[5] Tanenbaum, J. G., Williams, A. M., Desjardins, A., and
+Tanenbaum, K. (2013) Democratizing technology: pleasure,
+utility and expressiveness in DIY and maker practice. In
+Proc. CHI 2013, ACM
+[6] Whitelaw, M. (2009) ‘Measuring Cup’, Inside Out, Object
+Gallery, Sydney, June 2010.
+
+
