@@ -1,7 +1,20 @@
-## Physiradio
-repo dedicated to the software implementation of Physiradio (see https://gitlab.com/andrea-trentini/dataphys-iot)
+# Physiradio
+IoT project related to my Computer Science Degree Thesis.
+Specifically, it is an IoT device (based on Wemos D1 mini ESP8266 MCU, developed on Arduino), which takes the name of Physiradio, which reproduces specific musical flows according to a mapping that translates the weather conditions, accessible through open APIs (open data from OpenWeatherMap), into musical genres and colors; a process which is named musicalization, which is based on a whole study on data physicalization.
 
-##Unity App
+## THESIS FOLDER
+LaTex, csv, images and all files related to the theoric/descriptive part.
+
+## SOFTWARE FOLDER
+There are 2 main sections: the Arduino software (with wirings and MQTT commands) and the Unity Standalone software to interact with the device.
+
+Main features of Arduino script: 
+- JSON file interpretation
+- Implementation of Task Scheduler library
+- Interface with VS1053 codec audio
+- Interrogation of remote APIs and webradio streams
+
+### Unity App Install Tips
 **Win/Linux and Mac Os Standalone software developed totally not exported just like the Android version.**
 
 To run the program:
